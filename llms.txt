@@ -1,0 +1,30 @@
+# AI Engineering & LLM Job Board
+> Curated directory of remote AI, LLM, Machine Learning, and GenAI roles at top startups and tech companies.
+
+## Active Featured Roles
+
+- [AI Engineer at AI Agents (Remote](https://jobs.ashbyhq.com/hatch/302d3f5d-2d99-4962-8ce3-4480cd4330d5): Remote / USA | Salary: $160,000-$240,000 | Tech Stack: LLM, AI
+- [AI Engineer Backend (Remote at ES/UK only) @ Quadrivia](https://jobs.ashbyhq.com/quadrivia/3b40be91-27fc-4148-a1a3-565d8211dd5c): Remote / USA | Salary: $160,000-$240,000 | Tech Stack: RAG, Agent
+- [AI Engineer at Remote Europe @ Reedsy](https://jobs.ashbyhq.com/reedsy/b043b550-02b7-416f-8969-5db8fd9dc8ee): Remote / USA | Salary: $160,000-$240,000 | Tech Stack: LLM, AI
+- [Sr. Staff AI Engineer (Remote) @ Rula at AI Startup](https://jobs.ashbyhq.com/rula/f2424794-c819-4f53-a8af-83322e617acb): Remote / USA | Salary: $160,000-$240,000 | Tech Stack: LLM, AI
+- [Senior AI Engineer @ DualEntry at AI Startup](https://jobs.ashbyhq.com/dualentry/7acbe603-8fbc-4249-942a-ee45eb273ea6): Remote / USA | Salary: $160,000-$240,000 | Tech Stack: LLM, Rust
+- [Staff AI Engineer at AI Platform @ ClickUp](https://jobs.ashbyhq.com/clickup/143d20ff-cc53-4dc0-bc8b-09a7c1bddf87?embed=js): Remote / USA | Salary: $160,000-$240,000 | Tech Stack: LLM, AI
+- [Full Stack AI Engineer @ Infinity at AI Startup](https://jobs.ashbyhq.com/infinity-constellation/30fac65e-bcd7-4ecc-9477-fc7c8c8a9f52): Remote / USA | Salary: $160,000-$240,000 | Tech Stack: LLM, RAG, Agent, Python
+- [Lead AI Engineer @ Sierra Studio at AI Startup](https://jobs.ashbyhq.com/sierra-studio/81770149-3a94-4e22-8678-dac4a7a6d9ba): Remote / USA | Salary: $160,000-$240,000 | Tech Stack: LLM, RAG, Agent
+- [Forward Deployed AI Engineer @ Sardine at AI Startup](https://jobs.ashbyhq.com/sardine/4ff32b5d-13c6-4024-826c-04ed2881d688): Remote / USA | Salary: $160,000-$240,000 | Tech Stack: Agent, Rust
+- [Applied AI Engineer – Systems & Reliability (remote/Berlin at ...](https://jobs.ashbyhq.com/hipeople-official/6c330d7b-7c6d-4993-8893-b58b5289d442): Remote / USA | Salary: $160,000-$240,000 | Tech Stack: Rust
+- [LLM Engineer III at AI Startup](https://boards.greenhouse.io/crunchyroll/jobs/7014513?gh_jid=7014513): Remote / USA | Salary: $160,000-$240,000 | Tech Stack: LLM, RAG, Agent
+- [Job Application for Mission Integration Engineer, Applied Computing (Starshield) at SpaceX](https://boards.greenhouse.io/spacex/jobs/8320099002?gh_jid=8320099002): Remote / USA | Salary: $160,000-$240,000 | Tech Stack: LLM, RAG, Fine-tuning
+- [Senior Machine Learning Engineer, Customer Support ... at AI Startup](https://boards.greenhouse.io/airbnb/jobs/7975743): Remote / USA | Salary: $160,000-$240,000 | Tech Stack: LLM, RAG, Fine-tuning, Rust
+- [Job Application for Principal Applied AI / ML Engineer at Faire](https://boards.greenhouse.io/faire/jobs/8456064002?gh_jid=8456064002): Remote / USA | Salary: $160,000-$240,000 | Tech Stack: LLM, RAG, Agent, Fine-tuning
+- [Job Application for Sr. Software Engineer (Platform Team) at SpaceX](https://boards.greenhouse.io/spacex/jobs/8495853002?gh_jid=8495853002): Remote / USA | Salary: $160,000-$240,000 | Tech Stack: Infrastructure, Rust
+
+## Search Queries & Taxonomy
+- Machine Learning Engineer Jobs
+- LLM Ops & Infrastructure Careers
+- AI Agent & RAG Developers
+- Remote AI Startup Jobs
+
+## Employer Submissions
+- Post a Featured AI Job ($99/mo): /post-job
+- Claim & Verify Startup Profile: /verify
