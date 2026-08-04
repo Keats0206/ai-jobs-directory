@@ -3,7 +3,7 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 
-const CONTENT_ROOT = path.join(process.cwd(), '..', 'artificialjobs.dev', 'content');
+const CONTENT_ROOT = path.join(process.cwd(), 'content');
 
 export interface ContentFrontmatter {
   title: string;
