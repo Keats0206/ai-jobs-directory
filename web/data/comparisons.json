@@ -1,0 +1,1071 @@
+[
+  {
+    "slug": "claude-code-vs-cursor",
+    "agentA": "claude-code",
+    "agentB": "cursor",
+    "quickAnswer": "Choose Claude Code for autonomous, terminal-driven agentic tasks across large codebases with minimal hand-holding. Choose Cursor if you want a full AI-native editor experience with inline completions, chat, and a familiar IDE feel for day-to-day coding.",
+    "verdict": "Claude Code and Cursor serve overlapping but distinct workflows. Claude Code excels as a headless, agentic assistant that plans and executes multi-step coding tasks from the terminal, making it powerful for complex refactors, debugging pipelines, or CI-adjacent automation. Cursor is a polished IDE replacement built around AI-assisted editing, offering inline completions, codebase-aware chat, and a GUI that feels natural to developers who live inside an editor. If your priority is autonomous execution with minimal supervision, Claude Code wins. If you want a seamless, AI-augmented editing experience every hour of your workday, Cursor is the stronger daily driver.",
+    "criteria": [
+      {
+        "label": "Agentic / Autonomous Task Execution",
+        "agentA": "Core strength — Claude Code is purpose-built to plan, write, run, and iterate on code autonomously across an entire codebase from the terminal.",
+        "agentB": "Supports agent-mode features (Composer) but is primarily editor-centric rather than fully headless or autonomous.",
+        "winner": "a"
+      },
+      {
+        "label": "Editor & IDE Integration",
+        "agentA": "Terminal/CLI first; no built-in GUI editor, so developers must bring their own editor alongside it.",
+        "agentB": "Full VS Code-based IDE with native AI features baked into every panel — completions, chat, multi-file edits, and more.",
+        "winner": "b"
+      },
+      {
+        "label": "Inline Code Completions",
+        "agentA": "Not a completion tool; focused on planning and executing larger tasks rather than line-by-line suggestions.",
+        "agentB": "Fast, context-aware inline completions as a core feature, comparable to GitHub Copilot but with deeper codebase indexing.",
+        "winner": "b"
+      },
+      {
+        "label": "Codebase Context & Indexing",
+        "agentA": "Reads and reasons over large codebases in context, well-suited for cross-file understanding during agentic runs.",
+        "agentB": "Indexes the local codebase for retrieval-augmented chat and completions, giving relevant suggestions across files.",
+        "winner": "tie"
+      },
+      {
+        "label": "Setup & Workflow Friction",
+        "agentA": "Requires terminal comfort and deliberate prompting; less approachable for developers new to agentic AI workflows.",
+        "agentB": "Low friction — install and open like any editor; AI features are immediately discoverable without workflow changes.",
+        "winner": "b"
+      },
+      {
+        "label": "Model Flexibility",
+        "agentA": "Powered by Claude (Anthropic); model choice is tied to the Anthropic ecosystem.",
+        "agentB": "Supports multiple underlying models (Claude, GPT-4, etc.), letting users switch based on task or preference.",
+        "winner": "b"
+      }
+    ],
+    "bestForA": [
+      "Engineers running large-scale autonomous refactors or migrations across a monorepo",
+      "Developers who prefer terminal-first workflows and want an AI agent they can script or chain into pipelines",
+      "Teams using Anthropic's Claude models who want deep agentic coding capabilities without switching editors"
+    ],
+    "bestForB": [
+      "Developers wanting an all-in-one AI-native editor to replace VS Code with minimal setup",
+      "Engineers who rely heavily on fast inline completions and AI chat while actively writing code",
+      "Teams that want model flexibility and a polished GUI experience for everyday coding tasks"
+    ],
+    "faqs": [
+      {
+        "question": "Can I use Claude Code and Cursor together?",
+        "answer": "Yes. Many developers use Cursor as their primary editor for day-to-day writing and completions, then invoke Claude Code from the integrated terminal for longer autonomous tasks like multi-file refactors or test generation. The two tools complement each other rather than being mutually exclusive."
+      },
+      {
+        "question": "Which tool is better for beginners to AI-assisted coding?",
+        "answer": "Cursor is generally more approachable for beginners. Its GUI mirrors a familiar VS Code environment, AI features are surfaced inline without extra setup, and the learning curve is low. Claude Code rewards users who are comfortable in the terminal and understand how to prompt an agentic system effectively."
+      }
+    ],
+    "sourceUrls": [
+      "https://docs.anthropic.com/en/docs/claude-code/overview",
+      "https://www.cursor.com",
+      "https://docs.cursor.com/get-started/introduction"
+    ]
+  },
+  {
+    "slug": "claude-code-vs-codex",
+    "agentA": "claude-code",
+    "agentB": "codex",
+    "quickAnswer": "Claude Code excels at deep, multi-step reasoning across large codebases with strong planning capabilities, while Codex integrates tightly into OpenAI's ecosystem and is well-suited for rapid code generation and shipping tasks. Your best choice depends on workflow depth versus speed.",
+    "verdict": "Claude Code is the stronger pick for complex, long-horizon coding tasks requiring careful planning and codebase-wide context. Codex is a natural fit for developers already in the OpenAI ecosystem who want fast, iterative code generation and seamless integration with ChatGPT and other OpenAI tools.",
+    "criteria": [
+      {
+        "label": "Codebase Reasoning & Planning",
+        "agentA": "Designed for agentic, multi-step planning across entire codebases with strong contextual understanding.",
+        "agentB": "Capable of code generation and task execution but primarily optimized for discrete coding requests.",
+        "winner": "a"
+      },
+      {
+        "label": "Ecosystem Integration",
+        "agentA": "Integrates with Anthropic's API and works in terminal/CLI environments; growing third-party support.",
+        "agentB": "Natively integrated with OpenAI's platform, ChatGPT, and existing OpenAI API tooling.",
+        "winner": "b"
+      },
+      {
+        "label": "Speed of Code Generation",
+        "agentA": "Thoughtful and thorough, which can mean slower output for simple, quick tasks.",
+        "agentB": "Optimized for fast, iterative code generation and rapid shipping workflows.",
+        "winner": "b"
+      },
+      {
+        "label": "Handling Long-Context Tasks",
+        "agentA": "Leverages Claude's large context window to maintain coherence across extensive files and sessions.",
+        "agentB": "Handles moderate context well but may be less consistent over very long, complex sessions.",
+        "winner": "a"
+      },
+      {
+        "label": "Ease of Getting Started",
+        "agentA": "Requires CLI setup and familiarity with Anthropic's tooling; powerful but has a learning curve.",
+        "agentB": "Accessible via ChatGPT and OpenAI's familiar interfaces, lowering the barrier to entry.",
+        "winner": "b"
+      },
+      {
+        "label": "Agentic Autonomy",
+        "agentA": "Built explicitly for autonomous agentic workflows — reading, editing, and executing across a project.",
+        "agentB": "Supports agentic use cases but is more assistant-oriented than fully autonomous by default.",
+        "winner": "a"
+      }
+    ],
+    "bestForA": [
+      "Engineers tackling large, complex refactors or migrations across an entire codebase",
+      "Teams that need an agent to autonomously plan, reason, and execute multi-step development tasks",
+      "Developers who prioritize depth of understanding and accuracy over raw generation speed"
+    ],
+    "bestForB": [
+      "Developers already using OpenAI tools who want a seamless, integrated coding assistant",
+      "Teams focused on rapid prototyping and quickly shipping new features",
+      "Users who prefer a familiar chat-based interface for coding assistance without CLI setup"
+    ],
+    "faqs": [
+      {
+        "question": "Can Claude Code and Codex both autonomously edit files in my project?",
+        "answer": "Yes, both agents support agentic capabilities that include reading and editing files. However, Claude Code is more explicitly designed for autonomous, end-to-end agentic workflows, while Codex's autonomy depends more on how it is configured within the OpenAI platform."
+      },
+      {
+        "question": "Which agent is better if I already use the OpenAI API?",
+        "answer": "Codex is the more natural choice if you are already invested in the OpenAI ecosystem, as it integrates directly with existing OpenAI tools, APIs, and ChatGPT workflows, reducing friction and setup time."
+      }
+    ],
+    "sourceUrls": [
+      "https://www.anthropic.com/claude-code",
+      "https://openai.com/codex",
+      "https://docs.anthropic.com/en/docs/claude-code",
+      "https://platform.openai.com/docs/guides/codex"
+    ]
+  },
+  {
+    "slug": "cursor-vs-windsurf",
+    "agentA": "cursor",
+    "agentB": "windsurf",
+    "quickAnswer": "Cursor excels for developers who want deep inline AI assistance within a familiar VS Code environment, while Windsurf shines with its Cascade agentic flows that can autonomously plan and execute multi-step coding tasks. Your best choice depends on whether you prefer copilot-style help or autonomous agent workflows.",
+    "verdict": "Cursor is the safer, more polished choice for individual developers who want reliable AI pair-programming tightly integrated into their editor. Windsurf is the better pick for teams or power users who want an AI agent that can reason across an entire codebase, chain actions, and complete longer-horizon tasks with minimal hand-holding.",
+    "criteria": [
+      {
+        "label": "Inline Code Completion",
+        "agentA": "Fast, context-aware completions with Tab autocomplete and multi-line suggestions deeply integrated into the editor.",
+        "agentB": "Solid completions powered by Codeium's model, but inline completion is secondary to its agentic Cascade workflow.",
+        "winner": "a"
+      },
+      {
+        "label": "Agentic / Autonomous Task Execution",
+        "agentA": "Composer mode handles multi-file edits, but requires more user steering for complex multi-step tasks.",
+        "agentB": "Cascade flows allow Windsurf to autonomously plan, search, edit, and run terminal commands across a project with less manual prompting.",
+        "winner": "b"
+      },
+      {
+        "label": "Codebase Context & Indexing",
+        "agentA": "Indexes the entire codebase locally and uses embeddings for relevant context retrieval across large repos.",
+        "agentB": "Also indexes the full codebase and uses context awareness within Cascade, with strong cross-file reasoning during agentic runs.",
+        "winner": "tie"
+      },
+      {
+        "label": "Model Flexibility",
+        "agentA": "Supports multiple frontier models including GPT-4o, Claude Sonnet/Opus, and Cursor's own models, giving users broad choice.",
+        "agentB": "Uses Codeium's proprietary models by default; frontier model access is available but the selection is more limited than Cursor.",
+        "winner": "a"
+      },
+      {
+        "label": "Pricing & Free Tier",
+        "agentA": "Free tier with limited completions; Pro plan required for full model access and higher usage limits.",
+        "agentB": "Generous free tier through Codeium's existing offering; Windsurf Pro adds expanded Cascade usage and priority access.",
+        "winner": "b"
+      },
+      {
+        "label": "Editor Experience & Ecosystem",
+        "agentA": "Built on VS Code fork; inherits the full VS Code extension marketplace and familiar UI with minimal adjustment needed.",
+        "agentB": "Also VS Code-based, so the transition is smooth, but the ecosystem maturity and community plugin support slightly trails Cursor.",
+        "winner": "a"
+      }
+    ],
+    "bestForA": [
+      "Developers who want fine-grained control over AI suggestions within a VS Code-like environment",
+      "Teams requiring flexibility to swap between multiple frontier AI models",
+      "Engineers working on large codebases who rely heavily on semantic search and inline refactoring"
+    ],
+    "bestForB": [
+      "Developers who want an AI agent to autonomously complete multi-step coding tasks end-to-end",
+      "Budget-conscious users or students looking for a capable free tier without immediate commitment",
+      "Teams experimenting with agentic workflows where the AI plans, edits, and runs code with minimal interruption"
+    ],
+    "faqs": [
+      {
+        "question": "Can I use both Cursor and Windsurf with my existing VS Code extensions?",
+        "answer": "Yes. Both editors are built on a VS Code fork, so most VS Code extensions install and run without modification. You can bring your existing themes, linters, and language plugins to either editor with minimal friction."
+      },
+      {
+        "question": "Which tool is better for beginners learning to code?",
+        "answer": "Cursor's inline suggestions and chat-based explanations make it approachable for beginners who want help understanding code as they write it. Windsurf's Cascade is powerful but its autonomous, multi-step nature can be harder to learn from, making Cursor the gentler on-ramp for newcomers."
+      }
+    ],
+    "sourceUrls": [
+      "https://cursor.com",
+      "https://codeium.com/windsurf",
+      "https://codeium.com/blog/windsurf-editor-announcement",
+      "https://cursor.com/changelog"
+    ]
+  },
+  {
+    "slug": "cline-vs-cursor",
+    "agentA": "cline",
+    "agentB": "cursor",
+    "quickAnswer": "Cline is best for developers who want an open-source, fully transparent AI coding agent inside VS Code with browser automation and deep file-system access. Cursor is better for those who want a polished, AI-native editor experience with seamless multi-file editing and a large user community.",
+    "verdict": "Cursor wins for most developers seeking a ready-to-use AI-powered editor with a refined UX and strong multi-file context. Cline wins for power users who prioritize open-source transparency, extensibility, custom model support, and autonomous browser or terminal automation tasks.",
+    "criteria": [
+      {
+        "label": "Setup & Onboarding",
+        "agentA": "Installed as a VS Code extension; requires configuring your own API key for a supported model provider.",
+        "agentB": "Standalone editor download with built-in AI; minimal setup needed to get started.",
+        "winner": "b"
+      },
+      {
+        "label": "Editor Integration",
+        "agentA": "Lives inside VS Code, preserving your existing extensions, keybindings, and workflow.",
+        "agentB": "A full fork of VS Code with deeply embedded AI features like Tab autocomplete and Composer.",
+        "winner": "tie"
+      },
+      {
+        "label": "Autonomy & Browser Automation",
+        "agentA": "Supports autonomous multi-step tasks including browser control, terminal commands, and file edits with user approval steps.",
+        "agentB": "Focused on code editing assistance; does not natively automate the browser or run autonomous multi-step agentic loops.",
+        "winner": "a"
+      },
+      {
+        "label": "Multi-file Context & Editing",
+        "agentA": "Can read and edit multiple files autonomously across a project with explicit tool calls.",
+        "agentB": "Composer and codebase indexing provide strong multi-file awareness and coordinated edits across a project.",
+        "winner": "b"
+      },
+      {
+        "label": "Model Flexibility",
+        "agentA": "Fully model-agnostic; works with OpenAI, Anthropic, Google, Ollama, and any OpenAI-compatible endpoint.",
+        "agentB": "Supports multiple frontier models but within Cursor's own infrastructure and pricing plans.",
+        "winner": "a"
+      },
+      {
+        "label": "Open Source & Transparency",
+        "agentA": "Fully open-source on GitHub; community can audit, fork, and contribute to the codebase.",
+        "agentB": "Closed-source proprietary product; AI features and prompts are not publicly auditable.",
+        "winner": "a"
+      }
+    ],
+    "bestForA": [
+      "Developers who want open-source, auditable AI tooling they can self-host or customize",
+      "Engineers needing autonomous agentic workflows including browser automation and terminal control",
+      "VS Code power users who prefer to bring their own model and API keys"
+    ],
+    "bestForB": [
+      "Developers who want a polished, batteries-included AI coding environment with minimal configuration",
+      "Teams looking for fast AI-powered Tab autocomplete and multi-file Composer editing out of the box",
+      "Developers who prefer a large, active user community and extensive documentation"
+    ],
+    "faqs": [
+      {
+        "question": "Can Cline and Cursor be used together?",
+        "answer": "Yes. Because Cline runs as a VS Code extension, you can use it inside VS Code independently of Cursor. However, since Cursor is its own editor (a VS Code fork), you would typically choose one environment to work in rather than running both simultaneously."
+      },
+      {
+        "question": "Which tool is more cost-effective for API usage?",
+        "answer": "Cline lets you connect directly to any model provider using your own API keys, so costs depend entirely on your model choices and usage. Cursor bundles model access into its subscription plans. Heavy users may find direct API access through Cline cheaper, while lighter users may prefer Cursor's predictable subscription pricing."
+      }
+    ],
+    "sourceUrls": [
+      "https://github.com/cline/cline",
+      "https://cursor.com",
+      "https://marketplace.visualstudio.com/items?itemName=saoudrizwan.claude-dev"
+    ]
+  },
+  {
+    "slug": "kilo-code-vs-cline",
+    "agentA": "kilo-code",
+    "agentB": "cline",
+    "quickAnswer": "Both are open-source AI coding agents, but Kilo Code stands out for multi-IDE support including JetBrains and CLI, while Cline edges ahead with built-in browser automation and a larger established community. Choose Kilo Code for broader IDE flexibility; choose Cline for web-integrated workflows.",
+    "verdict": "Kilo Code and Cline are closely matched open-source coding agents. Kilo Code wins on IDE breadth by supporting VS Code, JetBrains, and CLI environments, making it the better pick for teams with mixed toolchains. Cline's browser automation capability gives it an advantage for tasks that require real-time web interaction, research, or end-to-end testing workflows. If your work stays inside the editor, Kilo Code's wider platform support is the differentiator; if you need the agent to browse, scrape, or interact with live websites as part of coding tasks, Cline is the stronger choice.",
+    "criteria": [
+      {
+        "label": "IDE & Environment Support",
+        "agentA": "VS Code, JetBrains IDEs, and CLI",
+        "agentB": "VS Code (primary), CLI via extension",
+        "winner": "a"
+      },
+      {
+        "label": "Browser Automation",
+        "agentA": "Not a core feature",
+        "agentB": "Built-in browser automation for web interaction",
+        "winner": "b"
+      },
+      {
+        "label": "Open-Source & Extensibility",
+        "agentA": "Fully open-source, forkable",
+        "agentB": "Fully open-source, active community contributions",
+        "winner": "tie"
+      },
+      {
+        "label": "Community & Ecosystem",
+        "agentA": "Growing community, newer entrant",
+        "agentB": "Larger established user base and plugin ecosystem",
+        "winner": "b"
+      },
+      {
+        "label": "CLI & Automation Pipelines",
+        "agentA": "First-class CLI support for headless workflows",
+        "agentB": "CLI support present but secondary to IDE use",
+        "winner": "a"
+      },
+      {
+        "label": "Setup & Onboarding",
+        "agentA": "Straightforward setup across supported environments",
+        "agentB": "Well-documented onboarding with VS Code marketplace listing",
+        "winner": "tie"
+      }
+    ],
+    "bestForA": [
+      "Teams using JetBrains IDEs like IntelliJ, PyCharm, or WebStorm",
+      "Developers who want a unified agent across multiple IDEs and terminal workflows",
+      "CI/CD and headless automation pipelines that require robust CLI integration"
+    ],
+    "bestForB": [
+      "Developers who need the agent to browse and interact with live websites during coding tasks",
+      "VS Code-centric teams looking for a large community and established extension ecosystem",
+      "Projects requiring research, web scraping, or end-to-end browser-driven workflows alongside code generation"
+    ],
+    "faqs": [
+      {
+        "question": "Can Kilo Code and Cline use the same underlying AI models?",
+        "answer": "Yes. Both agents are model-agnostic and support connecting to providers such as OpenAI, Anthropic, and local models via compatible APIs, so you can use the same model with either tool depending on your preference."
+      },
+      {
+        "question": "Is browser automation in Cline available out of the box?",
+        "answer": "Cline includes browser automation as a core capability, allowing the agent to open URLs, interact with page elements, and capture screenshots during a session, without requiring a separate plugin for basic use cases."
+      }
+    ],
+    "sourceUrls": [
+      "https://github.com/Kilo-Org/kilocode",
+      "https://github.com/cline/cline",
+      "https://marketplace.visualstudio.com/items?itemName=saoudrizwan.claude-dev"
+    ]
+  },
+  {
+    "slug": "hermes-agent-vs-openclaw",
+    "agentA": "hermes-agent",
+    "agentB": "openclaw",
+    "quickAnswer": "Hermes Agent is the stronger choice for users who need a feature-rich, self-improving agent with broad built-in tooling and persistent memory. OpenClaw shines when the priority is integrating an AI agent directly into messaging platforms for real-world, conversational actions.",
+    "verdict": "Hermes Agent offers a more comprehensive autonomous agent experience with persistent memory and a large built-in tool library, making it better suited for complex, multi-step tasks. OpenClaw takes a focused approach by bridging AI capabilities with messaging apps, making it the go-to option for teams that live in chat platforms and want actionable automation without leaving their inbox.",
+    "criteria": [
+      {
+        "label": "Built-in Tooling",
+        "agentA": "40+ built-in tools covering search, code execution, file management, and more",
+        "agentB": "Focused toolset centered on messaging app integrations and real-world action triggers",
+        "winner": "a"
+      },
+      {
+        "label": "Persistent Memory",
+        "agentA": "Native persistent memory allows the agent to retain context across sessions",
+        "agentB": "Memory capabilities are not a stated core feature; context is more session-bound",
+        "winner": "a"
+      },
+      {
+        "label": "Messaging & Communication Integration",
+        "agentA": "General integrations via tools, not messaging-first by design",
+        "agentB": "Built specifically to connect with messaging apps for direct, real-world actions",
+        "winner": "b"
+      },
+      {
+        "label": "Self-Improvement",
+        "agentA": "Self-improving architecture allows the agent to refine its own behavior over time",
+        "agentB": "No self-improvement mechanism highlighted as a core feature",
+        "winner": "a"
+      },
+      {
+        "label": "Ease of Deployment for Chat Users",
+        "agentA": "Requires more setup to connect to existing communication workflows",
+        "agentB": "Designed for quick deployment within messaging environments with minimal friction",
+        "winner": "b"
+      },
+      {
+        "label": "Open-Source Flexibility",
+        "agentA": "Open-source with a broad customization surface across tools, memory, and agent logic",
+        "agentB": "Open-source with flexibility focused on extending messaging and action integrations",
+        "winner": "tie"
+      }
+    ],
+    "bestForA": [
+      "Developers building autonomous agents that need to remember context across long-running tasks",
+      "Teams requiring a wide variety of built-in tools without heavy custom integration work",
+      "Projects that benefit from an agent capable of refining and improving its own behavior over time"
+    ],
+    "bestForB": [
+      "Teams that manage workflows primarily through messaging apps like Slack, Telegram, or Discord",
+      "Users who want to trigger real-world actions through conversational commands in chat",
+      "Organizations looking for a lightweight, messaging-native AI agent with minimal infrastructure overhead"
+    ],
+    "faqs": [
+      {
+        "question": "Can Hermes Agent and OpenClaw both be self-hosted?",
+        "answer": "Both agents are open-source, which generally means they can be self-hosted. Hermes Agent explicitly emphasizes its open-source nature alongside its tool and memory features. OpenClaw is also open-source, with deployment likely centered around connecting to messaging platform APIs. Always check each project's repository for specific hosting requirements."
+      },
+      {
+        "question": "Which agent is better if I need both messaging integration and persistent memory?",
+        "answer": "Hermes Agent has the edge on persistent memory, while OpenClaw leads on messaging integration. If you need both, Hermes Agent may be extensible enough to add messaging connectors, or you could explore whether OpenClaw supports memory plugins. Reviewing each project's documentation and community contributions is the best next step."
+      }
+    ],
+    "sourceUrls": [
+      "https://artificialjobs.dev/ai-agents/hermes-agent",
+      "https://artificialjobs.dev/ai-agents/openclaw"
+    ]
+  },
+  {
+    "slug": "pi-vs-codebuff",
+    "agentA": "pi",
+    "agentB": "codebuff",
+    "quickAnswer": "Pi positions itself as a personalized coding agent with a user-centric identity, while Codebuff is a self-improving CLI agent focused on iterative autonomy. Codebuff edges ahead for terminal-native developers who want an agent that learns and evolves, while Pi suits those wanting a tailored, relationship-driven coding companion.",
+    "verdict": "Codebuff",
+    "criteria": [
+      {
+        "label": "CLI & Terminal Integration",
+        "agentA": "Not positioned primarily as a CLI tool",
+        "agentB": "Built natively for the command line",
+        "winner": "b"
+      },
+      {
+        "label": "Personalization",
+        "agentA": "Core identity: the agent is yours, built around you",
+        "agentB": "Adapts through self-improvement loops, not explicit personalization",
+        "winner": "a"
+      },
+      {
+        "label": "Self-Improvement & Learning",
+        "agentA": "No stated self-improvement mechanism",
+        "agentB": "Self-improving by design, iterates on its own outputs",
+        "winner": "b"
+      },
+      {
+        "label": "Ease of Onboarding",
+        "agentA": "Approachable framing suggests lower barrier to entry",
+        "agentB": "CLI-first may require more technical comfort to get started",
+        "winner": "a"
+      },
+      {
+        "label": "Autonomy & Agentic Capability",
+        "agentA": "Positioned as a companion agent, autonomy level unclear",
+        "agentB": "Agentic CLI loop implies higher autonomy in task execution",
+        "winner": "b"
+      }
+    ],
+    "bestForA": [
+      "Developers who want a coding agent that feels personalized to their style and workflow",
+      "Teams or individuals new to AI coding agents looking for an approachable entry point",
+      "Projects where the human-agent relationship and continuity matter most"
+    ],
+    "bestForB": [
+      "Terminal-native developers who live in the CLI and want a seamless agentic experience",
+      "Engineers who want an agent that continuously improves its own performance over time",
+      "Automation-heavy workflows where autonomous iteration and self-correction are critical"
+    ],
+    "faqs": [
+      {
+        "question": "Is Codebuff better than Pi for automating repetitive coding tasks?",
+        "answer": "Codebuff's self-improving CLI design makes it better suited for automating and iterating on repetitive coding tasks autonomously. Pi's strength lies more in personalized assistance than raw automation loops."
+      },
+      {
+        "question": "Which agent is easier to get started with for a non-expert developer?",
+        "answer": "Pi's positioning around being 'your' agent suggests a more approachable, user-friendly onboarding experience. Codebuff's CLI-first nature may require more technical familiarity to set up and use effectively."
+      }
+    ],
+    "sourceUrls": [
+      "https://pi.ai",
+      "https://codebuff.com"
+    ]
+  },
+  {
+    "slug": "openclaw-vs-claude-code",
+    "agentA": "openclaw",
+    "agentB": "claude-code",
+    "quickAnswer": "Claude Code wins for serious software development with deep codebase understanding and planning capabilities. OpenClaw is better suited for users who need an open-source agent that bridges AI with real-world messaging and communication actions rather than pure coding workflows.",
+    "verdict": "These two agents serve distinctly different purposes. Claude Code is purpose-built for developers who need an intelligent coding partner capable of reading, planning, and executing changes across large codebases — it excels at multi-file edits, refactoring, and engineering reasoning. OpenClaw fills a different niche as an open-source agent that connects to messaging platforms to trigger real-world actions, making it more useful for automation workflows and communication-driven tasks. If your primary goal is coding, Claude Code is the clear choice. If you need open-source flexibility and messaging integrations, OpenClaw is worth exploring.",
+    "criteria": [
+      {
+        "label": "Coding & Codebase Navigation",
+        "agentA": "Not designed for code editing; focuses on messaging and action execution",
+        "agentB": "Core strength — plans and executes changes across multi-file codebases",
+        "winner": "b"
+      },
+      {
+        "label": "Open-Source Availability",
+        "agentA": "Open-source, allowing community contributions and self-hosting",
+        "agentB": "Closed-source, proprietary tool from Anthropic",
+        "winner": "a"
+      },
+      {
+        "label": "Messaging & Communication Integrations",
+        "agentA": "Built-in connections to messaging apps for real-world action triggers",
+        "agentB": "No native messaging app integrations",
+        "winner": "a"
+      },
+      {
+        "label": "Agentic Planning & Reasoning",
+        "agentA": "General agent reasoning for communication workflows",
+        "agentB": "Strong multi-step planning tailored to software engineering tasks",
+        "winner": "b"
+      },
+      {
+        "label": "Ease of Setup for Developers",
+        "agentA": "Requires self-hosting setup and configuration for messaging platforms",
+        "agentB": "Integrates directly into developer terminals and existing workflows",
+        "winner": "b"
+      },
+      {
+        "label": "Customizability & Extensibility",
+        "agentA": "High — open-source codebase can be forked and extended freely",
+        "agentB": "Limited — customization constrained to Anthropic's supported interfaces",
+        "winner": "a"
+      }
+    ],
+    "bestForA": [
+      "Developers or hobbyists who want a self-hosted, open-source AI agent they can modify",
+      "Teams needing an AI agent that connects to messaging apps like Slack or Telegram to automate real-world actions",
+      "Projects requiring transparent, auditable agent behavior without vendor lock-in"
+    ],
+    "bestForB": [
+      "Software engineers who need an AI partner to plan and implement changes across a large, complex codebase",
+      "Development teams using Anthropic's Claude models who want a deeply integrated coding workflow tool",
+      "Developers tackling multi-file refactors, bug investigations, or feature implementations with minimal manual context-setting"
+    ],
+    "faqs": [
+      {
+        "question": "Can OpenClaw be used for coding tasks like Claude Code?",
+        "answer": "OpenClaw is not specifically designed for coding or codebase navigation. Its primary focus is connecting AI capabilities to messaging applications for real-world action execution. While it is a general-purpose open-source agent, it lacks the specialized code planning and multi-file editing features that make Claude Code valuable for software development."
+      },
+      {
+        "question": "Is Claude Code available to all developers, or does it require special access?",
+        "answer": "Claude Code is an Anthropic product available to developers, though access and pricing details are managed through Anthropic's official channels. Unlike OpenClaw, it is not open-source, so usage depends on Anthropic's terms of service and any applicable subscription or API costs."
+      }
+    ],
+    "sourceUrls": [
+      "https://github.com/openclaw",
+      "https://www.anthropic.com/claude-code",
+      "https://docs.anthropic.com/en/docs/claude-code"
+    ]
+  },
+  {
+    "slug": "codex-vs-cursor",
+    "agentA": "codex",
+    "agentB": "cursor",
+    "quickAnswer": "Codex excels as a cloud-based autonomous coding agent that can run, test, and ship code independently via CLI or API. Cursor shines as an AI-native editor for developers who want real-time, in-editor AI assistance while retaining hands-on control of their codebase.",
+    "verdict": "Choose Codex if you want an autonomous agent that can handle multi-step coding tasks in the background with minimal supervision. Choose Cursor if you prefer a polished, interactive coding environment where AI augments your workflow inside a familiar editor experience.",
+    "criteria": [
+      {
+        "label": "Autonomy & Agentic Capability",
+        "agentA": "Designed as a fully autonomous coding agent; can plan, write, run, and iterate on code end-to-end without constant human input.",
+        "agentB": "Agent mode available but primarily designed for interactive, human-in-the-loop assistance within the editor.",
+        "winner": "a"
+      },
+      {
+        "label": "Editor & IDE Experience",
+        "agentA": "No native editor UI; accessed via CLI, ChatGPT, or API integration.",
+        "agentB": "Full-featured VS Code-based editor with inline AI completions, chat, and multi-file edits built in.",
+        "winner": "b"
+      },
+      {
+        "label": "Codebase Context Awareness",
+        "agentA": "Can read and operate on repositories but context is session-based and requires explicit setup.",
+        "agentB": "Indexes your local codebase automatically, providing deep, persistent project-level context for all AI interactions.",
+        "winner": "b"
+      },
+      {
+        "label": "Task Automation & CI/CD Fit",
+        "agentA": "Well-suited for automated pipelines, background task execution, and programmatic integration via API.",
+        "agentB": "Primarily a developer-facing tool; less suited for headless or automated pipeline scenarios.",
+        "winner": "a"
+      },
+      {
+        "label": "Ease of Onboarding",
+        "agentA": "Requires API access or ChatGPT Plus/Pro; CLI setup adds friction for non-technical users.",
+        "agentB": "Download and install like any editor; intuitive for developers already familiar with VS Code.",
+        "winner": "b"
+      },
+      {
+        "label": "Model Flexibility",
+        "agentA": "Powered by OpenAI models; model choice is controlled by OpenAI.",
+        "agentB": "Supports multiple underlying models including GPT-4, Claude, and others, giving users flexibility.",
+        "winner": "b"
+      }
+    ],
+    "bestForA": [
+      "Teams wanting to automate repetitive coding and testing tasks without manual intervention",
+      "Developers integrating AI coding capabilities directly into APIs or backend pipelines",
+      "Power users comfortable with CLI tools who need an autonomous agent to tackle large, multi-step engineering tasks"
+    ],
+    "bestForB": [
+      "Developers who want a seamless, AI-enhanced coding environment without leaving their editor",
+      "Teams that need deep, automatic codebase indexing for accurate multi-file suggestions",
+      "Engineers who prefer flexibility in choosing between different AI models for their workflow"
+    ],
+    "faqs": [
+      {
+        "question": "Can Codex and Cursor be used together?",
+        "answer": "Yes. Some developers use Cursor for interactive, day-to-day coding and leverage Codex via API for automating background tasks or CI-integrated code generation, making them complementary rather than mutually exclusive."
+      },
+      {
+        "question": "Which tool is better for a solo developer just getting started with AI coding?",
+        "answer": "Cursor is generally easier to adopt for solo developers because it installs like a familiar code editor and provides immediate, in-context AI assistance. Codex has a steeper setup curve and is better suited once you have specific automation or agentic use cases in mind."
+      }
+    ],
+    "sourceUrls": [
+      "https://openai.com/index/introducing-codex",
+      "https://cursor.com",
+      "https://platform.openai.com/docs/codex"
+    ]
+  },
+  {
+    "slug": "hermes-agent-vs-claude-code",
+    "agentA": "hermes-agent",
+    "agentB": "claude-code",
+    "quickAnswer": "Choose Hermes Agent for flexible, open-source agentic workflows with persistent memory and broad tool access. Choose Claude Code if your priority is deep, reliable code understanding and execution within a professional software development environment backed by Anthropic's frontier model.",
+    "verdict": "claude-code",
+    "criteria": [
+      {
+        "label": "Coding & Software Engineering",
+        "agentA": "Capable of coding tasks through its tool ecosystem, but not purpose-built for software engineering workflows.",
+        "agentB": "Purpose-built for agentic coding: plans, edits, runs, and debugs across entire codebases with strong contextual understanding.",
+        "winner": "b"
+      },
+      {
+        "label": "Tool Availability",
+        "agentA": "Ships with 40+ built-in tools covering web search, file I/O, APIs, and more out of the box.",
+        "agentB": "Focused toolset scoped to coding tasks: file editing, shell execution, and codebase search.",
+        "winner": "a"
+      },
+      {
+        "label": "Persistent Memory",
+        "agentA": "Supports persistent memory across sessions, enabling continuity for long-running or recurring tasks.",
+        "agentB": "Context is session-scoped; does not natively persist memory between separate invocations.",
+        "winner": "a"
+      },
+      {
+        "label": "Openness & Customizability",
+        "agentA": "Open-source and self-improving design allows users to extend, fork, and customize the agent freely.",
+        "agentB": "Closed-source commercial product; customization is limited to configuration and prompting.",
+        "winner": "a"
+      },
+      {
+        "label": "Model Quality & Reliability",
+        "agentA": "Model quality depends on the underlying LLM chosen by the user or deployment.",
+        "agentB": "Powered by Anthropic's Claude models, offering consistent, high-quality reasoning and instruction-following.",
+        "winner": "b"
+      },
+      {
+        "label": "Ease of Setup for Developers",
+        "agentA": "Requires more configuration to integrate into existing developer workflows and toolchains.",
+        "agentB": "Designed to drop into existing codebases with minimal setup, especially for CLI-driven development.",
+        "winner": "b"
+      }
+    ],
+    "bestForA": [
+      "Teams building custom, multi-step agentic pipelines that need broad built-in tool coverage",
+      "Projects requiring persistent memory and continuity across long-running autonomous tasks",
+      "Developers who want an open-source agent they can self-host, fork, and extend"
+    ],
+    "bestForB": [
+      "Software engineers who want an AI agent that deeply understands and operates across an entire codebase",
+      "Development teams looking for a reliable, low-setup agentic coding tool in their existing CLI workflow",
+      "Organizations prioritizing model consistency and Anthropic's safety-focused AI for professional coding use"
+    ],
+    "faqs": [
+      {
+        "question": "Can Hermes Agent be used for coding tasks like Claude Code?",
+        "answer": "Yes, Hermes Agent can perform coding tasks using its built-in tools, but it is a general-purpose agent rather than one optimized specifically for software engineering. Claude Code is purpose-built for planning, editing, and executing code across a codebase, giving it a more focused and polished experience for that use case."
+      },
+      {
+        "question": "Is Claude Code available as an open-source tool?",
+        "answer": "No. Claude Code is a commercial product developed by Anthropic and is not open-source. Hermes Agent, by contrast, is open-source, allowing developers to inspect, modify, and self-host it according to their needs."
+      }
+    ],
+    "sourceUrls": [
+      "https://github.com/NousResearch/hermes-function-calling",
+      "https://www.anthropic.com/claude-code",
+      "https://docs.anthropic.com/en/docs/claude-code/overview"
+    ]
+  },
+  {
+    "slug": "cursor-vs-github-copilot",
+    "agentA": "cursor",
+    "agentB": "github-copilot",
+    "quickAnswer": "Choose Cursor for an AI-native editor with deep agentic editing and multi-model support. Choose GitHub Copilot if you want to keep your current IDE and GitHub workflow with minimal disruption.",
+    "verdict": "Cursor and GitHub Copilot represent two philosophies: Cursor replaces your editor with an AI-first experience; Copilot augments the editor and GitHub stack you already use. Cursor wins on agentic multi-file editing and model flexibility. Copilot wins on compatibility, GitHub integration, and enterprise adoption.",
+    "criteria": [
+      {
+        "label": "Agentic editing",
+        "agentA": "Composer and cloud agents for multi-step autonomous tasks",
+        "agentB": "Growing agent features but still completion-first for most users",
+        "winner": "a"
+      },
+      {
+        "label": "IDE compatibility",
+        "agentA": "Cursor-only (VS Code fork)",
+        "agentB": "VS Code, JetBrains, Neovim, Visual Studio, GitHub.com",
+        "winner": "b"
+      },
+      {
+        "label": "GitHub integration",
+        "agentA": "PR and Slack integrations available",
+        "agentB": "Native GitHub workflow integration is a core strength",
+        "winner": "b"
+      },
+      {
+        "label": "Model choice",
+        "agentA": "Multiple frontier models in one editor",
+        "agentB": "Primarily OpenAI models via Microsoft/GitHub",
+        "winner": "a"
+      }
+    ],
+    "bestForA": [
+      "Developers ready to switch to an AI-native editor",
+      "Teams wanting autonomous agent workflows",
+      "Engineers who need multi-model flexibility"
+    ],
+    "bestForB": [
+      "Teams embedded in GitHub with existing IDE preferences",
+      "Enterprises needing Copilot Business governance",
+      "Developers who want low-friction inline completions"
+    ],
+    "faqs": [
+      {
+        "question": "Can I use both Cursor and Copilot?",
+        "answer": "Some developers use Copilot for completions in other IDEs and Cursor as their primary agentic editor. They overlap but can complement each other if your workflow justifies two subscriptions."
+      }
+    ],
+    "sourceUrls": []
+  },
+  {
+    "slug": "claude-code-vs-github-copilot",
+    "agentA": "claude-code",
+    "agentB": "github-copilot",
+    "quickAnswer": "Claude Code is a terminal-first agent for autonomous codebase tasks. GitHub Copilot is an inline assistant across IDEs and GitHub. Pick Claude Code for deep agent runs; Copilot for everyday completions and GitHub-native workflows.",
+    "verdict": "Claude Code targets engineers who want a dedicated agent to plan and execute complex work across a repo. Copilot targets the broad developer market with assistive AI inside familiar tools. They solve different layers of the stack.",
+    "criteria": [
+      {
+        "label": "Autonomous task execution",
+        "agentA": "Purpose-built for multi-step agentic runs from the terminal",
+        "agentB": "Agent features exist but inline assist remains the default mode",
+        "winner": "a"
+      },
+      {
+        "label": "Daily editing UX",
+        "agentA": "Terminal-first; no built-in GUI editor",
+        "agentB": "Inline completions and chat inside major IDEs",
+        "winner": "b"
+      },
+      {
+        "label": "Enterprise adoption",
+        "agentA": "Growing among Anthropic customers and CLI-first teams",
+        "agentB": "Widest enterprise deployment via Microsoft and GitHub",
+        "winner": "b"
+      }
+    ],
+    "bestForA": [
+      "Engineers running large refactors or migrations autonomously",
+      "Anthropic Claude customers",
+      "Terminal-first development workflows"
+    ],
+    "bestForB": [
+      "Teams standardized on GitHub and Microsoft tooling",
+      "Developers wanting assistive AI without workflow change",
+      "Organizations needing mature enterprise admin controls"
+    ],
+    "faqs": [],
+    "sourceUrls": []
+  },
+  {
+    "slug": "aider-vs-cursor",
+    "agentA": "aider",
+    "agentB": "cursor",
+    "quickAnswer": "Aider is an open-source git-native CLI agent. Cursor is a polished AI-native IDE. Choose Aider for terminal control and transparency; Cursor for integrated GUI agent editing.",
+    "verdict": "Aider appeals to developers who want every AI edit committed to git from the terminal. Cursor appeals to those who want a seamless visual editing experience with cloud agents. Both are strong agentic tools with different UX philosophies.",
+    "criteria": [
+      {
+        "label": "Open source",
+        "agentA": "Fully open source (Apache 2.0)",
+        "agentB": "Proprietary commercial product",
+        "winner": "a"
+      },
+      {
+        "label": "Editor experience",
+        "agentA": "CLI only — bring your own editor",
+        "agentB": "Full AI-native IDE with visual diff review",
+        "winner": "b"
+      },
+      {
+        "label": "Git workflow",
+        "agentA": "Automatic commits and repo map are core features",
+        "agentB": "Git integration via standard IDE tooling",
+        "winner": "a"
+      },
+      {
+        "label": "Onboarding friction",
+        "agentA": "Requires terminal comfort and API key setup",
+        "agentB": "Low — install and open like any editor",
+        "winner": "b"
+      }
+    ],
+    "bestForA": [
+      "Terminal-first developers who audit every change via git",
+      "Teams wanting model flexibility without IDE lock-in",
+      "Open-source advocates"
+    ],
+    "bestForB": [
+      "Developers wanting the fastest path to agentic editing in a GUI",
+      "Teams using cloud agents and parallel sessions",
+      "Engineers who prefer visual diff review"
+    ],
+    "faqs": [],
+    "sourceUrls": []
+  },
+  {
+    "slug": "windsurf-vs-github-copilot",
+    "agentA": "windsurf",
+    "agentB": "github-copilot",
+    "quickAnswer": "Windsurf is an agentic IDE with Cascade flows and session management. Copilot is the ubiquitous assistive layer for existing IDEs and GitHub. Windsurf for agent delegation; Copilot for broad compatibility.",
+    "verdict": "Windsurf competes with Cursor more than Copilot on agentic depth, but both are compared by teams choosing their default AI coding stack. Windsurf offers richer agent session UI; Copilot offers reach and GitHub-native workflows.",
+    "criteria": [
+      {
+        "label": "Agent session management",
+        "agentA": "Cascade flows with parallel sessions and diff review",
+        "agentB": "Agent mode available but less session-centric",
+        "winner": "a"
+      },
+      {
+        "label": "Market reach",
+        "agentA": "Growing IDE with focused user base",
+        "agentB": "Largest installed base of AI coding assistants",
+        "winner": "b"
+      }
+    ],
+    "bestForA": [
+      "Engineers delegating multi-step tasks to agents in one IDE",
+      "Teams wanting Codeium SWE models and ACP interoperability"
+    ],
+    "bestForB": [
+      "Organizations already on Copilot Enterprise",
+      "Developers who refuse to switch editors"
+    ],
+    "faqs": [],
+    "sourceUrls": []
+  },
+  {
+    "slug": "cline-vs-claude-code",
+    "agentA": "cline",
+    "agentB": "claude-code",
+    "quickAnswer": "Cline is an open-source IDE extension with Plan-and-Act modes. Claude Code is Anthropic's terminal agent. Cline for visual control in your editor; Claude Code for headless autonomous runs.",
+    "verdict": "Both are agentic coding tools, but Cline keeps you in the IDE with diff checkpoints while Claude Code operates from the terminal with Anthropic model depth. Many developers use both for different task types.",
+    "criteria": [
+      {
+        "label": "IDE integration",
+        "agentA": "VS Code extension with inline diff and checkpoints",
+        "agentB": "Terminal/CLI first without a built-in editor",
+        "winner": "a"
+      },
+      {
+        "label": "Model depth",
+        "agentA": "Bring your own API keys for multiple providers",
+        "agentB": "Optimized for Anthropic Claude models",
+        "winner": "b"
+      },
+      {
+        "label": "Open source",
+        "agentA": "Open source with visible prompts and controls",
+        "agentB": "Closed-source commercial product",
+        "winner": "a"
+      }
+    ],
+    "bestForA": [
+      "Developers who want agentic editing inside VS Code",
+      "Teams needing checkpoint/undo on every agent step"
+    ],
+    "bestForB": [
+      "Engineers running long autonomous jobs from the terminal",
+      "Anthropic ecosystem teams"
+    ],
+    "faqs": [],
+    "sourceUrls": []
+  },
+  {
+    "slug": "continue-vs-cursor",
+    "agentA": "continue",
+    "agentB": "cursor",
+    "quickAnswer": "Continue is an open-source configurable assistant inside VS Code/JetBrains. Cursor is a dedicated AI editor. Continue for customization; Cursor for integrated out-of-box agent UX.",
+    "verdict": "Continue and Cursor serve developers who want AI in their editor, but Continue emphasizes config-driven flexibility while Cursor emphasizes product polish and cloud agents.",
+    "criteria": [
+      {
+        "label": "Customization",
+        "agentA": "Config.json agents, context providers, slash commands",
+        "agentB": "Polished defaults with less config surface",
+        "winner": "a"
+      },
+      {
+        "label": "Out-of-box UX",
+        "agentA": "Requires tuning for best results",
+        "agentB": "Immediate agentic editing after install",
+        "winner": "b"
+      },
+      {
+        "label": "Open source",
+        "agentA": "Fully open source",
+        "agentB": "Proprietary",
+        "winner": "a"
+      }
+    ],
+    "bestForA": [
+      "Teams building custom internal agents on open tooling",
+      "Developers who want BYOM in existing IDEs"
+    ],
+    "bestForB": [
+      "Developers who want the fastest agentic IDE experience",
+      "Teams using Cursor cloud agents"
+    ],
+    "faqs": [],
+    "sourceUrls": []
+  },
+  {
+    "slug": "replit-agent-vs-cursor",
+    "agentA": "replit-agent",
+    "agentB": "cursor",
+    "quickAnswer": "Replit Agent builds and deploys cloud apps from prompts. Cursor is a professional AI editor for existing codebases. Replit for greenfield prototypes; Cursor for daily engineering on real repos.",
+    "verdict": "These tools overlap in marketing as AI coding agents but target different jobs: Replit Agent is a cloud app builder; Cursor is a developer's primary editor for production code.",
+    "criteria": [
+      {
+        "label": "Greenfield prototyping",
+        "agentA": "Excellent — full stack in browser with instant deploy",
+        "agentB": "Good for new files but assumes local repo workflow",
+        "winner": "a"
+      },
+      {
+        "label": "Existing codebase work",
+        "agentA": "Limited for large local monorepos",
+        "agentB": "Purpose-built for professional repo-scale editing",
+        "winner": "b"
+      }
+    ],
+    "bestForA": [
+      "Indie hackers and learners shipping MVPs fast",
+      "Non-developers exploring vibe coding"
+    ],
+    "bestForB": [
+      "Professional software engineers on production repos",
+      "Teams with local git workflows and CI/CD"
+    ],
+    "faqs": [],
+    "sourceUrls": []
+  },
+  {
+    "slug": "amazon-q-vs-github-copilot",
+    "agentA": "amazon-q",
+    "agentB": "github-copilot",
+    "quickAnswer": "Amazon Q Developer adds AWS-aware coding and transformation tools. GitHub Copilot leads on GitHub integration and general IDE adoption. Choose based on cloud stack, not raw completion quality.",
+    "verdict": "Both are enterprise-friendly AI coding assistants. Amazon Q wins for AWS-heavy workloads; Copilot wins for GitHub-centric organizations.",
+    "criteria": [
+      {
+        "label": "AWS context",
+        "agentA": "Deep AWS API and infrastructure awareness",
+        "agentB": "General-purpose without AWS specialization",
+        "winner": "a"
+      },
+      {
+        "label": "GitHub workflow",
+        "agentA": "Standard IDE plugins",
+        "agentB": "Native GitHub PR and issue integration",
+        "winner": "b"
+      },
+      {
+        "label": "Free tier",
+        "agentA": "Generous individual free tier on AWS",
+        "agentB": "Free tier for verified individuals",
+        "winner": "tie"
+      }
+    ],
+    "bestForA": [
+      "AWS-native engineering teams",
+      "Enterprises modernizing Java/.NET on AWS"
+    ],
+    "bestForB": [
+      "GitHub Enterprise customers",
+      "Teams standardized on Microsoft developer tools"
+    ],
+    "faqs": [],
+    "sourceUrls": []
+  },
+  {
+    "slug": "aider-vs-claude-code",
+    "agentA": "aider",
+    "agentB": "claude-code",
+    "quickAnswer": "Both are terminal-first coding agents. Aider is open source and git-commit-centric. Claude Code is Anthropic's managed agent with deep Claude integration.",
+    "verdict": "Aider offers transparency and model choice; Claude Code offers polish and Anthropic model depth. Terminal-first developers often evaluate both.",
+    "criteria": [
+      {
+        "label": "Open source",
+        "agentA": "Apache 2.0 — inspect and self-host",
+        "agentB": "Commercial closed-source product",
+        "winner": "a"
+      },
+      {
+        "label": "Managed experience",
+        "agentA": "Bring your own keys and setup",
+        "agentB": "Integrated Anthropic agent harness",
+        "winner": "b"
+      },
+      {
+        "label": "Git audit trail",
+        "agentA": "Automatic commits are a core design",
+        "agentB": "Git integration available but not commit-centric",
+        "winner": "a"
+      }
+    ],
+    "bestForA": [
+      "OSS advocates who want git-native audit trails",
+      "Developers using local or multi-provider models"
+    ],
+    "bestForB": [
+      "Teams standardized on Claude models",
+      "Engineers wanting Anthropic-supported agent UX"
+    ],
+    "faqs": [],
+    "sourceUrls": []
+  },
+  {
+    "slug": "continue-vs-github-copilot",
+    "agentA": "continue",
+    "agentB": "github-copilot",
+    "quickAnswer": "Continue is an open-source BYOM assistant in your IDE. Copilot is Microsoft's managed assistant with the largest reach. Continue for control; Copilot for convenience and enterprise GitHub integration.",
+    "verdict": "Continue targets developers who want to own their agent config. Copilot targets organizations that want a turnkey assistive layer across GitHub and IDEs.",
+    "criteria": [
+      {
+        "label": "Configuration control",
+        "agentA": "Full config.json control over agents and context",
+        "agentB": "Managed defaults with limited customization",
+        "winner": "a"
+      },
+      {
+        "label": "Enterprise reach",
+        "agentA": "Community-driven adoption",
+        "agentB": "Microsoft/GitHub enterprise sales and admin",
+        "winner": "b"
+      }
+    ],
+    "bestForA": [
+      "Developers customizing agents and context providers",
+      "Teams avoiding vendor-specific editor forks"
+    ],
+    "bestForB": [
+      "GitHub Enterprise deployments",
+      "Organizations wanting turnkey AI assist everywhere"
+    ],
+    "faqs": [],
+    "sourceUrls": []
+  }
+]

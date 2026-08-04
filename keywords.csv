@@ -1,0 +1,68 @@
+keyword,volume,kd,intent,priority,cluster,is_pillar,ai_overview_present,source,notes
+ai jobs,,,commercial,target,ai_jobs,true,true,autocomplete,Core job board pillar — 457 live listings
+llm jobs,,,commercial,target,ai_jobs,false,true,autocomplete,High-intent role title cluster
+ai engineer,,,commercial,target,ai_jobs,false,true,autocomplete,Primary job seeker head term
+remote ai,,,commercial,easy_win,ai_jobs,false,true,autocomplete,Low-competition location modifier
+genai jobs,,,commercial,easy_win,ai_jobs,false,,autocomplete,Niche startup hiring term
+agentic engineer,,,commercial,easy_win,ai_jobs,false,true,autocomplete,Rising role title — Indeed PAA validated
+llm engineer,,,commercial,target,ai_jobs,false,true,paa,Indeed people-also-searched term
+ml engineer,,,commercial,hard,ai_jobs,false,true,autocomplete,Broad head term — pursue via modifiers
+prompt engineer,,,commercial,target,ai_jobs,false,true,paa,3083+ Indeed listings validated
+rag engineer,,,commercial,easy_win,ai_jobs,false,true,paa,Dedicated SERP pages on Indeed/ZipRecruiter
+nlp engineer,,,commercial,target,ai_jobs,false,,paa,Indeed related search term
+ai careers,,,commercial,target,ai_jobs,false,,autocomplete,Career exploration intent
+ai startup,,,commercial,easy_win,ai_jobs,false,,competitor,Startup.jobs and Wellfound gap term
+remote ai jobs,,,transactional,easy_win,ai_jobs,false,true,autocomplete,Direct match to /remote pages
+ai engineer jobs,,,transactional,target,ai_jobs,false,true,autocomplete,High purchase-intent job search
+mlops engineer,,,commercial,target,ai_jobs,false,,paa,Indeed agentic AI related search
+ai developer,,,commercial,target,ai_jobs,false,,autocomplete,Alternate role title
+machine learning jobs,,,commercial,hard,ai_jobs,false,,autocomplete,Broad category — content authority play
+ai agent jobs,,,transactional,target,ai_jobs,false,,competitor,Competitor boards rank for this (AgenticCareers)
+ml jobs,,,commercial,easy_win,ai_jobs,false,,manual,Supporting role title variant
+software engineer ai,,,commercial,target,ai_jobs,false,,paa,Indeed people-also-searched term
+coding agents,,,commercial,target,coding_agents,true,true,autocomplete,Compare hub anchor term
+ai coding,,,commercial,target,coding_agents,false,true,autocomplete,Category head term for rankings
+ai coding agents,,,commercial,target,coding_agents,false,true,autocomplete,Hub page title intent
+ai coding tools,,,commercial,target,coding_agents,false,true,autocomplete,Commercial evaluation intent
+ai coding assistant,,,commercial,target,coding_agents,false,true,autocomplete,PAA and comparison SERP validated
+claude code,,,commercial,target,coding_agents,false,true,autocomplete,Rank 2 agent by token usage
+github copilot,,,commercial,hard,coding_agents,false,true,competitor,Must-have agent profile — competitive head term
+windsurf,,,commercial,target,coding_agents,false,,autocomplete,IDE agent in rankings
+cline,,,commercial,easy_win,coding_agents,false,true,autocomplete,Open-source VS Code agent
+aider,,,commercial,easy_win,coding_agents,false,,reddit,Terminal-first OSS agent — strong Reddit language
+codex,,,commercial,target,coding_agents,false,,autocomplete,OpenAI coding agent
+cursor alternative,,,commercial,target,coding_agents,false,true,paa,High-intent comparison query
+replit agent,,,commercial,target,coding_agents,false,,competitor,Cloud app builder agent
+amazon q,,,commercial,target,coding_agents,false,,competitor,AWS-native coding assistant
+continue dev,,,commercial,easy_win,coding_agents,false,,competitor,Open-source IDE assistant
+kilo code,,,commercial,easy_win,coding_agents,false,,manual,Open-source multi-IDE agent in rankings
+hermes agent,,,research,easy_win,coding_agents,false,,manual,Rank 1 by token usage in site data
+roocode,,,commercial,easy_win,coding_agents,false,,competitor,Cline fork — Reddit rising mention
+devin,,,commercial,hard,coding_agents,false,,reddit,Enterprise agent — $500/mo tier
+ide agent,,,commercial,easy_win,coding_agents,false,,manual,Category descriptor for agent types
+coding agents benchmark,,,research,content,coding_agents,false,,autocomplete,Leaderboard content opportunity
+agent comparison,,,commercial,target,comparisons,true,,manual,Pairwise pages pillar — /compare/[slug]
+cursor vs,,,research,target,comparisons,false,true,autocomplete,Top pairwise page stem
+cline vs,,,research,easy_win,comparisons,false,true,competitor,Cursor vs Cline page exists
+windsurf vs,,,research,easy_win,comparisons,false,,competitor,Cursor vs Windsurf page opportunity
+copilot vs,,,research,target,comparisons,false,true,autocomplete,cursor-vs-github-copilot page match
+best coding agent,,,commercial,target,comparisons,false,true,paa,Hub page title intent — AI Overview present
+coding agents comparison,,,research,target,comparisons,false,true,autocomplete,Comparison hub SERP term
+claude vs,,,research,target,comparisons,false,true,autocomplete,Claude Code vs Cursor stem
+mcp servers,,,commercial,easy_win,mcp_ecosystem,true,true,autocomplete,Directory pillar — 50+ live MCP pages
+mcp server,,,commercial,easy_win,mcp_ecosystem,false,true,autocomplete,Singular variant with strong autocomplete
+mcp directory,,,commercial,easy_win,mcp_ecosystem,false,true,manual,Direct match to /openclaw/mcps
+mcp registry,,,commercial,easy_win,mcp_ecosystem,false,,manual,Official registry discovery term
+openclaw,,,research,easy_win,mcp_ecosystem,false,,reddit,Niche ecosystem with strong community language
+smithery,,,commercial,easy_win,mcp_ecosystem,false,,competitor,Primary MCP registry competitor
+mcp servers list,,,research,easy_win,mcp_ecosystem,false,,autocomplete,List intent — directory page match
+model context protocol,,,research,target,mcp_ecosystem,false,true,paa,Explainer term — AI Overview on official docs
+cursor mcp,,,commercial,easy_win,mcp_ecosystem,false,,competitor,Cursor-specific MCP install intent
+agentic coding,,,informational,target,agentic_coding,true,true,autocomplete,Rising category for autonomous dev workflows
+agentic dev,,,informational,easy_win,agentic_coding,false,,manual,Site positioning niche term
+agentic tools,,,commercial,target,agentic_coding,false,,autocomplete,Broader dev tooling angle
+ai agents,,,informational,hard,agentic_coding,false,true,autocomplete,Broad head term — always use modifiers
+agentic engineering,,,informational,easy_win,agentic_coding,false,,autocomplete,Emerging discipline term — agenticengineeringjobs.com validates
+cursor rules,,,informational,easy_win,cursor_ecosystem,true,,autocomplete,Compete with cursor.directory
+vibe coding,,,informational,content,vibe_coding,true,true,paa,Tangential traffic — blog topic cluster
+code review,,,commercial,content,dev_workflows,true,,paa,Adjacent MCP category on site

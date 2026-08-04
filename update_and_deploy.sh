@@ -15,7 +15,10 @@ cp "$DIR/seeded_jobs.json" "$DIR/web/data/jobs.json"
 cp "$DIR/llms.txt" "$DIR/web/public/llms.txt"
 cp "$DIR/schema_jobs.json" "$DIR/web/public/schema_jobs.json"
 
-# 4. Deploy update to Vercel
+# 4. Append agent directory + coding agent compare sections to llms.txt
+python3 "$DIR/scripts/generate_agent_llms_feed.py"
+
+# 5. Deploy update to Vercel
 cd "$DIR/web"
 /Users/petekeating/.npm-global/bin/vercel --prod --yes
 

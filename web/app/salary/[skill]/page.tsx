@@ -6,6 +6,7 @@ import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
 import { Container, Breadcrumb, PageHeading, SectionLabel } from '@/components/page-shell';
 import { JobList } from '@/components/job-list';
+import { GeoContent } from '@/components/geo-content';
 
 export function generateStaticParams() {
   return getAllTags().slice(0, 20).map(({ tag }) => ({ skill: slugify(tag) }));
@@ -87,6 +88,8 @@ export default async function SalaryPage({ params }: { params: Promise<{ skill: 
               Browse all {tagJobs.length} {tag} jobs
             </Link>
           </div>
+
+          {skill === 'llm' ? <GeoContent url="/salary/llm" /> : null}
         </Container>
       </main>
 

@@ -14,7 +14,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const { email, type, company, jobTitle } = await request.json();
+    const { email, type, company, jobTitle, mcpName } = await request.json();
 
     if (!email || !type) {
       return NextResponse.json(
@@ -51,6 +51,21 @@ export async function POST(request: NextRequest) {
           <p>Your job posting <strong>${jobTitle || 'New Role'}</strong> at <strong>${company}</strong> is now live on AI Jobs Directory.</p>
           <p><a href="https://www.artificialjobs.dev" style="background: #000; color: white; padding: 12px 24px; border-radius: 6px; text-decoration: none; display: inline-block;">View on Site</a></p>
           <p style="color: #666; font-size: 12px; margin-top: 24px;">Your job will be visible to AI search engines including Perplexity, Claude, and ChatGPT.</p>
+        </div>
+      `;
+    } else if (type === 'post-mcp') {
+      subject = `Your MCP Listing is Active - ${mcpName || 'New Server'}`;
+      html = `
+        <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 600px; margin: 0 auto;">
+          <h2>MCP Listing Confirmed</h2>
+          <p>Your MCP server <strong>${mcpName || 'New Server'}</strong> from <strong>${company}</strong> is subscribed on artificialjobs.dev.</p>
+          <p>Your listing includes:</p>
+          <ul>
+            <li>Featured placement when the MCP directory launches</li>
+            <li>llms.txt inclusion for AI search discovery</li>
+            <li>Publisher profile with install link</li>
+          </ul>
+          <p style="color: #666; font-size: 12px; margin-top: 24px;">Questions? Reply to this email.</p>
         </div>
       `;
     }

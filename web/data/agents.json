@@ -1,0 +1,1228 @@
+[
+  {
+    "slug": "hermes-agent",
+    "name": "Hermes Agent",
+    "company": "Nous Research",
+    "website": "https://nousresearch.com",
+    "faviconUrl": "https://nousresearch.com/favicon.ico",
+    "tokenUsage": "1.4T",
+    "rank": 1,
+    "tagline": "Open-source, self-improving AI agent with persistent memory and 40+ built-in tools.",
+    "features": [
+      "Persistent memory across sessions",
+      "40+ built-in agentic tools",
+      "Open-source and self-hostable",
+      "Built on Hermes 4 fine-tuned models",
+      "Distributed, unbiased training infrastructure",
+      "Supports unrestricted model availability and customization"
+    ],
+    "platforms": [
+      "Web",
+      "API",
+      "Self-hosted"
+    ],
+    "pricing": "unknown",
+    "openSource": true,
+    "bestFor": [
+      "Developers who want full control over their AI agent stack",
+      "Teams building on top of open-source language models",
+      "Researchers exploring agentic reasoning and tool use"
+    ],
+    "pros": [
+      "Fully open-source with no vendor lock-in",
+      "Backed by Nous Research, a leading force in open-source AI",
+      "Persistent memory enables more coherent long-running tasks"
+    ],
+    "cons": [
+      "Pricing and availability details are not publicly documented",
+      "Self-hosting requires technical expertise and infrastructure setup"
+    ],
+    "quickAnswer": "Hermes Agent is Nous Research's open-source AI coding and task agent, built on their Hermes 4 models. It offers persistent memory, 40+ tools, and a commitment to unrestricted availability — making it a strong choice for developers who prioritize transparency, control, and open-source values.",
+    "bodySections": [
+      {
+        "heading": "What Is Hermes Agent?",
+        "content": "Hermes Agent is the flagship agentic product from Nous Research, one of the leading organizations in the American open-source AI movement. Built on top of their Hermes 4 language models, the agent is designed to handle complex, multi-step tasks with access to over 40 built-in tools. Unlike closed-source alternatives, Hermes Agent is fully open and self-hostable, aligning with Nous Research's mission to advance human rights and freedoms through unrestricted AI availability."
+      },
+      {
+        "heading": "Key Capabilities",
+        "content": "Hermes Agent distinguishes itself through persistent memory, which allows it to retain context across multiple sessions — a critical feature for long-horizon software development and research tasks. Its extensive tool library covers common agentic workflows including file manipulation, code execution, web interaction, and more. The agent is powered by Hermes 4, a model fine-tuned specifically for instruction-following, reasoning, and tool use."
+      },
+      {
+        "heading": "Open-Source Philosophy",
+        "content": "Nous Research's core mission is to advance open-source AI and make powerful language models freely accessible. Hermes Agent embodies this philosophy by being open-source and supporting self-hosting. This means developers and organizations can inspect, modify, and deploy the agent on their own infrastructure without relying on proprietary APIs or accepting usage restrictions — a significant advantage for privacy-sensitive or regulated environments."
+      },
+      {
+        "heading": "Who Should Use Hermes Agent?",
+        "content": "Hermes Agent is best suited for technically proficient developers, AI researchers, and teams that want to build custom agentic workflows without vendor lock-in. It is particularly appealing to those already invested in the open-source AI ecosystem or who want to contribute to or build on top of Nous Research's models and infrastructure. Organizations requiring full data sovereignty will also find the self-hosted deployment model attractive."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Hermes Agent free to use?",
+        "answer": "Hermes Agent is open-source, meaning the underlying models and code are freely available. However, specific pricing for hosted or managed versions has not been publicly disclosed. Self-hosting is an option for those with the necessary infrastructure."
+      },
+      {
+        "question": "What models power Hermes Agent?",
+        "answer": "Hermes Agent is built on Nous Research's Hermes 4 models, which are fine-tuned for advanced instruction-following, reasoning, and agentic tool use. These models are available via Nous Research's releases and on HuggingFace."
+      },
+      {
+        "question": "How does Hermes Agent compare to closed-source agents like Claude Code or Codex?",
+        "answer": "Unlike Claude Code or Codex, Hermes Agent is fully open-source and self-hostable, giving developers complete control over the model and data. The trade-off is that setup requires more technical effort, whereas closed-source agents offer a more polished, managed experience out of the box."
+      }
+    ],
+    "relatedSlugs": [
+      "cline",
+      "claude-code",
+      "codex",
+      "kilo-code",
+      "openclaw",
+      "cursor"
+    ],
+    "sourceUrls": [
+      "https://nousresearch.com"
+    ]
+  },
+  {
+    "slug": "kilo-code",
+    "name": "Kilo Code",
+    "company": "Kilo Code",
+    "website": "https://kilocode.ai",
+    "faviconUrl": "https://kilocode.ai/favicon.ico",
+    "tokenUsage": "296B",
+    "rank": 2,
+    "tagline": "Open-source AI coding agent for VS Code, JetBrains, and CLI.",
+    "features": [
+      "500+ models with zero inference markup and bring-your-own-keys support",
+      "Multiple agent modes: Code, Architect, Debug, Ask, and Auto",
+      "Auto Model routing selects the right model based on task and budget",
+      "Works across VS Code, JetBrains IDEs, CLI, cloud agents, and Slack",
+      "Full prompt and context window transparency via MIT-licensed open source",
+      "Cloud agents and code review workflows without switching tools"
+    ],
+    "platforms": [
+      "VS Code",
+      "JetBrains",
+      "IntelliJ IDEA",
+      "PyCharm",
+      "WebStorm",
+      "CLI",
+      "Cloud",
+      "Slack"
+    ],
+    "pricing": "Free tier available with no credit card required. Paid plans route through Kilo's Gateway at cost with zero markup on AI inference. Bring-your-own-keys and local models also supported.",
+    "openSource": true,
+    "bestFor": [
+      "Developers who want full transparency and control over their AI coding agent",
+      "Teams needing a single agent that works across multiple IDEs and cloud environments",
+      "Cost-conscious engineers who want access to frontier models without markup"
+    ],
+    "pros": [
+      "Truly open source (MIT license) with full prompt and context visibility — no black boxes",
+      "Zero markup on AI inference with support for 500+ models and bring-your-own-keys",
+      "Unified agent experience across VS Code, JetBrains, CLI, and cloud with seamless handoff"
+    ],
+    "cons": [
+      "Newer platform compared to incumbents like Cursor, so some enterprise integrations are still maturing",
+      "Auto Model routing adds abstraction that may confuse developers who want direct model control",
+      "Cloud agent and Slack features are newer and may lack the polish of core IDE functionality"
+    ],
+    "quickAnswer": "Kilo Code is a fully open-source AI coding agent supporting 500+ models at zero markup. It runs across VS Code, JetBrains, CLI, and cloud environments with multiple specialized modes — Code, Architect, Debug — making it ideal for developers who want transparency, flexibility, and cost control.",
+    "bodySections": [
+      {
+        "heading": "What Is Kilo Code?",
+        "content": "Kilo Code is an open-source AI coding agent built for developers who want power and transparency without vendor lock-in. Ranked #1 Open Source Product of the Month and used by developers at Meta, Amazon, Airbnb, and PayPal, Kilo provides a single agent that works across VS Code, JetBrains IDEs (IntelliJ IDEA, PyCharm, WebStorm), the command line, cloud environments, and Slack. With over 3 million users and 40 trillion tokens processed, it has quickly become one of the most adopted open-source coding agents available."
+      },
+      {
+        "heading": "Key Features and Agent Modes",
+        "content": "Kilo Code ships with several specialized modes to match different engineering tasks. Code Mode handles writing, refactoring, and shipping production-ready code with full codebase awareness. Architect Mode helps plan complex features before writing a single line. Debug Mode traces errors and suggests targeted fixes. Ask Mode answers questions about your codebase. Auto Mode uses intelligent routing to select the right strategy based on your budget and the complexity of the work. Each mode is available within the same agent, so there is no need to switch tools mid-workflow."
+      },
+      {
+        "heading": "Pricing and Model Access",
+        "content": "One of Kilo Code's defining characteristics is its pricing model. Unlike many AI coding tools that mark up inference costs, Kilo routes requests through its Gateway at cost — zero markup. Developers can choose from four routing tiers: Free (best available free and experimental models), Efficient (session-aware routing for smarter spend), Balanced (cost-effective paid models for everyday work), and Frontier (latest and most capable paid models). You can also bring your own API keys or run local models entirely. There is a free tier that requires no credit card to get started."
+      },
+      {
+        "heading": "Open Source and Transparency",
+        "content": "Kilo Code is MIT-licensed and fully auditable. Every prompt, context window decision, and model routing choice can be inspected. There is no silent model switching. Developers can fork the repository, modify behavior, or self-host the entire stack. This level of transparency is rare among AI coding tools and makes Kilo particularly appealing to security-conscious teams and enterprises that need to audit AI interactions in their development workflows."
+      },
+      {
+        "heading": "Platform and Ecosystem Coverage",
+        "content": "Kilo runs wherever developers work. The VS Code extension is available on both the VS Code Marketplace and Open VSX. JetBrains support covers IntelliJ IDEA, PyCharm, and WebStorm through a native Kotlin plugin built for split mode — keeping the UI local while indexing and execution run remotely. The CLI enables terminal-first workflows, while Cloud Agents allow remote, parallel execution with isolated worktrees. A Slack integration and dedicated Code Reviewer agent round out the ecosystem, enabling code review workflows without leaving familiar tools."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Kilo Code really free to use?",
+        "answer": "Yes. Kilo Code offers a free tier that requires no credit card to get started. Free tier users are routed to the best available free and experimental models. Paid tiers unlock Balanced, Efficient, and Frontier model routing at cost with zero markup on AI inference. You can also bring your own API keys from providers like Anthropic, OpenAI, or others."
+      },
+      {
+        "question": "How does Kilo Code differ from Cursor or GitHub Copilot?",
+        "answer": "Kilo Code is fully open source under the MIT license, which means you can inspect every prompt and context decision — something neither Cursor nor GitHub Copilot offer. It also provides zero-markup model access across 500+ models, supports bring-your-own-keys, and runs across VS Code, JetBrains, CLI, and cloud environments from a single unified agent. Cursor and Copilot are closed-source and primarily tied to their own billing and model selection."
+      },
+      {
+        "question": "Does Kilo Code support MCP (Model Context Protocol)?",
+        "answer": "Yes, Kilo Code supports MCP, allowing the agent to connect to external tools and data sources through a standardized protocol. This extends the agent's capabilities beyond the codebase to interact with APIs, databases, and other developer tooling as part of its agentic workflows."
+      }
+    ],
+    "relatedSlugs": [
+      "cline",
+      "cursor",
+      "windsurf",
+      "claude-code",
+      "codex",
+      "codebuff"
+    ],
+    "sourceUrls": [
+      "https://kilocode.ai"
+    ]
+  },
+  {
+    "slug": "cline",
+    "name": "Cline",
+    "company": "Cline Bot Inc.",
+    "website": "https://cline.bot",
+    "faviconUrl": "https://cline.bot/favicon.ico",
+    "tokenUsage": "228B",
+    "rank": 3,
+    "tagline": "Open-source AI coding agent inside your IDE with browser automation.",
+    "features": [
+      "Multi-file coordinated edits with linter-aware fixes, diffs, and one-click undo",
+      "Plan-and-Act mode for strategy alignment before execution",
+      "Terminal command execution with live output reaction for dev servers, tests, and deploys",
+      "MCP server integration and custom plugin support via SDK",
+      "Multi-agent orchestration with coordinator and specialist roles on cron schedules",
+      "Integrates with Slack, Discord, Linear, GitHub Actions, and GitLab pipelines"
+    ],
+    "platforms": [
+      "VS Code",
+      "CLI",
+      "SDK",
+      "GitHub Actions",
+      "GitLab CI",
+      "Slack",
+      "Discord",
+      "Telegram",
+      "Linear"
+    ],
+    "pricing": "Open source and free to self-host; bring your own API keys. ClinePass subscription available for managed access. Enterprise pricing available on request.",
+    "openSource": true,
+    "bestFor": [
+      "Developers who want a fully open-source, model-agnostic coding agent in their IDE or terminal",
+      "Teams needing multi-file refactoring and automated CI/CD pipeline integration",
+      "Engineers who want to embed an AI coding runtime into their own products via the SDK"
+    ],
+    "pros": [
+      "Truly open source (Apache 2.0) with 250+ contributors and 65k+ GitHub stars",
+      "Model-agnostic — supports Claude, GPT, Gemini, Ollama, LM Studio, and any OpenAI-compatible endpoint",
+      "Flexible deployment across IDE, CLI, SDK, and popular chat and CI platforms"
+    ],
+    "cons": [
+      "Bring-your-own-key model means API costs fall on the user, which can add up for heavy usage",
+      "Wide surface area (IDE, CLI, SDK, MCP, multi-agent) creates a steeper learning curve compared to simpler tools",
+      "Self-managed setup requires more configuration than fully hosted alternatives"
+    ],
+    "quickAnswer": "Cline is a free, Apache-licensed AI coding agent that runs inside VS Code, your terminal, or embedded via SDK. It supports every major model, executes bash commands live, coordinates multi-file edits, and integrates with CI pipelines and chat tools — all without vendor lock-in.",
+    "bodySections": [
+      {
+        "heading": "What Is Cline?",
+        "content": "Cline is an open-source AI coding agent built by Cline Bot Inc. and trusted by over 8 million developers. It operates across three surfaces — a VS Code extension, a CLI you install globally via npm, and an embeddable SDK — giving teams the flexibility to use it however their workflow demands. Unlike closed, subscription-only tools, Cline is Apache 2.0 licensed and built with contributions from more than 250 open-source developers."
+      },
+      {
+        "heading": "Core Capabilities",
+        "content": "Cline's Plan-and-Act architecture lets you align on a strategy before execution begins. In Plan mode you describe what you want; in Act mode Cline makes coordinated multi-file changes, runs bash commands, and reacts to terminal output in real time. Every step includes a diff view, checkpoint, and one-click undo so you stay in control. The .clinerules file lets you ship coding standards and architecture conventions directly in your repo so the agent learns your project's norms automatically."
+      },
+      {
+        "heading": "Model Flexibility and No Vendor Lock-In",
+        "content": "Cline works with Claude, GPT-4, Gemini, local Ollama and LM Studio models, and any OpenAI-compatible API endpoint. You bring your own API key or your own model weights. This means your workflow stays identical regardless of which provider you choose or switch to, and you are never locked into a single AI vendor's pricing or availability."
+      },
+      {
+        "heading": "Extending Cline with MCP and Multi-Agent Teams",
+        "content": "Through the Model Context Protocol (MCP), you can register custom tools and lifecycle hooks that connect Cline to databases, external APIs, and infrastructure services. The SDK enables multi-agent architectures where a coordinator agent delegates subtasks to specialist agents, each with their own tools and context window. These agent teams can be scheduled on cron jobs for recurring automations or triggered from Slack, Discord, Telegram, Linear, GitHub Actions, and GitLab pipelines."
+      },
+      {
+        "heading": "Who Should Use Cline?",
+        "content": "Cline is best suited for developers and engineering teams who prioritize openness, model choice, and extensibility over a polished out-of-the-box experience. If you want to embed AI coding capabilities into your own product, automate CI workflows, or coordinate complex multi-file refactors without paying per-seat SaaS fees, Cline is a strong fit. Teams willing to manage their own API keys and configuration will get the most value from its breadth of features."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Cline really free to use?",
+        "answer": "Cline itself is free and open source under the Apache 2.0 license. However, it requires API keys from model providers such as Anthropic, OpenAI, or Google, and those providers charge for token usage. ClinePass and Enterprise plans offer managed options for teams that prefer a subscription model."
+      },
+      {
+        "question": "How does Cline differ from Cursor or Windsurf?",
+        "answer": "Cursor and Windsurf are proprietary, standalone AI-powered editors. Cline is an open-source agent that runs inside VS Code, your terminal, or your own product via SDK. Cline offers more flexibility in model choice, is fully extensible through MCP and plugins, and can be embedded in CI pipelines and external chat tools in ways that editor-native tools cannot."
+      },
+      {
+        "question": "Can Cline run without an internet connection or cloud models?",
+        "answer": "Yes. Cline supports local models through Ollama and LM Studio. As long as you configure Cline to point at a local OpenAI-compatible endpoint, you can run entirely offline without sending any code or context to external cloud providers."
+      }
+    ],
+    "relatedSlugs": [
+      "cursor",
+      "windsurf",
+      "claude-code",
+      "codex",
+      "kilo-code",
+      "codebuff",
+      "openclaw"
+    ],
+    "sourceUrls": [
+      "https://cline.bot"
+    ]
+  },
+  {
+    "slug": "claude-code",
+    "name": "Claude Code",
+    "company": "Anthropic",
+    "website": "https://claude.ai/code",
+    "faviconUrl": "https://claude.ai/apple-touch-icon.png",
+    "tokenUsage": "222B",
+    "rank": 4,
+    "tagline": "Anthropic's agentic coding tool for planning and executing across your codebase.",
+    "features": [
+      "Agentic planning and multi-step task execution across large codebases",
+      "Deep integration with Claude's extended context window for whole-repo understanding",
+      "Automated file editing, creation, and deletion with confirmation controls",
+      "Terminal and shell command execution within a sandboxed environment",
+      "Supports iterative debugging by reading compiler and test output",
+      "Built-in safety guardrails powered by Anthropic's Constitutional AI research"
+    ],
+    "platforms": [
+      "Web",
+      "CLI",
+      "API"
+    ],
+    "pricing": "Usage-based via Anthropic API; included with Claude Pro and Claude Team subscriptions — exact per-token rates vary by model tier",
+    "openSource": false,
+    "bestFor": [
+      "Developers who want an AI agent that can plan and execute multi-step coding tasks end-to-end",
+      "Teams already using Anthropic's Claude models and looking for a native agentic coding workflow",
+      "Engineers tackling large refactors or feature implementations that require reasoning across an entire codebase"
+    ],
+    "pros": [
+      "Backed by Anthropic's safety research, offering more predictable and controllable agentic behavior",
+      "Leverages Claude's long context window to reason over entire repositories without losing track of dependencies",
+      "Handles full coding loops — planning, writing, running tests, and iterating — with minimal hand-holding"
+    ],
+    "cons": [
+      "Pricing can accumulate quickly for large agentic runs given high token consumption",
+      "Ecosystem and third-party integrations are less mature compared to editor-native tools like Cursor or Windsurf",
+      "Requires familiarity with Anthropic's API or subscription tiers to get the most out of advanced features"
+    ],
+    "quickAnswer": "Claude Code is Anthropic's agentic coding assistant designed to plan and execute complex development tasks across your entire codebase. It combines Claude's large context window with autonomous file editing, shell execution, and iterative debugging — making it a strong choice for multi-step engineering workflows.",
+    "bodySections": [
+      {
+        "heading": "What Is Claude Code?",
+        "content": "Claude Code is Anthropic's purpose-built agentic coding tool. Unlike a simple autocomplete or chat-based assistant, Claude Code is designed to take high-level instructions and autonomously break them down into a sequence of concrete steps: reading relevant files, planning changes, writing or editing code, running shell commands, interpreting test output, and iterating until the task is complete. It is powered by Anthropic's Claude model family and benefits directly from advances in Claude's reasoning and long-context capabilities."
+      },
+      {
+        "heading": "Key Capabilities",
+        "content": "Claude Code can operate across an entire repository rather than a single file or snippet. It reads your project structure, understands inter-file dependencies, and makes coordinated changes that respect your existing architecture. It can execute terminal commands, run test suites, and read the resulting output to inform its next action — creating a genuine feedback loop that mirrors how a human developer works. Safety controls let you review and approve actions before they are applied, giving you oversight without breaking the agentic flow."
+      },
+      {
+        "heading": "How It Compares to Editor-Native Tools",
+        "content": "Tools like Cursor and Windsurf embed deeply into an IDE, giving them tight UI integration and a familiar developer experience. Claude Code, by contrast, is designed as a standalone agentic layer that can be accessed via the web, CLI, or API. This makes it more flexible for automation pipelines and CI-adjacent workflows but means it currently lacks the instant, in-editor feel that some developers prefer. For teams that want to build custom tooling around an AI coding agent, Claude Code's API-first nature is a genuine advantage."
+      },
+      {
+        "heading": "Pricing and Access",
+        "content": "Claude Code is accessible through Claude Pro and Claude Team subscription plans, as well as directly through the Anthropic API on a usage-based model. Because agentic runs can involve many thousands of tokens per task — reading files, generating plans, producing code, and re-reading output — costs can add up faster than with a standard chat interaction. Anthropic has not published a fixed flat rate for Claude Code specifically; costs depend on the underlying model tier and token consumption per session."
+      },
+      {
+        "heading": "Who Should Use Claude Code?",
+        "content": "Claude Code is best suited for developers and engineering teams who need more than code suggestions — they need an agent that can own a task from start to finish. It is particularly valuable for large refactors, adding new features to complex codebases, writing and fixing tests at scale, and any workflow where maintaining context across many files is critical. Organizations already invested in Anthropic's ecosystem will find the tightest integration, but the tool is accessible to any developer via the API."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Claude Code the same as asking Claude questions in the regular chat interface?",
+        "answer": "No. While both are powered by Claude models, Claude Code is explicitly designed for agentic, multi-step task execution. It can read your actual files, run shell commands, edit code, and iterate based on test results — actions that are not available in the standard Claude chat interface."
+      },
+      {
+        "question": "Does Claude Code work with any programming language?",
+        "answer": "Claude Code inherits Claude's broad language knowledge and can work with most mainstream programming languages including Python, TypeScript, JavaScript, Go, Rust, Java, C++, and more. Performance is best in languages that are well-represented in Claude's training data, such as Python and TypeScript."
+      },
+      {
+        "question": "How does Claude Code handle sensitive or proprietary code?",
+        "answer": "Code processed by Claude Code is subject to Anthropic's standard data handling and privacy policies. Enterprise and API customers should review Anthropic's data retention and privacy terms to ensure compliance with their organization's requirements before using Claude Code on sensitive or proprietary codebases."
+      }
+    ],
+    "relatedSlugs": [
+      "codex",
+      "cursor",
+      "windsurf",
+      "cline",
+      "kilo-code",
+      "codebuff"
+    ],
+    "sourceUrls": [
+      "https://claude.ai/code",
+      "https://www.anthropic.com",
+      "https://docs.anthropic.com"
+    ]
+  },
+  {
+    "slug": "openclaw",
+    "name": "OpenClaw",
+    "company": "OpenClaw",
+    "website": "https://openclaw.ai",
+    "faviconUrl": "https://openclaw.ai/favicon.ico",
+    "tokenUsage": "131B",
+    "rank": 5,
+    "tagline": "Open-source AI agent connected to messaging apps for real-world actions.",
+    "features": [
+      "Connects to WhatsApp, Telegram, and other chat apps as a conversational interface",
+      "Manages email, calendar, and inbox organization autonomously",
+      "Runs locally on macOS, Linux, and Windows with a one-liner installer",
+      "Hackable, open-source architecture with a plugin/extensions system",
+      "Supports multiple AI model backends including GPT and Claude subscriptions",
+      "Companion native apps for macOS and Windows with tray and gateway controls"
+    ],
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "pricing": "Free and open-source; bring your own API key or compatible AI subscription",
+    "openSource": true,
+    "bestFor": [
+      "Power users who want a personal AI agent accessible via messaging apps",
+      "Developers who want to self-host and extend an AI agent with custom plugins",
+      "Individuals looking to automate everyday tasks like email, calendar, and flight check-ins"
+    ],
+    "pros": [
+      "Fully open-source with a large and rapidly growing contributor community",
+      "Works with the chat apps you already use — no new interface to learn",
+      "Flexible model support lets you route requests through existing AI subscriptions"
+    ],
+    "cons": [
+      "Beta status means update stability can be inconsistent between releases",
+      "Initial setup and onboarding may require some technical comfort, especially on Windows",
+      "Plugin ecosystem and documentation are still maturing alongside the project"
+    ],
+    "quickAnswer": "OpenClaw is a free, open-source personal AI agent you install locally and control through WhatsApp, Telegram, or any chat app. It handles real-world tasks like email, calendar management, and flight check-ins, and supports multiple AI backends via your existing subscriptions.",
+    "bodySections": [
+      {
+        "heading": "What is OpenClaw?",
+        "content": "OpenClaw is an open-source personal AI agent that runs on your own machine and connects to the messaging apps you already use — including WhatsApp and Telegram — so you can delegate real-world tasks through natural conversation. Created by Peter Steinberger, it grew from a weekend project to one of the most-starred repositories on GitHub in under five months, amassing over 346,000 stars and thousands of contributors. The project is community-driven and welcomes contributions at every level."
+      },
+      {
+        "heading": "How Does OpenClaw Work?",
+        "content": "After a one-liner install (or a manual npm/pnpm setup for those who prefer to read source), you run `openclaw onboard` to connect your AI model credentials and messaging accounts. From that point, your 'lobster' — the agent persona — lives in your chat app of choice. Send it a message and it can organize your inbox, reply to emails, manage calendar events, check you in for flights, browse the web, or chain together multi-step tasks autonomously. It uses an extensions system so developers can add new capabilities or connect additional services."
+      },
+      {
+        "heading": "Installation and Platform Support",
+        "content": "OpenClaw supports macOS (15+), Linux, and Windows (10 20H2+ or Windows 11). The quickest path is the curl one-liner, which installs Node.js and all dependencies automatically. Advanced users can clone the GitHub repository and run from source using pnpm workspaces. Native companion apps are available for macOS and Windows, offering tray icons, a setup UI, a built-in chat window, and node/gateway management — useful if you prefer a GUI over the terminal."
+      },
+      {
+        "heading": "Model and Integration Flexibility",
+        "content": "OpenClaw is model-agnostic. Users have reported routing requests through OpenAI GPT subscriptions (including GPT-5.5 and GPT-Realtime), Anthropic Claude Max plans, Microsoft Copilot endpoints, and X (Twitter) API access. You can sign in with a ChatGPT account and use your existing subscription. This flexibility means you are not locked into a single provider, and community members regularly share proxy and routing setups to maximize value from existing AI plans."
+      },
+      {
+        "heading": "Community and Ecosystem",
+        "content": "The OpenClaw community is active on Discord and GitHub, with endorsements from figures including Sam Altman, Satya Nadella, Garry Tan, and Elon Musk. Microsoft has partnered with the project to enable native Windows execution via Execution Containers for safer enterprise use. Y Combinator has highlighted Peter Steinberger as a top-tier talent, and the project has been celebrated at events including Microsoft Build. Third-party integrations include Twilio for phone numbers, giving the agent a real callable number."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is OpenClaw really free to use?",
+        "answer": "Yes. OpenClaw itself is free and open-source under a permissive license. However, you need to supply your own AI model credentials — such as an OpenAI API key, an Anthropic Claude subscription, or another compatible backend. The cost of running the agent depends entirely on your chosen model provider and usage volume."
+      },
+      {
+        "question": "Which messaging apps does OpenClaw support?",
+        "answer": "OpenClaw is designed to work with WhatsApp, Telegram, and other chat apps you already use. The project's gateway and plugin architecture means additional messaging platforms can be added by the community. Native companion apps for macOS and Windows also include a built-in chat window as an alternative interface."
+      },
+      {
+        "question": "How stable is OpenClaw for everyday use?",
+        "answer": "Stability has improved significantly in recent releases, with community members noting the experience as 'the best so far' after a period of update churn. That said, OpenClaw is still in beta, and rapid development means occasional breaking changes between updates. Using the stable channel (`openclaw update --channel stable`) is recommended for users who prioritize reliability over cutting-edge features."
+      }
+    ],
+    "relatedSlugs": [
+      "hermes-agent",
+      "codex",
+      "claude-code",
+      "cline",
+      "cursor"
+    ],
+    "sourceUrls": [
+      "https://openclaw.ai"
+    ]
+  },
+  {
+    "slug": "pi",
+    "name": "pi",
+    "company": "Earendil Inc.",
+    "website": "https://pi.dev",
+    "faviconUrl": "https://pi.dev/favicon.ico",
+    "tokenUsage": "126B",
+    "rank": 6,
+    "tagline": "There are many coding agents, but this one is yours.",
+    "features": [
+      "Minimal, extensible agent harness built around TypeScript extensions",
+      "Tree-structured, branchable, shareable session history",
+      "Supports 15+ model providers with mid-session model switching",
+      "Four operation modes: Interactive TUI, Print/JSON, RPC, and SDK",
+      "AGENTS.md and SYSTEM.md for per-project context engineering",
+      "Skills and prompt templates for progressive, cache-friendly context control"
+    ],
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "pricing": "unknown",
+    "openSource": true,
+    "bestFor": [
+      "Developers who want full control over their AI coding workflow",
+      "Teams building custom agent tooling or internal integrations",
+      "Power users who prefer a minimal core they can extend rather than a feature-bloated product"
+    ],
+    "pros": [
+      "Highly extensible: extensions can add sub-agents, plan mode, MCP, custom UI, and more",
+      "Token-efficient due to a minimal system prompt and smart context engineering primitives",
+      "Flexible model support across 15+ providers with seamless mid-session switching"
+    ],
+    "cons": [
+      "Intentionally ships without common features like sub-agents and plan mode out of the box, requiring extensions or manual setup",
+      "Steeper learning curve for users who prefer an opinionated, batteries-included agent",
+      "Extension ecosystem is early-stage and relies on community contributions"
+    ],
+    "quickAnswer": "Pi is a minimal, extensible AI coding agent harness by Earendil Inc. that lets developers fully customize their workflow via TypeScript extensions, skills, and prompt templates. It supports 15+ model providers, tree-structured session history, and four operation modes, adapting to your workflow rather than the other way around.",
+    "bodySections": [
+      {
+        "heading": "What Is Pi?",
+        "content": "Pi is an open-source AI coding agent harness built by Earendil Inc. Unlike most agents that ship with an opinionated, sealed feature set, Pi takes a deliberately minimal approach: it provides powerful primitives and leaves the rest to you. Install it via npm, curl, or PowerShell, point it at your preferred model, and start extending it to fit exactly how you work."
+      },
+      {
+        "heading": "Extensibility at the Core",
+        "content": "Pi's defining characteristic is its extension system. Extensions are TypeScript modules with access to Pi's tools, commands, keyboard shortcuts, events, and full TUI. Features that other agents bake in — sub-agents, plan mode, permission gates, MCP integration, sandboxing, custom editors — can all be built as extensions or installed from the growing third-party package ecosystem via npm or git. If you need a capability, you can ask Pi to build it for you on the fly, hit /reload, and keep going."
+      },
+      {
+        "heading": "Context Engineering",
+        "content": "Pi's minimal system prompt is a feature, not a limitation. It gives you genuine control over what goes into the context window. Project-level AGENTS.md files load startup instructions from your home directory, parent directories, and current working directory. SYSTEM.md lets you replace or append to the default system prompt per project. Skills load capability packages on demand for progressive disclosure without busting the prompt cache. Extensions can inject messages before each turn, filter history, implement RAG, or build long-term memory."
+      },
+      {
+        "heading": "Session History and Collaboration",
+        "content": "Pi stores sessions as trees rather than flat logs. Use /tree to navigate to any previous message, branch from that point, and continue in a new direction — all branches live in a single file. You can filter by message type, bookmark entries, export sessions to HTML with /export, or upload to a GitHub Gist with /share to get a shareable URL that renders the full tree."
+      },
+      {
+        "heading": "Model and Provider Support",
+        "content": "Pi supports 15+ providers including Anthropic, OpenAI, Google, Azure, Bedrock, Mistral, Groq, Cerebras, xAI, Hugging Face, Kimi For Coding, MiniMax, NVIDIA, OpenRouter, and Ollama, with more available via custom provider extensions. Authenticate via API keys or OAuth. Switch models mid-session with /model or Ctrl+L, and cycle through your favorites with Ctrl+P."
+      },
+      {
+        "heading": "Four Operating Modes",
+        "content": "Pi is designed to fit into any workflow through four modes. Interactive mode delivers the full TUI experience. Print/JSON mode (pi -p) makes Pi scriptable and automatable. RPC mode exposes a JSON protocol over stdin/stdout for non-Node integrations. SDK mode lets you embed Pi directly into your own applications — see the OpenClaw integration for a real-world example."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Does Pi have plan mode or sub-agents built in?",
+        "answer": "No, Pi intentionally omits these features from its core. The philosophy is that you should build or install exactly the workflow you want rather than work around someone else's opinion. You can spawn Pi instances via tmux for sub-agent patterns, write plans to files, or install a community package that implements plan mode the way you prefer."
+      },
+      {
+        "question": "How do I install Pi packages and extensions?",
+        "answer": "Pi packages bundle extensions, skills, prompts, and themes and can be installed from npm or git using the pi install command. For example: pi install npm:@foo/pi-tools or pi install git:github.com/user/repo. You can also browse the available packages at pi.dev."
+      },
+      {
+        "question": "Can I use Pi in CI pipelines or scripts?",
+        "answer": "Yes. Pi's Print/JSON mode (pi -p \"query\") is designed for scripting and automation. The --mode json flag produces structured event streams. The RPC mode provides a JSON protocol over stdin/stdout suitable for non-Node integrations, and the SDK lets you embed Pi programmatically in any Node application."
+      }
+    ],
+    "relatedSlugs": [
+      "claude-code",
+      "codex",
+      "cline",
+      "openclaw",
+      "kilo-code"
+    ],
+    "sourceUrls": [
+      "https://pi.dev"
+    ]
+  },
+  {
+    "slug": "codebuff",
+    "name": "Codebuff",
+    "company": "Codebuff",
+    "website": "https://codebuff.com",
+    "faviconUrl": "https://codebuff.com/favicon.ico",
+    "tokenUsage": "41.5B",
+    "rank": 7,
+    "tagline": "Self-improving CLI agent.",
+    "features": [
+      "Full codebase indexing in approximately 2 seconds for deep project awareness",
+      "Surgical, pinpoint code edits that respect existing structure and style",
+      "Terminal-native CLI with zero setup beyond a single npm install",
+      "Multi-turn conversation support simulating realistic human workflows",
+      "BuffBench evaluation system scoring completion, efficiency, code quality, and overall output",
+      "Compatible with any tech stack without special environments or IDE plugins"
+    ],
+    "platforms": [
+      "CLI",
+      "Terminal",
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "pricing": "Paid subscription; pricing starts around $50/month based on user references — verify current plans at codebuff.com/pricing",
+    "openSource": false,
+    "bestFor": [
+      "Developers who prefer terminal-based workflows over IDE plugins",
+      "Teams needing whole-codebase refactors driven by a single natural-language prompt",
+      "Founders and solo engineers wanting an affordable autonomous coding assistant"
+    ],
+    "pros": [
+      "Indexes an entire codebase in seconds, enabling context-aware edits that rival human understanding of project structure",
+      "CLI-first design means it works with any editor, language, or framework without lock-in",
+      "Users and benchmarks report faster task completion compared to Claude Code and similar agents"
+    ],
+    "cons": [
+      "Terminal-only interface may feel unfamiliar for developers accustomed to GUI-based AI coding tools",
+      "Pricing and token limits are not fully transparent on the public site, requiring direct verification",
+      "Relatively newer entrant with a smaller community and fewer third-party integrations than Cursor or Cline"
+    ],
+    "quickAnswer": "Codebuff is a terminal-based AI coding agent that indexes your entire codebase in seconds and applies surgical, whole-project edits from a single prompt. Installed via npm, it requires no special IDE and claims faster, higher-quality output than comparable agents like Claude Code.",
+    "bodySections": [
+      {
+        "heading": "What Is Codebuff?",
+        "content": "Codebuff is a CLI-first AI coding assistant developed by Codebuff Inc. and installed with a single command: `npm install -g codebuff`. Unlike IDE plugins or browser-based tools, it lives entirely in your terminal and works alongside any editor or tech stack. Its core promise is deep codebase awareness — indexing your full project structure, dependencies, and patterns before generating or modifying code, so suggestions fit naturally into what already exists."
+      },
+      {
+        "heading": "How Codebuff Works",
+        "content": "When you invoke Codebuff, it builds a complete map of your project in approximately two seconds, surfacing hidden dependencies and understanding existing conventions. You then direct it with natural-language prompts — asking it to add features, refactor modules, fix bugs, or wire up integrations — and it makes targeted edits across multiple files at once. Multi-turn conversations let it simulate a realistic back-and-forth with a human collaborator, iterating until the task is complete."
+      },
+      {
+        "heading": "BuffBench: Codebuff's Own Evaluation Framework",
+        "content": "Codebuff publishes benchmark results through its proprietary BuffBench system, which evaluates coding agents on 175+ real tasks reconstructed from open-source Git commits. Each benchmark run uses five-turn conversations where a prompting agent simulates a human developer, and submissions are scored across four dimensions: task completion, efficiency, code quality, and overall performance. This self-evaluation approach gives Codebuff a transparent, reproducible way to compare itself against other agents — though independent third-party validation remains limited."
+      },
+      {
+        "heading": "Codebuff vs. Cursor and Claude Code",
+        "content": "Codebuff positions itself as faster and higher-quality than Claude Code, and several users report preferring it to Cursor for multi-file, whole-codebase changes. The key distinction is scope: Cursor excels at quick, single-file edits within a GUI, while Codebuff is optimized for broad, project-wide transformations issued as one prompt. Developers who are comfortable in the terminal and want maximum flexibility across editors will find Codebuff a compelling alternative to both."
+      },
+      {
+        "heading": "Pricing and Getting Started",
+        "content": "Codebuff is a paid product. Community references suggest plans in the range of $50/month, though exact tiers and token limits should be confirmed at codebuff.com/pricing. Getting started requires only Node.js and npm — run `npm install -g codebuff`, authenticate, and you can begin prompting from any project directory. A step-by-step guide is available in the official documentation for first-time users."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Does Codebuff work with any programming language or framework?",
+        "answer": "Yes. Because Codebuff is a terminal tool that reads your file system directly, it is language and framework agnostic. Users have reported using it with TypeScript, Python, React, and more. As long as your project lives in a directory accessible from your terminal, Codebuff can index and work with it."
+      },
+      {
+        "question": "How is Codebuff different from Cursor or Cline?",
+        "answer": "Cursor is an IDE that embeds AI assistance inside a GUI editor, and Cline is a VS Code extension. Codebuff is purely terminal-based with no editor dependency. Its strength is issuing a single prompt that triggers coordinated, multi-file changes across an entire codebase — a workflow that typically requires many manual steps in GUI-based tools."
+      },
+      {
+        "question": "Is Codebuff open source?",
+        "answer": "No. Codebuff is a proprietary commercial product. Its GitHub repository is referenced on the site, but the core agent is closed source. The BuffBench evaluation methodology is described publicly, and the team engages with the developer community via GitHub and Discord."
+      }
+    ],
+    "relatedSlugs": [
+      "claude-code",
+      "cline",
+      "cursor",
+      "windsurf",
+      "codex",
+      "kilo-code"
+    ],
+    "sourceUrls": [
+      "https://codebuff.com"
+    ]
+  },
+  {
+    "slug": "codex",
+    "name": "Codex",
+    "company": "OpenAI",
+    "website": "https://openai.com/codex",
+    "faviconUrl": "https://openai.com/favicon.ico",
+    "tokenUsage": "39.9B",
+    "rank": 8,
+    "tagline": "OpenAI coding agent to help you build and ship with AI.",
+    "features": [
+      "Parallel multi-agent workflows with built-in cloud environments and worktrees",
+      "Skills system to teach Codex your team's standards, workflows, and conventions",
+      "Scheduled background tasks for issue triage, alert monitoring, and CI/CD automation",
+      "AI-powered code review that catches bugs and raises baseline quality across your team",
+      "Available across ChatGPT, IDE extensions, and CLI via a single connected account"
+    ],
+    "platforms": [
+      "ChatGPT (web)",
+      "IDE Extension",
+      "CLI",
+      "Cloud"
+    ],
+    "pricing": "Available within ChatGPT; specific plan tiers and pricing details not publicly listed — check openai.com for current offerings",
+    "openSource": false,
+    "bestFor": [
+      "Engineering teams wanting to automate routine pull requests and background engineering tasks",
+      "Developers who need parallel multi-agent coding across multiple projects simultaneously",
+      "Organizations looking to enforce consistent code standards and workflows via AI"
+    ],
+    "pros": [
+      "Deep integration across ChatGPT, CLI, and IDE creates a unified agentic coding experience",
+      "Skills system allows teams to codify their own standards so Codex contributes with minimal supervision",
+      "Proven real-world results: teams report 30–50% reduction in early iteration time and shipping features in days instead of quarters"
+    ],
+    "cons": [
+      "Pricing and plan details are not transparently listed, making cost assessment difficult before sign-up",
+      "Tightly coupled to the OpenAI/ChatGPT ecosystem, which may not suit teams preferring open or vendor-neutral tooling",
+      "Advanced multi-agent and scheduling features may have a learning curve for smaller or less experienced teams"
+    ],
+    "quickAnswer": "Codex is OpenAI's flagship AI coding agent, embedded in ChatGPT, your IDE, and the terminal. It handles end-to-end engineering tasks — from feature builds to code review — using parallel agents, team-specific Skills, and scheduled background work to help teams ship faster with higher confidence.",
+    "bodySections": [
+      {
+        "heading": "What Is Codex?",
+        "content": "Codex is OpenAI's dedicated AI coding agent, now integrated directly into ChatGPT as well as available via a CLI and IDE extension. It is powered by OpenAI's frontier coding models and designed to go beyond simple autocomplete — Codex handles real, end-to-end engineering work such as building features, performing complex refactors, running migrations, and conducting thorough code reviews. It is trusted by engineering teams at companies including Harvey, Ramp, Duolingo, Sierra, and Cisco Meraki."
+      },
+      {
+        "heading": "Multi-Agent Workflows and Parallel Execution",
+        "content": "One of Codex's defining capabilities is its support for multi-agent workflows. With built-in cloud environments and git worktrees, multiple Codex agents can work across different projects and branches simultaneously. This architecture allows teams to compress what might otherwise take weeks into days, since agents are not blocked waiting on sequential tasks. ChatGPT acts as a command center, letting engineers coordinate and monitor parallel workstreams from a single interface."
+      },
+      {
+        "heading": "Skills: Teaching Codex Your Team's Way of Working",
+        "content": "Codex includes a Skills system that allows teams to encode their own engineering standards, internal workflows, style guides, and best practices directly into the agent. Once configured, Codex applies these Skills consistently across all tasks, reducing the need for constant human correction or supervision. This makes Codex increasingly effective over time as it learns the unique shape of a team's codebase and expectations — a meaningful advantage for larger or more established engineering organizations."
+      },
+      {
+        "heading": "Background Work and Automation",
+        "content": "Codex is built for always-on, scheduled operation. Teams can configure it to handle recurring but important background tasks such as issue triage, monitoring alerts, and managing CI/CD pipelines. This frees engineers to stay focused on higher-leverage design and architecture work rather than being pulled into operational overhead. Senior engineers at Ramp have noted that Codex PR reviews catch bugs that human reviewers miss, improving overall release confidence."
+      },
+      {
+        "heading": "Where You Can Use Codex",
+        "content": "Codex is available in three surfaces, all connected through a single ChatGPT account: the ChatGPT web app, an IDE extension for editor-based workflows, and Codex CLI for terminal-first developers. This cross-surface availability means engineers can interact with the same agent regardless of where they prefer to work, and context is shared across environments. The CLI has been particularly noted by teams doing deep architecture and reasoning-heavy work."
+      },
+      {
+        "heading": "Real-World Results from Engineering Teams",
+        "content": "Teams using Codex report significant productivity improvements. Harvey's mobile engineering team cut early iteration time by 30–50%. Sierra's team ships in a weekend what previously took a quarter. Duolingo's engineers found Codex was the only AI code reviewer to consistently catch tricky backward-compatibility bugs in their backend Python benchmarks. Cisco Meraki used Codex to handle a cross-team refactor and test generation task, delivering fully tested code on schedule without added risk."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How is Codex different from GitHub Copilot or other AI code assistants?",
+        "answer": "Codex is a full coding agent rather than an autocomplete or inline suggestion tool. It completes entire engineering tasks end-to-end — including writing, refactoring, testing, and reviewing code — and supports parallel multi-agent execution across multiple projects simultaneously. It also features a Skills system for team-specific customization, which most inline assistants do not offer."
+      },
+      {
+        "question": "Does Codex require a ChatGPT subscription?",
+        "answer": "Codex is available within the ChatGPT app, and access is tied to your ChatGPT account. Specific plan requirements and pricing tiers are not fully detailed on the public Codex page — it is best to check openai.com or your ChatGPT account dashboard for current availability and plan information."
+      },
+      {
+        "question": "Can Codex work autonomously without constant human oversight?",
+        "answer": "Yes. Codex is designed for background and scheduled operation, meaning it can be configured to pick up routine tasks like issue triage, CI/CD management, and alert monitoring on its own. With Skills configured to reflect your team's standards, it can contribute to a codebase with minimal supervision, though human review of its output remains recommended for production-critical changes."
+      }
+    ],
+    "relatedSlugs": [
+      "claude-code",
+      "cursor",
+      "windsurf",
+      "cline",
+      "codebuff"
+    ],
+    "sourceUrls": [
+      "https://openai.com/codex"
+    ]
+  },
+  {
+    "slug": "cursor",
+    "name": "Cursor",
+    "company": "Anysphere",
+    "website": "https://cursor.com",
+    "faviconUrl": "https://cursor.com/favicon.ico",
+    "tokenUsage": null,
+    "rank": 9,
+    "tagline": "The AI-native code editor used by millions of developers.",
+    "features": [
+      "Autonomous cloud agents that work in parallel on complex tasks for hours or days",
+      "Multi-model support including OpenAI, Anthropic, Gemini, xAI Grok, and Cursor-native models",
+      "CLI, Slack, and GitHub PR integration for end-to-end workflow coverage",
+      "Always-on automations triggered by schedules or events to maintain and fix software",
+      "Agentic composer that plans, researches, and executes multi-step coding tasks",
+      "Codebase indexing with semantic search for deep context-aware assistance"
+    ],
+    "platforms": [
+      "macOS",
+      "Windows",
+      "Linux",
+      "CLI",
+      "Slack",
+      "GitHub"
+    ],
+    "pricing": "Free tier available; paid plans required for advanced model usage and cloud agents — see cursor.com for current pricing",
+    "openSource": false,
+    "bestFor": [
+      "Professional developers and engineering teams building ambitious software products",
+      "Teams wanting autonomous agents that can plan, code, test, and deploy end-to-end",
+      "Organizations needing enterprise-grade AI coding assistance with security and scale"
+    ],
+    "pros": [
+      "Broad model choice across all major frontier providers with no vendor lock-in",
+      "Cloud agents run autonomously in parallel, dramatically accelerating large feature development",
+      "Deep IDE integration combined with CLI, Slack, and GitHub keeps the entire workflow in one ecosystem"
+    ],
+    "cons": [
+      "Closed-source product with pricing that scales with heavy agent and model usage",
+      "Cloud agent features and full autonomy may introduce unpredictability requiring careful human review",
+      "Feature surface is large and fast-moving, which can steepen the learning curve for new users"
+    ],
+    "quickAnswer": "Cursor is an AI-native code editor by Anysphere that combines an intelligent IDE with autonomous cloud agents, multi-model support, CLI, Slack, and GitHub integrations. It lets developers hand off complex tasks to agents that plan, code, test, and deploy end-to-end, making it one of the most capable AI coding environments available.",
+    "bodySections": [
+      {
+        "heading": "What Is Cursor?",
+        "content": "Cursor is an AI-native code editor built by Anysphere and used by millions of developers worldwide. Rather than bolting AI onto a traditional editor, Cursor is designed from the ground up around agentic development — the idea that AI agents should be able to plan, write, test, and ship code with meaningful autonomy. It ships as a desktop application for macOS, Windows, and Linux, and also provides a CLI for terminal-first workflows."
+      },
+      {
+        "heading": "Agentic Development at the Core",
+        "content": "Cursor's flagship capability is its agent system. Agents can be given high-level instructions — such as 'build a dashboard wired up to our Snowflake data' — and will autonomously explore the codebase, run searches, write code, execute tests, and even deploy to staging. Cloud agents run on Anysphere's infrastructure in parallel, meaning teams can launch fleets of agents working on different tasks simultaneously. Every agent session produces a reviewable output, keeping humans in the decision loop without slowing them down."
+      },
+      {
+        "heading": "Multi-Model Flexibility",
+        "content": "One of Cursor's defining strengths is its bring-your-own-model philosophy. Users can choose from frontier models by OpenAI, Anthropic, Google Gemini, xAI Grok, and Cursor's own fine-tuned models for any given task. This means developers are never stuck waiting for a single provider's improvements — they can always route work to whichever model performs best for their use case, whether that's fast inline completions or deep multi-step reasoning."
+      },
+      {
+        "heading": "Workflow Integrations",
+        "content": "Cursor extends beyond the editor with integrations that meet developers where they work. The CLI brings agent capabilities directly to the terminal. A Slack integration lets teammates tag Cursor in conversations to kick off tasks, with results surfaced as pull requests in GitHub. Automations allow teams to set up always-on agents triggered by schedules or repository events — for example, automatically fixing CI failures on the main branch or rotating auth tokens on a schedule."
+      },
+      {
+        "heading": "Enterprise Adoption and Testimonials",
+        "content": "Cursor has earned adoption at significant scale across both startups and large enterprises. Notable endorsements come from leaders at NVIDIA, Stripe, Y Combinator, and OpenAI. Jensen Huang noted that Cursor now assists all of NVIDIA's roughly 40,000 engineers, while Patrick Collison highlighted rapid grassroots adoption across Stripe's engineering organization. This real-world validation underscores Cursor's position as a production-grade tool rather than a developer toy."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Does Cursor support models other than OpenAI?",
+        "answer": "Yes. Cursor supports models from OpenAI, Anthropic (Claude), Google Gemini, xAI Grok, and its own Cursor-native models. Users can switch models per task, choosing the best balance of speed, capability, and cost for any given context."
+      },
+      {
+        "question": "What is the difference between Cursor's agent mode and standard code completion?",
+        "answer": "Standard code completion (Cmd+K style edits) makes targeted, inline changes based on your instructions. Agent mode gives Cursor full autonomy to plan multi-step tasks, explore the codebase, run shell commands, execute tests, and produce a reviewable end-to-end result — essentially acting as an autonomous collaborator rather than an autocomplete tool."
+      },
+      {
+        "question": "Is Cursor suitable for large engineering teams?",
+        "answer": "Yes. Cursor offers an Enterprise tier with features like secure codebase indexing, access controls, and centralized billing. High-profile organizations including NVIDIA and Stripe have deployed Cursor across tens of thousands of engineers, indicating it is designed to scale to large team environments."
+      }
+    ],
+    "relatedSlugs": [
+      "windsurf",
+      "claude-code",
+      "codex",
+      "cline",
+      "kilo-code"
+    ],
+    "sourceUrls": [
+      "https://cursor.com"
+    ]
+  },
+  {
+    "slug": "windsurf",
+    "name": "Windsurf",
+    "company": "Codeium",
+    "website": "https://windsurf.com",
+    "faviconUrl": "https://windsurf.com/favicon.ico",
+    "tokenUsage": null,
+    "rank": 10,
+    "tagline": "Agentic IDE by Codeium with Cascade flows.",
+    "features": [
+      "Cascade agentic flows that plan, write, and iterate on code end-to-end",
+      "Supercomplete predictive editing that anticipates your next thought, not just your next token",
+      "Fast Context for millisecond-speed codebase retrieval so agents always have the right files",
+      "Agent Client Protocol (ACP) enabling interoperability across models and third-party agents",
+      "Spaces for sharing Git worktrees and persistent context across multiple concurrent agents",
+      "Built-in full IDE with syntax highlighting, autocomplete, and debugging tools"
+    ],
+    "platforms": [
+      "macOS",
+      "Windows",
+      "Linux",
+      "Web"
+    ],
+    "pricing": "Free tier available; paid plans exist for higher usage and team features — exact pricing unknown, check windsurf.com for current tiers",
+    "openSource": false,
+    "bestFor": [
+      "Developers who want a fully integrated agentic IDE rather than a plugin or CLI tool",
+      "Teams running multiple concurrent AI agents across long-running engineering tasks",
+      "Engineers who need deep codebase context and rapid diff review built into their editor"
+    ],
+    "pros": [
+      "All-in-one agentic IDE means no context switching between editor and agent interface",
+      "Supercomplete and Fast Context make both human and agent workflows noticeably faster",
+      "Agent Client Protocol enables flexibility to swap models and integrate custom or third-party agents"
+    ],
+    "cons": [
+      "Closed-source product with limited transparency into model behavior and data handling",
+      "Heavy IDE bundle may feel like overkill for developers who prefer lightweight CLI or plugin-based agents",
+      "Pricing details for advanced tiers and enterprise usage are not clearly published"
+    ],
+    "quickAnswer": "Windsurf is an agentic IDE by Codeium that combines Cascade flows, Supercomplete editing, and Fast Context retrieval into a single environment. It lets developers delegate tasks to AI agents, review every diff, and ship code without leaving the editor, with support for multiple models via the Agent Client Protocol.",
+    "bodySections": [
+      {
+        "heading": "What Is Windsurf?",
+        "content": "Windsurf is a full-featured agentic IDE built by Codeium, designed to make AI coding agents a first-class part of the development workflow rather than an add-on. Instead of switching between an editor and a separate agent interface, Windsurf puts everything in one surface: you write, you delegate, you review, and you ship without breaking flow. The flagship capability is Cascade, an agentic flow system that can plan multi-step tasks, write code, chase edge cases, run tests, and open pull requests — all while keeping the developer informed and in control."
+      },
+      {
+        "heading": "Cascade Flows and Agentic Sessions",
+        "content": "Cascade is the core agentic engine inside Windsurf. When you describe a goal, Cascade breaks it into steps, selects the relevant files using Fast Context, and works through the task iteratively. Sessions are tracked in a dedicated panel so you can monitor progress, pause, redirect, or take over at any point. Multiple sessions can run in parallel inside Spaces, which share Git worktrees and persistent context so agents working on related tasks stay coordinated. The built-in diff review UI lets you rapidly inspect every change an agent makes before it is committed."
+      },
+      {
+        "heading": "Supercomplete and Fast Context",
+        "content": "Windsurf's Supercomplete goes beyond traditional autocomplete by predicting your next logical edit rather than just the next token. It models your intent across the file and suggests multi-line completions that match the direction you are heading. Fast Context complements this by resolving which files, functions, and lines are relevant to any agent or human query in milliseconds, avoiding the slow embedding-search round trips that can stall other tools. Together these features keep latency low whether you are writing code yourself or reviewing what an agent produced."
+      },
+      {
+        "heading": "Agent Client Protocol and Model Flexibility",
+        "content": "Windsurf is not locked to a single model. The Agent Client Protocol (ACP) is an open interoperability layer that lets you run agents powered by different underlying models — including SWE-1.6 (Codeium's own fast coding model), Claude, Codex, and others — from the same interface. ACP also enables integration with custom background agents, as demonstrated by enterprise customers who have connected their own internal agents to Windsurf's session management UI. This makes Windsurf a model-agnostic control plane rather than a single-model product."
+      },
+      {
+        "heading": "Who Uses Windsurf?",
+        "content": "Windsurf targets professional software engineers and engineering teams who want to scale their output by delegating well-defined tasks to agents without losing oversight. Enterprise customers such as Ramp, Harvey, NVIDIA, and Modal have adopted it for managing fleets of agents across long-running engineering efforts. Harvey's team built a custom background agent called Spectre that integrates with Windsurf's session UI, giving every engineer on the team access to shared organizational context. NVIDIA joined a research preview, indicating early traction at the frontier research end of the market as well."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Windsurf free to use?",
+        "answer": "Windsurf offers a free tier that includes access to core features and Codeium's SWE-1.6 model. Paid plans exist for higher usage limits, team collaboration features, and enterprise capabilities, but specific pricing tiers and costs are not prominently published — visit windsurf.com for the latest details."
+      },
+      {
+        "question": "How does Windsurf differ from Cursor?",
+        "answer": "Both are AI-first code editors, but Windsurf emphasizes full agentic session management — running multiple agents in parallel, tracking their progress, and reviewing diffs — as a core workflow. Cursor focuses more on inline AI assistance and chat-driven edits within a familiar VS Code-like shell. Windsurf's Agent Client Protocol also provides broader model and agent interoperability out of the box."
+      },
+      {
+        "question": "Can I use my own models or third-party agents with Windsurf?",
+        "answer": "Yes. The Agent Client Protocol (ACP) is designed to support multiple models and custom agents within Windsurf's interface. Enterprise teams have connected internally built agents to Windsurf's session management layer, and the IDE supports models including Claude, Codex, and Codeium's own SWE-1.6 alongside community and custom integrations."
+      }
+    ],
+    "relatedSlugs": [
+      "cursor",
+      "cline",
+      "claude-code",
+      "codex",
+      "kilo-code"
+    ],
+    "sourceUrls": [
+      "https://windsurf.com"
+    ]
+  },
+  {
+    "slug": "github-copilot",
+    "name": "GitHub Copilot",
+    "company": "GitHub / Microsoft",
+    "website": "https://github.com/features/copilot",
+    "faviconUrl": "https://github.githubassets.com/favicons/favicon.svg",
+    "tokenUsage": null,
+    "rank": 11,
+    "tagline": "AI pair programmer integrated into VS Code, JetBrains, Neovim, and GitHub.",
+    "features": [
+      "Inline code completions and chat inside major IDEs",
+      "Copilot Workspace and agent mode for multi-step tasks",
+      "Deep GitHub integration for PRs, issues, and repos",
+      "Enterprise plans with policy controls and audit logs",
+      "Copilot CLI for terminal-based assistance"
+    ],
+    "platforms": [
+      "VS Code",
+      "JetBrains",
+      "Neovim",
+      "Visual Studio",
+      "GitHub.com",
+      "CLI"
+    ],
+    "pricing": "Free tier for individuals; Pro and Business plans available — see github.com/features/copilot/pricing",
+    "openSource": false,
+    "bestFor": [
+      "Teams already on GitHub who want AI assistance without switching editors",
+      "Developers who want reliable inline completions with minimal setup",
+      "Organizations needing enterprise governance for AI coding tools"
+    ],
+    "pros": [
+      "Ubiquitous IDE support and the largest installed base of any AI coding assistant",
+      "Native GitHub workflow integration for reviews, issues, and pull requests",
+      "Mature product with consistent completions and low latency"
+    ],
+    "cons": [
+      "Agentic capabilities lag behind dedicated agents like Claude Code or Cursor Composer",
+      "Less flexible model choice compared to multi-model editors",
+      "Advanced agent features often require paid Business or Enterprise tiers"
+    ],
+    "quickAnswer": "GitHub Copilot is the most widely adopted AI coding assistant, offering inline completions, chat, and growing agent features across VS Code, JetBrains, and GitHub itself. It is the default choice for teams embedded in the GitHub ecosystem who want low-friction AI assistance.",
+    "bodySections": [
+      {
+        "heading": "What Is GitHub Copilot?",
+        "content": "GitHub Copilot is Microsoft and GitHub's AI pair programmer, built on OpenAI models and integrated across the most popular IDEs and GitHub.com. It started as inline autocomplete and has expanded into chat, Copilot Workspace, and agent-style coding workflows that can plan and execute tasks within a repository context."
+      },
+      {
+        "heading": "IDE and GitHub Integration",
+        "content": "Copilot's primary advantage is distribution: it works inside VS Code, JetBrains IDEs, Neovim, Visual Studio, and directly on GitHub for pull request summaries and code review. For teams that live in GitHub, Copilot reduces context switching compared to standalone agent tools."
+      },
+      {
+        "heading": "Agentic Features",
+        "content": "Copilot has added agent-mode capabilities for multi-step coding tasks, though it is still often compared against dedicated agents like Claude Code and Cursor. It excels at incremental assistance — completions, small refactors, and chat-driven edits — rather than fully autonomous long-horizon runs."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is GitHub Copilot an agentic coding tool?",
+        "answer": "Copilot includes agent-style features in Copilot Workspace and newer agent modes, but most developers still use it primarily for inline completions and chat. Dedicated coding agents like Claude Code or Cursor Composer are generally stronger for fully autonomous multi-step tasks."
+      },
+      {
+        "question": "How does Copilot compare to Cursor?",
+        "answer": "Cursor is an AI-native editor built around agents and multi-model support. Copilot plugs into your existing IDE and GitHub workflow with lower switching cost. Cursor offers deeper agentic editing; Copilot offers broader compatibility and GitHub-native integration."
+      }
+    ],
+    "relatedSlugs": [
+      "cursor",
+      "claude-code",
+      "codex",
+      "windsurf",
+      "cline"
+    ],
+    "sourceUrls": [
+      "https://github.com/features/copilot"
+    ]
+  },
+  {
+    "slug": "aider",
+    "name": "Aider",
+    "company": "Aider",
+    "website": "https://aider.chat",
+    "faviconUrl": "https://aider.chat/favicon.ico",
+    "tokenUsage": null,
+    "rank": 12,
+    "tagline": "Open-source terminal pair programmer that edits git repos with LLMs.",
+    "features": [
+      "Git-aware edits with automatic commits and diffs",
+      "Works with Claude, GPT-4, DeepSeek, and local models",
+      "Repo map for large codebase context",
+      "Voice mode and scripting support",
+      "100% open source (Apache 2.0)"
+    ],
+    "platforms": [
+      "Terminal",
+      "CLI"
+    ],
+    "pricing": "Free and open source; pay for LLM API usage only",
+    "openSource": true,
+    "bestFor": [
+      "Terminal-first developers who want git-native AI editing",
+      "Engineers who bring their own API keys and model preferences",
+      "Teams wanting transparent, auditable agent edits via git history"
+    ],
+    "pros": [
+      "Excellent git integration — every change is a commit you can review or revert",
+      "Model-agnostic with strong support for frontier and local models",
+      "Lightweight CLI with no IDE lock-in"
+    ],
+    "cons": [
+      "No GUI — requires comfort in the terminal",
+      "Less polished onboarding than IDE-native tools like Cursor",
+      "Agent UX is developer-oriented, not beginner-friendly"
+    ],
+    "quickAnswer": "Aider is an open-source CLI that pairs you with LLMs to edit code in git repositories. It maps large repos, makes multi-file edits, and commits changes automatically — ideal for developers who want agentic coding without leaving the terminal or paying for a closed IDE.",
+    "bodySections": [
+      {
+        "heading": "What Is Aider?",
+        "content": "Aider is a terminal-based AI pair programmer that connects to LLMs and edits files in your local git repository. It builds a map of your codebase for context, applies patches, runs tests when asked, and creates git commits so every AI edit is reviewable."
+      },
+      {
+        "heading": "Git-Native Workflow",
+        "content": "Unlike IDE plugins, Aider treats git as the source of truth. Changes are committed with descriptive messages, making it easy to audit, revert, or cherry-pick agent work. This appeals to engineers who treat AI output like any other contributor's PR."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Does Aider work with local models?",
+        "answer": "Yes. Aider supports many providers including Anthropic, OpenAI, and local models via Ollama and similar runtimes, making it popular for privacy-sensitive or cost-conscious workflows."
+      }
+    ],
+    "relatedSlugs": [
+      "claude-code",
+      "cline",
+      "cursor",
+      "continue",
+      "pi"
+    ],
+    "sourceUrls": [
+      "https://aider.chat"
+    ]
+  },
+  {
+    "slug": "continue",
+    "name": "Continue",
+    "company": "Continue",
+    "website": "https://continue.dev",
+    "faviconUrl": "https://continue.dev/favicon.ico",
+    "tokenUsage": null,
+    "rank": 13,
+    "tagline": "Open-source AI code assistant for VS Code and JetBrains with custom agents.",
+    "features": [
+      "Open-source IDE extension with configurable agents",
+      "Bring-your-own-model for any LLM provider",
+      "Custom context providers and slash commands",
+      "Autonomous agent mode for multi-step tasks",
+      "Active open-source community and hub of shared configs"
+    ],
+    "platforms": [
+      "VS Code",
+      "JetBrains",
+      "CLI"
+    ],
+    "pricing": "Free and open source; optional Continue Hub features",
+    "openSource": true,
+    "bestFor": [
+      "Developers who want to customize agents, prompts, and context providers",
+      "Teams standardizing on VS Code or JetBrains with flexible model choice",
+      "Engineers building internal coding agents on open tooling"
+    ],
+    "pros": [
+      "Highly configurable — agents, rules, and context are code-defined",
+      "Model-agnostic with strong OSS community momentum",
+      "Works inside existing editors without a fork"
+    ],
+    "cons": [
+      "Setup and config.json tuning required for best results",
+      "Polish and out-of-box UX trail dedicated products like Cursor",
+      "Advanced features may require reading docs and community examples"
+    ],
+    "quickAnswer": "Continue is an open-source AI coding assistant that runs inside VS Code and JetBrains. Developers configure agents, models, and context providers in code — making it a flexible foundation for customized agentic workflows without vendor lock-in.",
+    "bodySections": [
+      {
+        "heading": "What Is Continue?",
+        "content": "Continue is an open-source IDE extension that brings chat, autocomplete, and agentic editing into VS Code and JetBrains. Its config-driven architecture lets teams define custom agents, slash commands, and retrieval sources — popular with developers who want control over their AI stack."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How is Continue different from Cursor?",
+        "answer": "Continue extends your existing IDE with configurable open-source agents. Cursor is a full AI-native editor fork with integrated cloud agents. Continue offers more customization; Cursor offers a more packaged experience."
+      }
+    ],
+    "relatedSlugs": [
+      "cursor",
+      "cline",
+      "aider",
+      "github-copilot",
+      "kilo-code"
+    ],
+    "sourceUrls": [
+      "https://continue.dev"
+    ]
+  },
+  {
+    "slug": "replit-agent",
+    "name": "Replit Agent",
+    "company": "Replit",
+    "website": "https://replit.com/ai",
+    "faviconUrl": "https://replit.com/public/icons/favicon-196.png",
+    "tokenUsage": null,
+    "rank": 14,
+    "tagline": "Cloud AI agent that builds full-stack apps from natural language in Replit.",
+    "features": [
+      "Describe apps in plain language and deploy in the cloud",
+      "Integrated database, auth, hosting, and runtime",
+      "Agentic multi-step building with live preview",
+      "Collaboration and sharing in browser-based IDE",
+      "Mobile-friendly app creation workflow"
+    ],
+    "platforms": [
+      "Web",
+      "Cloud"
+    ],
+    "pricing": "Free tier available; Replit Core and Teams plans for heavier agent usage",
+    "openSource": false,
+    "bestFor": [
+      "Builders prototyping full-stack apps without local setup",
+      "Founders and indie hackers shipping MVPs quickly",
+      "Educators and learners who want an all-in-one cloud environment"
+    ],
+    "pros": [
+      "Zero local setup — agent, runtime, and deploy in one place",
+      "Strong for greenfield apps and rapid prototyping",
+      "Accessible to non-traditional developers and vibe coders"
+    ],
+    "cons": [
+      "Less suited to large existing codebases or enterprise monorepos",
+      "Cloud lock-in to Replit infrastructure",
+      "Professional teams may outgrow browser-first workflows"
+    ],
+    "quickAnswer": "Replit Agent is a cloud-native AI builder inside Replit that turns natural language into deployed full-stack applications. It targets rapid prototyping and vibe coding more than deep work in existing enterprise repos.",
+    "bodySections": [
+      {
+        "heading": "What Is Replit Agent?",
+        "content": "Replit Agent is an AI system embedded in Replit's cloud IDE that plans, writes, and deploys applications from conversational prompts. It handles scaffolding, dependencies, databases, and hosting — making it popular for MVPs, demos, and learning projects."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Replit Agent good for professional software teams?",
+        "answer": "Replit Agent excels at greenfield prototyping and small apps. Large teams with existing repos and strict CI/CD requirements typically prefer IDE or CLI agents like Cursor, Claude Code, or Copilot."
+      }
+    ],
+    "relatedSlugs": [
+      "cursor",
+      "windsurf",
+      "codex",
+      "cline",
+      "github-copilot"
+    ],
+    "sourceUrls": [
+      "https://replit.com/ai"
+    ]
+  },
+  {
+    "slug": "amazon-q",
+    "name": "Amazon Q Developer",
+    "company": "Amazon Web Services",
+    "website": "https://aws.amazon.com/q/developer/",
+    "faviconUrl": "https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico",
+    "tokenUsage": null,
+    "rank": 15,
+    "tagline": "AWS AI coding assistant with IDE plugins, CLI agent, and cloud transformation tools.",
+    "features": [
+      "Inline completions and chat in VS Code and JetBrains",
+      "CLI agent for autonomous multi-file tasks",
+      "AWS-aware guidance for cloud and infrastructure code",
+      "Code transformation and legacy modernization features",
+      "Enterprise security and IAM integration on AWS"
+    ],
+    "platforms": [
+      "VS Code",
+      "JetBrains",
+      "CLI",
+      "AWS Console"
+    ],
+    "pricing": "Free tier for individual developers; Pro tier for professional usage — see AWS pricing",
+    "openSource": false,
+    "bestFor": [
+      "Teams building on AWS who want AI assistance with cloud context",
+      "Enterprises requiring AWS-native security and compliance",
+      "Developers modernizing Java or .NET codebases with AWS tools"
+    ],
+    "pros": [
+      "Strong AWS and cloud infrastructure awareness",
+      "Generous free tier for individual developers",
+      "Enterprise-grade security posture for regulated industries"
+    ],
+    "cons": [
+      "Best value is inside the AWS ecosystem; less compelling elsewhere",
+      "Agent capabilities newer compared to Claude Code or Cursor",
+      "UX polish varies by IDE plugin vs dedicated AI editors"
+    ],
+    "quickAnswer": "Amazon Q Developer is AWS's AI coding assistant for IDE plugins, CLI agents, and cloud-aware development. It shines for teams on AWS who want security, transformation tools, and infrastructure-aware suggestions alongside general coding help.",
+    "bodySections": [
+      {
+        "heading": "What Is Amazon Q Developer?",
+        "content": "Amazon Q Developer (formerly CodeWhisperer) provides AI coding assistance across IDEs, the terminal, and the AWS console. It offers completions, chat, and agentic CLI workflows with particular strength in AWS APIs, infrastructure code, and enterprise security requirements."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How does Amazon Q compare to GitHub Copilot?",
+        "answer": "Both offer IDE completions and chat. Amazon Q adds deeper AWS context and transformation features for cloud workloads. Copilot has broader GitHub integration and larger general adoption outside AWS shops."
+      }
+    ],
+    "relatedSlugs": [
+      "github-copilot",
+      "cursor",
+      "claude-code",
+      "codex",
+      "windsurf"
+    ],
+    "sourceUrls": [
+      "https://aws.amazon.com/q/developer/"
+    ]
+  }
+]

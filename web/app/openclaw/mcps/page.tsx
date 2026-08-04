@@ -2,9 +2,19 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
-import { Container, PageHeading, SectionLabel } from '@/components/page-shell';
-import { AgentEntryList } from '@/components/agent-entry-list';
+import { Container, PageHeading } from '@/components/page-shell';
+import { McpDirectorySearch } from '@/components/mcp-directory-search';
 import { openclawMcps, directoryMeta } from '@/lib/agent-directory';
+
+function mcpCategories() {
+  const counts: Record<string, number> = {};
+  openclawMcps.forEach((e) => {
+    counts[e.category] = (counts[e.category] || 0) + 1;
+  });
+  return Object.entries(counts)
+    .map(([category, count]) => ({ category, count }))
+    .sort((a, b) => b.count - a.count);
+}
 
 export const metadata: Metadata = {
   title: 'Top 50 MCP Servers for OpenClaw — Install & Setup',
@@ -34,7 +44,13 @@ export default function OpenClawMcpsPage() {
       <main className="flex-1">
         <Container className="py-12">
           <nav className="mb-6 flex gap-4 text-sm text-muted-foreground">
-            <Link href="/agents" className="hover:text-foreground">Agents hub</Link>
+            <Link href="/agentic" className="hover:text-foreground">
+              Agentic hub
+            </Link>
+            <span>/</span>
+            <Link href="/agents" className="hover:text-foreground">
+              Agents
+            </Link>
             <span>/</span>
             <span className="text-foreground">MCP Servers</span>
           </nav>
@@ -43,8 +59,7 @@ export default function OpenClawMcpsPage() {
             lead="Model Context Protocol servers you can connect to OpenClaw via openclaw mcp add."
             meta={`Updated ${directoryMeta.updated}`}
           />
-          <SectionLabel>Ranked list</SectionLabel>
-          <AgentEntryList entries={openclawMcps} />
+          <McpDirectorySearch entries={openclawMcps} categories={mcpCategories()} />
         </Container>
       </main>
 

@@ -12,12 +12,26 @@ export function Container({
   return <div className={cn('mx-auto w-full max-w-3xl px-5', className)}>{children}</div>;
 }
 
-export function Breadcrumb({ current }: { current: string }) {
+export function Breadcrumb({
+  current,
+  segments,
+}: {
+  current: string;
+  segments?: { label: string; href: string }[];
+}) {
   return (
-    <nav aria-label="Breadcrumb" className="mb-6 flex items-center gap-2 text-sm text-muted-foreground">
+    <nav aria-label="Breadcrumb" className="mb-6 flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
       <Link href="/" className="transition-colors hover:text-foreground">
         Jobs
       </Link>
+      {segments?.map((seg) => (
+        <span key={seg.href} className="flex items-center gap-2">
+          <span aria-hidden className="text-border">/</span>
+          <Link href={seg.href} className="transition-colors hover:text-foreground">
+            {seg.label}
+          </Link>
+        </span>
+      ))}
       <span aria-hidden className="text-border">/</span>
       <span className="truncate text-foreground">{current}</span>
     </nav>

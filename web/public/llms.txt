@@ -28,15 +28,17 @@
 ## Employer Submissions
 - Post a Featured AI Job ($99/mo): /post-job
 - Claim & Verify Startup Profile: /verify
-
 ## AI Agent Directory
 > Top 150 ranked plugins and MCP servers for OpenClaw and Hermes Agent.
 
 ### Hub
 - [Agent Directory](/agents): Browse OpenClaw plugins, MCP servers, and Hermes plugins
+- [Agentic Dev Hub](/agentic): Rankings, comparisons, MCPs, and jobs for agentic developers
 - [OpenClaw Plugins](/openclaw/plugins): Top 50 native OpenClaw extensions
 - [MCP Servers](/openclaw/mcps): Top 50 Model Context Protocol servers
 - [Hermes Plugins](/hermes/plugins): Top 50 Hermes Agent plugins
+- [Cursor Rules](/cursor-rules): Curated .cursorrules for AI coding agents
+- [List an MCP](/post-mcp): Feature your MCP server — $199/mo
 
 ### Top OpenClaw Plugins
 - [Discord](/openclaw/plugins/discord): Connect OpenClaw to Discord as a messaging channel with full tool access.
@@ -73,3 +75,32 @@
 - [Google Meet](/hermes/plugins/google-meet): Join calls, transcribe captions, and speak in realtime.
 - [Kanban](/hermes/plugins/kanban): Multi-profile work queue and orchestration board.
 - [Mem0](/hermes/plugins/mem0): Server-side LLM fact extraction with semantic search.
+## AI Coding Agents
+> Ranked comparisons of AI coding agents for agentic developers.
+
+### Hub
+- [Best AI Coding Agents (2026)](/compare/ai-coding-agents): Ranked hub with token usage and head-to-head links
+
+### Top Agents
+- [Hermes Agent](/compare/hermes-agent): Open-source, self-improving AI agent with persistent memory and 40+ built-in tools.
+- [Kilo Code](/compare/kilo-code): Open-source AI coding agent for VS Code, JetBrains, and CLI.
+- [Cline](/compare/cline): Open-source AI coding agent inside your IDE with browser automation.
+- [Claude Code](/compare/claude-code): Anthropic's agentic coding tool for planning and executing across your codebase.
+- [OpenClaw](/compare/openclaw): Open-source AI agent connected to messaging apps for real-world actions.
+- [pi](/compare/pi): There are many coding agents, but this one is yours.
+- [Codebuff](/compare/codebuff): Self-improving CLI agent.
+- [Codex](/compare/codex): OpenAI coding agent to help you build and ship with AI.
+- [Cursor](/compare/cursor): The AI-native code editor used by millions of developers.
+- [Windsurf](/compare/windsurf): Agentic IDE by Codeium with Cascade flows.
+
+### Popular Comparisons
+- [Claude Code vs Cursor](/compare/claude-code-vs-cursor)
+- [Claude Code vs Codex](/compare/claude-code-vs-codex)
+- [Cursor vs Windsurf](/compare/cursor-vs-windsurf)
+- [Cline vs Cursor](/compare/cline-vs-cursor)
+- [Kilo Code vs Cline](/compare/kilo-code-vs-cline)
+- [Hermes Agent vs OpenClaw](/compare/hermes-agent-vs-openclaw)
+- [pi vs Codebuff](/compare/pi-vs-codebuff)
+- [OpenClaw vs Claude Code](/compare/openclaw-vs-claude-code)
+- [Codex vs Cursor](/compare/codex-vs-cursor)
+- [Hermes Agent vs Claude Code](/compare/hermes-agent-vs-claude-code)

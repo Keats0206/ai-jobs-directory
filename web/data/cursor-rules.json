@@ -1,0 +1,116 @@
+{
+  "meta": {
+    "updated": "2026-08-04",
+    "methodology": "Curated from community .cursorrules repos and official Cursor docs"
+  },
+  "entries": [
+    {
+      "id": "typescript-react",
+      "rank": 1,
+      "name": "TypeScript + React",
+      "category": "Frontend",
+      "description": "Strict TypeScript, React 19, functional components, and accessible UI patterns for Cursor.",
+      "tags": ["typescript", "react", "frontend"],
+      "sourceUrl": "https://cursor.directory"
+    },
+    {
+      "id": "nextjs-app-router",
+      "rank": 2,
+      "name": "Next.js App Router",
+      "category": "Frontend",
+      "description": "Next.js 15 App Router conventions — server components, metadata, and route handlers.",
+      "tags": ["nextjs", "react", "fullstack"],
+      "sourceUrl": "https://cursor.directory"
+    },
+    {
+      "id": "python-fastapi",
+      "rank": 3,
+      "name": "Python FastAPI",
+      "category": "Backend",
+      "description": "FastAPI best practices — Pydantic models, async routes, and typed dependencies.",
+      "tags": ["python", "fastapi", "backend"],
+      "sourceUrl": "https://cursor.directory"
+    },
+    {
+      "id": "node-express",
+      "rank": 4,
+      "name": "Node.js Express",
+      "category": "Backend",
+      "description": "Express API patterns with TypeScript, middleware, and error handling.",
+      "tags": ["nodejs", "express", "backend"],
+      "sourceUrl": "https://cursor.directory"
+    },
+    {
+      "id": "rust-systems",
+      "rank": 5,
+      "name": "Rust Systems",
+      "category": "Systems",
+      "description": "Idiomatic Rust — ownership, error handling with Result, and clippy-friendly code.",
+      "tags": ["rust", "systems"],
+      "sourceUrl": "https://cursor.directory"
+    },
+    {
+      "id": "go-services",
+      "rank": 6,
+      "name": "Go Microservices",
+      "category": "Backend",
+      "description": "Go service conventions — context propagation, interfaces, and table-driven tests.",
+      "tags": ["go", "backend", "microservices"],
+      "sourceUrl": "https://cursor.directory"
+    },
+    {
+      "id": "ai-agent-mcp",
+      "rank": 7,
+      "name": "AI Agent + MCP",
+      "category": "Agentic",
+      "description": "Rules for building MCP servers and agentic tools — tool schemas, error surfaces, and safety.",
+      "tags": ["mcp", "agents", "agentic"],
+      "sourceUrl": "https://cursor.directory"
+    },
+    {
+      "id": "testing-jest-vitest",
+      "rank": 8,
+      "name": "Testing (Jest/Vitest)",
+      "category": "Quality",
+      "description": "Unit and integration testing patterns — meaningful assertions, no trivial tests.",
+      "tags": ["testing", "jest", "vitest"],
+      "sourceUrl": "https://cursor.directory"
+    },
+    {
+      "id": "tailwind-ui",
+      "rank": 9,
+      "name": "Tailwind CSS UI",
+      "category": "Frontend",
+      "description": "Tailwind utility-first styling with consistent spacing, responsive design, and a11y.",
+      "tags": ["tailwind", "css", "frontend"],
+      "sourceUrl": "https://cursor.directory"
+    },
+    {
+      "id": "postgres-sql",
+      "rank": 10,
+      "name": "PostgreSQL & SQL",
+      "category": "Data",
+      "description": "SQL style guide — migrations, indexes, and parameterized queries.",
+      "tags": ["postgres", "sql", "database"],
+      "sourceUrl": "https://cursor.directory"
+    },
+    {
+      "id": "security-review",
+      "rank": 11,
+      "name": "Security Review",
+      "category": "Quality",
+      "description": "Security-first coding — input validation, secrets handling, and OWASP awareness.",
+      "tags": ["security", "review"],
+      "sourceUrl": "https://cursor.directory"
+    },
+    {
+      "id": "docs-technical-writing",
+      "rank": 12,
+      "name": "Technical Writing",
+      "category": "Docs",
+      "description": "Clear API docs, README structure, and changelog conventions.",
+      "tags": ["docs", "writing"],
+      "sourceUrl": "https://cursor.directory"
+    }
+  ]
+}

@@ -26,5 +26,6 @@
 - Remote AI Startup Jobs
 
 ## Employer Submissions
-- Post a Featured AI Job ($99/mo): /post-job
+- Post an AI Job ($99 one-time): /post-job
+- List an MCP Server ($199/mo): /post-mcp
 - Claim & Verify Startup Profile: /verify

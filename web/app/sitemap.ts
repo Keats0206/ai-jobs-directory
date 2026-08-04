@@ -7,6 +7,8 @@ import {
   getAllCategories,
   categorySlug,
 } from '@/lib/agent-directory';
+import { getAllCompareSlugs } from '@/lib/agents';
+import { cursorRules } from '@/lib/cursor-rules';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = 'https://www.artificialjobs.dev';
@@ -74,8 +76,77 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
+  const compareHubUrl = {
+    url: `${base}/compare/ai-coding-agents`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: 0.95,
+  };
+
+  const compareSlugUrls = getAllCompareSlugs().map((slug) => ({
+    url: `${base}/compare/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: slug.includes('-vs-') ? 0.85 : 0.8,
+  }));
+
+  const agenticHubUrl = {
+    url: `${base}/agentic`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: 0.95,
+  };
+
+  const submissionUrls = [
+    { url: `${base}/post-job`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.5 },
+    { url: `${base}/post-mcp`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.5 },
+  ];
+
+  const cursorRulesUrls = [
+    { url: `${base}/cursor-rules`, lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    ...cursorRules.map((rule) => ({
+      url: `${base}/cursor-rules/${rule.id}`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    })),
+  ];
+
+  const geoContentUrls = [
+    {
+      url: `${base}/resources/learn/what-is-ai-coding-agent`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.75,
+    },
+    {
+      url: `${base}/use-cases/ai-engineer-career`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.75,
+    },
+    {
+      url: `${base}/use-cases/agentic-engineer-jobs`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.75,
+    },
+    {
+      url: `${base}/resources/compare/cursor-vs-copilot`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    },
+  ];
+
   return [
     { url: base, lastModified: new Date(), changeFrequency: 'daily', priority: 1 },
+    compareHubUrl,
+    agenticHubUrl,
+    ...compareSlugUrls,
+    ...submissionUrls,
+    ...geoContentUrls,
+    ...cursorRulesUrls,
     ...skillUrls,
     ...salaryUrls,
     ...locationUrls,

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Append AI Agent Directory section to llms.txt from generated JSON data."""
+"""Append AI Agent Directory and AI Coding Agents sections to llms.txt."""
 
 import json
 from pathlib import Path
@@ -17,6 +17,27 @@ def load_entries(filename: str, limit: int = 10):
     return data.get("entries", [])[:limit]
 
 
+def load_agents(limit: int = 10):
+    path = WEB_DATA / "agents.json"
+    if not path.exists():
+        return []
+    return json.loads(path.read_text())[:limit]
+
+
+def load_comparisons(limit: int = 10):
+    path = WEB_DATA / "comparisons.json"
+    if not path.exists():
+        return []
+    return json.loads(path.read_text())[:limit]
+
+
+def agent_name(slug: str, agents: list) -> str:
+    for a in agents:
+        if a.get("slug") == slug:
+            return a.get("name", slug)
+    return slug
+
+
 def build_agent_section() -> str:
     lines = [
         "",
@@ -25,9 +46,12 @@ def build_agent_section() -> str:
         "",
         "### Hub",
         "- [Agent Directory](/agents): Browse OpenClaw plugins, MCP servers, and Hermes plugins",
+        "- [Agentic Dev Hub](/agentic): Rankings, comparisons, MCPs, and jobs for agentic developers",
         "- [OpenClaw Plugins](/openclaw/plugins): Top 50 native OpenClaw extensions",
         "- [MCP Servers](/openclaw/mcps): Top 50 Model Context Protocol servers",
         "- [Hermes Plugins](/hermes/plugins): Top 50 Hermes Agent plugins",
+        "- [Cursor Rules](/cursor-rules): Curated .cursorrules for AI coding agents",
+        "- [List an MCP](/post-mcp): Feature your MCP server — $199/mo",
         "",
         "### Top OpenClaw Plugins",
     ]
@@ -52,20 +76,56 @@ def build_agent_section() -> str:
     return "\n".join(lines)
 
 
-def main():
-    section = build_agent_section()
+def build_compare_section() -> str:
+    agents = load_agents(10)
+    comparisons = load_comparisons(10)
+    if not agents:
+        return ""
 
-    if LLMS_PATH.exists():
-        content = LLMS_PATH.read_text()
-        marker = "## AI Agent Directory"
+    lines = [
+        "",
+        "## AI Coding Agents",
+        "> Ranked comparisons of AI coding agents for agentic developers.",
+        "",
+        "### Hub",
+        "- [Best AI Coding Agents (2026)](/compare/ai-coding-agents): Ranked hub with token usage and head-to-head links",
+        "",
+        "### Top Agents",
+    ]
+
+    for agent in agents:
+        tagline = agent.get("tagline", "")[:100]
+        lines.append(f"- [{agent['name']}](/compare/{agent['slug']}): {tagline}")
+
+    if comparisons:
+        lines.extend(["", "### Popular Comparisons"])
+        for c in comparisons:
+            name_a = agent_name(c["agentA"], agents)
+            name_b = agent_name(c["agentB"], agents)
+            lines.append(f"- [{name_a} vs {name_b}](/compare/{c['slug']})")
+
+    return "\n".join(lines)
+
+
+def strip_sections(content: str) -> str:
+    for marker in ("## AI Agent Directory", "## AI Coding Agents"):
         if marker in content:
             content = content.split(marker)[0].rstrip()
-        content = content + section + "\n"
-    else:
-        content = "# AI Jobs Directory\n" + section + "\n"
+    return content
 
+
+def main():
+    agent_section = build_agent_section()
+    compare_section = build_compare_section()
+
+    if LLMS_PATH.exists():
+        content = strip_sections(LLMS_PATH.read_text())
+    else:
+        content = "# Artificial Jobs\n> Agentic dev tools and AI engineering jobs.\n"
+
+    content = content + agent_section + compare_section + "\n"
     LLMS_PATH.write_text(content)
-    print(f"Updated {LLMS_PATH} with agent directory section")
+    print(f"Updated {LLMS_PATH} with agent directory and coding agent sections")
 
 
 if __name__ == "__main__":

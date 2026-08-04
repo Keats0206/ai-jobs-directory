@@ -47,7 +47,9 @@ function SuccessContent() {
       <p className="mt-3 text-muted-foreground">
         {type === 'featured'
           ? 'Your featured listing is now live. Check your email for details.'
-          : 'Your job has been posted. Check your email for confirmation.'}
+          : type === 'post-mcp'
+            ? 'Your MCP listing subscription is active. Check your email for next steps.'
+            : 'Your job has been posted. Check your email for confirmation.'}
       </p>
       <BackHome />
     </div>
