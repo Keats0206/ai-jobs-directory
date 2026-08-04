@@ -28,3 +28,48 @@
 ## Employer Submissions
 - Post a Featured AI Job ($99/mo): /post-job
 - Claim & Verify Startup Profile: /verify
+
+## AI Agent Directory
+> Top 150 ranked plugins and MCP servers for OpenClaw and Hermes Agent.
+
+### Hub
+- [Agent Directory](/agents): Browse OpenClaw plugins, MCP servers, and Hermes plugins
+- [OpenClaw Plugins](/openclaw/plugins): Top 50 native OpenClaw extensions
+- [MCP Servers](/openclaw/mcps): Top 50 Model Context Protocol servers
+- [Hermes Plugins](/hermes/plugins): Top 50 Hermes Agent plugins
+
+### Top OpenClaw Plugins
+- [Discord](/openclaw/plugins/discord): Connect OpenClaw to Discord as a messaging channel with full tool access.
+- [Slack](/openclaw/plugins/slack): Slack workspace integration for OpenClaw agents.
+- [Telegram](/openclaw/plugins/telegram): Telegram bot channel for OpenClaw with DM and group support.
+- [WhatsApp](/openclaw/plugins/whatsapp): WhatsApp messaging channel for OpenClaw agents.
+- [Signal](/openclaw/plugins/signal): Signal messenger integration for privacy-focused agent chat.
+- [Matrix](/openclaw/plugins/matrix): Decentralized Matrix protocol channel for OpenClaw.
+- [Microsoft Teams](/openclaw/plugins/teams-meetings): Microsoft Teams messaging and meetings integration.
+- [iMessage](/openclaw/plugins/imessage): Apple iMessage channel for macOS OpenClaw deployments.
+- [Google Chat](/openclaw/plugins/googlechat): Google Chat workspace integration for OpenClaw.
+- [Feishu / Lark](/openclaw/plugins/feishu): Feishu/Lark enterprise messaging channel.
+
+### Top MCP Servers
+- [Filesystem](/openclaw/mcps/filesystem): Secure local file read/write with configurable directory access.
+- [Memory](/openclaw/mcps/memory): Knowledge graph memory server for persistent agent recall.
+- [GitHub](/openclaw/mcps/github): Repository management, issues, PRs, and code search via GitHub API.
+- [GitLab](/openclaw/mcps/gitlab): GitLab project and merge request management.
+- [PostgreSQL](/openclaw/mcps/postgres): Read-only SQL queries against PostgreSQL databases.
+- [SQLite](/openclaw/mcps/sqlite): Query and analyze local SQLite database files.
+- [Fetch](/openclaw/mcps/fetch): Fetch and convert web page content for LLM consumption.
+- [Playwright](/openclaw/mcps/playwright): Full browser automation with Playwright for web tasks.
+- [Puppeteer](/openclaw/mcps/puppeteer): Headless Chrome automation via Puppeteer MCP server.
+- [Brave Search](/openclaw/mcps/brave-search): Web and local search via Brave Search API.
+
+### Top Hermes Plugins
+- [Firecrawl](/hermes/plugins/firecrawl): Default web search backend with excellent speed and result quality.
+- [OpenRouter](/hermes/plugins/openrouter): Gateway to 200+ models from every major provider.
+- [Tavily](/hermes/plugins/tavily): AI-optimized web search tailored for agent use cases.
+- [Langfuse](/hermes/plugins/langfuse): Full observability — traces conversations, LLM calls, and tool usage.
+- [Ollama (Local)](/hermes/plugins/ollama): Run Llama, Mistral, Phi-3 locally with zero API cost.
+- [OpenAI Image Gen](/hermes/plugins/openai-image-gen): OpenAI gpt-image-2 generation with best available quality.
+- [Spotify](/hermes/plugins/spotify): Full playback control — devices, queue, search, playlists.
+- [Google Meet](/hermes/plugins/google-meet): Join calls, transcribe captions, and speak in realtime.
+- [Kanban](/hermes/plugins/kanban): Multi-profile work queue and orchestration board.
+- [Mem0](/hermes/plugins/mem0): Server-side LLM fact extraction with semantic search.

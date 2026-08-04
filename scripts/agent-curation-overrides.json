@@ -1,0 +1,9 @@
+{
+  "force_include": {
+    "openclaw": ["discord", "browser", "voice-call", "tavily"],
+    "mcp": ["filesystem", "github", "playwright", "context7"],
+    "hermes": ["firecrawl", "openrouter", "langfuse", "honcho"]
+  },
+  "force_exclude": {},
+  "rank_overrides": {}
+}

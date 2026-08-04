@@ -1,0 +1,858 @@
+{
+  "meta": {
+    "updated": "2026-08-04",
+    "methodology": "Composite score: official/bundled (+3), docs (+2), community popularity, curator boost"
+  },
+  "entries": [
+    {
+      "rank": 1,
+      "id": "discord",
+      "name": "Discord",
+      "ecosystem": "openclaw",
+      "category": "Channels",
+      "description": "Connect OpenClaw to Discord as a messaging channel with full tool access.",
+      "install": "openclaw plugins install @openclaw/discord",
+      "docsUrl": "https://docs.openclaw.ai/plugins/discord",
+      "repoUrl": "https://github.com/openclaw/openclaw/tree/main/extensions/discord",
+      "official": true,
+      "bundled": true,
+      "tags": [
+        "messaging",
+        "chat"
+      ]
+    },
+    {
+      "rank": 2,
+      "id": "slack",
+      "name": "Slack",
+      "ecosystem": "openclaw",
+      "category": "Channels",
+      "description": "Slack workspace integration for OpenClaw agents.",
+      "install": "openclaw plugins install @openclaw/slack",
+      "docsUrl": "https://docs.openclaw.ai/plugins/slack",
+      "repoUrl": "https://github.com/openclaw/openclaw/tree/main/extensions/slack",
+      "official": true,
+      "bundled": true,
+      "tags": [
+        "messaging",
+        "workplace"
+      ]
+    },
+    {
+      "rank": 3,
+      "id": "telegram",
+      "name": "Telegram",
+      "ecosystem": "openclaw",
+      "category": "Channels",
+      "description": "Telegram bot channel for OpenClaw with DM and group support.",
+      "install": "openclaw plugins install @openclaw/telegram",
+      "docsUrl": "https://docs.openclaw.ai/plugins/telegram",
+      "repoUrl": "https://github.com/openclaw/openclaw/tree/main/extensions/telegram",
+      "official": true,
+      "bundled": true,
+      "tags": [
+        "messaging",
+        "mobile"
+      ]
+    },
+    {
+      "rank": 4,
+      "id": "whatsapp",
+      "name": "WhatsApp",
+      "ecosystem": "openclaw",
+      "category": "Channels",
+      "description": "WhatsApp messaging channel for OpenClaw agents.",
+      "install": "openclaw plugins install @openclaw/whatsapp",
+      "docsUrl": "https://docs.openclaw.ai/plugins/whatsapp",
+      "repoUrl": "https://github.com/openclaw/openclaw/tree/main/extensions/whatsapp",
+      "official": true,
+      "bundled": true,
+      "tags": [
+        "messaging",
+        "mobile"
+      ]
+    },
+    {
+      "rank": 5,
+      "id": "signal",
+      "name": "Signal",
+      "ecosystem": "openclaw",
+      "category": "Channels",
+      "description": "Signal messenger integration for privacy-focused agent chat.",
+      "install": "openclaw plugins install @openclaw/signal",
+      "docsUrl": "https://docs.openclaw.ai/plugins/signal",
+      "repoUrl": "https://github.com/openclaw/openclaw/tree/main/extensions/signal",
+      "official": true,
+      "bundled": true,
+      "tags": [
+        "messaging",
+        "privacy"
+      ]
+    },
+    {
+      "rank": 6,
+      "id": "matrix",
+      "name": "Matrix",
+      "ecosystem": "openclaw",
+      "category": "Channels",
+      "description": "Decentralized Matrix protocol channel for OpenClaw.",
+      "install": "openclaw plugins install @openclaw/matrix",
+      "docsUrl": "https://docs.openclaw.ai/plugins/matrix",
+      "repoUrl": "https://github.com/openclaw/openclaw/tree/main/extensions/matrix",
+      "official": true,
+      "bundled": true,
+      "tags": [
+        "messaging",
+        "decentralized"
+      ]
+    },
+    {
+      "rank": 7,
+      "id": "teams-meetings",
+      "name": "Microsoft Teams",
+      "ecosystem": "openclaw",
+      "category": "Channels",
+      "description": "Microsoft Teams messaging and meetings integration.",
+      "install": "openclaw plugins install @openclaw/teams-meetings",
+      "docsUrl": "https://docs.openclaw.ai/plugins/teams-meetings",
+      "repoUrl": "https://github.com/openclaw/openclaw/tree/main/extensions/teams-meetings",
+      "official": true,
+      "bundled": true,
+      "tags": [
+        "messaging",
+        "enterprise"
+      ]
+    },
+    {
+      "rank": 8,
+      "id": "imessage",
+      "name": "iMessage",
+      "ecosystem": "openclaw",
+      "category": "Channels",
+      "description": "Apple iMessage channel for macOS OpenClaw deployments.",
+      "install": "openclaw plugins install @openclaw/imessage",
+      "docsUrl": "https://docs.openclaw.ai/plugins/imessage",
+      "repoUrl": "https://github.com/openclaw/openclaw/tree/main/extensions/imessage",
+      "official": true,
+      "bundled": true,
+      "tags": [
+        "messaging",
+        "apple"
+      ]
+    },
+    {
+      "rank": 9,
+      "id": "googlechat",
+      "name": "Google Chat",
+      "ecosystem": "openclaw",
+      "category": "Channels",
+      "description": "Google Chat workspace integration for OpenClaw.",
+      "install": "openclaw plugins install @openclaw/googlechat",
+      "docsUrl": "https://docs.openclaw.ai/plugins/googlechat",
+      "repoUrl": "https://github.com/openclaw/openclaw/tree/main/extensions/googlechat",
+      "official": true,
+      "bundled": true,
+      "tags": [
+        "messaging",
+        "google"
+      ]
+    },
+    {
+      "rank": 10,
+      "id": "feishu",
+      "name": "Feishu / Lark",
+      "ecosystem": "openclaw",
+      "category": "Channels",
+      "description": "Feishu/Lark enterprise messaging channel.",
+      "install": "openclaw plugins install @openclaw/feishu",
+      "docsUrl": "https://docs.openclaw.ai/plugins/feishu",
+      "repoUrl": "https://github.com/openclaw/openclaw/tree/main/extensions/feishu",
+      "official": true,
+      "bundled": true,
+      "tags": [
+        "messaging",
+        "enterprise"
+      ]
+    },
+    {
+      "rank": 11,
+      "id": "line",
+      "name": "LINE",
+      "ecosystem": "openclaw",
+      "category": "Channels",
+      "description": "LINE Messaging API channel for OpenClaw.",
+      "install": "openclaw plugins install @openclaw/line",
+      "docsUrl": "https://docs.openclaw.ai/plugins/line",
+      "repoUrl": "https://github.com/openclaw/openclaw/tree/main/extensions/line",
+      "official": true,
+      "bundled": true,
+      "tags": [
+        "messaging",
+        "asia"
+      ]
+    },
+    {
+      "rank": 12,
+      "id": "irc",
+      "name": "IRC",
+      "ecosystem": "openclaw",
+      "category": "Channels",
+      "description": "Internet Relay Chat channel adapter.",
+      "install": "openclaw plugins install @openclaw/irc",
+      "docsUrl": "https://docs.openclaw.ai/plugins/irc",
+      "repoUrl": "https://github.com/openclaw/openclaw/tree/main/extensions/irc",
+      "official": true,
+      "bundled": true,
+      "tags": [
+        "messaging",
+        "legacy"
+      ]
+    },
+    {
+      "rank": 13,
+      "id": "synology-chat",
+      "name": "Synology Chat",
+      "ecosystem": "openclaw",
+      "category": "Channels",
+      "description": "Synology NAS Chat integration for self-hosted teams.",
+      "install": "openclaw plugins install @openclaw/synology-chat",
+      "docsUrl": "https://docs.openclaw.ai/plugins/synology-chat",
+      "repoUrl": "https://github.com/openclaw/openclaw/tree/main/extensions/synology-chat",
+      "official": true,
+      "bundled": true,
+      "tags": [
+        "messaging",
+        "self-hosted"
+      ]
+    },
+    {
+      "rank": 14,
+      "id": "twitch",
+      "name": "Twitch",
+      "ecosystem": "openclaw",
+      "category": "Channels",
+      "description": "Twitch chat channel for streamer-facing agents.",
+      "install": "openclaw plugins install @openclaw/twitch",
+      "docsUrl": "https://docs.openclaw.ai/plugins/twitch",
+      "repoUrl": "https://github.com/openclaw/openclaw/tree/main/extensions/twitch",
+      "official": true,
+      "bundled": true,
+      "tags": [
+        "messaging",
+        "streaming"
+      ]
+    },
+    {
+      "rank": 15,
+      "id": "browser",
+      "name": "Browser",
+      "ecosystem": "openclaw",
+      "category": "Tools",
+      "description": "Built-in browser automation and web interaction tools.",
+      "install": "openclaw plugins enable browser",
+      "docsUrl": "https://docs.openclaw.ai/plugins/browser",
+      "repoUrl": "https://github.com/openclaw/openclaw/tree/main/extensions/browser",
+      "official": true,
+      "bundled": true,
+      "tags": [
+        "automation",
+        "web"
+      ]
+    },
+    {
+      "rank": 16,
+      "id": "anthropic",
+      "name": "Anthropic",
+      "ecosystem": "openclaw",
+      "category": "ModelProviders",
+      "description": "Anthropic Claude model provider for OpenClaw.",
+      "install": "openclaw plugins install @openclaw/anthropic",
+      "docsUrl": "https://docs.openclaw.ai/plugins/anthropic",
+      "repoUrl": "https://github.com/openclaw/openclaw/tree/main/extensions/anthropic",
+      "official": true,
+      "bundled": true,
+      "tags": [
+        "llm",
+        "claude"
+      ]
+    },
+    {
+      "rank": 17,
+      "id": "openai",
+      "name": "OpenAI",
+      "ecosystem": "openclaw",
+      "category": "ModelProviders",
+      "description": "OpenAI GPT model provider integration.",
+      "install": "openclaw plugins install @openclaw/openai",
+      "docsUrl": "https://docs.openclaw.ai/plugins/openai",
+      "repoUrl": "https://github.com/openclaw/openclaw/tree/main/extensions/openai",
+      "official": true,
+      "bundled": true,
+      "tags": [
+        "llm",
+        "gpt"
+      ]
+    },
+    {
+      "rank": 18,
+      "id": "google",
+      "name": "Google AI",
+      "ecosystem": "openclaw",
+      "category": "ModelProviders",
+      "description": "Google Gemini and AI Studio provider.",
+      "install": "openclaw plugins install @openclaw/google",
+      "docsUrl": "https://docs.openclaw.ai/plugins/google",
+      "repoUrl": "https://github.com/openclaw/openclaw/tree/main/extensions/google",
+      "official": true,
+      "bundled": true,
+      "tags": [
+        "llm",
+        "gemini"
+      ]
+    },
+    {
+      "rank": 19,
+      "id": "openrouter",
+      "name": "OpenRouter",
+      "ecosystem": "openclaw",
+      "category": "ModelProviders",
+      "description": "Gateway to 200+ models via a single API key.",
+      "install": "openclaw plugins install @openclaw/openrouter",
+      "docsUrl": "https://docs.openclaw.ai/plugins/openrouter",
+      "repoUrl": "https://github.com/openclaw/openclaw/tree/main/extensions/openrouter",
+      "official": true,
+      "bundled": true,
+      "tags": [
+        "llm",
+        "multi-model"
+      ]
+    },
+    {
+      "rank": 20,
+      "id": "groq",
+      "name": "Groq",
+      "ecosystem": "openclaw",
+      "category": "ModelProviders",
+      "description": "Ultra-fast inference via Groq LPU hardware.",
+      "install": "openclaw plugins install @openclaw/groq",
+      "docsUrl": "https://docs.openclaw.ai/plugins/groq",
+      "repoUrl": "https://github.com/openclaw/openclaw/tree/main/extensions/groq",
+      "official": true,
+      "bundled": true,
+      "tags": [
+        "llm",
+        "fast"
+      ]
+    },
+    {
+      "rank": 21,
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "ecosystem": "openclaw",
+      "category": "ModelProviders",
+      "description": "DeepSeek model provider integration.",
+      "install": "openclaw plugins install @openclaw/deepseek",
+      "docsUrl": "https://docs.openclaw.ai/plugins/deepseek",
+      "repoUrl": "https://github.com/openclaw/openclaw/tree/main/extensions/deepseek",
+      "official": true,
+      "bundled": true,
+      "tags": [
+        "llm",
+        "coding"
+      ]
+    },
+    {
+      "rank": 22,
+      "id": "xai",
+      "name": "xAI",
+      "ecosystem": "openclaw",
+      "category": "ModelProviders",
+      "description": "xAI Grok model provider for OpenClaw.",
+      "install": "openclaw plugins install @openclaw/xai",
+      "docsUrl": "https://docs.openclaw.ai/plugins/xai",
+      "repoUrl": "https://github.com/openclaw/openclaw/tree/main/extensions/xai",
+      "official": true,
+      "bundled": true,
+      "tags": [
+        "llm",
+        "grok"
+      ]
+    },
+    {
+      "rank": 23,
+      "id": "voice-call",
+      "name": "Voice Call",
+      "ecosystem": "openclaw",
+      "category": "Voice",
+      "description": "Twilio-powered voice call functionality for agents.",
+      "install": "openclaw plugins install @openclaw/voice-call",
+      "docsUrl": "https://docs.openclaw.ai/plugins/voice-call",
+      "repoUrl": "https://github.com/openclaw/openclaw/tree/main/extensions/voice-call",
+      "official": true,
+      "bundled": true,
+      "tags": [
+        "voice",
+        "twilio"
+      ]
+    },
+    {
+      "rank": 24,
+      "id": "elevenlabs",
+      "name": "ElevenLabs",
+      "ecosystem": "openclaw",
+      "category": "Voice",
+      "description": "ElevenLabs text-to-speech integration.",
+      "install": "openclaw plugins install @openclaw/elevenlabs",
+      "docsUrl": "https://docs.openclaw.ai/plugins/elevenlabs",
+      "repoUrl": "https://github.com/openclaw/openclaw/tree/main/extensions/elevenlabs",
+      "official": true,
+      "bundled": true,
+      "tags": [
+        "voice",
+        "tts"
+      ]
+    },
+    {
+      "rank": 25,
+      "id": "deepgram",
+      "name": "Deepgram",
+      "ecosystem": "openclaw",
+      "category": "Voice",
+      "description": "Deepgram speech-to-text and voice AI.",
+      "install": "openclaw plugins install @openclaw/deepgram",
+      "docsUrl": "https://docs.openclaw.ai/plugins/deepgram",
+      "repoUrl": "https://github.com/openclaw/openclaw/tree/main/extensions/deepgram",
+      "official": true,
+      "bundled": true,
+      "tags": [
+        "voice",
+        "stt"
+      ]
+    },
+    {
+      "rank": 26,
+      "id": "talk-voice",
+      "name": "Talk Voice",
+      "ecosystem": "openclaw",
+      "category": "Voice",
+      "description": "Real-time voice conversation mode for agents.",
+      "install": "openclaw plugins install @openclaw/talk-voice",
+      "docsUrl": "https://docs.openclaw.ai/plugins/talk-voice",
+      "repoUrl": "https://github.com/openclaw/openclaw/tree/main/extensions/talk-voice",
+      "official": true,
+      "bundled": true,
+      "tags": [
+        "voice",
+        "realtime"
+      ]
+    },
+    {
+      "rank": 27,
+      "id": "azure-speech",
+      "name": "Azure Speech",
+      "ecosystem": "openclaw",
+      "category": "Voice",
+      "description": "Microsoft Azure Speech Services integration.",
+      "install": "openclaw plugins install @openclaw/azure-speech",
+      "docsUrl": "https://docs.openclaw.ai/plugins/azure-speech",
+      "repoUrl": "https://github.com/openclaw/openclaw/tree/main/extensions/azure-speech",
+      "official": true,
+      "bundled": true,
+      "tags": [
+        "voice",
+        "azure"
+      ]
+    },
+    {
+      "rank": 28,
+      "id": "tavily",
+      "name": "Tavily",
+      "ecosystem": "openclaw",
+      "category": "Search",
+      "description": "AI-optimized web search backend for agents.",
+      "install": "openclaw plugins install @openclaw/tavily",
+      "docsUrl": "https://docs.openclaw.ai/plugins/tavily",
+      "repoUrl": "https://github.com/openclaw/openclaw/tree/main/extensions/tavily",
+      "official": true,
+      "bundled": true,
+      "tags": [
+        "search",
+        "web"
+      ]
+    },
+    {
+      "rank": 29,
+      "id": "brave",
+      "name": "Brave Search",
+      "ecosystem": "openclaw",
+      "category": "Search",
+      "description": "Brave Search API integration for web queries.",
+      "install": "openclaw plugins install @openclaw/brave",
+      "docsUrl": "https://docs.openclaw.ai/plugins/brave",
+      "repoUrl": "https://github.com/openclaw/openclaw/tree/main/extensions/brave",
+      "official": true,
+      "bundled": true,
+      "tags": [
+        "search",
+        "web"
+      ]
+    },
+    {
+      "rank": 30,
+      "id": "duckduckgo",
+      "name": "DuckDuckGo",
+      "ecosystem": "openclaw",
+      "category": "Search",
+      "description": "Free DuckDuckGo web search without API keys.",
+      "install": "openclaw plugins install @openclaw/duckduckgo",
+      "docsUrl": "https://docs.openclaw.ai/plugins/duckduckgo",
+      "repoUrl": "https://github.com/openclaw/openclaw/tree/main/extensions/duckduckgo",
+      "official": true,
+      "bundled": true,
+      "tags": [
+        "search",
+        "free"
+      ]
+    },
+    {
+      "rank": 31,
+      "id": "exa",
+      "name": "Exa",
+      "ecosystem": "openclaw",
+      "category": "Search",
+      "description": "Neural search API for high-quality web results.",
+      "install": "openclaw plugins install @openclaw/exa",
+      "docsUrl": "https://docs.openclaw.ai/plugins/exa",
+      "repoUrl": "https://github.com/openclaw/openclaw/tree/main/extensions/exa",
+      "official": true,
+      "bundled": true,
+      "tags": [
+        "search",
+        "neural"
+      ]
+    },
+    {
+      "rank": 32,
+      "id": "perplexity",
+      "name": "Perplexity",
+      "ecosystem": "openclaw",
+      "category": "Search",
+      "description": "Perplexity AI search integration.",
+      "install": "openclaw plugins install @openclaw/perplexity",
+      "docsUrl": "https://docs.openclaw.ai/plugins/perplexity",
+      "repoUrl": "https://github.com/openclaw/openclaw/tree/main/extensions/perplexity",
+      "official": true,
+      "bundled": true,
+      "tags": [
+        "search",
+        "ai"
+      ]
+    },
+    {
+      "rank": 33,
+      "id": "firecrawl",
+      "name": "Firecrawl",
+      "ecosystem": "openclaw",
+      "category": "Search",
+      "description": "Web scraping and structured content extraction.",
+      "install": "openclaw plugins install @openclaw/firecrawl",
+      "docsUrl": "https://docs.openclaw.ai/plugins/firecrawl",
+      "repoUrl": "https://github.com/openclaw/openclaw/tree/main/extensions/firecrawl",
+      "official": true,
+      "bundled": true,
+      "tags": [
+        "search",
+        "scrape"
+      ]
+    },
+    {
+      "rank": 34,
+      "id": "searxng",
+      "name": "SearXNG",
+      "ecosystem": "openclaw",
+      "category": "Search",
+      "description": "Self-hosted meta-search engine integration.",
+      "install": "openclaw plugins install @openclaw/searxng",
+      "docsUrl": "https://docs.openclaw.ai/plugins/searxng",
+      "repoUrl": "https://github.com/openclaw/openclaw/tree/main/extensions/searxng",
+      "official": true,
+      "bundled": true,
+      "tags": [
+        "search",
+        "self-hosted"
+      ]
+    },
+    {
+      "rank": 35,
+      "id": "web-readability",
+      "name": "Web Readability",
+      "ecosystem": "openclaw",
+      "category": "Search",
+      "description": "Extract clean readable content from web pages.",
+      "install": "openclaw plugins install @openclaw/web-readability",
+      "docsUrl": "https://docs.openclaw.ai/plugins/web-readability",
+      "repoUrl": "https://github.com/openclaw/openclaw/tree/main/extensions/web-readability",
+      "official": true,
+      "bundled": true,
+      "tags": [
+        "search",
+        "extract"
+      ]
+    },
+    {
+      "rank": 36,
+      "id": "codex",
+      "name": "Codex",
+      "ecosystem": "openclaw",
+      "category": "DevTools",
+      "description": "OpenAI Codex coding agent integration.",
+      "install": "openclaw plugins install @openclaw/codex",
+      "docsUrl": "https://docs.openclaw.ai/plugins/codex",
+      "repoUrl": "https://github.com/openclaw/openclaw/tree/main/extensions/codex",
+      "official": true,
+      "bundled": true,
+      "tags": [
+        "coding",
+        "agent"
+      ]
+    },
+    {
+      "rank": 37,
+      "id": "github-copilot",
+      "name": "GitHub Copilot",
+      "ecosystem": "openclaw",
+      "category": "DevTools",
+      "description": "GitHub Copilot model provider integration.",
+      "install": "openclaw plugins install @openclaw/github-copilot",
+      "docsUrl": "https://docs.openclaw.ai/plugins/github-copilot",
+      "repoUrl": "https://github.com/openclaw/openclaw/tree/main/extensions/github-copilot",
+      "official": true,
+      "bundled": true,
+      "tags": [
+        "coding",
+        "copilot"
+      ]
+    },
+    {
+      "rank": 38,
+      "id": "diffs",
+      "name": "Diffs",
+      "ecosystem": "openclaw",
+      "category": "DevTools",
+      "description": "Code diff viewing and patch management tools.",
+      "install": "openclaw plugins install @openclaw/diffs",
+      "docsUrl": "https://docs.openclaw.ai/plugins/diffs",
+      "repoUrl": "https://github.com/openclaw/openclaw/tree/main/extensions/diffs",
+      "official": true,
+      "bundled": true,
+      "tags": [
+        "coding",
+        "diff"
+      ]
+    },
+    {
+      "rank": 39,
+      "id": "document-extract",
+      "name": "Document Extract",
+      "ecosystem": "openclaw",
+      "category": "Tools",
+      "description": "Extract text and structure from PDFs and documents.",
+      "install": "openclaw plugins install @openclaw/document-extract",
+      "docsUrl": "https://docs.openclaw.ai/plugins/document-extract",
+      "repoUrl": "https://github.com/openclaw/openclaw/tree/main/extensions/document-extract",
+      "official": true,
+      "bundled": true,
+      "tags": [
+        "documents",
+        "pdf"
+      ]
+    },
+    {
+      "rank": 40,
+      "id": "canvas",
+      "name": "Canvas",
+      "ecosystem": "openclaw",
+      "category": "Tools",
+      "description": "Live React canvas for rich agent output.",
+      "install": "openclaw plugins install @openclaw/canvas",
+      "docsUrl": "https://docs.openclaw.ai/plugins/canvas",
+      "repoUrl": "https://github.com/openclaw/openclaw/tree/main/extensions/canvas",
+      "official": true,
+      "bundled": true,
+      "tags": [
+        "ui",
+        "visual"
+      ]
+    },
+    {
+      "rank": 41,
+      "id": "image-generation-core",
+      "name": "Image Generation",
+      "ecosystem": "openclaw",
+      "category": "Tools",
+      "description": "Core image generation capabilities for agents.",
+      "install": "openclaw plugins install @openclaw/image-generation-core",
+      "docsUrl": "https://docs.openclaw.ai/plugins/image-generation-core",
+      "repoUrl": "https://github.com/openclaw/openclaw/tree/main/extensions/image-generation-core",
+      "official": true,
+      "bundled": true,
+      "tags": [
+        "image",
+        "generation"
+      ]
+    },
+    {
+      "rank": 42,
+      "id": "video-generation-core",
+      "name": "Video Generation",
+      "ecosystem": "openclaw",
+      "category": "Tools",
+      "description": "Video generation tools for creative agents.",
+      "install": "openclaw plugins install @openclaw/video-generation-core",
+      "docsUrl": "https://docs.openclaw.ai/plugins/video-generation-core",
+      "repoUrl": "https://github.com/openclaw/openclaw/tree/main/extensions/video-generation-core",
+      "official": true,
+      "bundled": true,
+      "tags": [
+        "video",
+        "generation"
+      ]
+    },
+    {
+      "rank": 43,
+      "id": "webhooks",
+      "name": "Webhooks",
+      "ecosystem": "openclaw",
+      "category": "Integration",
+      "description": "HTTP webhook triggers and outbound notifications.",
+      "install": "openclaw plugins install @openclaw/webhooks",
+      "docsUrl": "https://docs.openclaw.ai/plugins/webhooks",
+      "repoUrl": "https://github.com/openclaw/openclaw/tree/main/extensions/webhooks",
+      "official": true,
+      "bundled": true,
+      "tags": [
+        "integration",
+        "http"
+      ]
+    },
+    {
+      "rank": 44,
+      "id": "diagnostics-otel",
+      "name": "OpenTelemetry",
+      "ecosystem": "openclaw",
+      "category": "Observability",
+      "description": "OpenTelemetry diagnostics and tracing export.",
+      "install": "openclaw plugins install @openclaw/diagnostics-otel",
+      "docsUrl": "https://docs.openclaw.ai/plugins/diagnostics-otel",
+      "repoUrl": "https://github.com/openclaw/openclaw/tree/main/extensions/diagnostics-otel",
+      "official": true,
+      "bundled": true,
+      "tags": [
+        "observability",
+        "tracing"
+      ]
+    },
+    {
+      "rank": 45,
+      "id": "diagnostics-prometheus",
+      "name": "Prometheus",
+      "ecosystem": "openclaw",
+      "category": "Observability",
+      "description": "Prometheus metrics export for gateway monitoring.",
+      "install": "openclaw plugins install @openclaw/diagnostics-prometheus",
+      "docsUrl": "https://docs.openclaw.ai/plugins/diagnostics-prometheus",
+      "repoUrl": "https://github.com/openclaw/openclaw/tree/main/extensions/diagnostics-prometheus",
+      "official": true,
+      "bundled": true,
+      "tags": [
+        "observability",
+        "metrics"
+      ]
+    },
+    {
+      "rank": 46,
+      "id": "lmstudio",
+      "name": "LM Studio",
+      "ecosystem": "openclaw",
+      "category": "ModelProviders",
+      "description": "Local models via LM Studio on your machine.",
+      "install": "openclaw plugins install @openclaw/lmstudio",
+      "docsUrl": "https://docs.openclaw.ai/plugins/lmstudio",
+      "repoUrl": "https://github.com/openclaw/openclaw/tree/main/extensions/lmstudio",
+      "official": true,
+      "bundled": true,
+      "tags": [
+        "llm",
+        "local"
+      ]
+    },
+    {
+      "rank": 47,
+      "id": "ollama-via-openai",
+      "name": "Ollama",
+      "ecosystem": "openclaw",
+      "category": "ModelProviders",
+      "description": "Local Ollama models through OpenAI-compatible API.",
+      "install": "openclaw plugins install @openclaw/litellm",
+      "docsUrl": "https://docs.openclaw.ai/plugins/ollama-via-openai",
+      "repoUrl": "https://github.com/openclaw/openclaw/tree/main/extensions/ollama-via-openai",
+      "official": true,
+      "bundled": true,
+      "tags": [
+        "llm",
+        "local"
+      ]
+    },
+    {
+      "rank": 48,
+      "id": "parallel",
+      "name": "Parallel",
+      "ecosystem": "openclaw",
+      "category": "Search",
+      "description": "Parallel AI web search and research API.",
+      "install": "openclaw plugins install @openclaw/parallel",
+      "docsUrl": "https://docs.openclaw.ai/plugins/parallel",
+      "repoUrl": "https://github.com/openclaw/openclaw/tree/main/extensions/parallel",
+      "official": true,
+      "bundled": true,
+      "tags": [
+        "search",
+        "research"
+      ]
+    },
+    {
+      "rank": 49,
+      "id": "vault",
+      "name": "Vault",
+      "ecosystem": "openclaw",
+      "category": "Tools",
+      "description": "Secure credential and secret vault for agents.",
+      "install": "openclaw plugins install @openclaw/vault",
+      "docsUrl": "https://docs.openclaw.ai/plugins/vault",
+      "repoUrl": "https://github.com/openclaw/openclaw/tree/main/extensions/vault",
+      "official": true,
+      "bundled": true,
+      "tags": [
+        "security",
+        "secrets"
+      ]
+    },
+    {
+      "rank": 50,
+      "id": "powermem",
+      "name": "PowerMem",
+      "ecosystem": "openclaw",
+      "category": "Memory",
+      "description": "Community long-term memory plugin with smart recall.",
+      "install": "openclaw plugins install clawhub:powermem",
+      "docsUrl": null,
+      "repoUrl": null,
+      "official": false,
+      "bundled": false,
+      "tags": [
+        "memory",
+        "community"
+      ]
+    }
+  ]
+}

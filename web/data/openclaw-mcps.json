@@ -1,0 +1,908 @@
+{
+  "meta": {
+    "updated": "2026-08-04",
+    "methodology": "Composite score: official/bundled (+3), docs (+2), community popularity, curator boost"
+  },
+  "entries": [
+    {
+      "rank": 1,
+      "id": "filesystem",
+      "name": "Filesystem",
+      "ecosystem": "mcp",
+      "category": "DevTools",
+      "description": "Secure local file read/write with configurable directory access.",
+      "install": "openclaw mcp add filesystem --command npx --arg -y --arg @modelcontextprotocol/server-filesystem --arg /path/to/allowed/dir",
+      "docsUrl": "https://modelcontextprotocol.io/servers",
+      "repoUrl": "https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem",
+      "official": true,
+      "bundled": true,
+      "transport": "stdio",
+      "tags": [
+        "devtools",
+        "stdio"
+      ]
+    },
+    {
+      "rank": 2,
+      "id": "memory",
+      "name": "Memory",
+      "ecosystem": "mcp",
+      "category": "Memory",
+      "description": "Knowledge graph memory server for persistent agent recall.",
+      "install": "openclaw mcp add memory --command npx --arg -y --arg @modelcontextprotocol/server-memory",
+      "docsUrl": "https://modelcontextprotocol.io/servers",
+      "repoUrl": "https://github.com/modelcontextprotocol/servers/tree/main/src/memory",
+      "official": true,
+      "bundled": true,
+      "transport": "stdio",
+      "tags": [
+        "memory",
+        "stdio"
+      ]
+    },
+    {
+      "rank": 3,
+      "id": "github",
+      "name": "GitHub",
+      "ecosystem": "mcp",
+      "category": "DevTools",
+      "description": "Repository management, issues, PRs, and code search via GitHub API.",
+      "install": "openclaw mcp add github --command npx --arg -y --arg @modelcontextprotocol/server-github",
+      "docsUrl": "https://modelcontextprotocol.io/servers",
+      "repoUrl": "https://github.com/modelcontextprotocol/servers/tree/main/src/github",
+      "official": true,
+      "bundled": true,
+      "transport": "stdio",
+      "tags": [
+        "devtools",
+        "stdio"
+      ]
+    },
+    {
+      "rank": 4,
+      "id": "gitlab",
+      "name": "GitLab",
+      "ecosystem": "mcp",
+      "category": "DevTools",
+      "description": "GitLab project and merge request management.",
+      "install": "openclaw mcp add gitlab --command npx --arg -y --arg @modelcontextprotocol/server-gitlab",
+      "docsUrl": "https://modelcontextprotocol.io/servers",
+      "repoUrl": "https://github.com/modelcontextprotocol/servers/tree/main/src/gitlab",
+      "official": true,
+      "bundled": true,
+      "transport": "stdio",
+      "tags": [
+        "devtools",
+        "stdio"
+      ]
+    },
+    {
+      "rank": 5,
+      "id": "postgres",
+      "name": "PostgreSQL",
+      "ecosystem": "mcp",
+      "category": "Database",
+      "description": "Read-only SQL queries against PostgreSQL databases.",
+      "install": "openclaw mcp add postgres --command npx --arg -y --arg @modelcontextprotocol/server-postgres --arg postgresql://localhost/db",
+      "docsUrl": "https://modelcontextprotocol.io/servers",
+      "repoUrl": "https://github.com/modelcontextprotocol/servers/tree/main/src/postgres",
+      "official": true,
+      "bundled": true,
+      "transport": "stdio",
+      "tags": [
+        "database",
+        "stdio"
+      ]
+    },
+    {
+      "rank": 6,
+      "id": "sqlite",
+      "name": "SQLite",
+      "ecosystem": "mcp",
+      "category": "Database",
+      "description": "Query and analyze local SQLite database files.",
+      "install": "openclaw mcp add sqlite --command npx --arg -y --arg @modelcontextprotocol/server-sqlite --arg --db-path --arg ./data.db",
+      "docsUrl": "https://modelcontextprotocol.io/servers",
+      "repoUrl": "https://github.com/modelcontextprotocol/servers/tree/main/src/sqlite",
+      "official": true,
+      "bundled": true,
+      "transport": "stdio",
+      "tags": [
+        "database",
+        "stdio"
+      ]
+    },
+    {
+      "rank": 7,
+      "id": "fetch",
+      "name": "Fetch",
+      "ecosystem": "mcp",
+      "category": "Search",
+      "description": "Fetch and convert web page content for LLM consumption.",
+      "install": "openclaw mcp add fetch --command npx --arg -y --arg @modelcontextprotocol/server-fetch",
+      "docsUrl": "https://modelcontextprotocol.io/servers",
+      "repoUrl": "https://github.com/modelcontextprotocol/servers/tree/main/src/fetch",
+      "official": true,
+      "bundled": true,
+      "transport": "stdio",
+      "tags": [
+        "search",
+        "stdio"
+      ]
+    },
+    {
+      "rank": 8,
+      "id": "playwright",
+      "name": "Playwright",
+      "ecosystem": "mcp",
+      "category": "Automation",
+      "description": "Full browser automation with Playwright for web tasks.",
+      "install": "openclaw mcp add playwright --command npx --arg -y --arg @playwright/mcp@latest",
+      "docsUrl": "https://modelcontextprotocol.io/servers",
+      "repoUrl": "https://github.com/modelcontextprotocol/servers/tree/main/src/playwright",
+      "official": true,
+      "bundled": false,
+      "transport": "stdio",
+      "tags": [
+        "automation",
+        "stdio"
+      ]
+    },
+    {
+      "rank": 9,
+      "id": "puppeteer",
+      "name": "Puppeteer",
+      "ecosystem": "mcp",
+      "category": "Automation",
+      "description": "Headless Chrome automation via Puppeteer MCP server.",
+      "install": "openclaw mcp add puppeteer --command npx --arg -y --arg @modelcontextprotocol/server-puppeteer",
+      "docsUrl": "https://modelcontextprotocol.io/servers",
+      "repoUrl": "https://github.com/modelcontextprotocol/servers/tree/main/src/puppeteer",
+      "official": true,
+      "bundled": true,
+      "transport": "stdio",
+      "tags": [
+        "automation",
+        "stdio"
+      ]
+    },
+    {
+      "rank": 10,
+      "id": "brave-search",
+      "name": "Brave Search",
+      "ecosystem": "mcp",
+      "category": "Search",
+      "description": "Web and local search via Brave Search API.",
+      "install": "openclaw mcp add brave-search --command npx --arg -y --arg @modelcontextprotocol/server-brave-search",
+      "docsUrl": "https://modelcontextprotocol.io/servers",
+      "repoUrl": "https://github.com/modelcontextprotocol/servers/tree/main/src/brave-search",
+      "official": true,
+      "bundled": true,
+      "transport": "stdio",
+      "tags": [
+        "search",
+        "stdio"
+      ]
+    },
+    {
+      "rank": 11,
+      "id": "tavily",
+      "name": "Tavily",
+      "ecosystem": "mcp",
+      "category": "Search",
+      "description": "AI-optimized search and content extraction API.",
+      "install": "openclaw mcp add tavily --command npx --arg -y --arg @tavily/mcp",
+      "docsUrl": null,
+      "repoUrl": null,
+      "official": false,
+      "bundled": false,
+      "transport": "stdio",
+      "tags": [
+        "search",
+        "stdio"
+      ]
+    },
+    {
+      "rank": 12,
+      "id": "context7",
+      "name": "Context7",
+      "ecosystem": "mcp",
+      "category": "DevTools",
+      "description": "Up-to-date library documentation for coding agents.",
+      "install": "openclaw mcp add context7 --url https://mcp.context7.com/mcp --transport streamable-http",
+      "docsUrl": null,
+      "repoUrl": null,
+      "official": false,
+      "bundled": false,
+      "transport": "http",
+      "tags": [
+        "devtools",
+        "http"
+      ]
+    },
+    {
+      "rank": 13,
+      "id": "google-drive",
+      "name": "Google Drive",
+      "ecosystem": "mcp",
+      "category": "Productivity",
+      "description": "Search, read, and manage Google Drive files.",
+      "install": "openclaw mcp add google-drive --command npx --arg -y --arg @modelcontextprotocol/server-gdrive",
+      "docsUrl": "https://modelcontextprotocol.io/servers",
+      "repoUrl": "https://github.com/modelcontextprotocol/servers/tree/main/src/google-drive",
+      "official": true,
+      "bundled": true,
+      "transport": "stdio",
+      "tags": [
+        "productivity",
+        "stdio"
+      ]
+    },
+    {
+      "rank": 14,
+      "id": "google-maps",
+      "name": "Google Maps",
+      "ecosystem": "mcp",
+      "category": "Search",
+      "description": "Location search, directions, and place details.",
+      "install": "openclaw mcp add google-maps --command npx --arg -y --arg @modelcontextprotocol/server-google-maps",
+      "docsUrl": "https://modelcontextprotocol.io/servers",
+      "repoUrl": "https://github.com/modelcontextprotocol/servers/tree/main/src/google-maps",
+      "official": true,
+      "bundled": true,
+      "transport": "stdio",
+      "tags": [
+        "search",
+        "stdio"
+      ]
+    },
+    {
+      "rank": 15,
+      "id": "slack",
+      "name": "Slack",
+      "ecosystem": "mcp",
+      "category": "Channels",
+      "description": "Send messages and interact with Slack workspaces.",
+      "install": "openclaw mcp add slack --command npx --arg -y --arg @modelcontextprotocol/server-slack",
+      "docsUrl": "https://modelcontextprotocol.io/servers",
+      "repoUrl": "https://github.com/modelcontextprotocol/servers/tree/main/src/slack",
+      "official": true,
+      "bundled": true,
+      "transport": "stdio",
+      "tags": [
+        "channels",
+        "stdio"
+      ]
+    },
+    {
+      "rank": 16,
+      "id": "notion",
+      "name": "Notion",
+      "ecosystem": "mcp",
+      "category": "Productivity",
+      "description": "Read and write Notion pages and databases.",
+      "install": "openclaw mcp add notion --command npx --arg -y --arg @notionhq/notion-mcp-server",
+      "docsUrl": null,
+      "repoUrl": null,
+      "official": false,
+      "bundled": false,
+      "transport": "stdio",
+      "tags": [
+        "productivity",
+        "stdio"
+      ]
+    },
+    {
+      "rank": 17,
+      "id": "linear",
+      "name": "Linear",
+      "ecosystem": "mcp",
+      "category": "Productivity",
+      "description": "Issue tracking and project management via Linear API.",
+      "install": "openclaw mcp add linear --command npx --arg -y --arg @linear/mcp-server",
+      "docsUrl": null,
+      "repoUrl": null,
+      "official": false,
+      "bundled": false,
+      "transport": "stdio",
+      "tags": [
+        "productivity",
+        "stdio"
+      ]
+    },
+    {
+      "rank": 18,
+      "id": "sentry",
+      "name": "Sentry",
+      "ecosystem": "mcp",
+      "category": "Observability",
+      "description": "Query Sentry issues, events, and error analytics.",
+      "install": "openclaw mcp add sentry --command npx --arg -y --arg @sentry/mcp-server",
+      "docsUrl": null,
+      "repoUrl": null,
+      "official": false,
+      "bundled": false,
+      "transport": "stdio",
+      "tags": [
+        "observability",
+        "stdio"
+      ]
+    },
+    {
+      "rank": 19,
+      "id": "supabase",
+      "name": "Supabase",
+      "ecosystem": "mcp",
+      "category": "Database",
+      "description": "Supabase database and auth management tools.",
+      "install": "openclaw mcp add supabase --command npx --arg -y --arg @supabase/mcp-server",
+      "docsUrl": null,
+      "repoUrl": null,
+      "official": false,
+      "bundled": false,
+      "transport": "stdio",
+      "tags": [
+        "database",
+        "stdio"
+      ]
+    },
+    {
+      "rank": 20,
+      "id": "redis",
+      "name": "Redis",
+      "ecosystem": "mcp",
+      "category": "Database",
+      "description": "Redis key-value store read/write operations.",
+      "install": "openclaw mcp add redis --command npx --arg -y --arg @modelcontextprotocol/server-redis",
+      "docsUrl": "https://modelcontextprotocol.io/servers",
+      "repoUrl": "https://github.com/modelcontextprotocol/servers/tree/main/src/redis",
+      "official": true,
+      "bundled": true,
+      "transport": "stdio",
+      "tags": [
+        "database",
+        "stdio"
+      ]
+    },
+    {
+      "rank": 21,
+      "id": "docker",
+      "name": "Docker",
+      "ecosystem": "mcp",
+      "category": "DevOps",
+      "description": "Manage Docker containers, images, and compose stacks.",
+      "install": "openclaw mcp add docker --command npx --arg -y --arg @modelcontextprotocol/server-docker",
+      "docsUrl": null,
+      "repoUrl": null,
+      "official": false,
+      "bundled": false,
+      "transport": "stdio",
+      "tags": [
+        "devops",
+        "stdio"
+      ]
+    },
+    {
+      "rank": 22,
+      "id": "kubernetes",
+      "name": "Kubernetes",
+      "ecosystem": "mcp",
+      "category": "DevOps",
+      "description": "kubectl-based Kubernetes cluster management.",
+      "install": "openclaw mcp add kubernetes --command npx --arg -y --arg @modelcontextprotocol/server-kubernetes",
+      "docsUrl": null,
+      "repoUrl": null,
+      "official": false,
+      "bundled": false,
+      "transport": "stdio",
+      "tags": [
+        "devops",
+        "stdio"
+      ]
+    },
+    {
+      "rank": 23,
+      "id": "aws-kb-retrieval",
+      "name": "AWS Knowledge Base",
+      "ecosystem": "mcp",
+      "category": "Database",
+      "description": "Retrieve documents from Amazon Bedrock Knowledge Bases.",
+      "install": "openclaw mcp add aws-kb --command npx --arg -y --arg @modelcontextprotocol/server-aws-kb-retrieval",
+      "docsUrl": "https://modelcontextprotocol.io/servers",
+      "repoUrl": "https://github.com/modelcontextprotocol/servers/tree/main/src/aws-kb-retrieval",
+      "official": true,
+      "bundled": true,
+      "transport": "stdio",
+      "tags": [
+        "database",
+        "stdio"
+      ]
+    },
+    {
+      "rank": 24,
+      "id": "sequential-thinking",
+      "name": "Sequential Thinking",
+      "ecosystem": "mcp",
+      "category": "Tools",
+      "description": "Structured step-by-step reasoning for complex problems.",
+      "install": "openclaw mcp add sequential-thinking --command npx --arg -y --arg @modelcontextprotocol/server-sequential-thinking",
+      "docsUrl": "https://modelcontextprotocol.io/servers",
+      "repoUrl": "https://github.com/modelcontextprotocol/servers/tree/main/src/sequential-thinking",
+      "official": true,
+      "bundled": true,
+      "transport": "stdio",
+      "tags": [
+        "tools",
+        "stdio"
+      ]
+    },
+    {
+      "rank": 25,
+      "id": "everart",
+      "name": "EverArt",
+      "ecosystem": "mcp",
+      "category": "Tools",
+      "description": "AI image generation via EverArt API.",
+      "install": "openclaw mcp add everart --command npx --arg -y --arg @modelcontextprotocol/server-everart",
+      "docsUrl": "https://modelcontextprotocol.io/servers",
+      "repoUrl": "https://github.com/modelcontextprotocol/servers/tree/main/src/everart",
+      "official": true,
+      "bundled": true,
+      "transport": "stdio",
+      "tags": [
+        "tools",
+        "stdio"
+      ]
+    },
+    {
+      "rank": 26,
+      "id": "time",
+      "name": "Time",
+      "ecosystem": "mcp",
+      "category": "Tools",
+      "description": "Current time and timezone conversion utilities.",
+      "install": "openclaw mcp add time --command npx --arg -y --arg @modelcontextprotocol/server-time",
+      "docsUrl": "https://modelcontextprotocol.io/servers",
+      "repoUrl": "https://github.com/modelcontextprotocol/servers/tree/main/src/time",
+      "official": true,
+      "bundled": true,
+      "transport": "stdio",
+      "tags": [
+        "tools",
+        "stdio"
+      ]
+    },
+    {
+      "rank": 27,
+      "id": "everything",
+      "name": "Everything",
+      "ecosystem": "mcp",
+      "category": "DevTools",
+      "description": "Reference MCP server demonstrating all protocol features.",
+      "install": "openclaw mcp add everything --command npx --arg -y --arg @modelcontextprotocol/server-everything",
+      "docsUrl": "https://modelcontextprotocol.io/servers",
+      "repoUrl": "https://github.com/modelcontextprotocol/servers/tree/main/src/everything",
+      "official": true,
+      "bundled": true,
+      "transport": "stdio",
+      "tags": [
+        "devtools",
+        "stdio"
+      ]
+    },
+    {
+      "rank": 28,
+      "id": "obsidian",
+      "name": "Obsidian",
+      "ecosystem": "mcp",
+      "category": "Productivity",
+      "description": "Read and search Obsidian vault notes.",
+      "install": "openclaw mcp add obsidian --command npx --arg -y --arg obsidian-mcp",
+      "docsUrl": null,
+      "repoUrl": null,
+      "official": false,
+      "bundled": false,
+      "transport": "stdio",
+      "tags": [
+        "productivity",
+        "stdio"
+      ]
+    },
+    {
+      "rank": 29,
+      "id": "stripe",
+      "name": "Stripe",
+      "ecosystem": "mcp",
+      "category": "Finance",
+      "description": "Stripe payment and customer management tools.",
+      "install": "openclaw mcp add stripe --command npx --arg -y --arg @stripe/mcp",
+      "docsUrl": null,
+      "repoUrl": null,
+      "official": false,
+      "bundled": false,
+      "transport": "stdio",
+      "tags": [
+        "finance",
+        "stdio"
+      ]
+    },
+    {
+      "rank": 30,
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "ecosystem": "mcp",
+      "category": "DevOps",
+      "description": "Cloudflare DNS, Workers, and R2 management.",
+      "install": "openclaw mcp add cloudflare --command npx --arg -y --arg @cloudflare/mcp-server-cloudflare",
+      "docsUrl": null,
+      "repoUrl": null,
+      "official": false,
+      "bundled": false,
+      "transport": "stdio",
+      "tags": [
+        "devops",
+        "stdio"
+      ]
+    },
+    {
+      "rank": 31,
+      "id": "vercel",
+      "name": "Vercel",
+      "ecosystem": "mcp",
+      "category": "DevOps",
+      "description": "Vercel deployment and project management.",
+      "install": "openclaw mcp add vercel --command npx --arg -y --arg @vercel/mcp-server",
+      "docsUrl": null,
+      "repoUrl": null,
+      "official": false,
+      "bundled": false,
+      "transport": "stdio",
+      "tags": [
+        "devops",
+        "stdio"
+      ]
+    },
+    {
+      "rank": 32,
+      "id": "datadog",
+      "name": "Datadog",
+      "ecosystem": "mcp",
+      "category": "Observability",
+      "description": "Query Datadog metrics, logs, and monitors.",
+      "install": "openclaw mcp add datadog --command npx --arg -y --arg @datadog/mcp-server",
+      "docsUrl": null,
+      "repoUrl": null,
+      "official": false,
+      "bundled": false,
+      "transport": "stdio",
+      "tags": [
+        "observability",
+        "stdio"
+      ]
+    },
+    {
+      "rank": 33,
+      "id": "grafana",
+      "name": "Grafana",
+      "ecosystem": "mcp",
+      "category": "Observability",
+      "description": "Grafana dashboard and alert management.",
+      "install": "openclaw mcp add grafana --command npx --arg -y --arg @grafana/mcp-server",
+      "docsUrl": null,
+      "repoUrl": null,
+      "official": false,
+      "bundled": false,
+      "transport": "stdio",
+      "tags": [
+        "observability",
+        "stdio"
+      ]
+    },
+    {
+      "rank": 34,
+      "id": "jira",
+      "name": "Jira",
+      "ecosystem": "mcp",
+      "category": "Productivity",
+      "description": "Atlassian Jira issue and sprint management.",
+      "install": "openclaw mcp add jira --command npx --arg -y --arg @atlassian/mcp-server-jira",
+      "docsUrl": null,
+      "repoUrl": null,
+      "official": false,
+      "bundled": false,
+      "transport": "stdio",
+      "tags": [
+        "productivity",
+        "stdio"
+      ]
+    },
+    {
+      "rank": 35,
+      "id": "confluence",
+      "name": "Confluence",
+      "ecosystem": "mcp",
+      "category": "Productivity",
+      "description": "Atlassian Confluence wiki page access.",
+      "install": "openclaw mcp add confluence --command npx --arg -y --arg @atlassian/mcp-server-confluence",
+      "docsUrl": null,
+      "repoUrl": null,
+      "official": false,
+      "bundled": false,
+      "transport": "stdio",
+      "tags": [
+        "productivity",
+        "stdio"
+      ]
+    },
+    {
+      "rank": 36,
+      "id": "hubspot",
+      "name": "HubSpot",
+      "ecosystem": "mcp",
+      "category": "Productivity",
+      "description": "CRM contacts, deals, and marketing automation.",
+      "install": "openclaw mcp add hubspot --command npx --arg -y --arg @hubspot/mcp-server",
+      "docsUrl": null,
+      "repoUrl": null,
+      "official": false,
+      "bundled": false,
+      "transport": "stdio",
+      "tags": [
+        "productivity",
+        "stdio"
+      ]
+    },
+    {
+      "rank": 37,
+      "id": "salesforce",
+      "name": "Salesforce",
+      "ecosystem": "mcp",
+      "category": "Productivity",
+      "description": "Salesforce CRM data access and management.",
+      "install": "openclaw mcp add salesforce --command npx --arg -y --arg @salesforce/mcp-server",
+      "docsUrl": null,
+      "repoUrl": null,
+      "official": false,
+      "bundled": false,
+      "transport": "stdio",
+      "tags": [
+        "productivity",
+        "stdio"
+      ]
+    },
+    {
+      "rank": 38,
+      "id": "mongodb",
+      "name": "MongoDB",
+      "ecosystem": "mcp",
+      "category": "Database",
+      "description": "MongoDB document database queries and operations.",
+      "install": "openclaw mcp add mongodb --command npx --arg -y --arg @mongodb-js/mcp-server",
+      "docsUrl": null,
+      "repoUrl": null,
+      "official": false,
+      "bundled": false,
+      "transport": "stdio",
+      "tags": [
+        "database",
+        "stdio"
+      ]
+    },
+    {
+      "rank": 39,
+      "id": "mysql",
+      "name": "MySQL",
+      "ecosystem": "mcp",
+      "category": "Database",
+      "description": "MySQL database read/write operations.",
+      "install": "openclaw mcp add mysql --command npx --arg -y --arg @modelcontextprotocol/server-mysql",
+      "docsUrl": null,
+      "repoUrl": null,
+      "official": false,
+      "bundled": false,
+      "transport": "stdio",
+      "tags": [
+        "database",
+        "stdio"
+      ]
+    },
+    {
+      "rank": 40,
+      "id": "elasticsearch",
+      "name": "Elasticsearch",
+      "ecosystem": "mcp",
+      "category": "Database",
+      "description": "Elasticsearch index search and analytics.",
+      "install": "openclaw mcp add elasticsearch --command npx --arg -y --arg @elastic/mcp-server-elasticsearch",
+      "docsUrl": null,
+      "repoUrl": null,
+      "official": false,
+      "bundled": false,
+      "transport": "stdio",
+      "tags": [
+        "database",
+        "stdio"
+      ]
+    },
+    {
+      "rank": 41,
+      "id": "figma",
+      "name": "Figma",
+      "ecosystem": "mcp",
+      "category": "Design",
+      "description": "Read Figma designs, components, and design tokens.",
+      "install": "openclaw mcp add figma --command npx --arg -y --arg @figma/mcp-server",
+      "docsUrl": null,
+      "repoUrl": null,
+      "official": false,
+      "bundled": false,
+      "transport": "stdio",
+      "tags": [
+        "design",
+        "stdio"
+      ]
+    },
+    {
+      "rank": 42,
+      "id": "chrome-devtools",
+      "name": "Chrome DevTools",
+      "ecosystem": "mcp",
+      "category": "Automation",
+      "description": "Browser debugging and performance profiling via CDP.",
+      "install": "openclaw mcp add chrome-devtools --command npx --arg -y --arg chrome-devtools-mcp",
+      "docsUrl": null,
+      "repoUrl": null,
+      "official": false,
+      "bundled": false,
+      "transport": "stdio",
+      "tags": [
+        "automation",
+        "stdio"
+      ]
+    },
+    {
+      "rank": 43,
+      "id": "n8n",
+      "name": "n8n",
+      "ecosystem": "mcp",
+      "category": "Automation",
+      "description": "Trigger and manage n8n workflow automations.",
+      "install": "openclaw mcp add n8n --command npx --arg -y --arg @n8n/mcp-server",
+      "docsUrl": null,
+      "repoUrl": null,
+      "official": false,
+      "bundled": false,
+      "transport": "stdio",
+      "tags": [
+        "automation",
+        "stdio"
+      ]
+    },
+    {
+      "rank": 44,
+      "id": "airtable",
+      "name": "Airtable",
+      "ecosystem": "mcp",
+      "category": "Productivity",
+      "description": "Airtable base and record management.",
+      "install": "openclaw mcp add airtable --command npx --arg -y --arg @airtable/mcp-server",
+      "docsUrl": null,
+      "repoUrl": null,
+      "official": false,
+      "bundled": false,
+      "transport": "stdio",
+      "tags": [
+        "productivity",
+        "stdio"
+      ]
+    },
+    {
+      "rank": 45,
+      "id": "todoist",
+      "name": "Todoist",
+      "ecosystem": "mcp",
+      "category": "Productivity",
+      "description": "Task and project management via Todoist API.",
+      "install": "openclaw mcp add todoist --command npx --arg -y --arg @todoist/mcp-server",
+      "docsUrl": null,
+      "repoUrl": null,
+      "official": false,
+      "bundled": false,
+      "transport": "stdio",
+      "tags": [
+        "productivity",
+        "stdio"
+      ]
+    },
+    {
+      "rank": 46,
+      "id": "exa",
+      "name": "Exa Search",
+      "ecosystem": "mcp",
+      "category": "Search",
+      "description": "Neural web search optimized for AI agents.",
+      "install": "openclaw mcp add exa --command npx --arg -y --arg exa-mcp-server",
+      "docsUrl": null,
+      "repoUrl": null,
+      "official": false,
+      "bundled": false,
+      "transport": "stdio",
+      "tags": [
+        "search",
+        "stdio"
+      ]
+    },
+    {
+      "rank": 47,
+      "id": "firecrawl",
+      "name": "Firecrawl",
+      "ecosystem": "mcp",
+      "category": "Search",
+      "description": "Web scraping with structured markdown output.",
+      "install": "openclaw mcp add firecrawl --command npx --arg -y --arg firecrawl-mcp",
+      "docsUrl": null,
+      "repoUrl": null,
+      "official": false,
+      "bundled": false,
+      "transport": "stdio",
+      "tags": [
+        "search",
+        "stdio"
+      ]
+    },
+    {
+      "rank": 48,
+      "id": "perplexity",
+      "name": "Perplexity",
+      "ecosystem": "mcp",
+      "category": "Search",
+      "description": "Perplexity AI search with cited answers.",
+      "install": "openclaw mcp add perplexity --command npx --arg -y --arg @perplexity/mcp-server",
+      "docsUrl": null,
+      "repoUrl": null,
+      "official": false,
+      "bundled": false,
+      "transport": "stdio",
+      "tags": [
+        "search",
+        "stdio"
+      ]
+    },
+    {
+      "rank": 49,
+      "id": "azure",
+      "name": "Azure",
+      "ecosystem": "mcp",
+      "category": "DevOps",
+      "description": "Azure resource management and cloud operations.",
+      "install": "openclaw mcp add azure --command npx --arg -y --arg @azure/mcp-server",
+      "docsUrl": null,
+      "repoUrl": null,
+      "official": false,
+      "bundled": false,
+      "transport": "stdio",
+      "tags": [
+        "devops",
+        "stdio"
+      ]
+    },
+    {
+      "rank": 50,
+      "id": "gcp",
+      "name": "Google Cloud",
+      "ecosystem": "mcp",
+      "category": "DevOps",
+      "description": "Google Cloud Platform resource management.",
+      "install": "openclaw mcp add gcp --command npx --arg -y --arg @google-cloud/mcp-server",
+      "docsUrl": null,
+      "repoUrl": null,
+      "official": false,
+      "bundled": false,
+      "transport": "stdio",
+      "tags": [
+        "devops",
+        "stdio"
+      ]
+    }
+  ]
+}

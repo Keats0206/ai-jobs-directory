@@ -8,14 +8,14 @@ export function SiteFooter() {
           <span className="font-medium text-foreground">artificialjobs.dev</span> — AI jobs, updated
           daily.
         </p>
-        <nav className="flex items-center gap-4">
+        <nav className="flex flex-wrap items-center justify-center gap-4 sm:justify-end">
           <Link href="/" className="transition-colors hover:text-foreground">
             All jobs
           </Link>
-          <a
-            href="/llms.txt"
-            className="transition-colors hover:text-foreground"
-          >
+          <Link href="/agents" className="transition-colors hover:text-foreground">
+            Agents
+          </Link>
+          <a href="/llms.txt" className="transition-colors hover:text-foreground">
             llms.txt
           </a>
         </nav>

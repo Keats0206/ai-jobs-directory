@@ -1,0 +1,1158 @@
+{
+  "meta": {
+    "updated": "2026-08-04",
+    "methodology": "Composite score: official/bundled (+3), docs (+2), community popularity, curator boost"
+  },
+  "entries": [
+    {
+      "rank": 1,
+      "id": "firecrawl",
+      "name": "Firecrawl",
+      "ecosystem": "hermes",
+      "category": "Search",
+      "description": "Default web search backend with excellent speed and result quality.",
+      "install": "hermes plugins enable firecrawl",
+      "docsUrl": "https://hermes-agent.nousresearch.com/docs",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent",
+      "official": true,
+      "bundled": true,
+      "pluginType": "backend",
+      "autoLoaded": true,
+      "tags": [
+        "search",
+        "backend"
+      ],
+      "popularity": {
+        "rating": 5.0,
+        "source": "hermes-tutorials.dev"
+      }
+    },
+    {
+      "rank": 2,
+      "id": "openrouter",
+      "name": "OpenRouter",
+      "ecosystem": "hermes",
+      "category": "ModelProviders",
+      "description": "Gateway to 200+ models from every major provider.",
+      "install": "Set OPENROUTER_API_KEY in .env",
+      "docsUrl": "https://hermes-agent.nousresearch.com/docs",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent",
+      "official": true,
+      "bundled": true,
+      "pluginType": "model-provider",
+      "autoLoaded": true,
+      "tags": [
+        "modelproviders",
+        "model-provider"
+      ],
+      "popularity": {
+        "rating": 5.0,
+        "source": "hermes-tutorials.dev"
+      }
+    },
+    {
+      "rank": 3,
+      "id": "tavily",
+      "name": "Tavily",
+      "ecosystem": "hermes",
+      "category": "Search",
+      "description": "AI-optimized web search tailored for agent use cases.",
+      "install": "Set TAVILY_API_KEY in .env",
+      "docsUrl": "https://hermes-agent.nousresearch.com/docs",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent",
+      "official": true,
+      "bundled": true,
+      "pluginType": "backend",
+      "autoLoaded": true,
+      "tags": [
+        "search",
+        "backend"
+      ],
+      "popularity": {
+        "rating": 4.0,
+        "source": "hermes-tutorials.dev"
+      }
+    },
+    {
+      "rank": 4,
+      "id": "langfuse",
+      "name": "Langfuse",
+      "ecosystem": "hermes",
+      "category": "Observability",
+      "description": "Full observability \u2014 traces conversations, LLM calls, and tool usage.",
+      "install": "hermes plugins enable langfuse",
+      "docsUrl": "https://hermes-agent.nousresearch.com/docs",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent",
+      "official": true,
+      "bundled": true,
+      "pluginType": "standalone",
+      "autoLoaded": false,
+      "tags": [
+        "observability",
+        "standalone"
+      ],
+      "popularity": {
+        "rating": 4.0,
+        "source": "hermes-tutorials.dev"
+      }
+    },
+    {
+      "rank": 5,
+      "id": "ollama",
+      "name": "Ollama (Local)",
+      "ecosystem": "hermes",
+      "category": "ModelProviders",
+      "description": "Run Llama, Mistral, Phi-3 locally with zero API cost.",
+      "install": "ollama pull llama3.2",
+      "docsUrl": "https://hermes-agent.nousresearch.com/docs",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent",
+      "official": true,
+      "bundled": true,
+      "pluginType": "model-provider",
+      "autoLoaded": true,
+      "tags": [
+        "modelproviders",
+        "model-provider"
+      ],
+      "popularity": {
+        "rating": 4.0,
+        "source": "hermes-tutorials.dev"
+      }
+    },
+    {
+      "rank": 6,
+      "id": "openai-image-gen",
+      "name": "OpenAI Image Gen",
+      "ecosystem": "hermes",
+      "category": "ImageGeneration",
+      "description": "OpenAI gpt-image-2 generation with best available quality.",
+      "install": "Set OPENAI_API_KEY in .env",
+      "docsUrl": "https://hermes-agent.nousresearch.com/docs",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent",
+      "official": true,
+      "bundled": true,
+      "pluginType": "backend",
+      "autoLoaded": true,
+      "tags": [
+        "imagegeneration",
+        "backend"
+      ],
+      "popularity": {
+        "rating": 5.0,
+        "source": "hermes-tutorials.dev"
+      }
+    },
+    {
+      "rank": 7,
+      "id": "spotify",
+      "name": "Spotify",
+      "ecosystem": "hermes",
+      "category": "Standalone",
+      "description": "Full playback control \u2014 devices, queue, search, playlists.",
+      "install": "hermes plugins enable spotify",
+      "docsUrl": "https://hermes-agent.nousresearch.com/docs",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent",
+      "official": true,
+      "bundled": true,
+      "pluginType": "standalone",
+      "autoLoaded": false,
+      "tags": [
+        "standalone",
+        "standalone"
+      ],
+      "popularity": {
+        "rating": 5.0,
+        "source": "hermes-tutorials.dev"
+      }
+    },
+    {
+      "rank": 8,
+      "id": "google-meet",
+      "name": "Google Meet",
+      "ecosystem": "hermes",
+      "category": "Standalone",
+      "description": "Join calls, transcribe captions, and speak in realtime.",
+      "install": "hermes plugins enable google_meet",
+      "docsUrl": "https://hermes-agent.nousresearch.com/docs",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent",
+      "official": true,
+      "bundled": true,
+      "pluginType": "standalone",
+      "autoLoaded": false,
+      "tags": [
+        "standalone",
+        "standalone"
+      ],
+      "popularity": {
+        "rating": 5.0,
+        "source": "hermes-tutorials.dev"
+      }
+    },
+    {
+      "rank": 9,
+      "id": "kanban",
+      "name": "Kanban",
+      "ecosystem": "hermes",
+      "category": "Standalone",
+      "description": "Multi-profile work queue and orchestration board.",
+      "install": "Enabled by default in multi-agent setups",
+      "docsUrl": "https://hermes-agent.nousresearch.com/docs",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent",
+      "official": true,
+      "bundled": true,
+      "pluginType": "standalone",
+      "autoLoaded": true,
+      "tags": [
+        "standalone",
+        "standalone"
+      ],
+      "popularity": {
+        "rating": 4.0,
+        "source": "hermes-tutorials.dev"
+      }
+    },
+    {
+      "rank": 10,
+      "id": "mem0",
+      "name": "Mem0",
+      "ecosystem": "hermes",
+      "category": "Memory",
+      "description": "Server-side LLM fact extraction with semantic search.",
+      "install": "hermes config set memory.provider mem0",
+      "docsUrl": "https://hermes-agent.nousresearch.com/docs",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent",
+      "official": true,
+      "bundled": true,
+      "pluginType": "exclusive",
+      "autoLoaded": false,
+      "tags": [
+        "memory",
+        "exclusive"
+      ],
+      "popularity": {
+        "rating": 3.0,
+        "source": "hermes-tutorials.dev"
+      }
+    },
+    {
+      "rank": 11,
+      "id": "honcho",
+      "name": "Honcho",
+      "ecosystem": "hermes",
+      "category": "Memory",
+      "description": "Social memory layer for personalized multi-session recall.",
+      "install": "hermes plugins enable honcho",
+      "docsUrl": "https://hermes-agent.nousresearch.com/docs",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent",
+      "official": false,
+      "bundled": false,
+      "pluginType": "exclusive",
+      "autoLoaded": false,
+      "tags": [
+        "memory",
+        "exclusive"
+      ],
+      "popularity": {
+        "rating": 4.5,
+        "source": "hermes-tutorials.dev"
+      }
+    },
+    {
+      "rank": 12,
+      "id": "duckduckgo",
+      "name": "DuckDuckGo",
+      "ecosystem": "hermes",
+      "category": "Search",
+      "description": "Free web search via DuckDuckGo, no API key needed.",
+      "install": "pip install ddgs",
+      "docsUrl": "https://hermes-agent.nousresearch.com/docs",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent",
+      "official": true,
+      "bundled": true,
+      "pluginType": "backend",
+      "autoLoaded": true,
+      "tags": [
+        "search",
+        "backend"
+      ],
+      "popularity": {
+        "rating": 3.0,
+        "source": "hermes-tutorials.dev"
+      }
+    },
+    {
+      "rank": 13,
+      "id": "brave-search",
+      "name": "Brave Search",
+      "ecosystem": "hermes",
+      "category": "Search",
+      "description": "Privacy-focused web search via Brave Search API.",
+      "install": "Set BRAVE_API_KEY in .env",
+      "docsUrl": "https://hermes-agent.nousresearch.com/docs",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent",
+      "official": true,
+      "bundled": true,
+      "pluginType": "backend",
+      "autoLoaded": true,
+      "tags": [
+        "search",
+        "backend"
+      ],
+      "popularity": {
+        "rating": 4.0,
+        "source": "hermes-tutorials.dev"
+      }
+    },
+    {
+      "rank": 14,
+      "id": "exa",
+      "name": "Exa",
+      "ecosystem": "hermes",
+      "category": "Search",
+      "description": "Neural search API for high-quality agent results.",
+      "install": "Set EXA_API_KEY in .env",
+      "docsUrl": "https://hermes-agent.nousresearch.com/docs",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent",
+      "official": true,
+      "bundled": true,
+      "pluginType": "backend",
+      "autoLoaded": true,
+      "tags": [
+        "search",
+        "backend"
+      ],
+      "popularity": {
+        "rating": 4.0,
+        "source": "hermes-tutorials.dev"
+      }
+    },
+    {
+      "rank": 15,
+      "id": "fal-video",
+      "name": "FAL Video",
+      "ecosystem": "hermes",
+      "category": "VideoGeneration",
+      "description": "Multi-model video generation via FAL.ai (Veo, Kling).",
+      "install": "Set FAL_KEY in .env",
+      "docsUrl": "https://hermes-agent.nousresearch.com/docs",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent",
+      "official": true,
+      "bundled": true,
+      "pluginType": "backend",
+      "autoLoaded": true,
+      "tags": [
+        "videogeneration",
+        "backend"
+      ],
+      "popularity": {
+        "rating": 4.0,
+        "source": "hermes-tutorials.dev"
+      }
+    },
+    {
+      "rank": 16,
+      "id": "xai-video-gen",
+      "name": "xAI Video Gen",
+      "ecosystem": "hermes",
+      "category": "VideoGeneration",
+      "description": "Grok-Imagine video generation and editing.",
+      "install": "Set XAI_API_KEY in .env",
+      "docsUrl": "https://hermes-agent.nousresearch.com/docs",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent",
+      "official": true,
+      "bundled": true,
+      "pluginType": "backend",
+      "autoLoaded": true,
+      "tags": [
+        "videogeneration",
+        "backend"
+      ],
+      "popularity": {
+        "rating": 3.0,
+        "source": "hermes-tutorials.dev"
+      }
+    },
+    {
+      "rank": 17,
+      "id": "openai-codex-image",
+      "name": "OpenAI Codex Image",
+      "ecosystem": "hermes",
+      "category": "ImageGeneration",
+      "description": "Image generation via ChatGPT/Codex OAuth billing.",
+      "install": "hermes login --provider openai-codex",
+      "docsUrl": "https://hermes-agent.nousresearch.com/docs",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent",
+      "official": true,
+      "bundled": true,
+      "pluginType": "backend",
+      "autoLoaded": true,
+      "tags": [
+        "imagegeneration",
+        "backend"
+      ],
+      "popularity": {
+        "rating": 5.0,
+        "source": "hermes-tutorials.dev"
+      }
+    },
+    {
+      "rank": 18,
+      "id": "xai-image-gen",
+      "name": "xAI Image Gen",
+      "ecosystem": "hermes",
+      "category": "ImageGeneration",
+      "description": "xAI Grok-Imagine text-to-image generation.",
+      "install": "Set XAI_API_KEY in .env",
+      "docsUrl": "https://hermes-agent.nousresearch.com/docs",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent",
+      "official": true,
+      "bundled": true,
+      "pluginType": "backend",
+      "autoLoaded": true,
+      "tags": [
+        "imagegeneration",
+        "backend"
+      ],
+      "popularity": {
+        "rating": 3.0,
+        "source": "hermes-tutorials.dev"
+      }
+    },
+    {
+      "rank": 19,
+      "id": "microsoft-teams",
+      "name": "Microsoft Teams",
+      "ecosystem": "hermes",
+      "category": "Gateway",
+      "description": "Teams gateway adapter via Bot Framework.",
+      "install": "Configure in gateway section of config.yaml",
+      "docsUrl": "https://hermes-agent.nousresearch.com/docs",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent",
+      "official": true,
+      "bundled": true,
+      "pluginType": "platform",
+      "autoLoaded": true,
+      "tags": [
+        "gateway",
+        "platform"
+      ],
+      "popularity": {
+        "rating": 3.0,
+        "source": "hermes-tutorials.dev"
+      }
+    },
+    {
+      "rank": 20,
+      "id": "irc",
+      "name": "IRC",
+      "ecosystem": "hermes",
+      "category": "Gateway",
+      "description": "Internet Relay Chat gateway using Python asyncio.",
+      "install": "Configure IRC_SERVER, IRC_CHANNEL in config",
+      "docsUrl": "https://hermes-agent.nousresearch.com/docs",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent",
+      "official": true,
+      "bundled": true,
+      "pluginType": "platform",
+      "autoLoaded": true,
+      "tags": [
+        "gateway",
+        "platform"
+      ],
+      "popularity": {
+        "rating": 3.0,
+        "source": "hermes-tutorials.dev"
+      }
+    },
+    {
+      "rank": 21,
+      "id": "line",
+      "name": "LINE",
+      "ecosystem": "hermes",
+      "category": "Gateway",
+      "description": "LINE Messaging API with HMAC signature verification.",
+      "install": "Configure in gateway section of config.yaml",
+      "docsUrl": "https://hermes-agent.nousresearch.com/docs",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent",
+      "official": true,
+      "bundled": true,
+      "pluginType": "platform",
+      "autoLoaded": true,
+      "tags": [
+        "gateway",
+        "platform"
+      ],
+      "popularity": {
+        "rating": 3.0,
+        "source": "hermes-tutorials.dev"
+      }
+    },
+    {
+      "rank": 22,
+      "id": "disk-cleanup",
+      "name": "Disk Cleanup",
+      "ecosystem": "hermes",
+      "category": "Standalone",
+      "description": "Auto-tracks and cleans ephemeral files from sessions.",
+      "install": "hermes plugins enable disk-cleanup",
+      "docsUrl": "https://hermes-agent.nousresearch.com/docs",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent",
+      "official": true,
+      "bundled": true,
+      "pluginType": "standalone",
+      "autoLoaded": false,
+      "tags": [
+        "standalone",
+        "standalone"
+      ],
+      "popularity": {
+        "rating": 4.0,
+        "source": "hermes-tutorials.dev"
+      }
+    },
+    {
+      "rank": 23,
+      "id": "teams-pipeline",
+      "name": "Teams Pipeline",
+      "ecosystem": "hermes",
+      "category": "Standalone",
+      "description": "Microsoft Teams meeting pipeline with transcript summaries.",
+      "install": "hermes plugins enable teams_pipeline",
+      "docsUrl": "https://hermes-agent.nousresearch.com/docs",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent",
+      "official": true,
+      "bundled": true,
+      "pluginType": "standalone",
+      "autoLoaded": false,
+      "tags": [
+        "standalone",
+        "standalone"
+      ],
+      "popularity": {
+        "rating": 3.0,
+        "source": "hermes-tutorials.dev"
+      }
+    },
+    {
+      "rank": 24,
+      "id": "hermes-achievements",
+      "name": "Hermes Achievements",
+      "ecosystem": "hermes",
+      "category": "Utilities",
+      "description": "Achievement and badge tracking system for agents.",
+      "install": "hermes plugins enable hermes-achievements",
+      "docsUrl": "https://hermes-agent.nousresearch.com/docs",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent",
+      "official": true,
+      "bundled": true,
+      "pluginType": "standalone",
+      "autoLoaded": false,
+      "tags": [
+        "utilities",
+        "standalone"
+      ],
+      "popularity": {
+        "rating": 3.0,
+        "source": "hermes-tutorials.dev"
+      }
+    },
+    {
+      "rank": 25,
+      "id": "anthropic",
+      "name": "Anthropic",
+      "ecosystem": "hermes",
+      "category": "ModelProviders",
+      "description": "Direct Anthropic Claude API provider.",
+      "install": "Set ANTHROPIC_API_KEY in .env",
+      "docsUrl": "https://hermes-agent.nousresearch.com/docs",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent",
+      "official": true,
+      "bundled": true,
+      "pluginType": "model-provider",
+      "autoLoaded": true,
+      "tags": [
+        "modelproviders",
+        "model-provider"
+      ],
+      "popularity": {
+        "rating": 5.0,
+        "source": "hermes-tutorials.dev"
+      }
+    },
+    {
+      "rank": 26,
+      "id": "openai",
+      "name": "OpenAI",
+      "ecosystem": "hermes",
+      "category": "ModelProviders",
+      "description": "Direct OpenAI GPT API provider.",
+      "install": "Set OPENAI_API_KEY in .env",
+      "docsUrl": "https://hermes-agent.nousresearch.com/docs",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent",
+      "official": true,
+      "bundled": true,
+      "pluginType": "model-provider",
+      "autoLoaded": true,
+      "tags": [
+        "modelproviders",
+        "model-provider"
+      ],
+      "popularity": {
+        "rating": 5.0,
+        "source": "hermes-tutorials.dev"
+      }
+    },
+    {
+      "rank": 27,
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "ecosystem": "hermes",
+      "category": "ModelProviders",
+      "description": "DeepSeek model provider for coding tasks.",
+      "install": "Set DEEPSEEK_API_KEY in .env",
+      "docsUrl": "https://hermes-agent.nousresearch.com/docs",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent",
+      "official": true,
+      "bundled": true,
+      "pluginType": "model-provider",
+      "autoLoaded": true,
+      "tags": [
+        "modelproviders",
+        "model-provider"
+      ],
+      "popularity": {
+        "rating": 4.0,
+        "source": "hermes-tutorials.dev"
+      }
+    },
+    {
+      "rank": 28,
+      "id": "groq",
+      "name": "Groq",
+      "ecosystem": "hermes",
+      "category": "ModelProviders",
+      "description": "Ultra-fast inference on Groq LPU hardware.",
+      "install": "Set GROQ_API_KEY in .env",
+      "docsUrl": "https://hermes-agent.nousresearch.com/docs",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent",
+      "official": true,
+      "bundled": true,
+      "pluginType": "model-provider",
+      "autoLoaded": true,
+      "tags": [
+        "modelproviders",
+        "model-provider"
+      ],
+      "popularity": {
+        "rating": 4.0,
+        "source": "hermes-tutorials.dev"
+      }
+    },
+    {
+      "rank": 29,
+      "id": "openviking",
+      "name": "OpenViking",
+      "ecosystem": "hermes",
+      "category": "Memory",
+      "description": "Cloud memory provider with semantic recall.",
+      "install": "hermes config set memory.provider openviking",
+      "docsUrl": "https://hermes-agent.nousresearch.com/docs",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent",
+      "official": true,
+      "bundled": true,
+      "pluginType": "exclusive",
+      "autoLoaded": false,
+      "tags": [
+        "memory",
+        "exclusive"
+      ],
+      "popularity": {
+        "rating": 3.0,
+        "source": "hermes-tutorials.dev"
+      }
+    },
+    {
+      "rank": 30,
+      "id": "supermemory",
+      "name": "Supermemory",
+      "ecosystem": "hermes",
+      "category": "Memory",
+      "description": "Cloud memory provider for long-term agent recall.",
+      "install": "hermes config set memory.provider supermemory",
+      "docsUrl": "https://hermes-agent.nousresearch.com/docs",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent",
+      "official": true,
+      "bundled": true,
+      "pluginType": "exclusive",
+      "autoLoaded": false,
+      "tags": [
+        "memory",
+        "exclusive"
+      ],
+      "popularity": {
+        "rating": 2.0,
+        "source": "hermes-tutorials.dev"
+      }
+    },
+    {
+      "rank": 31,
+      "id": "home-assistant",
+      "name": "Home Assistant",
+      "ecosystem": "hermes",
+      "category": "Integration",
+      "description": "Control smart home devices via Home Assistant API.",
+      "install": "hermes plugins enable home-assistant",
+      "docsUrl": "https://hermes-agent.nousresearch.com/docs",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent",
+      "official": false,
+      "bundled": false,
+      "pluginType": "standalone",
+      "autoLoaded": false,
+      "tags": [
+        "integration",
+        "standalone"
+      ],
+      "popularity": {
+        "rating": 4.5,
+        "source": "hermes-tutorials.dev"
+      }
+    },
+    {
+      "rank": 32,
+      "id": "gbrain",
+      "name": "GBrain",
+      "ecosystem": "hermes",
+      "category": "Memory",
+      "description": "Community graph-based memory for structured agent recall.",
+      "install": "hermes plugins enable gbrain",
+      "docsUrl": "https://hermes-agent.nousresearch.com/docs",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent",
+      "official": false,
+      "bundled": false,
+      "pluginType": "exclusive",
+      "autoLoaded": false,
+      "tags": [
+        "memory",
+        "exclusive"
+      ],
+      "popularity": {
+        "rating": 4.0,
+        "source": "hermes-tutorials.dev"
+      }
+    },
+    {
+      "rank": 33,
+      "id": "mnemosyne",
+      "name": "Mnemosyne",
+      "ecosystem": "hermes",
+      "category": "Memory",
+      "description": "Community memory plugin with episodic recall.",
+      "install": "hermes plugins enable mnemosyne",
+      "docsUrl": "https://hermes-agent.nousresearch.com/docs",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent",
+      "official": false,
+      "bundled": false,
+      "pluginType": "exclusive",
+      "autoLoaded": false,
+      "tags": [
+        "memory",
+        "exclusive"
+      ],
+      "popularity": {
+        "rating": 4.0,
+        "source": "hermes-tutorials.dev"
+      }
+    },
+    {
+      "rank": 34,
+      "id": "hermes-lcm",
+      "name": "Hermes LCM",
+      "ecosystem": "hermes",
+      "category": "Memory",
+      "description": "SQLite-backed DAG context engine for conversation history.",
+      "install": "hermes plugins enable hermes-lcm",
+      "docsUrl": "https://hermes-agent.nousresearch.com/docs",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent",
+      "official": false,
+      "bundled": false,
+      "pluginType": "standalone",
+      "autoLoaded": false,
+      "tags": [
+        "memory",
+        "standalone"
+      ],
+      "popularity": {
+        "rating": 4.0,
+        "source": "hermes-tutorials.dev"
+      }
+    },
+    {
+      "rank": 35,
+      "id": "byterover",
+      "name": "Byterover",
+      "ecosystem": "hermes",
+      "category": "Memory",
+      "description": "Cloud memory provider for agent knowledge persistence.",
+      "install": "hermes config set memory.provider byterover",
+      "docsUrl": "https://hermes-agent.nousresearch.com/docs",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent",
+      "official": true,
+      "bundled": true,
+      "pluginType": "exclusive",
+      "autoLoaded": false,
+      "tags": [
+        "memory",
+        "exclusive"
+      ],
+      "popularity": {
+        "rating": 2.0,
+        "source": "hermes-tutorials.dev"
+      }
+    },
+    {
+      "rank": 36,
+      "id": "hindsight",
+      "name": "Hindsight",
+      "ecosystem": "hermes",
+      "category": "Memory",
+      "description": "Cloud memory provider with retrospective analysis.",
+      "install": "hermes config set memory.provider hindsight",
+      "docsUrl": "https://hermes-agent.nousresearch.com/docs",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent",
+      "official": true,
+      "bundled": true,
+      "pluginType": "exclusive",
+      "autoLoaded": false,
+      "tags": [
+        "memory",
+        "exclusive"
+      ],
+      "popularity": {
+        "rating": 2.0,
+        "source": "hermes-tutorials.dev"
+      }
+    },
+    {
+      "rank": 37,
+      "id": "retaindb",
+      "name": "RetainDB",
+      "ecosystem": "hermes",
+      "category": "Memory",
+      "description": "Cloud memory provider for structured recall.",
+      "install": "hermes config set memory.provider retaindb",
+      "docsUrl": "https://hermes-agent.nousresearch.com/docs",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent",
+      "official": true,
+      "bundled": true,
+      "pluginType": "exclusive",
+      "autoLoaded": false,
+      "tags": [
+        "memory",
+        "exclusive"
+      ],
+      "popularity": {
+        "rating": 2.0,
+        "source": "hermes-tutorials.dev"
+      }
+    },
+    {
+      "rank": 38,
+      "id": "telegram-gateway",
+      "name": "Telegram",
+      "ecosystem": "hermes",
+      "category": "Gateway",
+      "description": "Core Telegram gateway \u2014 messaging with full tool access.",
+      "install": "Configure in gateway section of config.yaml",
+      "docsUrl": "https://hermes-agent.nousresearch.com/docs",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent",
+      "official": true,
+      "bundled": true,
+      "pluginType": "platform",
+      "autoLoaded": true,
+      "tags": [
+        "gateway",
+        "platform"
+      ],
+      "popularity": {
+        "rating": 5.0,
+        "source": "hermes-tutorials.dev"
+      }
+    },
+    {
+      "rank": 39,
+      "id": "discord-gateway",
+      "name": "Discord",
+      "ecosystem": "hermes",
+      "category": "Gateway",
+      "description": "Core Discord gateway for server and DM interactions.",
+      "install": "Configure in gateway section of config.yaml",
+      "docsUrl": "https://hermes-agent.nousresearch.com/docs",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent",
+      "official": true,
+      "bundled": true,
+      "pluginType": "platform",
+      "autoLoaded": true,
+      "tags": [
+        "gateway",
+        "platform"
+      ],
+      "popularity": {
+        "rating": 5.0,
+        "source": "hermes-tutorials.dev"
+      }
+    },
+    {
+      "rank": 40,
+      "id": "slack-gateway",
+      "name": "Slack",
+      "ecosystem": "hermes",
+      "category": "Gateway",
+      "description": "Core Slack workspace gateway integration.",
+      "install": "Configure in gateway section of config.yaml",
+      "docsUrl": "https://hermes-agent.nousresearch.com/docs",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent",
+      "official": true,
+      "bundled": true,
+      "pluginType": "platform",
+      "autoLoaded": true,
+      "tags": [
+        "gateway",
+        "platform"
+      ],
+      "popularity": {
+        "rating": 5.0,
+        "source": "hermes-tutorials.dev"
+      }
+    },
+    {
+      "rank": 41,
+      "id": "whatsapp-gateway",
+      "name": "WhatsApp",
+      "ecosystem": "hermes",
+      "category": "Gateway",
+      "description": "Core WhatsApp messaging gateway.",
+      "install": "Configure in gateway section of config.yaml",
+      "docsUrl": "https://hermes-agent.nousresearch.com/docs",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent",
+      "official": true,
+      "bundled": true,
+      "pluginType": "platform",
+      "autoLoaded": true,
+      "tags": [
+        "gateway",
+        "platform"
+      ],
+      "popularity": {
+        "rating": 4.0,
+        "source": "hermes-tutorials.dev"
+      }
+    },
+    {
+      "rank": 42,
+      "id": "signal-gateway",
+      "name": "Signal",
+      "ecosystem": "hermes",
+      "category": "Gateway",
+      "description": "Core Signal messenger gateway for privacy.",
+      "install": "Configure in gateway section of config.yaml",
+      "docsUrl": "https://hermes-agent.nousresearch.com/docs",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent",
+      "official": true,
+      "bundled": true,
+      "pluginType": "platform",
+      "autoLoaded": true,
+      "tags": [
+        "gateway",
+        "platform"
+      ],
+      "popularity": {
+        "rating": 4.0,
+        "source": "hermes-tutorials.dev"
+      }
+    },
+    {
+      "rank": 43,
+      "id": "email-gateway",
+      "name": "Email",
+      "ecosystem": "hermes",
+      "category": "Gateway",
+      "description": "Email gateway for agent inbox and outbound mail.",
+      "install": "Configure in gateway section of config.yaml",
+      "docsUrl": "https://hermes-agent.nousresearch.com/docs",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent",
+      "official": true,
+      "bundled": true,
+      "pluginType": "platform",
+      "autoLoaded": true,
+      "tags": [
+        "gateway",
+        "platform"
+      ],
+      "popularity": {
+        "rating": 4.0,
+        "source": "hermes-tutorials.dev"
+      }
+    },
+    {
+      "rank": 44,
+      "id": "matrix-gateway",
+      "name": "Matrix",
+      "ecosystem": "hermes",
+      "category": "Gateway",
+      "description": "Decentralized Matrix protocol gateway.",
+      "install": "Configure in gateway section of config.yaml",
+      "docsUrl": "https://hermes-agent.nousresearch.com/docs",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent",
+      "official": true,
+      "bundled": true,
+      "pluginType": "platform",
+      "autoLoaded": true,
+      "tags": [
+        "gateway",
+        "platform"
+      ],
+      "popularity": {
+        "rating": 3.0,
+        "source": "hermes-tutorials.dev"
+      }
+    },
+    {
+      "rank": 45,
+      "id": "autonomy-engine",
+      "name": "Autonomy Engine",
+      "ecosystem": "hermes",
+      "category": "Standalone",
+      "description": "Self-directed decision-making with decide/plan/reflect tools.",
+      "install": "hermes plugins enable autonomy-engine",
+      "docsUrl": "https://hermes-agent.nousresearch.com/docs",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent",
+      "official": false,
+      "bundled": false,
+      "pluginType": "standalone",
+      "autoLoaded": false,
+      "tags": [
+        "standalone",
+        "standalone"
+      ],
+      "popularity": {
+        "rating": 4.0,
+        "source": "hermes-tutorials.dev"
+      }
+    },
+    {
+      "rank": 46,
+      "id": "model-router",
+      "name": "Smart Model Router",
+      "ecosystem": "hermes",
+      "category": "Standalone",
+      "description": "Intelligent model routing with fallback chains.",
+      "install": "hermes plugins enable model-router",
+      "docsUrl": "https://hermes-agent.nousresearch.com/docs",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent",
+      "official": false,
+      "bundled": false,
+      "pluginType": "standalone",
+      "autoLoaded": false,
+      "tags": [
+        "standalone",
+        "standalone"
+      ],
+      "popularity": {
+        "rating": 4.0,
+        "source": "hermes-tutorials.dev"
+      }
+    },
+    {
+      "rank": 47,
+      "id": "telemetry",
+      "name": "Telemetry",
+      "ecosystem": "hermes",
+      "category": "Observability",
+      "description": "Structured JSON telemetry of every tool call.",
+      "install": "hermes plugins enable telemetry",
+      "docsUrl": "https://hermes-agent.nousresearch.com/docs",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent",
+      "official": false,
+      "bundled": false,
+      "pluginType": "standalone",
+      "autoLoaded": false,
+      "tags": [
+        "observability",
+        "standalone"
+      ],
+      "popularity": {
+        "rating": 3.5,
+        "source": "hermes-tutorials.dev"
+      }
+    },
+    {
+      "rank": 48,
+      "id": "budget-enforcer",
+      "name": "Budget Enforcer",
+      "ecosystem": "hermes",
+      "category": "Standalone",
+      "description": "Langfuse-backed budget enforcement with spend warnings.",
+      "install": "hermes plugins enable budget-enforcer",
+      "docsUrl": "https://hermes-agent.nousresearch.com/docs",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent",
+      "official": false,
+      "bundled": false,
+      "pluginType": "standalone",
+      "autoLoaded": false,
+      "tags": [
+        "standalone",
+        "standalone"
+      ],
+      "popularity": {
+        "rating": 3.5,
+        "source": "hermes-tutorials.dev"
+      }
+    },
+    {
+      "rank": 49,
+      "id": "pii-redaction",
+      "name": "PII Redaction",
+      "ecosystem": "hermes",
+      "category": "Utilities",
+      "description": "Automatic PII and secret redaction in agent output.",
+      "install": "hermes plugins enable pii-redaction",
+      "docsUrl": "https://hermes-agent.nousresearch.com/docs",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent",
+      "official": true,
+      "bundled": true,
+      "pluginType": "standalone",
+      "autoLoaded": true,
+      "tags": [
+        "utilities",
+        "standalone"
+      ],
+      "popularity": {
+        "rating": 4.0,
+        "source": "hermes-tutorials.dev"
+      }
+    },
+    {
+      "rank": 50,
+      "id": "voice-mode",
+      "name": "Voice Mode",
+      "ecosystem": "hermes",
+      "category": "Standalone",
+      "description": "Real-time voice conversation mode for Hermes.",
+      "install": "hermes plugins enable voice-mode",
+      "docsUrl": "https://hermes-agent.nousresearch.com/docs",
+      "repoUrl": "https://github.com/NousResearch/hermes-agent",
+      "official": true,
+      "bundled": true,
+      "pluginType": "standalone",
+      "autoLoaded": false,
+      "tags": [
+        "standalone",
+        "standalone"
+      ],
+      "popularity": {
+        "rating": 4.0,
+        "source": "hermes-tutorials.dev"
+      }
+    }
+  ]
+}
