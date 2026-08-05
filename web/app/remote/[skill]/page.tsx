@@ -40,6 +40,39 @@ export default async function SkillPage({ params }: { params: Promise<{ skill: s
   const avg = avgSalary(tagJobs);
   const otherTags = getAllTags().filter((t) => t.tag !== tag).slice(0, 12);
 
+  // FAQ Schema for SEO
+  const faqItems = [
+    {
+      question: `How many remote ${tag} jobs are available?`,
+      answer: `There are currently ${tagJobs.length} remote ${tag} job openings at AI companies and startups on our platform.`
+    },
+    {
+      question: `What's the average salary for remote ${tag} positions?`,
+      answer: `Remote ${tag} engineers typically earn an average of ${formatSalary(avg.min, avg.max)} per year, based on current job postings.`
+    },
+    {
+      question: `What companies are hiring remote ${tag} engineers?`,
+      answer: `Top AI companies, well-funded startups, and established tech firms are actively hiring remote ${tag} engineers. Browse our listings to see who's hiring.`
+    },
+    {
+      question: `Are there international remote ${tag} jobs?`,
+      answer: `Yes, many of our remote ${tag} positions welcome international candidates. Filter by location and eligibility on our job listings.`
+    }
+  ];
+
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqItems.map((item) => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: item.answer,
+      },
+    })),
+  };
+
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
@@ -59,6 +92,7 @@ export default async function SkillPage({ params }: { params: Promise<{ skill: s
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <SiteHeader />
@@ -81,6 +115,19 @@ export default async function SkillPage({ params }: { params: Promise<{ skill: s
           />
 
           <JobList jobs={tagJobs} indexOf={(job) => jobs.indexOf(job)} />
+
+          {/* FAQ Section */}
+          <section className="mt-16 border-t border-border/60 pt-10">
+            <h2 className="text-2xl font-semibold mb-8">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              {faqItems.map((item, idx) => (
+                <div key={idx} className="border-b border-border/40 pb-6 last:border-0">
+                  <h3 className="font-semibold text-foreground mb-2">{item.question}</h3>
+                  <p className="text-muted-foreground text-sm">{item.answer}</p>
+                </div>
+              ))}
+            </div>
+          </section>
 
           <section className="mt-16 border-t border-border/60 pt-10">
             <SectionLabel>Browse other skills</SectionLabel>

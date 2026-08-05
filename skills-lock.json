@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "skills": {
+    "audit-content": {
+      "source": "onvoyage-ai/gtm-engineer-skills",
+      "sourceType": "github",
+      "skillPath": "audit-content/SKILL.md",
+      "computedHash": "2b0b86e95a18950269edccecc72c28fcd847b1df1e85f493e8d6916376c0d6f7"
+    },
+    "audit-website-aeo": {
+      "source": "onvoyage-ai/gtm-engineer-skills",
+      "sourceType": "github",
+      "skillPath": "audit-website-aeo/SKILL.md",
+      "computedHash": "c9cc6e8b9e6de96afe6cd4a0b24f1f8cb8433e7507bb7ee0523e5bab6e644d7d"
+    },
+    "build-backlinks": {
+      "source": "onvoyage-ai/gtm-engineer-skills",
+      "sourceType": "github",
+      "skillPath": "build-backlinks/SKILL.md",
+      "computedHash": "b8d735b41e887962e264356193c29183d277f859cfd5122acc6cc956a74a0f62"
+    },
+    "build-resource-pages": {
+      "source": "onvoyage-ai/gtm-engineer-skills",
+      "sourceType": "github",
+      "skillPath": "build-resource-pages/SKILL.md",
+      "computedHash": "bf4a177c5dcd93b07c83d0dd8cf9daa07b7305a4f54d35e3c461770532e28045"
+    },
+    "create-geo-charts": {
+      "source": "onvoyage-ai/gtm-engineer-skills",
+      "sourceType": "github",
+      "skillPath": "create-geo-charts/SKILL.md",
+      "computedHash": "a57b3e003a140eeaf94ec042e77bfed24822bb9dc4041845bd7ff7d090373532"
+    },
+    "geo-content-planning": {
+      "source": "onvoyage-ai/gtm-engineer-skills",
+      "sourceType": "github",
+      "skillPath": "geo-content-planning/SKILL.md",
+      "computedHash": "292081f7799578e71127b3f9ebb43ecf29ea78047c6a397fd799edb65803e3ed"
+    },
+    "geo-content-research": {
+      "source": "onvoyage-ai/gtm-engineer-skills",
+      "sourceType": "github",
+      "skillPath": "geo-content-research/SKILL.md",
+      "computedHash": "eb6131803b3a2254c6c7d82cafef5b398e150376d60a8c8b0bcde74c0194c069"
+    },
+    "improve-aeo-geo": {
+      "source": "onvoyage-ai/gtm-engineer-skills",
+      "sourceType": "github",
+      "skillPath": "improve-aeo-geo/SKILL.md",
+      "computedHash": "29ac5b02381b43e7c1989e67886d3f6f54f040bc1ac813c5cd594233808470e9"
+    },
+    "reddit-opportunity-research": {
+      "source": "onvoyage-ai/gtm-engineer-skills",
+      "sourceType": "github",
+      "skillPath": "reddit-opportunity-research/SKILL.md",
+      "computedHash": "d77b8bd7038ab0b8e6c154adbeb331c66417eb827b05f18e1e51009c15d8a0a4"
+    },
+    "research-brand": {
+      "source": "onvoyage-ai/gtm-engineer-skills",
+      "sourceType": "github",
+      "skillPath": "research-brand/SKILL.md",
+      "computedHash": "9050207a4b8439d5a896320e4ea1748a746e749dc611bf259552068012008bed"
+    },
+    "research-keywords": {
+      "source": "onvoyage-ai/gtm-engineer-skills",
+      "sourceType": "github",
+      "skillPath": "research-keywords/SKILL.md",
+      "computedHash": "f0ef653022beb788e52a97c3b2f44234d4089a26b77fc2edf93432de6dd2ef56"
+    },
+    "write-seo-geo-content": {
+      "source": "onvoyage-ai/gtm-engineer-skills",
+      "sourceType": "github",
+      "skillPath": "write-seo-geo-content/SKILL.md",
+      "computedHash": "054f62b6063c19b38f678c007e06128af0772c74ae58c9ad92dcfc4728e1c9de"
+    }
+  }
+}

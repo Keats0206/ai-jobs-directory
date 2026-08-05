@@ -57,8 +57,43 @@ export default async function SalaryPage({ params }: { params: Promise<{ skill: 
   const lowest = Math.min(...mins);
   const highest = Math.max(...maxs);
 
+  // FAQ Schema for this page
+  const faqItems = [
+    {
+      question: `What is the average ${tag} engineer salary in 2026?`,
+      answer: `Based on ${tagJobs.length} current job postings, the average ${tag} engineer salary ranges from ${formatSalary(avgMin, avgMax)} per year.`
+    },
+    {
+      question: `How much do senior ${tag} engineers make?`,
+      answer: `Senior ${tag} engineers typically earn between $${Math.round(avgMax * 1.2 / 1000)}k and $${Math.round(highest / 1000)}k, with the highest-paying roles reaching up to $${Math.round(highest / 1000)}k annually.`
+    },
+    {
+      question: `What's the salary range for ${tag} roles?`,
+      answer: `The salary range for ${tag} positions spans from $${Math.round(lowest / 1000)}k to $${Math.round(highest / 1000)}k, depending on experience level, location, and company stage.`
+    },
+    {
+      question: `Which companies pay the most for ${tag} engineers?`,
+      answer: `Top-paying companies for ${tag} roles include established tech companies, AI startups, and well-funded research organizations. See our top-paying roles below.`
+    }
+  ];
+
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqItems.map((item) => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: item.answer,
+      },
+    })),
+  };
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+
       <SiteHeader />
 
       <main className="flex-1">
@@ -88,6 +123,37 @@ export default async function SalaryPage({ params }: { params: Promise<{ skill: 
               Browse all {tagJobs.length} {tag} jobs
             </Link>
           </div>
+
+          {/* FAQ Section */}
+          <section className="mt-14 border-t border-border/60 pt-10">
+            <h2 className="text-2xl font-semibold mb-8">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              {faqItems.map((item, idx) => (
+                <div key={idx} className="border-b border-border/40 pb-6 last:border-0">
+                  <h3 className="font-semibold text-foreground mb-2">{item.question}</h3>
+                  <p className="text-muted-foreground text-sm">{item.answer}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          {/* Internal linking - related salary guides */}
+          <section className="mt-14 border-t border-border/60 pt-10">
+            <SectionLabel>Explore other salary guides</SectionLabel>
+            <div className="grid gap-2 sm:grid-cols-2 md:grid-cols-3">
+              {getAllTags().slice(0, 6).map(({ tag: t }) => 
+                t !== tag && (
+                  <Link
+                    key={t}
+                    href={`/salary/${slugify(t)}`}
+                    className="p-3 rounded-lg border border-border hover:bg-muted transition-colors text-sm"
+                  >
+                    {t} salary →
+                  </Link>
+                )
+              )}
+            </div>
+          </section>
 
           {skill === 'llm' ? <GeoContent url="/salary/llm" /> : null}
         </Container>
