@@ -80,8 +80,34 @@ export default async function LocationPage({ params }: { params: Promise<{ city:
     })),
   };
 
+  const breadcrumbs = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: 'https://www.artificialjobs.dev',
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Locations',
+        item: 'https://www.artificialjobs.dev/location',
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: loc,
+        item: `https://www.artificialjobs.dev/location/${city}`,
+      },
+    ],
+  };
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <SiteHeader />

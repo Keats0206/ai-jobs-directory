@@ -68,8 +68,34 @@ export default async function CompareSlugPage({
       url: `https://www.artificialjobs.dev/compare/${slug}`,
     };
 
+    const breadcrumbs = {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Home',
+          item: 'https://www.artificialjobs.dev',
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: 'Compare',
+          item: 'https://www.artificialjobs.dev/compare/ai-coding-agents',
+        },
+        {
+          '@type': 'ListItem',
+          position: 3,
+          name: `${agentA.name} vs ${agentB.name}`,
+          item: `https://www.artificialjobs.dev/compare/${slug}`,
+        },
+      ],
+    };
+
     return (
       <>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         <SiteHeader />
         <main className="flex-1">

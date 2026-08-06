@@ -90,8 +90,45 @@ export default async function SalaryPage({ params }: { params: Promise<{ skill: 
     })),
   };
 
+  const breadcrumbs = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: 'https://www.artificialjobs.dev',
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Salary Guides',
+        item: 'https://www.artificialjobs.dev/salary',
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: `${tag} salary`,
+        item: `https://www.artificialjobs.dev/salary/${skill}`,
+      },
+    ],
+  };
+
+  const aggregateSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'AggregateOffer',
+    priceCurrency: 'USD',
+    lowPrice: lowest,
+    highPrice: highest,
+    offerCount: tagJobs.length,
+    url: `https://www.artificialjobs.dev/salary/${skill}`,
+  };
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(aggregateSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <SiteHeader />

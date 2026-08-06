@@ -71,6 +71,34 @@ export default async function JobPage({ params }: { params: Promise<{ slug: stri
     applyUrl: job.apply_url,
   };
 
+  // Find related jobs (same skill, location, or company)
+  const getRelatedJobs = () => {
+    const related = new Set<number>();
+    
+    // Same company
+    jobs.forEach((j, i) => {
+      if (j.company === job.company && i !== index) related.add(i);
+    });
+    
+    // Same location (if fewer than 4)
+    if (related.size < 4) {
+      jobs.forEach((j, i) => {
+        if (j.location === job.location && i !== index && related.size < 4) related.add(i);
+      });
+    }
+    
+    // Same tags (if still fewer)
+    if (related.size < 4 && job.tags?.length) {
+      jobs.forEach((j, i) => {
+        if (j.tags?.some(t => job.tags?.includes(t)) && i !== index && related.size < 4) related.add(i);
+      });
+    }
+    
+    return Array.from(related).slice(0, 4).map(i => ({ job: jobs[i], index: i }));
+  };
+
+  const relatedJobs = getRelatedJobs();
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
@@ -122,6 +150,33 @@ export default async function JobPage({ params }: { params: Promise<{ slug: stri
                 Apply for this job
               </ApplyButton>
             </aside>
+
+            {relatedJobs.length > 0 && (
+              <section className="mt-14 border-t border-border/60 pt-10">
+                <h2 className="text-lg font-semibold mb-6">Related opportunities</h2>
+                <div className="space-y-3">
+                  {relatedJobs.map(({ job: relJob, index: relIndex }) => (
+                    <a
+                      key={relIndex}
+                      href={`/jobs/${jobSlug(relJob, relIndex)}`}
+                      className="flex items-start justify-between rounded-lg border border-border/60 p-4 hover:bg-muted/50 transition-colors group"
+                    >
+                      <div className="flex-1 text-left">
+                        <h3 className="font-medium group-hover:text-primary transition-colors">{relJob.title}</h3>
+                        <p className="text-sm text-muted-foreground mt-0.5">{relJob.company}</p>
+                        <div className="flex flex-wrap gap-1.5 mt-2">
+                          <span className="text-xs bg-muted px-2 py-1 rounded">{relJob.location}</span>
+                          <span className="text-xs bg-muted px-2 py-1 rounded">{formatSalary(relJob.salary_min, relJob.salary_max)}</span>
+                        </div>
+                      </div>
+                      <div className="text-right text-xs text-muted-foreground ml-4 flex-shrink-0">
+                        <div className="text-primary font-semibold group-hover:underline">View →</div>
+                      </div>
+                    </a>
+                  ))}
+                </div>
+              </section>
+            )}
           </article>
         </Container>
       </main>
