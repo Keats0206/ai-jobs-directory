@@ -1,106 +1,83 @@
 # AI Engineering & LLM Job Board
 > Curated directory of remote AI, LLM, Machine Learning, and GenAI roles at top startups and tech companies.
+> **826 total jobs** • Updated daily • Perfect for AI agents and search engines.
 
-## Active Featured Roles
+## Featured Top-Paying Roles
 
-- [AI Engineer at AI Agents (Remote](https://jobs.ashbyhq.com/hatch/302d3f5d-2d99-4962-8ce3-4480cd4330d5): Remote / USA | Salary: $160,000-$240,000 | Tech Stack: LLM, AI
-- [AI Engineer Backend (Remote at ES/UK only) @ Quadrivia](https://jobs.ashbyhq.com/quadrivia/3b40be91-27fc-4148-a1a3-565d8211dd5c): Remote / USA | Salary: $160,000-$240,000 | Tech Stack: RAG, Agent
-- [AI Engineer at Remote Europe @ Reedsy](https://jobs.ashbyhq.com/reedsy/b043b550-02b7-416f-8969-5db8fd9dc8ee): Remote / USA | Salary: $160,000-$240,000 | Tech Stack: LLM, AI
-- [Sr. Staff AI Engineer (Remote) @ Rula at AI Startup](https://jobs.ashbyhq.com/rula/f2424794-c819-4f53-a8af-83322e617acb): Remote / USA | Salary: $160,000-$240,000 | Tech Stack: LLM, AI
-- [Senior AI Engineer @ DualEntry at AI Startup](https://jobs.ashbyhq.com/dualentry/7acbe603-8fbc-4249-942a-ee45eb273ea6): Remote / USA | Salary: $160,000-$240,000 | Tech Stack: LLM, Rust
-- [Staff AI Engineer at AI Platform @ ClickUp](https://jobs.ashbyhq.com/clickup/143d20ff-cc53-4dc0-bc8b-09a7c1bddf87?embed=js): Remote / USA | Salary: $160,000-$240,000 | Tech Stack: LLM, AI
-- [Full Stack AI Engineer @ Infinity at AI Startup](https://jobs.ashbyhq.com/infinity-constellation/30fac65e-bcd7-4ecc-9477-fc7c8c8a9f52): Remote / USA | Salary: $160,000-$240,000 | Tech Stack: LLM, RAG, Agent, Python
-- [Lead AI Engineer @ Sierra Studio at AI Startup](https://jobs.ashbyhq.com/sierra-studio/81770149-3a94-4e22-8678-dac4a7a6d9ba): Remote / USA | Salary: $160,000-$240,000 | Tech Stack: LLM, RAG, Agent
-- [Forward Deployed AI Engineer @ Sardine at AI Startup](https://jobs.ashbyhq.com/sardine/4ff32b5d-13c6-4024-826c-04ed2881d688): Remote / USA | Salary: $160,000-$240,000 | Tech Stack: Agent, Rust
-- [Applied AI Engineer – Systems & Reliability (remote/Berlin at ...](https://jobs.ashbyhq.com/hipeople-official/6c330d7b-7c6d-4993-8893-b58b5289d442): Remote / USA | Salary: $160,000-$240,000 | Tech Stack: Rust
-- [LLM Engineer III at AI Startup](https://boards.greenhouse.io/crunchyroll/jobs/7014513?gh_jid=7014513): Remote / USA | Salary: $160,000-$240,000 | Tech Stack: LLM, RAG, Agent
-- [Job Application for Mission Integration Engineer, Applied Computing (Starshield) at SpaceX](https://boards.greenhouse.io/spacex/jobs/8320099002?gh_jid=8320099002): Remote / USA | Salary: $160,000-$240,000 | Tech Stack: LLM, RAG, Fine-tuning
-- [Senior Machine Learning Engineer, Customer Support ... at AI Startup](https://boards.greenhouse.io/airbnb/jobs/7975743): Remote / USA | Salary: $160,000-$240,000 | Tech Stack: LLM, RAG, Fine-tuning, Rust
-- [Job Application for Principal Applied AI / ML Engineer at Faire](https://boards.greenhouse.io/faire/jobs/8456064002?gh_jid=8456064002): Remote / USA | Salary: $160,000-$240,000 | Tech Stack: LLM, RAG, Agent, Fine-tuning
-- [Job Application for Sr. Software Engineer (Platform Team) at SpaceX](https://boards.greenhouse.io/spacex/jobs/8495853002?gh_jid=8495853002): Remote / USA | Salary: $160,000-$240,000 | Tech Stack: Infrastructure, Rust
+- [Job Application for Performance Engineer @ Anthropic](https://www.anthropic.com/careers/jobs/4020350008): San Francisco, CA | Salary: $280,000-$850,000 | Skills: Transformers
+- [Perception / Computer Vision Software Engineer @ Perception at Figure](https://boards.greenhouse.io/figureai/jobs/4007375006): San Francisco, CA | Salary: $200,000-$400,000 | Skills: CUDA, Computer Vision, Data Engineering
+- [Principal ML Engineer @ Rebar @ Rebar](https://jobs.ashbyhq.com/rebar/9939e1be-9d42-4cea-b17d-5dbebfade1f8): New York, NY | Salary: $220,000-$350,000 | Skills: Infrastructure, Computer Vision
+- [Job Application for Principal AI Engineer @ ALO](https://boards.greenhouse.io/aloyoga/jobs/5726560004?gh_jid=5726560004): On-site | Salary: $220,000-$350,000 | Skills: RAG, LangChain, Python
+- [Job Application for Principal Data Scientist, ML Bots - Game Tech Group @ Riot Games](https://boards.greenhouse.io/embed/job_app?token=7177099): On-site | Salary: $220,000-$350,000 | Skills: Agent, Rust
+- [Principal Scientist, Machine Learning, Genomics @ Flagship Pioneering](https://boards.greenhouse.io/flagshippioneeringinc/jobs/8229819002?gh_jid=8229819002): On-site | Salary: $220,000-$350,000 | Skills: LLM, AI
+- [Machine Learning Principal Solutions Architect @ Data Engineering and Data Analytics](https://boards.greenhouse.io/phdata/jobs/7390457): On-site | Salary: $220,000-$350,000 | Skills: Data Engineering
+- [Job Application for Principal Engineer, Data & ML Infrastructure @ Motional](https://boards.greenhouse.io/embed/job_app?token=6676461003): San Francisco, CA | Salary: $220,000-$350,000 | Skills: Infrastructure, Python, Data Engineering
+- [Principal Software Engineer, B2B Engineering | OpenAI @ OpenAI](https://openai.com/careers/principal-software-engineer-b2b-engineering-remote-us/): Remote | Salary: $220,000-$350,000 | Skills: RAG, Infrastructure
+- [GenAI Principal Engineer @ Remote | Wfh](https://wfh.hstn.me/job/genai-principal-engineer-remote): London, UK | Salary: $220,000-$350,000 | Skills: LLM, RAG, Agent
+- [Remote Principal GenAI Data Engineer in Memphis @ Zscaler, Inc.](https://talents.vaia.com/companies/zscaler-inc/memphis/remote-principal-genai-data-engineer-144116029/): San Francisco, CA | Salary: $220,000-$350,000 | Skills: LLM, RAG, Python
+- [Principal Consultant, GenAI  | Lovelytics | 140k @ 180k/year | Remote Arlington | June 2026](https://jobera.com/job/lovelytics-principal-consultant-genai-897101ab/): Remote | Salary: $220,000-$350,000 | Skills: LLM, RAG, LangChain
+- [Lead Principal Agentic RAG Engineer – Python, Delhi | BestKaam @ BestKaam](https://www.bestkaam.com/job/lead-principal-agentic-rag-engineer-python-ai-platforms-bridge-ai-delhi-4-8-years-710962): On-site | Salary: $220,000-$350,000 | Skills: LLM, RAG, Agent
+- [Sr. Principal Data Scientist - Remote @ UnitedHealth Group](https://careers.unitedhealthgroup.com/job/minnetonka/sr-principal-data-scientist-remote/34088/95426609072): Remote | Salary: $220,000-$350,000 | Skills: Data Engineering
+- [Job Application for Principal Engineer - Prediction @ Motional](https://boards.greenhouse.io/embed/job_app?for=motional&token=6521874003): San Francisco, CA | Salary: $220,000-$350,000 | Skills: CUDA, Agent, Python
+- [Principal GenAI Engineer @ Convo AI | Voice AI @ Weave](https://jobs.ashbyhq.com/Weave/e65e2365-1f1b-4c0b-8d27-cb7e0650a2ba): Remote | Salary: $220,000-$350,000 | Skills: Infrastructure, GenAI
+- [Principal Data Scientist (AI) @ REMOTE (US) Job Details | Hexagon](https://careers.hexagon.com/job/Houston-Principal-Data-Scientist-%28AI%29-REMOTE-%28US%29-TX-77086/1249157601/): San Francisco, CA | Salary: $220,000-$350,000 | Skills: LLM, AI
+- [Principal Data Scientist | TradeStation Careers @ TradeStation](https://careers.tradestation.com/positions/principal-data-scientist-3286): New York, NY | Salary: $220,000-$350,000 | Skills: RAG
+- [Sr/Staff Data Scientist (Remote @ US) Job Details | BNSF](https://bnsf.jobs2web.com/job/REMOTE-SrStaff-Data-Scientist-%28Remote-US%29-US-76131/1403364300/): San Francisco, CA | Salary: $165,000-$300,000 | Skills: LLM, AI
+- [Sr/Staff Data Scientist (Remote @ US) | Flexgen](https://flexgen.zya.me/job/sr-staff-data-scientist-remote-us): San Francisco, CA | Salary: $165,000-$300,000 | Skills: LLM, AI
+- [Senior Agentic AI Engineer @ Eigen Labs @ Eigen Labs](https://jobs.ashbyhq.com/eigen-labs/c02fa001-23c9-4d68-8c0a-e27a742d76a4): San Francisco, CA | Salary: $180,000-$280,000 | Skills: LLM, Agent, Infrastructure
+- [Senior AI Software Engineer, Agent Systems @ Scale Army Careers @ Remote](https://jobs.ashbyhq.com/scale%20Army%20Careers/c1aa7444-f7dc-4394-95f3-2fb75d931bdb): Remote | Salary: $180,000-$280,000 | Skills: Agent, Rust
+- [Senior Machine Learning Engineer @ Bjak @ Bjakcareer](https://jobs.ashbyhq.com/bjakcareer/01f383b8-bc47-4a76-9362-c6fddf2c1aad): Remote | Salary: $180,000-$280,000 | Skills: Python
+- [Senior Machine Learning Engineer @ TensorWave @ Tensorwave](https://jobs.ashbyhq.com/tensorwave/a8d30c84-6cda-4504-ae3d-f427b46d42c3): Remote | Salary: $180,000-$280,000 | Skills: Infrastructure, Python
+- [Senior Machine Learning Engineer @ 1 @ Parspec](https://jobs.ashbyhq.com/parspec/e6ef5033-1497-4272-abee-5358ee6340c3): San Francisco, CA | Salary: $180,000-$280,000 | Skills: LLM, RAG, Agent
 
-## Search Queries & Taxonomy
-- Machine Learning Engineer Jobs
-- LLM Ops & Infrastructure Careers
-- AI Agent & RAG Developers
-- Remote AI Startup Jobs
+## Search by Skill
+- [LLM Jobs](/remote/llm): 432 open positions
+- [RAG Jobs](/remote/rag): 353 open positions
+- [Agent Jobs](/remote/agent): 327 open positions
+- [Python Jobs](/remote/python): 286 open positions
+- [Infrastructure Jobs](/remote/infrastructure): 235 open positions
+- [Rust Jobs](/remote/rust): 121 open positions
+- [AI Jobs](/remote/ai): 88 open positions
+- [LangChain Jobs](/remote/langchain): 84 open positions
+- [Generative AI Jobs](/remote/generative ai): 81 open positions
+- [NLP Jobs](/remote/nlp): 73 open positions
+- [Fine-tuning Jobs](/remote/fine-tuning): 70 open positions
+- [Computer Vision Jobs](/remote/computer vision): 70 open positions
+- [TensorFlow Jobs](/remote/tensorflow): 63 open positions
+- [GenAI Jobs](/remote/genai): 42 open positions
+- [Transformers Jobs](/remote/transformers): 36 open positions
 
-## Employer Submissions
-- Post a Featured AI Job ($99/mo): /post-job
-- Claim & Verify Startup Profile: /verify
-## AI Agent Directory
-> Top 150 ranked plugins and MCP servers for OpenClaw and Hermes Agent.
+## Top Hiring Companies
+- OpenAI: 25 open roles
+- Anthropic: 22 open roles
+- Hugging Face: 20 open roles
+- Flexgen: 17 open roles
+- Replit: 16 open roles
+- AI Engineer: 15 open roles
+- Stability AI: 13 open roles
+- Indeed: 13 open roles
+- RemoteAI: 11 open roles
+- Machine Learning Engineer: 9 open roles
+- Cohere: 7 open roles
+- Remote: 5 open roles
+- Senior Machine Learning Engineer: 4 open roles
+- About: 4 open roles
+- UnitedHealth Group: 4 open roles
+- USA Remote Jobs mysmartpros: 4 open roles
+- Computer Vision Engineer: 4 open roles
+- Bjakcareer: 3 open roles
+- Senior AI Engineer: 3 open roles
+- Cluster: 3 open roles
 
-### Hub
-- [Agent Directory](/agents): Browse OpenClaw plugins, MCP servers, and Hermes plugins
-- [Agentic Dev Hub](/agentic): Rankings, comparisons, MCPs, and jobs for agentic developers
-- [OpenClaw Plugins](/openclaw/plugins): Top 50 native OpenClaw extensions
-- [MCP Servers](/openclaw/mcps): Top 50 Model Context Protocol servers
-- [Hermes Plugins](/hermes/plugins): Top 50 Hermes Agent plugins
-- [Cursor Rules](/cursor-rules): Curated .cursorrules for AI coding agents
-- [List an MCP](/post-mcp): Feature your MCP server — $199/mo
+## How to Use This Feed
+- **AI Agents & Search**: This page is optimized for crawling by Perplexity, ChatGPT, Claude, and LLM agents
+- **Always Current**: Updated daily from 826 active job postings
+- **Direct Apply Links**: Every job links directly to the application
+- **Salary Transparency**: Ranges included where available
 
-### Top OpenClaw Plugins
-- [Discord](/openclaw/plugins/discord): Connect OpenClaw to Discord as a messaging channel with full tool access.
-- [Slack](/openclaw/plugins/slack): Slack workspace integration for OpenClaw agents.
-- [Telegram](/openclaw/plugins/telegram): Telegram bot channel for OpenClaw with DM and group support.
-- [WhatsApp](/openclaw/plugins/whatsapp): WhatsApp messaging channel for OpenClaw agents.
-- [Signal](/openclaw/plugins/signal): Signal messenger integration for privacy-focused agent chat.
-- [Matrix](/openclaw/plugins/matrix): Decentralized Matrix protocol channel for OpenClaw.
-- [Microsoft Teams](/openclaw/plugins/teams-meetings): Microsoft Teams messaging and meetings integration.
-- [iMessage](/openclaw/plugins/imessage): Apple iMessage channel for macOS OpenClaw deployments.
-- [Google Chat](/openclaw/plugins/googlechat): Google Chat workspace integration for OpenClaw.
-- [Feishu / Lark](/openclaw/plugins/feishu): Feishu/Lark enterprise messaging channel.
+## Post a Job
+- [Post an AI Job ($99 one-time)](/post-job): List to job board + llms.txt feed
+- [Featured Listing ($199/mo)](/post-job): Priority visibility + email highlights
 
-### Top MCP Servers
-- [Filesystem](/openclaw/mcps/filesystem): Secure local file read/write with configurable directory access.
-- [Memory](/openclaw/mcps/memory): Knowledge graph memory server for persistent agent recall.
-- [GitHub](/openclaw/mcps/github): Repository management, issues, PRs, and code search via GitHub API.
-- [GitLab](/openclaw/mcps/gitlab): GitLab project and merge request management.
-- [PostgreSQL](/openclaw/mcps/postgres): Read-only SQL queries against PostgreSQL databases.
-- [SQLite](/openclaw/mcps/sqlite): Query and analyze local SQLite database files.
-- [Fetch](/openclaw/mcps/fetch): Fetch and convert web page content for LLM consumption.
-- [Playwright](/openclaw/mcps/playwright): Full browser automation with Playwright for web tasks.
-- [Puppeteer](/openclaw/mcps/puppeteer): Headless Chrome automation via Puppeteer MCP server.
-- [Brave Search](/openclaw/mcps/brave-search): Web and local search via Brave Search API.
-
-### Top Hermes Plugins
-- [Firecrawl](/hermes/plugins/firecrawl): Default web search backend with excellent speed and result quality.
-- [OpenRouter](/hermes/plugins/openrouter): Gateway to 200+ models from every major provider.
-- [Tavily](/hermes/plugins/tavily): AI-optimized web search tailored for agent use cases.
-- [Langfuse](/hermes/plugins/langfuse): Full observability — traces conversations, LLM calls, and tool usage.
-- [Ollama (Local)](/hermes/plugins/ollama): Run Llama, Mistral, Phi-3 locally with zero API cost.
-- [OpenAI Image Gen](/hermes/plugins/openai-image-gen): OpenAI gpt-image-2 generation with best available quality.
-- [Spotify](/hermes/plugins/spotify): Full playback control — devices, queue, search, playlists.
-- [Google Meet](/hermes/plugins/google-meet): Join calls, transcribe captions, and speak in realtime.
-- [Kanban](/hermes/plugins/kanban): Multi-profile work queue and orchestration board.
-- [Mem0](/hermes/plugins/mem0): Server-side LLM fact extraction with semantic search.
-## AI Coding Agents
-> Ranked comparisons of AI coding agents for agentic developers.
-
-### Hub
-- [Best AI Coding Agents (2026)](/compare/ai-coding-agents): Ranked hub with token usage and head-to-head links
-
-### Top Agents
-- [Hermes Agent](/compare/hermes-agent): Open-source, self-improving AI agent with persistent memory and 40+ built-in tools.
-- [Kilo Code](/compare/kilo-code): Open-source AI coding agent for VS Code, JetBrains, and CLI.
-- [Cline](/compare/cline): Open-source AI coding agent inside your IDE with browser automation.
-- [Claude Code](/compare/claude-code): Anthropic's agentic coding tool for planning and executing across your codebase.
-- [OpenClaw](/compare/openclaw): Open-source AI agent connected to messaging apps for real-world actions.
-- [pi](/compare/pi): There are many coding agents, but this one is yours.
-- [Codebuff](/compare/codebuff): Self-improving CLI agent.
-- [Codex](/compare/codex): OpenAI coding agent to help you build and ship with AI.
-- [Cursor](/compare/cursor): The AI-native code editor used by millions of developers.
-- [Windsurf](/compare/windsurf): Agentic IDE by Codeium with Cascade flows.
-
-### Popular Comparisons
-- [Claude Code vs Cursor](/compare/claude-code-vs-cursor)
-- [Claude Code vs Codex](/compare/claude-code-vs-codex)
-- [Cursor vs Windsurf](/compare/cursor-vs-windsurf)
-- [Cline vs Cursor](/compare/cline-vs-cursor)
-- [Kilo Code vs Cline](/compare/kilo-code-vs-cline)
-- [Hermes Agent vs OpenClaw](/compare/hermes-agent-vs-openclaw)
-- [pi vs Codebuff](/compare/pi-vs-codebuff)
-- [OpenClaw vs Claude Code](/compare/openclaw-vs-claude-code)
-- [Codex vs Cursor](/compare/codex-vs-cursor)
-- [Hermes Agent vs Claude Code](/compare/hermes-agent-vs-claude-code)
+---
+*Last updated: August 06, 2026 at 10:04 AM UTC*
