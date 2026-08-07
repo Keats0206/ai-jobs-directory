@@ -1,83 +1,989 @@
-# AI Engineering & LLM Job Board
-> Curated directory of remote AI, LLM, Machine Learning, and GenAI roles at top startups and tech companies.
-> **826 total jobs** • Updated daily • Perfect for AI agents and search engines.
+# AI Jobs Board
 
-## Featured Top-Paying Roles
+📍 **Updated Daily** • **868+ AI Job Opportunities** • **Global Remote & On-Site Positions**
 
-- [Job Application for Performance Engineer @ Anthropic](https://www.anthropic.com/careers/jobs/4020350008): San Francisco, CA | Salary: $280,000-$850,000 | Skills: Transformers
-- [Perception / Computer Vision Software Engineer @ Perception at Figure](https://boards.greenhouse.io/figureai/jobs/4007375006): San Francisco, CA | Salary: $200,000-$400,000 | Skills: CUDA, Computer Vision, Data Engineering
-- [Principal ML Engineer @ Rebar @ Rebar](https://jobs.ashbyhq.com/rebar/9939e1be-9d42-4cea-b17d-5dbebfade1f8): New York, NY | Salary: $220,000-$350,000 | Skills: Infrastructure, Computer Vision
-- [Job Application for Principal AI Engineer @ ALO](https://boards.greenhouse.io/aloyoga/jobs/5726560004?gh_jid=5726560004): On-site | Salary: $220,000-$350,000 | Skills: RAG, LangChain, Python
-- [Job Application for Principal Data Scientist, ML Bots - Game Tech Group @ Riot Games](https://boards.greenhouse.io/embed/job_app?token=7177099): On-site | Salary: $220,000-$350,000 | Skills: Agent, Rust
-- [Principal Scientist, Machine Learning, Genomics @ Flagship Pioneering](https://boards.greenhouse.io/flagshippioneeringinc/jobs/8229819002?gh_jid=8229819002): On-site | Salary: $220,000-$350,000 | Skills: LLM, AI
-- [Machine Learning Principal Solutions Architect @ Data Engineering and Data Analytics](https://boards.greenhouse.io/phdata/jobs/7390457): On-site | Salary: $220,000-$350,000 | Skills: Data Engineering
-- [Job Application for Principal Engineer, Data & ML Infrastructure @ Motional](https://boards.greenhouse.io/embed/job_app?token=6676461003): San Francisco, CA | Salary: $220,000-$350,000 | Skills: Infrastructure, Python, Data Engineering
-- [Principal Software Engineer, B2B Engineering | OpenAI @ OpenAI](https://openai.com/careers/principal-software-engineer-b2b-engineering-remote-us/): Remote | Salary: $220,000-$350,000 | Skills: RAG, Infrastructure
-- [GenAI Principal Engineer @ Remote | Wfh](https://wfh.hstn.me/job/genai-principal-engineer-remote): London, UK | Salary: $220,000-$350,000 | Skills: LLM, RAG, Agent
-- [Remote Principal GenAI Data Engineer in Memphis @ Zscaler, Inc.](https://talents.vaia.com/companies/zscaler-inc/memphis/remote-principal-genai-data-engineer-144116029/): San Francisco, CA | Salary: $220,000-$350,000 | Skills: LLM, RAG, Python
-- [Principal Consultant, GenAI  | Lovelytics | 140k @ 180k/year | Remote Arlington | June 2026](https://jobera.com/job/lovelytics-principal-consultant-genai-897101ab/): Remote | Salary: $220,000-$350,000 | Skills: LLM, RAG, LangChain
-- [Lead Principal Agentic RAG Engineer – Python, Delhi | BestKaam @ BestKaam](https://www.bestkaam.com/job/lead-principal-agentic-rag-engineer-python-ai-platforms-bridge-ai-delhi-4-8-years-710962): On-site | Salary: $220,000-$350,000 | Skills: LLM, RAG, Agent
-- [Sr. Principal Data Scientist - Remote @ UnitedHealth Group](https://careers.unitedhealthgroup.com/job/minnetonka/sr-principal-data-scientist-remote/34088/95426609072): Remote | Salary: $220,000-$350,000 | Skills: Data Engineering
-- [Job Application for Principal Engineer - Prediction @ Motional](https://boards.greenhouse.io/embed/job_app?for=motional&token=6521874003): San Francisco, CA | Salary: $220,000-$350,000 | Skills: CUDA, Agent, Python
-- [Principal GenAI Engineer @ Convo AI | Voice AI @ Weave](https://jobs.ashbyhq.com/Weave/e65e2365-1f1b-4c0b-8d27-cb7e0650a2ba): Remote | Salary: $220,000-$350,000 | Skills: Infrastructure, GenAI
-- [Principal Data Scientist (AI) @ REMOTE (US) Job Details | Hexagon](https://careers.hexagon.com/job/Houston-Principal-Data-Scientist-%28AI%29-REMOTE-%28US%29-TX-77086/1249157601/): San Francisco, CA | Salary: $220,000-$350,000 | Skills: LLM, AI
-- [Principal Data Scientist | TradeStation Careers @ TradeStation](https://careers.tradestation.com/positions/principal-data-scientist-3286): New York, NY | Salary: $220,000-$350,000 | Skills: RAG
-- [Sr/Staff Data Scientist (Remote @ US) Job Details | BNSF](https://bnsf.jobs2web.com/job/REMOTE-SrStaff-Data-Scientist-%28Remote-US%29-US-76131/1403364300/): San Francisco, CA | Salary: $165,000-$300,000 | Skills: LLM, AI
-- [Sr/Staff Data Scientist (Remote @ US) | Flexgen](https://flexgen.zya.me/job/sr-staff-data-scientist-remote-us): San Francisco, CA | Salary: $165,000-$300,000 | Skills: LLM, AI
-- [Senior Agentic AI Engineer @ Eigen Labs @ Eigen Labs](https://jobs.ashbyhq.com/eigen-labs/c02fa001-23c9-4d68-8c0a-e27a742d76a4): San Francisco, CA | Salary: $180,000-$280,000 | Skills: LLM, Agent, Infrastructure
-- [Senior AI Software Engineer, Agent Systems @ Scale Army Careers @ Remote](https://jobs.ashbyhq.com/scale%20Army%20Careers/c1aa7444-f7dc-4394-95f3-2fb75d931bdb): Remote | Salary: $180,000-$280,000 | Skills: Agent, Rust
-- [Senior Machine Learning Engineer @ Bjak @ Bjakcareer](https://jobs.ashbyhq.com/bjakcareer/01f383b8-bc47-4a76-9362-c6fddf2c1aad): Remote | Salary: $180,000-$280,000 | Skills: Python
-- [Senior Machine Learning Engineer @ TensorWave @ Tensorwave](https://jobs.ashbyhq.com/tensorwave/a8d30c84-6cda-4504-ae3d-f427b46d42c3): Remote | Salary: $180,000-$280,000 | Skills: Infrastructure, Python
-- [Senior Machine Learning Engineer @ 1 @ Parspec](https://jobs.ashbyhq.com/parspec/e6ef5033-1497-4272-abee-5358ee6340c3): San Francisco, CA | Salary: $180,000-$280,000 | Skills: LLM, RAG, Agent
-
-## Search by Skill
-- [LLM Jobs](/remote/llm): 432 open positions
-- [RAG Jobs](/remote/rag): 353 open positions
-- [Agent Jobs](/remote/agent): 327 open positions
-- [Python Jobs](/remote/python): 286 open positions
-- [Infrastructure Jobs](/remote/infrastructure): 235 open positions
-- [Rust Jobs](/remote/rust): 121 open positions
-- [AI Jobs](/remote/ai): 88 open positions
-- [LangChain Jobs](/remote/langchain): 84 open positions
-- [Generative AI Jobs](/remote/generative ai): 81 open positions
-- [NLP Jobs](/remote/nlp): 73 open positions
-- [Fine-tuning Jobs](/remote/fine-tuning): 70 open positions
-- [Computer Vision Jobs](/remote/computer vision): 70 open positions
-- [TensorFlow Jobs](/remote/tensorflow): 63 open positions
-- [GenAI Jobs](/remote/genai): 42 open positions
-- [Transformers Jobs](/remote/transformers): 36 open positions
-
-## Top Hiring Companies
-- OpenAI: 25 open roles
-- Anthropic: 22 open roles
-- Hugging Face: 20 open roles
-- Flexgen: 17 open roles
-- Replit: 16 open roles
-- AI Engineer: 15 open roles
-- Stability AI: 13 open roles
-- Indeed: 13 open roles
-- RemoteAI: 11 open roles
-- Machine Learning Engineer: 9 open roles
-- Cohere: 7 open roles
-- Remote: 5 open roles
-- Senior Machine Learning Engineer: 4 open roles
-- About: 4 open roles
-- UnitedHealth Group: 4 open roles
-- USA Remote Jobs mysmartpros: 4 open roles
-- Computer Vision Engineer: 4 open roles
-- Bjakcareer: 3 open roles
-- Senior AI Engineer: 3 open roles
-- Cluster: 3 open roles
-
-## How to Use This Feed
-- **AI Agents & Search**: This page is optimized for crawling by Perplexity, ChatGPT, Claude, and LLM agents
-- **Always Current**: Updated daily from 826 active job postings
-- **Direct Apply Links**: Every job links directly to the application
-- **Salary Transparency**: Ranges included where available
-
-## Post a Job
-- [Post an AI Job ($99 one-time)](/post-job): List to job board + llms.txt feed
-- [Featured Listing ($199/mo)](/post-job): Priority visibility + email highlights
+Browse and filter thousands of AI, ML, and LLM engineering roles from top companies worldwide.
 
 ---
-*Last updated: August 06, 2026 at 10:04 AM UTC*
+
+## 🌟 Featured Roles (Top 50 by Salary)
+
+High-paying AI engineering positions across the globe:
+
+- [Job Application for Performance Engineer @ Anthropic](https://www.anthropic.com/careers/jobs/4020350008) — Transformers ($280,000 - $850,000)
+- [Perception / Computer Vision Software Engineer @ Figureai](https://boards.greenhouse.io/figureai/jobs/4007375006) — CUDA, Computer Vision, Data Engineering ($200,000 - $400,000)
+- [Principal ML Engineer @ Rebar @ Rebar](https://jobs.ashbyhq.com/rebar/9939e1be-9d42-4cea-b17d-5dbebfade1f8) — Infrastructure, Computer Vision ($220,000 - $350,000)
+- [Job Application for Principal AI Engineer @ ALO](https://boards.greenhouse.io/aloyoga/jobs/5726560004?gh_jid=5726560004) — RAG, LangChain, Python, Computer Vision, NLP ($220,000 - $350,000)
+- [Job Application for Principal Data Scientist, ML Bots - Game Tech Group @ Riot Games](https://boards.greenhouse.io/embed/job_app?token=7177099) — Agent, Rust ($220,000 - $350,000)
+- [Principal Scientist, Machine Learning, Genomics @ Flagshippioneeringinc](https://boards.greenhouse.io/flagshippioneeringinc/jobs/8229819002?gh_jid=8229819002) — LLM, AI ($220,000 - $350,000)
+- [Machine Learning Principal Solutions Architect @ Phdata](https://boards.greenhouse.io/phdata/jobs/7390457) — Data Engineering ($220,000 - $350,000)
+- [Job Application for Principal Engineer, Data & ML Infrastructure @ Motional](https://boards.greenhouse.io/embed/job_app?token=6676461003) — Infrastructure, Python, Data Engineering ($220,000 - $350,000)
+- [Principal Software Engineer, B2B Engineering | OpenAI @ OpenAI](https://openai.com/careers/principal-software-engineer-b2b-engineering-remote-us/) — RAG, Infrastructure ($220,000 - $350,000)
+- [GenAI Principal Engineer @ Remote](https://wfh.hstn.me/job/genai-principal-engineer-remote) — LLM, RAG, Agent, GenAI, Generative AI ($220,000 - $350,000)
+- [Remote Principal GenAI Data Engineer in Memphis @ Zscaler, Inc.](https://talents.vaia.com/companies/zscaler-inc/memphis/remote-principal-genai-data-engineer-144116029/) — LLM, RAG, Python, Rust, GenAI ($220,000 - $350,000)
+- [Principal Consultant, GenAI  | Lovelytics | 140k @ 180k/year | Remote Arlington | June 2026](https://jobera.com/job/lovelytics-principal-consultant-genai-897101ab/) — LLM, RAG, LangChain, Agent, Fine-tuning ($220,000 - $350,000)
+- [Lead Principal Agentic RAG Engineer – Python, Delhi | BestKaam @ BestKaam](https://www.bestkaam.com/job/lead-principal-agentic-rag-engineer-python-ai-platforms-bridge-ai-delhi-4-8-years-710962) — LLM, RAG, Agent, Python, GenAI ($220,000 - $350,000)
+- [Sr. Principal Data Scientist - Remote @ UnitedHealth Group](https://careers.unitedhealthgroup.com/job/minnetonka/sr-principal-data-scientist-remote/34088/95426609072) — Data Engineering ($220,000 - $350,000)
+- [Job Application for Principal Engineer - Prediction @ Motional](https://boards.greenhouse.io/embed/job_app?for=motional&token=6521874003) — CUDA, Agent, Python ($220,000 - $350,000)
+- [Principal GenAI Engineer @ GenAI Engineer - Speech / Voice AI](https://jobs.ashbyhq.com/Weave/e65e2365-1f1b-4c0b-8d27-cb7e0650a2ba) — Infrastructure, GenAI ($220,000 - $350,000)
+- [Principal Data Scientist (AI) @ REMOTE (US) Job Details | Hexagon](https://careers.hexagon.com/job/Houston-Principal-Data-Scientist-%28AI%29-REMOTE-%28US%29-TX-77086/1249157601/) — LLM, AI ($220,000 - $350,000)
+- [Principal Data Scientist | TradeStation Careers @ TradeStation Careers](https://careers.tradestation.com/positions/principal-data-scientist-3286) — RAG ($220,000 - $350,000)
+- [Principal Machine Learning Engineer @ Ema @ Ema](https://jobs.ashbyhq.com/ema/8268af44-d5d8-4a29-9638-3ea30f35f3a9) — LLM, RAG, Agent, Fine-tuning, Infrastructure ($220,000 - $350,000)
+- [Principal Research Data Scientist - Remote @ UnitedHealth Group](https://careers.unitedhealthgroup.com/job/eden-prairie/principal-research-data-scientist-remote/34088/95338507728) — Infrastructure ($220,000 - $350,000)
+- [Artificial Intelligence Engineer jobs in Remote @ AI Startup](https://www.indeed.com/q-artificial-intelligence-engineer-l-remote-jobs.html) — RAG, Agent, Python, GenAI, Data Engineering ($217,000 - $258,000)
+- [Ai Engineer jobs in Remote @ AI Startup](https://www.indeed.com/q-ai-engineer-l-remote-jobs.html) — RAG, Agent, Python ($217,000 - $258,000)
+- [Sr/Staff Data Scientist (Remote @ US) Job Details | BNSF](https://bnsf.jobs2web.com/job/REMOTE-SrStaff-Data-Scientist-%28Remote-US%29-US-76131/1403364300/) — LLM, AI ($165,000 - $300,000)
+- [Sr/Staff Data Scientist (Remote @ US) | Flexgen](https://flexgen.zya.me/job/sr-staff-data-scientist-remote-us) — LLM, AI ($165,000 - $300,000)
+- [Senior Agentic AI Engineer @ Eigen Labs @ Eigen](https://jobs.ashbyhq.com/eigen-labs/c02fa001-23c9-4d68-8c0a-e27a742d76a4) — LLM, Agent, Infrastructure ($180,000 - $280,000)
+- [Senior AI Software Engineer, Agent Systems @ Scale Army Careers @ Scale](https://jobs.ashbyhq.com/scale%20Army%20Careers/c1aa7444-f7dc-4394-95f3-2fb75d931bdb) — Agent, Rust ($180,000 - $280,000)
+- [Senior Machine Learning Engineer @ Bjak @ Bjak](https://jobs.ashbyhq.com/bjakcareer/01f383b8-bc47-4a76-9362-c6fddf2c1aad) — Python ($180,000 - $280,000)
+- [Senior Machine Learning Engineer @ TensorWave @ TensorWave](https://jobs.ashbyhq.com/tensorwave/a8d30c84-6cda-4504-ae3d-f427b46d42c3) — Infrastructure, Python ($180,000 - $280,000)
+- [Senior Machine Learning Engineer @ 1 @ Parspec](https://jobs.ashbyhq.com/parspec/e6ef5033-1497-4272-abee-5358ee6340c3) — LLM, RAG, Agent, Fine-tuning, Rust ($180,000 - $280,000)
+- [Senior ML Engineer @ Datatonic @ Datatonic](https://jobs.ashbyhq.com/datatonic/ecd70031-bb15-453b-8528-452f5f575b9c) — RAG, Python, Rust, GenAI, Generative AI ($180,000 - $280,000)
+- [Staff Machine Learning Engineer, AI Generation Engine @ SandboxAQ @ SandboxAQ](https://jobs.ashbyhq.com/sandboxaq/f760ffd1-3795-4fb1-bb33-8478d4bab7f6) — RAG, Agent, Rust ($180,000 - $280,000)
+- [(Senior) AI/LLM Engineer @ Mercura @ Mercura](https://jobs.ashbyhq.com/mercura/90bb4d91-9311-4d6c-a30b-a2d6dc783a13) — LLM, RAG, Agent, Data Engineering ($180,000 - $280,000)
+- [Job Application for Staff Engineer, AI @ BlackSky](https://boards.greenhouse.io/blacksky/jobs/8535559002?gh_jid=8535559002) — Python, Rust ($180,000 - $280,000)
+- [Job Application for Staff ML Engineer, Applied AI @ TIFIN](https://boards.greenhouse.io/embed/job_app?for=tifin&token=5381137004) — LLM, Agent, Fine-tuning, Generative AI ($180,000 - $280,000)
+- [AI Native Senior Software Engineer @ Opswat](https://boards.greenhouse.io/opswat/jobs/4476626005) — Agent, Infrastructure, Rust ($180,000 - $280,000)
+- [Job Application for Senior Machine Learning Engineer II, Search & Personalization @ Instacart](https://boards.greenhouse.io/embed/job_app?for=instacart&token=6716788) — LLM, Infrastructure ($180,000 - $280,000)
+- [Senior Machine Learning Engineer @ Wayve](https://boards.greenhouse.io/wayve/jobs/7735326002) — LLM, AI ($180,000 - $280,000)
+- [Senior Machine Learning Engineer @ Attack Detection | Abnormal AI](https://boards.greenhouse.io/abnormalsecurity/jobs/7602978003) — Infrastructure ($180,000 - $280,000)
+- [Senior AI Engineer @ Egen](https://jobs.lever.co/egen/1b870652-5768-45e9-b55b-4420e6402314) — LLM, RAG, LangChain, Agent, Fine-tuning ($180,000 - $280,000)
+- [Staff+ Software Engineer, Safeguards @ AI Startup](https://www.anthropic.com/careers/jobs/4951844008) — Agent, Infrastructure, Rust ($180,000 - $280,000)
+- [[Hiring] Senior Engineer: Local LLMs, llama.cpp, RAG (NVIDIA, G @ Hugging Face Forums](https://discuss.huggingface.co/t/hiring-senior-engineer-local-llms-llama-cpp-rag-nvidia-g-assist/175082) — LLM, RAG, Agent, Python, Rust ($180,000 - $280,000)
+- [🚀 Senior AI Engineer | 100% Remote | Bulgaria | Stefka Kachakova @ Stefka Kachakova](https://www.linkedin.com/posts/stefka-kachakova-046986312_senior-ai-engineer-100-remote-bulgaria-activity-7482313975544852480-sh8x) — LLM, RAG, Agent, Python, GenAI ($180,000 - $280,000)
+- [Remote Senior AI Engineer Jobs – Apply Now @ AI Startup](https://www.remoterocketship.com/us/jobs/senior-ai-engineer/) — Agent, Python ($180,000 - $280,000)
+- [Senior LLM Engineer | Taskium @ Taskium](https://taskium.42web.io/job/senior-llm-engineer-2) — vLLM, LLM, RAG, Agent, Python ($180,000 - $280,000)
+- [Senior LLM Systems Engineer @ Risk Labs](https://www.jobless.dev/jobs/senior-llm-systems-engineer-at-risk-labs-977a4b1e) — LLM, RAG, Agent, Python ($180,000 - $280,000)
+- [Senior NLP/LLM Engineer | Flexgen @ Flexgen](https://flexgen.zya.me/job/senior-nlpllm-engineer) — LLM, Fine-tuning, NLP ($180,000 - $280,000)
+- [[Remote] Senior GenAI/Agentic AI Engineer | Flexgen @ Flexgen](https://flexgen.zya.me/job/remote-senior-genaiagentic-ai-engineer) — TensorFlow, LLM, LangChain, Agent, Fine-tuning ($180,000 - $280,000)
+- [Staff Backend AI Engineer, Remote | Flexgen @ Flexgen](https://flexgen.zya.me/job/staff-backend-ai-engineer-remote) — RAG, Agent, Infrastructure, Python ($180,000 - $280,000)
+- [Senior AI ML Engineer @ Remote](https://www.dice.com/job-detail/4e8032c0-16ee-411b-a823-cee6110253cf) — RAG, LangChain, Agent, Python, Generative AI ($180,000 - $280,000)
+- [Agent Engineer (Senior/Staff) | Flexgen @ Flexgen](https://flexgen.zya.me/job/agent-engineer-seniorstaff) — LLM, RAG, Agent, Python, Rust ($180,000 - $280,000)
+
+---
+
+## 📍 All Positions by Location
+
+Browse **868** AI jobs across **7** locations:
+
+### San Francisco, CA (397 jobs)
+
+- [Senior Agentic AI Engineer @ Eigen Labs @ Eigen](https://jobs.ashbyhq.com/eigen-labs/c02fa001-23c9-4d68-8c0a-e27a742d76a4) — LLM, Agent, Infrastructure • $180,000-$280,000
+- [ML Ops Engineer (EMEA Remote) @ Pragmatike @ Pragmatike](https://jobs.ashbyhq.com/pragmatike/f30e8f4c-96bb-46f1-9ee0-53bad61f0e4b) — vLLM, LLM, RAG, Infrastructure • $140,000-$220,000
+- [Machine Learning Engineer @ Sift @ Sift](https://jobs.ashbyhq.com/sift/45b22605-1abb-483e-8ef7-5ceaf04f5868) — Infrastructure, Python • $140,000-$220,000
+- [Machine Learning Engineer @ Reducto @ Reducto](https://jobs.ashbyhq.com/reducto/aac35219-c38c-4490-8050-cee52e7dcf6b) — LLM, Agent, Python, Computer Vision • $140,000-$220,000
+- [Machine Learning Engineer @ Krea @ Krea](https://jobs.ashbyhq.com/krea/06a135f6-fb4c-446c-ac99-be1af655b964) — LLM, AI • $140,000-$220,000
+- [Machine Learning Engineer @ Core Signals](https://jobs.ashbyhq.com/yobi/52ba2d1d-8d12-4688-8f61-dc8eede6e25b) — LLM, Infrastructure • $140,000-$220,000
+- [Machine Learning Engineer @ Vision](https://jobs.ashbyhq.com/hadrian-automation/94970f47-f88e-4e71-90ae-0e52b1d75c6b) — LLM, AI • $140,000-$220,000
+- [Senior Machine Learning Engineer @ 1 @ Parspec](https://jobs.ashbyhq.com/parspec/e6ef5033-1497-4272-abee-5358ee6340c3) — LLM, RAG, Agent, Fine-tuning, Rust • $180,000-$280,000
+- [Senior ML Engineer @ Datatonic @ Datatonic](https://jobs.ashbyhq.com/datatonic/ecd70031-bb15-453b-8528-452f5f575b9c) — RAG, Python, Rust, GenAI, Generative AI • $180,000-$280,000
+- [Staff Machine Learning Engineer, AI Generation Engine @ SandboxAQ @ SandboxAQ](https://jobs.ashbyhq.com/sandboxaq/f760ffd1-3795-4fb1-bb33-8478d4bab7f6) — RAG, Agent, Rust • $180,000-$280,000
+- [Full Stack LLM Engineer @ Cerebras Systems @ Cerebras](https://jobs.ashbyhq.com/cerebras/c3890fd4-99de-4a22-b442-b6a77a717dfb) — TensorFlow, LLM, Agent, Python • $140,000-$220,000
+- [Hippocratic AI @ LLM Inference Engineer](https://jobs.ashbyhq.com/Hippocratic%20AI/eef8a721-23de-4c20-bff0-56088b39afa0) — LLM, Infrastructure, Rust, Generative AI • $140,000-$220,000
+- [AI Engineer, Multimodal LLMs @ Eloquent AI @ Eloquent](https://jobs.ashbyhq.com/eloquentai/41c12538-9543-4a0b-a84f-034f4cb2db9a) — TensorFlow, LLM, RAG, Agent, Fine-tuning • $140,000-$220,000
+- [AI/ML Engineer @ Profound @ Profound](https://jobs.ashbyhq.com/profound/08484c30-121a-4d1f-961b-09518f14337a) — LLM, RAG, Agent, Python, NLP • $140,000-$220,000
+- [Fullstack Software Engineer, Applied AI @ LangChain @ LangChain](https://jobs.ashbyhq.com/LangChain/c75915ba-a32b-4e17-873d-19b47564170d) — LangChain, Agent • $140,000-$220,000
+- [Builder @ Reevo](https://jobs.ashbyhq.com/reevo/c14a5fc2-8ab5-4585-b84e-8ff0e87227db) — LLM • $140,000-$220,000
+- [Machine Learning Engineer/AI Engineer (Infra) @ Sertis](https://boards.greenhouse.io/sertis/jobs/8623775002) — RAG, Infrastructure, Computer Vision • $140,000-$220,000
+- [Perception / Computer Vision Software Engineer @ Figureai](https://boards.greenhouse.io/figureai/jobs/4007375006) — CUDA, Computer Vision, Data Engineering • $200,000-$400,000
+- [Lead People Systems Engineer @ Klaviyo](https://boards.greenhouse.io/klaviyo/jobs/7819493003) — LLM, RAG, Agent, Rust • $140,000-$220,000
+- [Job Application for Senior Machine Learning Engineer II, Search & Personalization @ Instacart](https://boards.greenhouse.io/embed/job_app?for=instacart&token=6716788) — LLM, Infrastructure • $180,000-$280,000
+- [Machine Learning Engineer II @ Behavioral Security Products | Abnormal AI](https://boards.greenhouse.io/abnormalsecurity/jobs/7679778003) — RAG, Infrastructure, Rust • $140,000-$220,000
+- [Lead Machine Learning Engineer | Amperity @ Amperity](https://boards.greenhouse.io/amperity/jobs/7665469) — Rust • $140,000-$220,000
+- [Senior Machine Learning Engineer @ Attack Detection | Abnormal AI](https://boards.greenhouse.io/abnormalsecurity/jobs/7602978003) — Infrastructure • $180,000-$280,000
+- [Job Application for Principal Engineer, Data & ML Infrastructure @ Motional](https://boards.greenhouse.io/embed/job_app?token=6676461003) — Infrastructure, Python, Data Engineering • $220,000-$350,000
+- [AI Engineer @ AppZen, Inc.](https://jobs.lever.co/appzen/a280ec03-9d0e-4a08-84ef-0bab09cc61c4) — LLM, RAG, Agent, Python • $140,000-$220,000
+- [KUBRA @ Kubra](https://jobs.lever.co/kubra/39e4e9bf-1354-4c3e-b957-913f9b285aed) — LLM, Generative AI, Data Engineering • $140,000-$220,000
+- [KUBRA @ Kubra](https://jobs.lever.co/kubra/3e83c7e9-1c2d-42dc-8860-8c7874fac1c3) — LLM, Generative AI, Data Engineering • $140,000-$220,000
+- [AI Engineer @ Influur](https://jobs.lever.co/influur/e799f7bf-9280-4d22-8f1c-387d322f1011) — LLM, RAG, LangChain, Agent, Python • $140,000-$220,000
+- [AI Engineer @ Collate](https://jobs.lever.co/collate/377f2cf3-6285-42c1-8130-dd3dd2c866cb) — LLM, Infrastructure, Rust, NLP • $140,000-$220,000
+- [career @ Aifund](https://jobs.lever.co/AIFund/33bd1d6c-5091-42f8-99c0-6e97292782be) — Agent, Infrastructure • $140,000-$220,000
+- [Senior AI Engineer @ Egen](https://jobs.lever.co/egen/1b870652-5768-45e9-b55b-4420e6402314) — LLM, RAG, LangChain, Agent, Fine-tuning • $180,000-$280,000
+- [Egen @ Principal AI Engineer](https://jobs.lever.co/egen/d8b8eb1d-e278-4cac-b87d-32520b7e10a8) — LLM, RAG, LangChain, Agent, Fine-tuning • $140,000-$220,000
+- [career @ Aifund](https://jobs.lever.co/AIFund/273af06c-9114-4b9c-83c9-a3627f4b875f) — RAG, Agent, Python, GenAI, Generative AI • $140,000-$220,000
+- [Amazon RIVR @ VLA Foundation Model](https://jobs.lever.co/rivr/522bc963-969f-4816-bdee-8771b85247cf) — RAG, Transformers, Generative AI • $140,000-$220,000
+- [FieldAI @ Robotics AI Engineer](https://jobs.lever.co/field-ai/f326c7a0-84ee-4f91-aa16-80281203e8d3) — Python, Computer Vision • $140,000-$220,000
+- [Hive @ Hive](https://jobs.lever.co/hive/fb175ecc-b6ba-4242-a84a-8699f9b0e971) — Rust • $140,000-$220,000
+- [Machine Learning Engineer @ Hive](https://jobs.lever.co/hive/a06ede4e-46e3-40c8-b2e6-69af1658ab50) — Rust • $140,000-$220,000
+- [Hive @ Hive](https://jobs.lever.co/hive/8bba7777-6ba1-4be3-af6e-677b4bb37391) — Rust • $140,000-$220,000
+- [Protolabs @ Protolabs](https://jobs.lever.co/protolabs/9429f611-bc44-48e3-8d75-0dc420feaf89) — RAG • $140,000-$220,000
+- [FieldAI @ 3D Machine Learning Engineer](https://jobs.lever.co/field-ai/b600a2ab-cff1-4b8f-9940-4bd851c05e37) — TensorFlow, Infrastructure, Python, Computer Vision • $140,000-$220,000
+- [Woven by Toyota @ Senior Machine Learning Engineer, Vehicle Perception](https://jobs.lever.co/woven-by-toyota/85769f2f-aef9-46b2-8882-69cdbb74df03/apply) — LLM, AI • $140,000-$220,000
+- [Lead Machine Learning Engineer, Inference & Performance @ Egen](https://jobs.lever.co/egen/33a647f3-76f1-4c8c-aa5d-eb0cd08f7be9) — vLLM, LLM, RAG, Generative AI • $140,000-$220,000
+- [Jobs @ AI Startup](https://www.anthropic.com/careers/jobs) — Agent, Infrastructure • $140,000-$220,000
+- [Research Engineer / Scientist, Alignment @ AI Startup](https://www.anthropic.com/careers/jobs/4631822008) — Agent, Fine-tuning, Python • $140,000-$220,000
+- [Staff+ Software Engineer, Safeguards @ AI Startup](https://www.anthropic.com/careers/jobs/4951844008) — Agent, Infrastructure, Rust • $180,000-$280,000
+- [Applied AI Architect, Industries @ AI Startup](https://www.anthropic.com/careers/jobs/4461444008) — LLM, RAG, Rust • $140,000-$220,000
+- [Jobs \ Anthropic @ AI Startup](https://www.anthropic.com/careers/jobs?category=663b57b36ad9dab9159c9718) — Agent, Infrastructure • $140,000-$220,000
+- [Jobs \ Anthropic @ AI Startup](https://www.anthropic.com/careers/jobs?referrer_id=374ea709-ba49-4b1a-97fc-2c2c71e1d0a3) — Agent, Infrastructure • $140,000-$220,000
+- [Jobs \ Anthropic @ AI Startup](https://www.anthropic.com/careers/jobs?office=4001218008) — Infrastructure • $140,000-$220,000
+- [Job Application for Performance Engineer @ Anthropic](https://www.anthropic.com/careers/jobs/4020350008) — Transformers • $280,000-$850,000
+- [Jobs \ Anthropic @ AI Startup](https://www.anthropic.com/careers/jobs?stixel_click=eyJzIjoiNzkwZDIyNzctZjdiYi00NGEzLWFmZDUtNDk5M2VhMDAxOTgyIn0%3D) — Agent, Infrastructure • $140,000-$220,000
+- [Jobs \ Anthropic @ AI Startup](https://www.anthropic.com/careers/jobs?office=4051957008) — Agent, Infrastructure • $140,000-$220,000
+- [Jobs \ Anthropic @ AI Startup](https://www.anthropic.com/careers/jobs?939688b5_page=1&e45d281a_page=2&referrer_id=0f52f8a3-6c1c-4adc-a746-c5cb37160e4e) — Agent, Infrastructure • $140,000-$220,000
+- [Guidance on Candidates' AI Usage @ AI Startup](https://www.anthropic.com/candidate-ai-guidance) — RAG • $140,000-$220,000
+- [Jobs \ Anthropic @ AI Startup](https://www.anthropic.com/careers/jobs?939688b5_page=2&e45d281a_page=4&referrer_id=8f5bcb5e-2fdc-4761-8d97-7ef229d3553c) — Agent, Infrastructure • $140,000-$220,000
+- [Careers @ AI Startup](https://openai.com/careers/) — LLM, AI • $140,000-$220,000
+- [Careers | OpenAI @ OpenAI](https://openai.com/careers/search/?q=Engineer) — LLM, AI • $140,000-$220,000
+- [Research Engineer | OpenAI @ OpenAI](https://openai.com/careers/research-engineer-san-francisco/) — Rust • $140,000-$220,000
+- [Software Engineer, Compute Infrastructure @ AI Startup](https://openai.com/careers/software-engineer-compute-infrastructure-san-francisco/) — RAG, Agent, Infrastructure • $140,000-$220,000
+- [Research Engineer, Applied AI Engineering | OpenAI @ OpenAI](https://openai.com/careers/research-engineer-applied-ai-engineering-san-francisco/) — TensorFlow, LLM, Fine-tuning, Transformers • $140,000-$220,000
+- [Full @ Stack Software Engineer, Applied Foundations | OpenAI](https://openai.com/careers/full-stack-software-engineer-applied-foundations-san-francisco/) — Infrastructure, Rust • $140,000-$220,000
+- [Full Stack Software Engineer, ChatGPT Engineering | OpenAI @ OpenAI](https://openai.com/careers/full-stack-software-engineer-chatgpt-engineering-san-francisco/) — Infrastructure, Python, Rust • $140,000-$220,000
+- [Software Engineer, Database Systems @ AI Startup](https://openai.com/careers/software-engineer-database-systems-san-francisco/) — RAG, Infrastructure • $140,000-$220,000
+- [Software Engineer, Observability @ AI Startup](https://openai.com/careers/software-engineer-observability-san-francisco/) — RAG, Agent, Infrastructure • $140,000-$220,000
+- [Full Stack Software Engineer, Codex | OpenAI @ OpenAI](https://openai.com/careers/full-stack-software-engineer-codex-san-francisco/) — Agent, Infrastructure • $140,000-$220,000
+- [Electrical Engineer, Robotics @ AI Startup](https://openai.com/careers/electrical-engineer-robotics-san-francisco/) — RAG, Infrastructure • $140,000-$220,000
+- [Android Engineer, Applied Foundations  | OpenAI @ OpenAI](https://openai.com/careers/android-engineer-applied-foundations-san-francisco/) — Infrastructure, Rust • $140,000-$220,000
+- [Firmware Engineer, RTOS, Consumer Devices @ AI Startup](https://openai.com/careers/firmware-engineer-rtos-consumer-devices-san-francisco/) — LLM, AI • $140,000-$220,000
+- [Software Engineer, Payments @ AI Startup](https://openai.com/careers/software-engineer-payments-san-francisco/) — RAG, Infrastructure • $140,000-$220,000
+- [Research Engineer, Codex @ AI Startup](https://openai.com/careers/research-engineer-codex-san-francisco/) — Agent, Infrastructure, Rust • $140,000-$220,000
+- [Full @ Stack Software Engineer, Incubation | OpenAI](https://openai.com/careers/full-stack-software-engineer-incubation-san-francisco/) — Rust • $140,000-$220,000
+- [Careers | OpenAI @ OpenAI](https://openai.com/careers/search/?c=1888df7a-5060-4de1-a08d-a07e0ef96ab9) — Agent • $140,000-$220,000
+- [Project Engineer @ AI Startup](https://openai.com/careers/project-engineer-remote-us/) — Infrastructure • $140,000-$220,000
+- [Full Stack Software Engineer, Jobs Platform  | OpenAI @ OpenAI](http://www.openai.com/careers/full-stack-software-engineer-jobs-platform-san-francisco/) — Agent, Rust • $140,000-$220,000
+- [Careers @ AI Startup](https://cohere.ai/careers) — RAG, Rust • $140,000-$220,000
+- [About Our Company @ world purpose](https://cohere.ai/about) — Agent • $140,000-$220,000
+- [AMA with Stephen Gou @ AI Startup](https://info.cohere.ai/amawithstephen) — NLP • $140,000-$220,000
+- [winstar group careers @ AI Startup](https://winstargroup.org/careers.php) — Transformers • $140,000-$220,000
+- [blitzscaling careers @ AI Startup](https://linkedin.com/company/blitzscalingcareers) — LLM, AI • $140,000-$220,000
+- [Partner Program @ AI Startup](https://cohere.ai/partners) — RAG • $140,000-$220,000
+- [Jobs Overview @ AI Startup](https://huggingface.co/docs/hub/jobs-overview) — Agent, Infrastructure, Python, Transformers, HuggingFace • $140,000-$220,000
+- [Migrating Your GitHub CI to Hugging Face Jobs @ AI Startup](https://huggingface.co/blog/github-ci-hf-jobs) — CUDA, Agent, Infrastructure, Python, HuggingFace • $140,000-$220,000
+- [Hugging Face @ Current Openings](https://huggingface.co/careers) — HuggingFace • $140,000-$220,000
+- [Pricing and Billing @ AI Startup](https://huggingface.co/docs/hub/jobs-pricing) — RAG, Agent, Infrastructure, Python, Transformers • $140,000-$220,000
+- [Training with Jobs @ AI Startup](https://huggingface.co/docs/trl/jobs_training) — Agent, Infrastructure, Python, Transformers, HuggingFace • $140,000-$220,000
+- [Train AI models with Unsloth and Hugging Face Jobs for ... @ AI Startup](https://huggingface.co/blog/unsloth-jobs) — LLM, Agent, Fine-tuning, HuggingFace • $140,000-$220,000
+- [fact-den/indeed-job-postings-2026 · Datasets @ Hugging Face](https://huggingface.co/datasets/fact-den/indeed-job-postings-2026) — LLM, AI • $140,000-$220,000
+- [HelixCipher/job @ qwen · Hugging Face](https://huggingface.co/HelixCipher/job-posting-extractor-qwen) — CUDA, LLM, Fine-tuning, Python, Transformers • $140,000-$220,000
+- [mantraraval/jobsense · Hugging Face @ AI Startup](https://huggingface.co/mantraraval/jobsense) — LLM, Transformers • $140,000-$220,000
+- [unsloth/jobs · Datasets @ Hugging Face](https://huggingface.co/datasets/unsloth/jobs) — LLM, Agent, Fine-tuning, HuggingFace • $140,000-$220,000
+- [Job Searcher @ AI Startup](https://huggingface.co/blog/build-small-hackathon/job-search-blog) — LLM, AI • $140,000-$220,000
+- [Stable Diffusion 2.0 Release @ AI Startup](https://stability.ai/news-updates/stable-diffusion-v2-release) — LLM, AI • $140,000-$220,000
+- [Introducing Our New SVP, Head of Product, Ryan Ellis — Stability AI @ AI Startup](https://stability.ai/news-updates/introducing-our-new-svp-head-of-product-ryan-ellis) — RAG, Generative AI • $140,000-$220,000
+- [Introducing Our New Chief Pipeline Architect, Robert Legato @ AI Startup](https://stability.ai/news-updates/introducing-our-new-chief-pipeline-architect-rob-legato) — RAG, Generative AI • $140,000-$220,000
+- [James Cameron, Academy Award @ Winning Filmmaker ...](https://stability.ai/news-updates/james-cameron-joins-stability-ai-board-of-directors) — Generative AI • $140,000-$220,000
+- [Interview Process – Empowering the next billion software creators @ AI Startup](https://replit.com/interview-process) — LLM, AI • $140,000-$220,000
+- [Replit — Replit AI Manifesto @ AI Startup](https://replit.com/blog/replit-ai-manifesto) — LLM • $140,000-$220,000
+- [Replit AI – Turn natural language into apps and websites @ AI Startup](https://replit.com/ai) — Agent • $140,000-$220,000
+- [Replit — Builder Profile: Ismail Pelaseyed @ AI Startup](https://replit.com/blog/ismail-pelaseyed) — LLM, RAG, Agent • $140,000-$220,000
+- [SkillsEngine: Accelerating product & design with ... @ AI Startup](https://replit.com/blog/skillsengine-accelerating-product-and-design-with-replit-teams) — LLM, AI • $140,000-$220,000
+- [AI Coding Assistant: Build With Confidence @ AI Startup](https://replit.com/usecases/ai-coding-assistant) — Agent • $140,000-$220,000
+- [Muhammad Hammad Asif | AI Engineer, LLM Engineer & Python Backend Developer @ AI Startup](https://hammad-portfolio.recursivedata.com/) — LLM, RAG, LangChain, Fine-tuning, Python • $140,000-$220,000
+- [Best Remote AI Engineer Jobs 2026 @ AI Startup](https://builtin.com/jobs/remote/dev-engineering/search/artificial-intelligence-engineer?page=2) — TensorFlow, LLM, LangChain, Agent, Python • $140,000-$220,000
+- [Remote AI Engineer Jobs @ AI Startup](https://www.crossover.com/jobs/ai-engineer) — RAG, Python • $140,000-$220,000
+- [AI Engineer — Remote Salary in 2026: Real Data from 1.9 ... @ AI Startup](https://www.recruitingfromscratch.com/blog/ai-engineer-remote-salary-in-2026-real-data-from-1-9-million-job-postings) — LLM, AI • $140,000-$220,000
+- [🚀 Open to Remote Opportunities — AI Engineer & Full @ Stack Developer | Narjes Khenessi](https://www.linkedin.com/posts/narjes-khenessi_aiengineer-langchain-crewai-activity-7468056024621527040-DW-H) — LLM, RAG, LangChain, Agent, Python • $140,000-$220,000
+- [Remote Senior AI Engineer Jobs – Apply Now @ AI Startup](https://www.remoterocketship.com/us/jobs/senior-ai-engineer/) — Agent, Python • $180,000-$280,000
+- [Maksym V. | Full Stack AI/ML Engineer for Hire | Meduzzen @ Meduzzen](https://meduzzen.com/talent-lab/maksym-full-stack-ai-ml-engineer/) — LLM, LangChain, Infrastructure, Python, Transformers • $140,000-$220,000
+- [84000+ Remote Ai Jobs jobs in United States @ AI Startup](https://www.linkedin.com/jobs/remote-ai-jobs-jobs) — Agent, Python, NLP • $140,000-$220,000
+- [LLM Engineer | Flexgen @ Flexgen](https://flexgen.zya.me/job/llm-engineer) — LLM, RAG, Fine-tuning • $140,000-$220,000
+- [[Hiring] AI and LLM Engineer @SAIC @ SAIC](https://remotive.com/remote/jobs/ai-ml/ai-and-llm-engineer-3474418) — TensorFlow, LLM, RAG, LangChain, Fine-tuning • $140,000-$220,000
+- [Generative AI Engineer (LLM ) @ W2 contract | Taskium](https://taskium.42web.io/job/generative-ai-engineer-llm-w2-contract-4) — TensorFlow, LLM, RAG, LangChain, Agent • $140,000-$220,000
+- [Backend LLM Engineer @ LiteLLM](https://www.workatastartup.com/jobs/89354) — LLM, Python, Rust • $140,000-$220,000
+- [Flexible Llm Engineer Remote Jobs @ AI Startup](https://www.indeed.com/q-llm-engineer-remote-jobs.html) — LLM, RAG, Rust • $140,000-$220,000
+- [Machine Learning Engineer (LLM) @ Remote](https://remoteotter.com/company/bjak/jobs/remote-machine-learning-engineer-llm_1cd9a341-00c2-43c0-b402-d9567d131f19) — TensorFlow, LLM, RAG, Fine-tuning, Rust • $140,000-$220,000
+- [Senior NLP/LLM Engineer | Flexgen @ Flexgen](https://flexgen.zya.me/job/senior-nlpllm-engineer) — LLM, Fine-tuning, NLP • $180,000-$280,000
+- [Remote LLM Jobs (August 2026) @ Arc.dev](https://arc.dev/remote-jobs/llm) — LLM, Agent, Python • $140,000-$220,000
+- [LLM Engineer @ Remote](https://aijobs.net/job/llm-engineer-united-states-remote-220287/) — LLM, Fine-tuning, Python • $140,000-$220,000
+- [1571 engineer llm Jobs in Remote, July 2026 @ AI Startup](https://www.glassdoor.com/Job/remote-engineer-llm-jobs-SRCH_IL.0,6_IS11047_KO7,19.htm) — TensorFlow, LLM, Agent, Python, Computer Vision • $140,000-$220,000
+- [$43 @ $69/hr Llm Engineer Jobs (NOW HIRING) Jul 2026](https://www.ziprecruiter.com/Jobs/Llm-Engineer) — LLM, RAG, Agent, GenAI, Generative AI • $140,000-$220,000
+- [Founding Machine Learning Engineer @ Novaflow](https://www.ycombinator.com/companies/novaflow/jobs/fuCpxcH-founding-machine-learning-engineer) — TensorFlow, LLM, RAG, Fine-tuning, Infrastructure • $140,000-$220,000
+- [Machine Learning Engineer @ Sapling.ai](https://www.ycombinator.com/companies/sapling-ai/jobs/MQG5G5Y-machine-learning-engineer) — NLP • $140,000-$220,000
+- [aarushi b. | Founding AI ML Engineer @ Founding AI ML Engineer](https://linkedin.com/in/ab99) — TensorFlow, Python, Generative AI, NLP • $140,000-$220,000
+- [Jack & Jill hiring Founding Engineer - AI ($200k+ + Equity) @ Muro AI in San Francisco, CA](https://www.linkedin.com/jobs/view/founding-engineer-ai-%24200k%2B-%2B-equity-at-muro-ai-at-jack-jill-4444831601) — LLM, AI • $140,000-$220,000
+- [Machine Learning Engineer Startup Jobs — Funded by Sequoia, YC, A16Z @ AI Startup](https://topstartups.io/jobs/?role=Machine+Learning+Engineer) — Agent, Infrastructure, Computer Vision • $140,000-$220,000
+- [Until hiring Machine Learning Engineer / Scientist in San Francisco, CA | LinkedIn @ LinkedIn](https://www.linkedin.com/jobs/view/machine-learning-engineer-scientist-at-until-4444798737?position=31&pageNum=0&refId=CS2mgNKzPrl818hX4nx53g%3D%3D&trackingId=YiQoCPqdPwK6fHDrKM4A0w%3D%3D) — LLM, AI • $140,000-$220,000
+- [ehsan ejaz | Machine Learning Engineer @ Machine Learning Engineer](https://linkedin.com/in/ehsan-ejaz-a4a051377) — LLM • $140,000-$220,000
+- [jesse mahoney | Founder Machine Learning Engineer Stealth AI Infrastructure Startup @ AI Startup](https://linkedin.com/in/jessemahoneyomegaengine) — LLM, Agent, Infrastructure • $140,000-$220,000
+- [Machine Learning Engineer Jobs @ AI Startup](https://wellfound.com/role/machine-learning-engineer) — GenAI • $140,000-$220,000
+- [Hassan Tahir | YC Founder + AI @ YC Founder + AI](https://www.hassantahir.com/about) — LLM, NLP • $140,000-$220,000
+- [josh laubach | Founder and Machine Learning Engineer @ Founder and Machine Learning Engineer](https://linkedin.com/in/josh-laubach) — TensorFlow, LLM, RAG, Fine-tuning, Python • $140,000-$220,000
+- [Machine Learning Engineer Exciting Startup Jobs, Employment @ AI Startup](https://www.indeed.com/q-machine-learning-engineer-exciting-startup-jobs.html) — RAG, Agent • $145,700-$174,800
+- [CV/ML Platform Engineer @ AI Startup](https://aijobs.ai/index.php/job/cvml-platform-engineer) — CUDA, RAG, Infrastructure, Computer Vision • $140,000-$220,000
+- [sujit noronha | Founding Machine Learning Engineer @ Founding Machine Learning Engineer](https://linkedin.com/in/sujitnoronha) — LLM, RAG, Agent, Infrastructure, Computer Vision • $140,000-$220,000
+- [[Remote] Senior GenAI/Agentic AI Engineer | Flexgen @ Flexgen](https://flexgen.zya.me/job/remote-senior-genaiagentic-ai-engineer) — TensorFlow, LLM, LangChain, Agent, Fine-tuning • $180,000-$280,000
+- [Generative AI Engineer | Flexgen @ Flexgen](https://flexgen.zya.me/job/generative-ai-engineer-4) — RAG, Fine-tuning, Generative AI • $140,000-$220,000
+- [Remote Principal GenAI Data Engineer in Memphis @ Zscaler, Inc.](https://talents.vaia.com/companies/zscaler-inc/memphis/remote-principal-genai-data-engineer-144116029/) — LLM, RAG, Python, Rust, GenAI • $220,000-$350,000
+- [Best Remote AI Engineer Jobs 2026 @ AI Startup](https://builtin.com/jobs/remote/dev-engineering/search/artificial-intelligence-engineer) — LLM, RAG, Agent, Fine-tuning, Infrastructure • $140,000-$220,000
+- [Lead Software Engineer, Generative AI | Worksynergy @ Worksynergy](https://worksynergy.10001mb.com/remote-jobs/lead-software-engineer-generative-ai) — Rust, GenAI, Generative AI • $140,000-$220,000
+- [Generative Ai jobs in Remote @ AI Startup](https://www.indeed.com/q-generative-ai-l-remote-jobs.html) — RAG, GenAI, Generative AI • $50,000-$90,000
+- [Agent Engineer (Senior/Staff) | Flexgen @ Flexgen](https://flexgen.zya.me/job/agent-engineer-seniorstaff) — LLM, RAG, Agent, Python, Rust • $180,000-$280,000
+- [Full Stack Engineer – Generative AI & Agentic AI @ Generative AI & Agentic AI](https://www.accenture.com/sg-en/careers/jobdetails?id=R00346925_en) — Agent, Infrastructure, Generative AI • $140,000-$220,000
+- [Member of Technical Staff @ Augmented Generation (RAG) | Microsoft AI](https://microsoft.ai/job/member-of-technical-staff-retrieval-augmented-generation-rag/) — RAG, Agent, Infrastructure, Rust • $180,000-$280,000
+- [AI Engineer – Retrieval @ Augmented Generation (RAG)](https://www.linkedin.com/jobs/view/ai-engineer-%E2%80%93-retrieval-augmented-generation-rag-at-realweb-4347594644) — LLM, RAG, Fine-tuning, Python, Transformers • $140,000-$220,000
+- [RAG & Retrieval Systems Engineer in Hyderabad @ Apply Now | APPIT Software Solutions](https://www.appitsoftware.com/careers/rag-retrieval-systems-engineer-hyderabad) — LLM, RAG, LangChain, Infrastructure, Python • $140,000-$220,000
+- [RAG / Vector Search Engineer — IXO Careers @ AI Startup](https://ixolabs.ai/opportunities/rag-vector-search) — RAG, LangChain, Python • $140,000-$220,000
+- [AI Engineer, .＊RAG @ AI Startup](https://www.ycombinator.com/companies/eloquent-ai/jobs/SsWsONC-ai-engineer-rag) — LLM, RAG, Agent, Fine-tuning, Infrastructure • $140,000-$220,000
+- [AI Engineer @ Gen AI & LLM & RAG • emagine Portal](https://portal.emagine.org/jobs/174401/ai-engineer-gen-ai-llm-rag) — LLM, RAG • $140,000-$220,000
+- [12000+ Rag jobs in United States @ AI Startup](https://www.linkedin.com/jobs/rag-jobs) — RAG • $140,000-$220,000
+- [Staff Software Engineer, Integrated Knowledge Management (RAG) | jobgrow.pragatishilclasses.org @ jobgrow.pragatishilclasses.org](https://jobgrow.pragatishilclasses.org/job/staff-software-engineer-integrated-knowledge-management-rag) — LLM, RAG • $180,000-$280,000
+- [Prompt Engineer | Flexgen @ Flexgen](https://flexgen.zya.me/job/prompt-engineer) — LLM, RAG, Agent • $140,000-$220,000
+- [Prompt Engineer @ Remote](https://career.zycto.com/jobs/prompt-engineer-remote/) — LLM • $140,000-$220,000
+- [Prompt Engineer, AI | Joblume @ Joblume](https://joblume.totalh.net/job/prompt-engineer-ai-2) — LLM, RAG, Generative AI, NLP • $140,000-$220,000
+- [Prompt Engineer ( Full-Time ) — Careers @ Time )](https://www.teraleads.com/careers/prompt-engineer/) — TensorFlow, LLM, RAG, LangChain, Agent • $140,000-$220,000
+- [Prompt Engineering Freelance Jobs: Work Remote & Earn ... @ AI Startup](https://www.upwork.com/freelance-jobs/prompt-engineering/) — Python • $140,000-$220,000
+- [AI Prompt Engineer, Remote @ AI Startup](https://career.zycto.com/jobs/ai-prompt-engineer-remote-3/) — RAG, Generative AI • $140,000-$220,000
+- [Remote Prompt Engineering Jobs (July 2026) @ Arc.dev](https://arc.dev/remote-jobs/prompt-engineering) — LLM, AI • $140,000-$220,000
+- [Flexible Ai Prompt Engineer Remote Jobs @ AI Startup](https://www.indeed.com/q-ai-prompt-engineer-remote-jobs.html) — RAG • $140,000-$220,000
+- [$43 @ $60/hr Remote Ai Prompt Engineer Jobs (NOW HIRING)](https://www.ziprecruiter.com/Jobs/Remote-Ai-Prompt-Engineer) — Agent, Generative AI • $140,000-$220,000
+- [Lead Conversational AI Engineer @ Direqt](https://www.direqt.ai/job/conversational-ai-developer/) — LLM, RAG, Python, Rust • $140,000-$220,000
+- [1000+ Prompt Engineer jobs in Worldwide @ AI Startup](https://www.linkedin.com/jobs/prompt-engineer-jobs-worldwide) — LLM, Agent, Generative AI • $140,000-$220,000
+- [Prompt engineer jobs @ AI Startup](https://www.dice.com/jobs/q-prompt+engineer-jobs) — LLM, RAG, Agent • $140,000-$220,000
+- [Remote Data Scientist @ SnapRecruit](https://snaprecruit.com/job/remote-data-scientist-atlanta-georgia-buyo20260719084830.html) — LLM, RAG, Python, Generative AI • $140,000-$220,000
+- [Sr/Staff Data Scientist (Remote @ US) Job Details | BNSF](https://bnsf.jobs2web.com/job/REMOTE-SrStaff-Data-Scientist-%28Remote-US%29-US-76131/1403364300/) — LLM, AI • $165,000-$300,000
+- [Remote Lead Data Scientist @ Cohere](https://www.remotefront.com/remote-jobs/cohere-lead-data-scientist-wq6bd) — Agent, Infrastructure • $140,000-$220,000
+- [Sr Data Scientist (LATAM Remote) | Flexgen @ Flexgen](https://flexgen.zya.me/job/sr-data-scientist-latam-remote) — TensorFlow, Infrastructure, Python • $140,000-$220,000
+- [Sr/Staff Data Scientist (Remote @ US) | Flexgen](https://flexgen.zya.me/job/sr-staff-data-scientist-remote-us) — LLM, AI • $165,000-$300,000
+- [Staff Data Scientist - Long Term Impact @ Airbnb](https://www.remotejobassistant.com/jobs/staff-data-scientist-long-term-impact-airbnb-s6ya) — RAG • $200,000-$242,000
+- [Senior Remote Staff Data Scientist – Advanced Analytics, Machine Learning & Business reputed company Leadership @ arenaflex](https://brighthush.8r.unaux.com/job/3186503) — RAG, Python • $180,000-$280,000
+- [Ai Data Science jobs in Remote @ AI Startup](https://www.indeed.com/q-ai-data-science-l-remote-jobs.html) — RAG, Agent, Data Engineering • $140,000-$220,000
+- [Lead Machine Learning Engineer @ US](https://www.samsara.com/company/careers/roles/7721193?gh_jid=7721193) — Infrastructure • $140,000-$220,000
+- [ML Ops Engineer (EMEA Remote) @ Pragmatike | Built In](https://builtin.com/job/ml-ops-engineer-emea-remote/9084154) — vLLM, LLM, RAG, Infrastructure • $140,000-$220,000
+- [AI Infrastructure Engineer, Model Serving Platform | Careers @ Careers](https://scale.com/careers/4520320005) — vLLM, LLM, Infrastructure, Python, Rust • $140,000-$220,000
+- [Max Schäfer | Freelance MLOps & Data Platform Engineer @ Freelance MLOps & Data Platform Engineer](https://www.maxschaefer.tech/) — Infrastructure, Python • $140,000-$220,000
+- [Jim Bonant | AI/ML Infrastructure & MLOps Engineer @ AI/ML Infrastructure & MLOps Engineer](https://jimbonant.com/) — vLLM, LLM, RAG, Agent, Infrastructure • $140,000-$220,000
+- [ankush babbar | ML Infra Software Engineer @ ML Infra Software Engineer](https://linkedin.com/in/ankushbbbr) — Infrastructure, Python • $140,000-$220,000
+- [Lead Machine Learning Engineer @ Samsara](https://www.builtinboston.com/job/staff-ml-engineer/8854651) — Infrastructure • $140,000-$220,000
+- [Martial D. Bah Bioh @ AI Infrastructure Engineer](https://martialbb.com/) — TensorFlow, LLM, RAG, LangChain, Infrastructure • $140,000-$220,000
+- [kirk bloomquist | Senior ML Infrastructure Engineer @ Senior ML Infrastructure Engineer](https://linkedin.com/in/kirk-bloomquist-39b56110) — Infrastructure • $180,000-$280,000
+- [diya gangwar | Infra AI Engineer @ Infra AI Engineer](https://linkedin.com/in/diya-gangwar-a24274208) — LLM, Agent, Infrastructure • $140,000-$220,000
+- [Machine Learning Infrastructure Engineer Jobs, Employment @ AI Startup](https://www.indeed.com/q-machine-learning-infrastructure-engineer-jobs.html) — RAG, Infrastructure • $125,000-$165,000
+- [Cloud / Infrastructure Engineer @ Qualified Health | Jobright.ai @ Qualified](https://jobright.ai/jobs/info/6a0a7948939a5f01db9627bd) — RAG, Infrastructure, Python, Generative AI • $140,000-$220,000
+- [[Remote] Senior AI Systems Engineer – Agent Execution & Orchestration @ Agent Execution & Orchestration](https://jobhub.jl.liveblog365.com/remote-jobs/remote-senior-ai-systems-engineer-agent-execution-orchestration) — LLM, Agent, Infrastructure, Python • $180,000-$280,000
+- [Remote Computer Vision Engineer Jobs @ AI Startup](https://www.turing.com/jobs/remote-computer-vision-engineer) — TensorFlow, Python, Computer Vision • $140,000-$220,000
+- [Computer Vision Engineer | Hireza @ Hireza](https://hireza.wuaze.com/job/computer-vision-engineer-9) — RAG, Python, Computer Vision • $140,000-$220,000
+- [Remote Computer Vision Jobs (July 2026) @ Arc.dev](https://arc.dev/remote-jobs/computer-vision) — Computer Vision • $140,000-$220,000
+- [Computer Vision & ML Expert – USA Remote Jobs mysmartpros @ AI Startup](https://www.mysmartpros.com/tuition/job/computer-vision-ml-expert-2/) — TensorFlow, Transformers, Generative AI, Computer Vision • $140,000-$220,000
+- [Taher Anjary @ AI Startup](https://linkedin.com/in/taher-anjary) — LLM, RAG, Agent, Python, Generative AI • $140,000-$220,000
+- [1000+ Remote Computer Vision jobs in United States @ AI Startup](https://www.linkedin.com/jobs/remote-computer-vision-jobs) — Computer Vision • $140,000-$220,000
+- [Nenad Biresev @ AI Startup](https://linkedin.com/in/nenad-biresev) — TensorFlow, RAG, Python, Computer Vision • $140,000-$220,000
+- [Muhammad Tariq Shaheen @ AI Startup](https://linkedin.com/in/tariqshaheen-ml) — Python, Rust, Transformers, Computer Vision • $140,000-$220,000
+- [Waqas Nazeer @ AI Startup](https://linkedin.com/in/waqas-nazeer-5644213ab) — Rust, Computer Vision • $140,000-$220,000
+- [Md Faruk Alam | Computer Vision Engineer @ Computer Vision Engineer](https://farukalamai.com/) — TensorFlow, Python, Computer Vision • $140,000-$220,000
+- [NLP Engineer @ UnitedHealth Group](https://careers.unitedhealthgroup.com/job/san-diego/nlp-engineer/34088/97088899584) — NLP • $140,000-$220,000
+- [Remote Natural Language Processing engineer jobs @ AI Startup](https://www.turing.com/jobs/remote-natural-language-processing-engineer) — Python, NLP • $140,000-$220,000
+- [NLP Engineer | Babelscape @ Babelscape](https://babelscape.com/job/nlp-engineer) — LLM, Infrastructure, Python, NLP • $140,000-$220,000
+- [NLP Engineer (Remote) | Cozydesk @ Cozydesk](https://cozydesk.fast-page.org/job/nlp-engineer-remote) — LLM, RAG, Fine-tuning, Python, Transformers • $140,000-$220,000
+- [NLP Engineers | Jobvectora @ Jobvectora](https://jobvectora.synergize.co/job/nlp-engineers) — TensorFlow, LLM, RAG, LangChain, Agent • $140,000-$220,000
+- [NLP Engineer _ Machine Learning Engineer|5+ years| Remote | Flexgen @ Flexgen](https://flexgen.zya.me/job/nlp-engineer-_-machine-learning-engineer5-years-remote-2) — LLM, Python, Transformers, NLP • $140,000-$220,000
+- [JAVA NLP Engineer @ Remote | Dice.com](https://www.dice.com/job-detail/9c5c6c3a-6ecd-4a54-92cd-cbd5e601f924) — Python, NLP • $140,000-$220,000
+- [Remote Senior NLP Engineer @ Language Model Development | Workflowza](https://workflowza.zya.me/job/remote-senior-nlp-engineer-language-model-development) — TensorFlow, LLM, Python, Transformers, NLP • $180,000-$280,000
+- [Senior NLP Engineer | Flexgen @ Flexgen](https://flexgen.zya.me/job/senior-nlp-engineer-3) — LLM, Agent, Fine-tuning, Python, Transformers • $180,000-$280,000
+- [Natural Language Processing Researcher | G @ Research](https://www.gresearch.com/vacancies/natural-language-processing-researcher/) — vLLM, LLM, Python, Generative AI, NLP • $140,000-$220,000
+- [Lead NLP Engineer @ Transformer Architectures | Flexgen](https://flexgen.zya.me/job/lead-nlp-engineer-transformer-architectures-2) — TensorFlow, Python, Transformers, NLP • $140,000-$220,000
+- [Applied Research Engineer, Agents @ Hebbia | Built In NYC](https://www.builtinnyc.com/job/applied-research-engineer-agents/9400010) — LLM, Agent, Infrastructure, Rust, NLP • $140,000-$220,000
+- [Software Engineer, AI Product (Canada) @ Vanta @ Vanta](https://jobs.ashbyhq.com/Vanta/581791d7-c63d-45fe-b6a7-f2d8f6532af7) — LLM, RAG, Agent, Rust • $140,000-$220,000
+- [Machine Learning Engineer @ Latent @ Latent](https://jobs.ashbyhq.com/latent/233bbaac-d589-49f4-a8eb-6bb16673b060) — LLM, RAG, Infrastructure • $140,000-$220,000
+- [Senior Machine Learning Engineer  @ FINNY @ FINNY](https://jobs.ashbyhq.com/FINNY/fb414324-df83-4683-9690-1ca7d2de74e3) — Fine-tuning • $180,000-$280,000
+- [Senior Machine Learning Engineer @ Personalisation](https://jobs.ashbyhq.com/deliveroo/fa9e1a6d-0b49-4421-b6e3-8f8b12ded8b1) — TensorFlow, LLM, RAG, Python, GenAI • $180,000-$280,000
+- [Senior Machine Learning Engineer @ 1 @ Parspec](https://jobs.ashbyhq.com/parspec/92b4ecdf-c6b0-4036-a0af-52898d080860) — LLM, RAG, Agent, Rust, NLP • $180,000-$280,000
+- [Senior Machine Learning Engineer  @ Faculty @ Faculty](https://jobs.ashbyhq.com/faculty/b72b42b6-4fdf-4c6e-bee0-96e3cba3a84f) — RAG, Infrastructure • $180,000-$280,000
+- [AI/LLM Engineer @ Clera @ Clera](https://jobs.ashbyhq.com/clera/5e96f5bd-0a97-4c11-a4cc-884b0f413000) — LLM, Agent, Fine-tuning, Infrastructure, NLP • $140,000-$220,000
+- [Forward Deployed Engineer @ AI | Careers](https://boards.greenhouse.io/avepoint/jobs/8070487) — RAG, Agent, Infrastructure, Rust • $140,000-$220,000
+- [AI Architect @ Canada](https://boards.greenhouse.io/samsara/jobs/8104166) — Agent, Infrastructure • $140,000-$220,000
+- [Lead Software Engineer @ Recogni](https://boards.greenhouse.io/recogni/jobs/6243734002) — Generative AI • $140,000-$220,000
+- [Job Application for Solutions Architect, AI/ML @ Snowflake](https://boards.greenhouse.io/embed/job_app?token=7624604002) — TensorFlow, Python • $140,000-$220,000
+- [Kumo @ AI Engineer – Relational Foundation Models &amp; Agents for Relational Data](https://jobs.lever.co/kumo/f6a43a7c-3995-49f4-9cf2-0e9e232d4393) — Agent, Rust • $140,000-$220,000
+- [Curai @ Senior Applied AI Engineer](https://jobs.lever.co/curai/a5e85c45-912f-425a-8955-a52153c3d077) — LLM, Infrastructure, Rust • $140,000-$220,000
+- [Toyota Research Institute @ Tri](https://jobs.lever.co/tri/51267275-3161-4212-88ec-5cb7bf95461a) — RAG • $140,000-$220,000
+- [Spotify @ Spotify](https://jobs.lever.co/spotify/e200d025-4cff-4eb8-afa4-6680e31c43a2) — Fine-tuning, Python, Transformers, Generative AI • $140,000-$220,000
+- [Job Application for Recruiter, AI Research @ Anthropic](https://www.anthropic.com/careers/jobs/4935314008) — LLM, GenAI • $140,000-$220,000
+- [Growth Account Executive, AI Native @ AI Startup](https://www.anthropic.com/careers/jobs/4423394008) — RAG, Rust • $140,000-$220,000
+- [Jobs \ Anthropic @ AI Startup](https://www.anthropic.com/careers/jobs?org=clevelandisd) — Agent, Infrastructure • $140,000-$220,000
+- [Jobs \ Anthropic @ AI Startup](https://www.anthropic.com/careers/jobs?939688b5_page=2&e45d281a_page=7&referrer_id=0f52f8a3-6c1c-4adc-a746-c5cb37160e4e) — Agent, Infrastructure • $140,000-$220,000
+- [Research Engineer, Frontier Evals & Environments @ AI Startup](https://openai.com/careers/research-engineer-frontier-evals-and-environments-san-francisco/) — LLM, Agent, Infrastructure • $140,000-$220,000
+- [Forward Deployed Engineer @ Careers](https://openai.com/careers/search/?q=forward+deployed+engineer) — LLM, AI • $140,000-$220,000
+- [brynz | tech recruiter for startups & smbs | early @ stage hiring](https://brynz.io/) — Python • $140,000-$220,000
+- [emrekuruu/job-search-distill · Datasets @ Hugging Face](https://huggingface.co/datasets/emrekuruu/job-search-distill) — LLM, AI • $140,000-$220,000
+- [Rithankoushik/job @ 2.0 · Hugging Face](https://huggingface.co/Rithankoushik/job-parser-model-qwen-2.0) — LLM, Rust, Transformers • $140,000-$220,000
+- [Introducing Stable Audio 2.0 @ AI Startup](https://stability.ai/news-updates/stable-audio-2-0) — RAG • $140,000-$220,000
+- [jobflexy | jobs, hiring & recruitment @ usa & canada](https://jobflexy.com/) — Rust • $140,000-$220,000
+- [stealth @ AI Startup](https://apply.workable.com/isotron-ai) — CUDA, Infrastructure, Python, Generative AI • $140,000-$220,000
+- [Careers | Iliad @ Iliad](https://www.iliad.ac/careers.html) — Infrastructure • $140,000-$220,000
+- [Leila Cheikhe @ AI Startup](https://linkedin.com/in/leila-cheikhe-661368267) — LangChain, Infrastructure, Python • $140,000-$220,000
+- [LLM Engineer @ Des Plaines, Illinois | iHireEngineering](https://www.ihireengineering.com/jobs/view/530249593) — LLM, RAG, Fine-tuning, Python • $140,000-$220,000
+- [Remote LLM Serving Engineer (Cloud AI Engineering), Senior / Staff Engineer @ Qualcomm](https://hiring.camp/job/Kv3nO6) — vLLM, CUDA, LLM, GenAI • $180,000-$280,000
+- [[Remote] LLM / AI Engineer – USA Remote Jobs mysmartpros @ AI Startup](https://www.mysmartpros.com/tuition/job/remote-llm-ai-engineer-e5be535f/) — LLM, RAG, LangChain, Agent, Python • $140,000-$220,000
+- [Machine Learning Engineer, Applied AI @ Brain Co. @ Brain](https://jobs.ashbyhq.com/brainco/58cff031-5b0b-4b92-a1ea-2ebf2495d89d) — LLM, Agent • $140,000-$220,000
+- [Remote Senior Gen AI Platform Engineer @ GSK • $158k – $264k](https://hiring.camp/job/Evw02D) — LLM, Agent, Infrastructure, GenAI, Data Engineering • $180,000-$280,000
+- [Immediate Opportunity @ Miratech](https://techgig.com/jobs/immediate-opportunity-at-miratech-senior-gen-ai-developer-remote/943002) — LLM, RAG, LangChain, Agent, Fine-tuning • $140,000-$220,000
+- [Senior GenAI/Agentic AI Engineer @ Weekday, Inc. | Built In](https://builtin.com/job/senior-genai-agentic-ai-engineer/10013178) — TensorFlow, LLM, LangChain, Agent, Python • $180,000-$280,000
+- [AI Field Engineer - GenAI Infrastructure @ Stealth](https://jaabz.com/jobs/244826-ai-field-engineer) — LLM, Fine-tuning, Infrastructure, Python, GenAI • $140,000-$220,000
+- [Gen AI Engineer @ DYNE | BeBee](https://bebee.com/ch/jobs/gen-ai-engineer-dyne-fully-valais--theirstack-662396798) — LLM, RAG, LangChain, Agent, Python • $140,000-$220,000
+- [Sr Staff AI Engineer (AI Advisory, GenAI/AI Agents) – USA Remote Jobs mysmartpros @ AI Startup](https://www.mysmartpros.com/tuition/job/sr-staff-ai-engineer-ai-advisory-genai-ai-agents-5154890/) — RAG, Agent, Rust, GenAI • $180,000-$280,000
+- [Flask Python AI Engineer with LangChain Experience – Europe Remote | Calls9 Careers @ Calls9 Careers](https://www.calls9.com/careers/python-ai-engineer-genai-remote-europe) — RAG, LangChain, Agent, Python, GenAI • $140,000-$220,000
+- [Senior ML/NLP Engineer @ Contract to Hire](https://hirestream.wj.liveblog365.com/remote-jobs/senior-mlnlp-engineer-upgrade-advanced-rag-system-for-scientific-document-research-contract-to-hire) — RAG, Agent, Python, Transformers, NLP • $180,000-$280,000
+- [Remote Senior Prompt Engineer, Generative AI (Remote) @ Gruve](https://www.remotefront.com/remote-jobs/gruve-senior-prompt-engineer-generative-ai-llms-82u7u) — LLM, Infrastructure, Python, Generative AI • $180,000-$280,000
+- [Data Scientist - AI/ML @ hire feed](https://jaabz.com/jobs/248346-data-scientist-aiml-remote) — TensorFlow, Python • $140,000-$220,000
+- [Senior Data Scientist @ Bees Frontline](https://aijobs.ai/index.php/job/senior-data-scientist-bees-frontline) — RAG • $180,000-$280,000
+- [Staff Data Scientist - Long Term Impact @ Airbnb · $200k–$242k — AI Dev Jobs](https://aidevboard.com/job/staff-data-scientist-long-term-impact-d02558d0) — RAG • $180,000-$280,000
+- [[Remote] (Contract) Senior Data Scientist, Platform Inference @ MarTech DS Measurement | Worksynergy](https://worksynergy.10001mb.com/remote-jobs/remote-contract-senior-data-scientist-platform-inference-martech-ds-measurement) — Agent, Python • $180,000-$280,000
+- [Data Scientist @ Ryzlabs Inc.](https://goremotejob.com/remote-jobs/data-scientist-7336) — Infrastructure, Python • $140,000-$220,000
+- [Senior Applied ML Engineer @ Databricks](https://www.databricks.com/company/careers/engineering---pipeline/senior-applied-ml-engineer---ml4sys--8656900002) — Agent, Rust, GenAI, Data Engineering • $180,000-$280,000
+- [Full @ Stack Engineer, Computer Vision | Jobvectora](https://jobvectora.synergize.co/job/full-stack-engineer-computer-vision) — RAG, Computer Vision • $140,000-$220,000
+- [Computer Vision & ML Expert | Alignerr @ Alignerr](https://www.alignerr.com/jobs/e9462534-0956-4a1a-9bc9-550f1507681d) — TensorFlow, Python, Transformers, Generative AI, Computer Vision • $140,000-$220,000
+- [mercor hiring Computer Vision MLE @ Senior](https://himalayas.app/companies/mercor/jobs/computer-vision-mle-senior-8227701725) — Computer Vision • $140,000-$220,000
+- [AI Computer Vision Engineer @ FullStack | BeBee](https://bebee.com/co/jobs/ai-computer-vision-engineer-remote-colombia-fullstack--theirstack-679394452) — TensorFlow, RAG, Python, Transformers, Computer Vision • $140,000-$220,000
+- [LLM Applied Data Scientist (RAG/ NLP) @ Binance](https://aplyr.ai/jobs/29d60d372f36/llm-applied-data-scientist-rag-nlp) — LLM, RAG, Agent, Fine-tuning, Rust • $140,000-$220,000
+- [Fresher @ NLP Engineer | jobgrow.pragatishilclasses.org](https://jobgrow.pragatishilclasses.org/job/fresher-nlp-engineer-11) — TensorFlow, RAG, Python, Transformers, NLP • $140,000-$220,000
+- [E @ BIGAI:Beijing Institute for General Artificial Intelligence](https://eng.bigai.ai/vacancy/e-02-nlp-engineer/) — Python, Computer Vision, NLP • $140,000-$220,000
+- [AI Engineer @ Fieldguide @ Fieldguide](https://jobs.ashbyhq.com/Fieldguide/6d0ceade-cbbe-4cd7-9af9-caf3cfed7ec3) — LLM, RAG, Agent, Rust • $140,000-$220,000
+- [Software Engineer, AI (Senior/Staff) @ Monarch Money @ Monarch](https://jobs.ashbyhq.com/monarchmoney/87fabc87-1377-4ed9-bbd2-fcc93c53ba9c) — LLM, RAG, Agent, Fine-tuning, Infrastructure • $180,000-$280,000
+- [AI Inference Engineer @ Baseten @ Baseten](https://jobs.ashbyhq.com/baseten/db6477fc-111a-4340-bf00-525fe023e6f3) — Infrastructure, Python • $140,000-$220,000
+- [Machine Learning Engineer @ Relace @ Relace](https://jobs.ashbyhq.com/Relace/2deb110b-b848-4316-a120-f1864d788e94) — CUDA, RAG, Agent, Infrastructure, Python • $140,000-$220,000
+- [Machine Learning Engineer @ Apiphany @ Apiphany](https://jobs.ashbyhq.com/apiphany/64904964-7caf-48d7-8375-8432dd7a7eef) — LLM, RAG, Python, NLP • $140,000-$220,000
+- [Machine Learning Engineer @ Orchard Robotics @ Orchard](https://jobs.ashbyhq.com/orchard/58cc4c3f-3ef2-4fe3-a81f-160916e67aaa) — RAG, Infrastructure, Rust • $140,000-$220,000
+- [Machine Learning Engineer @ UnitX @ UnitX](https://jobs.ashbyhq.com/unitxlabs/d75b1e49-8513-4c21-a879-10678d64e056) — RAG, Generative AI, Computer Vision • $140,000-$220,000
+- [Machine Learning Engineer  @ Mariana Minerals @ Mariana](https://jobs.ashbyhq.com/marianaminerals/44c92dd6-55f2-4e44-9360-bf4676466dac) — Agent • $140,000-$220,000
+- [Machine Learning Engineer @ MAI @ MAI](https://jobs.ashbyhq.com/mai/3961159f-0c86-4d1a-8d4f-ced3bbc145c6) — RAG, Agent, Infrastructure • $140,000-$220,000
+- [Founding Machine Learning Engineer @ Matchii @ Matchii](https://jobs.ashbyhq.com/matchii/b7998c4e-be0f-491f-8081-af8bd3af6709) — LLM, Infrastructure • $140,000-$220,000
+- [Member of Technical Staff (AI Inference Engineer) @ Perplexity @ Perplexity](https://jobs.ashbyhq.com/perplexity/8a976851-9bef-4b07-8d36-567fa9540aef) — CUDA, LLM, Infrastructure, Python, Rust • $180,000-$280,000
+- [AI Product Engineer @ Speak @ Speak](https://jobs.ashbyhq.com/speak/e91eb4bc-93bf-4e3a-b7c9-4a2f506df43f) — LLM • $140,000-$220,000
+- [Platform Engineer @ Generative AI](https://jobs.ashbyhq.com/uncountable/677487ff-7923-4be1-97ab-bab17ee7f9fb) — LLM, Fine-tuning, Infrastructure, Python, Generative AI • $140,000-$220,000
+- [AI Compiler and Performance Engineer @ ElastixAI INC. @ ElastixAI](https://jobs.ashbyhq.com/elastix/8b02999e-38dd-4d7e-a7c2-869d61199188) — LLM, Infrastructure • $140,000-$220,000
+- [Staff Inference ML Runtime Engineer @ Cerebras Systems @ Cerebras](https://jobs.ashbyhq.com/cerebras/1c8cdbc4-bd74-46df-9645-bb910eaa7a37) — vLLM, LLM, Agent, Infrastructure • $180,000-$280,000
+- [Machine Learning Engineer, Speech LLM Training @ Ashbyhq](https://jobs.ashbyhq.com/Plaud/4d892e32-6245-4ce4-8047-d77394b8932a) — LLM, Infrastructure, Generative AI • $140,000-$220,000
+- [Careers @ Figma](https://boards.greenhouse.io/figma/jobs/5998147004) — LLM, AI • $140,000-$220,000
+- [Sr Software Engineer, Stream Integrations @ Cribl](https://boards.greenhouse.io/cribl/jobs/5821426004) — Agent, Infrastructure, Rust • $140,000-$220,000
+- [Senior ASIC Design Engineer @ Recogni](https://boards.greenhouse.io/recogni/jobs/6066838002) — RAG, Generative AI • $180,000-$280,000
+- [Digital Systems Engineer | Formlabs @ Formlabs](https://boards.greenhouse.io/formlabs/jobs/7506561) — Infrastructure, Python • $140,000-$220,000
+- [Job Application for Principal Engineer - Prediction @ Motional](https://boards.greenhouse.io/embed/job_app?for=motional&token=6521874003) — CUDA, Agent, Python • $220,000-$350,000
+- [Job Application for Junior Quant Researcher - ML Alpha Research @ Squarepoint Capital](https://boards.greenhouse.io/embed/job_app?token=6069464) — RAG, Python, NLP • $140,000-$220,000
+- [Swish Analytics @ AI Startup](https://boards.greenhouse.io/swishanalytics) — Rust, NLP • $140,000-$220,000
+- [Job Application for Data Engineer @ Airtable](https://boards.greenhouse.io/embed/job_app?token=8124953002) — LLM, Agent, Infrastructure, Rust, Data Engineering • $140,000-$220,000
+- [QuantCo @ Quantco ](https://jobs.lever.co/quantco-/67757fe8-3582-4bdd-aa7d-98fa490bde84) — LLM, RAG, Agent, Infrastructure, Python • $140,000-$220,000
+- [Jeeves @ Tryjeeves](https://jobs.lever.co/tryjeeves/639e39d0-b357-4bc2-aff2-968cdedb14b6) — LLM, RAG, LangChain, HuggingFace • $140,000-$220,000
+- [Dun & Bradstreet @ 18860)](https://jobs.lever.co/dnb/187db64c-4590-4a9c-ae8b-91e27d793366) — LLM, RAG, LangChain, Agent, Python • $140,000-$220,000
+- [Eudia @ Eudia](https://jobs.lever.co/Eudia/0079f039-58bf-4d8b-b35c-e3de693801fd) — RAG, Rust, Generative AI • $140,000-$220,000
+- [Institute of Foundation Models @ Ifm Us](https://jobs.lever.co/ifm-us/ca16d96e-3ac6-48c9-b29f-5375621b033f) — LLM, AI • $140,000-$220,000
+- [Protolabs @ ML Engineer AI COE](https://jobs.lever.co/protolabs/de7a85e7-78e2-4fc2-953f-c303c2695fc3) — TensorFlow, Python, NLP • $140,000-$220,000
+- [Woven by Toyota @ Machine Learning Engineer, Enterprise AI Solutions](https://jobs.lever.co/woven-by-toyota/669e057c-1853-47ce-ba2f-7dfc7d518e9b) — RAG, Infrastructure, Computer Vision • $140,000-$220,000
+- [Zoox @ ML Agents and Planning](https://jobs.lever.co/zoox/d736debf-c361-4a7c-81fd-6c3125ab03c0) — Agent, Infrastructure, Python • $189,000-$270,000
+- [Woven by Toyota @ Senior Machine Learning Engineer, Perception](https://jobs.lever.co/woven-by-toyota/46636aaa-3645-411e-a67b-2d9740366cb0) — RAG, Infrastructure, Computer Vision • $140,000-$220,000
+- [Research Engineer, Universes @ AI Startup](https://www.anthropic.com/careers/jobs/5061517008) — Agent, Fine-tuning, Infrastructure • $140,000-$220,000
+- [Jobs \ Anthropic @ AI Startup](https://www.anthropic.com/careers/jobs?gh_jid=4299893005) — Infrastructure • $140,000-$220,000
+- [Research \ Anthropic @ AI Startup](https://www.anthropic.com/research) — Agent • $140,000-$220,000
+- [Software Engineer, Agent Infrastructure | OpenAI @ OpenAI](https://openai.com/careers/software-engineer-agent-infrastructure) — Agent, Infrastructure • $140,000-$220,000
+- [Platform Engineer, Forward Deployed Engineering (FDE) @ SF | OpenAI](https://openai.com/careers/platform-engineer-forward-deployed-engineering-%28fde%29-sf-san-francisco/) — RAG • $140,000-$220,000
+- [Software Engineer, Kernel Performance & AI Tooling | OpenAI @ OpenAI](https://openai.com/careers/software-engineer-kernel-performance-and-ai-tooling-san-francisco/) — Agent, Infrastructure • $140,000-$220,000
+- [Software Engineer, Core Services | OpenAI @ OpenAI](https://openai.com/careers/software-engineer-core-services-san-francisco/) — RAG, Infrastructure • $140,000-$220,000
+- [Full @ Stack Engineer, ChatGPT Ecosystem (Apps Platform & SDK) | OpenAI](https://openai.com/careers/full-stack-engineer-chatgpt-ecosystem-(apps-platform-and-sdk)-san-francisco/) — Rust • $140,000-$220,000
+- [Research Engineer, AI for Science | OpenAI @ OpenAI](http://www.openai.com/careers/research-engineer-ai-for-science-san-francisco/) — LLM, AI • $140,000-$220,000
+- [Software Engineer, Inference @ Multi Modal | OpenAI](https://openai.com/careers/software-engineer-inference-multi-modal-san-francisco/) — vLLM, LLM, Infrastructure • $140,000-$220,000
+- [Hardware Tools Engineer | OpenAI @ OpenAI](http://www.openai.com/careers/hardware-tools-engineer-san-francisco/) — Infrastructure, Python, Rust • $140,000-$220,000
+- [flow engineering @ AI Startup](https://flowengineering.com/) — LLM, AI • $140,000-$220,000
+- [careerpathsforall @ AI Startup](https://instagram.com/careerpathsforall) — LLM, AI • $140,000-$220,000
+- [act @ AI Startup](https://jointheact.com/) — LLM, AI • $140,000-$220,000
+- [butler aerospace & defense @ AI Startup](https://butler.com/) — LLM, AI • $140,000-$220,000
+- [axionorbital space (yc w26) @ AI Startup](https://axionorbital.space/) — LLM, AI • $140,000-$220,000
+- [Jobs · Hugging Face @ AI Startup](https://huggingface.co/docs/hub/main/en/jobs) — Agent, Fine-tuning, Infrastructure, Python, Transformers • $140,000-$220,000
+- [Run and manage Jobs @ AI Startup](https://huggingface.co/docs/huggingface_hub/guides/jobs) — CUDA, Agent, Infrastructure, Python, Transformers • $140,000-$220,000
+- [fantastic-jobs/7-million-jobs · Datasets @ Hugging Face](https://huggingface.co/datasets/fantastic-jobs/7-million-jobs) — RAG, HuggingFace • $140,000-$220,000
+- [shakods/realtime @ jobs](https://huggingface.co/shakods/realtime-hf-jobs) — Fine-tuning, Infrastructure, Python, Transformers, HuggingFace • $140,000-$220,000
+- [Introducing Stability AI Solutions: Generative AI Solutions to Accelerate Enterprise Creative Production — Stability AI @ AI Startup](https://stability.ai/news-updates/introducing-stability-ai-solutions) — Generative AI • $140,000-$220,000
+- [Stability AI Image Models — Stability AI @ AI Startup](https://stability.ai/stable-image) — RAG, Infrastructure, Rust, Generative AI • $140,000-$220,000
+- [Agentic AI Coding for Developers | Replit @ Replit](https://replit.com/usecases/software-engineers) — Agent, Infrastructure, Python • $140,000-$220,000
+- [Production AI Engineer | Remote @ Remote](https://josephrwanda.com/) — LLM, Agent, Python • $140,000-$220,000
+- [Rafael A. @ AI Startup](https://linkedin.com/in/kyronsatt) — TensorFlow, LLM, RAG, Agent, Fine-tuning • $140,000-$220,000
+- [Mohd Mursaleen — AI Systems & Backend Engineer | Bengaluru @ Bengaluru](https://geekymd.me/) — LLM, LangChain, Agent, Infrastructure, Python • $140,000-$220,000
+- [Mohammed Khairallah — AI / ML Engineer @ AI Startup](https://khairallah.onrender.com/) — LLM, RAG, LangChain, Agent, Infrastructure • $140,000-$220,000
+- [LLM Engineer (Remote, Full-Time) [AS221] @ Smart Working Solutions](https://www.jobtarget.com/jobs/jt-w88mjeob0t/llm-engineer-remote-full-time-as221-coimbatore-tamil-nadu) — LLM, RAG • $140,000-$220,000
+- [Senior LLM Engineer – Text & Reasoning LLM, NLU @ Omilia](https://www.remoterocketship.com/company/omilia/jobs/senior-llm-engineer-text-reasoning-llm-nlu-greece-remote/) — LLM, Agent, Fine-tuning, Python, Transformers • $180,000-$280,000
+- [Toku Pte Ltd @ LLM & NLP](https://careers.toku.co/o/applied-ai-engineer-llm-nlp-1) — LLM, RAG, Infrastructure, Python, NLP • $140,000-$220,000
+- [Large Language Model (LLM) Engineer @ Bright Vision Technologies](https://jaabz.com/jobs/236772-llm-engineer) — LLM, RAG, Fine-tuning, Python • $140,000-$220,000
+- [Jeeves @ Tryjeeves](https://jobs.lever.co/tryjeeves/ded9e04e-f18e-4d4c-ae43-4b7882c6200b) — LLM, RAG, LangChain, HuggingFace • $140,000-$220,000
+- [AI Software Engineer @ NetApp, Inc.](https://careers.netapp.com/job/united-states/ai-software-engineer/27600/97875793872) — RAG, Agent, Infrastructure • $140,000-$220,000
+- [Founding AI/ML Engineer @ Terranox AI](https://www.ycombinator.com/companies/terranox-ai/jobs/Yi5VAYy-founding-ai-ml-engineer) — Computer Vision • $140,000-$220,000
+- [Founding AI / ML Engineer @ Concourse](https://www.ycombinator.com/companies/concourse/jobs/f2loPYa-founding-ai-ml-engineer) — LLM, RAG, Agent, Infrastructure, Python • $140,000-$220,000
+- [Oliver Perrin — Lead ML Engineer @ AI Startup](https://oliverperrin.com/) — NLP • $140,000-$220,000
+- [Founding Applied ML Engineer @ Wildcard](https://www.ycombinator.com/companies/wildcard/jobs/SEmo4di-founding-applied-ml-engineer) — Agent, Infrastructure, Rust • $140,000-$220,000
+- [Very excited to say I have been working @ Ossus (YC W26) as a founding ML engineer for a few months now. I have paused my studies till next fall, and if …](https://www.linkedin.com/posts/lassnajmuldeen_very-excited-to-say-i-have-been-working-at-activity-7480146092295122945-PGLE) — LLM, AI • $140,000-$220,000
+- [GenAI Engineer @ Zenitech](https://zenitech.co.uk/careers/jobs/7680662-genai-engineer/) — LLM, RAG, Agent, GenAI, Generative AI • $140,000-$220,000
+- [Remote Senior GenAI Engineer @ Capco • €50+](https://hiring.camp/job/MyG0XR) — LLM, Python, GenAI • $180,000-$280,000
+- [Senior GenAI Engineer @ Zenitech](https://zenitech.co.uk/careers/jobs/7736828-senior-genai-engineer/) — LLM, RAG, Agent, GenAI, Generative AI • $180,000-$280,000
+- [Senior GenAI Engineer (Python) @ Evolver (evolver.ai) | Built In](https://builtin.com/job/senior-genai-engineer-python/9126634) — LLM, RAG, LangChain, Agent, Python • $180,000-$280,000
+- [Lead GenAI Solution Engineer (all genders) | Jobs @ Eraneos](https://eraneos.jobs.personio.com/job/2594246?language=en) — LLM, RAG, Agent, Rust, GenAI • $140,000-$220,000
+- [Gen AI Solutions Engineer #122 job near me in Austin, Texas @ Premier Cloud](https://www.jobtarget.com/jobs/jt-h7qp72z8qz/gen-ai-solutions-engineer-122-austin-texas) — RAG, LangChain, Agent, Rust • $140,000-$220,000
+- [Remote Senior GenAI Engineer @ Gevernova](https://hiring.camp/job/yzxKyW) — LLM, GenAI • $180,000-$280,000
+- [Senior RAG Engineer @ Newcode.ai @ Newcode.ai](https://www.tealhq.com/job/senior-rag-engineer_7ea1a1aeed94860359078c604f10a940f06f1) — RAG, Agent, Python, Rust • $180,000-$280,000
+- [Career Opportunities - Senior AI Engineer in  | Careers @ Wipfli](https://careers-wipfli.icims.com/jobs/8010/senior-ai-engineer/job) — LLM, RAG • $180,000-$280,000
+- [Job Application for Senior AI Engineer – LLM, RAG @ BrightAI Corporation](https://job-boards.greenhouse.io/brightai/jobs/5616545004) — LLM, RAG, LangChain, Agent, Infrastructure • $180,000-$280,000
+- [AI Engineer @ Nomia](https://careers.nomia.com/jobs/8052488-ai-engineer) — RAG, LangChain, Python, NLP • $140,000-$220,000
+- [AI Data & Knowledge Engineer @ Career Page](https://innovapptive.applytojob.com/apply/Q8ZhYb86g0/AI-Data-Knowledge-Engineer) — RAG, Agent • $140,000-$220,000
+- [AI Engineer (Agentic AI & LLM Systems) | Jobs @ Beroe x nnamu GmbH](https://beroe-inc.jobs.personio.de/job/2262635?language=en) — TensorFlow, LLM, RAG, LangChain, Agent • $140,000-$220,000
+- [BRAHMA Careers @ Senior / Principal Generative AI Engineer](https://jobs.jobvite.com/brahma/job/oSIRyfwJ) — LLM, RAG, LangChain, Agent, Fine-tuning • $140,000-$220,000
+- [Prompt Engineer @ Career Page](https://brightvisiontechnologies.applytojob.com/apply/rwkTgRmzg1/Prompt-Engineer) — LLM, RAG, Agent, Rust • $140,000-$220,000
+- [Global AI Prompting Engineer PGTR | Remote @ Zurich, Switzerland | Hitachi Energy](https://www.hitachienergy.com/us/en/careers/open-jobs/details/JID3-186796) — LLM, Python, Transformers, GenAI, Generative AI • $140,000-$220,000
+- [Prompt Engineer, Norfolk, Virginia, United States | Cognizant Careers @ Cognizant Careers](https://careers.cognizant.com/us-en/jobs/00068751301/prompt-engineer/) — LLM, RAG, LangChain, Fine-tuning, Python • $140,000-$220,000
+- [AI Prompt Engineer @ SoftSnow | Built In](https://builtin.com/job/ai-prompt-engineer/9971895) — LLM, RAG, Agent, Generative AI, NLP • $140,000-$220,000
+- [Prompt Engineer – Joliet Junior College @ AI Startup](https://careerservices.jjc.edu/jobs/saroot-labs-inc-prompt-engineer/) — LLM, Agent • $140,000-$220,000
+- [Prompt Engineer @ Viseven](https://remotedvjobs.com/jobs/prompt-engineer-at-viseven-1774728068045) — LLM, RAG, Agent • $90,000-$130,000
+- [CSC Generation @ First Data Scientist](https://jobs.lever.co/cscgeneration-2/38915501-af37-4858-850c-5a384de27f09) — Python • $140,000-$220,000
+- [Data Scientist - Remote @ UnitedHealth Group](https://careers.unitedhealthgroup.com/job/minnetonka/data-scientist-remote/34088/91312879440) — LLM, AI • $140,000-$220,000
+- [Data Scientist Technical Lead @ AI/ML](https://search-careers.gm.com/en/jobs/jr-202507010/data-scientist-technical-lead-ai-ml/) — Generative AI • $140,000-$220,000
+- [Gre @ Gray](https://jobs.lever.co/great-gray-group/5f1164c5-06f7-43e5-b6b7-5e1a04fd9ba4) — LLM, RAG, Agent, Python, Rust • $140,000-$220,000
+- [Principal Data Scientist (AI) @ REMOTE (US) Job Details | Hexagon](https://careers.hexagon.com/job/Houston-Principal-Data-Scientist-%28AI%29-REMOTE-%28US%29-TX-77086/1249157601/) — LLM, AI • $220,000-$350,000
+- [Careers | Mutual of Omaha @ Mutual of Omaha](https://www.mutualofomaha.com/careers/jobs/detail/504903) — LLM, Agent, Infrastructure, Generative AI • $140,000-$220,000
+- [Data Scientist @ Kuva Space](https://careers.kuvaspace.com/jobs/7813263-data-scientist) — Python, Computer Vision • $140,000-$220,000
+- [AI and Data Science Strategy Leader - Crimson AI - Remote @ UnitedHealth Group](https://careers.unitedhealthgroup.com/job/eden-prairie/ai-and-data-science-strategy-leader-crimson-ai-remote/34088/98481551360) — LLM, Agent, NLP • $140,000-$220,000
+- [Senior Data Scientist (Fully Remote) @ Dashly, a smarter way to manage your mortgage.](https://dashly.com/careers/senior_data_scientist_remote) — LLM, AI • $180,000-$280,000
+- [Bluesight @ Data Scientist II](https://jobs.lever.co/bluesight/57a090e3-e109-4bae-a5e1-cf6701fb4016) — RAG, Infrastructure, Python, GenAI • $140,000-$220,000
+- [Senior Data Scientist @ Jerry.ai @ Jerry.ai](https://jobs.ashbyhq.com/jerry.ai/a9d0407a-646c-42dc-ad3d-61b94bfb0062) — RAG • $180,000-$280,000
+- [ML Infrastructure Engineer | Flexgen @ Flexgen](https://flexgen.zya.me/job/ml-infrastructure-engineer-3) — RAG, Infrastructure • $140,000-$220,000
+- [Staff Machine Learning Engineer @ Infrastructure - Remote](https://remoteotter.com/company/marqeta/jobs/remote-staff-machine-learning-engineer-infrastructure_b530d582-75bf-4741-8935-ce092c154a9d) — Infrastructure • $176,800-$260,000
+- [Jobless | ML Engineer, Cloud Platform @ Prior Labs](https://www.jobless.dev/jobs/ml-engineer-cloud-platform-at-prior-labs-fce93bc3) — LLM, Infrastructure • $140,000-$220,000
+- [Yuvraj Garg · AI Systems & Infrastructure Architect @ AI Startup](https://www.yuvraj97.com/) — vLLM, LLM, Agent, Infrastructure, Python • $140,000-$220,000
+- [Elnur Shahbalayev — AI & Computer Vision Engineer @ AI Startup](https://shahbalayev.com/) — LLM, RAG, LangChain, Agent, Fine-tuning • $140,000-$220,000
+- [Marjan Stoimchev · Computer Vision & ML Engineer @ AI Startup](https://marjanstoimchev.github.io/) — Computer Vision • $140,000-$220,000
+- [Mahmut Veli, Computer Vision Engineer, Deep Learning, AI, Qt, C++, QML, Python, Pytorch on www.freelancermap.com @ AI Startup](https://www.freelancermap.com/profile/software-engineer-machine-vision-und-industrial-automation-systems) — RAG, Python, Transformers, Computer Vision • $140,000-$220,000
+- [Computer Vision Engineer | Hire Muhammad Z. | RemoteAI @ RemoteAI](https://remoteai.io/v2/hire/@muhammadbilal) — TensorFlow, LLM, Python, Transformers, Computer Vision • $140,000-$220,000
+- [Senior Computer Vision Engineer @ Pano AI @ Pano](https://jobs.ashbyhq.com/pano-ai/d844c21f-9783-4918-beb3-2a82ed5ffdb8) — Infrastructure, Computer Vision • $180,000-$280,000
+- [Remote Computer Vision Engineer Careers | 23 Opportunities | WFH @ WFH](https://jobgether.com/remote-jobs/computer-vision-engineer) — Computer Vision, NLP • $140,000-$220,000
+- [Senior Natural Language Processing (NLP) Engineer @ Genzeon India | Career Page](https://www.careers-page.com/genzeon-in/job/QV748W96) — TensorFlow, RAG, Python, Transformers, NLP • $180,000-$280,000
+- [ML/NLP Engineer — dMetrics @ AI Startup](https://www.dmetrics.com/careers/ml-nlp-engineer) — TensorFlow, Fine-tuning, Transformers, NLP • $140,000-$220,000
+- [Level AI @ NLP (Bangalore/Noida Location)](https://jobs.lever.co/levelai/cc04ab77-6ee3-4078-9cfd-110cda0b1438) — LLM, RAG, LangChain, Agent, Python • $140,000-$220,000
+- [Netcompany Senior AI/NLP Engineer | SmartRecruiters @ Smartrecruiters](https://jobs.smartrecruiters.com/Netcompany1/744000115249903-senior-ai-nlp-engineer) — TensorFlow, LLM, RAG, Fine-tuning, Python • $180,000-$280,000
+- [Deontic | NLP Engineer @ NLP Engineer](https://www.deontic.ai/vacatures/nlp-engineer) — Python, Transformers, HuggingFace, Generative AI, NLP • $140,000-$220,000
+- [NLP Engineer @ AI Startup](https://www.tokyodev.com/companies/yaraku/jobs/nlp-developer) — Python, Transformers, NLP • $140,000-$220,000
+- [Institute of Foundation Models @ NLP](https://jobs.lever.co/ifm-us/1b258c12-5942-4487-9c92-fd4d18e40c6a) — LLM, RAG, Infrastructure, Python, Computer Vision • $140,000-$220,000
+- [Full @ time permanent Research Engineer Position in NLP | MaIAGE](https://maiage.inrae.fr/node/3521) — LLM, Infrastructure, NLP • $140,000-$220,000
+- [Research Associate – Natural Language Processing (AI) – Career Advising & Professional Development | MIT @ MIT](https://capd.mit.edu/jobs/institute-for-defense-analyses-research-associate-natural-language-processing-ai/) — LLM, RAG, NLP • $140,000-$220,000
+- [NLP Engineer Job @ Bengaluru, Karnataka, India (Amzur Technologies, Inc)](https://www.iitjobs.com/job/nlp-engineer-bengaluru-karnataka-india-372066) — TensorFlow, LLM, Fine-tuning, Python, NLP • $140,000-$220,000
+- [JD SR NLP @ AI Startup](https://www.emplay.net/jd-sr-nlp) — TensorFlow, RAG, Infrastructure, Python, Transformers • $140,000-$220,000
+- [Careers @ NLP](https://niki-talent.freshteam.com/jobs/unOYq3sVINmr/software-engineer-nlp) — TensorFlow, RAG, Python, NLP • $140,000-$220,000
+- [Principal Machine Learning Engineer @ Ema @ Ema](https://jobs.ashbyhq.com/ema/8268af44-d5d8-4a29-9638-3ea30f35f3a9) — LLM, RAG, Agent, Fine-tuning, Infrastructure • $220,000-$350,000
+- [Careers | Automation engineering & more @ Appliedintuition](https://boards.greenhouse.io/appliedintuition/jobs/4088920005?gh_jid=4088920005) — RAG, Infrastructure, Rust • $140,000-$220,000
+- [KlearNow.ai @ Klearnow](https://jobs.lever.co/klearnow/0facc87f-1b33-49b1-b1f3-c189d1990718) — LLM, RAG, LangChain, Agent, Infrastructure • $140,000-$220,000
+- [Solutions | AI Use Cases for Business @ AI Use Cases for Business](https://cohere.ai/solutions) — RAG, Agent, Infrastructure, Rust • $140,000-$220,000
+- [Raj Kumar Nelluri — AI/ML Engineer @ not just notebooks.](https://rajkumarai.dev/) — LLM, RAG, LangChain, Agent, Infrastructure • $140,000-$220,000
+- [Zanwen Fu — ML Engineer & Founder @ AI Startup](https://zanwenfu.com/) — Agent, Infrastructure, Python, Rust • $140,000-$220,000
+- [Remote Generative AI Jobs (August 2026) @ Arc.dev](https://arc.dev/remote-jobs/generative-ai) — LLM, RAG, Generative AI • $140,000-$220,000
+- [Lead GenAI Solution Engineer (all genders) | Jobs @ Eraneos](https://eraneos.jobs.personio.de/job/2594246?language=en) — LLM, RAG, Agent, Rust, GenAI • $140,000-$220,000
+- [Principal Research Data Scientist - Remote @ UnitedHealth Group](https://careers.unitedhealthgroup.com/job/eden-prairie/principal-research-data-scientist-remote/34088/95338507728) — Infrastructure • $220,000-$350,000
+- [AI Infrastructure Engineer (GPU) - Remote EMEA @ Pragmatike](https://www.jobless.dev/jobs/ai-infrastructure-engineer-gpu-remote-em-at-pragmatike-cc75af89) — vLLM, LLM, RAG, Infrastructure • $140,000-$220,000
+- [Computer Vision Engineer @ SumerSports | Built In](https://builtin.com/job/computer-vision-engineer/9554889) — Computer Vision • $140,000-$220,000
+- [Aiusha Sangadiev @ AI Startup](https://linkedin.com/in/aiusha-sangadiev) — Transformers, Generative AI, Computer Vision • $140,000-$220,000
+- [1000+ Natural Language Processing Engineer jobs in ... @ AI Startup](https://www.linkedin.com/jobs/natural-language-processing-engineer-jobs) — LLM, RAG, Agent, GenAI, Generative AI • $140,000-$220,000
+
+### On-site (200 jobs)
+
+- [Machine Learning Engineer @ Gray Swan AI @ Gray](https://jobs.ashbyhq.com/Gray%20Swan%20AI/3d7e2604-92c1-4c93-b168-0683ed2990d1) — Agent, Python • $140,000-$220,000
+- [Hadrian Automation @ Hadrian Automation](https://jobs.ashbyhq.com/hadrian-automation/a4dd4748-9825-4090-885c-a79e475f8952) — LLM, AI • $140,000-$220,000
+- [AI & Machine Learning Engineer @ Lightspeed @ Lightspeed](https://jobs.ashbyhq.com/lightspeed/0b8bb2c8-8049-4b53-b1d1-74397807ccf2) — TensorFlow, Infrastructure, Computer Vision • $140,000-$220,000
+- [Machine Learning Engineer (Video Understanding & Segmentation) @ Maxinsights Corporation @ Maxinsights](https://jobs.ashbyhq.com/maxinsights/631ee3d8-07ca-455d-b6a2-dee4d3d33a72) — LLM, Agent, Infrastructure, Python, Computer Vision • $140,000-$220,000
+- [Machine Learning Engineer @ ClaimSorted @ ClaimSorted](https://jobs.ashbyhq.com/claimsorted/d05bc30a-52cb-4203-b489-1b43d2d2552a) — LLM, AI • $140,000-$220,000
+- [LLM Applications Engineer @ Uncountable Inc. @ Uncountable](https://jobs.ashbyhq.com/uncountable/c88f8550-635e-4bdd-9280-1cd40b7212c0) — LLM • $140,000-$220,000
+- [AI Engineer @ LiteLLM @ LiteLLM](https://jobs.ashbyhq.com/litellm/6e025e39-6f8a-46bd-91f7-8784d1f5076b) — LLM • $140,000-$220,000
+- [(Senior) AI/LLM Engineer @ Mercura @ Mercura](https://jobs.ashbyhq.com/mercura/90bb4d91-9311-4d6c-a30b-a2d6dc783a13) — LLM, RAG, Agent, Data Engineering • $180,000-$280,000
+- [LLM Training Engineer @ Sciforium @ Sciforium](https://jobs.ashbyhq.com/Sciforium/2c72c7ad-9da9-4738-af58-2650d22ec6de) — LLM • $140,000-$220,000
+- [AI Engineer @ Certa @ Certa](https://jobs.ashbyhq.com/certa/da4d5879-d94d-4f8c-ada4-24bd955520e3) — LLM, RAG, Agent, Python, Generative AI • $140,000-$220,000
+- [Machine Learning Engineer: LLM Interpretability & Systems @ Ctgt](https://jobs.ashbyhq.com/ctgt/c6916802-4158-4f24-b4b1-ac978157b6d9) — LLM • $140,000-$220,000
+- [AI Engineer @ India @ Pulsora, Inc.](https://jobs.ashbyhq.com/Pulsora%20Inc/94d2db5c-8e55-48ec-ad52-738691a34924) — LLM, RAG, LangChain, Agent, Fine-tuning • $140,000-$220,000
+- [Software Engineer @ Model Performance @ Baseten](https://jobs.ashbyhq.com/baseten/d29e748c-7209-460d-a024-8f77ae0a3d4d) — LLM, AI • $140,000-$220,000
+- [AI Engineer @ Boom @ Boom](https://jobs.ashbyhq.com/Boom/5c08f741-1f65-427c-90b1-7ccb9349e866) — RAG, Agent • $140,000-$220,000
+- [Agentic Engineer (all genders) @ Thorit](https://jobs.ashbyhq.com/thorit/13fc5ea3-8d7e-4be1-b41b-437aec00d4a1) — LLM, LangChain, Agent • $140,000-$220,000
+- [Job Application for Principal AI Engineer @ ALO](https://boards.greenhouse.io/aloyoga/jobs/5726560004?gh_jid=5726560004) — RAG, LangChain, Python, Computer Vision, NLP • $220,000-$350,000
+- [Job Application for Staff Engineer, AI @ BlackSky](https://boards.greenhouse.io/blacksky/jobs/8535559002?gh_jid=8535559002) — Python, Rust • $180,000-$280,000
+- [AI Native Senior Software Engineer @ Opswat](https://boards.greenhouse.io/opswat/jobs/4476626005) — Agent, Infrastructure, Rust • $180,000-$280,000
+- [Job Description @ C3iot](https://boards.greenhouse.io/c3iot/jobs/6889513002?t=5c6794212) — Agent, Generative AI • $140,000-$220,000
+- [Job Application for Principal Data Scientist, ML Bots - Game Tech Group @ Riot Games](https://boards.greenhouse.io/embed/job_app?token=7177099) — Agent, Rust • $220,000-$350,000
+- [Machine Learning Engineer, Applied AI (Hybrid) @ Simplepractice55](https://boards.greenhouse.io/simplepractice55/jobs/5761041004) — LLM, AI • $140,000-$220,000
+- [Principal Scientist, Machine Learning, Genomics @ Flagshippioneeringinc](https://boards.greenhouse.io/flagshippioneeringinc/jobs/8229819002?gh_jid=8229819002) — LLM, AI • $220,000-$350,000
+- [Machine Learning Principal Solutions Architect @ Phdata](https://boards.greenhouse.io/phdata/jobs/7390457) — Data Engineering • $220,000-$350,000
+- [Job Application for Research Engineer, Machine Learning @ Anduril Industries](https://boards.greenhouse.io/andurilindustries/jobs/4999662007?gh_jid=4999662007) — LLM, AI • $140,000-$220,000
+- [Job Application for Data Scientist @ Wargaming](https://boards.greenhouse.io/wargamingen/jobs/7661900?gh_jid=7661900) — RAG, Python • $140,000-$220,000
+- [Machine Learning Scientist @ Nurix](https://boards.greenhouse.io/nurix/jobs/7848866002) — Infrastructure • $140,000-$220,000
+- [AI Engineer @ Onit, Inc.](https://jobs.lever.co/onit/983d3c5d-55d7-4802-9865-80bf58c68bd4) — LLM, RAG, Agent • $140,000-$220,000
+- [Onit, Inc. @ Onit](https://jobs.lever.co/onit/5110cadf-965f-4597-ae95-7d4c000675d7) — LLM, RAG, Agent • $140,000-$220,000
+- [AI Engineer @ Infinite pl](https://jobs.lever.co/infinitepl/3ce62a59-7e6c-45d2-a6c0-44a2893dbce1) — LLM, RAG, Agent, Python • $140,000-$220,000
+- [Machine Learning Engineer II @ Match Group](https://jobs.lever.co/matchgroup/613fab0e-1e84-4604-9fae-08785c3a792e) — Infrastructure, Rust • $140,000-$220,000
+- [Machine Learning Engineer @ Computational Drug Discovery](https://jobs.lever.co/5amventures/b7c66d8b-7416-4d40-aadd-8cacbfb83d13) — Agent, Infrastructure • $140,000-$220,000
+- [PayJoy @ Data Science](https://jobs.lever.co/payjoy/769a3ed2-3895-49a6-9ab2-e587ec25393a) — LLM, AI • $140,000-$220,000
+- [Whoop @ Senior Machine Learning Engineer, Health](https://jobs.lever.co/whoop/d71ade70-3925-4dee-bf5c-8804b3897914) — Infrastructure, Python • $140,000-$220,000
+- [Bumble Inc. @ Bumbleinc](https://jobs.lever.co/bumbleinc/033e2397-39ab-4e0a-9de9-78f73d6853f3) — TensorFlow, Python • $140,000-$220,000
+- [Careers @ AI Startup](https://www.anthropic.com/careers) — Rust • $140,000-$220,000
+- [Shape how AI meets  the world @ AI Startup](https://www.anthropic.com/careers?event_id=ahka-m0ldvr&id=32912) — Rust • $140,000-$220,000
+- [Jobs @ Anthropic](https://www.anthropic.com/careers/jobs/4946317008) — LLM, AI • $140,000-$220,000
+- [Company \ Anthropic @ AI Startup](https://www.anthropic.com/company) — LLM, AI • $140,000-$220,000
+- [Claude Corps fellows FAQ \ Anthropic @ driven organizations put AI to work for good](https://www.anthropic.com/claude-corps/fellow) — LLM, AI • $140,000-$220,000
+- [Anthropic Fellows Program for AI safety research: applications open for May & July 2026 @ AI Startup](https://alignment.anthropic.com/2025/anthropic-fellows-program-2026/) — LLM, Agent • $140,000-$220,000
+- [LLM University (LLMU) @ AI Startup](https://cohere.ai/llmu) — LLM • $140,000-$220,000
+- [careers @ enventure engineering](https://linkedin.com/showcase/careers-at-enventure-engineering) — Infrastructure • $140,000-$220,000
+- [Cookbooks | Cohere @ Cohere](https://docs.cohere.ai/page/cookbooks) — RAG, LangChain, Agent, Python, Generative AI • $140,000-$220,000
+- [The Cohere Blog @ AI Startup](https://txt.cohere.ai/) — LLM, AI • $140,000-$220,000
+- [Pricing | Secure and Scalable Enterprise AI @ Secure and Scalable Enterprise AI](https://cohere.ai/pricing) — Agent, Generative AI • $140,000-$220,000
+- [ @ AI Startup](https://assets.cohere.ai/blog/text-clustering/askhn_cluster_7a.html) — LLM, AI • $140,000-$220,000
+- [Multilingual Semantic Search with Cohere and Langchain @ AI Startup](https://txt.cohere.ai/search-cohere-langchain/) — LangChain • $140,000-$220,000
+- [An Introduction to Cohere's Platform | Registration Page @ Registration Page](https://info.cohere.ai/introduction-webinar-cohere) — LLM, AI • $140,000-$220,000
+- [AI Security and Data Protection @ leading AI security and data protection](https://cohere.ai/security) — Infrastructure, Rust • $140,000-$220,000
+- [ @ AI Startup](https://assets.cohere.ai/blog/text-clustering/askhn_cluster_6a.html) — LLM, AI • $140,000-$220,000
+- [Schedule Jobs @ AI Startup](https://huggingface.co/docs/hub/jobs-schedule) — CUDA, Fine-tuning, Infrastructure, Python • $140,000-$220,000
+- [jobs @ a Hugging Face Space by ...](https://huggingface.co/spaces/huggingface/jobs-actions-dispatcher) — HuggingFace • $140,000-$220,000
+- [viktoroo/jobseek-postings-labelled · Datasets @ Hugging Face](https://huggingface.co/datasets/viktoroo/jobseek-postings-labelled) — Agent • $140,000-$220,000
+- [layerz/finance-engineer-postings · Datasets @ Hugging Face](https://huggingface.co/datasets/layerz/finance-engineer-postings) — LLM, Agent, Python • $140,000-$220,000
+- [[Hiring] Senior Engineer: Local LLMs, llama.cpp, RAG (NVIDIA, G @ Hugging Face Forums](https://discuss.huggingface.co/t/hiring-senior-engineer-local-llms-llama-cpp-rag-nvidia-g-assist/175082) — LLM, RAG, Agent, Python, Rust • $180,000-$280,000
+- [Stability AI Careers: Join Our Team of Innovators @ AI Startup](https://stability.ai/careers) — Generative AI • $140,000-$220,000
+- [Stability AI @ AI Startup](https://stability.ai/) — Infrastructure, Rust, Generative AI • $140,000-$220,000
+- [Contact Confirmation — Stability AI @ AI Startup](https://stability.ai/contact-confirmation) — LLM, AI • $140,000-$220,000
+- [Introducing Our New SVP of Integrity, Ella Irwin — Stability AI @ AI Startup](https://stability.ai/news-updates/introducing-ella-irwin-svp-of-integrity) — Rust, Generative AI • $140,000-$220,000
+- [Stability AI names Hanno Basse as new Chief Technology Officer — Stability AI @ AI Startup](https://stability.ai/news-updates/stability-ai-names-hanno-basse-as-new-chief-technology-officer) — Infrastructure, Generative AI • $140,000-$220,000
+- [Custom AI Workflows for Enterprise Creative Teams | Stability AI Solutions — Stability AI @ Stability AI Solutions — Stability AI](https://stability.ai/strategic-partnerships) — Rust • $140,000-$220,000
+- [Stability AI @ Developer Platform](https://platform.stability.ai/) — Generative AI • $140,000-$220,000
+- [Stable Safety — Stability AI @ AI Startup](https://stability.ai/safety) — RAG, Rust • $140,000-$220,000
+- [AI Implementations: Enterprise Use Cases and Solutions — Stability AI @ brand creative at scale](https://stability.ai/implementations) — LLM, AI • $140,000-$220,000
+- [google jobs @ AI Startup](https://google.com/about/careers/applications) — Rust • $140,000-$220,000
+- [Stability AI @ Developer Platform](https://platform.stability.ai/docs/) — Python • $140,000-$220,000
+- [ambi. @ AI Startup](https://ambi.careers/) — LLM, AI • $140,000-$220,000
+- [Open Models — Guides @ AI Startup](https://stability.ai/guides/category/Open+Models) — LLM, AI • $140,000-$220,000
+- [annapurna labs @ AI Startup](https://amazon.jobs/en/landing_pages/annapurnalabs) — TensorFlow, RAG, Infrastructure, Python • $140,000-$220,000
+- [Stability AI Partners with Iconic Artist Peter Gabriel to ... @ AI Startup](https://stability.ai/news-updates/stability-ai-partners-with-iconic-artist-peter-gabriel-to-launch-series-of-ai-animation-challenges-titled-diffusetogether) — RAG • $140,000-$220,000
+- [Careers @ Replit – Empowering the next billion software ...](https://replit.com/careers) — RAG, Agent • $140,000-$220,000
+- [Replit — Michele Catasta @ AI Startup](https://replit.com/blog/author/pirroh) — LLM, Agent • $140,000-$220,000
+- [Replit – Build apps and sites with AI @ Replit](https://replit.com/) — RAG, Agent, Infrastructure • $140,000-$220,000
+- [Replit — Vaibhav Kumar @ AI Startup](https://replit.com/blog/author/vaibhav-kumar) — LLM, Agent • $140,000-$220,000
+- [The Next Evolution in AI App Building Tools | Agent 4 @ Agent 4](https://replit.com/agent) — Agent • $140,000-$220,000
+- [ @ AI Startup](https://docs.replit.com/learn/foundations/introduction-to-ai) — LLM, Agent • $140,000-$220,000
+- [PruE AI @ Replit Gallery](https://replit.com/gallery/life/education/prue-ai) — LLM, AI • $140,000-$220,000
+- [GogHR — AI Recruitment Platform @ AI Startup](https://replit.com/__replshield?redirect=https%3A%2F%2Fgoghr.ai%2F) — LLM, AI • $140,000-$220,000
+- [Builder Profile: Pietro Schirano @ AI Startup](https://replit.com/blog/pietro-schirano) — LLM, AI • $140,000-$220,000
+- [Replit — Introducing Replit Agent 4: Built for Creativity | Blog @ Blog](https://replit.com/blog/introducing-agent-4-built-for-creativity) — Agent • $140,000-$220,000
+- [Replit – Build apps and sites with AI @ Replit](https://replit.com/?id=ReplitAgent) — RAG, Agent, Infrastructure • $140,000-$220,000
+- [.css @ default);}   ( $135.00 )](https://replit.com/bounties/@jacobkmra/gcp-expert-for-ai-de) — Rust • $140,000-$220,000
+- [LLM Engineer (m/f/d) | Flexgen @ Flexgen](https://flexgen.zya.me/job/llm-engineer-mfd) — LLM, RAG, Agent, Python, NLP • $140,000-$220,000
+- [Machine Learning Engineer @ careers](https://careers.bluewing.vc/companies/jaxon-inc/jobs/41308189-machine-learning-engineer-ai-startup) — LLM, AI • $140,000-$220,000
+- [kalpit borkar | Founding ML Engineer @ Founding ML Engineer](https://linkedin.com/in/kalpitborkar) — LLM, AI • $140,000-$220,000
+- [wassay sajjad | Founding AI ML Engineer @ Founding AI ML Engineer](https://linkedin.com/in/wassay-sajjad) — LLM, RAG, Agent, Fine-tuning, Python • $140,000-$220,000
+- [fattaneh ameri mahabadian | AI Startup Founder & CEO Machine Learning Engineer @ AI Startup](https://linkedin.com/in/fattanehameri) — LLM, AI • $140,000-$220,000
+- [RAG Engineer @ MCI Careers @ MCI](https://www.tealhq.com/job/rag-engineer_7ea1ab88e4bbcc2a829a3490fbf4bb76ed586) — LLM, RAG, LangChain, Python, Rust • $140,000-$220,000
+- [AI Engineer – Generative AI / LLMs / RAG @ AI Startup](https://www.accenture.com/gr-en/careers/jobdetails?id=R00323768_en) — LLM, RAG, Generative AI • $140,000-$220,000
+- [Lead Principal Agentic RAG Engineer – Python, Delhi | BestKaam @ BestKaam](https://www.bestkaam.com/job/lead-principal-agentic-rag-engineer-python-ai-platforms-bridge-ai-delhi-4-8-years-710962) — LLM, RAG, Agent, Python, GenAI • $220,000-$350,000
+- [AI Engineer (RAG Specialist) | jobgrow.pragatishilclasses.org @ jobgrow.pragatishilclasses.org](https://jobgrow.pragatishilclasses.org/job/ai-engineer-rag-specialist) — vLLM, LLM, RAG, LangChain, Agent • $140,000-$220,000
+- [Data Scientist/AI Engineer (LLM/RAG) – eWorker @ AI Startup](https://eworker.co/job/data-scientist-ai-engineer-llm-rag/) — LLM, RAG, NLP • $140,000-$220,000
+- [Senior MLOps Engineer в Svitla Systems, Inc., Київ, Львів, за кордоном, віддалено | DOU @ DOU](https://jobs.dou.ua/companies/svitla-systems-inc/vacancies/366858/?from=rs) — Infrastructure, Rust • $180,000-$280,000
+- [rohil gupta | Lead ML Infrastructure Engineer @ Lead ML Infrastructure Engineer](https://linkedin.com/in/rohil-gupta) — LLM, RAG, Agent, Infrastructure, Python • $140,000-$220,000
+- [Mohsin Khan Shaik — AI Infrastructure & Site Reliability Engineer @ AI Startup](https://mohsinkhanshaik.com/) — Infrastructure, Python, GenAI • $140,000-$220,000
+- [Avinash Sharma — ML Systems Engineer @ AI Startup](https://avinash-sharma.dev/) — TensorFlow, LLM, RAG, LangChain, Agent • $140,000-$220,000
+- [Vite + React + TS @ AI Startup](https://luisenriquemartinez.com/) — LLM, RAG, Agent, Fine-tuning, Infrastructure • $140,000-$220,000
+- [[2026] Senior Machine Learning Engineer, Natural Language Processing @ PhD Early Career | Roblox](https://careers.roblox.com/jobs/7324377) — LLM, Agent, Infrastructure, Generative AI, NLP • $180,000-$280,000
+- [Senior Machine Learning Engineer (NLP) @ Hiire](https://hiire.teamtailor.com/jobs/7978935-senior-machine-learning-engineer-nlp) — LLM, Agent, NLP • $180,000-$280,000
+- [Nlp Engineer Jobs @ AI Startup](https://www.naukri.com/nlp-engineer-jobs) — NLP • $140,000-$220,000
+- [Natural Language Processing (NLP) Engineer | Flexgen @ Flexgen](https://flexgen.zya.me/job/natural-language-processing-nlp-engineer-7) — Python, NLP • $140,000-$220,000
+- [United States, Machine Learning and AI: Natural Language Processing ... @ Apple](https://jobs.apple.com/en-us/search?location=) — LLM, AI • $140,000-$220,000
+- [Senior Machine Learning Engineer @ Spector.ai @ Spector.ai](https://jobs.ashbyhq.com/spector-ai/7014db5e-6303-4641-84fc-7fd72ae94206) — TensorFlow, Infrastructure, GenAI • $180,000-$280,000
+- [Research Engineer @ AI Infrastructure](https://boards.greenhouse.io/appliedintuition/jobs/4572751005?gh_jid=4572751005) — Infrastructure • $140,000-$220,000
+- [Job Application for Data Scientist(m/f/i) @ Wargaming](https://boards.greenhouse.io/wargamingen/jobs/7661906?gh_jid=7661906) — RAG, Python • $140,000-$220,000
+- [Larian Studios @ Larian](https://jobs.lever.co/larian/252fd4ba-7d3c-4186-8da8-48a9f6f111a4) — RAG, Python • $140,000-$220,000
+- [Introducing: Cohere For AI @ AI Startup](https://txt.cohere.ai/introducing-cohere-for-ai/) — LLM, AI • $140,000-$220,000
+- [The Power of Multilingual Semantic Search @ AI Startup](https://info.cohere.ai/nlpjumpstartsemanticsearch) — NLP • $140,000-$220,000
+- [Starting the Ch @ Fine](https://docs.cohere.ai/docs/chat-starting-the-training) — LLM, Fine-tuning, Python • $140,000-$220,000
+- [viktor-shcherb/jobseek-postings-labelled · Datasets @ Hugging Face](https://huggingface.co/datasets/viktor-shcherb/jobseek-postings-labelled) — Agent • $140,000-$220,000
+- [Engineering | Replit @ Replit](https://replit.com/blog/category/eng) — LLM, RAG, Agent • $140,000-$220,000
+- [Meet The $9 Billion AI Company Reimagining Vibe Coding @ AI Startup](https://replit.com/news/funding-announcement) — Agent • $140,000-$220,000
+- [AI adoption starts with truth | Replit @ Replit](https://replit.com/blog/ai-adoption) — Agent, Rust • $140,000-$220,000
+- [erdene @ Ochir Munkhzul](https://linkedin.com/in/erdene-ochir-munkhzul-9611aa146) — LLM, Agent • $140,000-$220,000
+- [Senior Gen AI Engineer | Flexgen @ Flexgen](https://flexgen.zya.me/job/senior-gen-ai-engineer) — LLM, RAG, LangChain, Agent, Infrastructure • $180,000-$280,000
+- [Senior AI Engineer — Retrieval & Knowledge (RAG) @ Fermi…](https://jobalert.world/jobs/senior-ai-engineer-retrieval-knowledge-rag-at-fermi-ai-bangalore-india-55798) — RAG, Python • $180,000-$280,000
+- [Arthur Stevenson @ AI Startup](https://linkedin.com/in/arthurcstevenson) — LLM, Agent, Infrastructure, Python • $140,000-$220,000
+- [Senior Computer Vision Engineer @ AI Startup](https://aijobs.ai/index.php/job/senior-computer-vision-engineer) — TensorFlow, Fine-tuning, Computer Vision • $180,000-$280,000
+- [United States, Machine Learning and AI: Natural Language Processing ... @ Apple](https://jobs.apple.com/en-us/search?location=united-states-USA&team=natural-language-processing-and-speech-technologies-MLAI-NLP) — NLP • $140,000-$220,000
+- [NLP People: Jobs @ AI Startup](https://nlppeople.com/jobs/) — NLP • $140,000-$220,000
+- [Senior Machine Learning Engineer @ Gen Digital Inc. @ Gen](https://jobs.ashbyhq.com/gen-digital/6df99df3-bbd5-4a49-b413-66ff7790a428) — RAG, Rust • $180,000-$280,000
+- [Senior AI Engineer @ Seven AI @ Seven](https://jobs.ashbyhq.com/sevenai/f9e17dae-6ad4-4b86-a0cd-55c3b450b7f7) — LLM, RAG, LangChain, Agent, Python • $180,000-$280,000
+- [Staff Machine Learning Engineer | Abnormal AI @ Abnormalsecurity](https://boards.greenhouse.io/abnormalsecurity/jobs/6622193003?gh_src=Menlo+Ventures+job+board) — LLM, AI • $180,000-$280,000
+- [AI jobs | Solve the world's most important problems @ Dominodatalab](https://boards.greenhouse.io/dominodatalab/jobs/3199854) — Rust • $140,000-$220,000
+- [Unity Careers @ Unity3d](https://boards.greenhouse.io/unity3d/jobs/7967158) — LLM, AI • $140,000-$220,000
+- [Pooled screening of RNA libraries to advance ML design @ Inceptive](https://boards.greenhouse.io/inceptive/jobs/4674214007) — Infrastructure, Generative AI • $140,000-$220,000
+- [Plenti @ Plenti](https://jobs.lever.co/plenti/2a0ab049-b8d3-4db5-bce9-acfcce9173e2) — LLM, RAG, Agent, Infrastructure, Python • $140,000-$220,000
+- [Hostinger @ Hostinger](https://jobs.lever.co/hostinger/607cd5b1-d845-4ade-bd37-1fa26b14804b) — LLM, LangChain, Fine-tuning, Python, Generative AI • $140,000-$220,000
+- [nahc.io @ Nahc](https://jobs.lever.co/nahc/43bd56c8-4822-44d7-b2f5-d9d0f362eb4d) — LLM, RAG, Python • $140,000-$220,000
+- [PatSnap @ Senior AI Engineer — LLM Agents](https://jobs.lever.co/patsnap/c6e4c4a8-55e6-47e7-86f1-5c9dc668f2e0) — LLM, RAG, Agent, Python, Rust • $140,000-$220,000
+- [Mistral AI @ Singapore](https://jobs.lever.co/mistral/5538042e-f157-4a2c-a9ee-e412de9ba761/apply) — LLM, Fine-tuning • $140,000-$220,000
+- [Cprime @ Cprime](https://jobs.lever.co/cprime/32fe9eef-116d-4421-a2e5-dde4f29f3233/apply) — LLM, RAG, Python, GenAI • $140,000-$220,000
+- [Protolabs @ ML Platform & Full stack AI Engineer](https://jobs.lever.co/protolabs/6279cf0a-90b9-4d88-ae47-096e389f3bfe/apply) — LLM, AI • $140,000-$220,000
+- [Machine Learning Engineer @ Veo](https://jobs.lever.co/veo/ca215f17-d069-41b6-b4c3-8436a36e2964?lever-source%5B%5D=jobs.courtsidevc.com) — RAG, Computer Vision • $140,000-$220,000
+- [PayJoy @ Fraud](https://jobs.lever.co/payjoy/4eabe147-7c4c-44a1-bc36-6cec2c47d5c5) — Agent, Infrastructure • $140,000-$220,000
+- [Zoox @ Perception Mapping](https://jobs.lever.co/zoox/c60eadf5-a16d-4d8e-ae49-d6f9b3d2de01) — CUDA, Python, Computer Vision • $189,000-$227,000
+- [Zoox @ MLA Perception Offline Driving Intelligence](https://jobs.lever.co/zoox/03b2ccc5-85ac-4f55-9633-9215451246b2) — LLM, RAG, Infrastructure, Python • $189,000-$257,000
+- [Woven by Toyota @ Senior Machine Learning Engineer, Autonomy](https://jobs.lever.co/woven-by-toyota/4330d914-b2ea-46e3-ae43-195d49b47d5f) — RAG, Computer Vision • $140,000-$220,000
+- [Whoop @ Senior Machine Learning Engineer, Insights](https://jobs.lever.co/whoop/40d1d272-c32e-4592-88ac-9b2775c3ec8b) — Python • $140,000-$220,000
+- [Engineering \ Anthropic @ AI Startup](https://www.anthropic.com/engineering) — Agent, Infrastructure • $140,000-$220,000
+- [Home \ Anthropic @ AI Startup](https://www.anthropic.com/) — Agent • $140,000-$220,000
+- [Software Engineer, Habit @ (Online Data)](https://openai.com/careers/software-engineer-habitat-(online-data)-seattle/) — RAG, Infrastructure • $140,000-$220,000
+- [river cities engineering, inc. @ AI Startup](https://rivercities.us/) — RAG • $140,000-$220,000
+- [truss @ AI Startup](https://hiretruss.com/) — Python • $140,000-$220,000
+- [silimate (yc s23) @ AI Startup](https://silimate.com/) — Python • $140,000-$220,000
+- [NextGig-Rocks/global-job-postings-multi-ats · Datasets @ Hugging Face](https://huggingface.co/datasets/NextGig-Rocks/global-job-postings-multi-ats) — LLM, NLP • $140,000-$220,000
+- [vmal/jobs_dataset · Datasets @ Hugging Face](https://huggingface.co/datasets/vmal/jobs_dataset) — Infrastructure, HuggingFace, Generative AI • $140,000-$220,000
+- [Stability AI Announcement — Stability AI @ AI Startup](https://stability.ai/news-updates/stabilityai-announcement) — Generative AI • $140,000-$220,000
+- [amazon fulfillment technologies & robotics @ AI Startup](https://amazon.jobs/) — LLM • $140,000-$220,000
+- [Getting started | Knowledge Base @ Knowledge Base](https://kb.stability.ai/knowledge-base/getting-started) — LLM, AI • $140,000-$220,000
+- [Replit @ AI Startup](https://replit.com/redirect/hack.with.us) — LLM, AI • $140,000-$220,000
+- [Replit Learn @ Master AI and vibe coding | Replit Learn](https://learn.replit.com/) — LLM, AI • $140,000-$220,000
+- [Internship Experience At Replit | Replit @ Replit](https://replit.com/blog/internship-experience-at-replit) — LLM, AI • $140,000-$220,000
+- [Replit — Campus x Replit: Vibe Coding 101 Course @ Friendly Course with Campus.edu](https://replit.com/blog/campus-vibe-coding-101-course) — LLM, AI • $140,000-$220,000
+- [ @ AI Startup](https://docs.replit.com/references/agent/skills-directory) — LLM, Agent • $140,000-$220,000
+- [Replit — Replit Learn Launches @ AI Startup](https://replit.com/blog/replit-learn) — LLM, Agent • $140,000-$220,000
+- [How to make AI in Python | Replit @ Replit](https://replit.com/discover/how-to-make-ai-in-python) — TensorFlow, RAG, Agent, Python, Rust • $140,000-$220,000
+- [Agent @ Replit](https://replit.com/products/agent) — Agent • $140,000-$220,000
+- [Replit — Replit Empowers Synctera to Find Hidden Talent @ AI Startup](https://replit.com/blog/Synctera) — LLM, AI • $140,000-$220,000
+- [Get Started with LLMs: AI Camp x Replit Course Now Available | Replit @ Replit](https://replit.com/blog/aicampxreplit) — LLM, Agent, Python • $140,000-$220,000
+- [Your first app | Replit Learn @ Replit Learn](https://learn.replit.com/docs/ai-foundations/lesson-4) — Agent • $140,000-$220,000
+- [Build AI Apps Instantly with Replit AI | Replit @ Replit](https://replit.com/blog/ai-integrations) — Agent • $140,000-$220,000
+- [Replit Enterprise — The world's leading AI platform for every team @ AI Startup](https://replit.com/enterprise) — Agent • $140,000-$220,000
+- [AI App Builder to Create Apps Without Coding | Replit @ Replit](https://replit.com/usecases/ai-app-builder) — RAG • $140,000-$220,000
+- [Serhii Nechyporchuk - Founding Machine Learning Engineer @ Casca](https://theorg.com/org/cascading-ai/org-chart/serhii-nechyporchuk) — LLM, AI • $140,000-$220,000
+- [Samet Aydın, Co @ founder of LexismAI | ML Engineer & Python Developer](https://sametaydin.me/) — Python, Computer Vision • $140,000-$220,000
+- [Yash Sharma @ AI Startup](https://linkedin.com/in/sh-yash) — LLM, RAG, Agent, Infrastructure, Python • $140,000-$220,000
+- [AI Retrieval & Agent Platform Engineer @ Siemens](https://jobs.siemens.com/en_US/externaljobs/JobDetail/512534) — LLM, RAG, Agent, Infrastructure, Python • $140,000-$220,000
+- [Senior AI Engineer @ Teradata](https://careers.teradata.com/jobs/219885/senior-ai-engineer) — LLM, RAG, Agent, Infrastructure, Generative AI • $180,000-$280,000
+- [Senior AI Engineer @ Teradata](https://careers.teradata.com/jobs/220024/senior-ai-engineer) — LLM, RAG, Agent • $180,000-$280,000
+- [Natuvion GmbH @ Berlin, Berlin, Germany](https://natuvion.recruitee.com/o/ai-engineer-mfd/) — LLM, RAG, Agent, Fine-tuning, Python • $140,000-$220,000
+- [AI Engineer / Architect (Agentic RAG) | Softtek @ Softtek](https://softtek.eightfold.ai/careers/job/893394960910) — RAG, Agent • $140,000-$220,000
+- [Staff ML Infrastructure Engineer @ General Motors | Built In](https://builtin.com/job/staff-ml-infrastructure-engineer/9967470) — Infrastructure • $180,000-$280,000
+- [About | Logan Thorneloe @ Logan Thorneloe](https://loganthorneloe.com/) — Agent, Infrastructure, Rust • $140,000-$220,000
+- [Sudipta Pathak, PhD | ML Systems & Infrastructure Engineer @ ML Systems & Infrastructure Engineer](https://sudiptapathak.com/) — RAG, Agent, Infrastructure, Python, Rust • $140,000-$220,000
+- [Sandro Lombardi | Computer Vision Engineer | AI and Automation Enthusiast | Freelancer and Independent Contractor @ Freelancer and Independent Contractor](https://sandrolombardi.com/en/) — LLM, RAG, Python, Computer Vision • $140,000-$220,000
+- [Racha Salhi @ Evercam | Himalayas](https://himalayas.app/@rachasalhi) — Fine-tuning, Infrastructure, Computer Vision • $140,000-$220,000
+- [Konstanty Szumigaj @ Computer Vision Engineer](https://konstantyszumigaj.com/) — CUDA, RAG, Python, Computer Vision • $140,000-$220,000
+- [Home | Nikunj Rajesh Lad @ Nikunj Rajesh Lad](https://nikunjlad.dev/) — Computer Vision, NLP • $140,000-$220,000
+- [Senior NLP Engineer @ Theta Lake](https://thetalake.com/careers/senior-nlp-engineer/) — NLP • $180,000-$280,000
+- [NLP Engineer: Japan’s Most Trusted Business Media · Specialized Group @ AI Startup](https://www.specialized-group.com/en/job/nlp-engineer-japans-most-trusted-business-media-platform-669906) — Python, Rust, NLP • $140,000-$220,000
+- [R&D Engineer 'NLP' | HubMub @ HubMub](https://www.hubmub.com/jobs/1018018/rd-engineer-nlp) — LLM, Agent, NLP • $140,000-$220,000
+- [Junior NLP Engineer position @ Neurotechnology](https://www.neurotechnology.com/career/junior-nlp-researcher.html) — LLM, Infrastructure, NLP • $140,000-$220,000
+- [NLP Engineer Job @ Gurugram, Haryana, India (I Flow Inc)](https://www.iitjobs.com/job/nlp-engineer-gurugram-haryana-india-413003) — LLM, Python, NLP • $140,000-$220,000
+- [Retell AI @ Retell Ai](https://jobs.ashbyhq.com/retell-ai/dcc921b7-fccc-459a-93c2-10adb4aa147a) — LLM, AI • $140,000-$220,000
+- [Machine Learning Engineer I, Growth Relevance @ Handshake](https://jobs.ashbyhq.com/handshake/dd1fd4fc-6f6d-4a3d-8c54-dd91ed48dd70) — LLM, AI • $140,000-$220,000
+- [Staff Software Engineer, Java Spring (Backend) | Okta @ Okta](https://boards.greenhouse.io/okta/jobs/6620334) — Agent, Infrastructure, Rust • $180,000-$280,000
+- [Animoca Brands Limited @ AI Engineer / Coder](https://jobs.lever.co/animocabrands/5b02cab4-4690-41e8-bfc7-471f21eb1c40) — RAG, Python, Rust • $140,000-$220,000
+- [dLocal @ Dlocal](https://jobs.lever.co/dlocal/dfeb66fc-92ce-4e02-8467-d0364223818b) — Agent • $140,000-$220,000
+- [Company \ Anthropic @ AI Startup](https://www.anthropic.com/company?type=company) — LLM, AI • $140,000-$220,000
+- [Designing AI resistant technical evaluations \ Anthropic @ resistant technical evaluations](https://www.anthropic.com/engineering/AI-resistant-technical-evaluations) — LLM, AI • $140,000-$220,000
+- [ryang2/linkedin-job-scrape · Datasets @ Hugging Face](https://huggingface.co/datasets/ryang2/linkedin-job-scrape) — Python • $140,000-$220,000
+- [ai career launchpad @ AI Startup](https://linkedin.com/showcase/ai-career-launchpad) — LangChain, Python, GenAI, Generative AI • $140,000-$220,000
+- [Introducing Stable Code Instruct 3B — Stability AI @ AI Startup](https://stability.ai/news-updates/introducing-stable-code-instruct-3b) — RAG, Python, Rust • $140,000-$220,000
+- [Juan Olloniego — Co @ Founder & Head of Engineering @ Zapia AI](https://jolloniego.github.io/) — Agent, Infrastructure, GenAI, Computer Vision, NLP • $140,000-$220,000
+- [Ardhendu Shekhar Tripathi @ AI Startup](https://linkedin.com/in/ardhendu-shekhar-tripathi-65126a39) — LLM, AI • $140,000-$220,000
+- [Jay Jhaveri @ AI Startup](https://linkedin.com/in/jayjhaveri1906) — LLM • $140,000-$220,000
+- [Senior AI Engineer @ Teradata](https://careers.teradata.com/jobs/219886/senior-ai-engineer) — LLM, RAG, Agent, Infrastructure, Generative AI • $180,000-$280,000
+- [GenAI Engineer @ RebelDot](https://careers.rebeldot.com/jobs/7494393-genai-engineer) — LLM, RAG, LangChain, Agent, Python • $140,000-$220,000
+- [Daniel Cavalli | CV – dan.rio @ CV – dan.rio](https://dan.rio/en/cv.html) — Infrastructure, Data Engineering • $140,000-$220,000
+
+### Remote (196 jobs)
+
+- [Full Stack AI Engineer (Data) @ Techtorch](https://jobs.ashbyhq.com/techtorch/916acee0-eb0e-4d4a-8e5f-9bc1b039f1e4) — LLM, RAG, Agent, Infrastructure, Python • $140,000-$220,000
+- [Senior AI Software Engineer, Agent Systems @ Scale Army Careers @ Scale](https://jobs.ashbyhq.com/scale%20Army%20Careers/c1aa7444-f7dc-4394-95f3-2fb75d931bdb) — Agent, Rust • $180,000-$280,000
+- [AI Engineer @ Blacksmith Agency @ Blacksmith](https://jobs.ashbyhq.com/Blacksmith%20Agency/5dfccfc8-a527-44b9-b3ec-eaee25fc3f0f?embed=js) — LLM, LangChain, Agent, Python • $140,000-$220,000
+- [Software Engineer @ AI Systems](https://jobs.ashbyhq.com/xbowcareers/304f9f4e-477e-4d29-a39a-7c212738a0c8) — LLM • $140,000-$220,000
+- [Research Engineer @ AI Systems](https://jobs.ashbyhq.com/yotta/5ad886ff-a109-424e-910d-bb764a5201e9) — vLLM, CUDA, LLM, Infrastructure, Python • $140,000-$220,000
+- [Applied AI Engineer @ AI Neobank App (Germany)](https://jobs.ashbyhq.com/bjakcareer/4226ad7e-a43a-4a8c-b30f-80aadf39b69e) — LLM, RAG, Agent, Python • $140,000-$220,000
+- [AI & Data Engineer @ Tern Travel @ Tern](https://jobs.ashbyhq.com/tern/587a90f9-8c2f-4a9d-b837-092bc887e016) — Infrastructure, Rust • $140,000-$220,000
+- [Machine Learning Engineer, New Grad @ Quora (Remote)](https://jobs.ashbyhq.com/quora/3eb7e80e-6a0d-41b6-8ee4-f62421c486e4) — LLM, RAG, Agent, Rust, Generative AI • $140,000-$220,000
+- [Senior Machine Learning Engineer @ Bjak @ Bjak](https://jobs.ashbyhq.com/bjakcareer/01f383b8-bc47-4a76-9362-c6fddf2c1aad) — Python • $180,000-$280,000
+- [Senior Machine Learning Engineer @ TensorWave @ TensorWave](https://jobs.ashbyhq.com/tensorwave/a8d30c84-6cda-4504-ae3d-f427b46d42c3) — Infrastructure, Python • $180,000-$280,000
+- [Machine Learning Research Engineer @ Roboflow @ Roboflow](https://jobs.ashbyhq.com/roboflow/40c3389e-c7ea-4054-8c90-05b1beb38bff) — RAG, Python, Computer Vision • $140,000-$220,000
+- [Canals @ ML/AI Engineer](https://jobs.ashbyhq.com/silver/b300b2f8-11b0-4dc7-bd7c-ccb62cc04aba) — LLM, RAG, Agent, Infrastructure • $140,000-$220,000
+- [Job Application for AI Engineer @ TEGNA Inc.](https://boards.greenhouse.io/tegnainc/jobs/4870922007?gh_jid=4870922007) — RAG, Rust • $140,000-$220,000
+- [Job Application for Staff ML Engineer, Applied AI @ TIFIN](https://boards.greenhouse.io/embed/job_app?for=tifin&token=5381137004) — LLM, Agent, Fine-tuning, Generative AI • $180,000-$280,000
+- [Kobie Marketing @ Kobie](https://jobs.lever.co/kobie/d14582bd-64a2-439e-a7e3-a50ce7270a3d) — LLM, LangChain, Agent, Python • $140,000-$220,000
+- [Mitek Systems @ AI Engineer (Applied AI & Data Systems)](https://jobs.lever.co/miteksystems-2/9bb92f27-43db-40dc-8487-0ca06f2763c9) — LLM, RAG, Agent, Rust, Computer Vision • $140,000-$220,000
+- [Gurobi Optimization @ Remote)](https://jobs.lever.co/GurobiOptimization/2f65b55d-db9c-4ff5-b668-e7db40417e0f) — LLM, RAG, LangChain, Agent, Python • $140,000-$220,000
+- [PointClickCare @ Principal AI Engineer (Autonomous Agent) (CA)](https://jobs.lever.co/pointclickcare/282bd910-2829-4d2a-a024-99384a3f5c75) — Agent, GenAI, Generative AI • $140,000-$220,000
+- [Principal Software Engineer, B2B Engineering | OpenAI @ OpenAI](https://openai.com/careers/principal-software-engineer-b2b-engineering-remote-us/) — RAG, Infrastructure • $220,000-$350,000
+- [ @ AI Startup](https://assets.cohere.ai/blog/text-clustering/askhn_cluster_5a.html) — LLM, AI • $140,000-$220,000
+- [devfound @ AI Startup](https://linkedin.com/company/devfound-ai) — LLM, AI • $140,000-$220,000
+- [edwarddgao/open-apply-jobs · Datasets @ Hugging Face](https://huggingface.co/datasets/edwarddgao/open-apply-jobs) — HuggingFace • $140,000-$220,000
+- [Sundaydream/tech-jobs-dataset-2026 · Datasets @ Hugging Face](https://huggingface.co/datasets/Sundaydream/tech-jobs-dataset-2026) — NLP • $140,000-$220,000
+- [The Self @ Driving Company | Replit](https://replit.com/blog/self-driving-company) — RAG, Agent, Infrastructure, Rust • $140,000-$220,000
+- [AI Job Board Website Builder | Create for Free @ Create for Free](https://replit.com/build/job-board-website-builder) — LLM, AI • $140,000-$220,000
+- [Remote Artificial Intelligence Engineer (AI) Jobs in 2026 @ AI Startup](https://wellfound.com/role/r/artificial-intelligence-engineer) — Agent • $140,000-$220,000
+- [DaCosta Agyei — AI Engineer & Full @ Stack Developer in Ghana | Hire Remote](https://dacostaagyei.com/) — TensorFlow, LLM, RAG, LangChain, Fine-tuning • $140,000-$220,000
+- [How to Land Remote AI Engineer Jobs in 2026 @ AI Startup](https://www.peopleinai.com/blog/ai-engineer-jobs-remote) — Python • $140,000-$220,000
+- [LlamaIndex Engineer | Hire Rofee'ah T. | RemoteAI @ RemoteAI](https://remoteai.io/v2/hire/@rofeeah) — LLM, RAG, LangChain, Agent, Infrastructure • $140,000-$220,000
+- [Hugging Face & RAG Expert | Hire Kautuk A. | RemoteAI @ RemoteAI](https://remoteai.io/v2/hire/@kautuk) — RAG, LangChain, Agent, Python, NLP • $140,000-$220,000
+- [Hassan Naeem — Software Engineer & AI Engineer | Full @ Stack, Mobile, GenAI](https://hassan-naeem.com/) — TensorFlow, LLM, RAG, LangChain, Agent • $140,000-$220,000
+- [Faisal Nadeem @ AI Startup](https://hackernoon.com/u/faisalnadeem_50au00s) — LLM, RAG • $140,000-$220,000
+- [🚀 Senior AI Engineer | 100% Remote | Bulgaria | Stefka Kachakova @ Stefka Kachakova](https://www.linkedin.com/posts/stefka-kachakova-046986312_senior-ai-engineer-100-remote-bulgaria-activity-7482313975544852480-sh8x) — LLM, RAG, Agent, Python, GenAI • $180,000-$280,000
+- [OpenAI & LLM Engineer | Hire Marcus F. | RemoteAI @ RemoteAI](https://remoteai.io/v2/hire/@marcusferrell) — TensorFlow, LLM, Agent, Python, Generative AI • $140,000-$220,000
+- [LangChain & RAG Engineer | Hire Mohamed K. | RemoteAI @ RemoteAI](https://remoteai.io/v2/hire/@mohamedk) — TensorFlow, LLM, RAG, LangChain, Agent • $140,000-$220,000
+- [🚀 Lead AI Engineer | Remote | Klaudia Bulak @ Klaudia Bulak](https://www.linkedin.com/posts/klaudia-bulak-592793150_ai-python-azure-activity-7439631351038918657-xf02) — RAG, Python, GenAI • $140,000-$220,000
+- [Remote LLM Engineer – Mid @ Level · $100K | RemoteAI](https://remoteai.io/v2/jobs/llm-engineer-s7-5icm6-01kq74xwnazz3asykdw3q6kpnn) — LLM, RAG, LangChain, Fine-tuning, Python • $140,000-$220,000
+- [Senior LLM Engineer | Taskium @ Taskium](https://taskium.42web.io/job/senior-llm-engineer-2) — vLLM, LLM, RAG, Agent, Python • $180,000-$280,000
+- [Llm engineer jobs in Remote @ AI Startup](https://www.indeed.com/q-llm-engineer-l-remote-jobs.html) — LLM, RAG • $140,000-$220,000
+- [Remote LLM Engineer Jobs @ AI Startup](https://dailyremote.com/remote-llm-engineer-jobs) — LLM, RAG, Rust • $140,000-$220,000
+- [Remote LLM Engineer Jobs – Apply Now @ AI Startup](https://www.remoterocketship.com/us/jobs/llm-engineer/) — LLM • $140,000-$220,000
+- [Senior LLM Systems Engineer @ Risk Labs](https://www.jobless.dev/jobs/senior-llm-systems-engineer-at-risk-labs-977a4b1e) — LLM, RAG, Agent, Python • $180,000-$280,000
+- [Software Engineer @ LLM Systems (Remote)](https://jobsy.42web.io/job/software-engineer-llm-systems-remote-3) — LLM, RAG, Infrastructure • $140,000-$220,000
+- [Remote Llm Jobs @ AI Startup](https://www.workingnomads.com/remote-llm-jobs) — LLM • $140,000-$220,000
+- [Create Next App @ AI Startup](https://www.deepakkarkala.com/) — LLM, RAG, Agent, Fine-tuning, Python • $140,000-$220,000
+- [I’m excited to share th @ I’ve joined Spur as a Founding Applied AI Engineer!](https://www.linkedin.com/posts/chiragkchadha_im-excited-to-share-that-ive-joined-spur-activity-7481370985078882305-mb9z) — RAG • $140,000-$220,000
+- [Generative AI Engineer | Remotara @ Remotara](https://remotara.wuaze.com/job/generative-ai-engineer-12) — LLM, RAG, Agent, Rust, GenAI • $140,000-$220,000
+- [[Remote] GenAI and Agentic AI Engineer | Remoteforge @ Remoteforge](https://remoteforge.2kool4u.net/remote-jobs/remote-genai-and-agentic-ai-engineer) — LLM, RAG, Agent, GenAI, Generative AI • $140,000-$220,000
+- [Principal Consultant, GenAI  | Lovelytics | 140k @ 180k/year | Remote Arlington | June 2026](https://jobera.com/job/lovelytics-principal-consultant-genai-897101ab/) — LLM, RAG, LangChain, Agent, Fine-tuning • $220,000-$350,000
+- [Staff Backend AI Engineer, Remote | Flexgen @ Flexgen](https://flexgen.zya.me/job/staff-backend-ai-engineer-remote) — RAG, Agent, Infrastructure, Python • $180,000-$280,000
+- [Senior AI ML Engineer @ Remote](https://www.dice.com/job-detail/4e8032c0-16ee-411b-a823-cee6110253cf) — RAG, LangChain, Agent, Python, Generative AI • $180,000-$280,000
+- [Remote Software Engineer II – AI Engineer (w/ skills in Deployment) @ RobertHalf • $85k – $124k](https://hiring.camp/job/Plnp6Z) — LLM, RAG, Agent, Python, GenAI • $140,000-$220,000
+- [SENIOR AI / GENAI ENGINEER @ AI Startup](https://jobhub.jl.liveblog365.com/remote-jobs/senior-ai-genai-engineer) — LLM, RAG, LangChain, Agent, Python • $180,000-$280,000
+- [Remote AI Engineer Jobs – Apply Now @ AI Startup](https://www.remoterocketship.com/us/jobs/ai-engineer/) — Agent, Python • $140,000-$220,000
+- [Senior Software Engineer @ Elsevier | Built In](https://builtin.com/job/senior-software-engineer-ii/8314087) — LLM, RAG, Python, Rust, NLP • $180,000-$280,000
+- [Remote RAG Systems Engineer – Mid @ Level · $100 | RemoteAI](https://remoteai.io/v2/jobs/rag-systems-engineer-scirvex-intelligence-vxxstc-01ks0kkngww2a9pg1tv330z7xt) — RAG, LangChain, Infrastructure, Python, NLP • $140,000-$220,000
+- [Infinity Technologies @ AI Startup](https://www.infinitytechnologies.pro/vacancies/llm-rag-engineer) — LLM, RAG, LangChain, Python • $140,000-$220,000
+- [RAG + Agentic AI Engineer (India) (Remote) | codvo @ team | Remote Pune](https://jobera.com/job/codvo-team-rag-agentic-ai-engineer-india-remote-ddfdeffe/) — LLM, RAG, Agent, Fine-tuning, Python • $140,000-$220,000
+- [AI Engineer (RAG Specialist) | Careernovaa @ Careernovaa](https://careernovaa.22web.org/job/ai-engineer-rag-specialist) — vLLM, LLM, RAG, LangChain, Agent • $140,000-$220,000
+- [AIML Software Developer RAG @ Kloud Hire](https://www.kloudhire.com/jobs/view/14454/AIML-Software-Developer-RAG) — LLM, RAG, LangChain, Agent, Python • $140,000-$220,000
+- [Rag Retrieval Augmented Generation Jobs, Employment @ AI Startup](https://www.indeed.com/q-rag-retrieval-augmented-generation-jobs.html) — LLM, RAG, Agent, Python, GenAI • $130,000-$140,000
+- [Remote Prompt Engineering Jobs @ AI Startup](https://www.workingnomads.com/remote-prompt-engineering-jobs) — LLM, AI • $140,000-$220,000
+- [Remote AI Prompt Engineer (No Coding Required) | Flexgen @ Flexgen](https://flexgen.zya.me/job/remote-ai-prompt-engineer-no-coding-required-2) — LLM • $140,000-$220,000
+- [Senior Prompt Engineer – Generative AI, LLMs @ Gruve](https://www.remotery.co/job/remote-senior-prompt-engineer-generative-ai-llms-at-gruve-in-india-freelance-c22206) — LLM, RAG, Agent, Infrastructure, Generative AI • $180,000-$280,000
+- [FT/PT Remote AI Prompt Engineering & Evaluation @ Will Train](https://weworkremotely.com/remote-jobs/dataannotation-tech-ft-pt-remote-ai-prompt-engineering-evaluation-will-train) — LLM, AI • $140,000-$220,000
+- [Prompt Engineer_ Remote | SkillDock @ SkillDock](https://skilldock.lovestoblog.com/job/prompt-engineer_-remote) — RAG, Agent, Python, GenAI, Generative AI • $140,000-$220,000
+- [Junior Prompt Engineer (CDI) @ Casablanca | Jobiglo](https://ma.jobiglo.com/emploi-junior-prompt-engineer-j-6a6015e0a17165a0c60be836) — LLM, AI • $140,000-$220,000
+- [Lead Data Scientist, AI Enablement (Remote) @ Remote | Dice.com](https://www.dice.com/job-detail/f5201b00-8074-4553-b38c-b6a3bbdef4b1) — LLM, RAG, Agent, Python • $140,000-$220,000
+- [[Remote] AI Data Scientist | Remoteforge @ Remoteforge](https://remoteforge.2kool4u.net/remote-jobs/remote-ai-data-scientist) — LLM, RAG, Agent • $140,000-$220,000
+- [[Remote] Senior Data Scientist | Flexgen @ Flexgen](https://flexgen.zya.me/job/remote-senior-data-scientist-34) — LLM, RAG, Agent, Python, Generative AI • $180,000-$280,000
+- [Sr. Principal Data Scientist - Remote @ UnitedHealth Group](https://careers.unitedhealthgroup.com/job/minnetonka/sr-principal-data-scientist-remote/34088/95426609072) — Data Engineering • $220,000-$350,000
+- [Data Scientist & AI/ML SME @ Remote | Dice.com](https://www.dice.com/job-detail/88cc0a7c-0b1b-4859-9aa2-a1ff34377359) — RAG, Infrastructure • $140,000-$220,000
+- [Data Scientist, AI Enablement (Remote) | Remoteforge @ Remoteforge](https://remoteforge.2kool4u.net/remote-jobs/data-scientist-ai-enablement-remote) — LLM, RAG, Agent, Python, NLP • $140,000-$220,000
+- [Global data scientist: end @ Jobijoba](https://www.jobijoba.es/oferta-empleo/69/38ec5204816c407f3fa3bb82abf139ec) — LLM, AI • $140,000-$220,000
+- [Data Scientist, AI Enablement (Remote) | Worksynergy @ Worksynergy](https://worksynergy.10001mb.com/remote-jobs/data-scientist-ai-enablement-remote) — LLM, RAG, Agent, Python, NLP • $140,000-$220,000
+- [Remote Data Scientist jobs – Senior Machine Learning Engineer (Python, TensorFlow, AWS) – Full‑Time – $120K‑$150K – Raymore, Missouri Remote | Flexgen @ Flexgen](https://flexgen.zya.me/job/remote-data-scientist-jobs-senior-machine-learning-engineer-python-tensorflow-aws-fulltime-120k150k-2) — TensorFlow, RAG, Python • $180,000-$280,000
+- [Senior Data Scientist, Engineer @ G](https://www.remoterocketship.com/company/globalization-partners/jobs/senior-data-scientist-engineer-india-remote/) — LLM, Infrastructure, NLP • $180,000-$280,000
+- [Data Scientist jobs in Remote @ AI Startup](https://www.indeed.com/q-data-scientist-l-remote-jobs.html) — RAG • $140,000-$220,000
+- [Remote Data Scientist Jobs @ AI Startup](https://dailyremote.com/remote-data-scientist-jobs) — RAG, Rust • $140,000-$220,000
+- [ML Infrastructure Engineer @ Nebius](https://remoteleaf.com/company/nebius/ml-infrastructure-engineer-united-states/) — vLLM, CUDA, LLM, Infrastructure, Python • $140,000-$220,000
+- [Dmitry Ivanov | ML Engineer & MLOps @ ML Engineer & MLOps](https://portfolio.dmitryivanov.dev/) — Agent, Python, NLP • $140,000-$220,000
+- [Senior Engineer, Computer Vision (Remote @ US) | Flexgen](https://flexgen.zya.me/job/senior-engineer-computer-vision-remote-us-4) — Computer Vision • $180,000-$280,000
+- [Jerardh J. @ AI Startup](https://linkedin.com/in/jerardh) — LLM, Agent, Infrastructure, Python, Generative AI • $140,000-$220,000
+- [Machine Learning Engineer @ Computer Vision](https://www.broxer.com/it/jobs/machine-learning-engineer-computer-vision-cbwhbf) — RAG, Python, Computer Vision • $140,000-$220,000
+- [Remote Computer Vision Engineer Jobs – Apply Now @ AI Startup](https://www.remoterocketship.com/us/jobs/computer-vision-engineer/) — Computer Vision • $140,000-$220,000
+- [Computer Vision Engineer | Hire Priyanshu S. | RemoteAI @ RemoteAI](https://remoteai.io/v2/hire/@priyanshu) — LLM, Infrastructure, Python, Computer Vision • $140,000-$220,000
+- [richard lin | Computer Vision Software Engineer @ Computer Vision Software Engineer](https://linkedin.com/in/richard-lin-276b46126) — Computer Vision • $140,000-$220,000
+- [Computer vision jobs @ AI Startup](https://www.dice.com/jobs/q-computer+vision-jobs) — RAG, Computer Vision • $140,000-$220,000
+- [Natural Language Processing Engineer Jobs, Employment @ AI Startup](https://www.indeed.com/q-natural-language-processing-engineer-jobs.html) — RAG, Python, NLP • $140,000-$220,000
+- [ML Engineer – NLP (Remote Position) | SkillDock @ SkillDock](https://skilldock.lovestoblog.com/job/ml-engineer-nlp-remote-position-4) — TensorFlow, Python, NLP • $140,000-$220,000
+- [Applied AI Engineer @ Bjak @ Bjak](https://jobs.ashbyhq.com/bjakcareer/a88550fb-d5ce-4ecf-ba8a-9583629a02d7) — LLM, RAG, Agent, Python, Rust • $140,000-$220,000
+- [Senior AI Software Engineer @ LATAM](https://jobs.ashbyhq.com/futureproofing/ab8a2c71-de29-48be-9107-7a0c23e9845c) — LLM, Infrastructure, Python • $180,000-$280,000
+- [Staff Engineer, R&D AI Tooling @ Tern Travel @ Tern](https://jobs.ashbyhq.com/tern/208e151d-469b-4efa-8fce-af3aeee050c3) — Agent, Infrastructure • $180,000-$280,000
+- [TTEC Digital @ Agentic AI Engineer (Google ADK)](https://jobs.lever.co/ttecdigital/17d3f799-6f51-47d1-bffc-79dd970a2577) — LLM, RAG, Agent, Python • $140,000-$220,000
+- [Civil Engineer @ AI Startup](https://openai.com/careers/civil-engineer-remote-us/) — Infrastructure • $140,000-$220,000
+- [reapxdev/lever-jobs-scraper · Datasets @ Hugging Face](https://huggingface.co/datasets/reapxdev/lever-jobs-scraper) — LLM, AI • $140,000-$220,000
+- [justremotechjobs @ AI Startup](https://linkedin.com/company/justremotechjobs) — LLM, AI • $140,000-$220,000
+- [Ai Engineer jobs in Remote @ AI Startup](https://www.indeed.com/q-ai-engineer-l-remote-jobs.html) — RAG, Agent, Python • $217,000-$258,000
+- [LLM Engineer — remote France | Mistral AI | Remote FR | Gan… · Ganloss @ Gan… · Ganloss](https://ganloss.com/en/jobs/ganloss-fr-mistral-ai-engineer-remote-france) — CUDA, LLM, LangChain, Agent, Fine-tuning • $140,000-$220,000
+- [Senior R&D Engineer (LLM) Job | Data | SoftServe | Remote | No Fluff Jobs. @ No Fluff Jobs.](https://nofluffjobs.com/job/senior-r-d-engineer-llm-softserve-holy-cross) — LLM, RAG, LangChain, Agent, Python • $180,000-$280,000
+- [GenAI / AI @ ML Engineer](https://jobhub.jl.liveblog365.com/remote-jobs/genai-ai-ml-engineer-1) — LLM, RAG, LangChain, Agent, Python • $140,000-$220,000
+- [Senior Forward Deployed AI Engineer (GenAI, AWS) – USA Remote Jobs mysmartpros @ AI Startup](https://www.mysmartpros.com/tuition/job/senior-forward-deployed-ai-engineer-genai-aws-b63b06df/) — LLM, Python, GenAI • $180,000-$280,000
+- [RAG Engineer @ Joveo Ai | BeBee](https://bebee.com/ca/jobs/rag-engineer-joveo-ai--theirstack-666614027) — LLM, RAG, LangChain, Python, Rust • $140,000-$220,000
+- [Remote AI Internal Wiki Search Relevance Engineer | RemoteAI @ RemoteAI](https://remoteai.io/v2/jobs/ai-internal-wiki-search-relevance-engineer-tuvex-solutions-nzcbjp-01kx68pcg8tr0419n2sk6kr66s) — RAG, LangChain, Python, NLP • $140,000-$220,000
+- [Web3 AI Prompt Engineer (Remote) $104k - $106k @ Token Metrics](https://web3.career/ai-prompt-engineer-remote-tokenmetrics/87010) — LLM, AI • $140,000-$220,000
+- [Project Lion - Senior Prompt Engineer - Japan (Remote, Part-Time) @ Welocalize](https://aplyr.ai/jobs/1fad9c79a1a3/project-lion-senior-prompt-engineer-japan-remote-part-time) — LLM, RAG • $180,000-$280,000
+- [AI Prompt Engineer, Remote | HireSub @ HireSub](https://hiresub.infinityfree.me/job/ai-prompt-engineer-remote) — LLM, Generative AI • $140,000-$220,000
+- [Senior Data Scientist II @ iHerb | Smart Remote Jobs](https://www.smartremotejobs.com/offer/senior-data-scientist-ii-6755/) — LLM, RAG • $180,000-$280,000
+- [Remote Data Scientist jobs – Senior Machine Learning Engineer (Python, TensorFlow, AWS) – Full‑Time – $120K‑$150K – Raymore, Missouri Remote | HireSub @ HireSub](https://hiresub.infinityfree.me/job/remote-data-scientist-jobs-senior-machine-learning-engineer-python-tensorflow-aws-fulltime-120k150k) — TensorFlow, RAG, Python • $180,000-$280,000
+- [Applied Machine Learning Platform Engineer @ AI Startup](https://aijobs.ai/index.php/job/applied-machine-learning-platform-engineer) — RAG, Infrastructure, Python, Computer Vision • $140,000-$220,000
+- [airoles – Solutions Architect (Remote) @ Langchain](https://airoles.ai/jobs/solutions-architect-remote-6217) — RAG, LangChain, Agent, Infrastructure • $140,000-$220,000
+- [Senior solutions engineer – enterprise ai & data infrastructure @ Hire Hangar in CAN](https://globalwork.ai/en/remote-jobs/usa/senior-solutions-engineer-enterprise-ai-data-infrastructure_c63a1522-4be2-4055-ad62-88bc32ed9271) — RAG, Infrastructure, Python • $180,000-$280,000
+- [Best Remote Infrastructure Engineer Jobs 2026 @ AI Startup](https://builtin.com/jobs/remote/dev-engineering/search/infrastructure-engineer) — TensorFlow, Infrastructure, Python, Computer Vision • $140,000-$220,000
+- [Senior AI Engineer @ Emergence Software @ Emergence](https://jobs.ashbyhq.com/emergence/d91a1451-a6a4-46b5-9b92-04d38e0062da) — LLM, Infrastructure, Python • $180,000-$280,000
+- [Staff AI Engineer @ AI Infrastructure & Agentic Platform](https://jobs.ashbyhq.com/shiftkey/2d49484b-f266-4250-a24c-013d8e274559) — RAG, Agent, Infrastructure • $180,000-$280,000
+- [Applied AI Engineer @ Titan AI @ Titan](https://jobs.ashbyhq.com/titan-ai/297cf9a9-289d-4cd5-a4a1-1e051f6f5d64) — LLM, RAG, LangChain, Agent, Infrastructure • $140,000-$220,000
+- [AI Engineer @ Ravenna @ Ravenna](https://jobs.ashbyhq.com/ravenna/fdefabaf-0665-407d-a7ac-22b7ee67afaa) — LLM, RAG, Infrastructure • $140,000-$220,000
+- [Senior AI Engineer (Core) @ Supernal](https://jobs.ashbyhq.com/infinity-constellation/ea20ebd5-47e5-4c87-b244-85b8d2b216c6) — RAG, Agent, Infrastructure, Rust • $180,000-$280,000
+- [Senior AI Agent Engineer @ Planera @ Planera](https://jobs.ashbyhq.com/planera/d68c8a09-a11d-409e-85ca-5d434caf3fc8) — LLM, RAG, LangChain, Agent, Python • $180,000-$280,000
+- [Machine Learning Engineer @ Elicit @ Elicit](https://jobs.ashbyhq.com/elicit/913a03d5-bd26-4c64-8346-21a029f344f7) — RAG, Agent, Rust • $140,000-$220,000
+- [Staff / Senior ML @ GenAI Engineer, Voice & Speech](https://jobs.ashbyhq.com/Weave/2518c1b8-3ffc-40e5-a968-c013e760c3f5) — RAG, Infrastructure, GenAI • $180,000-$280,000
+- [Senior Machine Learning Engineer @ Bjak @ Bjak](https://jobs.ashbyhq.com/bjakcareer/2fddb7f2-3231-4c6f-b21c-3d69c3f353a7) — Python • $180,000-$280,000
+- [Senior LLM Systems Engineer @ Risk Labs @ Risk](https://jobs.ashbyhq.com/risklabs/5ce32b6c-a892-4c9f-8b78-26914a7b35ee) — LLM, RAG, Agent, Python • $180,000-$280,000
+- [Panopto @ Panopto](https://jobs.lever.co/panopto/4c4fe959-597b-493f-bc08-a3a268153a32) — LLM • $140,000-$220,000
+- [Spear AI @ Spear Ai](https://jobs.lever.co/spear-ai/e8994579-014e-4a11-a407-d50b843aac52) — RAG, Rust • $140,000-$220,000
+- [Aramente/eu-tech-jobs · Datasets @ Hugging Face](https://huggingface.co/datasets/Aramente/eu-tech-jobs) — HuggingFace • $140,000-$220,000
+- [Training a coding agent using the OpenCode harness in remote HF sandboxes with TRL and OpenEnv @ AI Startup](https://huggingface.co/blog/sergiopaniego/trl-openenv-harness-training) — RAG, Agent, HuggingFace • $140,000-$220,000
+- [Muhammad Zain | AI/ML Engineer — RAG, Agents & Production AI @ AI/ML Engineer — RAG, Agents & Production AI](https://m-zain.com/) — TensorFlow, LLM, RAG, LangChain, Agent • $140,000-$220,000
+- [Fiona Roch · Senior Full @ stack & AI engineer who ships products end to end.](https://fionaroch.com/) — LLM, Agent • $180,000-$280,000
+- [David Wang — Senior AI Full @ Stack Engineer](https://davidengineer.site/) — LLM, RAG, LangChain, Agent, Python • $180,000-$280,000
+- [Salaudeen Mubarak @ AI Engineer](http://mubaraksalaudeen.me/) — LLM, RAG, Agent, Infrastructure, Python • $140,000-$220,000
+- [MUHAMMAD USMAN @ AI Startup](https://linkedin.com/in/muhammad-usman-ai-dev) — LLM, RAG, Agent, Python, Rust • $140,000-$220,000
+- [Ludovic Perrin @ AI Startup](https://linkedin.com/in/ludovic-perrin-ai-engineer) — TensorFlow, LLM, RAG, Agent, Python • $140,000-$220,000
+- [@fbarscevicius @ Lead Machine Learning Engineer | Hire now](https://remoteyeah.com/@fbarscevicius) — LLM, RAG, Agent, Fine-tuning, Infrastructure • $140,000-$220,000
+- [OpenAI API Expert | Hire Muhammad D. | RemoteAI @ RemoteAI](https://remoteai.io/v2/hire/@muhammaddanish) — TensorFlow, LLM, RAG, Agent, Python • $140,000-$220,000
+- [LangChain & OpenAI API Engineer | Hire Ian G. | RemoteAI @ RemoteAI](https://remoteai.io/v2/hire/@ian) — LLM, RAG, LangChain, Agent, Python • $140,000-$220,000
+- [Sufiyan Khan @ AI Startup](https://linkedin.com/in/sufiyan-khan-a86521301) — LLM, RAG, Agent, Python • $140,000-$220,000
+- [LLM Engineer — Careers @ Bytown](https://bytown.co/careers/llm-engineer) — LLM, Agent, Python • $140,000-$220,000
+- [LLM Engineer (m/f/d) @ Nagarro | Built In](https://builtin.com/job/llm-engineer-m-f-d/9981935) — LLM, RAG, Agent, Python, NLP • $140,000-$220,000
+- [Oowlish Technology @ Senior LLM Engineer (RAG & AWS Bedrock)](https://jobs.lever.co/oowlish/765cab63-09c4-4963-a095-720abb851e19) — LLM, RAG, Python, Generative AI • $140,000-$220,000
+- [AI/LLM Engineer — Python, LangChain, RAG, AWS Lambda @ OneSeven Tech](https://jobs.oneseventech.com/ai-llm-engineer-python-langchain-rag-aws-lambda-279464/) — LLM, RAG, LangChain, Agent, Infrastructure • $140,000-$220,000
+- [Senior LLM Engineer @ AI Startup](https://jentateam.com/job/1633681) — vLLM, LLM, RAG, Agent, Python • $180,000-$280,000
+- [Lead Engineer, LLMs | Atomic Tessellator @ Atomic Tessellator](https://atomictessellator.com/careers/lead-engineer-llms) — LLM, Agent, Infrastructure • $140,000-$220,000
+- [Software Engineer @ Apply for Engineering Jobs](https://www.seen.careers/jobs/software-engineer-llm-systems-remote-ceba3cde) — LLM, RAG, Infrastructure, Python • $140,000-$220,000
+- [Flower Labs GmbH @ Remote](https://careers.flower.ai/o/founding-research-engineer-in-the-flower-frontier-model-team-all-seniority-levels-welcome-uk-germany-global) — LLM, RAG • $140,000-$220,000
+- [AI Platform Engineer  (OneAI) @ OpenNebula Systems](https://careers.opennebula.io/jobs/7580100-ai-platform-engineer-oneai) — Infrastructure • $140,000-$220,000
+- [Belva Inc @ Sr. Gen AI Engineer](https://recruiting.paylocity.com/recruiting/jobs/Details/4042446/Belva-Inc/Sr-Gen-AI-Engineer) — LLM, LangChain, Agent, Fine-tuning, Python • $140,000-$220,000
+- [Senior Generative AI Engineer (Go, Python) (remote NORAM) | Dynatrace Careers @ Dynatrace Careers](https://www.dynatrace.com/careers/jobs/1399352200/) — LLM, Agent, Python, Generative AI • $180,000-$280,000
+- [Remote GenAI Engineer - Agentic ERP Platform job @ Rimini Street](https://lensa.com/job-v1/rimini-street/remote/genai-engineer-agentic-erp-platform/70c269102550faa7aa2f484b8e0c7193) — LLM, Agent, Python, GenAI • $140,000-$220,000
+- [110189 @ Generative AI](https://www.isg.com/jobs/show/displayJob.jsf?inseratnummer=110189&refererId=20) — LLM, RAG, Agent, Infrastructure, Python • $140,000-$220,000
+- [Principal GenAI Engineer @ GenAI Engineer - Speech / Voice AI](https://jobs.ashbyhq.com/Weave/e65e2365-1f1b-4c0b-8d27-cb7e0650a2ba) — Infrastructure, GenAI • $220,000-$350,000
+- [Senior GenAI Engineer (#4407859101) @ iX](https://careers.n-ix.com/jobs/4407859101-machine-learning-senior/) — LLM, RAG, LangChain, Agent, Python • $180,000-$280,000
+- [GEN AI Platform Lead Engineer(GCP) | Careerium @ Careerium](https://careerium.unaux.com/job/gen-ai-platform-lead-engineergcp) — LLM, RAG, LangChain, Agent, Infrastructure • $140,000-$220,000
+- [Flexible Remote Generative Ai Jobs @ AI Startup](https://www.indeed.com/q-remote-generative-ai-jobs.html) — RAG, Agent, Generative AI • $140,000-$220,000
+- [Senior GEN @ AI Engineer (Data & Platform) – EU – USA Remote Jobs mysmartpros](https://www.mysmartpros.com/tuition/job/senior-gen-ai-engineer-data-platform-eu-0756e024/) — LLM, Infrastructure, Python • $180,000-$280,000
+- [Careers | RAG Engineer in  | Careers @ US Remote Nationwide](https://careers-mci2.icims.com/jobs/50150/rag-engineer/job) — RAG, Agent, Rust • $140,000-$220,000
+- [Senior AI Engineer, Agentic and RAG Systems | Remote Work With EPAM @ Remote Work With EPAM](https://careers.epam.com/en/vacancy/senior-ai-engineer-agentic-and-rag-systems-blty5mp8mok8tyd6a36_en) — LLM, RAG, LangChain, Agent, Python • $180,000-$280,000
+- [AI Engineer – LangChain / RAG / Vector Search / Fine @ Tuning](https://www.linkedin.com/jobs/view/ai-engineer-%E2%80%93-langchain-rag-vector-search-fine-tuning-at-dimension-studios-4211008249) — LLM, RAG, LangChain, Fine-tuning, Python • $140,000-$220,000
+- [Prompt Engineer | Worksynergy @ Worksynergy](https://worksynergy.10001mb.com/remote-jobs/prompt-engineer-5) — LLM, Agent, Python, Generative AI, NLP • $140,000-$220,000
+- [Prompt Engineer @ AI Startup](https://aicareers.jobs/job/prompt-engineer/) — LLM • $140,000-$220,000
+- [Prompt Engineer (Remote, European Union) – B2B Contract @ codertal](https://codertal.com/careers/prompt-engineer-remote-european-union-b2b-contract/) — LLM, Python • $140,000-$220,000
+- [Prompt Engineer @ Acclaim AI | Built In](https://builtin.com/job/prompt-engineer/10069073) — LLM, Agent, Generative AI, NLP • $140,000-$220,000
+- [Prompt Engineer @ BluCactus Digital Marketing](https://blucactus.blue/careers/prompt-engineer/) — LLM, Agent • $140,000-$220,000
+- [Welo Global @ Time)](https://jobs.lever.co/weloglobal/5a1e8e5d-5169-4cf6-8642-3cf5a973c509) — LLM, RAG • $140,000-$220,000
+- [Welo Global @ Time)](https://jobs.lever.co/weloglobal/85827e35-320c-4d45-8300-6f7b1b2561dc) — LLM, RAG • $140,000-$220,000
+- [Prompt Engineer @ AI Startup](https://www.lakefusion.ai/careers/prompt-engineer) — LLM, RAG • $140,000-$220,000
+- [Senior AI Data Scientist, Consumer Lending @ Remote](https://jobs.experian.com/job/senior-ai-data-scientist-consumer-lending-remote-in-united-states-jid-3415) — Agent, Python • $133,109-$239,596
+- [Senior Applied Data Scientist @ team.blue Global](https://careers.team.blue/jobs/8048523-senior-applied-data-scientist) — LLM, AI • $180,000-$280,000
+- [Careers | Mutual of Omaha @ Mutual of Omaha](https://www.mutualofomaha.com/careers/jobs/detail/504773) — LLM, RAG, Agent, Python • $140,000-$220,000
+- [Omnidian @ Senior Data Scientist](https://jobs.lever.co/omnidian/4f8e7758-e225-42cd-bd42-54a6b841f9a5) — RAG, Rust • $140,000-$220,000
+- [Staff Data Scientist @ Jerry](https://www.ycombinator.com/companies/jerry-inc/jobs/Oma4Bu5-staff-data-scientist) — RAG • $180,000-$280,000
+- [[Hiring] Machine Learning Infrastructure Engineer @Later @ Later](https://remotive.com/remote/jobs/artificial-intelligence/machine-learning-infrastructure-engineer-4560631) — Infrastructure • $140,000-$220,000
+- [Remote Senior ML Infrastructure / DevOps Engineer @ Pathway](https://remoteyeah.com/jobs/remote-senior-ml-infrastructure-devops-engineer-pathway) — RAG, Infrastructure, Python • $180,000-$280,000
+- [Remote Senior ML Infrastructure Engineer – Senior | RemoteAI @ RemoteAI](https://remoteai.io/v2/jobs/senior-ml-infrastructure-engineer-s11-qhsvh-01kqs5hpb8c9ymapw0wv826v00) — Infrastructure, Data Engineering • $180,000-$280,000
+- [ML Systems Engineer, Infrastructure & Cloud @ Basis Research Institute | Built In](https://builtin.com/job/ml-systems-engineer-infrastructure-cloud/9153293) — Infrastructure • $140,000-$220,000
+- [Usman Asim — Computer Vision & Edge @ AI Engineer](https://saikhu.github.io/) — Python, Computer Vision • $140,000-$220,000
+- [Anatoly Ryabchenko — AI Engineer @ AI Startup](http://anatoly-ryabchenko.dev/) — CUDA, Agent, Python, Rust, Computer Vision • $140,000-$220,000
+- [Francisco Lourenço – Freelance 3D ML/CV Engineer @ AI Startup](https://www.francisco-lourenco.com/) — TensorFlow, Python, Computer Vision • $140,000-$220,000
+- [Andrey Gatsa @ AI Startup](https://linkedin.com/in/andrey-gatsa) — Computer Vision • $140,000-$220,000
+- [Laurent Kalpers, Computer Vision Engineer @ AI Startup](https://en.malt.be/profile/laurentkalpers) — TensorFlow, RAG, Python, Computer Vision • $140,000-$220,000
+- [Rahil Merchant @ Ripik.ai | Himalayas](https://himalayas.app/@rahilmerchant) — Infrastructure, Computer Vision • $140,000-$220,000
+- [Meghana Basavaraj @ AI Startup](https://linkedin.com/in/meghana-basavaraj-b0476a144) — Python, Computer Vision • $140,000-$220,000
+- [Lucas Guimarães @ AI Startup](https://linkedin.com/in/lucas-h-s-guimaraes) — RAG, Python, Computer Vision • $140,000-$220,000
+- [Ogene Jude @ AI Startup](https://linkedin.com/in/ogene-jude-ng) — TensorFlow, LLM, RAG, LangChain, Python • $140,000-$220,000
+- [AI Engineer @ BIO @ BIO](https://jobs.ashbyhq.com/bio/80145424-4809-46b2-99b9-8aae501be616) — RAG, Agent, Fine-tuning • $140,000-$220,000
+- [Applied AI Engineer @ OpenRouter @ OpenRouter](https://jobs.ashbyhq.com/openrouter/407f71b5-4b1f-4666-91bd-394f3c26f19d) — LLM, RAG, Agent, Infrastructure, Rust • $140,000-$220,000
+- [Applied AI Engineer  @ Pareto @ Pareto](https://jobs.ashbyhq.com/pareto-ai/4f5fe995-7828-437e-b80c-0132efba1b20) — LLM, RAG, Agent, Infrastructure • $140,000-$220,000
+- [reapxdev/smartrecruiters-jobs-scraper · Datasets @ Hugging Face](https://huggingface.co/datasets/reapxdev/smartrecruiters-jobs-scraper) — LLM, AI • $140,000-$220,000
+- [Replit — How to Conduct Remote Interviews @ AI Startup](https://replit.com/blog/interview) — RAG • $140,000-$220,000
+- [Eduardo Rodrigo Grendi Molina @ AI Startup](https://linkedin.com/in/egrendimol) — TensorFlow, LLM, RAG, Agent, Python • $140,000-$220,000
+- [Senior LLM Systems Engineer @ Across](https://gm.careers/jobs/216b2e64-5f6c-46c7-b383-1f942cc03a3a) — LLM, RAG, Agent, Python • $180,000-$280,000
+- [LLM Engineer (m/f/d) | Worksynergy @ Worksynergy](https://worksynergy.10001mb.com/remote-jobs/llm-engineer-mfd) — LLM, RAG, Agent, Python, NLP • $140,000-$220,000
+- [AI/RAG engineer @ CoinMarketCap](https://www.opentoworkremote.com/view/1432397) — TensorFlow, RAG, Agent, Python • $140,000-$220,000
+- [Prompt Engineer @ Jasper.ai](https://www.promptjobs.com/job/prompt-engineer-emqRJLqQ) — LLM • $140,000-$220,000
+- [Senior Advanced Data Scientist @ 68958 | General Dynamics](https://www.gd.com/careers/senior-advanced-data-scientist-telework-telework-us-2025-68958-gdms-opportunity) — RAG • $180,000-$280,000
+- [ML Infrastructure Engineer @ Later](https://www.opentoworkremote.com/view/1457013) — Infrastructure, Rust • $140,000-$220,000
+
+### Remote / USA (30 jobs)
+
+- [AI Engineer @ AI Agents (Remote](https://jobs.ashbyhq.com/hatch/302d3f5d-2d99-4962-8ce3-4480cd4330d5) — LLM, AI • $160,000-$240,000
+- [AI Engineer Backend (Remote @ ES/UK only)](https://jobs.ashbyhq.com/quadrivia/3b40be91-27fc-4148-a1a3-565d8211dd5c) — RAG, Agent • $160,000-$240,000
+- [AI Engineer @ Remote Europe](https://jobs.ashbyhq.com/reedsy/b043b550-02b7-416f-8969-5db8fd9dc8ee) — LLM, AI • $160,000-$240,000
+- [Sr. Staff AI Engineer (Remote) @ Rula @ Rula](https://jobs.ashbyhq.com/rula/f2424794-c819-4f53-a8af-83322e617acb) — LLM, AI • $160,000-$240,000
+- [Senior AI Engineer @ DualEntry @ DualEntry](https://jobs.ashbyhq.com/dualentry/7acbe603-8fbc-4249-942a-ee45eb273ea6) — LLM, Rust • $160,000-$240,000
+- [Staff AI Engineer @ AI Platform @ ClickUp](https://jobs.ashbyhq.com/clickup/143d20ff-cc53-4dc0-bc8b-09a7c1bddf87?embed=js) — LLM, AI • $160,000-$240,000
+- [Full Stack AI Engineer @ Infinity @ Infinity](https://jobs.ashbyhq.com/infinity-constellation/30fac65e-bcd7-4ecc-9477-fc7c8c8a9f52) — LLM, RAG, Agent, Python • $160,000-$240,000
+- [Lead AI Engineer @ Sierra Studio @ Sierra](https://jobs.ashbyhq.com/sierra-studio/81770149-3a94-4e22-8678-dac4a7a6d9ba) — LLM, RAG, Agent • $160,000-$240,000
+- [Forward Deployed AI Engineer @ Sardine @ Sardine](https://jobs.ashbyhq.com/sardine/4ff32b5d-13c6-4024-826c-04ed2881d688) — Agent, Rust • $160,000-$240,000
+- [Applied AI Engineer – Systems & Reliability (remote/Berlin @ ...](https://jobs.ashbyhq.com/hipeople-official/6c330d7b-7c6d-4993-8893-b58b5289d442) — Rust • $160,000-$240,000
+- [LLM Engineer III @ Crunchyroll](https://boards.greenhouse.io/crunchyroll/jobs/7014513?gh_jid=7014513) — LLM, RAG, Agent • $160,000-$240,000
+- [Job Application for Mission Integration Engineer, Applied Computing (Starshield) @ SpaceX](https://boards.greenhouse.io/spacex/jobs/8320099002?gh_jid=8320099002) — LLM, RAG, Fine-tuning • $160,000-$240,000
+- [Senior Machine Learning Engineer, Customer Support ... @ Airbnb](https://boards.greenhouse.io/airbnb/jobs/7975743) — LLM, RAG, Fine-tuning, Rust • $160,000-$240,000
+- [Job Application for Principal Applied AI / ML Engineer @ Faire](https://boards.greenhouse.io/faire/jobs/8456064002?gh_jid=8456064002) — LLM, RAG, Agent, Fine-tuning • $160,000-$240,000
+- [Job Application for Sr. Software Engineer (Platform Team) @ SpaceX](https://boards.greenhouse.io/spacex/jobs/8495853002?gh_jid=8495853002) — Infrastructure, Rust • $160,000-$240,000
+- [Job Application for Staff Software Engineer - AI Assistant @ Harness](https://boards.greenhouse.io/embed/job_app?for=harnessinc&token=4497718007) — LLM, AI • $160,000-$240,000
+- [Back @ End Engineer (Generative AI)](https://boards.greenhouse.io/neo4j/jobs/4626134006?gh_jid=4626134006) — RAG, Agent • $160,000-$240,000
+- [Job Application for ML Engineering Intern - Nebula @ Symbl.ai](https://boards.greenhouse.io/embed/job_app?for=symblai47&token=5026823004) — LLM, RAG • $160,000-$240,000
+- [Job Application for Senior ML Engineer (AI Research) @ Nebius](https://boards.greenhouse.io/embed/job_app?for=nebius&token=4704805101) — RAG, Agent, Infrastructure • $160,000-$240,000
+- [Job Application for Deployed AI Engineer @ Helsing](https://boards.greenhouse.io/embed/job_app?token=4516967101) — Infrastructure • $160,000-$240,000
+- [Sanctuary AI @ Sanctuary](https://jobs.lever.co/sanctuary/45642cfb-e812-4617-8de7-3cec19453a34) — LLM, AI • $160,000-$240,000
+- [Spotify @ Machine Learning Engineer, Personalization, Minesweeper](https://jobs.lever.co/spotify/de3f6a47-4d75-4512-8351-b362f1d1c32e) — LLM, RAG, Fine-tuning • $160,000-$240,000
+- [Machina Labs @ Machinalabs](https://jobs.lever.co/MachinaLabs/418bef09-a753-422b-b2fc-9142d01f1139) — Infrastructure • $160,000-$240,000
+- [FieldAI @ Field Ai](https://jobs.lever.co/field-ai/470926cb-38a1-4db8-b939-8ae8bde3b139) — PyTorch, Python • $160,000-$240,000
+- [Machine Learning Engineer @ Institute of Foundation Models](https://jobs.lever.co/ifm-us/ca550f5b-8c13-4a8e-8b03-0300b113acce) — LLM, AI • $160,000-$240,000
+- [zaimler @ Machine Learning Engineer, ML Platform](https://jobs.lever.co/zaimler/c4932cc1-5fba-4a80-92e4-15c4d0f30f96) — LLM, RAG, Agent, Infrastructure • $160,000-$240,000
+- [FieldAI @ Agentic AI/ML Engineer, Multimodal](https://jobs.lever.co/field-ai/28935a89-7c6b-4caf-abe7-b83b8a9958e1) — Agent • $160,000-$240,000
+- [Whoop @ Staff Machine Learning Engineer (Health)](https://jobs.lever.co/whoop/44a1154e-9580-4ba6-8dc0-6f87684697ba) — Infrastructure • $160,000-$240,000
+- [Machine Learning Engineer (Platform) @ Artera](https://jobs.lever.co/artera/d3c0ca46-28cd-4193-a678-ef95002dce01) — PyTorch, Infrastructure, Python • $160,000-$240,000
+- [AI Principal Machine Learning Engineer (10189) @ Extremenetworks](https://jobs.lever.co/extremenetworks/f99032c4-6048-484d-b93e-f8dfbb62aa19) — LLM, RAG, Agent, Fine-tuning, Rust • $160,000-$240,000
+
+### New York, NY (29 jobs)
+
+- [Applied AI Engineer ( Remote @ North American Timezones)](https://jobs.ashbyhq.com/mostest/68e436d6-b632-434e-93ab-9314a642dce5) — LLM, RAG, Agent, Infrastructure • $140,000-$220,000
+- [Machine Learning Engineer @ Sardine @ Sardine](https://jobs.ashbyhq.com/sardine/2c8f0342-b8af-4cc2-85cd-67bc48275568) — Agent, Python, Rust • $140,000-$220,000
+- [Machine Learning Engineer @ Hang @ Hang](https://jobs.ashbyhq.com/Hang/7b899a89-ed68-4988-8c3b-27ee46d6eca3) — TensorFlow, Python • $140,000-$220,000
+- [Principal ML Engineer @ Rebar @ Rebar](https://jobs.ashbyhq.com/rebar/9939e1be-9d42-4cea-b17d-5dbebfade1f8) — Infrastructure, Computer Vision • $220,000-$350,000
+- [LLM Engineer (GenAI, NYC) @ GPTZero @ GPTZero](https://jobs.ashbyhq.com/GPTZero/9e23e2df-d15d-4bf5-a841-ced573fb8511) — LLM, RAG, LangChain, Agent, Python • $140,000-$220,000
+- [AI & ML Engineer @ Sandstone @ Sandstone](https://jobs.ashbyhq.com/sandstone/60245340-bedd-4f0c-b3b9-ed27c924b973) — LLM, Agent, Infrastructure, Rust • $140,000-$220,000
+- [Palantir Technologies @ Forward Deployed AI Engineer](https://jobs.lever.co/palantir/636fc05c-d348-4a06-be51-597cb9e07488) — LLM, Python • $135,000-$200,000
+- [Spotify @ Ad Forecasting](https://jobs.lever.co/spotify/e0bb55eb-89be-406a-8d90-48f58f63dd20) — RAG, Infrastructure, Python • $140,000-$220,000
+- [Spotify @ Enrichment & Content Intelligence](https://jobs.lever.co/spotify/159e823e-5a29-4222-94bb-40e97f63cc93) — Infrastructure • $140,000-$220,000
+- [Match Group @ Senior Machine Learning Engineer, Dating Outcomes](https://jobs.lever.co/matchgroup/523e9382-57ad-45bb-a06d-c71e57bd0240) — LLM, RAG, Agent, Python, Rust • $140,000-$220,000
+- [Claude Corps \ Anthropic @ AI Startup](https://www.anthropic.com/claude-corps) — LLM, AI • $140,000-$220,000
+- [stealth startup jobs @ AI Startup](https://linkedin.com/company/stealth-startup-jobs) — Python • $140,000-$220,000
+- [Hiring AI Engineers (NYC) @Pendo: Vintage data. Fresh AI @ Hugging Face Forums](https://discuss.huggingface.co/t/hiring-ai-engineers-nyc-pendo-vintage-data-fresh-ai/177171) — LangChain, Agent, Rust, HuggingFace • $140,000-$220,000
+- [Artificial Intelligence Engineer jobs in Remote @ AI Startup](https://www.indeed.com/q-artificial-intelligence-engineer-l-remote-jobs.html) — RAG, Agent, Python, GenAI, Data Engineering • $217,000-$258,000
+- [Gen ai engineer jobs in remote @ AI Startup](https://www.dice.com/jobs/q-gen+ai+engineer-l-remote-jobs) — LLM, RAG, LangChain, Agent, Python • $140,000-$220,000
+- [1000+ Generative Ai Engineer jobs in United States @ AI Startup](https://www.linkedin.com/jobs/generative-ai-engineer-jobs) — Agent, Generative AI • $140,000-$220,000
+- [Prompt Engineer jobs in Remote @ AI Startup](https://www.indeed.com/q-prompt-engineer-l-remote-jobs.html) — RAG • $140,000-$220,000
+- [Remote NLP Prompt Engineering Jobs @ AI Startup](https://remoteai.io/v2/jobs/nlp-prompt-engineering) — LLM, RAG, Agent, Infrastructure, Computer Vision • $140,000-$220,000
+- [Senior Full @ Stack Software Engineer, Computer Vision – USA Remote Jobs mysmartpros](https://www.mysmartpros.com/tuition/job/senior-full-stack-software-engineer-computer-vision-2/) — RAG, Infrastructure, Computer Vision • $180,000-$280,000
+- [Nlp engineer jobs @ AI Startup](https://www.dice.com/jobs/q-nlp+engineer-jobs) — LLM, RAG, Agent, NLP • $140,000-$220,000
+- [artifact @ AI Startup](https://artifact.engineer/) — Python • $140,000-$220,000
+- [Software Engineer @ NewtonX | Built In NYC](https://www.builtinnyc.com/job/software-engineer-llm-systems/9940629) — LLM, RAG, Infrastructure, Python, Rust • $140,000-$220,000
+- [Founding GenAI Engineer @ Arbor @ Arbor](https://jobs.ashbyhq.com/findarbor/ef6674a7-dd1e-4a3e-ab4b-58bd05a2cf98) — LLM, Agent, Python, GenAI • $140,000-$220,000
+- [Hiring: Prompt Engineer Job | LockedIn AI Careers @ LockedIn AI Careers](https://www.lockedinai.com/careers/prompt-engineer) — LLM, RAG, Rust • $140,000-$220,000
+- [Principal Data Scientist | TradeStation Careers @ TradeStation Careers](https://careers.tradestation.com/positions/principal-data-scientist-3286) — RAG • $220,000-$350,000
+- [Senior Data Scientist @ Sardine @ Sardine](https://jobs.ashbyhq.com/Sardine/1a00a64d-2dbb-4e2f-9efe-1ed32226397e) — Agent, Rust • $180,000-$280,000
+- [RL Research Scientist: Training & Aligning LLMs with Data Job in Redwood City, CA @ Remote Jobs](https://www.mediabistro.com/jobs/3542844850-rl-research-scientist-training-aligning-llms-with-data) — LLM • $140,000-$220,000
+- [Revanth T. @ AI Startup](https://linkedin.com/in/revanth-tiruveedhi) — Infrastructure • $140,000-$220,000
+- [NLP Engineer @ Point72 | Built In](https://builtin.com/job/nlp-engineer/6343124) — LLM, RAG, Agent, Python, GenAI • $140,000-$220,000
+
+### London, UK (11 jobs)
+
+- [Job Application for Machine Learning Software Engineer @ Applied Intuition](https://boards.greenhouse.io/appliedintuition/jobs/4532553005?gh_jid=4532553005) — RAG, Infrastructure, Python, Rust • $140,000-$220,000
+- [Job Application for Sensor Sim - ML Engineer @ Applied Intuition](https://boards.greenhouse.io/appliedintuition/jobs/4678157005?gh_jid=4678157005) — Agent, Infrastructure, Rust, Generative AI • $140,000-$220,000
+- [Senior Machine Learning Engineer @ Wayve](https://boards.greenhouse.io/wayve/jobs/7735326002) — LLM, AI • $180,000-$280,000
+- [Terms of Service | Learn & Engage Now @ Learn & Engage Now](https://stability.ai/terms-of-service) — Generative AI • $140,000-$220,000
+- [GenAI Principal Engineer @ Remote](https://wfh.hstn.me/job/genai-principal-engineer-remote) — LLM, RAG, Agent, GenAI, Generative AI • $220,000-$350,000
+- [Computer Vision Jobs (August 2026) @ AI Startup](https://startup.jobs/computer-vision-jobs) — Computer Vision • $140,000-$220,000
+- [AI Engineer @ Alaro @ Alaro](https://jobs.ashbyhq.com/alaro/7d4b6e9a-5383-4604-a958-1fea0d5c41fa) — RAG, Agent, Rust • $140,000-$220,000
+- [Elliott Piercy @ AI Startup](https://linkedin.com/in/elliott-piercy-099448101) — Infrastructure • $140,000-$220,000
+- [Founding ML Engineer @ AI Startup](https://www.pavoai.com/careers/founding-ml-engineer) — RAG, Agent, Infrastructure • $140,000-$220,000
+- [Senior AI Vision Engineer (Remote @ EverAI | Built In London](https://builtinlondon.uk/job/ai-vision-engineer/6648359) — Computer Vision • $180,000-$280,000
+- [Remote Prompt Engineer – Mid @ Level · $80 | RemoteAI](https://remoteai.io/v2/jobs/prompt-engineer-elvio-works-cmsvmd-01kyff32fp35gszwm4est8xhx4) — LLM, RAG, LangChain, Python, NLP • $140,000-$220,000
+
+### Toronto, CA (5 jobs)
+
+- [Enterprise AI: Private, Secure, Customizable | Cohere @ Cohere](https://cohere.ai/) — LLM, Agent, Infrastructure, Rust, Generative AI • $140,000-$220,000
+- [arjun10g/na-tech-jobs · Datasets @ Hugging Face](https://huggingface.co/datasets/arjun10g/na-tech-jobs) — LLM, RAG, HuggingFace • $140,000-$220,000
+- [Paralucent @ Remote (RAG & Serverless Focus) (PL861)](https://careers.paralucent.com/o/senior-azure-genai-backend-engineer-remote-rag-serverless-focus-pl861) — LLM, RAG, Agent, Infrastructure, Python • $140,000-$220,000
+- [Senior Data Scientist - Computer V… @ Zestyai](https://www.jobscroller.net/jobs/6651194) — TensorFlow, RAG, Python, Computer Vision • $180,000-$280,000
+- [Senior Software Engineer, ML Infrastructure @ Arena (arena.ai) | Built In Toronto](https://builtintoronto.com/job/senior-software-engineer-ml-infrastructure/8989037) — Agent, Infrastructure, Rust • $180,000-$280,000
+
+---
+
+## 🔍 Browse & Filter
+
+- [View all AI jobs](https://ai-jobs-board.example.com/jobs)
+- [Filter by role: Engineer](https://ai-jobs-board.example.com/jobs?role=engineer)
+- [Filter by role: Researcher](https://ai-jobs-board.example.com/jobs?role=researcher)
+- [Filter by role: Product Manager](https://ai-jobs-board.example.com/jobs?role=pm)
+- [Remote only positions](https://ai-jobs-board.example.com/jobs?remote=true)
+- [Filter by location](https://ai-jobs-board.example.com/jobs?location=remote)
+
+---
+
+## 📝 About AI Jobs Board
+
+- **Total Jobs:** 868
+- **Active Locations:** 7
+- **Last Updated:** August 07, 2026
+- **Update Frequency:** Daily
+- **Job Sources:** Top AI companies, startups, and enterprises
+- **Industries:** AI/ML Engineering, LLMs, Deep Learning, Data Science, AI Research
+
+---
+
+## 📌 Tags Used in Listings
+
+`AI` • `Agent` • `CUDA` • `Computer Vision` • `Data Engineering` • `Fine-tuning` • `GenAI` • `Generative AI` • `HuggingFace` • `Infrastructure` • `LLM` • `LangChain` • `NLP` • `PyTorch` • `Python` • `RAG` • `Rust` • `TensorFlow` • `Transformers` • `vLLM`
+
+---
+
+**This feed is machine-friendly and updated daily. Last generated:** 2026-08-07T10:14:49.293433
