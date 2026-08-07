@@ -18,10 +18,11 @@ export function PostJobForm({ compact }: { compact?: boolean }) {
     setLoading(true);
     setError(null);
     try {
+      const checkoutType = listingType === 'featured' ? 'featured' : 'post';
       const res = await fetch('/api/checkout', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ type: 'post', featured: listingType === 'featured', ...form }),
+        body: JSON.stringify({ type: checkoutType, ...form }),
       });
       const data = await res.json();
       if (data.url) window.location.href = data.url;
@@ -73,24 +74,48 @@ export function PostJobForm({ compact }: { compact?: boolean }) {
 
   return (
     <form onSubmit={submit} className="mt-8">
-      {/* Listing type selector */}
-      <div className="mb-6">
-        <label className="text-sm font-medium mb-3 block">Choose your listing type:</label>
-        <div className="grid gap-3 sm:grid-cols-2">
-          {['standard', 'featured'].map((type) => (
+      {/* Listing type selector with pricing */}
+      <div className="mb-8">
+        <label className="text-sm font-medium mb-4 block">Choose your listing type:</label>
+        <div className="grid gap-4 sm:grid-cols-2">
+          {(['standard', 'featured'] as const).map((type) => (
             <button
               key={type}
               type="button"
-              onClick={() => setListingType(type as 'standard' | 'featured')}
-              className={`p-4 rounded-lg border-2 text-left transition-colors ${
+              onClick={() => setListingType(type)}
+              className={`p-6 rounded-lg border-2 text-left transition-all ${
                 listingType === type
-                  ? 'border-brand bg-brand/5'
-                  : 'border-border hover:border-border/70'
+                  ? 'border-brand bg-brand/5 shadow-md'
+                  : 'border-border hover:border-border/70 hover:bg-muted/30'
               }`}
             >
-              <div className="font-medium capitalize">{type} Listing</div>
-              <div className="text-xs text-muted-foreground mt-1">
-                {type === 'standard' ? '$99 one-time' : '$199/month'}
+              <div className="flex items-start justify-between">
+                <div>
+                  <div className="font-semibold capitalize text-lg">{type} Listing</div>
+                  <ul className="mt-3 space-y-1.5 text-xs text-muted-foreground">
+                    {type === 'standard' ? (
+                      <>
+                        <li>✓ Listed on job board</li>
+                        <li>✓ Included in llms.txt</li>
+                        <li>✓ Searchable by skill & location</li>
+                      </>
+                    ) : (
+                      <>
+                        <li>✓ Everything in Standard</li>
+                        <li>✓ Pinned to top for 30 days</li>
+                        <li>✓ Featured in email alerts</li>
+                      </>
+                    )}
+                  </ul>
+                </div>
+                <div className="text-right">
+                  <div className="text-2xl font-bold text-foreground">
+                    {type === 'standard' ? '$99' : '$199'}
+                  </div>
+                  <div className="text-xs text-muted-foreground mt-1">
+                    {type === 'standard' ? 'one-time' : '/month'}
+                  </div>
+                </div>
               </div>
             </button>
           ))}
@@ -98,7 +123,7 @@ export function PostJobForm({ compact }: { compact?: boolean }) {
       </div>
 
       {/* Form fields */}
-      <div className="grid gap-4">
+      <div className="grid gap-4 mb-6">
         <div>
           <label className="text-sm font-medium mb-1.5 block">Email</label>
           <Input
@@ -129,11 +154,12 @@ export function PostJobForm({ compact }: { compact?: boolean }) {
         </div>
       </div>
 
-      <div className="flex items-center gap-3 mt-6">
-        <Button type="submit" disabled={loading}>
-          {loading ? 'Redirecting…' : buttonText}
+      {/* Submit button and error message */}
+      <div className="flex items-center gap-3">
+        <Button type="submit" size="lg" disabled={loading}>
+          {loading ? 'Redirecting to payment…' : buttonText}
         </Button>
-        {error && <p className="text-xs text-destructive">{error}</p>}
+        {error && <p className="text-sm text-destructive">{error}</p>}
       </div>
     </form>
   );
