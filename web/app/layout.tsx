@@ -51,6 +51,16 @@ export default function RootLayout({
     >
       <body className="flex min-h-full flex-col bg-background text-foreground">
         {children}
+        <footer className="border-t border-border mt-16 py-6">
+          <div className="mx-auto max-w-5xl px-6 flex items-center justify-between text-xs text-muted">
+            <span>&copy; {new Date().getFullYear()} Artificial Jobs</span>
+            <div className="flex items-center gap-4">
+              <a href="https://hot100ai.dev" target="_blank" rel="noreferrer" className="hover:text-foreground transition-colors">AI Tools Directory</a>
+              <span>&middot;</span>
+              <a href="https://keatingholdings.com" target="_blank" rel="noreferrer" className="hover:text-foreground transition-colors">Keating Holdings</a>
+            </div>
+          </div>
+        </footer>
         <Analytics />
       </body>
     </html>
