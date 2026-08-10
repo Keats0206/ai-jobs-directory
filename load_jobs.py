@@ -80,7 +80,7 @@ def batch_insert_jobs(jobs, batch_size=50):
     return inserted, failed
 
 def main():
-    filepath = "/Users/petekeating/ai-jobs-directory/seeded_jobs.json"
+    filepath = "/Users/petekeating/code/ai-jobs-directory/seeded_jobs.json"
     
     print(f"Loading jobs from {filepath}...")
     jobs = load_jobs_from_file(filepath)
