@@ -12,9 +12,8 @@ import time
 
 ssl_context = ssl._create_unverified_context()
 
-SUPABASE_URL = "https://rfyvxtblhjhxgqwwapvw.supabase.co"
-# Use anon key (public, limited to RLS policies)
-SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJmeXZ4dGJsaGpoeGdxd3dhcHZ3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mjc5MTExMTgsImV4cCI6MTg1NTY3NzExOH0.uGcc"
+SUPABASE_URL = os.environ.get("SUPABASE_URL", "https://pfpnpgmblszljcshztgk.supabase.co")
+SUPABASE_ANON_KEY = os.environ.get("SUPABASE_ANON_KEY", "")
 
 def load_jobs_from_file(filepath):
     """Load jobs JSON file"""

@@ -9,8 +9,8 @@ from datetime import datetime
 ssl_context = ssl._create_unverified_context()
 
 EXA_API_KEY = os.environ.get("EXA_API_KEY", "47c57ecc-77bb-445f-83fd-515ff3fe50fe")
-SUPABASE_URL = "https://rfyvxtblhjhxgqwwapvw.supabase.co"
-SUPABASE_KEY = os.environ.get("SUPABASE_ANON_KEY", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJmeXZ4dGJsaGpoeGdxd3dhcHZ3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mjc5MTExMTgsImV4cCI6MTg1NTY3NzExOH0.uGcc")
+SUPABASE_URL = os.environ.get("SUPABASE_URL", "https://pfpnpgmblszljcshztgk.supabase.co")
+SUPABASE_KEY = os.environ.get("SUPABASE_ANON_KEY", "")
 
 # Expanded query list for better coverage
 QUERIES = [
