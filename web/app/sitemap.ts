@@ -139,6 +139,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
+  // Company pages for companies with >1 job (excluding AI Startup placeholder)
+  const companyCounts: Record<string, number> = {};
+  jobs.forEach(j => {
+    if (j.company === 'AI Startup') return;
+    companyCounts[j.company] = (companyCounts[j.company] || 0) + 1;
+  });
+  const companyUrls = Object.entries(companyCounts)
+    .filter(([, count]) => count > 1)
+    .map(([company]) => ({
+      url: `${base}/company/${slugify(company)}`,
+      lastModified: new Date(),
+      changeFrequency: 'daily' as const,
+      priority: 0.7,
+    }));
+
   return [
     { url: base, lastModified: new Date(), changeFrequency: 'daily', priority: 1 },
     compareHubUrl,
@@ -150,6 +165,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...skillUrls,
     ...salaryUrls,
     ...locationUrls,
+    ...companyUrls,
     ...agentHubUrls,
     ...agentCategoryUrls,
     ...openclawPluginUrls,
