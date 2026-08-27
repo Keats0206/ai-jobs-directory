@@ -67,22 +67,98 @@ def search_exa(query):
         print(f"Error fetching from Exa for '{query}': {e}")
         return []
 
+def extract_company_from_url(url):
+    """Extract company name from known ATS URLs."""
+    if not url:
+        return None
+    
+    # Ashby: https://jobs.ashbyhq.com/{company-slug}/...
+    m = re.search(r'jobs\.ashbyhq\.com/([^/]+)', url)
+    if m:
+        raw = m.group(1).replace('-', ' ').title()
+        # Filter out non-company-looking slugs
+        if raw.lower() not in ('careers', 'jobs', 'apply', 'embed'):
+            return raw
+    
+    # Greenhouse: https://boards.greenhouse.io/{company-slug}/...
+    m = re.search(r'boards\.greenhouse\.io/([^/]+)', url)
+    if m:
+        raw = m.group(1).replace('-', ' ').title()
+        if raw.lower() not in ('careers', 'jobs', 'apply'):
+            return raw
+    
+    # Lever: https://jobs.lever.co/{company-slug}/...
+    m = re.search(r'jobs\.lever\.co/([^/]+)', url)
+    if m:
+        raw = m.group(1).replace('-', ' ').title()
+        if raw.lower() not in ('careers', 'jobs', 'apply'):
+            return raw
+    
+    # Workable: https://apply.workable.com/{company-slug}/...
+    m = re.search(r'apply\.workable\.com/([^/]+)', url)
+    if m:
+        raw = m.group(1).replace('-', ' ').title()
+        return raw
+    
+    # Generic domain extraction as last resort
+    m = re.search(r'https?://([^/]+)', url)
+    if m:
+        domain = m.group(1)
+        # Remove www.
+        domain = re.sub(r'^www\.', '', domain)
+        # Try to extract meaningful name (before first dot, if it's a known TLD)
+        parts = domain.split('.')
+        if len(parts) >= 2 and parts[-1] in ('com', 'io', 'ai', 'co', 'org', 'dev'):
+            name = parts[-2] if parts[-2] not in ('jobs', 'careers', 'boards', 'apply', 'api', 'www') else parts[0]
+            # Handle subdomain company names like "company.ashbyhq.com" → skip, not useful
+            if name.lower() in ('ashbyhq', 'greenhouse', 'lever', 'workable', 'recruiting'):
+                return None
+            return name.replace('-', ' ').title()
+    
+    return None
+
 def extract_job_info(item):
     """Extract structured job data from Exa result"""
     title = item.get("title", "Unknown Role")
     url = item.get("url", "")
     text = item.get("text", "")
     
-    # Parse company name from title or URL
+    # --- Parse company name ---
     company = "AI Startup"
-    if "at " in title:
-        parts = title.split("at ")
+    
+    # 1. Try " at Company" pattern in title (most reliable)
+    if " at " in title.lower():
+        parts = re.split(r'\s+at\s+', title, flags=re.IGNORECASE)
         title = parts[0].strip()
-        company = parts[1].split("-")[0].split("|")[0].strip()
-    elif "-" in title and len(title.split("-")) > 1:
-        parts = title.split("-")
+        potential = parts[1].split("-")[0].split("|")[0].split("(")[0].strip()
+        # Clean up common suffixes
+        potential = re.sub(r'\s*(\.\.\.|\.\.|…)\s*$', '', potential).strip()
+        if potential and len(potential) < 60:
+            company = potential
+    
+    # 2. Try "@ Company" pattern
+    if company == "AI Startup" and " @ " in title:
+        parts = title.split(" @ ")
         title = parts[0].strip()
-        company = parts[-1].strip()
+        potential = parts[1].split("-")[0].split("|")[0].strip()
+        potential = re.sub(r'\s*(\.\.\.|\.\.|…)\s*$', '', potential).strip()
+        if potential and len(potential) < 60:
+            company = potential
+    
+    # 3. Try extracting from URL (Ashby, Greenhouse, Lever, etc.)
+    if company == "AI Startup":
+        url_company = extract_company_from_url(url)
+        if url_company and len(url_company) < 60:
+            company = url_company
+    
+    # 4. Check if title ends with a known company name pattern: "Role - Company"
+    if company == "AI Startup" and " - " in title:
+        parts = title.rsplit(" - ", 1)
+        title = parts[0].strip()
+        potential = parts[1].strip()
+        potential = re.sub(r'\s*(\.\.\.|\.\.|…)\s*$', '', potential).strip()
+        if potential and len(potential) < 60 and not potential.lower().startswith(('http', 'remote', 'hybrid', 'full')):
+            company = potential
     
     # Extract salary range
     salary_match = re.search(r'\$(\d{2,3}),?(\d{3})\s*-\s*\$(\d{2,3}),?(\d{3})', text)

@@ -9,6 +9,7 @@ import { Container, SectionLabel } from '@/components/page-shell';
 import { JobList } from '@/components/job-list';
 import { ChipButton } from '@/components/chip';
 import { PostJobDialog } from '@/components/post-job-dialog';
+import { NewsletterSignup } from '@/components/newsletter-signup';
 
 const MAX_VISIBLE = 100;
 
@@ -116,6 +117,10 @@ export function HomeBoard() {
               }))}
             />
           </div>
+        </Container>
+
+        <Container className="border-t border-border/60 py-12">
+          <NewsletterSignup className="max-w-md" />
         </Container>
       </main>
     </>
