@@ -1,7 +1,14 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { jobs, jobSlug, getJobBySlug, formatSalary, slugify, salaryRange } from '@/lib/jobs';
-import { displayCompany, displayTitle } from '@/lib/job-quality';
+import {
+  displayCompany,
+  displayTitle,
+  datePosted,
+  validThrough,
+  employmentType,
+  parseLocationAddress,
+} from '@/lib/job-quality';
 import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
 import { Container, Breadcrumb } from '@/components/page-shell';
@@ -47,15 +54,38 @@ export default async function JobPage({ params }: { params: Promise<{ slug: stri
   const range = salaryRange(job);
   const salary = range ? formatSalary(range.min, range.max) : null;
 
+  const address = parseLocationAddress(job.location);
+
   const jsonLd: Record<string, unknown> = {
     '@context': 'https://schema.org',
     '@type': 'JobPosting',
     title,
     hiringOrganization: { '@type': 'Organization', name: company },
-    jobLocation: { '@type': 'Place', address: job.location },
     url: job.apply_url,
     description: job.description,
+    datePosted: datePosted(job),
+    validThrough: validThrough(job),
+    employmentType: employmentType(job),
   };
+
+  if (job.is_remote) {
+    jsonLd.jobLocationType = 'TELECOMMUTE';
+    if (address.addressCountry) {
+      jsonLd.applicantLocationRequirements = {
+        '@type': 'Country',
+        name: address.addressCountry === 'US' ? 'USA' : address.addressCountry,
+      };
+    }
+  }
+  // Even remote roles often anchor to a hiring location (e.g. "Remote / USA");
+  // include it when known, per Google's guidance for hybrid/remote postings.
+  if (Object.keys(address).length > 0) {
+    jsonLd.jobLocation = {
+      '@type': 'Place',
+      address: { '@type': 'PostalAddress', ...address },
+    };
+  }
+
   if (range) {
     jsonLd.baseSalary = {
       '@type': 'MonetaryAmount',

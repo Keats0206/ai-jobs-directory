@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { jobs, getAllTags, getJobsByTag, slugify, formatSalary, avgSalary } from '@/lib/jobs';
+import { jobs, getAllTags, getJobsByTag, slugify, formatSalary, avgSalary, salaryRange } from '@/lib/jobs';
+import { datePosted, validThrough, employmentType, parseLocationAddress } from '@/lib/job-quality';
 import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
 import { Container, Breadcrumb, PageHeading, SectionLabel } from '@/components/page-shell';
@@ -80,16 +81,32 @@ export default async function SkillPage({ params }: { params: Promise<{ skill: s
     '@type': 'ItemList',
     name: `Remote ${tag} Jobs`,
     numberOfItems: tagJobs.length,
-    itemListElement: tagJobs.slice(0, 50).map((job, i) => ({
-      '@type': 'ListItem',
-      position: i + 1,
-      item: {
+    itemListElement: tagJobs.slice(0, 50).map((job, i) => {
+      const address = parseLocationAddress(job.location);
+      const range = salaryRange(job);
+      const posting: Record<string, unknown> = {
         '@type': 'JobPosting',
         title: job.title,
         hiringOrganization: { '@type': 'Organization', name: job.company },
         url: job.apply_url,
-      },
-    })),
+        description: job.description,
+        datePosted: datePosted(job),
+        validThrough: validThrough(job),
+        employmentType: employmentType(job),
+      };
+      if (job.is_remote) posting.jobLocationType = 'TELECOMMUTE';
+      if (Object.keys(address).length > 0) {
+        posting.jobLocation = { '@type': 'Place', address: { '@type': 'PostalAddress', ...address } };
+      }
+      if (range) {
+        posting.baseSalary = {
+          '@type': 'MonetaryAmount',
+          currency: 'USD',
+          value: { '@type': 'QuantitativeValue', minValue: range.min, maxValue: range.max, unitText: 'YEAR' },
+        };
+      }
+      return { '@type': 'ListItem', position: i + 1, item: posting };
+    }),
   };
 
   return (

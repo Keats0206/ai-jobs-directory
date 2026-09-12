@@ -1,5 +1,112 @@
 import type { Job } from './jobs';
 
+type RawJob = {
+  date_posted?: string;
+  fetched_at?: string;
+  posted_at?: string;
+};
+
+/**
+ * Build-time date used as a last-resort datePosted for the small number of
+ * legacy listings that predate fetched_at tracking and have no real posted
+ * date on record. Deliberately "today", not the oldest date in the
+ * dataset — an old fallback date would push validThrough (datePosted + 60
+ * days) into the past, which makes Google treat the listing as expired and
+ * drop it from rich results entirely. Every job needs *a* valid
+ * datePosted; for these we only know it's in our catalog as of today.
+ */
+const FALLBACK_DATE: string = new Date().toISOString().slice(0, 10);
+
+/** ISO date (YYYY-MM-DD) this job was posted, or first listed by us if unknown. */
+export function datePosted(job: Job): string {
+  const raw = job as RawJob;
+  const source = raw.date_posted || raw.fetched_at || raw.posted_at;
+  return source ? source.slice(0, 10) : FALLBACK_DATE;
+}
+
+/** Listing expiry: 60 days after datePosted, the industry-standard default
+ * job boards use when the employer didn't publish an explicit close date. */
+export function validThrough(job: Job): string {
+  const posted = new Date(datePosted(job) + 'T00:00:00Z');
+  posted.setUTCDate(posted.getUTCDate() + 60);
+  return posted.toISOString().slice(0, 10);
+}
+
+const EMPLOYMENT_TYPE_MAP: Record<string, string> = {
+  'full-time': 'FULL_TIME',
+  fulltime: 'FULL_TIME',
+  'part-time': 'PART_TIME',
+  parttime: 'PART_TIME',
+  contract: 'CONTRACTOR',
+  contractor: 'CONTRACTOR',
+  intern: 'INTERN',
+  internship: 'INTERN',
+  temporary: 'TEMPORARY',
+  volunteer: 'VOLUNTEER',
+};
+
+/** schema.org JobPosting employmentType enum value. */
+export function employmentType(job: Job): string {
+  const key = (job.job_type ?? '').toLowerCase().trim();
+  return EMPLOYMENT_TYPE_MAP[key] ?? 'FULL_TIME';
+}
+
+// Minimal US state name/abbreviation map — covers the metros this board
+// actually lists jobs in. Not exhaustive; unmatched regions are left out
+// of the schema rather than guessed.
+const US_STATE_ABBR: Record<string, string> = {
+  california: 'CA', 'new york': 'NY', washington: 'WA', texas: 'TX',
+  massachusetts: 'MA', illinois: 'IL', colorado: 'CO', georgia: 'GA',
+  florida: 'FL', 'north carolina': 'NC', oregon: 'OR', virginia: 'VA',
+  pennsylvania: 'PA', michigan: 'MI', 'district of columbia': 'DC',
+  arizona: 'AZ', utah: 'UT', ohio: 'OH', tennessee: 'TN', minnesota: 'MN',
+};
+
+export interface JobAddress {
+  addressLocality?: string;
+  addressRegion?: string;
+  addressCountry?: string;
+}
+
+/**
+ * Best-effort structured address from a free-text location string like
+ * "San Francisco, CA" or "London, UK". Returns only the components we can
+ * actually infer — streetAddress/postalCode are never fabricated since
+ * source postings don't publish them.
+ */
+export function parseLocationAddress(location: string): JobAddress {
+  const raw = (location ?? '').split(/[|;]/)[0].trim();
+  const parts = raw.split(',').map((p) => p.trim()).filter(Boolean);
+  if (parts.length === 0) return {};
+
+  const address: JobAddress = {};
+  if (parts.length >= 2) {
+    address.addressLocality = parts[0];
+    const region = parts[1];
+    if (/^[A-Z]{2}$/.test(region)) {
+      address.addressRegion = region;
+      address.addressCountry = 'US';
+    } else if (US_STATE_ABBR[region.toLowerCase()]) {
+      address.addressRegion = US_STATE_ABBR[region.toLowerCase()];
+      address.addressCountry = 'US';
+    } else if (/^(UK|United Kingdom)$/i.test(region)) {
+      address.addressCountry = 'GB';
+    } else if (/^(USA|United States)$/i.test(region)) {
+      address.addressCountry = 'US';
+    } else {
+      address.addressCountry = region.length === 2 ? region.toUpperCase() : undefined;
+    }
+  } else if (parts.length === 1) {
+    const single = parts[0];
+    if (/united states|usa/i.test(single)) {
+      address.addressCountry = 'US';
+    } else if (!/remote|on-?site|hybrid/i.test(single)) {
+      address.addressLocality = single;
+    }
+  }
+  return address;
+}
+
 /** Imputed bands used when a source posting had no published range. */
 const PLACEHOLDER_BANDS = new Set([
   '140000-220000',
