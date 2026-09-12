@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { Job, jobSlug, formatSalary } from '@/lib/jobs';
+import { Job, jobSlug, formatSalary, salaryRange } from '@/lib/jobs';
+import { displayCompany, displayTitle } from '@/lib/job-quality';
 
 /**
  * One row per job, used on the homepage and every pSEO listing page.
@@ -14,8 +15,8 @@ export function JobRow({
   index: number;
   showLocation?: boolean;
 }) {
-  const salary = formatSalary(job.salary_min, job.salary_max);
-  const hasSalary = job.salary_min > 0 || job.salary_max > 0;
+  const range = salaryRange(job);
+  const salary = range ? formatSalary(range.min, range.max) : null;
 
   return (
     <Link
@@ -24,14 +25,14 @@ export function JobRow({
     >
       <div className="min-w-0">
         <h3 className="truncate text-[15px] font-medium transition-colors group-hover:text-brand">
-          {job.title}
+          {displayTitle(job)}
         </h3>
         <p className="mt-0.5 truncate text-sm text-muted-foreground">
-          {job.company}
+          {displayCompany(job)}
           {showLocation && job.location ? ` · ${job.location}` : ''}
         </p>
       </div>
-      {hasSalary && (
+      {salary && (
         <span className="shrink-0 text-sm tabular-nums text-muted-foreground transition-colors group-hover:text-foreground">
           {salary}
         </span>

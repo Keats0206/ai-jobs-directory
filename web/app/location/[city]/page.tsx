@@ -7,6 +7,8 @@ import {
   slugify,
   formatSalary,
   avgSalary,
+  salaryRange,
+  LOCATION_SLUG_ALIASES,
 } from '@/lib/jobs';
 import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
@@ -15,12 +17,22 @@ import { JobList } from '@/components/job-list';
 import { ChipLink } from '@/components/chip';
 
 export function generateStaticParams() {
-  return getAllLocations().map(({ location }) => ({ city: slugify(location) }));
+  const dataLocations = getAllLocations().map(({ location }) => ({ city: slugify(location) }));
+  const aliasedLocations = Object.keys(LOCATION_SLUG_ALIASES).map((city) => ({ city }));
+  const seen = new Set<string>();
+  return [...dataLocations, ...aliasedLocations].filter(({ city }) => {
+    if (seen.has(city)) return false;
+    seen.add(city);
+    return true;
+  });
 }
 
-function findLocation(citySlug: string): string | null {
+/** Resolves a URL slug to a display label and the substring used to match jobs. */
+function resolveCity(citySlug: string): { label: string; matchTerm: string } | null {
+  const alias = LOCATION_SLUG_ALIASES[citySlug];
+  if (alias) return alias;
   const match = getAllLocations().find(({ location }) => slugify(location) === citySlug);
-  return match ? match.location : null;
+  return match ? { label: match.location, matchTerm: match.location.toLowerCase() } : null;
 }
 
 export async function generateMetadata({
@@ -29,9 +41,10 @@ export async function generateMetadata({
   params: Promise<{ city: string }>;
 }): Promise<Metadata> {
   const { city } = await params;
-  const loc = findLocation(city);
-  if (!loc) return { title: 'Not Found' };
-  const count = getJobsByLocation(loc).length;
+  const resolved = resolveCity(city);
+  if (!resolved) return { title: 'Not Found' };
+  const { label: loc, matchTerm } = resolved;
+  const count = getJobsByLocation(matchTerm).length;
   return {
     title: `${count} AI Jobs in ${loc} — Hiring Now | AI Jobs Directory`,
     description: `Browse ${count} AI and machine learning jobs in ${loc}. LLM engineers, RAG developers, and ML roles at top AI companies. Updated daily.`,
@@ -40,12 +53,16 @@ export async function generateMetadata({
 
 export default async function LocationPage({ params }: { params: Promise<{ city: string }> }) {
   const { city } = await params;
-  const loc = findLocation(city);
-  if (!loc) notFound();
+  const resolved = resolveCity(city);
+  if (!resolved) notFound();
+  const { label: loc, matchTerm } = resolved;
 
-  const locJobs = getJobsByLocation(loc);
+  const locJobs = getJobsByLocation(matchTerm);
+  if (locJobs.length === 0) notFound();
   const avg = avgSalary(locJobs);
-  const otherLocations = getAllLocations().filter((l) => l.location !== loc).slice(0, 10);
+  const otherLocations = getAllLocations()
+    .filter((l) => !l.location.toLowerCase().includes(matchTerm))
+    .slice(0, 10);
 
   // FAQ Schema for SEO
   const faqItems = [
@@ -55,7 +72,9 @@ export default async function LocationPage({ params }: { params: Promise<{ city:
     },
     {
       question: `What's the average salary for AI engineers in ${loc}?`,
-      answer: `AI and machine learning engineers in ${loc} typically earn an average of ${formatSalary(avg.min, avg.max)} per year, based on current job postings.`
+      answer: avg.min > 0
+        ? `AI and machine learning engineers in ${loc} typically earn an average of ${formatSalary(avg.min, avg.max)} per year, based on listings with published pay.`
+        : `Most ${loc} listings do not publish a salary range. Compensation appears when the employer shared it.`
     },
     {
       question: `What types of AI roles are hiring in ${loc}?`,
@@ -105,9 +124,27 @@ export default async function LocationPage({ params }: { params: Promise<{ city:
     ],
   };
 
+  const paidJobs = locJobs.filter((job) => salaryRange(job));
+  const publishedRanges = paidJobs.map((job) => salaryRange(job)!);
+  const hasPay = publishedRanges.length > 0;
+  const aggregateSchema = hasPay
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'AggregateOffer',
+        priceCurrency: 'USD',
+        lowPrice: Math.min(...publishedRanges.map((r) => r.min)),
+        highPrice: Math.max(...publishedRanges.map((r) => r.max)),
+        offerCount: paidJobs.length,
+        url: `https://www.artificialjobs.dev/location/${city}`,
+      }
+    : null;
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }} />
+      {aggregateSchema && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(aggregateSchema) }} />
+      )}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <SiteHeader />
@@ -119,13 +156,17 @@ export default async function LocationPage({ params }: { params: Promise<{ city:
             title={`AI Jobs in ${loc}`}
             lead={`${locJobs.length} open AI engineering roles in ${loc}.`}
             meta={
-              <>
-                Average salary{' '}
-                <span className="font-medium text-foreground">
-                  {formatSalary(avg.min, avg.max)}
-                </span>{' '}
-                / year · Updated daily
-              </>
+              avg.min > 0 ? (
+                <>
+                  Average published salary{' '}
+                  <span className="font-medium text-foreground">
+                    {formatSalary(avg.min, avg.max)}
+                  </span>{' '}
+                  / year · Updated daily
+                </>
+              ) : (
+                <>Updated daily · salary shown when the employer published a range</>
+              )
             }
           />
 

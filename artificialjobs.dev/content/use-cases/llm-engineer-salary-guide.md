@@ -44,7 +44,7 @@ Every listing on artificialjobs.dev includes `salary_min` and `salary_max` field
 - **Floor and ceiling** — lowest min and highest max in the dataset
 - **Top-paying roles** — sorted by `salary_max` for the skill tag
 
-No imputation, no survey blending — if a listing lacks salary data, it is excluded from averages (all 457 current listings include ranges).
+No imputation, no survey blending — if a listing lacks a published salary range, it is excluded from averages.
 
 ## Skills That Correlate With Higher LLM Pay
 
@@ -84,7 +84,7 @@ Third-party boards report wider market averages — [AI Dev Jobs](https://aidevb
 
 ## How to Use This Data in Negotiation
 
-1. **Anchor to posted ranges** — cite the board average ($147k–$231k) for LLM roles with 243 data points
+1. **Anchor to posted ranges** — cite the board average ($147k–$231k) for LLM roles with published pay data
 2. **Match your stack** — filter to roles with your tags (RAG, Agent, Python) for tighter comps
 3. **Check remote premium** — remote LLM roles on the board average **$150k–$233k**, slightly above all-role remote averages
 4. **Compare offer to top quartile** — if your offer max sits below $200k for senior LLM work, use top-paying listings as counter-evidence

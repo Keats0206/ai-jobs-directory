@@ -40,7 +40,7 @@ export async function generateMetadata({
   const isRemote = companyJobs.filter(j => j.is_remote).length;
   return {
     title: `${companyJobs.length} ${company} AI Jobs — Hiring Now | AI Jobs Directory`,
-    description: `${company} is hiring for ${companyJobs.length} AI/ML roles ${isRemote > 0 ? `(${isRemote} remote)` : ''}. Average salary ${formatSalary(avg.min, avg.max)}. View all openings and apply.`,
+    description: `${company} is hiring for ${companyJobs.length} AI/ML roles ${isRemote > 0 ? `(${isRemote} remote)` : ''}.${avg.min > 0 ? ` Average published salary ${formatSalary(avg.min, avg.max)}.` : ''} View all openings and apply.`,
   };
 }
 
@@ -65,7 +65,9 @@ export default async function CompanyPage({ params }: { params: Promise<{ name: 
     },
     {
       question: `What is the average salary for AI roles at ${company}?`,
-      answer: `The average salary for AI engineering roles at ${company} ranges from ${formatSalary(avg.min, avg.max)} per year, based on current job postings.`
+      answer: avg.min > 0
+        ? `The average salary for AI engineering roles at ${company} ranges from ${formatSalary(avg.min, avg.max)} per year, based on listings with published pay.`
+        : `${company} listings on this board do not currently publish a salary range.`
     },
     {
       question: `Does ${company} offer remote AI jobs?`,
@@ -126,13 +128,15 @@ export default async function CompanyPage({ params }: { params: Promise<{ name: 
             title={`${company} AI Jobs`}
             lead={`${companyJobs.length} open AI, ML, and engineering roles at ${company}.`}
             meta={
-              <>
-                Average salary{' '}
-                <span className="font-medium text-foreground">
-                  {formatSalary(avg.min, avg.max)}
-                </span>{' '}
-                / year · Updated daily
-              </>
+              avg.min > 0 ? (
+                <>
+                  Average published salary{' '}
+                  <span className="font-medium text-foreground">
+                    {formatSalary(avg.min, avg.max)}
+                  </span>{' '}
+                  / year · Updated daily
+                </>
+              ) : undefined
             }
           />
 
