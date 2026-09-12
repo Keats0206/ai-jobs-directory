@@ -3,6 +3,7 @@
 import { useState, useMemo } from 'react';
 import Link from 'next/link';
 import { jobs, slugify, getAllTags, getAllLocations } from '@/lib/jobs';
+import { displayCompany, displayTitle } from '@/lib/job-quality';
 import { Input } from '@/components/ui/input';
 import { SiteHeader } from '@/components/site-header';
 import { Container, SectionLabel } from '@/components/page-shell';
@@ -25,6 +26,8 @@ export function HomeBoard() {
     return jobs.filter((job) => {
       const matchesSearch =
         !query ||
+        displayTitle(job).toLowerCase().includes(query) ||
+        displayCompany(job).toLowerCase().includes(query) ||
         job.title.toLowerCase().includes(query) ||
         job.company.toLowerCase().includes(query);
       const matchesTags =

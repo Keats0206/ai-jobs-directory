@@ -1,4 +1,5 @@
 import jobsData from '@/data/jobs.json';
+import { salaryRange } from './job-quality';
 
 // Utility functions shared across pSEO pages
 export interface Job {
@@ -46,6 +47,39 @@ export function getJobsByLocation(location: string): Job[] {
   return jobs.filter(j => j.location?.toLowerCase().includes(normalized));
 }
 
+/**
+ * Maps a clean, human-friendly URL slug to how that place actually appears
+ * in the dataset. Locations are sourced from many ATS boards, so the same
+ * city shows up as "San Francisco, CA", "San Francisco", "San Francisco,
+ * California", multi-city strings, etc. — getJobsByLocation's substring
+ * match handles that once given the right search term.
+ */
+export const LOCATION_SLUG_ALIASES: Record<string, { label: string; matchTerm: string }> = {
+  'san-francisco': { label: 'San Francisco', matchTerm: 'san francisco' },
+  'new-york': { label: 'New York', matchTerm: 'new york' },
+  'remote': { label: 'Remote', matchTerm: 'remote' },
+};
+
+/**
+ * Maps a clean, human-friendly URL slug to the exact tag string used in the
+ * dataset, for skill names that don't slugify to match the stored tag
+ * (e.g. "llm-engineer" -> tag "LLM").
+ */
+export const SKILL_SLUG_ALIASES: Record<string, string> = {
+  'llm-engineer': 'LLM',
+  'rag-engineer': 'RAG',
+  'agent-engineer': 'Agent',
+  'prompt-engineer': 'Prompt Engineering',
+  'ml-engineer': 'ML Engineer',
+  'ai-researcher': 'AI Research',
+  'mlops-engineer': 'MLOps',
+  'computer-vision-engineer': 'Computer Vision',
+  'nlp-engineer': 'NLP',
+  'ai-product-manager': 'AI Product Management',
+  'ai-ethics-researcher': 'AI Ethics',
+  'ai-solutions-architect': 'AI Solutions Architect',
+};
+
 export function getRemoteJobs(): Job[] {
   return jobs.filter(j => j.is_remote);
 }
@@ -77,8 +111,13 @@ export function formatSalary(min: number, max: number): string {
 }
 
 export function avgSalary(jobList: Job[]): { min: number; max: number } {
-  if (jobList.length === 0) return { min: 0, max: 0 };
-  const min = Math.round(jobList.reduce((s, j) => s + (j.salary_min || 0), 0) / jobList.length);
-  const max = Math.round(jobList.reduce((s, j) => s + (j.salary_max || 0), 0) / jobList.length);
+  const ranges = jobList
+    .map(salaryRange)
+    .filter((range): range is { min: number; max: number } => range !== null);
+  if (ranges.length === 0) return { min: 0, max: 0 };
+  const min = Math.round(ranges.reduce((sum, range) => sum + range.min, 0) / ranges.length);
+  const max = Math.round(ranges.reduce((sum, range) => sum + range.max, 0) / ranges.length);
   return { min, max };
 }
+
+export { salaryRange } from './job-quality';

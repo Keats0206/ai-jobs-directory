@@ -48,7 +48,9 @@ export default async function SkillPage({ params }: { params: Promise<{ skill: s
     },
     {
       question: `What's the average salary for remote ${tag} positions?`,
-      answer: `Remote ${tag} engineers typically earn an average of ${formatSalary(avg.min, avg.max)} per year, based on current job postings.`
+      answer: avg.min > 0
+        ? `Remote ${tag} engineers typically earn an average of ${formatSalary(avg.min, avg.max)} per year, based on listings with published pay.`
+        : `Most remote ${tag} listings do not publish a salary range. Open a role to see compensation when the employer shared it.`
     },
     {
       question: `What companies are hiring remote ${tag} engineers?`,
@@ -104,13 +106,17 @@ export default async function SkillPage({ params }: { params: Promise<{ skill: s
             title={`Remote ${tag} Jobs`}
             lead={`${tagJobs.length} open roles requiring ${tag} skills.`}
             meta={
-              <>
-                Average salary{' '}
-                <span className="font-medium text-foreground">
-                  {formatSalary(avg.min, avg.max)}
-                </span>{' '}
-                / year · Updated daily
-              </>
+              avg.min > 0 ? (
+                <>
+                  Average published salary{' '}
+                  <span className="font-medium text-foreground">
+                    {formatSalary(avg.min, avg.max)}
+                  </span>{' '}
+                  / year · Updated daily
+                </>
+              ) : (
+                <>Updated daily · salary shown when the employer published a range</>
+              )
             }
           />
 

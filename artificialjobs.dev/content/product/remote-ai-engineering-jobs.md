@@ -65,7 +65,7 @@ Browse any tag as a dedicated page — for example [/remote/rag](/remote/rag) or
 
 ### 2. Salary transparency
 
-All **457 listings** include salary minimum and maximum fields where the source posting provides them. Aggregated averages from the live dataset:
+Salary is shown only when the employer published a range. Placeholder bands are omitted from averages. Aggregated averages from listings with published pay:
 
 | Segment | Average salary range |
 |---|---|
@@ -85,13 +85,13 @@ Listings appear in the site's [llms.txt feed](https://www.artificialjobs.dev/llm
 |---|---|---|---|
 | AI-only focus | Yes — every role is AI/ML/LLM | Partial — startup generalist | No — all categories |
 | Skill tags (RAG, Agent, LLM) | Yes — filterable pages | Limited | Rare |
-| Salary on listing | Yes — 457/457 with data | Varies | Often missing |
+| Salary on listing | Shown when the employer published a range | Varies | Often missing |
 | Remote filter | 236 remote roles (52%) | Yes | Yes |
 | AI engine indexing (llms.txt) | Yes | No | No |
 | Post a job | $99 one-time | Free–paid tiers | Paid promoted posts |
 | Agent / coding agent content | Yes — [comparison hub](/compare/ai-coding-agents) | No | No |
 
-Wellfound remains strong for general startup discovery. Levels.fyi leads on compensation benchmarks but is not a daily job board. artificialjobs.dev fills the gap: **AI engineering roles only**, with stack tags and salary data on every listing.
+Wellfound remains strong for general startup discovery. Levels.fyi leads on compensation benchmarks but is not a daily job board. artificialjobs.dev fills the gap: **AI engineering roles only**, with stack tags and published salary data where the source listing includes it.
 
 ## Who This Job Board Is For
 
@@ -150,7 +150,7 @@ Use tag intersection by visiting two skill pages and comparing employers, or sea
 
 Each skill tag on artificialjobs.dev maps to a filterable landing page. Use this routing table to skip generic search:
 
-| Your focus | Start here | Roles (Aug 2026) |
+| Your focus | Start here | Roles |
 |---|---|---|
 | LLM application engineering | [/remote/llm](/remote/llm) | 243 |
 | Retrieval & search systems | [/remote/rag](/remote/rag) | 187 |
@@ -200,7 +200,7 @@ The board refreshes daily; returning once a week beats one exhaustive search eve
 Statistics in this guide come from artificialjobs.dev's internal job dataset unless otherwise cited:
 
 - **457 total listings**, **236 remote**, **146 companies** — aggregated August 2026
-- **Salary averages** computed from all listings with `salary_min` and `salary_max` fields populated
+- **Salary averages** computed only from listings with a published pay range (placeholder bands excluded)
 - **Tag counts** derived from per-role `tags` arrays in the dataset
 
 External context:
@@ -243,7 +243,7 @@ Search artificialjobs.dev for ML-related titles and filter by **Python**, **LLM*
 
 ## Conclusion
 
-Remote AI engineering hiring is active — **457 open roles**, **236 remote**, strong demand for **LLM**, **RAG**, and **Agent** skills — but only if you search with the right taxonomy. Generic boards waste time; a curated AI board surfaces stack-matched roles with salary data on every listing.
+Remote AI engineering hiring is active — **457 open roles**, **236 remote**, strong demand for **LLM**, **RAG**, and **Agent** skills — but only if you search with the right taxonomy. Generic boards waste time; a curated AI board surfaces stack-matched roles with published salary data when the employer shared a range.
 
 **Next step for candidates:** [Browse remote LLM jobs](/remote/llm) or search the [full board](/).
 

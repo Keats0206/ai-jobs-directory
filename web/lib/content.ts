@@ -2,6 +2,7 @@ import 'server-only';
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
+import { applyLiveStats } from './board-stats';
 
 const CONTENT_ROOT = path.join(process.cwd(), 'content');
 
@@ -58,11 +59,16 @@ export function getContentByUrl(url: string): ContentArticle | null {
   const raw = fs.readFileSync(filePath, 'utf8');
   const { data, content } = matter(raw);
   const { body, jsonLd } = stripJsonLd(content);
+  const frontmatter = data as ContentFrontmatter;
+  if (frontmatter.title_tag) frontmatter.title_tag = applyLiveStats(frontmatter.title_tag);
+  if (frontmatter.meta_description) {
+    frontmatter.meta_description = applyLiveStats(frontmatter.meta_description);
+  }
 
   return {
-    frontmatter: data as ContentFrontmatter,
-    body,
-    jsonLd,
+    frontmatter,
+    body: applyLiveStats(body),
+    jsonLd: jsonLd ? applyLiveStats(jsonLd) : null,
   };
 }
 

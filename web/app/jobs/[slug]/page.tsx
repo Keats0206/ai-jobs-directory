@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { jobs, jobSlug, getJobBySlug, formatSalary, slugify } from '@/lib/jobs';
+import { jobs, jobSlug, getJobBySlug, formatSalary, slugify, salaryRange } from '@/lib/jobs';
+import { displayCompany, displayTitle } from '@/lib/job-quality';
 import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
 import { Container, Breadcrumb } from '@/components/page-shell';
@@ -20,13 +21,17 @@ export async function generateMetadata({
   const result = getJobBySlug(slug);
   if (!result) return { title: 'Job Not Found' };
   const { job } = result;
-  const salary = formatSalary(job.salary_min, job.salary_max);
+  const title = displayTitle(job);
+  const company = displayCompany(job);
+  const range = salaryRange(job);
+  const salary = range ? formatSalary(range.min, range.max) : null;
+  const salaryBit = salary ? ` — ${salary}` : '';
   return {
-    title: `${job.title} at ${job.company} — ${salary} | AI Jobs Directory`,
-    description: `${job.company} is hiring: ${job.title}. ${job.location}. Salary ${salary}. Apply for this AI engineering role.`,
+    title: `${title} at ${company}${salaryBit} | AI Jobs Directory`,
+    description: `${company} is hiring: ${title}. ${job.location}.${salary ? ` Salary ${salary}.` : ''} Apply for this AI engineering role.`,
     openGraph: {
-      title: `${job.title} at ${job.company}`,
-      description: `${job.location} · ${salary} · AI Jobs Directory`,
+      title: `${title} at ${company}`,
+      description: `${job.location}${salary ? ` · ${salary}` : ''} · AI Jobs Directory`,
     },
   };
 }
@@ -37,27 +42,32 @@ export default async function JobPage({ params }: { params: Promise<{ slug: stri
   if (!result) notFound();
 
   const { job, index } = result;
-  const salary = formatSalary(job.salary_min, job.salary_max);
+  const title = displayTitle(job);
+  const company = displayCompany(job);
+  const range = salaryRange(job);
+  const salary = range ? formatSalary(range.min, range.max) : null;
 
-  const jsonLd = {
+  const jsonLd: Record<string, unknown> = {
     '@context': 'https://schema.org',
     '@type': 'JobPosting',
-    title: job.title,
-    hiringOrganization: { '@type': 'Organization', name: job.company },
+    title,
+    hiringOrganization: { '@type': 'Organization', name: company },
     jobLocation: { '@type': 'Place', address: job.location },
-    baseSalary: {
+    url: job.apply_url,
+    description: job.description,
+  };
+  if (range) {
+    jsonLd.baseSalary = {
       '@type': 'MonetaryAmount',
       currency: 'USD',
       value: {
         '@type': 'QuantitativeValue',
-        minValue: job.salary_min,
-        maxValue: job.salary_max,
+        minValue: range.min,
+        maxValue: range.max,
         unitText: 'YEAR',
       },
-    },
-    url: job.apply_url,
-    description: job.description,
-  };
+    };
+  }
 
   // Clean description — strip markdown junk
   const cleanDesc = job.description
@@ -67,7 +77,7 @@ export default async function JobPage({ params }: { params: Promise<{ slug: stri
 
   const applyProps = {
     jobId: jobSlug(job, index),
-    company: job.company,
+    company,
     applyUrl: job.apply_url,
   };
 
@@ -110,18 +120,20 @@ export default async function JobPage({ params }: { params: Promise<{ slug: stri
       <main className="flex-1">
         <Container className="py-12">
           <article>
-            <Breadcrumb current={job.title} />
+            <Breadcrumb current={title} />
 
-            <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">{job.title}</h1>
-            <p className="mt-2 text-lg text-muted-foreground">{job.company}</p>
+            <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">{title}</h1>
+            <p className="mt-2 text-lg text-muted-foreground">{company}</p>
 
             <div className="mt-6 flex flex-wrap gap-2">
               <Chip>{job.location}</Chip>
               <Chip>{job.is_remote ? 'Remote OK' : 'On-site'}</Chip>
               <Chip>{job.job_type || 'Full-time'}</Chip>
-              <Chip variant="brand" className="font-medium">
-                {salary} / year
-              </Chip>
+              {salary && (
+                <Chip variant="brand" className="font-medium">
+                  {salary} / year
+                </Chip>
+              )}
             </div>
 
             {job.tags?.length > 0 && (
@@ -144,7 +156,7 @@ export default async function JobPage({ params }: { params: Promise<{ slug: stri
             <aside className="mt-12 rounded-xl border border-border bg-muted/40 px-6 py-8 text-center">
               <h2 className="text-base font-semibold">Interested in this role?</h2>
               <p className="mt-1 text-sm text-muted-foreground">
-                Apply directly with {job.company}.
+                Apply directly with {company}.
               </p>
               <ApplyButton {...applyProps} className="mt-5 px-8 py-2.5">
                 Apply for this job
@@ -155,25 +167,32 @@ export default async function JobPage({ params }: { params: Promise<{ slug: stri
               <section className="mt-14 border-t border-border/60 pt-10">
                 <h2 className="text-lg font-semibold mb-6">Related opportunities</h2>
                 <div className="space-y-3">
-                  {relatedJobs.map(({ job: relJob, index: relIndex }) => (
+                  {relatedJobs.map(({ job: relJob, index: relIndex }) => {
+                    const relRange = salaryRange(relJob);
+                    return (
                     <a
                       key={relIndex}
                       href={`/jobs/${jobSlug(relJob, relIndex)}`}
                       className="flex items-start justify-between rounded-lg border border-border/60 p-4 hover:bg-muted/50 transition-colors group"
                     >
                       <div className="flex-1 text-left">
-                        <h3 className="font-medium group-hover:text-primary transition-colors">{relJob.title}</h3>
-                        <p className="text-sm text-muted-foreground mt-0.5">{relJob.company}</p>
+                        <h3 className="font-medium group-hover:text-primary transition-colors">{displayTitle(relJob)}</h3>
+                        <p className="text-sm text-muted-foreground mt-0.5">{displayCompany(relJob)}</p>
                         <div className="flex flex-wrap gap-1.5 mt-2">
                           <span className="text-xs bg-muted px-2 py-1 rounded">{relJob.location}</span>
-                          <span className="text-xs bg-muted px-2 py-1 rounded">{formatSalary(relJob.salary_min, relJob.salary_max)}</span>
+                          {relRange && (
+                            <span className="text-xs bg-muted px-2 py-1 rounded">
+                              {formatSalary(relRange.min, relRange.max)}
+                            </span>
+                          )}
                         </div>
                       </div>
                       <div className="text-right text-xs text-muted-foreground ml-4 flex-shrink-0">
                         <div className="text-primary font-semibold group-hover:underline">View →</div>
                       </div>
                     </a>
-                  ))}
+                    );
+                  })}
                 </div>
               </section>
             )}

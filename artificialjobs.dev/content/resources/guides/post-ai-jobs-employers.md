@@ -76,7 +76,7 @@ List MCP servers separately at [/post-mcp](/post-mcp) — **$199/mo** for the ag
 3. Pay **$99 one-time** via checkout
 4. Listing live within **24 hours**
 
-Include accurate **salary ranges** — all 457 current board listings publish compensation, and candidates expect transparency in 2026.
+Include accurate **salary ranges** — candidates expect transparency in 2026, and listings without a published range hide compensation on the board.
 
 ## Proof Points
 

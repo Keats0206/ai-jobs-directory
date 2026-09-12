@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { jobs, getAllTags, getJobsByTag, slugify, formatSalary } from '@/lib/jobs';
+import { jobs, getAllTags, getJobsByTag, slugify, formatSalary, salaryRange, avgSalary, SKILL_SLUG_ALIASES } from '@/lib/jobs';
 import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
 import { Container, Breadcrumb, PageHeading, SectionLabel } from '@/components/page-shell';
@@ -9,10 +9,18 @@ import { JobList } from '@/components/job-list';
 import { GeoContent } from '@/components/geo-content';
 
 export function generateStaticParams() {
-  return getAllTags().slice(0, 20).map(({ tag }) => ({ skill: slugify(tag) }));
+  const topTags = getAllTags().slice(0, 20).map(({ tag }) => ({ skill: slugify(tag) }));
+  const aliasedSkills = Object.keys(SKILL_SLUG_ALIASES).map((skill) => ({ skill }));
+  const seen = new Set<string>();
+  return [...topTags, ...aliasedSkills].filter(({ skill }) => {
+    if (seen.has(skill)) return false;
+    seen.add(skill);
+    return true;
+  });
 }
 
 function findTag(skillSlug: string): string | null {
+  if (SKILL_SLUG_ALIASES[skillSlug]) return SKILL_SLUG_ALIASES[skillSlug];
   const match = getAllTags().find(({ tag }) => slugify(tag) === skillSlug);
   return match ? match.tag : null;
 }
@@ -45,31 +53,41 @@ export default async function SalaryPage({ params }: { params: Promise<{ skill: 
   const tag = findTag(skill);
   if (!tag) notFound();
 
-  const tagJobs = getJobsByTag(tag).filter((j) => j.salary_min > 0);
+  const tagJobs = getJobsByTag(tag);
   if (tagJobs.length === 0) notFound();
 
-  const topPaying = [...tagJobs].sort((a, b) => b.salary_max - a.salary_max).slice(0, 5);
+  const paidJobs = tagJobs.filter((job) => salaryRange(job));
+  const { min: avgMin, max: avgMax } = avgSalary(paidJobs);
+  const hasPay = paidJobs.length > 0 && avgMin > 0;
+  const topPaying = [...paidJobs].sort((a, b) => {
+    const aMax = salaryRange(a)?.max ?? 0;
+    const bMax = salaryRange(b)?.max ?? 0;
+    return bMax - aMax;
+  }).slice(0, 5);
 
-  const mins = tagJobs.map((j) => j.salary_min);
-  const maxs = tagJobs.map((j) => j.salary_max);
-  const avgMin = Math.round(mins.reduce((a, b) => a + b, 0) / mins.length);
-  const avgMax = Math.round(maxs.reduce((a, b) => a + b, 0) / maxs.length);
-  const lowest = Math.min(...mins);
-  const highest = Math.max(...maxs);
+  const publishedRanges = paidJobs.map((job) => salaryRange(job)!);
+  const lowest = hasPay ? Math.min(...publishedRanges.map((r) => r.min)) : 0;
+  const highest = hasPay ? Math.max(...publishedRanges.map((r) => r.max)) : 0;
 
   // FAQ Schema for this page
   const faqItems = [
     {
       question: `What is the average ${tag} engineer salary in 2026?`,
-      answer: `Based on ${tagJobs.length} current job postings, the average ${tag} engineer salary ranges from ${formatSalary(avgMin, avgMax)} per year.`
+      answer: hasPay
+        ? `Based on ${paidJobs.length} listings with published pay, the average ${tag} engineer salary ranges from ${formatSalary(avgMin, avgMax)} per year.`
+        : `Most ${tag} listings on the board do not publish a salary range. Browse open roles for the latest offers.`
     },
     {
       question: `How much do senior ${tag} engineers make?`,
-      answer: `Senior ${tag} engineers typically earn between $${Math.round(avgMax * 1.2 / 1000)}k and $${Math.round(highest / 1000)}k, with the highest-paying roles reaching up to $${Math.round(highest / 1000)}k annually.`
+      answer: hasPay
+        ? `Senior ${tag} engineers typically earn between $${Math.round(avgMax * 1.2 / 1000)}k and $${Math.round(highest / 1000)}k, with the highest-paying roles reaching up to $${Math.round(highest / 1000)}k annually.`
+        : `Published senior ${tag} ranges appear on individual listings when employers share them.`
     },
     {
       question: `What's the salary range for ${tag} roles?`,
-      answer: `The salary range for ${tag} positions spans from $${Math.round(lowest / 1000)}k to $${Math.round(highest / 1000)}k, depending on experience level, location, and company stage.`
+      answer: hasPay
+        ? `The salary range for ${tag} positions spans from $${Math.round(lowest / 1000)}k to $${Math.round(highest / 1000)}k, depending on experience level, location, and company stage.`
+        : `${tagJobs.length} ${tag} roles are listed. Compensation is shown only when the employer published a range.`
     },
     {
       question: `Which companies pay the most for ${tag} engineers?`,
@@ -115,20 +133,24 @@ export default async function SalaryPage({ params }: { params: Promise<{ skill: 
     ],
   };
 
-  const aggregateSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'AggregateOffer',
-    priceCurrency: 'USD',
-    lowPrice: lowest,
-    highPrice: highest,
-    offerCount: tagJobs.length,
-    url: `https://www.artificialjobs.dev/salary/${skill}`,
-  };
+  const aggregateSchema = hasPay
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'AggregateOffer',
+        priceCurrency: 'USD',
+        lowPrice: lowest,
+        highPrice: highest,
+        offerCount: paidJobs.length,
+        url: `https://www.artificialjobs.dev/salary/${skill}`,
+      }
+    : null;
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(aggregateSchema) }} />
+      {aggregateSchema && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(aggregateSchema) }} />
+      )}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <SiteHeader />
@@ -138,19 +160,27 @@ export default async function SalaryPage({ params }: { params: Promise<{ skill: 
           <Breadcrumb current={`${tag} salary`} />
           <PageHeading
             title={`${tag} Engineer Salary Guide`}
-            lead={`Based on ${tagJobs.length} open roles · Updated for 2026`}
+            lead={
+              hasPay
+                ? `Based on ${paidJobs.length} listings with published pay · ${tagJobs.length} open roles`
+                : `${tagJobs.length} open roles · most listings do not publish pay`
+            }
           />
 
-          <div className="grid gap-3 sm:grid-cols-3">
-            <Stat label="Average range" value={formatSalary(avgMin, avgMax)} />
-            <Stat label="Lowest offered" value={`$${Math.round(lowest / 1000)}k`} />
-            <Stat label="Highest offered" value={`$${Math.round(highest / 1000)}k`} />
-          </div>
+          {hasPay && (
+            <div className="grid gap-3 sm:grid-cols-3">
+              <Stat label="Average range" value={formatSalary(avgMin, avgMax)} />
+              <Stat label="Lowest offered" value={`$${Math.round(lowest / 1000)}k`} />
+              <Stat label="Highest offered" value={`$${Math.round(highest / 1000)}k`} />
+            </div>
+          )}
 
+          {topPaying.length > 0 && (
           <section className="mt-14">
             <SectionLabel>Top-paying {tag} roles right now</SectionLabel>
             <JobList jobs={topPaying} indexOf={(job) => jobs.indexOf(job)} />
           </section>
+          )}
 
           <div className="mt-12 border-t border-border/60 pt-10">
             <Link
