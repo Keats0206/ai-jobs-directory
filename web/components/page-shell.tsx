@@ -60,8 +60,8 @@ export function PageHeading({
 /** Small caps label that introduces a list or section. */
 export function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
-    <p className="mb-4 text-xs font-medium uppercase tracking-wider text-muted-foreground">
+    <h2 className="mb-4 text-xs font-medium uppercase tracking-wider text-muted-foreground">
       {children}
-    </p>
+    </h2>
   );
 }

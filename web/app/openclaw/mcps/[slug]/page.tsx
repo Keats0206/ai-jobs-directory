@@ -25,6 +25,7 @@ export async function generateMetadata({
   const entry = getEntryBySlug('mcp', slug);
   if (!entry) return { title: 'Not Found' };
   return {
+    alternates: { canonical: `https://www.artificialjobs.dev/openclaw/mcps/${slug}` },
     title: `${entry.name} MCP Server for OpenClaw — Install & Setup`,
     description: `${entry.description} Connect: ${entry.install}`,
   };

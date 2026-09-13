@@ -11,6 +11,7 @@ import { openclawMcps, openclawPlugins, hermesPlugins, getAllCategories, categor
 import { jobs } from '@/lib/jobs';
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://www.artificialjobs.dev/agentic" },
   title: 'Agentic Dev Hub — Coding Agents, MCPs & Tools',
   description:
     'The directory for agentic developers: ranked AI coding agents, head-to-head comparisons, MCP servers, OpenClaw plugins, and AI engineering jobs.',

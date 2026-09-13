@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { jobs, getAllLocations, getAllTags, slugify, formatSalary, avgSalary } from '@/lib/jobs';
+import { jobs, getAllLocations, slugify, formatSalary, avgSalary } from '@/lib/jobs';
 import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
 import { Container, Breadcrumb, PageHeading, SectionLabel } from '@/components/page-shell';
@@ -39,6 +39,7 @@ export async function generateMetadata({
   const avg = avgSalary(companyJobs);
   const isRemote = companyJobs.filter(j => j.is_remote).length;
   return {
+    alternates: { canonical: `https://www.artificialjobs.dev/company/${name}` },
     title: `${companyJobs.length} ${company} AI Jobs — Hiring Now | AI Jobs Directory`,
     description: `${company} is hiring for ${companyJobs.length} AI/ML roles ${isRemote > 0 ? `(${isRemote} remote)` : ''}.${avg.min > 0 ? ` Average published salary ${formatSalary(avg.min, avg.max)}.` : ''} View all openings and apply.`,
   };

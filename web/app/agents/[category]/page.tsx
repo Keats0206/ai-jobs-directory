@@ -32,6 +32,7 @@ export async function generateMetadata({
   if (!category) return { title: 'Not Found' };
   const count = getEntriesByCategory(categoryParam).length;
   return {
+    alternates: { canonical: `https://www.artificialjobs.dev/agents/${categoryParam}` },
     title: `${count} ${category} Agent Tools — OpenClaw, MCP & Hermes`,
     description: `Browse ${count} ${category.toLowerCase()} tools across OpenClaw plugins, MCP servers, and Hermes Agent plugins.`,
   };

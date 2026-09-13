@@ -1,3 +1,4 @@
+import { StructuredData } from '@/components/structured-data';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { Container, Breadcrumb, PageHeading } from '@/components/page-shell';
@@ -6,6 +7,7 @@ import { SiteFooter } from '@/components/site-footer';
 import { PostMcpForm } from '@/components/post-mcp-form';
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://www.artificialjobs.dev/post-mcp" },
   title: 'List an MCP Server — $199/mo',
   description:
     'Get your Model Context Protocol (MCP) server featured on artificialjobs.dev. Monthly subscription for top placement and llms.txt inclusion.',
@@ -14,6 +16,7 @@ export const metadata: Metadata = {
 export default function PostMcpPage() {
   return (
     <>
+      <StructuredData data={{ '@context': 'https://schema.org', '@type': 'WebPage', name: 'List your MCP server', url: 'https://www.artificialjobs.dev/post-mcp', description: 'Feature your Model Context Protocol server in the Artificial Jobs directory.' }} />
       <SiteHeader />
 
       <main className="flex-1">

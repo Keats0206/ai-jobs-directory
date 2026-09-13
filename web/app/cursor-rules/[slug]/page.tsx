@@ -1,3 +1,4 @@
+import { StructuredData } from '@/components/structured-data';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
@@ -19,6 +20,7 @@ export async function generateMetadata({
   const rule = getCursorRule(slug);
   if (!rule) return { title: 'Not Found' };
   return {
+    alternates: { canonical: `https://www.artificialjobs.dev/cursor-rules/${slug}` },
     title: `${rule.name} Cursor Rules — Copy .cursorrules Template`,
     description: rule.description,
   };
@@ -37,6 +39,7 @@ export default async function CursorRuleDetailPage({
 
   return (
     <>
+      <StructuredData data={{ '@context': 'https://schema.org', '@type': 'SoftwareSourceCode', name: rule.name, description: rule.description, url: `https://www.artificialjobs.dev/cursor-rules/${rule.id}`, text }} />
       <SiteHeader />
       <main className="flex-1">
         <Container className="py-12">

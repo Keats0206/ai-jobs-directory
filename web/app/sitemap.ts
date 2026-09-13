@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next';
-import { jobs, jobSlug, getAllTags, getAllLocations, slugify } from '@/lib/jobs';
+import { jobs, jobSlug, getRemoteTags, getSalaryTags, getAllLocations, getJobsByLocation, LOCATION_SLUG_ALIASES, slugify } from '@/lib/jobs';
 import {
   openclawPlugins,
   openclawMcps,
@@ -11,102 +11,95 @@ import { getAllCompareSlugs } from '@/lib/agents';
 import { cursorRules } from '@/lib/cursor-rules';
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  // Omit lastModified until genuine content update timestamps are available.
   const base = 'https://www.artificialjobs.dev';
 
   const jobUrls = jobs.map((job, i) => ({
     url: `${base}/jobs/${jobSlug(job, i)}`,
-    lastModified: new Date(),
     changeFrequency: 'weekly' as const,
     priority: 0.8,
   }));
 
-  const skillUrls = getAllTags().map(({ tag }) => ({
+  const skillUrls = getRemoteTags().map(({ tag }) => ({
     url: `${base}/remote/${slugify(tag)}`,
-    lastModified: new Date(),
     changeFrequency: 'daily' as const,
     priority: 0.9,
   }));
 
-  const salaryUrls = getAllTags().slice(0, 20).map(({ tag }) => ({
+  const salaryUrls = getSalaryTags().map(({ tag }) => ({
     url: `${base}/salary/${slugify(tag)}`,
-    lastModified: new Date(),
     changeFrequency: 'weekly' as const,
     priority: 0.7,
   }));
 
-  const locationUrls = getAllLocations().map(({ location }) => ({
+  const locationUrls = getAllLocations().filter(({ location }) => getJobsByLocation(location).length > 0).map(({ location }) => ({
     url: `${base}/location/${slugify(location)}`,
-    lastModified: new Date(),
     changeFrequency: 'daily' as const,
     priority: 0.9,
   }));
 
+  const locationAliasUrls = Object.entries(LOCATION_SLUG_ALIASES)
+    .filter(([, { matchTerm }]) => getJobsByLocation(matchTerm).length > 0)
+    .map(([slug]) => ({ url: `${base}/location/${slug}`, changeFrequency: 'daily' as const, priority: 0.9 }));
+
   const agentHubUrls = [
-    { url: `${base}/agents`, lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.9 },
-    { url: `${base}/openclaw/plugins`, lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.85 },
-    { url: `${base}/openclaw/mcps`, lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.85 },
-    { url: `${base}/hermes/plugins`, lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.85 },
+    { url: `${base}/agents`, changeFrequency: 'weekly' as const, priority: 0.9 },
+    { url: `${base}/openclaw/plugins`, changeFrequency: 'weekly' as const, priority: 0.85 },
+    { url: `${base}/openclaw/mcps`, changeFrequency: 'weekly' as const, priority: 0.85 },
+    { url: `${base}/hermes/plugins`, changeFrequency: 'weekly' as const, priority: 0.85 },
   ];
 
   const agentCategoryUrls = getAllCategories().map(({ category }) => ({
     url: `${base}/agents/${categorySlug(category)}`,
-    lastModified: new Date(),
     changeFrequency: 'weekly' as const,
     priority: 0.75,
   }));
 
   const openclawPluginUrls = openclawPlugins.map((entry) => ({
     url: `${base}/openclaw/plugins/${entry.id}`,
-    lastModified: new Date(),
     changeFrequency: 'monthly' as const,
     priority: 0.7,
   }));
 
   const mcpUrls = openclawMcps.map((entry) => ({
     url: `${base}/openclaw/mcps/${entry.id}`,
-    lastModified: new Date(),
     changeFrequency: 'monthly' as const,
     priority: 0.7,
   }));
 
   const hermesPluginUrls = hermesPlugins.map((entry) => ({
     url: `${base}/hermes/plugins/${entry.id}`,
-    lastModified: new Date(),
     changeFrequency: 'monthly' as const,
     priority: 0.7,
   }));
 
   const compareHubUrl = {
     url: `${base}/compare/ai-coding-agents`,
-    lastModified: new Date(),
     changeFrequency: 'weekly' as const,
     priority: 0.95,
   };
 
   const compareSlugUrls = getAllCompareSlugs().map((slug) => ({
     url: `${base}/compare/${slug}`,
-    lastModified: new Date(),
     changeFrequency: 'weekly' as const,
     priority: slug.includes('-vs-') ? 0.85 : 0.8,
   }));
 
   const agenticHubUrl = {
     url: `${base}/agentic`,
-    lastModified: new Date(),
     changeFrequency: 'weekly' as const,
     priority: 0.95,
   };
 
   const submissionUrls = [
-    { url: `${base}/post-job`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.5 },
-    { url: `${base}/post-mcp`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.5 },
+    { url: `${base}/post-job`, changeFrequency: 'monthly' as const, priority: 0.5 },
+    { url: `${base}/post-mcp`, changeFrequency: 'monthly' as const, priority: 0.5 },
   ];
 
   const cursorRulesUrls = [
-    { url: `${base}/cursor-rules`, lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: `${base}/cursor-rules`, changeFrequency: 'weekly' as const, priority: 0.8 },
     ...cursorRules.map((rule) => ({
       url: `${base}/cursor-rules/${rule.id}`,
-      lastModified: new Date(),
       changeFrequency: 'monthly' as const,
       priority: 0.7,
     })),
@@ -115,25 +108,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const geoContentUrls = [
     {
       url: `${base}/resources/learn/what-is-ai-coding-agent`,
-      lastModified: new Date(),
       changeFrequency: 'monthly' as const,
       priority: 0.75,
     },
     {
       url: `${base}/use-cases/ai-engineer-career`,
-      lastModified: new Date(),
       changeFrequency: 'monthly' as const,
       priority: 0.75,
     },
     {
       url: `${base}/use-cases/agentic-engineer-jobs`,
-      lastModified: new Date(),
       changeFrequency: 'monthly' as const,
       priority: 0.75,
     },
     {
       url: `${base}/resources/compare/cursor-vs-copilot`,
-      lastModified: new Date(),
       changeFrequency: 'monthly' as const,
       priority: 0.8,
     },
@@ -149,13 +138,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     .filter(([, count]) => count > 1)
     .map(([company]) => ({
       url: `${base}/company/${slugify(company)}`,
-      lastModified: new Date(),
       changeFrequency: 'daily' as const,
       priority: 0.7,
     }));
 
-  return [
-    { url: base, lastModified: new Date(), changeFrequency: 'daily', priority: 1 },
+  const entries: MetadataRoute.Sitemap = [
+    { url: base, changeFrequency: 'daily', priority: 1 },
     compareHubUrl,
     agenticHubUrl,
     ...compareSlugUrls,
@@ -165,6 +153,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...skillUrls,
     ...salaryUrls,
     ...locationUrls,
+    ...locationAliasUrls,
     ...companyUrls,
     ...agentHubUrls,
     ...agentCategoryUrls,
@@ -173,4 +162,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...hermesPluginUrls,
     ...jobUrls,
   ];
+
+  // Different source tags/locations can normalize to the same URL.
+  return Array.from(new Map(entries.map((entry) => [entry.url, entry])).values());
 }

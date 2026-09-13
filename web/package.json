@@ -8,7 +8,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "generate:agents": "node ../scripts/generate-agent-comparisons.mjs"
+    "generate:agents": "node ../scripts/generate-agent-comparisons.mjs",
+    "seo:audit": "node ../seo-test.mjs",
+    "seo:test": "node --test ../scripts/seo-audit.test.mjs && node ../scripts/test-seo-domain.mjs",
+    "seo:audit:build": "node ../scripts/audit-seo-build.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.6.0",

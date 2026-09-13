@@ -1,3 +1,4 @@
+import { StructuredData } from '@/components/structured-data';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { SiteHeader } from '@/components/site-header';
@@ -7,6 +8,7 @@ import { CursorRulesSearch } from '@/components/cursor-rules-search';
 import { cursorRulesMeta } from '@/lib/cursor-rules';
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://www.artificialjobs.dev/cursor-rules" },
   title: 'Cursor Rules Library — .cursorrules for AI Coding Agents',
   description:
     'Curated Cursor rules for TypeScript, Next.js, Python, MCP agents, and more. Copy .cursorrules templates for your agentic dev workflow.',
@@ -15,6 +17,7 @@ export const metadata: Metadata = {
 export default function CursorRulesPage() {
   return (
     <>
+      <StructuredData data={{ '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'Cursor rules library', url: 'https://www.artificialjobs.dev/cursor-rules', description: 'Curated Cursor rules templates for agentic developers.' }} />
       <SiteHeader />
       <main className="flex-1">
         <Container className="py-12">

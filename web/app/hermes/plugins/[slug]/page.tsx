@@ -25,6 +25,7 @@ export async function generateMetadata({
   const entry = getEntryBySlug('hermes', slug);
   if (!entry) return { title: 'Not Found' };
   return {
+    alternates: { canonical: `https://www.artificialjobs.dev/hermes/plugins/${slug}` },
     title: `${entry.name} Hermes Plugin — Install & Setup`,
     description: `${entry.description} Install: ${entry.install}`,
   };

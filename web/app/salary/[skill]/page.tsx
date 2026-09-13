@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { notFound } from 'next/navigation';
-import { jobs, getAllTags, getJobsByTag, slugify, formatSalary, salaryRange, avgSalary, SKILL_SLUG_ALIASES } from '@/lib/jobs';
+import { notFound, permanentRedirect } from 'next/navigation';
+import { jobs, getAllTags, getSalaryTags, getJobsByTag, slugify, formatSalary, salaryRange, avgSalary, SKILL_SLUG_ALIASES } from '@/lib/jobs';
 import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
 import { Container, Breadcrumb, PageHeading, SectionLabel } from '@/components/page-shell';
@@ -9,7 +9,7 @@ import { JobList } from '@/components/job-list';
 import { GeoContent } from '@/components/geo-content';
 
 export function generateStaticParams() {
-  const topTags = getAllTags().slice(0, 20).map(({ tag }) => ({ skill: slugify(tag) }));
+  const topTags = getSalaryTags().map(({ tag }) => ({ skill: slugify(tag) }));
   const aliasedSkills = Object.keys(SKILL_SLUG_ALIASES).map((skill) => ({ skill }));
   const seen = new Set<string>();
   return [...topTags, ...aliasedSkills].filter(({ skill }) => {
@@ -32,8 +32,10 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { skill } = await params;
   const tag = findTag(skill);
-  if (!tag) return { title: 'Not Found' };
+  if (!tag || !getJobsByTag(tag).length) notFound();
   return {
+    alternates: { canonical: `https://www.artificialjobs.dev/salary/${slugify(tag)}` },
+    robots: { index: getJobsByTag(tag).some(salaryRange), follow: true },
     title: `${tag} Engineer Salary Guide 2026 — Average Pay & Ranges | AI Jobs Directory`,
     description: `How much do ${tag} engineers make in 2026? Real salary data from ${getJobsByTag(tag).length} open roles. Ranges, averages, and top-paying companies.`,
   };
@@ -55,6 +57,7 @@ export default async function SalaryPage({ params }: { params: Promise<{ skill: 
 
   const tagJobs = getJobsByTag(tag);
   if (tagJobs.length === 0) notFound();
+  if (skill !== slugify(tag)) permanentRedirect(`/salary/${slugify(tag)}`);
 
   const paidJobs = tagJobs.filter((job) => salaryRange(job));
   const { min: avgMin, max: avgMax } = avgSalary(paidJobs);
@@ -79,9 +82,7 @@ export default async function SalaryPage({ params }: { params: Promise<{ skill: 
     },
     {
       question: `How much do senior ${tag} engineers make?`,
-      answer: hasPay
-        ? `Senior ${tag} engineers typically earn between $${Math.round(avgMax * 1.2 / 1000)}k and $${Math.round(highest / 1000)}k, with the highest-paying roles reaching up to $${Math.round(highest / 1000)}k annually.`
-        : `Published senior ${tag} ranges appear on individual listings when employers share them.`
+      answer: `Pay depends on the employer, location, and responsibilities. The ranges on this page combine seniority levels; check individual senior ${tag} listings for employer-published compensation.`
     },
     {
       question: `What's the salary range for ${tag} roles?`,

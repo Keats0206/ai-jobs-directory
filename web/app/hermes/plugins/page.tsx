@@ -7,6 +7,7 @@ import { AgentEntryList } from '@/components/agent-entry-list';
 import { hermesPlugins, directoryMeta } from '@/lib/agent-directory';
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://www.artificialjobs.dev/hermes/plugins" },
   title: 'Top 50 Hermes Agent Plugins — Install & Setup',
   description:
     'Ranked Hermes Agent plugins for search, memory, gateway platforms, model providers, and observability. Install with hermes plugins enable.',

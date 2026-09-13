@@ -1,7 +1,6 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { jobs, getAllTags, getJobsByTag, slugify, formatSalary, avgSalary, salaryRange } from '@/lib/jobs';
-import { datePosted, validThrough, employmentType, parseLocationAddress } from '@/lib/job-quality';
+import { jobs, getRemoteTags, getRemoteJobsByTag, jobSlug, slugify, formatSalary, avgSalary } from '@/lib/jobs';
 import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
 import { Container, Breadcrumb, PageHeading, SectionLabel } from '@/components/page-shell';
@@ -9,11 +8,11 @@ import { JobList } from '@/components/job-list';
 import { ChipLink } from '@/components/chip';
 
 export function generateStaticParams() {
-  return getAllTags().map(({ tag }) => ({ skill: slugify(tag) }));
+  return getRemoteTags().map(({ tag }) => ({ skill: slugify(tag) }));
 }
 
 function findTag(skillSlug: string): string | null {
-  const match = getAllTags().find(({ tag }) => slugify(tag) === skillSlug);
+  const match = getRemoteTags().find(({ tag }) => slugify(tag) === skillSlug);
   return match ? match.tag : null;
 }
 
@@ -25,10 +24,11 @@ export async function generateMetadata({
   const { skill } = await params;
   const tag = findTag(skill);
   if (!tag) return { title: 'Not Found' };
-  const count = getJobsByTag(tag).length;
+  const count = getRemoteJobsByTag(tag).length;
   return {
+    alternates: { canonical: `https://www.artificialjobs.dev/remote/${skill}` },
     title: `${count} Remote ${tag} Jobs — Hiring Now | AI Jobs Directory`,
-    description: `Browse ${count} remote ${tag} jobs at AI startups and LLM companies. See salaries, requirements, and apply directly. Updated daily.`,
+    description: `Browse ${count} remote ${tag} jobs at AI startups and LLM companies. See salaries, requirements, and apply directly.`,
   };
 }
 
@@ -37,9 +37,10 @@ export default async function SkillPage({ params }: { params: Promise<{ skill: s
   const tag = findTag(skill);
   if (!tag) notFound();
 
-  const tagJobs = getJobsByTag(tag);
+  const tagJobs = getRemoteJobsByTag(tag);
+  if (!tagJobs.length) notFound();
   const avg = avgSalary(tagJobs);
-  const otherTags = getAllTags().filter((t) => t.tag !== tag).slice(0, 12);
+  const otherTags = getRemoteTags().filter((t) => t.tag !== tag).slice(0, 12);
 
   // FAQ Schema for SEO
   const faqItems = [
@@ -59,7 +60,7 @@ export default async function SkillPage({ params }: { params: Promise<{ skill: s
     },
     {
       question: `Are there international remote ${tag} jobs?`,
-      answer: `Yes, many of our remote ${tag} positions welcome international candidates. Filter by location and eligibility on our job listings.`
+      answer: `Remote does not always mean worldwide. Check each employer’s listing for eligible countries, time zones, and work authorization requirements.`
     }
   ];
 
@@ -81,32 +82,12 @@ export default async function SkillPage({ params }: { params: Promise<{ skill: s
     '@type': 'ItemList',
     name: `Remote ${tag} Jobs`,
     numberOfItems: tagJobs.length,
-    itemListElement: tagJobs.slice(0, 50).map((job, i) => {
-      const address = parseLocationAddress(job.location);
-      const range = salaryRange(job);
-      const posting: Record<string, unknown> = {
-        '@type': 'JobPosting',
-        title: job.title,
-        hiringOrganization: { '@type': 'Organization', name: job.company },
-        url: job.apply_url,
-        description: job.description,
-        datePosted: datePosted(job),
-        validThrough: validThrough(job),
-        employmentType: employmentType(job),
-      };
-      if (job.is_remote) posting.jobLocationType = 'TELECOMMUTE';
-      if (Object.keys(address).length > 0) {
-        posting.jobLocation = { '@type': 'Place', address: { '@type': 'PostalAddress', ...address } };
-      }
-      if (range) {
-        posting.baseSalary = {
-          '@type': 'MonetaryAmount',
-          currency: 'USD',
-          value: { '@type': 'QuantitativeValue', minValue: range.min, maxValue: range.max, unitText: 'YEAR' },
-        };
-      }
-      return { '@type': 'ListItem', position: i + 1, item: posting };
-    }),
+    itemListElement: tagJobs.map((job, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: `${job.title} at ${job.company}`,
+      url: `https://www.artificialjobs.dev/jobs/${jobSlug(job, jobs.indexOf(job))}`,
+    })),
   };
 
   return (
@@ -129,14 +110,15 @@ export default async function SkillPage({ params }: { params: Promise<{ skill: s
                   <span className="font-medium text-foreground">
                     {formatSalary(avg.min, avg.max)}
                   </span>{' '}
-                  / year · Updated daily
+                  / year
                 </>
               ) : (
-                <>Updated daily · salary shown when the employer published a range</>
+                <>Salary shown when the employer published a range</>
               )
             }
           />
 
+          <SectionLabel>Remote openings</SectionLabel>
           <JobList jobs={tagJobs} indexOf={(job) => jobs.indexOf(job)} />
 
           {/* FAQ Section */}

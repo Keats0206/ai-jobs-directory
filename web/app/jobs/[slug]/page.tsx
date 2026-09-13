@@ -4,11 +4,8 @@ import { jobs, jobSlug, getJobBySlug, formatSalary, slugify, salaryRange } from 
 import {
   displayCompany,
   displayTitle,
-  datePosted,
-  validThrough,
-  employmentType,
-  parseLocationAddress,
 } from '@/lib/job-quality';
+import { jobStructuredData } from '@/lib/job-schema';
 import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
 import { Container, Breadcrumb } from '@/components/page-shell';
@@ -34,6 +31,7 @@ export async function generateMetadata({
   const salary = range ? formatSalary(range.min, range.max) : null;
   const salaryBit = salary ? ` — ${salary}` : '';
   return {
+    alternates: { canonical: `https://www.artificialjobs.dev/jobs/${jobSlug(job, result.index)}` },
     title: `${title} at ${company}${salaryBit} | AI Jobs Directory`,
     description: `${company} is hiring: ${title}. ${job.location}.${salary ? ` Salary ${salary}.` : ''} Apply for this AI engineering role.`,
     openGraph: {
@@ -54,56 +52,12 @@ export default async function JobPage({ params }: { params: Promise<{ slug: stri
   const range = salaryRange(job);
   const salary = range ? formatSalary(range.min, range.max) : null;
 
-  const address = parseLocationAddress(job.location);
-
-  const jsonLd: Record<string, unknown> = {
-    '@context': 'https://schema.org',
-    '@type': 'JobPosting',
-    title,
-    hiringOrganization: { '@type': 'Organization', name: company },
-    url: job.apply_url,
-    description: job.description,
-    datePosted: datePosted(job),
-    validThrough: validThrough(job),
-    employmentType: employmentType(job),
-  };
-
-  if (job.is_remote) {
-    jsonLd.jobLocationType = 'TELECOMMUTE';
-    if (address.addressCountry) {
-      jsonLd.applicantLocationRequirements = {
-        '@type': 'Country',
-        name: address.addressCountry === 'US' ? 'USA' : address.addressCountry,
-      };
-    }
-  }
-  // Even remote roles often anchor to a hiring location (e.g. "Remote / USA");
-  // include it when known, per Google's guidance for hybrid/remote postings.
-  if (Object.keys(address).length > 0) {
-    jsonLd.jobLocation = {
-      '@type': 'Place',
-      address: { '@type': 'PostalAddress', ...address },
-    };
-  }
-
-  if (range) {
-    jsonLd.baseSalary = {
-      '@type': 'MonetaryAmount',
-      currency: 'USD',
-      value: {
-        '@type': 'QuantitativeValue',
-        minValue: range.min,
-        maxValue: range.max,
-        unitText: 'YEAR',
-      },
-    };
-  }
+  const jsonLd = jobStructuredData(job, `https://www.artificialjobs.dev/jobs/${jobSlug(job, index)}`);
 
   // Clean description — strip markdown junk
   const cleanDesc = job.description
     .replace(/[#*[\]]/g, '')
-    .replace(/\n{3,}/g, '\n\n')
-    .slice(0, 3000);
+    .replace(/\n{3,}/g, '\n\n');
 
   const applyProps = {
     jobId: jobSlug(job, index),
@@ -141,7 +95,7 @@ export default async function JobPage({ params }: { params: Promise<{ slug: stri
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c') }} />
 
       <SiteHeader
         action={<ApplyButton {...applyProps} className="h-8 px-3.5 text-xs">Apply</ApplyButton>}

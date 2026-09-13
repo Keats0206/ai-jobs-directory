@@ -17,6 +17,7 @@ function mcpCategories() {
 }
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://www.artificialjobs.dev/openclaw/mcps" },
   title: 'Top 50 MCP Servers for OpenClaw — Install & Setup',
   description:
     'Best Model Context Protocol servers for OpenClaw agents. Filesystem, GitHub, databases, search, and automation with openclaw mcp add commands.',

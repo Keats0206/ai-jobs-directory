@@ -7,6 +7,7 @@ import { PostJobForm } from '@/components/post-job-form';
 import { GeoContent } from '@/components/geo-content';
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://www.artificialjobs.dev/post-job" },
   title: 'Post an AI Job — $99',
   description:
     'Post your AI, LLM, or ML engineering role to artificialjobs.dev. Reach candidates and AI search engines for a one-time $99 fee.',
@@ -94,7 +95,7 @@ export default function PostJobPage() {
               <li><strong>1. Submit details:</strong> Tell us about your role, company, and requirements.</li>
               <li><strong>2. Secure payment:</strong> Pay via Stripe (one-time for standard, recurring for featured).</li>
               <li><strong>3. Goes live:</strong> Your job appears on the board and in the llms.txt feed within 24 hours.</li>
-              <li><strong>4. Get applications:</strong> We'll send qualified candidates your way.</li>
+              <li><strong>4. Get applications:</strong> We&apos;ll send qualified candidates your way.</li>
             </ol>
           </div>
 

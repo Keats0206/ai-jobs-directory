@@ -1,35 +1,22 @@
 import type { Job } from './jobs';
 
-type RawJob = {
-  date_posted?: string;
-  fetched_at?: string;
-  posted_at?: string;
-};
-
-/**
- * Build-time date used as a last-resort datePosted for the small number of
- * legacy listings that predate fetched_at tracking and have no real posted
- * date on record. Deliberately "today", not the oldest date in the
- * dataset — an old fallback date would push validThrough (datePosted + 60
- * days) into the past, which makes Google treat the listing as expired and
- * drop it from rich results entirely. Every job needs *a* valid
- * datePosted; for these we only know it's in our catalog as of today.
- */
-const FALLBACK_DATE: string = new Date().toISOString().slice(0, 10);
-
-/** ISO date (YYYY-MM-DD) this job was posted, or first listed by us if unknown. */
-export function datePosted(job: Job): string {
-  const raw = job as RawJob;
-  const source = raw.date_posted || raw.fetched_at || raw.posted_at;
-  return source ? source.slice(0, 10) : FALLBACK_DATE;
+/** Accept real ISO calendar dates; never synthesize posting or closing dates. */
+function sourceDate(value?: string): string | undefined {
+  if (!value || !/^\d{4}-\d{2}-\d{2}(?:T.*)?$/.test(value)) return undefined;
+  const day = value.slice(0, 10);
+  const parsed = new Date(value);
+  if (!Number.isFinite(parsed.getTime()) || new Date(day + 'T00:00:00Z').toISOString().slice(0, 10) !== day) return undefined;
+  return value;
 }
 
-/** Listing expiry: 60 days after datePosted, the industry-standard default
- * job boards use when the employer didn't publish an explicit close date. */
-export function validThrough(job: Job): string {
-  const posted = new Date(datePosted(job) + 'T00:00:00Z');
-  posted.setUTCDate(posted.getUTCDate() + 60);
-  return posted.toISOString().slice(0, 10);
+/** Employer posting date. A crawler's fetched_at is not a posting date. */
+export function datePosted(job: Job): string | undefined {
+  return sourceDate(job.date_posted) ?? sourceDate(job.posted_at);
+}
+
+/** Only emit an expiry when the source actually supplied one. */
+export function validThrough(job: Job): string | undefined {
+  return sourceDate(job.valid_through) ?? sourceDate(job.expires_at);
 }
 
 const EMPLOYMENT_TYPE_MAP: Record<string, string> = {
@@ -46,9 +33,9 @@ const EMPLOYMENT_TYPE_MAP: Record<string, string> = {
 };
 
 /** schema.org JobPosting employmentType enum value. */
-export function employmentType(job: Job): string {
+export function employmentType(job: Job): string | undefined {
   const key = (job.job_type ?? '').toLowerCase().trim();
-  return EMPLOYMENT_TYPE_MAP[key] ?? 'FULL_TIME';
+  return EMPLOYMENT_TYPE_MAP[key];
 }
 
 // Minimal US state name/abbreviation map — covers the metros this board
@@ -83,7 +70,7 @@ export function parseLocationAddress(location: string): JobAddress {
   if (parts.length >= 2) {
     address.addressLocality = parts[0];
     const region = parts[1];
-    if (/^[A-Z]{2}$/.test(region)) {
+    if (new Set(['AL', 'AK', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'DC', 'FL', 'GA', 'HI', 'ID', 'IL', 'IN', 'IA', 'KS', 'KY', 'LA', 'ME', 'MD', 'MA', 'MI', 'MN', 'MS', 'MO', 'MT', 'NE', 'NV', 'NH', 'NJ', 'NM', 'NY', 'NC', 'ND', 'OH', 'OK', 'OR', 'PA', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT', 'VT', 'VA', 'WA', 'WV', 'WI', 'WY']).has(region)) {
       address.addressRegion = region;
       address.addressCountry = 'US';
     } else if (US_STATE_ABBR[region.toLowerCase()]) {

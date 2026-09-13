@@ -1,7 +1,12 @@
+import type { Metadata } from "next";
 import { Container } from '@/components/page-shell';
 import { SiteFooter } from '@/components/site-footer';
 import { AgentsHubPage } from '@/components/agents-hub-page';
 import { GeoContent } from '@/components/geo-content';
+
+export const metadata: Metadata = {
+  alternates: { canonical: "https://www.artificialjobs.dev/agents" },
+};
 
 export default function AgentsPage() {
   return (

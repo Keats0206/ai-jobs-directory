@@ -7,6 +7,7 @@ import { AgentEntryList } from '@/components/agent-entry-list';
 import { openclawPlugins, directoryMeta } from '@/lib/agent-directory';
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://www.artificialjobs.dev/openclaw/plugins" },
   title: 'Top 50 OpenClaw Plugins — Install & Setup',
   description:
     'Ranked list of the best OpenClaw plugins for channels, model providers, search, voice, and tools. Install commands included.',

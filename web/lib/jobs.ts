@@ -1,4 +1,4 @@
-import jobsData from '@/data/jobs.json';
+import jobsData from '../data/jobs.json';
 import { salaryRange } from './job-quality';
 
 // Utility functions shared across pSEO pages
@@ -13,6 +13,11 @@ export interface Job {
   tags: string[];
   description: string;
   job_type?: string;
+  date_posted?: string;
+  posted_at?: string;
+  fetched_at?: string;
+  valid_through?: string;
+  expires_at?: string;
 }
 
 export const jobs: Job[] = jobsData as Job[];
@@ -34,12 +39,29 @@ export function getJobBySlug(slug: string): { job: Job; index: number } | null {
   if (!match) return null;
   const index = parseInt(match[1], 10);
   if (index < 0 || index >= jobs.length) return null;
+  // Never show a different job just because its array index matches an old URL.
+  if (jobSlug(jobs[index], index) !== slug) return null;
   return { job: jobs[index], index };
 }
 
 export function getJobsByTag(tag: string): Job[] {
   const normalized = tag.toLowerCase();
   return jobs.filter(j => j.tags?.some(t => t.toLowerCase() === normalized));
+}
+
+export function getRemoteJobsByTag(tag: string): Job[] {
+  return getJobsByTag(tag).filter((job) => job.is_remote);
+}
+
+export function getRemoteTags(): { tag: string; count: number }[] {
+  return getAllTags()
+    .map(({ tag }) => ({ tag, count: getRemoteJobsByTag(tag).length }))
+    .filter(({ count }) => count > 0);
+}
+
+/** Salary guides only merit indexing when they contain published pay data. */
+export function getSalaryTags(): { tag: string; count: number }[] {
+  return getAllTags().filter(({ tag }) => getJobsByTag(tag).some(salaryRange));
 }
 
 export function getJobsByLocation(location: string): Job[] {

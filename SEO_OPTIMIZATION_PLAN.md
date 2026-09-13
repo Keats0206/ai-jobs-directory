@@ -1,3 +1,5 @@
+> Superseded by [the September 13 audit](reports/aeo_audit_report.md). The estimates and schema recommendations below are historical planning assumptions, not verified results.
+
 # artificialjobs.dev — SEO/LLM Growth Plan
 
 **Status:** Live with analytics tracking  

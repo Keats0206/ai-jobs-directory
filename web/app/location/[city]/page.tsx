@@ -46,6 +46,7 @@ export async function generateMetadata({
   const { label: loc, matchTerm } = resolved;
   const count = getJobsByLocation(matchTerm).length;
   return {
+    alternates: { canonical: `https://www.artificialjobs.dev/location/${city}` },
     title: `${count} AI Jobs in ${loc} — Hiring Now | AI Jobs Directory`,
     description: `Browse ${count} AI and machine learning jobs in ${loc}. LLM engineers, RAG developers, and ML roles at top AI companies. Updated daily.`,
   };

@@ -9,6 +9,7 @@ import { getAllAgents, comparisons, getAgentName } from '@/lib/agents';
 import { GeoContent } from '@/components/geo-content';
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://www.artificialjobs.dev/compare/ai-coding-agents" },
   title: 'Best AI Coding Agents (2026) — Compare Top 15 Agents',
   description:
     'Compare Hermes Agent, Kilo Code, Cline, Claude Code, Cursor, Windsurf, and more. Features, pricing, token usage, and head-to-head matchups.',

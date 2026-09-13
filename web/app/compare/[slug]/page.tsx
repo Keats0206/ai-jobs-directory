@@ -33,6 +33,7 @@ export async function generateMetadata({
     const nameA = getAgentName(comparison.agentA);
     const nameB = getAgentName(comparison.agentB);
     return {
+    alternates: { canonical: `https://www.artificialjobs.dev/compare/${slug}` },
       title: `${nameA} vs ${nameB} (2026): Which AI Agent Is Better?`,
       description: `Compare ${nameA} and ${nameB} — features, pricing, platforms, and who each agent is best for. Updated for 2026.`,
     };
@@ -41,6 +42,7 @@ export async function generateMetadata({
   const agent = getAgent(slug);
   if (!agent) return { title: 'Not Found' };
   return {
+    alternates: { canonical: `https://www.artificialjobs.dev/compare/${slug}` },
     title: `${agent.name} Review (2026) — Features, Pricing & Alternatives`,
     description: `${agent.tagline} Compare ${agent.name} to Cursor, Claude Code, Cline, and other top AI coding agents.`,
   };

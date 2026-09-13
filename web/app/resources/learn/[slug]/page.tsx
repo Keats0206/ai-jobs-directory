@@ -28,6 +28,7 @@ export async function generateMetadata({
   const content = getContentByUrl(page.url);
   if (!content) return { title: 'Not Found' };
   return {
+    alternates: { canonical: `https://www.artificialjobs.dev/resources/learn/${slug}` },
     title: content.frontmatter.title_tag ?? content.frontmatter.title,
     description: content.frontmatter.meta_description,
   };

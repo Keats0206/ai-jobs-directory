@@ -25,6 +25,7 @@ export async function generateMetadata({
   const entry = getEntryBySlug('openclaw', slug);
   if (!entry) return { title: 'Not Found' };
   return {
+    alternates: { canonical: `https://www.artificialjobs.dev/openclaw/plugins/${slug}` },
     title: `${entry.name} OpenClaw Plugin — Install & Setup`,
     description: `${entry.description} Install: ${entry.install}`,
   };
