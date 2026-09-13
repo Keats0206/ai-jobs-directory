@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import Stripe from 'stripe';
 import { Resend } from 'resend';
-import { addPendingListing, createPendingFromMetadata } from '@/lib/fulfillment';
+import { recordAnalyticsEvent, recordPaidListing } from '@/lib/supabase-admin';
 
 const stripe = process.env.STRIPE_SECRET_KEY
   ? new Stripe(process.env.STRIPE_SECRET_KEY)
@@ -67,12 +67,32 @@ export async function POST(request: NextRequest) {
 
   if (event.type === 'checkout.session.completed') {
     const session = event.data.object as Stripe.Checkout.Session;
+    if (session.payment_status !== 'paid') {
+      return NextResponse.json({ received: true, ignored: 'payment not complete' });
+    }
     const metadata = session.metadata ?? {};
     const type = metadata.type ?? 'post';
     const email = session.customer_email ?? session.customer_details?.email ?? '';
 
-    const pending = createPendingFromMetadata(session.id, metadata, email);
-    if (pending) addPendingListing(pending);
+    const listingType = metadata.type;
+    if (listingType !== 'post' && listingType !== 'featured' && listingType !== 'post-mcp') {
+      console.error('Unknown paid listing type:', listingType, session.id);
+      return NextResponse.json({ error: 'Unknown listing type' }, { status: 400 });
+    }
+    // Stripe retries events. The unique session ID makes this operation idempotent.
+    const inserted = await recordPaidListing({
+      stripe_session_id: session.id,
+      listing_type: listingType,
+      email,
+      company: metadata.company ?? '',
+      job_title: metadata.jobTitle,
+      mcp_name: metadata.mcpName,
+      mcp_url: metadata.mcpUrl,
+      description: metadata.description,
+      amount_cents: session.amount_total ?? 0,
+    });
+    if (!inserted) return NextResponse.json({ received: true, duplicate: true });
+    await recordAnalyticsEvent('checkout_completed', { type: listingType, amount_cents: session.amount_total ?? 0 });
 
     try {
       await sendConfirmationEmail(email, type, {

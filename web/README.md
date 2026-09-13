@@ -50,3 +50,9 @@ npm run seo:audit -- --max-pages=60 --out=/tmp/ai-jobs-live-seo.json
 The build audit checks all prerendered sitemap pages. The live audit checks actual HTTP responses and returns a nonzero exit code on failures. For a local/preview deployment, add `--site=http://localhost:3107 --canonical-site=https://www.artificialjobs.dev` to `seo:audit`; this preserves checks against production canonical URLs. Keep production and preview results separate.
 
 See [the SEO audit and operating plan](../reports/aeo_audit_report.md) for the baseline, validation evidence, limitations, and remaining organic traffic priorities. These technical checks do not replace Search Console performance/indexing data or Google’s Rich Results Test.
+
+See the repository [revenue playbook](../revenue-playbook.md) for the 14-day employer sales experiment, package design, instrumentation, and outreach template.
+
+## Revenue pipeline setup
+
+Apply `supabase/migrations/20260913170000_revenue_pipeline.sql` to the linked Supabase project, then add `SUPABASE_SERVICE_ROLE_KEY` to Vercel Production. The Stripe webhook should point to `/api/webhooks/stripe` (the old `/api/stripe/webhook` path remains an alias). Paid checkouts are recorded idempotently in `paid_listings`, apply clicks in `analytics_events`, and newsletter subscribers in `newsletter_subscribers`. Without the service-role key, paid webhook requests fail and Stripe retries instead of silently losing a sale.

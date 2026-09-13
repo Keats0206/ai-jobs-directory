@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import Stripe from 'stripe';
+import { recordAnalyticsEvent } from '@/lib/supabase-admin';
 
 const stripe = process.env.STRIPE_SECRET_KEY
   ? new Stripe(process.env.STRIPE_SECRET_KEY)
@@ -96,6 +97,14 @@ export async function POST(request: NextRequest) {
     };
 
     const session = await stripe.checkout.sessions.create(sessionConfig);
+
+    if (process.env.SUPABASE_SERVICE_ROLE_KEY) {
+      await recordAnalyticsEvent('checkout_started', {
+        type: checkoutType,
+        company,
+        amount_cents: unitAmount,
+      });
+    }
 
     return NextResponse.json({ url: session.url }, { status: 200 });
   } catch (err) {

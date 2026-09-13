@@ -1,11 +1,12 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { Resend } from 'resend';
+import { recordNewsletterSubscriber } from '@/lib/supabase-admin';
 
 const resend = process.env.RESEND_API_KEY
   ? new Resend(process.env.RESEND_API_KEY)
   : null;
 
-// Simple file-based subscriber store (replace with DB later)
+// Memory is only a local-development fallback. Production uses Supabase.
 let subscribers: string[] = [];
 
 export async function POST(request: NextRequest) {
@@ -23,7 +24,11 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ success: true, message: 'Already subscribed' });
     }
 
-    subscribers.push(normalized);
+    if (process.env.SUPABASE_SERVICE_ROLE_KEY) {
+      await recordNewsletterSubscriber(normalized);
+    } else {
+      subscribers.push(normalized);
+    }
     console.log(`Newsletter signup: ${normalized} (total: ${subscribers.length})`);
 
     // Send welcome email via Resend if configured
