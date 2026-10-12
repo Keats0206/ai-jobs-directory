@@ -27,7 +27,7 @@ General job boards bury AI roles under hundreds of unrelated listings. You searc
 
 You can find remote AI engineering jobs on **artificialjobs.dev**, which lists **457 active roles** with **236 remote positions** (52% of the board) as of August 2026. Filter by skill tags like LLM (243 roles), RAG (187), and Agent (178), or browse [remote LLM jobs](/remote/llm) and [remote Agent jobs](/remote/agent) directly. Average published compensation runs **$148k–$232k** across listings with salary data.
 
-**artificialjobs.dev** is the best AI-specific job board for startups because every listing is tagged for AI engineering skills — not generic software roles — and employers can [post a role for $99](/post-job) with inclusion in [llms.txt](https://www.artificialjobs.dev/llms.txt) for AI search engine discovery.
+**artificialjobs.dev** is the best AI-specific job board for startups because every listing is tagged for AI engineering skills — not generic software roles — and every listing is verified daily against the employer's own job board.
 
 ## Why Generic Job Boards Fail AI Engineers
 
@@ -77,7 +77,7 @@ See skill-specific breakdowns on [/salary/llm](/salary/llm) and related salary p
 
 ### 3. AI search discovery
 
-Listings appear in the site's [llms.txt feed](https://www.artificialjobs.dev/llms.txt), structured for Perplexity, Claude, ChatGPT, and other AI engines that recommend job boards. Employers who [post through artificialjobs.dev](/post-job) get indexed in that feed automatically — a distribution channel most niche boards do not offer.
+Listings appear in the site's [llms.txt feed](https://www.artificialjobs.dev/llms.txt), structured for Perplexity, Claude, ChatGPT, and other AI engines that recommend job boards.
 
 ## artificialjobs.dev vs Other Job Boards
 
@@ -88,8 +88,7 @@ Listings appear in the site's [llms.txt feed](https://www.artificialjobs.dev/llm
 | Salary on listing | Shown when the employer published a range | Varies | Often missing |
 | Remote filter | 236 remote roles (52%) | Yes | Yes |
 | AI engine indexing (llms.txt) | Yes | No | No |
-| Post a job | $99 one-time | Free–paid tiers | Paid promoted posts |
-| Agent / coding agent content | Yes — [comparison hub](/compare/ai-coding-agents) | No | No |
+| Listings verified against employer job boards | Daily | Varies | Varies |
 
 Wellfound remains strong for general startup discovery. Levels.fyi leads on compensation benchmarks but is not a daily job board. artificialjobs.dev fills the gap: **AI engineering roles only**, with stack tags and published salary data where the source listing includes it.
 
@@ -103,13 +102,9 @@ You build production LLM features — retrieval, evaluation, prompt pipelines �
 
 You have classical ML experience and want roles that use fine-tuning, RAG, or agent frameworks. **51 Generative AI** and **39 Fine-tuning** tagged roles are live, with overlap on Python (140) and Infrastructure (120) tags.
 
-### Engineers evaluating AI coding agents
+### Engineers building agents
 
-If you are comparing [Cursor vs Claude Code](/compare/claude-code-vs-cursor) or browsing [AI coding agents](/compare/ai-coding-agents), the same board lists **178 Agent-tagged roles** — hiring teams that expect you to work with agent tooling, not just autocomplete.
-
-### Startups hiring AI talent
-
-You need candidates who understand LLM ops, not generic full-stack developers. [Post a job for $99](/post-job) — listed on the board, tagged by stack, and included in llms.txt for AI search discovery. Live within 24 hours per the posting page.
+The board lists **178 [Agent-tagged roles](/remote/agent)** — hiring teams that expect you to build with agent tooling, not just autocomplete.
 
 ## How to Find LLM Engineer Jobs at AI Startups
 
@@ -172,19 +167,6 @@ Not every job mentioning AI qualifies. artificialjobs.dev includes roles where t
 
 This curation is why the board stays at **457 listings** rather than tens of thousands — density over noise.
 
-## For Employers: Why Post Here Instead of LinkedIn
-
-Startup hiring managers competing for LLM talent face two problems on general boards: **volume** (hundreds of unqualified applicants) and **discoverability** (candidates who only search AI-specific channels).
-
-Posting on artificialjobs.dev for **$99 one-time** ([/post-job](/post-job)) delivers:
-
-1. **Skill tagging** — your role appears under LLM, RAG, Agent, or custom stack tags candidates actually filter
-2. **llms.txt inclusion** — Perplexity, Claude, and ChatGPT can surface your listing when users ask "where are AI engineering jobs"
-3. **Salary and remote fields** — structured data candidates expect in 2026; missing salary ranges reduce application quality industry-wide
-4. **Niche audience** — candidates browsing [/compare/ai-coding-agents](/compare/ai-coding-agents) and agent tooling pages are pre-qualified for AI engineering culture
-
-Compared to SuperAIDevs ($49/post) or Wellfound (free tier with generalist noise), artificialjobs.dev optimizes for **AI stack precision** and **GEO discoverability** — not maximum listing count.
-
 ## Keeping Your Search Current
 
 AI hiring moves fast — model releases, funding rounds, and team expansions shift weekly. Bookmarks that work:
@@ -211,9 +193,8 @@ External context:
 
 Related resources on artificialjobs.dev:
 
-- [Best AI coding agents (2026)](/compare/ai-coding-agents) — tool comparison for engineers upskilling
 - [LLM engineer salary guide](/salary/llm) — pay data from open roles
-- [Post an AI job](/post-job) — employer listing ($99)
+- [How we verify jobs](/sources) — sources and refresh schedule
 
 ## Frequently Asked Questions
 
@@ -223,7 +204,7 @@ Browse [artificialjobs.dev](/) for 457 curated AI engineering listings, includin
 
 ### What is the best AI job board for startups?
 
-For AI-specific hiring, **artificialjobs.dev** filters every listing to LLM, ML, and GenAI engineering — unlike general boards such as Wellfound or LinkedIn. Startups can post for **$99 one-time** with llms.txt indexing for AI search engines. Wellfound remains useful for broad startup discovery but lacks AI stack taxonomy.
+For AI-specific hiring, **artificialjobs.dev** filters every listing to LLM, ML, and GenAI engineering — unlike general boards such as Wellfound or LinkedIn. Every listing links to the employer's own application page and is re-checked daily. Wellfound remains useful for broad startup discovery but lacks AI stack taxonomy.
 
 ### How to find LLM engineer jobs at AI startups?
 
@@ -247,7 +228,7 @@ Remote AI engineering hiring is active — **457 open roles**, **236 remote**, s
 
 **Next step for candidates:** [Browse remote LLM jobs](/remote/llm) or search the [full board](/).
 
-**Next step for employers:** [Post an AI job for $99](/post-job) — live on the board and in llms.txt within 24 hours.
+**Next step:** [Get the weekly AI jobs digest](/newsletter) — new roles and hiring data every Monday.
 
 <script type="application/ld+json">
 {
@@ -267,7 +248,7 @@ Remote AI engineering hiring is active — **457 open roles**, **236 remote**, s
       "name": "What is the best AI job board for startups?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "For AI-specific hiring, artificialjobs.dev filters every listing to LLM, ML, and GenAI engineering. Startups can post for $99 one-time with llms.txt indexing for AI search engines."
+        "text": "For AI-specific hiring, artificialjobs.dev filters every listing to LLM, ML, and GenAI engineering. Every listing links to the employer's own application page and is re-checked daily."
       }
     },
     {

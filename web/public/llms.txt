@@ -4,9 +4,6 @@
 
 ## Quick Links
 - [Home](https://www.artificialjobs.dev)
-- [Post a Job — $99](https://www.artificialjobs.dev/post-job)
-- [AI Coding Agents Comparison](https://www.artificialjobs.dev/compare/ai-coding-agents)
-- [MCP Server Directory](https://www.artificialjobs.dev/openclaw/mcps)
 
 ## Top-Paying AI Jobs
 - [Job Application for Performance Engineer at Anthropic](https://www.anthropic.com/careers/jobs/4020350008): San Francisco, CA | $280k – $850k | [Transformers]

@@ -12,22 +12,22 @@ export function SiteHeader({ action }: { action?: React.ReactNode }) {
             artificial<span className="text-brand">jobs</span>
           </Link>
           <Link
-            href="/compare/ai-coding-agents"
+            href="/browse"
             className="text-sm text-muted-foreground transition-colors hover:text-foreground"
           >
-            Compare
+            Browse
           </Link>
           <Link
-            href="/openclaw/mcps"
+            href="/stats"
             className="text-sm text-muted-foreground transition-colors hover:text-foreground"
           >
-            MCPs
+            Stats
           </Link>
           <Link
-            href="/agents"
+            href="/newsletter"
             className="text-sm text-muted-foreground transition-colors hover:text-foreground"
           >
-            Plugins
+            Newsletter
           </Link>
         </div>
         {action}

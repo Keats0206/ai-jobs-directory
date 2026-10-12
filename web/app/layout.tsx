@@ -15,12 +15,13 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.artificialjobs.dev"),
+  alternates: { types: { 'application/rss+xml': '/feed.xml' } },
   title: {
-    default: "Artificial Jobs — AI coding agents, MCP directory & engineering roles",
+    default: "Artificial Jobs — Live data on AI hiring, salaries & open roles",
     template: "%s | Artificial Jobs",
   },
   description:
-    "Compare AI coding agents, browse MCP servers and agent plugins, and find AI engineering jobs. Rankings, head-to-head comparisons, and agentic dev tools for developers.",
+    "Who is hiring AI engineers, what they pay, and which skills are in demand, from thousands of postings verified daily on company job boards.",
   openGraph: {
     type: "website",
     siteName: "Artificial Jobs",
@@ -29,7 +30,7 @@ export const metadata: Metadata = {
         url: "/og.svg",
         width: 1200,
         height: 630,
-        alt: "Artificial Jobs — Agentic dev tools and AI engineering jobs",
+        alt: "Artificial Jobs — Live data on AI hiring",
       },
     ],
   },

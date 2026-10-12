@@ -1,5 +1,9 @@
-import type { FaqItem } from '@/lib/agents';
 import { SectionLabel } from '@/components/page-shell';
+
+export interface FaqItem {
+  question: string;
+  answer: string;
+}
 
 export function FaqSection({ faqs }: { faqs: FaqItem[] }) {
   if (faqs.length === 0) return null;
