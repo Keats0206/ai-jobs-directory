@@ -1,5 +1,7 @@
 import Link from 'next/link';
-import { Job, jobSlug, formatSalary, salaryRange } from '@/lib/jobs';
+import type { Job } from '@/lib/jobs';
+import { jobSlug, formatSalary } from '@/lib/job-utils';
+import { salaryRange } from '@/lib/job-quality';
 import { displayCompany, displayTitle } from '@/lib/job-quality';
 
 /**

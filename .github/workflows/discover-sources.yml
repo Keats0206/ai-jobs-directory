@@ -1,0 +1,22 @@
+name: Discover employer sources
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Discover candidates (maximum 3 Exa requests)
+        env:
+          EXA_API_KEY: ${{ secrets.EXA_API_KEY }}
+        run: python scripts/discover_sources.py --queries 3 --results 20
+      - uses: actions/upload-artifact@v4
+        with:
+          name: source-candidates
+          path: web/data/source-candidates.json

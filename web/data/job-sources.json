@@ -1,0 +1,133 @@
+[
+  {
+    "ats": "greenhouse",
+    "slug": "anthropic",
+    "company": "Anthropic"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "scaleai",
+    "company": "Scale AI"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "togetherai",
+    "company": "Together AI"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "imbue",
+    "company": "Imbue"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "databricks",
+    "company": "Databricks",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "lever",
+    "slug": "mistral",
+    "company": "Mistral AI"
+  },
+  {
+    "ats": "ashby",
+    "slug": "openai",
+    "company": "OpenAI"
+  },
+  {
+    "ats": "ashby",
+    "slug": "cohere",
+    "company": "Cohere"
+  },
+  {
+    "ats": "ashby",
+    "slug": "runway",
+    "company": "Runway"
+  },
+  {
+    "ats": "ashby",
+    "slug": "elevenlabs",
+    "company": "ElevenLabs"
+  },
+  {
+    "ats": "ashby",
+    "slug": "harvey",
+    "company": "Harvey"
+  },
+  {
+    "ats": "ashby",
+    "slug": "cerebras",
+    "company": "Cerebras"
+  },
+  {
+    "ats": "ashby",
+    "slug": "suno",
+    "company": "Suno"
+  },
+  {
+    "ats": "ashby",
+    "slug": "sierra",
+    "company": "Sierra"
+  },
+  {
+    "ats": "ashby",
+    "slug": "mercor",
+    "company": "Mercor"
+  },
+  {
+    "ats": "ashby",
+    "slug": "cursor",
+    "company": "Cursor (Anysphere)"
+  },
+  {
+    "ats": "ashby",
+    "slug": "perplexity",
+    "company": "Perplexity"
+  },
+  {
+    "ats": "ashby",
+    "slug": "baseten",
+    "company": "Baseten"
+  },
+  {
+    "ats": "ashby",
+    "slug": "sardine",
+    "company": "Sardine"
+  },
+  {
+    "ats": "ashby",
+    "slug": "hadrian-automation",
+    "company": "Hadrian",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "appliedintuition",
+    "company": "Applied Intuition",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "andurilindustries",
+    "company": "Anduril",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "neo4j",
+    "company": "Neo4j",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "lever",
+    "slug": "field-ai",
+    "company": "Field AI"
+  },
+  {
+    "ats": "lever",
+    "slug": "hive",
+    "company": "Hive",
+    "role_scope": "ai"
+  }
+]

@@ -26,7 +26,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const result = getJobBySlug(slug);
-  if (!result) return { title: 'Job Not Found' };
+  if (!result || (result.job.status && result.job.status !== 'active')) return { title: 'Job Not Found', robots: { index: false } };
   const { job } = result;
   const title = displayTitle(job);
   const company = displayCompany(job);
@@ -46,7 +46,7 @@ export async function generateMetadata({
 export default async function JobPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const result = getJobBySlug(slug);
-  if (!result) notFound();
+  if (!result || (result.job.status && result.job.status !== 'active')) notFound();
 
   const { job, index } = result;
   const title = displayTitle(job);

@@ -1,5 +1,7 @@
 import jobsData from '@/data/jobs.json';
 import { salaryRange } from './job-quality';
+import { slugify } from './job-utils';
+export { slugify, jobSlug, formatSalary } from './job-utils';
 
 // Utility functions shared across pSEO pages
 export interface Job {
@@ -13,28 +15,26 @@ export interface Job {
   tags: string[];
   description: string;
   job_type?: string;
+  slug?: string;
+  status?: string;
+  source?: string;
+  source_board?: string;
+  source_verified?: boolean;
+  last_verified?: string;
+  first_seen?: string;
+  date_posted?: string | null;
 }
 
-export const jobs: Job[] = jobsData as Job[];
-
-export function slugify(text: string): string {
-  return text
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-+|-+$/g, '');
-}
-
-export function jobSlug(job: Job, index: number): string {
-  const base = slugify(`${job.title}-${job.company}`);
-  return `${base}-${index}`;
-}
+// Freeze legacy URLs before filtering closed records out of the active board.
+export const allJobs: Job[] = (jobsData as Job[]).map((job, index) => ({
+  ...job, slug: job.slug || `${slugify(`${job.title}-${job.company}`)}-${index}`,
+}));
+export const jobs: Job[] = allJobs.filter(job => !job.status || job.status === 'active');
 
 export function getJobBySlug(slug: string): { job: Job; index: number } | null {
-  const match = slug.match(/-(\d+)$/);
-  if (!match) return null;
-  const index = parseInt(match[1], 10);
-  if (index < 0 || index >= jobs.length) return null;
-  return { job: jobs[index], index };
+  const index = allJobs.findIndex(job => job.slug === slug);
+  if (index < 0) return null;
+  return { job: allJobs[index], index };
 }
 
 export function getJobsByTag(tag: string): Job[] {
@@ -103,11 +103,6 @@ export function getAllLocations(): { location: string; count: number }[] {
   return Object.entries(counts)
     .map(([location, count]) => ({ location, count }))
     .sort((a, b) => b.count - a.count);
-}
-
-export function formatSalary(min: number, max: number): string {
-  const fmt = (n: number) => n >= 1000 ? `$${Math.round(n / 1000)}k` : `$${n}`;
-  return `${fmt(min)} – ${fmt(max)}`;
 }
 
 export function avgSalary(jobList: Job[]): { min: number; max: number } {

@@ -25,10 +25,11 @@ export async function generateMetadata({
   const { skill } = await params;
   const tag = findTag(skill);
   if (!tag) return { title: 'Not Found' };
-  const count = getJobsByTag(tag).length;
+  const count = getJobsByTag(tag).filter(job => job.is_remote).length;
   return {
-    title: `${count} Remote ${tag} Jobs — Hiring Now | AI Jobs Directory`,
-    description: `Browse ${count} remote ${tag} jobs at AI startups and LLM companies. See salaries, requirements, and apply directly. Updated daily.`,
+    title: `${count} Remote ${tag} Jobs — Hiring Now`,
+    description: `Browse ${count} remote ${tag} jobs at AI startups and LLM companies. See salaries, requirements, and apply directly with each employer.`,
+    alternates: { canonical: `/remote/${skill}` },
   };
 }
 
@@ -37,7 +38,7 @@ export default async function SkillPage({ params }: { params: Promise<{ skill: s
   const tag = findTag(skill);
   if (!tag) notFound();
 
-  const tagJobs = getJobsByTag(tag);
+  const tagJobs = getJobsByTag(tag).filter(job => job.is_remote);
   const avg = avgSalary(tagJobs);
   const otherTags = getAllTags().filter((t) => t.tag !== tag).slice(0, 12);
 
