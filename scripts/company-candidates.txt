@@ -1,0 +1,268 @@
+# Reputable AI employers to probe for public ATS boards. "| ai" = only AI/ML titles count.
+# Quality bar: established labs, well-funded AI startups, and major tech companies' AI teams.
+
+# Frontier and research labs
+Mistral AI
+xAI
+Character.AI
+Reka
+Inflection AI
+Adept
+Magic
+Poolside
+Safe Superintelligence
+Thinking Machines Lab
+Physical Intelligence
+Skild AI | ai
+World Labs
+Liquid AI
+Sakana AI
+AI21 Labs
+Nous Research
+Allen Institute for AI
+Contextual AI
+Essential AI
+Periodic Labs
+Reflection AI
+Black Forest Labs
+Midjourney
+Luma AI
+Pika
+Ideogram
+Stability AI
+Genmo
+Decart
+Higgsfield
+
+# AI infrastructure, inference and tooling
+Fireworks AI
+Modal
+Replicate
+Anyscale
+Lambda | ai
+CoreWeave | ai
+Crusoe | ai
+Groq | ai
+SambaNova | ai
+Etched | ai
+Tenstorrent | ai
+Lightmatter | ai
+d-Matrix | ai
+Modular
+OctoAI
+Fal
+Baseten
+Weights & Biases
+Hugging Face
+LangChain
+LlamaIndex
+Pinecone
+Weaviate
+Chroma
+Qdrant
+Zilliz
+Vercel | ai
+Supabase | ai
+Arize AI
+Braintrust
+Humanloop
+Galileo
+Patronus AI
+Scale AI
+Snorkel AI
+Labelbox
+Surge AI
+Turing | ai
+Invisible Technologies
+Unstructured
+Outerbounds
+Determined AI
+Lamini
+Predibase
+Together AI
+Cerebras
+Nomic AI
+Jina AI
+Voyage AI
+Exa
+Tavily
+Browserbase
+E2B
+Daytona
+Temporal | ai
+Neon | ai
+PlanetScale | ai
+
+# Applied AI products
+Glean
+Writer
+Jasper
+Hebbia
+Decagon
+Sierra
+Rasa
+Ada
+Cresta
+Observe.AI
+ASAPP
+Abridge
+Ambience Healthcare
+Hippocratic AI
+Nabla
+Tempus | ai
+Insitro
+Recursion | ai
+Isomorphic Labs
+Genesis Therapeutics
+Chai Discovery
+EvolutionaryScale
+Profluent
+Harvey
+EvenUp
+Spellbook
+Clio | ai
+Rogo
+Hebbia
+Hex | ai
+Notion | ai
+Figma | ai
+Canva | ai
+Grammarly | ai
+Duolingo | ai
+Replit
+Codeium
+Windsurf
+Cognition
+Factory
+Sourcegraph
+Tabnine
+Augment Code
+Warp
+Zed Industries
+Lovable
+Bolt
+v0
+Gamma
+Tome
+Descript
+Synthesia
+HeyGen
+Runway
+ElevenLabs
+Deepgram
+AssemblyAI
+Speechmatics
+Cartesia
+Hume AI
+Suno
+Udio
+Perplexity
+You.com
+Typeface
+Copy.ai
+Tome
+Otter.ai
+Fathom
+Granola
+Mem
+Rewind
+Limitless
+Humane
+Rabbit
+Figure AI | ai
+1X | ai
+Agility Robotics | ai
+Apptronik | ai
+Covariant | ai
+Wayve | ai
+Waymo | ai
+Aurora Innovation | ai
+Nuro | ai
+Zoox | ai
+Applied Intuition | ai
+Shield AI | ai
+Anduril
+Helsing | ai
+Palantir | ai
+Databricks
+Snowflake | ai
+Datadog | ai
+Stripe | ai
+Ramp | ai
+Brex | ai
+Plaid | ai
+Airbnb | ai
+Pinterest | ai
+Reddit | ai
+Discord | ai
+Dropbox | ai
+Instacart | ai
+DoorDash | ai
+Lyft | ai
+Robinhood | ai
+Coinbase | ai
+Affirm | ai
+Asana | ai
+Airtable | ai
+Gusto | ai
+Rippling | ai
+Deel | ai
+Benchling | ai
+Samsara | ai
+Verkada | ai
+Flexport | ai
+Faire | ai
+Chime | ai
+SoFi | ai
+Twilio | ai
+Okta | ai
+Cloudflare | ai
+GitLab | ai
+HashiCorp | ai
+Elastic | ai
+MongoDB | ai
+Confluent | ai
+dbt Labs | ai
+Fivetran | ai
+Retool | ai
+Linear | ai
+Mercury | ai
+Scale Venture | ai
+Nebius | ai
+Imbue
+Eleuther AI
+Sardine
+Hive
+Mercor
+Cohere
+Field AI
+Harvey
+Cursor
+Hadrian | ai
+XBOW
+Eigen Labs
+Reducto
+Krea
+Roboflow
+SandboxAQ
+TensorWave | ai
+Gray Swan AI
+Sift | ai
+Yotta Labs
+Machina Labs | ai
+
+# Approved from legacy-job boards after review (names corrected)
+Kitware | ai
+Intrinsic | ai
+Vanta | ai
+ClickUp | ai
+Abnormal Security | ai
+Cribl | ai
+Elicit
+Speak | ai
+OpenRouter
+Parallel Web Systems
+Inceptive
+Profound | ai
+QuantCo | ai
+d-Matrix | ai

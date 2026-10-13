@@ -1,4 +1,5 @@
 import jobsData from '@/data/jobs.json';
+import enrichmentData from '@/data/job-enrichment.json';
 import { salaryRange } from './job-quality';
 import { slugify } from './job-utils';
 export { slugify, jobSlug, formatSalary } from './job-utils';
@@ -23,12 +24,30 @@ export interface Job {
   last_verified?: string;
   first_seen?: string;
   date_posted?: string | null;
+  facts?: JobFacts;
 }
 
+/** Facts extracted from the description by scripts/enrich_jobs.py; empty or null when not stated. */
+export interface JobFacts {
+  seniority: 'intern' | 'junior' | 'mid' | 'senior' | 'staff' | 'principal' | 'manager' | 'unknown';
+  yoe_min: number | null;
+  stack: string[];
+  model_providers: string[];
+  visa_sponsorship: 'yes' | 'no' | 'unstated';
+  remote_regions: string[];
+  work_type: 'research' | 'applied' | 'infra' | 'evals' | 'data' | 'product' | 'other';
+  team: string | null;
+  salary_min_usd: number | null;
+  salary_max_usd: number | null;
+}
+
+const enrichment = enrichmentData as unknown as Record<string, JobFacts>;
+
 // Freeze legacy URLs before filtering closed records out of the active board.
-export const allJobs: Job[] = (jobsData as Job[]).map((job, index) => ({
-  ...job, slug: job.slug || `${slugify(`${job.title}-${job.company}`)}-${index}`,
-}));
+export const allJobs: Job[] = (jobsData as Job[]).map((job, index) => {
+  const slug = job.slug || `${slugify(`${job.title}-${job.company}`)}-${index}`;
+  return { ...job, slug, facts: enrichment[slug] };
+});
 export const jobs: Job[] = allJobs.filter(job => !job.status || job.status === 'active');
 
 export function getJobBySlug(slug: string): { job: Job; index: number } | null {

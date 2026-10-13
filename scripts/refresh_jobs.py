@@ -24,7 +24,12 @@ except ImportError:
     SSL = ssl.create_default_context()
 
 ROLE = re.compile(r'engineer|scientist|research|\bml\b|\bai\b|machine learning|data|mlops|solutions architect', re.I)
-EXCLUDE = re.compile(r'recruit|sales|account executive|legal|marketing|people ops|talent|security guard|accountant', re.I)
+EXCLUDE = re.compile(r'recruit|sales|account executive|legal|marketing|people ops|talent|security guard|accountant'
+                     r'|data cent(?:er|re)|technician|facilit|construction|site selection|electrical engineer|mechanical engineer'
+                     r'|manufacturing|quality engineer|supply chain|procurement|network (?:production )?engineer', re.I)
+# For companies whose engineering spans hardware, data centers or vehicles, only these titles count as AI roles.
+AI_TITLE = re.compile(r'\bAI\b|\bML\b|machine learning|deep learning|data scien|autonom|perception|computer vision'
+                      r'|robot learning|reinforcement learning|scientist|research|inference|\bLLMs?\b|MLOps|model|agent|kernel|compiler', re.I)
 KEYWORDS = {
     'LLM': r'\bllms?\b|large language model', 'RAG': r'\brag\b|retrieval.augmented',
     'Agent': r'\bagents?\b|agentic', 'Python': r'\bpython\b', 'Rust': r'\brust\b',
@@ -99,7 +104,7 @@ def normalize(raw, source, now):
         job_type = (raw.get('categories') or {}).get('commitment')
     if not title or not url.startswith('https://') or not description or not ROLE.search(title) or EXCLUDE.search(title):
         return None
-    if source.get('role_scope') == 'ai' and not re.search(r'\bAI\b|\bML\b|machine learning|data|autonom|perception|computer vision|robot|scientist|research|inference|LLM|MLOps', title, re.I):
+    if source.get('role_scope') == 'ai' and not AI_TITLE.search(title):
         return None
     all_text = title + ' ' + description
     tags = [tag for tag, pattern in KEYWORDS.items() if re.search(pattern, all_text, re.I)] or ['AI']
@@ -167,6 +172,9 @@ def merge_jobs(existing, records, successful_boards, now):
         if key in unique:
             job['status'] = 'duplicate'
         unique.add(key)
+        # Only jobs confirmed on an employer's own board are published; legacy imports stay as records for their URLs.
+        if job.get('status', 'active') == 'active' and not job.get('source_verified'):
+            job['status'] = 'unverified'
     return merged, dict(added=added, updated=updated, closed=closed)
 
 def main():

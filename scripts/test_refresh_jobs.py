@@ -14,7 +14,7 @@ class RefreshTests(unittest.TestCase):
         self.assertEqual(merged[0]['slug'], 'old-title-acme-0')
         self.assertEqual(merged[0]['first_seen'], '2026-09-01')
     def test_failed_board_never_closes_jobs(self):
-        merged, _ = merge_jobs([self.job(status='active')], [], {}, NOW)
+        merged, _ = merge_jobs([self.job(status='active', source_verified=True)], [], {}, NOW)
         self.assertEqual(merged[0]['status'], 'active')
     def test_confirmed_missing_job_closes_but_filtered_job_is_excluded(self):
         old = self.job(status='active')
@@ -31,6 +31,21 @@ class RefreshTests(unittest.TestCase):
         self.assertFalse(job['is_remote'])
         self.assertEqual(job['location'],'Not specified')
         self.assertIsNone(job['date_posted'])
+    def test_trades_roles_and_non_ai_titles_at_hardware_companies_are_filtered(self):
+        source = {'ats':'greenhouse','slug':'acme','company':'Acme','role_scope':'ai'}
+        def make(title): return normalize({'title':title,'absolute_url':'https://job-boards.greenhouse.io/acme/jobs/1','content':'Build things'}, source, NOW)
+        self.assertIsNone(make('Data Center Technician'))
+        self.assertIsNone(make('Senior Electrical Engineer'))
+        self.assertIsNone(make('Senior Firmware Engineer'))
+        self.assertIsNotNone(make('Staff Machine Learning Engineer, Perception'))
+        self.assertIsNotNone(make('Software Engineer, ML Inference Platform'))
+    def test_unconfirmed_legacy_jobs_are_hidden_until_a_board_confirms_them(self):
+        legacy = dict(title='ML Engineer', company='LLC', apply_url='https://example.com/job/1', slug='ml-engineer-llc-0')
+        merged, _ = merge_jobs([legacy], [], {}, NOW)
+        self.assertEqual(merged[0]['status'], 'unverified')
+        confirmed = self.job(status='active', source_verified=True)
+        merged, _ = merge_jobs([self.job(slug='legacy-0')], [confirmed], {'ashby:acme': {canonical_url(confirmed['apply_url'])}}, NOW)
+        self.assertEqual((merged[0]['status'], merged[0]['slug']), ('active', 'legacy-0'))
     def test_discovery_rejects_spoofed_hosts_and_non_board_urls(self):
         self.assertIsNone(board_from_url('https://jobs.ashbyhq.com.evil.test/acme/one'))
         self.assertIsNone(board_from_url('https://boards.greenhouse.io/embed/jobs'))

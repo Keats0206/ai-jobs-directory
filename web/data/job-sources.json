@@ -26,11 +26,6 @@
     "role_scope": "ai"
   },
   {
-    "ats": "lever",
-    "slug": "mistral",
-    "company": "Mistral AI"
-  },
-  {
     "ats": "ashby",
     "slug": "openai",
     "company": "OpenAI"
@@ -58,7 +53,8 @@
   {
     "ats": "ashby",
     "slug": "cerebras",
-    "company": "Cerebras"
+    "company": "Cerebras",
+    "role_scope": "ai"
   },
   {
     "ats": "ashby",
@@ -103,12 +99,6 @@
   },
   {
     "ats": "greenhouse",
-    "slug": "appliedintuition",
-    "company": "Applied Intuition",
-    "role_scope": "ai"
-  },
-  {
-    "ats": "greenhouse",
     "slug": "andurilindustries",
     "company": "Anduril",
     "role_scope": "ai"
@@ -122,12 +112,785 @@
   {
     "ats": "lever",
     "slug": "field-ai",
-    "company": "Field AI"
+    "company": "Field AI",
+    "role_scope": "ai"
   },
   {
     "ats": "lever",
     "slug": "hive",
     "company": "Hive",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "waymo",
+    "company": "Waymo",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "xai",
+    "company": "xAI"
+  },
+  {
+    "ats": "lever",
+    "slug": "shieldai",
+    "company": "Shield AI",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "ashby",
+    "slug": "decagon",
+    "company": "Decagon"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "nebius",
+    "company": "Nebius",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "cresta",
+    "company": "Cresta"
+  },
+  {
+    "ats": "ashby",
+    "slug": "snowflake",
+    "company": "Snowflake",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "pinterest",
+    "company": "Pinterest",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "ashby",
+    "slug": "deepgram",
+    "company": "Deepgram"
+  },
+  {
+    "ats": "ashby",
+    "slug": "langchain",
+    "company": "LangChain"
+  },
+  {
+    "ats": "ashby",
+    "slug": "replit",
+    "company": "Replit"
+  },
+  {
+    "ats": "ashby",
+    "slug": "wayve",
+    "company": "Wayve",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "ashby",
+    "slug": "cognition",
+    "company": "Cognition"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "lyft",
+    "company": "Lyft",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "ashby",
+    "slug": "lovable",
+    "company": "Lovable"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "reddit",
+    "company": "Reddit",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "ashby",
+    "slug": "writer",
+    "company": "Writer"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "nuro",
+    "company": "Nuro",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "lever",
+    "slug": "zoox",
+    "company": "Zoox",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "stripe",
+    "company": "Stripe",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "datadog",
+    "company": "Datadog",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "ashby",
+    "slug": "reflectionai",
+    "company": "Reflection AI"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "coreweave",
+    "company": "CoreWeave",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "figma",
+    "company": "Figma",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "tenstorrent",
+    "company": "Tenstorrent",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "ashby",
+    "slug": "fireworks",
+    "company": "Fireworks AI"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "snorkelai",
+    "company": "Snorkel AI"
+  },
+  {
+    "ats": "ashby",
+    "slug": "exa",
+    "company": "Exa"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "samsara",
+    "company": "Samsara",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "ashby",
+    "slug": "higgsfieldai",
+    "company": "Higgsfield"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "airbnb",
+    "company": "Airbnb",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "ashby",
+    "slug": "physicalintelligence",
+    "company": "Physical Intelligence"
+  },
+  {
+    "ats": "ashby",
+    "slug": "periodic-labs",
+    "company": "Periodic Labs"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "otterai",
+    "company": "Otter.ai"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "elastic",
+    "company": "Elastic",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "mongodb",
+    "company": "MongoDB",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "coinbase",
+    "company": "Coinbase",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "cloudflare",
+    "company": "Cloudflare",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "ashby",
+    "slug": "lumaai",
+    "company": "Luma AI"
+  },
+  {
+    "ats": "ashby",
+    "slug": "anyscale",
+    "company": "Anyscale"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "turing",
+    "company": "Turing",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "ashby",
+    "slug": "rogo",
+    "company": "Rogo"
+  },
+  {
+    "ats": "ashby",
+    "slug": "factory",
+    "company": "Factory"
+  },
+  {
+    "ats": "ashby",
+    "slug": "cartesia",
+    "company": "Cartesia"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "instacart",
+    "company": "Instacart",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "okta",
+    "company": "Okta",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "ashby",
+    "slug": "crusoe",
+    "company": "Crusoe",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "ashby",
+    "slug": "synthesia",
+    "company": "Synthesia"
+  },
+  {
+    "ats": "ashby",
+    "slug": "plaid",
+    "company": "Plaid",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "ashby",
+    "slug": "modal",
+    "company": "Modal"
+  },
+  {
+    "ats": "ashby",
+    "slug": "gamma",
+    "company": "Gamma"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "gitlab",
+    "company": "GitLab",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "ashby",
+    "slug": "sandboxaq",
+    "company": "SandboxAQ"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "brex",
+    "company": "Brex",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "faire",
+    "company": "Faire",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "ashby",
+    "slug": "roboflow",
+    "company": "Roboflow"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "isomorphiclabs",
+    "company": "Isomorphic Labs"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "profluent",
+    "company": "Profluent"
+  },
+  {
+    "ats": "ashby",
+    "slug": "helsing",
+    "company": "Helsing",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "arizeai",
+    "company": "Arize AI"
+  },
+  {
+    "ats": "ashby",
+    "slug": "braintrust",
+    "company": "Braintrust"
+  },
+  {
+    "ats": "ashby",
+    "slug": "surge-ai",
+    "company": "Surge AI"
+  },
+  {
+    "ats": "ashby",
+    "slug": "chaidiscovery",
+    "company": "Chai Discovery"
+  },
+  {
+    "ats": "lever",
+    "slug": "palantir",
+    "company": "Palantir",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "ashby",
+    "slug": "reducto",
+    "company": "Reducto"
+  },
+  {
+    "ats": "ashby",
+    "slug": "openrouter",
+    "company": "OpenRouter"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "speechmatics",
+    "company": "Speechmatics"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "affirm",
+    "company": "Affirm",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "fivetran",
+    "company": "Fivetran",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "lever",
+    "slug": "kitware",
+    "company": "Kitware",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "ashby",
+    "slug": "character",
+    "company": "Character.AI"
+  },
+  {
+    "ats": "ashby",
+    "slug": "d-matrix",
+    "company": "d-Matrix",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "ashby",
+    "slug": "abridge",
+    "company": "Abridge"
+  },
+  {
+    "ats": "ashby",
+    "slug": "1x",
+    "company": "1X",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "ashby",
+    "slug": "ramp",
+    "company": "Ramp",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "asana",
+    "company": "Asana",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "gusto",
+    "company": "Gusto",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "ashby",
+    "slug": "worldlabs",
+    "company": "World Labs"
+  },
+  {
+    "ats": "ashby",
+    "slug": "pika",
+    "company": "Pika"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "heygen",
+    "company": "HeyGen"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "figureai",
+    "company": "Figure AI",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "robinhood",
+    "company": "Robinhood",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "ashby",
+    "slug": "tavily",
+    "company": "Tavily"
+  },
+  {
+    "ats": "ashby",
+    "slug": "ambiencehealthcare",
+    "company": "Ambience Healthcare"
+  },
+  {
+    "ats": "ashby",
+    "slug": "granola",
+    "company": "Granola"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "apptronik",
+    "company": "Apptronik",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "ashby",
+    "slug": "liquid-ai",
+    "company": "Liquid AI"
+  },
+  {
+    "ats": "ashby",
+    "slug": "nousresearch",
+    "company": "Nous Research"
+  },
+  {
+    "ats": "ashby",
+    "slug": "insitro",
+    "company": "Insitro"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "agilityrobotics",
+    "company": "Agility Robotics",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "twilio",
+    "company": "Twilio",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "ashby",
+    "slug": "krea",
+    "company": "Krea"
+  },
+  {
+    "ats": "ashby",
+    "slug": "clickup",
+    "company": "ClickUp",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "ashby",
+    "slug": "e2b",
+    "company": "E2B"
+  },
+  {
+    "ats": "ashby",
+    "slug": "notion",
+    "company": "Notion",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "duolingo",
+    "company": "Duolingo",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "assemblyai",
+    "company": "AssemblyAI"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "discord",
+    "company": "Discord",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "chime",
+    "company": "Chime",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "ashby",
+    "slug": "vanta",
+    "company": "Vanta",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "mercury",
+    "company": "Mercury",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "ashby",
+    "slug": "elicit",
+    "company": "Elicit"
+  },
+  {
+    "ats": "ashby",
+    "slug": "reka",
+    "company": "Reka"
+  },
+  {
+    "ats": "ashby",
+    "slug": "black-forest-labs",
+    "company": "Black Forest Labs"
+  },
+  {
+    "ats": "ashby",
+    "slug": "etched",
+    "company": "Etched",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "observeai",
+    "company": "Observe.AI"
+  },
+  {
+    "ats": "ashby",
+    "slug": "hex",
+    "company": "Hex",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "ashby",
+    "slug": "warp",
+    "company": "Warp"
+  },
+  {
+    "ats": "ashby",
+    "slug": "hume-ai",
+    "company": "Hume AI"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "youcom",
+    "company": "You.com"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "typeface",
+    "company": "Typeface"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "sofi",
+    "company": "SoFi",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "abnormalsecurity",
+    "company": "Abnormal Security",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "inflectionai",
+    "company": "Inflection AI"
+  },
+  {
+    "ats": "ashby",
+    "slug": "midjourney",
+    "company": "Midjourney"
+  },
+  {
+    "ats": "ashby",
+    "slug": "genmo",
+    "company": "Genmo"
+  },
+  {
+    "ats": "ashby",
+    "slug": "pinecone",
+    "company": "Pinecone"
+  },
+  {
+    "ats": "lever",
+    "slug": "zilliz",
+    "company": "Zilliz"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "vercel",
+    "company": "Vercel",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "labelbox",
+    "company": "Labelbox"
+  },
+  {
+    "ats": "ashby",
+    "slug": "browserbase",
+    "company": "Browserbase"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "descript",
+    "company": "Descript"
+  },
+  {
+    "ats": "ashby",
+    "slug": "benchling",
+    "company": "Benchling",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "verkada",
+    "company": "Verkada",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "flexport",
+    "company": "Flexport",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "cribl",
+    "company": "Cribl",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "inceptive",
+    "company": "Inceptive"
+  },
+  {
+    "ats": "ashby",
+    "slug": "lambda",
+    "company": "Lambda",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "ashby",
+    "slug": "unstructured",
+    "company": "Unstructured"
+  },
+  {
+    "ats": "ashby",
+    "slug": "temporal",
+    "company": "Temporal",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "udio",
+    "company": "Udio"
+  },
+  {
+    "ats": "ashby",
+    "slug": "yotta",
+    "company": "Yotta Labs"
+  },
+  {
+    "ats": "ashby",
+    "slug": "speak",
+    "company": "Speak",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "ashby",
+    "slug": "poolside",
+    "company": "Poolside"
+  },
+  {
+    "ats": "greenhouse",
+    "slug": "lightmatter",
+    "company": "Lightmatter",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "ashby",
+    "slug": "llamaindex",
+    "company": "LlamaIndex"
+  },
+  {
+    "ats": "ashby",
+    "slug": "supabase",
+    "company": "Supabase",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "ashby",
+    "slug": "nomic",
+    "company": "Nomic AI"
+  },
+  {
+    "ats": "ashby",
+    "slug": "rewind",
+    "company": "Rewind"
+  },
+  {
+    "ats": "ashby",
+    "slug": "sift",
+    "company": "Sift",
+    "role_scope": "ai"
+  },
+  {
+    "ats": "ashby",
+    "slug": "profound",
+    "company": "Profound",
     "role_scope": "ai"
   }
 ]

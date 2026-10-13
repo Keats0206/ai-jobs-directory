@@ -1,60 +1,329 @@
 {
-  "updatedAt": "2026-10-12T15:20:04.548083+00:00",
+  "updatedAt": "2026-10-13T00:06:26.900371+00:00",
   "sources": [
+    {
+      "ats": "ashby",
+      "slug": "1x",
+      "company": "1X",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 11,
+      "fetched": 101,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "abnormalsecurity",
+      "company": "Abnormal Security",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 5,
+      "fetched": 91,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "abridge",
+      "company": "Abridge",
+      "status": "ok",
+      "roles": 11,
+      "fetched": 46,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "affirm",
+      "company": "Affirm",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 12,
+      "fetched": 201,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "agilityrobotics",
+      "company": "Agility Robotics",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 8,
+      "fetched": 73,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "airbnb",
+      "company": "Airbnb",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 22,
+      "fetched": 161,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "ambiencehealthcare",
+      "company": "Ambience Healthcare",
+      "status": "ok",
+      "roles": 9,
+      "fetched": 18,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
     {
       "ats": "greenhouse",
       "slug": "andurilindustries",
       "company": "Anduril",
       "role_scope": "ai",
       "status": "ok",
-      "roles": 172,
-      "fetched": 2492,
-      "checkedAt": "2026-10-12T15:20:04.548083+00:00"
+      "roles": 92,
+      "fetched": 2493,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
     },
     {
       "ats": "greenhouse",
       "slug": "anthropic",
       "company": "Anthropic",
       "status": "ok",
-      "roles": 308,
+      "roles": 284,
       "fetched": 646,
-      "checkedAt": "2026-10-12T15:20:04.548083+00:00"
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "anyscale",
+      "company": "Anyscale",
+      "status": "ok",
+      "roles": 18,
+      "fetched": 20,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
     },
     {
       "ats": "greenhouse",
-      "slug": "appliedintuition",
-      "company": "Applied Intuition",
+      "slug": "apptronik",
+      "company": "Apptronik",
       "role_scope": "ai",
-      "status": "error",
-      "error": "HTTP Error 404: Not Found",
-      "checkedAt": "2026-10-12T15:20:04.548083+00:00"
+      "status": "ok",
+      "roles": 9,
+      "fetched": 78,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "arizeai",
+      "company": "Arize AI",
+      "status": "ok",
+      "roles": 13,
+      "fetched": 24,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "asana",
+      "company": "Asana",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 11,
+      "fetched": 102,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "assemblyai",
+      "company": "AssemblyAI",
+      "status": "ok",
+      "roles": 7,
+      "fetched": 9,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
     },
     {
       "ats": "ashby",
       "slug": "baseten",
       "company": "Baseten",
       "status": "ok",
-      "roles": 45,
-      "fetched": 109,
-      "checkedAt": "2026-10-12T15:20:04.548083+00:00"
+      "roles": 44,
+      "fetched": 108,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "benchling",
+      "company": "Benchling",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 4,
+      "fetched": 59,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "black-forest-labs",
+      "company": "Black Forest Labs",
+      "status": "ok",
+      "roles": 5,
+      "fetched": 14,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "braintrust",
+      "company": "Braintrust",
+      "status": "ok",
+      "roles": 13,
+      "fetched": 26,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "brex",
+      "company": "Brex",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 15,
+      "fetched": 273,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "browserbase",
+      "company": "Browserbase",
+      "status": "ok",
+      "roles": 4,
+      "fetched": 9,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "cartesia",
+      "company": "Cartesia",
+      "status": "ok",
+      "roles": 18,
+      "fetched": 28,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
     },
     {
       "ats": "ashby",
       "slug": "cerebras",
       "company": "Cerebras",
+      "role_scope": "ai",
       "status": "ok",
-      "roles": 91,
-      "fetched": 123,
-      "checkedAt": "2026-10-12T15:20:04.548083+00:00"
+      "roles": 43,
+      "fetched": 124,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "chaidiscovery",
+      "company": "Chai Discovery",
+      "status": "ok",
+      "roles": 13,
+      "fetched": 21,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "character",
+      "company": "Character.AI",
+      "status": "ok",
+      "roles": 11,
+      "fetched": 13,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "chime",
+      "company": "Chime",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 7,
+      "fetched": 67,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "clickup",
+      "company": "ClickUp",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 8,
+      "fetched": 46,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "cloudflare",
+      "company": "Cloudflare",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 19,
+      "fetched": 435,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "cognition",
+      "company": "Cognition",
+      "status": "ok",
+      "roles": 41,
+      "fetched": 102,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
     },
     {
       "ats": "ashby",
       "slug": "cohere",
       "company": "Cohere",
       "status": "ok",
-      "roles": 64,
-      "fetched": 119,
-      "checkedAt": "2026-10-12T15:20:04.548083+00:00"
+      "roles": 63,
+      "fetched": 118,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "coinbase",
+      "company": "Coinbase",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 19,
+      "fetched": 223,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "coreweave",
+      "company": "CoreWeave",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 26,
+      "fetched": 308,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "cresta",
+      "company": "Cresta",
+      "status": "ok",
+      "roles": 53,
+      "fetched": 86,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "cribl",
+      "company": "Cribl",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 4,
+      "fetched": 69,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "crusoe",
+      "company": "Crusoe",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 17,
+      "fetched": 355,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
     },
     {
       "ats": "ashby",
@@ -63,7 +332,7 @@
       "status": "ok",
       "roles": 69,
       "fetched": 135,
-      "checkedAt": "2026-10-12T15:20:04.548083+00:00"
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
     },
     {
       "ats": "greenhouse",
@@ -71,27 +340,247 @@
       "company": "Databricks",
       "role_scope": "ai",
       "status": "ok",
-      "roles": 120,
-      "fetched": 892,
-      "checkedAt": "2026-10-12T15:20:04.548083+00:00"
+      "roles": 89,
+      "fetched": 896,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "datadog",
+      "company": "Datadog",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 32,
+      "fetched": 433,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "decagon",
+      "company": "Decagon",
+      "status": "ok",
+      "roles": 63,
+      "fetched": 141,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "deepgram",
+      "company": "Deepgram",
+      "status": "ok",
+      "roles": 46,
+      "fetched": 93,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "descript",
+      "company": "Descript",
+      "status": "ok",
+      "roles": 4,
+      "fetched": 11,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "discord",
+      "company": "Discord",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 7,
+      "fetched": 49,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "duolingo",
+      "company": "Duolingo",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 7,
+      "fetched": 60,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "e2b",
+      "company": "E2B",
+      "status": "ok",
+      "roles": 7,
+      "fetched": 13,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "elastic",
+      "company": "Elastic",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 20,
+      "fetched": 403,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
     },
     {
       "ats": "ashby",
       "slug": "elevenlabs",
       "company": "ElevenLabs",
       "status": "ok",
-      "roles": 37,
-      "fetched": 131,
-      "checkedAt": "2026-10-12T15:20:04.548083+00:00"
+      "roles": 36,
+      "fetched": 132,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "elicit",
+      "company": "Elicit",
+      "status": "ok",
+      "roles": 6,
+      "fetched": 10,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "etched",
+      "company": "Etched",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 5,
+      "fetched": 111,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "exa",
+      "company": "Exa",
+      "status": "ok",
+      "roles": 23,
+      "fetched": 56,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "factory",
+      "company": "Factory",
+      "status": "ok",
+      "roles": 18,
+      "fetched": 55,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "faire",
+      "company": "Faire",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 15,
+      "fetched": 81,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
     },
     {
       "ats": "lever",
       "slug": "field-ai",
       "company": "Field AI",
+      "role_scope": "ai",
       "status": "ok",
-      "roles": 89,
+      "roles": 36,
       "fetched": 103,
-      "checkedAt": "2026-10-12T15:20:04.548083+00:00"
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "figma",
+      "company": "Figma",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 26,
+      "fetched": 151,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "figureai",
+      "company": "Figure AI",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 10,
+      "fetched": 96,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "fireworks",
+      "company": "Fireworks AI",
+      "status": "ok",
+      "roles": 24,
+      "fetched": 85,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "fivetran",
+      "company": "Fivetran",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 12,
+      "fetched": 188,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "flexport",
+      "company": "Flexport",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 4,
+      "fetched": 208,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "gamma",
+      "company": "Gamma",
+      "status": "ok",
+      "roles": 16,
+      "fetched": 22,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "genmo",
+      "company": "Genmo",
+      "status": "ok",
+      "roles": 4,
+      "fetched": 5,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "gitlab",
+      "company": "GitLab",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 16,
+      "fetched": 221,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "granola",
+      "company": "Granola",
+      "status": "ok",
+      "roles": 9,
+      "fetched": 21,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "gusto",
+      "company": "Gusto",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 11,
+      "fetched": 99,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
     },
     {
       "ats": "ashby",
@@ -99,9 +588,9 @@
       "company": "Hadrian",
       "role_scope": "ai",
       "status": "ok",
-      "roles": 11,
-      "fetched": 133,
-      "checkedAt": "2026-10-12T15:20:04.548083+00:00"
+      "roles": 5,
+      "fetched": 130,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
     },
     {
       "ats": "ashby",
@@ -109,8 +598,46 @@
       "company": "Harvey",
       "status": "ok",
       "roles": 98,
-      "fetched": 350,
-      "checkedAt": "2026-10-12T15:20:04.548083+00:00"
+      "fetched": 349,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "helsing",
+      "company": "Helsing",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 14,
+      "fetched": 153,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "hex",
+      "company": "Hex",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 5,
+      "fetched": 40,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "heygen",
+      "company": "HeyGen",
+      "status": "ok",
+      "roles": 10,
+      "fetched": 20,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "higgsfieldai",
+      "company": "Higgsfield",
+      "status": "ok",
+      "roles": 22,
+      "fetched": 90,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
     },
     {
       "ats": "lever",
@@ -118,9 +645,18 @@
       "company": "Hive",
       "role_scope": "ai",
       "status": "ok",
-      "roles": 11,
+      "roles": 8,
       "fetched": 74,
-      "checkedAt": "2026-10-12T15:20:04.548083+00:00"
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "hume-ai",
+      "company": "Hume AI",
+      "status": "ok",
+      "roles": 5,
+      "fetched": 10,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
     },
     {
       "ats": "greenhouse",
@@ -129,7 +665,156 @@
       "status": "ok",
       "roles": 1,
       "fetched": 1,
-      "checkedAt": "2026-10-12T15:20:04.548083+00:00"
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "inceptive",
+      "company": "Inceptive",
+      "status": "ok",
+      "roles": 4,
+      "fetched": 11,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "inflectionai",
+      "company": "Inflection AI",
+      "status": "ok",
+      "roles": 4,
+      "fetched": 6,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "insitro",
+      "company": "Insitro",
+      "status": "ok",
+      "roles": 8,
+      "fetched": 14,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "instacart",
+      "company": "Instacart",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 18,
+      "fetched": 117,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "isomorphiclabs",
+      "company": "Isomorphic Labs",
+      "status": "ok",
+      "roles": 14,
+      "fetched": 30,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "lever",
+      "slug": "kitware",
+      "company": "Kitware",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 12,
+      "fetched": 19,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "krea",
+      "company": "Krea",
+      "status": "ok",
+      "roles": 8,
+      "fetched": 12,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "labelbox",
+      "company": "Labelbox",
+      "status": "ok",
+      "roles": 4,
+      "fetched": 8,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "lambda",
+      "company": "Lambda",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 3,
+      "fetched": 91,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "langchain",
+      "company": "LangChain",
+      "status": "ok",
+      "roles": 43,
+      "fetched": 101,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "lightmatter",
+      "company": "Lightmatter",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 2,
+      "fetched": 61,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "liquid-ai",
+      "company": "Liquid AI",
+      "status": "ok",
+      "roles": 8,
+      "fetched": 22,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "llamaindex",
+      "company": "LlamaIndex",
+      "status": "ok",
+      "roles": 2,
+      "fetched": 8,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "lovable",
+      "company": "Lovable",
+      "status": "ok",
+      "roles": 36,
+      "fetched": 82,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "lumaai",
+      "company": "Luma AI",
+      "status": "ok",
+      "roles": 18,
+      "fetched": 35,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "lyft",
+      "company": "Lyft",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 37,
+      "fetched": 186,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
     },
     {
       "ats": "ashby",
@@ -138,15 +823,55 @@
       "status": "ok",
       "roles": 50,
       "fetched": 111,
-      "checkedAt": "2026-10-12T15:20:04.548083+00:00"
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
     },
     {
-      "ats": "lever",
-      "slug": "mistral",
-      "company": "Mistral AI",
-      "status": "error",
-      "error": "Empty board; retained existing records for review",
-      "checkedAt": "2026-10-12T15:20:04.548083+00:00"
+      "ats": "greenhouse",
+      "slug": "mercury",
+      "company": "Mercury",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 6,
+      "fetched": 70,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "midjourney",
+      "company": "Midjourney",
+      "status": "ok",
+      "roles": 4,
+      "fetched": 17,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "modal",
+      "company": "Modal",
+      "status": "ok",
+      "roles": 16,
+      "fetched": 41,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "mongodb",
+      "company": "MongoDB",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 20,
+      "fetched": 395,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "nebius",
+      "company": "Nebius",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 57,
+      "fetched": 382,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
     },
     {
       "ats": "greenhouse",
@@ -156,16 +881,110 @@
       "status": "ok",
       "roles": 5,
       "fetched": 65,
-      "checkedAt": "2026-10-12T15:20:04.548083+00:00"
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "nomic",
+      "company": "Nomic AI",
+      "status": "ok",
+      "roles": 2,
+      "fetched": 6,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "notion",
+      "company": "Notion",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 7,
+      "fetched": 130,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "nousresearch",
+      "company": "Nous Research",
+      "status": "ok",
+      "roles": 8,
+      "fetched": 14,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "nuro",
+      "company": "Nuro",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 35,
+      "fetched": 109,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "observeai",
+      "company": "Observe.AI",
+      "status": "ok",
+      "roles": 5,
+      "fetched": 10,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "okta",
+      "company": "Okta",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 18,
+      "fetched": 380,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
     },
     {
       "ats": "ashby",
       "slug": "openai",
       "company": "OpenAI",
       "status": "ok",
-      "roles": 473,
-      "fetched": 811,
-      "checkedAt": "2026-10-12T15:20:04.548083+00:00"
+      "roles": 438,
+      "fetched": 808,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "openrouter",
+      "company": "OpenRouter",
+      "status": "ok",
+      "roles": 13,
+      "fetched": 29,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "otterai",
+      "company": "Otter.ai",
+      "status": "ok",
+      "roles": 20,
+      "fetched": 26,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "lever",
+      "slug": "palantir",
+      "company": "Palantir",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 13,
+      "fetched": 311,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "periodic-labs",
+      "company": "Periodic Labs",
+      "status": "ok",
+      "roles": 21,
+      "fetched": 34,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
     },
     {
       "ats": "ashby",
@@ -173,8 +992,176 @@
       "company": "Perplexity",
       "status": "ok",
       "roles": 56,
-      "fetched": 132,
-      "checkedAt": "2026-10-12T15:20:04.548083+00:00"
+      "fetched": 134,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "physicalintelligence",
+      "company": "Physical Intelligence",
+      "status": "ok",
+      "roles": 21,
+      "fetched": 40,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "pika",
+      "company": "Pika",
+      "status": "ok",
+      "roles": 10,
+      "fetched": 15,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "pinecone",
+      "company": "Pinecone",
+      "status": "ok",
+      "roles": 4,
+      "fetched": 5,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "pinterest",
+      "company": "Pinterest",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 48,
+      "fetched": 179,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "plaid",
+      "company": "Plaid",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 17,
+      "fetched": 121,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "poolside",
+      "company": "Poolside",
+      "status": "ok",
+      "roles": 2,
+      "fetched": 2,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "profluent",
+      "company": "Profluent",
+      "status": "ok",
+      "roles": 14,
+      "fetched": 16,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "profound",
+      "company": "Profound",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 2,
+      "fetched": 79,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "ramp",
+      "company": "Ramp",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 11,
+      "fetched": 164,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "reddit",
+      "company": "Reddit",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 36,
+      "fetched": 144,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "reducto",
+      "company": "Reducto",
+      "status": "ok",
+      "roles": 13,
+      "fetched": 40,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "reflectionai",
+      "company": "Reflection AI",
+      "status": "ok",
+      "roles": 27,
+      "fetched": 46,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "reka",
+      "company": "Reka",
+      "status": "ok",
+      "roles": 5,
+      "fetched": 9,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "replit",
+      "company": "Replit",
+      "status": "ok",
+      "roles": 43,
+      "fetched": 69,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "rewind",
+      "company": "Rewind",
+      "status": "ok",
+      "roles": 2,
+      "fetched": 3,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "robinhood",
+      "company": "Robinhood",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 10,
+      "fetched": 181,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "roboflow",
+      "company": "Roboflow",
+      "status": "ok",
+      "roles": 15,
+      "fetched": 36,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "rogo",
+      "company": "Rogo",
+      "status": "ok",
+      "roles": 18,
+      "fetched": 88,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
     },
     {
       "ats": "ashby",
@@ -183,16 +1170,35 @@
       "status": "ok",
       "roles": 3,
       "fetched": 3,
-      "checkedAt": "2026-10-12T15:20:04.548083+00:00"
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "samsara",
+      "company": "Samsara",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 23,
+      "fetched": 238,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "sandboxaq",
+      "company": "SandboxAQ",
+      "status": "ok",
+      "roles": 16,
+      "fetched": 28,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
     },
     {
       "ats": "ashby",
       "slug": "sardine",
       "company": "Sardine",
       "status": "ok",
-      "roles": 17,
+      "roles": 16,
       "fetched": 35,
-      "checkedAt": "2026-10-12T15:20:04.548083+00:00"
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
     },
     {
       "ats": "greenhouse",
@@ -200,8 +1206,18 @@
       "company": "Scale AI",
       "status": "ok",
       "roles": 104,
-      "fetched": 183,
-      "checkedAt": "2026-10-12T15:20:04.548083+00:00"
+      "fetched": 184,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "lever",
+      "slug": "shieldai",
+      "company": "Shield AI",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 87,
+      "fetched": 612,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
     },
     {
       "ats": "ashby",
@@ -209,8 +1225,76 @@
       "company": "Sierra",
       "status": "ok",
       "roles": 52,
-      "fetched": 194,
-      "checkedAt": "2026-10-12T15:20:04.548083+00:00"
+      "fetched": 190,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "sift",
+      "company": "Sift",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 2,
+      "fetched": 7,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "snorkelai",
+      "company": "Snorkel AI",
+      "status": "ok",
+      "roles": 24,
+      "fetched": 44,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "snowflake",
+      "company": "Snowflake",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 49,
+      "fetched": 360,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "sofi",
+      "company": "SoFi",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 5,
+      "fetched": 49,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "speak",
+      "company": "Speak",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 3,
+      "fetched": 35,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "speechmatics",
+      "company": "Speechmatics",
+      "status": "ok",
+      "roles": 12,
+      "fetched": 15,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "stripe",
+      "company": "Stripe",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 33,
+      "fetched": 722,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
     },
     {
       "ats": "ashby",
@@ -219,19 +1303,256 @@
       "status": "ok",
       "roles": 35,
       "fetched": 73,
-      "checkedAt": "2026-10-12T15:20:04.548083+00:00"
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "supabase",
+      "company": "Supabase",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 2,
+      "fetched": 52,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "surge-ai",
+      "company": "Surge AI",
+      "status": "ok",
+      "roles": 13,
+      "fetched": 28,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "synthesia",
+      "company": "Synthesia",
+      "status": "ok",
+      "roles": 17,
+      "fetched": 46,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "tavily",
+      "company": "Tavily",
+      "status": "ok",
+      "roles": 9,
+      "fetched": 18,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "temporal",
+      "company": "Temporal",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 3,
+      "fetched": 68,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "tenstorrent",
+      "company": "Tenstorrent",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 25,
+      "fetched": 132,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
     },
     {
       "ats": "greenhouse",
       "slug": "togetherai",
       "company": "Together AI",
       "status": "ok",
-      "roles": 56,
+      "roles": 52,
       "fetched": 80,
-      "checkedAt": "2026-10-12T15:20:04.548083+00:00"
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "turing",
+      "company": "Turing",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 18,
+      "fetched": 29,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "twilio",
+      "company": "Twilio",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 8,
+      "fetched": 146,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "typeface",
+      "company": "Typeface",
+      "status": "ok",
+      "roles": 5,
+      "fetched": 14,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "udio",
+      "company": "Udio",
+      "status": "ok",
+      "roles": 3,
+      "fetched": 5,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "unstructured",
+      "company": "Unstructured",
+      "status": "ok",
+      "roles": 3,
+      "fetched": 5,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "vanta",
+      "company": "Vanta",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 7,
+      "fetched": 83,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "vercel",
+      "company": "Vercel",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 4,
+      "fetched": 89,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "verkada",
+      "company": "Verkada",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 4,
+      "fetched": 307,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "warp",
+      "company": "Warp",
+      "status": "ok",
+      "roles": 5,
+      "fetched": 22,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "waymo",
+      "company": "Waymo",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 112,
+      "fetched": 368,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "wayve",
+      "company": "Wayve",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 42,
+      "fetched": 156,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "worldlabs",
+      "company": "World Labs",
+      "status": "ok",
+      "roles": 10,
+      "fetched": 11,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "writer",
+      "company": "Writer",
+      "status": "ok",
+      "roles": 35,
+      "fetched": 50,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "yotta",
+      "company": "Yotta Labs",
+      "status": "ok",
+      "roles": 3,
+      "fetched": 4,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "youcom",
+      "company": "You.com",
+      "status": "ok",
+      "roles": 5,
+      "fetched": 8,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "lever",
+      "slug": "zilliz",
+      "company": "Zilliz",
+      "status": "ok",
+      "roles": 4,
+      "fetched": 11,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "lever",
+      "slug": "zoox",
+      "company": "Zoox",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 35,
+      "fetched": 237,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "ashby",
+      "slug": "d-matrix",
+      "company": "d-Matrix",
+      "role_scope": "ai",
+      "status": "ok",
+      "roles": 11,
+      "fetched": 37,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "xai",
+      "company": "xAI",
+      "status": "ok",
+      "roles": 103,
+      "fetched": 307,
+      "checkedAt": "2026-10-13T00:06:26.900371+00:00"
     }
   ],
-  "added": 649,
-  "updated": 1199,
-  "closed": 293
+  "added": 1955,
+  "updated": 1590,
+  "closed": 20
 }

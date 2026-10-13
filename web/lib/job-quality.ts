@@ -149,6 +149,9 @@ export function salaryRange(job: Job): { min: number; max: number } | null {
     if (isPlaceholderSalaryBand(job.salary_min, job.salary_max)) return null;
     return { min: job.salary_min, max: job.salary_max };
   }
+  // Last resort: the annual USD range the extraction model found in the text.
+  const facts = job.facts;
+  if (facts?.salary_min_usd && facts.salary_max_usd) return { min: facts.salary_min_usd, max: facts.salary_max_usd };
   return null;
 }
 
