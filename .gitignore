@@ -1,3 +1,8 @@
 .vercel
 .env*
 supabase/.temp/
+*.pre-clean-bak
+*.pre-sweep-bak
+web/data/jobs.json.pre-clean-bak
+web/data/jobs.json.pre-sweep-bak
+seeded_jobs.json.pre-clean-bak

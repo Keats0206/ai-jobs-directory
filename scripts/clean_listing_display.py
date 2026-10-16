@@ -61,7 +61,8 @@ def clean_company(job: dict) -> str:
         or company == "AI Startup"
         or company.lower() == "career page"
         or len(company) > 60
-        or any(ch in company for ch in ")|")
+        or "|" in company
+        or (")" in company and ("(" not in company or len(company) > 50))
         or looks_like_title
     )
     if corrupted:

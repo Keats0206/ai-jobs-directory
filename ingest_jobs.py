@@ -1,20 +1,49 @@
-import os
+#!/usr/bin/env python3
+"""
+Legacy Exa-based job ingest. Prefer scripts/fetch_frontier_jobs.py for
+structured ATS data; this script remains for broad discovery.
+
+Improvements vs prior version:
+- Repo-relative paths (no machine-specific absolute paths)
+- Rejects aggregator / non-job URLs via job_quality_lib
+- Does not invent placeholder salary bands (0 when unknown)
+- Dedupes by normalized apply_url
+- Runs shared normalize_job before save
+"""
+from __future__ import annotations
+
 import json
-import urllib.request
-import urllib.parse
+import os
 import re
 import ssl
-from datetime import datetime
+import sys
+import urllib.parse
+import urllib.request
+from datetime import datetime, timezone
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent
+sys.path.insert(0, str(ROOT / "scripts"))
+
+from job_quality_lib import (  # noqa: E402
+    company_from_url,
+    enrich_tags,
+    is_valid_listing,
+    normalize_apply_url,
+    normalize_job,
+    parse_salary_from_description,
+)
 
 ssl_context = ssl._create_unverified_context()
 
-EXA_API_KEY = os.environ.get("EXA_API_KEY", "47c57ecc-77bb-445f-83fd-515ff3fe50fe")
+EXA_API_KEY = os.environ.get("EXA_API_KEY", "")
 SUPABASE_URL = os.environ.get("SUPABASE_URL", "https://pfpnpgmblszljcshztgk.supabase.co")
 SUPABASE_KEY = os.environ.get("SUPABASE_ANON_KEY", "")
 
-# Expanded query list for better coverage
+JOBS_JSON = ROOT / "web" / "data" / "jobs.json"
+SEEDED_JSON = ROOT / "seeded_jobs.json"
+
 QUERIES = [
-    # Job boards with AI focus
     "site:ashbyhq.com AI Engineer remote",
     "site:ashbyhq.com Machine Learning Engineer",
     "site:ashbyhq.com LLM Engineer",
@@ -22,202 +51,103 @@ QUERIES = [
     "site:boards.greenhouse.io Machine Learning",
     "site:jobs.lever.co AI Engineer",
     "site:jobs.lever.co Machine Learning Engineer",
-    
-    # Company career pages
     "site:anthropic.com careers AI",
     "site:openai.com careers engineer",
     "site:cohere.ai careers engineer",
     "site:huggingface.co jobs",
     "site:stability.ai careers",
     "site:replit.com careers AI",
-    
-    # Generic AI job searches
     "AI Engineer remote 2026",
     "LLM Engineer jobs remote",
     "Machine Learning Engineer AI startup",
     "GenAI engineer positions remote",
     "RAG engineer roles hiring",
     "Prompt engineer remote jobs",
-    "Data scientist AI role remote",
     "ML infrastructure engineer remote",
     "Computer vision engineer remote",
-    "NLP engineer positions"
+    "NLP engineer positions",
 ]
 
-def search_exa(query):
-    """Search Exa API for job listings"""
+
+def search_exa(query: str) -> list[dict]:
+    if not EXA_API_KEY:
+        print("  ! EXA_API_KEY not set — skipping Exa search")
+        return []
     url = "https://api.exa.ai/search"
     payload = {
         "query": query,
         "numResults": 20,
-        "contents": {
-            "text": {"maxCharacters": 3000}
-        }
+        "contents": {"text": {"maxCharacters": 3000}},
     }
     headers = {
         "x-api-key": EXA_API_KEY,
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
     }
-    req = urllib.request.Request(url, data=json.dumps(payload).encode('utf-8'), headers=headers)
+    req = urllib.request.Request(
+        url, data=json.dumps(payload).encode("utf-8"), headers=headers
+    )
     try:
-        with urllib.request.urlopen(req, context=ssl_context) as resp:
+        with urllib.request.urlopen(req, context=ssl_context, timeout=30) as resp:
             data = json.loads(resp.read().decode())
             return data.get("results", [])
     except Exception as e:
         print(f"Error fetching from Exa for '{query}': {e}")
         return []
 
-def extract_company_from_url(url):
-    """Extract company name from known ATS URLs."""
-    if not url:
-        return None
-    
-    # Ashby: https://jobs.ashbyhq.com/{company-slug}/...
-    m = re.search(r'jobs\.ashbyhq\.com/([^/]+)', url)
-    if m:
-        raw = m.group(1).replace('-', ' ').title()
-        # Filter out non-company-looking slugs
-        if raw.lower() not in ('careers', 'jobs', 'apply', 'embed'):
-            return raw
-    
-    # Greenhouse: https://boards.greenhouse.io/{company-slug}/...
-    m = re.search(r'boards\.greenhouse\.io/([^/]+)', url)
-    if m:
-        raw = m.group(1).replace('-', ' ').title()
-        if raw.lower() not in ('careers', 'jobs', 'apply'):
-            return raw
-    
-    # Lever: https://jobs.lever.co/{company-slug}/...
-    m = re.search(r'jobs\.lever\.co/([^/]+)', url)
-    if m:
-        raw = m.group(1).replace('-', ' ').title()
-        if raw.lower() not in ('careers', 'jobs', 'apply'):
-            return raw
-    
-    # Workable: https://apply.workable.com/{company-slug}/...
-    m = re.search(r'apply\.workable\.com/([^/]+)', url)
-    if m:
-        raw = m.group(1).replace('-', ' ').title()
-        return raw
-    
-    # Generic domain extraction as last resort
-    m = re.search(r'https?://([^/]+)', url)
-    if m:
-        domain = m.group(1)
-        # Remove www.
-        domain = re.sub(r'^www\.', '', domain)
-        # Try to extract meaningful name (before first dot, if it's a known TLD)
-        parts = domain.split('.')
-        if len(parts) >= 2 and parts[-1] in ('com', 'io', 'ai', 'co', 'org', 'dev'):
-            name = parts[-2] if parts[-2] not in ('jobs', 'careers', 'boards', 'apply', 'api', 'www') else parts[0]
-            # Handle subdomain company names like "company.ashbyhq.com" → skip, not useful
-            if name.lower() in ('ashbyhq', 'greenhouse', 'lever', 'workable', 'recruiting'):
-                return None
-            return name.replace('-', ' ').title()
-    
-    return None
 
-def extract_job_info(item):
-    """Extract structured job data from Exa result"""
-    title = item.get("title", "Unknown Role")
-    url = item.get("url", "")
-    text = item.get("text", "")
-    
-    # --- Parse company name ---
+def extract_job_info(item: dict) -> dict | None:
+    title = item.get("title") or "Unknown Role"
+    url = item.get("url") or ""
+    text = item.get("text") or ""
+
     company = "AI Startup"
-    
-    # 1. Try " at Company" pattern in title (most reliable)
     if " at " in title.lower():
-        parts = re.split(r'\s+at\s+', title, flags=re.IGNORECASE)
+        parts = re.split(r"\s+at\s+", title, flags=re.IGNORECASE)
         title = parts[0].strip()
         potential = parts[1].split("-")[0].split("|")[0].split("(")[0].strip()
-        # Clean up common suffixes
-        potential = re.sub(r'\s*(\.\.\.|\.\.|…)\s*$', '', potential).strip()
+        potential = re.sub(r"\s*(\.\.\.|\.\.|…)\s*$", "", potential).strip()
         if potential and len(potential) < 60:
             company = potential
-    
-    # 2. Try "@ Company" pattern
+
     if company == "AI Startup" and " @ " in title:
         parts = title.split(" @ ")
         title = parts[0].strip()
         potential = parts[1].split("-")[0].split("|")[0].strip()
-        potential = re.sub(r'\s*(\.\.\.|\.\.|…)\s*$', '', potential).strip()
+        potential = re.sub(r"\s*(\.\.\.|\.\.|…)\s*$", "", potential).strip()
         if potential and len(potential) < 60:
             company = potential
-    
-    # 3. Try extracting from URL (Ashby, Greenhouse, Lever, etc.)
+
     if company == "AI Startup":
-        url_company = extract_company_from_url(url)
+        url_company = company_from_url(url)
         if url_company and len(url_company) < 60:
             company = url_company
-    
-    # 4. Check if title ends with a known company name pattern: "Role - Company"
+
     if company == "AI Startup" and " - " in title:
         parts = title.rsplit(" - ", 1)
         title = parts[0].strip()
         potential = parts[1].strip()
-        potential = re.sub(r'\s*(\.\.\.|\.\.|…)\s*$', '', potential).strip()
-        if potential and len(potential) < 60 and not potential.lower().startswith(('http', 'remote', 'hybrid', 'full')):
+        potential = re.sub(r"\s*(\.\.\.|\.\.|…)\s*$", "", potential).strip()
+        if potential and len(potential) < 60 and not potential.lower().startswith(
+            ("http", "remote", "hybrid", "full")
+        ):
             company = potential
-    
-    # Extract salary range
-    salary_match = re.search(r'\$(\d{2,3}),?(\d{3})\s*-\s*\$(\d{2,3}),?(\d{3})', text)
-    if salary_match:
-        salary_min = int(salary_match.group(1) + salary_match.group(2))
-        salary_max = int(salary_match.group(3) + salary_match.group(4))
-    else:
-        # Default ranges by role
-        if "senior" in title.lower() or "staff" in title.lower():
-            salary_min, salary_max = 180000, 280000
-        elif "principal" in title.lower():
-            salary_min, salary_max = 220000, 350000
-        else:
-            salary_min, salary_max = 140000, 220000
-    
-    # Extract tags from keywords
-    tags = []
-    keywords = {
-        "PyTorch": "PyTorch",
-        "tensorflow": "TensorFlow",
-        "vllm": "vLLM",
-        "cuda": "CUDA",
-        "llm": "LLM",
-        "rag": "RAG",
-        "langchain": "LangChain",
-        "agent": "Agent",
-        "fine-tuning": "Fine-tuning",
-        "infrastructure": "Infrastructure",
-        "python": "Python",
-        "rust": "Rust",
-        "transformers": "Transformers",
-        "huggingface": "HuggingFace",
-        "genai": "GenAI",
-        "generative": "Generative AI",
-        "computer vision": "Computer Vision",
-        "nlp": "NLP",
-        "data engineering": "Data Engineering"
-    }
-    
+
+    # Real salary only — never invent bands
+    salary_min = salary_max = 0
+    parsed = parse_salary_from_description(text)
+    if parsed:
+        salary_min, salary_max = parsed
+
     text_lower = (text + title).lower()
-    for keyword, tag in keywords.items():
-        if keyword in text_lower:
-            if tag not in tags:
-                tags.append(tag)
-    
-    if not tags:
-        tags = ["LLM", "AI"]
-    
-    # Determine job type
     job_type = "Full-time"
     if "contract" in text_lower:
         job_type = "Contract"
     elif "part-time" in text_lower:
         job_type = "Part-time"
-    
-    # Determine remote status
+
     is_remote = "remote" in text_lower or "remote" in url.lower()
     location = "Remote" if is_remote else "On-site"
-    if "san francisco" in text_lower or "sf" in text_lower:
+    if "san francisco" in text_lower:
         location = "San Francisco, CA"
     elif "new york" in text_lower or "nyc" in text_lower:
         location = "New York, NY"
@@ -225,10 +155,8 @@ def extract_job_info(item):
         location = "London, UK"
     elif "toronto" in text_lower:
         location = "Toronto, CA"
-    
-    description = text[:2000] if len(text) > 2000 else text
-    
-    return {
+
+    job = {
         "title": title,
         "company": company,
         "apply_url": url,
@@ -237,110 +165,129 @@ def extract_job_info(item):
         "job_type": job_type,
         "salary_min": salary_min,
         "salary_max": salary_max,
-        "tags": tags[:5],  # Limit to 5 tags
-        "description": description,
-        "fetched_at": datetime.utcnow().isoformat()
+        "tags": [],
+        "description": text[:2000],
+        "fetched_at": datetime.now(timezone.utc).isoformat(),
+        "source": "exa",
     }
+    enrich_tags(job)
+    normalize_job(job)
+    ok, reason = is_valid_listing(job)
+    if not ok:
+        return None
+    if job.get("company") in {"AI Startup", "Remote", "RemoteAI"}:
+        return None
+    return job
 
-def load_existing_jobs():
-    """Load existing jobs to avoid duplicates"""
-    try:
-        with open("/Users/petekeating/ai-jobs-directory/seeded_jobs.json", "r") as f:
-            return json.load(f)
-    except:
-        return []
 
-def push_to_supabase(jobs):
-    """Push jobs to Supabase via REST API"""
-    if not jobs:
-        print("No jobs to push")
+def load_existing_jobs() -> list[dict]:
+    for path in (JOBS_JSON, SEEDED_JSON):
+        if path.exists():
+            try:
+                return json.loads(path.read_text())
+            except json.JSONDecodeError:
+                continue
+    return []
+
+
+def push_to_supabase(jobs: list[dict]) -> int:
+    if not jobs or not SUPABASE_KEY:
+        if not SUPABASE_KEY:
+            print("SUPABASE_ANON_KEY not set — skipping push")
         return 0
-    
+
     url = f"{SUPABASE_URL}/rest/v1/jobs"
     headers = {
         "apikey": SUPABASE_KEY,
         "Authorization": f"Bearer {SUPABASE_KEY}",
         "Content-Type": "application/json",
-        "Prefer": "return=minimal"
+        "Prefer": "return=minimal",
     }
-    
-    pushed_count = 0
+
+    pushed = 0
     for job in jobs:
-        # Prepare payload for Supabase
         payload = {
             "title": job["title"],
-            "slug": re.sub(r'[^a-z0-9]+', '-', job["title"].lower()),
+            "slug": re.sub(r"[^a-z0-9]+", "-", job["title"].lower()).strip("-"),
             "location": job["location"],
             "is_remote": job["is_remote"],
-            "job_type": job["job_type"],
-            "salary_min": job["salary_min"],
-            "salary_max": job["salary_max"],
-            "tags": job["tags"],
+            "job_type": job.get("job_type", "Full-time"),
+            "salary_min": job.get("salary_min") or None,
+            "salary_max": job.get("salary_max") or None,
+            "tags": job.get("tags", []),
             "description": job["description"],
-            "apply_url": job["apply_url"]
+            "apply_url": job["apply_url"],
+            "source": job.get("source", "exa"),
         }
-        
-        # Check if job already exists (by apply_url)
-        check_url = f"{SUPABASE_URL}/rest/v1/jobs?apply_url=eq.{urllib.parse.quote(job['apply_url'])}"
+        check_url = (
+            f"{SUPABASE_URL}/rest/v1/jobs?apply_url=eq."
+            f"{urllib.parse.quote(job['apply_url'], safe='')}"
+        )
         req = urllib.request.Request(check_url, headers=headers, method="GET")
         try:
-            with urllib.request.urlopen(req, context=ssl_context) as resp:
-                existing = json.loads(resp.read().decode())
-                if existing:
-                    continue  # Skip if already exists
-        except:
+            with urllib.request.urlopen(req, context=ssl_context, timeout=20) as resp:
+                if json.loads(resp.read().decode()):
+                    continue
+        except Exception:
             pass
-        
-        # Insert job
-        req = urllib.request.Request(url, data=json.dumps([payload]).encode('utf-8'), headers=headers)
+
+        req = urllib.request.Request(
+            url, data=json.dumps([payload]).encode("utf-8"), headers=headers
+        )
         try:
-            with urllib.request.urlopen(req, context=ssl_context) as resp:
-                pushed_count += 1
+            with urllib.request.urlopen(req, context=ssl_context, timeout=20) as resp:
+                pushed += 1
         except Exception as e:
             print(f"Error pushing job {job['title']}: {e}")
-    
-    return pushed_count
+    return pushed
 
-def main():
-    print(f"[{datetime.utcnow().isoformat()}] Starting AI jobs daily ingest...")
-    
-    # Load existing jobs
+
+def main() -> None:
+    print(f"[{datetime.now(timezone.utc).isoformat()}] Starting AI jobs daily ingest...")
+
     existing_jobs = load_existing_jobs()
-    existing_urls = {j.get("apply_url") for j in existing_jobs}
+    existing_urls = {
+        normalize_apply_url(j.get("apply_url", "")) for j in existing_jobs if j.get("apply_url")
+    }
     print(f"Loaded {len(existing_jobs)} existing jobs")
-    
-    # Fetch new jobs
-    all_jobs = []
-    seen_urls = set(existing_urls)
-    
+
+    all_jobs: list[dict] = []
+    seen = set(existing_urls)
+
     for query in QUERIES:
         print(f"  Searching: {query}")
-        results = search_exa(query)
-        for res in results:
-            url = res.get("url")
-            if url and url not in seen_urls:
-                seen_urls.add(url)
-                try:
-                    job = extract_job_info(res)
+        for res in search_exa(query):
+            url = res.get("url") or ""
+            key = normalize_apply_url(url)
+            if not key or key in seen:
+                continue
+            seen.add(key)
+            try:
+                job = extract_job_info(res)
+                if job:
                     all_jobs.append(job)
-                except Exception as e:
-                    print(f"    Error parsing job: {e}")
-    
-    # Merge and save
-    merged_jobs = existing_jobs + all_jobs
-    merged_jobs = list({j["apply_url"]: j for j in merged_jobs}.values())  # Deduplicate
-    
-    with open("/Users/petekeating/ai-jobs-directory/seeded_jobs.json", "w") as f:
-        json.dump(merged_jobs, f, indent=2)
-    
-    print(f"✓ Saved {len(merged_jobs)} total jobs to seeded_jobs.json")
+            except Exception as e:
+                print(f"    Error parsing job: {e}")
+
+    # Merge into the canonical web dataset
+    by_url: dict[str, dict] = {}
+    for j in existing_jobs + all_jobs:
+        key = normalize_apply_url(j.get("apply_url", ""))
+        if key:
+            by_url[key] = j
+    merged = list(by_url.values())
+
+    JOBS_JSON.parent.mkdir(parents=True, exist_ok=True)
+    JOBS_JSON.write_text(json.dumps(merged, indent=2) + "\n")
+    SEEDED_JSON.write_text(json.dumps(merged, indent=2) + "\n")
+
+    print(f"✓ Saved {len(merged)} total jobs to {JOBS_JSON.relative_to(ROOT)}")
     print(f"  New jobs today: {len(all_jobs)}")
-    
-    # Push to Supabase
+
     pushed = push_to_supabase(all_jobs)
     print(f"✓ Pushed {pushed} jobs to Supabase")
-    
-    print(f"[{datetime.utcnow().isoformat()}] Daily ingest complete")
+    print(f"[{datetime.now(timezone.utc).isoformat()}] Daily ingest complete")
+
 
 if __name__ == "__main__":
     main()

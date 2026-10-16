@@ -112,6 +112,7 @@ const PLACEHOLDER_BANDS = new Set([
   '140000-220000',
   '160000-240000',
   '180000-280000',
+  '220000-350000',
 ]);
 
 function escapeRegex(value: string): string {
@@ -154,6 +155,8 @@ export function salaryRange(job: Job): { min: number; max: number } | null {
 
 export function cleanJobTitle(title: string, company?: string): string {
   let cleaned = (title ?? '').replace(/^Job Application for\s+/i, '').trim();
+  // Anthropic scrape artifact: "Jobs \\ Anthropic"
+  cleaned = cleaned.replace(/\s*\\\s*/g, ' - ').trim();
   cleaned = cleaned.replace(/\s+@\s+.+$/, '').trim();
   if (company) {
     cleaned = cleaned
@@ -203,9 +206,13 @@ export function cleanCompanyName(job: Pick<Job, 'company' | 'title' | 'apply_url
   const corrupted =
     !company ||
     company === 'AI Startup' ||
+    /^remote(ai)?$/i.test(company) ||
     /^career page$/i.test(company) ||
     company.length > 60 ||
-    /[)|]/.test(company) ||
+    company.includes('|') ||
+    (company.includes(')') && (!company.includes('(') || company.length > 50)) ||
+    company.startsWith('$') ||
+    /\bjobs?\b$/i.test(company) ||
     looksLikeTitle;
 
   if (corrupted) {

@@ -13,15 +13,20 @@ Writes merged results into web/data/jobs.json (dedup by apply_url).
 import json
 import re
 import ssl
+import sys
 import urllib.request
 import urllib.error
 from datetime import datetime, timezone
+from pathlib import Path
 
 import certifi
 
-SSL_CONTEXT = ssl.create_default_context(cafile=certifi.where())
+ROOT = Path(__file__).resolve().parents[1]
+JOBS_JSON = str(ROOT / "web" / "data" / "jobs.json")
+sys.path.insert(0, str(ROOT / "scripts"))
+from job_quality_lib import is_valid_listing, normalize_job  # noqa: E402
 
-JOBS_JSON = "web/data/jobs.json"
+SSL_CONTEXT = ssl.create_default_context(cafile=certifi.where())
 
 # Curated list of frontier / hot VC-backed AI companies with confirmed public
 # ATS board slugs (probed manually — see conversation). Add more as found.
@@ -224,7 +229,16 @@ def main():
         print(f"  {len(jobs)} roles, {len(kept)} match frontier-role filter")
         fetched.extend(kept)
 
-    new_jobs = [j for j in fetched if j["apply_url"] and j["apply_url"] not in existing_urls]
+    new_jobs = []
+    for j in fetched:
+        if not j.get("apply_url") or j["apply_url"] in existing_urls:
+            continue
+        normalize_job(j)
+        ok, reason = is_valid_listing(j)
+        if not ok:
+            print(f"  skip ({reason}): {j.get('title')} @ {j.get('company')}")
+            continue
+        new_jobs.append(j)
     print(f"\n{len(fetched)} frontier roles fetched, {len(new_jobs)} are new")
 
     merged = existing + new_jobs

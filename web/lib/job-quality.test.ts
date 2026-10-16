@@ -39,6 +39,10 @@ describe('cleanJobTitle', () => {
   it('closes mashed unclosed parentheses', () => {
     assert.equal(cleanJobTitle('AI Engineer Backend (Remote', 'Quadrivia'), 'AI Engineer Backend');
   });
+
+  it('normalizes Anthropic scrape backslash titles', () => {
+    assert.equal(cleanJobTitle('Jobs \\ Anthropic', 'Anthropic'), 'Jobs');
+  });
 });
 
 describe('cleanCompanyName', () => {
@@ -57,12 +61,25 @@ describe('cleanCompanyName', () => {
       'Pulsora Inc'
     );
   });
+
+  it('treats Remote / RemoteAI as corrupted company names', () => {
+    assert.equal(
+      cleanCompanyName(
+        job({
+          company: 'Remote',
+          apply_url: 'https://jobs.ashbyhq.com/scale%20Army%20Careers/c1aa',
+        })
+      ),
+      'Scale Army Careers'
+    );
+  });
 });
 
 describe('salaryRange', () => {
   it('hides the default $140k–$220k band when the description has no range', () => {
     assert.equal(salaryRange(job({ salary_min: 140000, salary_max: 220000 })), null);
     assert.equal(isPlaceholderSalaryBand(160000, 240000), true);
+    assert.equal(isPlaceholderSalaryBand(220000, 350000), true);
   });
 
   it('prefers a range parsed from the description', () => {
