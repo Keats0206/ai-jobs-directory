@@ -3,7 +3,7 @@
 import { useMemo, useState } from 'react';
 import Link from 'next/link';
 import { SiteHeader } from '@/components/site-header';
-import { Container, PageHeading, SectionLabel } from '@/components/page-shell';
+import { Container, PageHeading, PageIntroBand, SectionLabel } from '@/components/page-shell';
 import { EcosystemTabs } from '@/components/ecosystem-tabs';
 import { AgentEntryList } from '@/components/agent-entry-list';
 import { ChipLink } from '@/components/chip';
@@ -56,31 +56,28 @@ export function AgentsHubPage() {
       <SiteHeader />
 
       <main className="flex-1">
-        <Container className="pb-8 pt-14">
-          <PageHeading
-            title="Top OpenClaw plugins, MCP servers & Hermes plugins."
-            lead="Curated directory of the best agent extensions across three ecosystems. Ranked by official status, docs coverage, and community adoption."
-            meta={`150 entries · Last updated ${directoryMeta.updated}`}
-          />
+        <PageIntroBand>
+          <Container className="pb-8 pt-14">
+            <PageHeading
+              title="Agent plugins & MCP servers"
+              lead="Curated OpenClaw, MCP, and Hermes extensions — ranked by docs coverage and community adoption."
+              meta={`150 entries · Last updated ${directoryMeta.updated}`}
+            />
+            <div className="flex flex-wrap gap-x-4 gap-y-2 text-sm text-muted-foreground">
+              <Link href="/agentic" className="transition-colors hover:text-brand">
+                Agentic hub
+              </Link>
+              <Link href="/compare/ai-coding-agents" className="transition-colors hover:text-brand">
+                Agent rankings
+              </Link>
+              <Link href="/openclaw/mcps" className="transition-colors hover:text-brand">
+                MCP directory
+              </Link>
+            </div>
+          </Container>
+        </PageIntroBand>
 
-          <div className="mb-6 flex flex-wrap gap-3 text-sm">
-            <Link href="/agentic" className="text-brand hover:underline">
-              Agentic dev hub →
-            </Link>
-            <Link href="/compare/ai-coding-agents" className="text-brand hover:underline">
-              AI coding agent rankings →
-            </Link>
-            <Link href="/openclaw/plugins" className="text-brand hover:underline">
-              All OpenClaw plugins →
-            </Link>
-            <Link href="/openclaw/mcps" className="text-brand hover:underline">
-              All MCP servers →
-            </Link>
-            <Link href="/hermes/plugins" className="text-brand hover:underline">
-              All Hermes plugins →
-            </Link>
-          </div>
-
+        <Container className="pb-8">
           <EcosystemTabs
             active={ecosystem}
             onChange={(e) => {
@@ -104,7 +101,7 @@ export function AgentsHubPage() {
               <button
                 type="button"
                 onClick={() => setSelectedCategory(null)}
-                className={`rounded-full border px-3 py-1.5 text-xs transition-colors ${
+                className={`rounded-md border px-2.5 py-1 text-xs transition-colors ${
                   selectedCategory === null
                     ? 'border-foreground bg-foreground text-background'
                     : 'border-border text-muted-foreground hover:border-foreground/30'
@@ -117,7 +114,7 @@ export function AgentsHubPage() {
                   key={category}
                   type="button"
                   onClick={() => setSelectedCategory(category === selectedCategory ? null : category)}
-                  className={`rounded-full border px-3 py-1.5 text-xs transition-colors ${
+                  className={`rounded-md border px-2.5 py-1 text-xs transition-colors ${
                     selectedCategory === category
                       ? 'border-foreground bg-foreground text-background'
                       : 'border-border text-muted-foreground hover:border-foreground/30'

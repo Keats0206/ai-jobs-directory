@@ -35,9 +35,9 @@ export function NewsletterSignup({ className }: { className?: string }) {
   if (status === 'success') {
     return (
       <div className={className}>
-        <h3 className="text-lg font-semibold">You're in! 🎉</h3>
+        <h3 className="font-heading text-lg font-semibold">You&apos;re in</h3>
         <p className="mt-2 text-sm text-muted-foreground">
-          Weekly AI job digest coming your way. Check your inbox!
+          Weekly AI job digest coming your way. Check your inbox.
         </p>
       </div>
     );
@@ -45,7 +45,7 @@ export function NewsletterSignup({ className }: { className?: string }) {
 
   return (
     <div className={className}>
-      <h3 className="text-lg font-semibold">Get weekly AI job alerts</h3>
+      <h3 className="font-heading text-lg font-semibold">Get weekly AI job alerts</h3>
       <p className="mb-4 text-sm text-muted-foreground">
         The best AI, LLM, and ML roles delivered to your inbox every Monday. No spam, unsubscribe anytime.
       </p>

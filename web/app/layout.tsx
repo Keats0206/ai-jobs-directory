@@ -1,16 +1,24 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Space_Grotesk, Source_Sans_3, IBM_Plex_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const display = Space_Grotesk({
+  variable: "--font-display",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const body = Source_Sans_3({
+  variable: "--font-body",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
+const mono = IBM_Plex_Mono({
+  variable: "--font-mono",
+  subsets: ["latin"],
+  weight: ["400", "500"],
 });
 
 export const metadata: Metadata = {
@@ -47,20 +55,10 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${display.variable} ${body.variable} ${mono.variable} h-full antialiased`}
     >
-      <body className="flex min-h-full flex-col bg-background text-foreground">
+      <body className="flex min-h-full flex-col bg-background text-foreground page-wash">
         {children}
-        <footer className="border-t border-border mt-16 py-6">
-          <div className="mx-auto max-w-5xl px-6 flex items-center justify-between text-xs text-muted">
-            <span>&copy; {new Date().getFullYear()} Artificial Jobs</span>
-            <div className="flex items-center gap-4">
-              <a href="https://hot100ai.dev" target="_blank" rel="noreferrer" className="hover:text-foreground transition-colors">AI Tools Directory</a>
-              <span>&middot;</span>
-              <a href="https://keatingholdings.com" target="_blank" rel="noreferrer" className="hover:text-foreground transition-colors">Keating Holdings</a>
-            </div>
-          </div>
-        </footer>
         <Analytics />
       </body>
     </html>

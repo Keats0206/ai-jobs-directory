@@ -52,35 +52,43 @@ export function HomeBoard() {
       <SiteHeader action={<PostJobDialog />} />
 
       <main className="flex-1">
-        <Container className="pb-8 pt-14">
-          <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
-            AI engineering jobs.
-          </h1>
-          <p className="mt-3 text-lg text-muted-foreground">
-            {jobs.length} open roles at LLM labs, AI startups, and infra companies. Updated daily.
-          </p>
+        <section className="relative overflow-hidden">
+          <div className="hero-atmosphere absolute inset-0" aria-hidden />
+          <Container className="relative pb-10 pt-14 sm:pt-16">
+            <h1 className="font-heading animate-fade-up text-4xl font-semibold tracking-tight sm:text-5xl md:text-6xl">
+              Artificial Jobs
+            </h1>
+            <p className="animate-fade-up-delay-1 mt-4 max-w-xl text-lg text-muted-foreground sm:text-xl">
+              {jobs.length.toLocaleString()} open AI engineering roles at LLM labs, startups, and
+              infra companies. Updated daily.
+            </p>
 
-          <Input
-            type="search"
-            placeholder="Search roles or companies…"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            className="mt-8 h-11 rounded-xl px-4 text-base"
-          />
+            <div className="animate-fade-up-delay-2 mt-8 max-w-xl">
+              <Input
+                type="search"
+                placeholder="Search roles or companies…"
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+                className="h-12 rounded-lg border-border/80 bg-background/90 px-4 text-base shadow-none"
+                aria-label="Search roles or companies"
+              />
+            </div>
 
-          <div className="mt-4 flex flex-wrap gap-2">
-            {allTags.map(({ tag, count }) => (
-              <ChipButton key={tag} active={selectedTags.has(tag)} onClick={() => toggleTag(tag)}>
-                {tag}
-                <span className="tabular-nums opacity-50">{count}</span>
-              </ChipButton>
-            ))}
-          </div>
-        </Container>
+            <div className="animate-fade-up-delay-2 mt-5 flex flex-wrap gap-2">
+              {allTags.map(({ tag, count }) => (
+                <ChipButton key={tag} active={selectedTags.has(tag)} onClick={() => toggleTag(tag)}>
+                  {tag}
+                  <span className="font-mono text-[11px] tabular-nums opacity-50">{count}</span>
+                </ChipButton>
+              ))}
+            </div>
+          </Container>
+        </section>
 
-        <Container className="pb-12">
+        <Container className="pb-12 pt-2">
           <SectionLabel>
-            {filteredJobs.length} {filteredJobs.length === 1 ? 'role' : 'roles'}
+            {filteredJobs.length.toLocaleString()}{' '}
+            {filteredJobs.length === 1 ? 'role' : 'roles'}
             {filteredJobs.length > MAX_VISIBLE ? ` · showing first ${MAX_VISIBLE}` : ''}
           </SectionLabel>
           <JobList jobs={visible} indexOf={(job) => jobs.indexOf(job)} />

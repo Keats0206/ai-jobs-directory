@@ -152,7 +152,9 @@ export default async function JobPage({ params }: { params: Promise<{ slug: stri
           <article>
             <Breadcrumb current={title} />
 
-            <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">{title}</h1>
+            <h1 className="font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
+              {title}
+            </h1>
             <p className="mt-2 text-lg text-muted-foreground">{company}</p>
 
             <div className="mt-6 flex flex-wrap gap-2">
@@ -160,7 +162,7 @@ export default async function JobPage({ params }: { params: Promise<{ slug: stri
               <Chip>{job.is_remote ? 'Remote OK' : 'On-site'}</Chip>
               <Chip>{job.job_type || 'Full-time'}</Chip>
               {salary && (
-                <Chip variant="brand" className="font-medium">
+                <Chip variant="brand" className="font-medium font-mono">
                   {salary} / year
                 </Chip>
               )}
@@ -177,14 +179,14 @@ export default async function JobPage({ params }: { params: Promise<{ slug: stri
             )}
 
             <section className="mt-12">
-              <h2 className="text-lg font-semibold">About this role</h2>
+              <h2 className="font-heading text-lg font-semibold">About this role</h2>
               <div className="mt-4 whitespace-pre-wrap text-[15px] leading-relaxed text-foreground/80">
                 {cleanDesc}
               </div>
             </section>
 
-            <aside className="mt-12 rounded-xl border border-border bg-muted/40 px-6 py-8 text-center">
-              <h2 className="text-base font-semibold">Interested in this role?</h2>
+            <aside className="mt-12 border-t border-border/60 pt-10 text-center sm:text-left">
+              <h2 className="font-heading text-base font-semibold">Interested in this role?</h2>
               <p className="mt-1 text-sm text-muted-foreground">
                 Apply directly with {company}.
               </p>
@@ -195,32 +197,34 @@ export default async function JobPage({ params }: { params: Promise<{ slug: stri
 
             {relatedJobs.length > 0 && (
               <section className="mt-14 border-t border-border/60 pt-10">
-                <h2 className="text-lg font-semibold mb-6">Related opportunities</h2>
-                <div className="space-y-3">
+                <h2 className="font-heading mb-2 text-lg font-semibold">Related opportunities</h2>
+                <div className="divide-y divide-border/60">
                   {relatedJobs.map(({ job: relJob, index: relIndex }) => {
                     const relRange = salaryRange(relJob);
                     return (
-                    <a
-                      key={relIndex}
-                      href={`/jobs/${jobSlug(relJob, relIndex)}`}
-                      className="flex items-start justify-between rounded-lg border border-border/60 p-4 hover:bg-muted/50 transition-colors group"
-                    >
-                      <div className="flex-1 text-left">
-                        <h3 className="font-medium group-hover:text-primary transition-colors">{displayTitle(relJob)}</h3>
-                        <p className="text-sm text-muted-foreground mt-0.5">{displayCompany(relJob)}</p>
-                        <div className="flex flex-wrap gap-1.5 mt-2">
-                          <span className="text-xs bg-muted px-2 py-1 rounded">{relJob.location}</span>
+                      <a
+                        key={relIndex}
+                        href={`/jobs/${jobSlug(relJob, relIndex)}`}
+                        className="group flex items-start justify-between gap-4 py-4 transition-colors hover:bg-brand-muted/30 sm:-mx-3 sm:rounded-lg sm:px-3"
+                      >
+                        <div className="min-w-0 flex-1 text-left">
+                          <h3 className="font-medium transition-colors group-hover:text-brand">
+                            {displayTitle(relJob)}
+                          </h3>
+                          <p className="mt-0.5 text-sm text-muted-foreground">
+                            {displayCompany(relJob)}
+                            {relJob.location ? ` · ${relJob.location}` : ''}
+                          </p>
                           {relRange && (
-                            <span className="text-xs bg-muted px-2 py-1 rounded">
+                            <p className="mt-1 font-mono text-xs tabular-nums text-muted-foreground">
                               {formatSalary(relRange.min, relRange.max)}
-                            </span>
+                            </p>
                           )}
                         </div>
-                      </div>
-                      <div className="text-right text-xs text-muted-foreground ml-4 flex-shrink-0">
-                        <div className="text-primary font-semibold group-hover:underline">View →</div>
-                      </div>
-                    </a>
+                        <span className="shrink-0 text-xs font-medium text-brand opacity-0 transition-opacity group-hover:opacity-100">
+                          View
+                        </span>
+                      </a>
                     );
                   })}
                 </div>

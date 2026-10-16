@@ -20,19 +20,26 @@ export function Breadcrumb({
   segments?: { label: string; href: string }[];
 }) {
   return (
-    <nav aria-label="Breadcrumb" className="mb-6 flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
+    <nav
+      aria-label="Breadcrumb"
+      className="mb-6 flex flex-wrap items-center gap-2 text-sm text-muted-foreground"
+    >
       <Link href="/" className="transition-colors hover:text-foreground">
         Jobs
       </Link>
       {segments?.map((seg) => (
         <span key={seg.href} className="flex items-center gap-2">
-          <span aria-hidden className="text-border">/</span>
+          <span aria-hidden className="text-border">
+            /
+          </span>
           <Link href={seg.href} className="transition-colors hover:text-foreground">
             {seg.label}
           </Link>
         </span>
       ))}
-      <span aria-hidden className="text-border">/</span>
+      <span aria-hidden className="text-border">
+        /
+      </span>
       <span className="truncate text-foreground">{current}</span>
     </nav>
   );
@@ -50,7 +57,7 @@ export function PageHeading({
 }) {
   return (
     <div className="mb-10">
-      <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">{title}</h1>
+      <h1 className="font-heading text-3xl font-semibold tracking-tight sm:text-4xl">{title}</h1>
       {lead && <p className="mt-3 text-lg text-muted-foreground">{lead}</p>}
       {meta && <p className="mt-2 text-sm text-muted-foreground">{meta}</p>}
     </div>
@@ -60,8 +67,18 @@ export function PageHeading({
 /** Small caps label that introduces a list or section. */
 export function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
-    <p className="mb-4 text-xs font-medium uppercase tracking-wider text-muted-foreground">
+    <p className="mb-4 font-heading text-xs font-medium uppercase tracking-[0.12em] text-muted-foreground">
       {children}
     </p>
+  );
+}
+
+/** Compact branded band for listing / hub page intros (not a card). */
+export function PageIntroBand({ children, className }: { children: React.ReactNode; className?: string }) {
+  return (
+    <div className={cn('relative mb-2 overflow-hidden', className)}>
+      <div className="hero-atmosphere absolute inset-0 opacity-70" aria-hidden />
+      <div className="relative">{children}</div>
+    </div>
   );
 }

@@ -6,7 +6,7 @@ export function PostJobDialog() {
   return (
     <Link
       href="/post-job"
-      className={cn(buttonVariants({ size: 'sm' }), 'rounded-full px-3.5 text-xs')}
+      className={cn(buttonVariants({ size: 'sm' }), 'rounded-md px-3.5 text-xs')}
     >
       Post a job — $99
     </Link>

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Metadata } from 'next';
-import { Container, Breadcrumb, PageHeading, SectionLabel } from '@/components/page-shell';
+import { Container, Breadcrumb, PageHeading, PageIntroBand, SectionLabel } from '@/components/page-shell';
 import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
 import { AgentCard } from '@/components/agent-card';
@@ -37,17 +37,21 @@ export default function CompareHubPage() {
       <SiteHeader />
 
       <main className="flex-1">
-        <Container className="py-12">
-          <Breadcrumb
-            segments={[{ label: 'Compare', href: '/compare/ai-coding-agents' }]}
-            current="AI coding agents"
-          />
-          <PageHeading
-            title="Best AI Coding Agents (2026)"
-            lead="Compare the top AI coding agents by community usage — from IDE assistants to CLI and messaging agents."
-            meta="Ranked by public token usage where available · Updated 2026"
-          />
+        <PageIntroBand>
+          <Container className="pb-8 pt-12">
+            <Breadcrumb
+              segments={[{ label: 'Compare', href: '/compare/ai-coding-agents' }]}
+              current="AI coding agents"
+            />
+            <PageHeading
+              title="Best AI Coding Agents (2026)"
+              lead="Compare the top AI coding agents by community usage — from IDE assistants to CLI and messaging agents."
+              meta="Ranked by public token usage where available · Updated 2026"
+            />
+          </Container>
+        </PageIntroBand>
 
+        <Container className="pb-12">
           <section>
             <SectionLabel>Quick comparison</SectionLabel>
             <div className="mt-4">
