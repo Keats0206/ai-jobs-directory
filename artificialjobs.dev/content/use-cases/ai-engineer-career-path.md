@@ -40,7 +40,7 @@ Skills appearing most on live AI engineering listings (August 2026):
 | LangChain | 43 |
 | Fine-tuning | 39 |
 
-**Core stack for 2026:** Python + LLM APIs + RAG retrieval + evaluation + deployment (Docker/K8s basics). **Differentiators:** agent tooling (MCP, [AI coding agents](/compare/ai-coding-agents)), Rust for infra roles, fine-tuning for model-adjacent positions.
+**Core stack for 2026:** Python + LLM APIs + RAG retrieval + evaluation + deployment (Docker/K8s basics). **Differentiators:** agent tooling (MCP, AI coding agents), Rust for infra roles, fine-tuning for model-adjacent positions.
 
 You do not need every tag — match **2–3 depth areas** to roles you apply for.
 
@@ -103,7 +103,7 @@ Replace degree signals with a deployed portfolio, tag-aligned applications, and 
 
 Getting hired as an AI engineer in 2026 is a **skills + proof + search precision** problem — not a credentials problem. Match live listing tags, show production work, and search boards built for AI stacks.
 
-**Next step:** [Browse LLM jobs](/remote/llm) · [LLM salary data](/salary/llm) · [Compare AI coding agents](/compare/ai-coding-agents)
+**Next step:** [Browse LLM jobs](/remote/llm) · [LLM salary data](/salary/llm)
 
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How to get hired as an LLM engineer?","acceptedAnswer":{"@type":"Answer","text":"Ship a production RAG or agent project, filter remote LLM roles on artificialjobs.dev, and apply with stack-specific portfolio links."}}]}

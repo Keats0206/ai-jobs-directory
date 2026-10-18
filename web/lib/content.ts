@@ -31,6 +31,8 @@ const URL_TO_FILE: Record<string, string> = {
   '/salary/llm': 'use-cases/llm-engineer-salary-guide.md',
   '/use-cases/ai-engineer-career': 'use-cases/ai-engineer-career-path.md',
   '/use-cases/agentic-engineer-jobs': 'use-cases/agentic-engineer-jobs.md',
+  '/use-cases/prompt-engineer-jobs': 'use-cases/prompt-engineer-jobs.md',
+  '/use-cases/rag-engineer-jobs': 'use-cases/rag-engineer-jobs.md',
 };
 
 function stripJsonLd(markdown: string): { body: string; jsonLd: string | null } {

@@ -1,6 +1,8 @@
 import { Metadata } from 'next';
-import { notFound } from 'next/navigation';
+import { notFound, permanentRedirect } from 'next/navigation';
+import Link from 'next/link';
 import { jobs, jobSlug, getJobBySlug, formatSalary, slugify, salaryRange } from '@/lib/jobs';
+import { timeAgo } from '@/lib/job-utils';
 import {
   displayCompany,
   displayTitle,
@@ -11,9 +13,11 @@ import {
 } from '@/lib/job-quality';
 import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
-import { Container, Breadcrumb } from '@/components/page-shell';
+import { Breadcrumb } from '@/components/page-shell';
 import { Chip, ChipLink } from '@/components/chip';
 import ApplyButton from '@/app/components/ApplyButton';
+import { JobDescription } from '@/components/job-description';
+import { JobList } from '@/components/job-list';
 
 export function generateStaticParams() {
   return jobs.map((job, i) => ({ slug: jobSlug(job, i) }));
@@ -46,7 +50,14 @@ export async function generateMetadata({
 export default async function JobPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const result = getJobBySlug(slug);
-  if (!result || (result.job.status && result.job.status !== 'active')) notFound();
+  if (!result) notFound();
+  if (result.job.status && result.job.status !== 'active') {
+    // A filled role's link equity goes to the employer's open roles when they still have some.
+    if (result.job.status === 'closed' && jobs.filter((j) => j.company === result.job.company).length > 1) {
+      permanentRedirect(`/company/${slugify(result.job.company)}`);
+    }
+    notFound();
+  }
 
   const { job, index } = result;
   const title = displayTitle(job);
@@ -99,45 +110,32 @@ export default async function JobPage({ params }: { params: Promise<{ slug: stri
     };
   }
 
-  // Clean description — strip markdown junk
-  const cleanDesc = job.description
-    .replace(/[#*[\]]/g, '')
-    .replace(/\n{3,}/g, '\n\n')
-    .slice(0, 3000);
-
   const applyProps = {
     jobId: jobSlug(job, index),
     company,
     applyUrl: job.apply_url,
   };
 
-  // Find related jobs (same skill, location, or company)
-  const getRelatedJobs = () => {
-    const related = new Set<number>();
-    
-    // Same company
-    jobs.forEach((j, i) => {
-      if (j.company === job.company && i !== index) related.add(i);
-    });
-    
-    // Same location (if fewer than 4)
-    if (related.size < 4) {
-      jobs.forEach((j, i) => {
-        if (j.location === job.location && i !== index && related.size < 4) related.add(i);
-      });
-    }
-    
-    // Same tags (if still fewer)
-    if (related.size < 4 && job.tags?.length) {
-      jobs.forEach((j, i) => {
-        if (j.tags?.some(t => job.tags?.includes(t)) && i !== index && related.size < 4) related.add(i);
-      });
-    }
-    
-    return Array.from(related).slice(0, 4).map(i => ({ job: jobs[i], index: i }));
-  };
+  // Related: same company first, then shared skills. Re-uses the list row used everywhere else.
+  const related = [
+    ...jobs.filter((j) => j.company === job.company),
+    ...jobs.filter((j) => j.tags?.some((t) => job.tags?.includes(t))),
+  ].filter((j, i, list) => j !== job && list.indexOf(j) === i).slice(0, 5);
 
-  const relatedJobs = getRelatedJobs();
+  const facts = job.facts;
+  const factRows = [
+    ['Seniority', facts && facts.seniority !== 'unknown' ? SENIORITY[facts.seniority] : null],
+    ['Experience', facts?.yoe_min ? `${facts.yoe_min}+ years` : null],
+    ['Focus', facts && facts.work_type !== 'other' ? WORK_TYPE[facts.work_type] : null],
+    ['Team', facts?.team ?? null],
+    ['Remote regions', facts?.remote_regions.length ? facts.remote_regions.map((r) => REGION[r] ?? r).join(', ') : null],
+    ['Visa sponsorship', facts?.visa_sponsorship === 'yes' ? 'Yes' : facts?.visa_sponsorship === 'no' ? 'No' : null],
+    ['Employment', job.job_type || null],
+  ].filter((row): row is [string, string] => Boolean(row[1]));
+  const stack = facts?.stack ?? [];
+  const posted = timeAgo(job.date_posted || job.first_seen);
+  const verified = timeAgo(job.last_verified);
+  const hasCompanyPage = jobs.filter((j) => j.company === job.company).length > 1;
 
   return (
     <>
@@ -148,89 +146,93 @@ export default async function JobPage({ params }: { params: Promise<{ slug: stri
       />
 
       <main className="flex-1">
-        <Container className="py-12">
-          <article>
-            <Breadcrumb current={title} />
+        <div className="mx-auto w-full max-w-5xl px-5 pb-16 pt-10">
+          <Breadcrumb
+            segments={hasCompanyPage ? [{ label: company, href: `/company/${slugify(job.company)}` }] : undefined}
+            current={title}
+          />
 
-            <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">{title}</h1>
-            <p className="mt-2 text-lg text-muted-foreground">{company}</p>
+          <header className="border-b border-border/60 pb-8">
+            <p className="text-sm font-medium text-brand">
+              {hasCompanyPage ? <Link href={`/company/${slugify(job.company)}`} className="hover:underline">{company}</Link> : company}
+            </p>
+            <h1 className="mt-2 text-3xl font-semibold tracking-tight text-balance sm:text-4xl">{title}</h1>
+            <p className="mt-3 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-muted-foreground">
+              <Link href={`/location/${slugify(job.location)}`} className="hover:text-foreground">{job.location}</Link>
+              <span aria-hidden>·</span>
+              <span>{job.is_remote ? 'Remote' : 'On-site'}</span>
+              {salary && (<><span aria-hidden>·</span><span className="font-medium text-foreground">{salary}</span></>)}
+              {posted && (<><span aria-hidden>·</span><span>Posted {posted}</span></>)}
+            </p>
+          </header>
 
-            <div className="mt-6 flex flex-wrap gap-2">
-              <Chip>{job.location}</Chip>
-              <Chip>{job.is_remote ? 'Remote OK' : 'On-site'}</Chip>
-              <Chip>{job.job_type || 'Full-time'}</Chip>
-              {salary && (
-                <Chip variant="brand" className="font-medium">
-                  {salary} / year
-                </Chip>
-              )}
-            </div>
-
-            {job.tags?.length > 0 && (
-              <div className="mt-3 flex flex-wrap gap-2">
-                {job.tags.map((tag) => (
-                  <ChipLink key={tag} href={`/remote/${slugify(tag)}`}>
-                    {tag}
-                  </ChipLink>
-                ))}
+          <div className="mt-10 grid gap-12 lg:grid-cols-[minmax(0,1fr)_18rem]">
+            <article>
+              <JobDescription markdown={job.description} />
+              <div className="mt-12 flex flex-wrap items-center gap-4 border-t border-border/60 pt-8">
+                <ApplyButton {...applyProps} className="px-6 py-2.5">Apply on {company}&rsquo;s site</ApplyButton>
+                {verified && <span className="text-xs text-muted-foreground">Listing checked {verified}</span>}
               </div>
-            )}
+            </article>
 
-            <section className="mt-12">
-              <h2 className="text-lg font-semibold">About this role</h2>
-              <div className="mt-4 whitespace-pre-wrap text-[15px] leading-relaxed text-foreground/80">
-                {cleanDesc}
+            <aside className="lg:sticky lg:top-24 lg:self-start">
+              <div className="rounded-xl border border-border bg-muted/30 p-5">
+                {salary ? (
+                  <>
+                    <p className="text-xs uppercase tracking-wider text-muted-foreground">Salary</p>
+                    <p className="mt-1 text-xl font-semibold tabular-nums">{salary}</p>
+                  </>
+                ) : (
+                  <p className="text-sm text-muted-foreground">Salary not listed by {company}</p>
+                )}
+                <ApplyButton {...applyProps} className="mt-4 w-full py-2.5">Apply now</ApplyButton>
+
+                {factRows.length > 0 && (
+                  <dl className="mt-6 space-y-3 border-t border-border/60 pt-5 text-sm">
+                    {factRows.map(([label, value]) => (
+                      <div key={label} className="flex justify-between gap-4">
+                        <dt className="text-muted-foreground">{label}</dt>
+                        <dd className="text-right font-medium">{value}</dd>
+                      </div>
+                    ))}
+                  </dl>
+                )}
               </div>
-            </section>
 
-            <aside className="mt-12 rounded-xl border border-border bg-muted/40 px-6 py-8 text-center">
-              <h2 className="text-base font-semibold">Interested in this role?</h2>
-              <p className="mt-1 text-sm text-muted-foreground">
-                Apply directly with {company}.
-              </p>
-              <ApplyButton {...applyProps} className="mt-5 px-8 py-2.5">
-                Apply for this job
-              </ApplyButton>
-            </aside>
-
-            {relatedJobs.length > 0 && (
-              <section className="mt-14 border-t border-border/60 pt-10">
-                <h2 className="text-lg font-semibold mb-6">Related opportunities</h2>
-                <div className="space-y-3">
-                  {relatedJobs.map(({ job: relJob, index: relIndex }) => {
-                    const relRange = salaryRange(relJob);
-                    return (
-                    <a
-                      key={relIndex}
-                      href={`/jobs/${jobSlug(relJob, relIndex)}`}
-                      className="flex items-start justify-between rounded-lg border border-border/60 p-4 hover:bg-muted/50 transition-colors group"
-                    >
-                      <div className="flex-1 text-left">
-                        <h3 className="font-medium group-hover:text-primary transition-colors">{displayTitle(relJob)}</h3>
-                        <p className="text-sm text-muted-foreground mt-0.5">{displayCompany(relJob)}</p>
-                        <div className="flex flex-wrap gap-1.5 mt-2">
-                          <span className="text-xs bg-muted px-2 py-1 rounded">{relJob.location}</span>
-                          {relRange && (
-                            <span className="text-xs bg-muted px-2 py-1 rounded">
-                              {formatSalary(relRange.min, relRange.max)}
-                            </span>
-                          )}
-                        </div>
-                      </div>
-                      <div className="text-right text-xs text-muted-foreground ml-4 flex-shrink-0">
-                        <div className="text-primary font-semibold group-hover:underline">View →</div>
-                      </div>
-                    </a>
-                    );
-                  })}
+              {(stack.length > 0 || job.tags?.length > 0) && (
+                <div className="mt-6">
+                  <p className="mb-3 text-xs uppercase tracking-wider text-muted-foreground">Skills</p>
+                  <div className="flex flex-wrap gap-2">
+                    {job.tags?.map((tag) => (
+                      <ChipLink key={tag} href={`/remote/${slugify(tag)}`}>{tag}</ChipLink>
+                    ))}
+                    {stack.filter((s) => !job.tags?.includes(s)).map((s) => <Chip key={s}>{s}</Chip>)}
+                  </div>
                 </div>
-              </section>
-            )}
-          </article>
-        </Container>
+              )}
+            </aside>
+          </div>
+
+          {related.length > 0 && (
+            <section className="mt-16 border-t border-border/60 pt-10">
+              <h2 className="mb-2 text-lg font-semibold">Similar roles</h2>
+              <JobList jobs={related} indexOf={(j) => jobs.indexOf(j)} />
+            </section>
+          )}
+        </div>
       </main>
 
       <SiteFooter />
     </>
   );
 }
+
+const SENIORITY: Record<string, string> = {
+  intern: 'Intern', junior: 'Junior', mid: 'Mid-level', senior: 'Senior', staff: 'Staff', principal: 'Principal', manager: 'Manager',
+};
+const WORK_TYPE: Record<string, string> = {
+  research: 'Research', applied: 'Applied ML', infra: 'Infrastructure', evals: 'Evals', data: 'Data', product: 'Product',
+};
+const REGION: Record<string, string> = {
+  us: 'US', canada: 'Canada', latam: 'LatAm', uk: 'UK', europe: 'Europe', india: 'India', apac: 'APAC', global: 'Anywhere',
+};

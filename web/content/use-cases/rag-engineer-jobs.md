@@ -203,7 +203,7 @@ Python, vector databases (Pinecone, Weaviate, Qdrant), embeddings, chunking stra
 
 RAG engineer jobs are a distinct, well-compensated specialization — not a subtitle inside generic AI engineering. Search by RAG stack tags, prove production retrieval work in your portfolio, and use boards that filter for **187 RAG-tagged roles** rather than keyword noise.
 
-**Next step:** [Browse RAG jobs](/remote/rag) · [LLM salary data](/salary/llm) · [Agentic engineer jobs](/use-cases/agentic-engineer-jobs) · [Compare AI coding agents](/compare/ai-coding-agents)
+**Next step:** [Browse RAG jobs](/remote/rag) · [LLM salary data](/salary/llm) · [Agentic engineer jobs](/use-cases/agentic-engineer-jobs)
 
 <script type="application/ld+json">
 {

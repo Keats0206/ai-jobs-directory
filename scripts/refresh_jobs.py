@@ -6,6 +6,7 @@ import concurrent.futures
 import hashlib
 import html
 import json
+from html.parser import HTMLParser
 import re
 import ssl
 import time
@@ -67,10 +68,59 @@ def fetch_json(url):
                 raise
         time.sleep(2 ** attempt)
 
+class _Markdown(HTMLParser):
+    """Keeps the structure job pages need (headings, paragraphs, bullets) and drops everything else."""
+    BLOCK = {'p', 'div', 'section', 'ul', 'ol', 'table', 'tr', 'blockquote'}
+    HEADING = {'h1', 'h2', 'h3', 'h4', 'h5', 'h6'}
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.lines, self.line, self.bold_text, self.skip, self.bold, self.item = [], '', '', 0, 0, False
+    def flush(self, prefix=''):
+        text = re.sub(r'\s+', ' ', self.line).strip()
+        bold = re.sub(r'\s+', ' ', self.bold_text).strip()
+        if text:
+            if not prefix and self.item: prefix = '- '
+            # A short paragraph that is entirely bold is a heading in disguise.
+            if not prefix and bold == text and len(text) < 80: prefix = '## '
+            self.lines.append(prefix + (text.rstrip(':') if prefix == '## ' else text))
+        self.line = self.bold_text = ''
+    def handle_starttag(self, tag, attrs):
+        if tag in ('script', 'style'): self.skip += 1
+        elif tag in ('strong', 'b'): self.bold += 1
+        elif tag == 'li': self.flush(); self.item = True
+        elif tag in self.BLOCK or tag in self.HEADING or tag == 'br': self.flush()
+    def handle_endtag(self, tag):
+        if tag in ('script', 'style'): self.skip = max(0, self.skip - 1)
+        elif tag in ('strong', 'b'): self.bold = max(0, self.bold - 1)
+        elif tag in self.HEADING: self.flush('## ')
+        elif tag == 'li': self.flush('- '); self.item = False
+        elif tag in self.BLOCK: self.flush()
+    def handle_data(self, data):
+        if self.skip: return
+        self.line += data
+        if self.bold: self.bold_text += data
+
+# Page chrome some boards include before the actual description.
+BOILERPLATE = re.compile(r'^(?:##\s*)?(?:job application for .+|apply(?: now)?|back to jobs)$', re.I)
+
 def text_content(value):
-    value = html.unescape(value or '')
-    value = re.sub(r'<(?:script|style)\b[^>]*>.*?</(?:script|style)>', '', value, flags=re.S | re.I)
-    return re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', ' ', value)).strip()[:16000]
+    """ATS HTML -> light markdown: '## ' headings, '- ' bullets, blank lines between blocks."""
+    value = html.unescape(value or '')  # Greenhouse sends entity-escaped HTML.
+    if '<' not in value:  # Plain text: keep its line breaks as paragraphs.
+        value = ''.join(f'<p>{html.escape(line)}</p>' for line in value.splitlines())
+    parser = _Markdown()
+    parser.feed(value)
+    parser.close()
+    parser.flush()
+    lines = []
+    for line in parser.lines:
+        if BOILERPLATE.match(line) or (lines and line == lines[-1]): continue
+        lines.append(line)
+    # Consecutive bullets read as one list; everything else is separated by a blank line.
+    out = ''
+    for previous, line in zip([''] + lines, lines):
+        out += ('\n' if previous.startswith('- ') and line.startswith('- ') else '\n\n' if out else '') + line
+    return out[:16000]
 
 def board_url(source):
     ats, slug = source['ats'], urllib.parse.quote(source['slug'], safe='')
@@ -84,7 +134,7 @@ def normalize(raw, source, now):
     if ats == 'ashby':
         title, location = raw.get('title', ''), raw.get('location') or 'Not specified'
         url = raw.get('jobUrl') or raw.get('applyUrl', '')
-        description = text_content(raw.get('descriptionPlain') or raw.get('descriptionHtml'))
+        description = text_content(raw.get('descriptionHtml') or raw.get('descriptionPlain'))
         remote = raw.get('isRemote') is True
         posted = raw.get('publishedAt')
         job_type = raw.get('employmentType')
@@ -96,9 +146,10 @@ def normalize(raw, source, now):
     else:
         title, location = raw.get('text', ''), (raw.get('categories') or {}).get('location') or 'Not specified'
         url = raw.get('hostedUrl') or raw.get('applyUrl', '')
-        pieces = [raw.get('descriptionPlain') or raw.get('description', '')]
-        pieces.extend(item.get('content', '') for item in raw.get('lists', []))
-        description = text_content(' '.join(pieces))
+        pieces = [raw.get('description') or raw.get('descriptionPlain', '')]
+        pieces.extend(f"<h3>{html.escape(item.get('text', ''))}</h3><ul>{item.get('content', '')}</ul>" for item in raw.get('lists', []))
+        pieces.append(raw.get('additional') or '')
+        description = text_content(''.join(pieces))
         remote = raw.get('workplaceType') == 'remote' or bool(re.search(r'\bremote\b', location, re.I))
         posted = datetime.fromtimestamp(raw['createdAt'] / 1000, timezone.utc).isoformat() if raw.get('createdAt') else None
         job_type = (raw.get('categories') or {}).get('commitment')

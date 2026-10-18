@@ -8,6 +8,7 @@ import concurrent.futures
 import hashlib
 import json
 import os
+import re
 import ssl
 import time
 import urllib.error
@@ -67,7 +68,9 @@ Location: {location}
 {description}"""
 
 def content_hash(job):
-    text = '\n'.join([str(VERSION), job.get('title', ''), job.get('location', ''), job.get('description', '')])
+    # Letters and digits only: reformatting a description (markdown, whitespace) is not a content change.
+    words = lambda value: re.sub(r'[^a-z0-9]+', '', (value or '').lower())
+    text = '\n'.join([str(VERSION), job.get('title', ''), job.get('location', ''), words(job.get('description'))])
     return hashlib.sha256(text.encode()).hexdigest()[:16]
 
 def call_model(job, key):

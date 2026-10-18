@@ -42,7 +42,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  const guideUrls = ['ai-engineer-career', 'agentic-engineer-jobs'].map(slug => ({
+  const guideUrls = ['ai-engineer-career', 'agentic-engineer-jobs', 'prompt-engineer-jobs', 'rag-engineer-jobs'].map(slug => ({
     url: `${base}/use-cases/${slug}`,
     changeFrequency: 'monthly' as const,
     priority: 0.75,

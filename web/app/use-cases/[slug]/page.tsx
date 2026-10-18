@@ -15,6 +15,14 @@ const PAGES: Record<string, { url: string; breadcrumb: string }> = {
     url: '/use-cases/agentic-engineer-jobs',
     breadcrumb: 'Agentic engineer jobs',
   },
+  'prompt-engineer-jobs': {
+    url: '/use-cases/prompt-engineer-jobs',
+    breadcrumb: 'Prompt engineer jobs',
+  },
+  'rag-engineer-jobs': {
+    url: '/use-cases/rag-engineer-jobs',
+    breadcrumb: 'RAG engineer jobs',
+  },
 };
 
 export function generateStaticParams() {
@@ -50,10 +58,7 @@ export default async function UseCasePage({ params }: { params: Promise<{ slug: 
       <SiteHeader />
       <main className="flex-1">
         <Container className="py-12">
-          <Breadcrumb
-            segments={[{ label: 'Compare', href: '/compare/ai-coding-agents' }]}
-            current={page.breadcrumb}
-          />
+          <Breadcrumb segments={[{ label: 'Guides', href: '/browse' }]} current={page.breadcrumb} />
           <PageHeading title={content.frontmatter.title} lead={content.frontmatter.meta_description ?? ''} />
           <GeoContent url={page.url} className="mt-8" />
         </Container>

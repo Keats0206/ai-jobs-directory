@@ -145,7 +145,7 @@ What fails: ChatGPT conversation screenshots, prompt collections without eval da
 | Prompt + agents + evals | Agentic AI engineer | [/remote/agent](/remote/agent) |
 | Prompt + full-stack | AI engineer / Applied AI | General AI board |
 
-See [/use-cases/ai-engineer-career-path](/use-cases/ai-engineer-career-path) for the full career progression map.
+See [AI engineer career path](/use-cases/ai-engineer-career) for the full career progression map.
 
 ### Step 5: Use salary data to filter quality
 
@@ -220,7 +220,7 @@ RAG pipeline design, agent orchestration (LangGraph, MCP), eval framework develo
 
 Prompt engineer jobs exist — over 3,000 on Indeed alone — but the title is an unreliable signal in 2026. Search by engineering stack tags, build eval-driven portfolio proof, and target evolved titles (LLM engineer, RAG engineer, agentic AI engineer) where prompt skills are assumed and compensated as part of a production engineering role.
 
-**Next step:** [Browse LLM jobs](/remote/llm) · [RAG engineer guide](/use-cases/rag-engineer-jobs) · [AI engineer career path](/use-cases/ai-engineer-career-path) · [Compare AI coding agents](/compare/ai-coding-agents)
+**Next step:** [Browse LLM jobs](/remote/llm) · [RAG engineer guide](/use-cases/rag-engineer-jobs) · [AI engineer career path](/use-cases/ai-engineer-career) · [AI hiring stats](/stats)
 
 <script type="application/ld+json">
 {

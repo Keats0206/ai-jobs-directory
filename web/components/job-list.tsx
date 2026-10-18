@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import type { Job } from '@/lib/jobs';
-import { jobSlug, formatSalary } from '@/lib/job-utils';
+import { jobSlug, formatSalary, timeAgo } from '@/lib/job-utils';
 import { salaryRange } from '@/lib/job-quality';
 import { displayCompany, displayTitle } from '@/lib/job-quality';
 
@@ -19,11 +19,14 @@ export function JobRow({
 }) {
   const range = salaryRange(job);
   const salary = range ? formatSalary(range.min, range.max) : null;
+  const posted = timeAgo(job.date_posted || job.first_seen);
+  const seniority = job.facts?.seniority && job.facts.seniority !== 'unknown' ? job.facts.seniority : null;
+  const stack = (job.facts?.stack ?? []).slice(0, 3);
 
   return (
     <Link
       href={`/jobs/${jobSlug(job, index)}`}
-      className="group flex items-center justify-between gap-4 rounded-lg py-4 transition-colors hover:bg-muted/50 sm:px-3 sm:-mx-3"
+      className="group flex items-start justify-between gap-4 rounded-lg py-3.5 transition-colors hover:bg-muted/50 sm:px-3 sm:-mx-3"
     >
       <div className="min-w-0">
         <h3 className="truncate text-[15px] font-medium transition-colors group-hover:text-brand">
@@ -33,12 +36,22 @@ export function JobRow({
           {displayCompany(job)}
           {showLocation && job.location ? ` · ${job.location}` : ''}
         </p>
+        {(job.is_remote || seniority || stack.length > 0) && (
+          <div className="mt-2 flex flex-wrap items-center gap-1.5 text-xs text-muted-foreground">
+            {job.is_remote && <span className="rounded bg-brand-muted px-1.5 py-0.5 font-medium text-brand">Remote</span>}
+            {seniority && <span className="rounded bg-muted px-1.5 py-0.5 capitalize">{seniority}</span>}
+            {stack.map((item) => (
+              <span key={item} className="rounded bg-muted px-1.5 py-0.5">{item}</span>
+            ))}
+          </div>
+        )}
       </div>
-      {salary && (
-        <span className="shrink-0 text-sm tabular-nums text-muted-foreground transition-colors group-hover:text-foreground">
-          {salary}
-        </span>
-      )}
+      <div className="flex shrink-0 flex-col items-end gap-1 text-right">
+        {salary && (
+          <span className="text-sm tabular-nums text-foreground/80 transition-colors group-hover:text-foreground">{salary}</span>
+        )}
+        {posted && <span suppressHydrationWarning className="text-xs text-muted-foreground">{posted}</span>}
+      </div>
     </Link>
   );
 }

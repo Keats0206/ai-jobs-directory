@@ -25,7 +25,7 @@ This guide defines what agentic engineers actually build, maps the role taxonomy
 
 An **agentic engineer** designs, builds, and operates software systems where AI agents plan multi-step tasks, call external tools, maintain state, and execute with limited human supervision — not chatbots that answer one prompt at a time. Day-to-day work spans agent frameworks (LangGraph, CrewAI, AutoGen), retrieval pipelines, evaluation harnesses, MCP integrations, and production observability.
 
-**artificialjobs.dev** is built for this market: filter [/remote/agent](/remote/agent) for Agent-tagged listings, cross-reference required stacks against the [AI coding agent comparison hub](/compare/ai-coding-agents), and see which tools employers actually hire for — not vendor marketing claims.
+**artificialjobs.dev** is built for this market: filter [/remote/agent](/remote/agent) for Agent-tagged listings, and use [hiring stats](/stats) to see which tools employers actually hire for — not vendor marketing claims.
 
 ## Agentic Engineer vs AI Engineer vs LLM Engineer
 
@@ -172,7 +172,7 @@ Agentic hiring is a seller's market with thin supply. Boards update daily; set a
 
 | Board | Agentic focus | Salary data | Agent tool cross-link |
 |---|---|---|---|
-| [artificialjobs.dev](/) | AI-specific; Agent tag filter | Published ranges on listings | [Agent comparison hub](/compare/ai-coding-agents) |
+| [artificialjobs.dev](/) | AI-specific; Agent tag filter | Published ranges on listings | [Hiring stats](/stats) |
 | [AgenticCareers.co](https://agenticcareers.co/) | Agent-only curation | Role guides | No agent tool comparisons |
 | [agenticengineeringjobs.com](https://agenticengineeringjobs.com/) | Framework-tagged search | Some salary bands | MCP/LangGraph filters only |
 | Indeed / LinkedIn | Broad; title noise | Varies | None |
@@ -205,7 +205,7 @@ Market surveys cite **$185K–$320K** US base for production agent engineers ([K
 
 Agentic engineer jobs are real, growing, and distinct from generic AI engineering — but the title alone won't find the right roles. Search by stack tags, prove production agent work in your portfolio, and use boards that filter for Agent, LLM, and MCP skills rather than keyword noise.
 
-**Next step:** [Browse Agent-tagged jobs](/remote/agent) · [Compare AI coding agents](/compare/ai-coding-agents) · [AI engineer career path](/use-cases/ai-engineer-career-path)
+**Next step:** [Browse Agent-tagged jobs](/remote/agent) · [AI engineer career path](/use-cases/ai-engineer-career)
 
 <script type="application/ld+json">
 {

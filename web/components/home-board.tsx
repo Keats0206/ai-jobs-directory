@@ -14,11 +14,13 @@ import { NewsletterSignup } from '@/components/newsletter-signup';
 
 const MAX_VISIBLE = 100;
 
-export function HomeBoard({ jobs, tags, locations }: { jobs: Job[]; tags: { tag: string; count: number }[]; locations: { location: string; count: number }[] }) {
+type Stats = { total: number; companies: number; remotePct: number; publishedPay: number };
+
+export function HomeBoard({ jobs, tags, locations, stats }: { jobs: Job[]; tags: { tag: string; count: number }[]; locations: { location: string; count: number }[]; stats: Stats }) {
   const [search, setSearch] = useState('');
   const [selectedTags, setSelectedTags] = useState<Set<string>>(new Set());
 
-  const allTags = useMemo(() => tags.slice(0, 15), [tags]);
+  const allTags = useMemo(() => tags.slice(0, 10), [tags]);
   const allLocations = useMemo(() => locations.slice(0, 6), [locations]);
 
   const filteredJobs = useMemo(() => {
@@ -52,13 +54,28 @@ export function HomeBoard({ jobs, tags, locations }: { jobs: Job[]; tags: { tag:
       <SiteHeader />
 
       <main className="flex-1">
-        <Container className="pb-8 pt-14">
+        <Container className="pb-8 pt-16 sm:pt-20">
           <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
             AI engineering jobs.
           </h1>
           <p className="mt-3 text-lg text-muted-foreground">
-            {jobs.length} open roles at LLM labs, AI startups, and infra companies. Browse by skill, employer, or location.
+            Verified roles at LLM labs, AI startups, and infra companies, pulled daily from employers&rsquo; own job boards.
           </p>
+
+          <dl className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4">
+            {[
+              [stats.total.toLocaleString('en-US'), 'open roles'],
+              [stats.companies.toLocaleString('en-US'), 'companies hiring'],
+              [`${stats.remotePct}%`, 'remote-friendly'],
+              [`${Math.round((stats.publishedPay / Math.max(stats.total, 1)) * 100)}%`, 'list salary'],
+            ].map(([value, label]) => (
+              <div key={label}>
+                <dt className="sr-only">{label}</dt>
+                <dd className="text-2xl font-semibold tabular-nums tracking-tight">{value}</dd>
+                <dd className="text-sm text-muted-foreground">{label}</dd>
+              </div>
+            ))}
+          </dl>
 
           <Input
             type="search"
@@ -75,15 +92,23 @@ export function HomeBoard({ jobs, tags, locations }: { jobs: Job[]; tags: { tag:
                 <span className="tabular-nums opacity-50">{count}</span>
               </ChipButton>
             ))}
+            <Link href="/browse" className="inline-flex items-center px-2 py-1.5 text-xs text-muted-foreground hover:text-foreground">
+              All skills &rarr;
+            </Link>
           </div>
         </Container>
 
         <Container className="pb-12">
           <SectionLabel>
-            {filteredJobs.length} {filteredJobs.length === 1 ? 'role' : 'roles'}
-            {filteredJobs.length > MAX_VISIBLE ? ` · showing first ${MAX_VISIBLE}` : ''}
+            {filteredJobs.length} {filteredJobs.length === 1 ? 'role' : 'roles'} · newest first
           </SectionLabel>
           <JobList jobs={visible} indexOf={(job) => jobs.indexOf(job)} />
+          {filteredJobs.length > MAX_VISIBLE && (
+            <p className="mt-6 text-sm text-muted-foreground">
+              Showing the newest {MAX_VISIBLE}. Narrow it down with search, or{' '}
+              <Link href="/browse" className="text-brand hover:underline">browse by skill and location</Link>.
+            </p>
+          )}
         </Container>
 
         <Container className="border-t border-border/60 py-12">
@@ -97,6 +122,8 @@ export function HomeBoard({ jobs, tags, locations }: { jobs: Job[]; tags: { tag:
                 { href: '/newsletter', label: 'Weekly AI jobs digest' },
                 { href: '/use-cases/ai-engineer-career', label: 'AI engineer career path' },
                 { href: '/use-cases/agentic-engineer-jobs', label: 'Agentic engineer jobs' },
+                { href: '/use-cases/rag-engineer-jobs', label: 'RAG engineer jobs' },
+                { href: '/use-cases/prompt-engineer-jobs', label: 'Prompt engineer jobs' },
               ]}
             />
             <BrowseGroup

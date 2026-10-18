@@ -1,5 +1,5 @@
 import unittest
-from refresh_jobs import merge_jobs, normalize, canonical_url
+from refresh_jobs import merge_jobs, normalize, canonical_url, text_content
 from discover_sources import board_from_url
 NOW = '2026-10-12T12:00:00+00:00'
 
@@ -50,4 +50,9 @@ class RefreshTests(unittest.TestCase):
         self.assertIsNone(board_from_url('https://jobs.ashbyhq.com.evil.test/acme/one'))
         self.assertIsNone(board_from_url('https://boards.greenhouse.io/embed/jobs'))
         self.assertEqual(board_from_url('https://jobs.ashbyhq.com/acme/one'),('ashby','acme'))
+    def test_descriptions_keep_headings_bullets_and_drop_board_chrome(self):
+        raw = ('&lt;p&gt;Job Application for AI Engineer at Acme&lt;/p&gt;&lt;p&gt;&lt;strong&gt;What you will do:&lt;/strong&gt;&lt;/p&gt;'
+               '&lt;ul&gt;&lt;li&gt;Ship &lt;b&gt;evals&lt;/b&gt;&lt;/li&gt;&lt;li&gt;Train models&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;Pay&lt;/h3&gt;&lt;p&gt;Good&lt;br&gt;Fair&lt;/p&gt;&lt;script&gt;x()&lt;/script&gt;')
+        self.assertEqual(text_content(raw), '## What you will do\n\n- Ship evals\n- Train models\n\n## Pay\n\nGood\n\nFair')
+        self.assertEqual(text_content('First line\nSecond line'), 'First line\n\nSecond line')
 if __name__ == '__main__': unittest.main()
