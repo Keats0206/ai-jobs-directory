@@ -44,7 +44,11 @@ def extract_company_from_url(url):
     
     return None
 
-with open('/Users/petekeating/ai-jobs-directory/web/data/jobs.json', 'r') as f:
+from pathlib import Path
+
+JOBS_PATH = Path(__file__).resolve().parents[1] / "web" / "data" / "jobs.json"
+
+with open(JOBS_PATH, 'r') as f:
     jobs = json.load(f)
 
 fixed = 0
@@ -55,7 +59,7 @@ for job in jobs:
             job['company'] = url_company
             fixed += 1
 
-with open('/Users/petekeating/ai-jobs-directory/web/data/jobs.json', 'w') as f:
+with open(JOBS_PATH, 'w') as f:
     json.dump(jobs, f, indent=2)
 
 # Show stats

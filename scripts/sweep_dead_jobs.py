@@ -19,7 +19,9 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 import certifi
 
 SSL_CONTEXT = ssl.create_default_context(cafile=certifi.where())
-JOBS_JSON = "web/data/jobs.json"
+from pathlib import Path
+
+JOBS_JSON = str(Path(__file__).resolve().parents[1] / "web" / "data" / "jobs.json")
 CONCURRENCY = 16
 TIMEOUT = 10
 

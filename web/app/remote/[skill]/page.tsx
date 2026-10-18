@@ -1,7 +1,14 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { jobs, getAllTags, getJobsByTag, slugify, formatSalary, avgSalary, salaryRange } from '@/lib/jobs';
-import { datePosted, validThrough, employmentType, parseLocationAddress } from '@/lib/job-quality';
+import {
+  datePosted,
+  validThrough,
+  employmentType,
+  parseLocationAddress,
+  displayCompany,
+  displayTitle,
+} from '@/lib/job-quality';
 import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
 import { Container, Breadcrumb, PageHeading, SectionLabel } from '@/components/page-shell';
@@ -87,8 +94,8 @@ export default async function SkillPage({ params }: { params: Promise<{ skill: s
       const range = salaryRange(job);
       const posting: Record<string, unknown> = {
         '@type': 'JobPosting',
-        title: job.title,
-        hiringOrganization: { '@type': 'Organization', name: job.company },
+        title: displayTitle(job),
+        hiringOrganization: { '@type': 'Organization', name: displayCompany(job) },
         url: job.apply_url,
         description: job.description,
         datePosted: datePosted(job),

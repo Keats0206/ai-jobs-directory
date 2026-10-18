@@ -76,6 +76,8 @@ export function getJobsByLocation(location: string): Job[] {
 export const LOCATION_SLUG_ALIASES: Record<string, { label: string; matchTerm: string }> = {
   'san-francisco': { label: 'San Francisco', matchTerm: 'san francisco' },
   'new-york': { label: 'New York', matchTerm: 'new york' },
+  'seattle': { label: 'Seattle', matchTerm: 'seattle' },
+  'london': { label: 'London', matchTerm: 'london' },
   'remote': { label: 'Remote', matchTerm: 'remote' },
 };
 
@@ -113,10 +115,37 @@ export function getAllTags(): { tag: string; count: number }[] {
     .sort((a, b) => b.count - a.count);
 }
 
+/** Collapse common free-text location variants for pSEO index pages. */
+function canonicalLocationLabel(location: string): string {
+  const key = (location || '').toLowerCase().trim();
+  if (!key || key === 'on-site' || key === 'onsite' || key === 'unknown') return 'On-site';
+  if (key === 'remote') return 'Remote';
+  if (key === 'san francisco' || key === 'san francisco, ca' || key === 'san francisco, california' || key === 'sf') {
+    return 'San Francisco, CA';
+  }
+  if (
+    key === 'new york' ||
+    key === 'new york, ny' ||
+    key === 'new york city' ||
+    key === 'new york city, new york' ||
+    key === 'nyc'
+  ) {
+    return 'New York, NY';
+  }
+  if (key === 'seattle' || key === 'seattle, wa' || key === 'seattle, washington') {
+    return 'Seattle, WA';
+  }
+  if (key === 'london' || key === 'london, uk' || key === 'london, united kingdom') {
+    return 'London, UK';
+  }
+  // Multi-city strings keep their original form
+  return location || 'Unknown';
+}
+
 export function getAllLocations(): { location: string; count: number }[] {
   const counts: Record<string, number> = {};
   jobs.forEach(j => {
-    const loc = j.location || 'Unknown';
+    const loc = canonicalLocationLabel(j.location || 'Unknown');
     counts[loc] = (counts[loc] || 0) + 1;
   });
   return Object.entries(counts)

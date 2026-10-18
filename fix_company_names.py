@@ -114,8 +114,11 @@ def clean_company_name(job):
     return company
 
 def main():
+    from pathlib import Path
+
+    jobs_path = Path(__file__).resolve().parent / "web" / "data" / "jobs.json"
     # Load jobs
-    with open("/Users/petekeating/ai-jobs-directory/web/data/jobs.json", "r") as f:
+    with open(jobs_path, "r") as f:
         jobs = json.load(f)
     
     print(f"Processing {len(jobs)} jobs...")
@@ -147,7 +150,7 @@ def main():
     print(f"'AI Startup' remaining: {ai_startup_after}")
     
     # Save back
-    with open("/Users/petekeating/ai-jobs-directory/web/data/jobs.json", "w") as f:
+    with open(jobs_path, "w") as f:
         json.dump(jobs, f, indent=2)
     
     print("✓ Cleaned jobs.json saved")
