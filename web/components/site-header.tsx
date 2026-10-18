@@ -3,7 +3,7 @@ import Link from 'next/link';
 export function SiteHeader({ action }: { action?: React.ReactNode }) {
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/75 backdrop-blur-md">
-      <div className="mx-auto flex h-14 max-w-3xl items-center justify-between gap-3 px-5">
+      <div className="flex h-14 w-full items-center justify-between gap-3 px-5 sm:px-8 lg:px-12">
         <div className="flex min-w-0 items-center gap-5">
           <Link
             href="/"

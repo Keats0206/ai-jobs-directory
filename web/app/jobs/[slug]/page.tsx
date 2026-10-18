@@ -146,7 +146,7 @@ export default async function JobPage({ params }: { params: Promise<{ slug: stri
       />
 
       <main className="flex-1">
-        <div className="mx-auto w-full max-w-5xl px-5 pb-16 pt-10">
+        <div className="w-full px-5 pb-16 pt-10 sm:px-8 lg:px-12">
           <Breadcrumb
             segments={hasCompanyPage ? [{ label: company, href: `/company/${slugify(job.company)}` }] : undefined}
             current={title}
@@ -166,7 +166,7 @@ export default async function JobPage({ params }: { params: Promise<{ slug: stri
             </p>
           </header>
 
-          <div className="mt-10 grid gap-12 lg:grid-cols-[minmax(0,1fr)_18rem]">
+          <div className="mt-10 grid gap-12 lg:grid-cols-[minmax(0,48rem)_18rem]">
             <article>
               <JobDescription markdown={job.description} />
               <div className="mt-12 flex flex-wrap items-center gap-4 border-t border-border/60 pt-8">

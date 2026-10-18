@@ -3,7 +3,7 @@ import Link from 'next/link';
 export function SiteFooter() {
   return (
     <footer className="mt-auto border-t border-border/60">
-      <div className="mx-auto flex max-w-3xl flex-col gap-4 px-5 py-8 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
+      <div className="flex w-full flex-col gap-4 px-5 py-8 sm:px-8 lg:px-12 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
         <p>
           <span className="font-heading font-medium text-foreground">artificialjobs.dev</span>
           <span className="mx-1.5 text-border">·</span>
@@ -21,7 +21,7 @@ export function SiteFooter() {
           </a>
         </nav>
       </div>
-      <div className="mx-auto flex max-w-3xl flex-col gap-2 border-t border-border/40 px-5 py-4 text-[11px] text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
+      <div className="flex w-full flex-col gap-2 border-t border-border/40 px-5 py-4 sm:px-8 lg:px-12 text-[11px] text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
         <span>&copy; {new Date().getFullYear()} Artificial Jobs</span>
         <div className="flex flex-wrap items-center gap-3">
           <a

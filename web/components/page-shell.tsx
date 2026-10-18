@@ -9,7 +9,7 @@ export function Container({
   className?: string;
   children: React.ReactNode;
 }) {
-  return <div className={cn('mx-auto w-full max-w-3xl px-5', className)}>{children}</div>;
+  return <div className={cn('mx-auto w-full px-5 sm:px-8 lg:px-12', className)}>{children}</div>;
 }
 
 export function Breadcrumb({
