@@ -40,7 +40,7 @@ export function NewsletterSignup({ className }: { className?: string }) {
   if (status === 'success') {
     return (
       <div className={className}>
-        <h3 className="text-lg font-semibold">Check your inbox</h3>
+        <h3 className="font-heading text-lg font-semibold">Check your inbox</h3>
         <p role="status" className="mt-2 text-sm text-muted-foreground">
           Confirm your email to join the weekly AI jobs digest.
         </p>
@@ -50,7 +50,7 @@ export function NewsletterSignup({ className }: { className?: string }) {
 
   return (
     <div className={className}>
-      <h3 className="text-lg font-semibold">Get weekly AI job alerts</h3>
+      <h3 className="font-heading text-lg font-semibold">Get weekly AI job alerts</h3>
       <p className="mb-4 text-sm text-muted-foreground">
         AI, LLM, and ML roles from employer hiring feeds. One weekly digest; unsubscribe anytime.
       </p>

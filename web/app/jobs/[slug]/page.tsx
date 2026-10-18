@@ -156,7 +156,7 @@ export default async function JobPage({ params }: { params: Promise<{ slug: stri
             <p className="text-sm font-medium text-brand">
               {hasCompanyPage ? <Link href={`/company/${slugify(job.company)}`} className="hover:underline">{company}</Link> : company}
             </p>
-            <h1 className="mt-2 text-3xl font-semibold tracking-tight text-balance sm:text-4xl">{title}</h1>
+            <h1 className="font-heading mt-2 text-3xl font-semibold tracking-tight text-balance sm:text-4xl">{title}</h1>
             <p className="mt-3 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-muted-foreground">
               <Link href={`/location/${slugify(job.location)}`} className="hover:text-foreground">{job.location}</Link>
               <span aria-hidden>·</span>
@@ -215,7 +215,7 @@ export default async function JobPage({ params }: { params: Promise<{ slug: stri
 
           {related.length > 0 && (
             <section className="mt-16 border-t border-border/60 pt-10">
-              <h2 className="mb-2 text-lg font-semibold">Similar roles</h2>
+              <h2 className="font-heading mb-2 text-lg font-semibold">Similar roles</h2>
               <JobList jobs={related} indexOf={(j) => jobs.indexOf(j)} />
             </section>
           )}

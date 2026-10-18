@@ -26,15 +26,18 @@ export function JobRow({
   return (
     <Link
       href={`/jobs/${jobSlug(job, index)}`}
-      className="group flex items-start justify-between gap-4 rounded-lg py-3.5 transition-colors hover:bg-muted/50 sm:px-3 sm:-mx-3"
+      className="group flex items-start justify-between gap-4 border-l-2 border-transparent py-4 pl-0 transition-[border-color,background-color,padding] hover:border-brand hover:bg-brand-muted/40 sm:rounded-r-lg sm:px-3 sm:-mx-3 sm:pl-3"
     >
-      <div className="min-w-0">
-        <h3 className="truncate text-[15px] font-medium transition-colors group-hover:text-brand">
+      <div className="min-w-0 flex-1">
+        <h3 className="truncate text-[15px] font-medium tracking-tight transition-colors group-hover:text-brand">
           {displayTitle(job)}
         </h3>
         <p className="mt-0.5 truncate text-sm text-muted-foreground">
           {displayCompany(job)}
           {showLocation && job.location ? ` · ${job.location}` : ''}
+          {job.is_remote ? (
+            <span className="text-brand/80"> · Remote</span>
+          ) : null}
         </p>
         {(job.is_remote || seniority || stack.length > 0) && (
           <div className="mt-2 flex flex-wrap items-center gap-1.5 text-xs text-muted-foreground">
@@ -48,7 +51,7 @@ export function JobRow({
       </div>
       <div className="flex shrink-0 flex-col items-end gap-1 text-right">
         {salary && (
-          <span className="text-sm tabular-nums text-foreground/80 transition-colors group-hover:text-foreground">{salary}</span>
+          <span className="font-mono text-sm tabular-nums text-muted-foreground transition-colors group-hover:text-foreground">{salary}</span>
         )}
         {posted && <span suppressHydrationWarning className="text-xs text-muted-foreground">{posted}</span>}
       </div>

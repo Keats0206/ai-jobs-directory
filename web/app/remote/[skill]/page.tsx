@@ -11,7 +11,7 @@ import {
 } from '@/lib/job-quality';
 import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
-import { Container, Breadcrumb, PageHeading, SectionLabel } from '@/components/page-shell';
+import { Container, Breadcrumb, PageHeading, PageIntroBand, SectionLabel } from '@/components/page-shell';
 import { JobList } from '@/components/job-list';
 import { ChipLink } from '@/components/chip';
 
@@ -125,31 +125,35 @@ export default async function SkillPage({ params }: { params: Promise<{ skill: s
       <SiteHeader />
 
       <main className="flex-1">
-        <Container className="py-12">
-          <Breadcrumb current={tag} />
-          <PageHeading
-            title={`Remote ${tag} Jobs`}
-            lead={`${tagJobs.length} open roles requiring ${tag} skills.`}
-            meta={
-              avg.min > 0 ? (
-                <>
-                  Average published salary{' '}
-                  <span className="font-medium text-foreground">
-                    {formatSalary(avg.min, avg.max)}
-                  </span>{' '}
-                  / year · Updated daily
-                </>
-              ) : (
-                <>Updated daily · salary shown when the employer published a range</>
-              )
-            }
-          />
+        <PageIntroBand>
+          <Container className="pb-8 pt-12">
+            <Breadcrumb current={tag} />
+            <PageHeading
+              title={`Remote ${tag} Jobs`}
+              lead={`${tagJobs.length} open roles requiring ${tag} skills.`}
+              meta={
+                avg.min > 0 ? (
+                  <>
+                    Average published salary{' '}
+                    <span className="font-medium text-foreground">
+                      {formatSalary(avg.min, avg.max)}
+                    </span>{' '}
+                    / year · Updated daily
+                  </>
+                ) : (
+                  <>Updated daily · salary shown when the employer published a range</>
+                )
+              }
+            />
+          </Container>
+        </PageIntroBand>
 
+        <Container className="pb-12">
           <JobList jobs={tagJobs} indexOf={(job) => jobs.indexOf(job)} />
 
           {/* FAQ Section */}
           <section className="mt-16 border-t border-border/60 pt-10">
-            <h2 className="text-2xl font-semibold mb-8">Frequently Asked Questions</h2>
+            <h2 className="font-heading mb-8 text-2xl font-semibold">Frequently Asked Questions</h2>
             <div className="space-y-6">
               {faqItems.map((item, idx) => (
                 <div key={idx} className="border-b border-border/40 pb-6 last:border-0">

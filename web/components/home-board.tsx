@@ -54,51 +54,55 @@ export function HomeBoard({ jobs, tags, locations, stats }: { jobs: Job[]; tags:
       <SiteHeader />
 
       <main className="flex-1">
-        <Container className="pb-8 pt-16 sm:pt-20">
-          <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
-            AI engineering jobs.
-          </h1>
-          <p className="mt-3 text-lg text-muted-foreground">
-            Verified roles at LLM labs, AI startups, and infra companies, pulled daily from employers&rsquo; own job boards.
-          </p>
+        <section className="relative overflow-hidden">
+          <div className="hero-atmosphere absolute inset-0" aria-hidden />
+          <Container className="relative pb-10 pt-14 sm:pt-16">
+            <h1 className="font-heading animate-fade-up text-4xl font-semibold tracking-tight sm:text-5xl md:text-6xl">
+              AI engineering jobs.
+            </h1>
+            <p className="animate-fade-up-delay-1 mt-4 max-w-xl text-lg text-muted-foreground sm:text-xl">
+              Verified roles at LLM labs, AI startups, and infra companies, pulled daily from employers&rsquo; own job boards.
+            </p>
 
-          <dl className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4">
-            {[
-              [stats.total.toLocaleString('en-US'), 'open roles'],
-              [stats.companies.toLocaleString('en-US'), 'companies hiring'],
-              [`${stats.remotePct}%`, 'remote-friendly'],
-              [`${Math.round((stats.publishedPay / Math.max(stats.total, 1)) * 100)}%`, 'list salary'],
-            ].map(([value, label]) => (
-              <div key={label}>
-                <dt className="sr-only">{label}</dt>
-                <dd className="text-2xl font-semibold tabular-nums tracking-tight">{value}</dd>
-                <dd className="text-sm text-muted-foreground">{label}</dd>
-              </div>
-            ))}
-          </dl>
+            <dl className="animate-fade-up-delay-2 mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4">
+              {[
+                [stats.total.toLocaleString('en-US'), 'open roles'],
+                [stats.companies.toLocaleString('en-US'), 'companies hiring'],
+                [`${stats.remotePct}%`, 'remote-friendly'],
+                [`${Math.round((stats.publishedPay / Math.max(stats.total, 1)) * 100)}%`, 'list salary'],
+              ].map(([value, label]) => (
+                <div key={label}>
+                  <dt className="sr-only">{label}</dt>
+                  <dd className="text-2xl font-semibold tabular-nums tracking-tight">{value}</dd>
+                  <dd className="text-sm text-muted-foreground">{label}</dd>
+                </div>
+              ))}
+            </dl>
 
-          <Input
-            type="search"
-            placeholder="Search roles or companies…"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            className="mt-8 h-11 rounded-xl px-4 text-base"
-          />
+            <Input
+              type="search"
+              placeholder="Search roles or companies…"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              className="mt-8 h-12 max-w-xl rounded-lg border-border/80 bg-background/90 px-4 text-base shadow-none"
+              aria-label="Search roles or companies"
+            />
 
-          <div className="mt-4 flex flex-wrap gap-2">
-            {allTags.map(({ tag, count }) => (
-              <ChipButton key={tag} active={selectedTags.has(tag)} onClick={() => toggleTag(tag)}>
-                {tag}
-                <span className="tabular-nums opacity-50">{count}</span>
-              </ChipButton>
-            ))}
-            <Link href="/browse" className="inline-flex items-center px-2 py-1.5 text-xs text-muted-foreground hover:text-foreground">
-              All skills &rarr;
-            </Link>
-          </div>
-        </Container>
+            <div className="mt-4 flex flex-wrap gap-2">
+              {allTags.map(({ tag, count }) => (
+                <ChipButton key={tag} active={selectedTags.has(tag)} onClick={() => toggleTag(tag)}>
+                  {tag}
+                  <span className="font-mono text-[11px] tabular-nums opacity-50">{count}</span>
+                </ChipButton>
+              ))}
+              <Link href="/browse" className="inline-flex items-center px-2 py-1.5 text-xs text-muted-foreground hover:text-foreground">
+                All skills &rarr;
+              </Link>
+            </div>
+          </Container>
+        </section>
 
-        <Container className="pb-12">
+        <Container className="pb-12 pt-2">
           <SectionLabel>
             {filteredJobs.length} {filteredJobs.length === 1 ? 'role' : 'roles'} · newest first
           </SectionLabel>
