@@ -2974,23 +2974,21 @@
   "yoe_min": 12
  },
  "ai-full-stack-developer-nebius-5238": {
-  "enriched_at": "2026-10-22T12:59:48.806645+00:00",
-  "hash": "f336f4aeaaa6e802",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "1208549d46b266ca",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
-  "remote_regions": [],
+  "remote_regions": [
+   "europe"
+  ],
   "salary_max_usd": null,
   "salary_min_usd": null,
   "seniority": "unknown",
-  "stack": [
-   "Hugging Face",
-   "Python",
-   "TypeScript"
-  ],
-  "team": null,
+  "stack": [],
+  "team": "Nebius Science",
   "visa_sponsorship": "unstated",
-  "work_type": "applied",
-  "yoe_min": 5
+  "work_type": "product",
+  "yoe_min": null
  },
  "ai-full-vibiz-694": {
   "enriched_at": "2026-10-12T23:55:02.671616+00:00",
@@ -3240,8 +3238,8 @@
   "yoe_min": null
  },
  "ai-infrastructure-system-engineer-bangalore-together-ai-1411": {
-  "enriched_at": "2026-10-12T23:55:02.671616+00:00",
-  "hash": "2791ea7a011b920f",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "8c904ce122b05809",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
@@ -3249,11 +3247,13 @@
   "salary_min_usd": null,
   "seniority": "unknown",
   "stack": [
+   "AWS",
+   "Azure",
    "CUDA",
+   "GCP",
    "Go",
    "Kubernetes",
    "Python",
-   "Ray",
    "Rust",
    "Terraform"
   ],
@@ -3468,6 +3468,26 @@
   "visa_sponsorship": "unstated",
   "work_type": "applied",
   "yoe_min": null
+ },
+ "ai-ml-consulting-manager-snowflake-6057": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "fc89f3453463ef6e",
+  "model": "anthropic/claude-haiku-5.5",
+  "model_providers": [],
+  "remote_regions": [],
+  "salary_max_usd": null,
+  "salary_min_usd": null,
+  "seniority": "manager",
+  "stack": [
+   "AWS",
+   "Azure",
+   "GCP",
+   "Python"
+  ],
+  "team": "Frontier Engineering",
+  "visa_sponsorship": "unstated",
+  "work_type": "applied",
+  "yoe_min": 8
  },
  "ai-ml-engineer-chime-4923": {
   "enriched_at": "2026-10-13T00:07:48.039548+00:00",
@@ -3692,6 +3712,21 @@
   "team": "Customer Success",
   "visa_sponsorship": "yes",
   "work_type": "product",
+  "yoe_min": 6
+ },
+ "ai-outcomes-manager-gsi-anthropic-6062": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "c9c351de7a050c56",
+  "model": "anthropic/claude-haiku-5.5",
+  "model_providers": [],
+  "remote_regions": [],
+  "salary_max_usd": 265000,
+  "salary_min_usd": 200000,
+  "seniority": "unknown",
+  "stack": [],
+  "team": "Customer Success",
+  "visa_sponsorship": "yes",
+  "work_type": "other",
   "yoe_min": 6
  },
  "ai-partner-development-gtm-pod-plaid-4446": {
@@ -4111,8 +4146,8 @@
   "yoe_min": null
  },
  "ai-research-engineer-post-training-lovable-4293": {
-  "enriched_at": "2026-10-13T00:07:48.039548+00:00",
-  "hash": "809eed6fd20ea58b",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "a87508ae96f4a873",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
@@ -4120,9 +4155,7 @@
   "salary_min_usd": null,
   "seniority": "unknown",
   "stack": [
-   "CUDA",
    "JAX",
-   "Kubernetes",
    "PyTorch"
   ],
   "team": "Post-Training",
@@ -5963,8 +5996,8 @@
   "yoe_min": null
  },
  "analytics-engineer-modal-4350": {
-  "enriched_at": "2026-10-13T00:07:48.039548+00:00",
-  "hash": "076d93b363cf221a",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "f3d61968f305f298",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
@@ -5977,7 +6010,7 @@
    "Snowflake",
    "dbt"
   ],
-  "team": "Modal Data",
+  "team": "Data team",
   "visa_sponsorship": "unstated",
   "work_type": "data",
   "yoe_min": null
@@ -6183,6 +6216,23 @@
   "work_type": "product",
   "yoe_min": null
  },
+ "android-engineer-creative-app-elevenlabs-6043": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "271309ebd88b103c",
+  "model": "anthropic/claude-haiku-5.5",
+  "model_providers": [],
+  "remote_regions": [
+   "global"
+  ],
+  "salary_max_usd": null,
+  "salary_min_usd": null,
+  "seniority": "unknown",
+  "stack": [],
+  "team": "mobile team",
+  "visa_sponsorship": "unstated",
+  "work_type": "applied",
+  "yoe_min": null
+ },
  "android-engineer-plugin-developer-platform-openai-3329": {
   "enriched_at": "2026-10-12T23:55:02.671616+00:00",
   "hash": "bf5c25df7750d539",
@@ -6318,8 +6368,8 @@
   "yoe_min": null
  },
  "antibody-engineering-chai-discovery-3849": {
-  "enriched_at": "2026-10-13T00:07:48.039548+00:00",
-  "hash": "be83301d5d3af7e1",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "26f9279e1f2365c6",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
@@ -6327,11 +6377,11 @@
   "salary_min_usd": null,
   "seniority": "unknown",
   "stack": [
-   "PyTorch"
+   "Python"
   ],
   "team": "Antibody Engineering",
   "visa_sponsorship": "unstated",
-  "work_type": "research",
+  "work_type": "applied",
   "yoe_min": null
  },
  "application-security-engineer-cerebras-2843": {
@@ -7289,6 +7339,48 @@
   "visa_sponsorship": "yes",
   "work_type": "applied",
   "yoe_min": null
+ },
+ "applied-ai-architect-public-sector-federal-civilan-anthropic-6063": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "c2f3997002f7d4b3",
+  "model": "anthropic/claude-haiku-5.5",
+  "model_providers": [
+   "Anthropic"
+  ],
+  "remote_regions": [],
+  "salary_max_usd": null,
+  "salary_min_usd": null,
+  "seniority": "unknown",
+  "stack": [
+   "AWS",
+   "Azure",
+   "GCP",
+   "Python"
+  ],
+  "team": "Applied AI",
+  "visa_sponsorship": "unstated",
+  "work_type": "applied",
+  "yoe_min": 5
+ },
+ "applied-ai-architect-public-sector-govtech-anthropic-6064": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "4a72e8a4ce55de98",
+  "model": "anthropic/claude-haiku-5.5",
+  "model_providers": [
+   "Anthropic",
+   "OpenAI"
+  ],
+  "remote_regions": [],
+  "salary_max_usd": 315000,
+  "salary_min_usd": 275000,
+  "seniority": "unknown",
+  "stack": [
+   "Python"
+  ],
+  "team": "Applied AI",
+  "visa_sponsorship": "unstated",
+  "work_type": "applied",
+  "yoe_min": 5
  },
  "applied-ai-architect-retail-openai-3262": {
   "enriched_at": "2026-10-12T23:55:02.671616+00:00",
@@ -8943,6 +9035,26 @@
   "work_type": "applied",
   "yoe_min": null
  },
+ "applied-ai-ml-scientist-cerebras-6039": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "39f53e7631cb841a",
+  "model": "anthropic/claude-haiku-5.5",
+  "model_providers": [
+   "OpenAI"
+  ],
+  "remote_regions": [],
+  "salary_max_usd": null,
+  "salary_min_usd": null,
+  "seniority": "unknown",
+  "stack": [
+   "PyTorch",
+   "Python"
+  ],
+  "team": "FieldML",
+  "visa_sponsorship": "unstated",
+  "work_type": "applied",
+  "yoe_min": null
+ },
  "applied-ai-ml-scientist-intern-faire-5088": {
   "enriched_at": "2026-10-13T00:07:48.039548+00:00",
   "hash": "a273bffe57b86973",
@@ -8982,22 +9094,19 @@
   "yoe_min": 6
  },
  "applied-ai-researcher-agent-systems-evaluation-nuro-5239": {
-  "enriched_at": "2026-10-13T00:07:48.039548+00:00",
-  "hash": "a641d37d06d41150",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "d4a6f0e44c438d7a",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
-  "salary_max_usd": null,
-  "salary_min_usd": null,
-  "seniority": "unknown",
-  "stack": [
-   "PyTorch",
-   "Python"
-  ],
-  "team": "Agent Systems & Evaluation",
+  "salary_max_usd": 291000,
+  "salary_min_usd": 193000,
+  "seniority": "manager",
+  "stack": [],
+  "team": "AI Data Operations",
   "visa_sponsorship": "unstated",
-  "work_type": "research",
-  "yoe_min": null
+  "work_type": "data",
+  "yoe_min": 10
  },
  "applied-ai-software-engineer-gtm-growth-engineering-openai-2425": {
   "enriched_at": "2026-10-12T23:55:02.671616+00:00",
@@ -12270,44 +12379,41 @@
   "yoe_min": null
  },
  "computer-vision-engineer-space-anduril-3418": {
-  "enriched_at": "2026-10-12T23:55:02.671616+00:00",
-  "hash": "0d90bb996e60c66d",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "f1428568c54d1111",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
-  "salary_max_usd": 220000,
-  "salary_min_usd": 166000,
+  "salary_max_usd": 222000,
+  "salary_min_usd": 167000,
   "seniority": "unknown",
   "stack": [
-   "AWS",
-   "Azure",
    "C++",
-   "GCP",
    "Go",
-   "Kubernetes",
-   "MLflow",
+   "Java",
    "Python",
-   "Ray"
+   "Scala"
   ],
-  "team": "Space",
+  "team": "Space team",
   "visa_sponsorship": "unstated",
   "work_type": "applied",
   "yoe_min": null
  },
  "computer-vision-engineer-space-anduril-3419": {
-  "enriched_at": "2026-10-12T23:55:02.671616+00:00",
-  "hash": "65d74bc025777b29",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "38ab266e05126997",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
-  "salary_max_usd": 220000,
-  "salary_min_usd": 166000,
+  "salary_max_usd": 222000,
+  "salary_min_usd": 167000,
   "seniority": "unknown",
   "stack": [
    "C++",
+   "Elasticsearch",
    "Go",
-   "Python",
-   "Ray"
+   "LangGraph",
+   "Python"
   ],
   "team": "Space team",
   "visa_sponsorship": "unstated",
@@ -14358,8 +14464,8 @@
   "yoe_min": null
  },
  "data-ops-chai-discovery-3859": {
-  "enriched_at": "2026-10-13T00:07:48.039548+00:00",
-  "hash": "c7f0735a98b319f1",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "8fdcbec5ff488dbc",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
@@ -15039,6 +15145,23 @@
   "visa_sponsorship": "unstated",
   "work_type": "applied",
   "yoe_min": 3
+ },
+ "data-scientist-algorithms-pricing-rider-engagement-lyft-6072": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "f3927af92a3c2960",
+  "model": "anthropic/claude-haiku-5.5",
+  "model_providers": [],
+  "remote_regions": [],
+  "salary_max_usd": 160000,
+  "salary_min_usd": 128000,
+  "seniority": "unknown",
+  "stack": [
+   "Python"
+  ],
+  "team": "Rider Engagement",
+  "visa_sponsorship": "unstated",
+  "work_type": "applied",
+  "yoe_min": 1
  },
  "data-scientist-analytics-baseten-3144": {
   "enriched_at": "2026-10-19T14:42:40.361985+00:00",
@@ -17363,8 +17486,8 @@
   "yoe_min": null
  },
  "design-engineer-chai-discovery-3855": {
-  "enriched_at": "2026-10-13T00:07:48.039548+00:00",
-  "hash": "dfe5fcb2ead05ed0",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "8964ff5ba9ad6d4d",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
@@ -17375,7 +17498,7 @@
   "team": null,
   "visa_sponsorship": "unstated",
   "work_type": "product",
-  "yoe_min": 5
+  "yoe_min": null
  },
  "design-engineer-cohere-3171": {
   "enriched_at": "2026-10-12T23:55:02.671616+00:00",
@@ -17630,8 +17753,8 @@
   "yoe_min": null
  },
  "detection-and-response-engineer-modal-4355": {
-  "enriched_at": "2026-10-13T00:07:48.039548+00:00",
-  "hash": "4744e8be8a1c59ff",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "643eb6fe400127a7",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
@@ -17639,10 +17762,9 @@
   "salary_min_usd": null,
   "seniority": "unknown",
   "stack": [
-   "Kubernetes",
-   "SGLang"
+   "Kubernetes"
   ],
-  "team": "Detection and Response",
+  "team": null,
   "visa_sponsorship": "unstated",
   "work_type": "infra",
   "yoe_min": null
@@ -17748,8 +17870,8 @@
   "yoe_min": null
  },
  "developer-relations-engineer-modal-4344": {
-  "enriched_at": "2026-10-13T00:07:48.039548+00:00",
-  "hash": "703a10465faab2ec",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "750b10d0781b7d22",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
@@ -17761,7 +17883,7 @@
   ],
   "team": "Developer Relations",
   "visa_sponsorship": "unstated",
-  "work_type": "product",
+  "work_type": "other",
   "yoe_min": 3
  },
  "developer-relations-engineer-sierra-2905": {
@@ -18172,18 +18294,18 @@
   "yoe_min": 7
  },
  "director-ai-solutions-strategy-planning-instacart-5174": {
-  "enriched_at": "2026-10-21T12:57:13.642571+00:00",
-  "hash": "3edd56b0c78d3a98",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "7f3739c8b4357930",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [
-   "us"
+   "canada"
   ],
-  "salary_max_usd": 261500,
-  "salary_min_usd": 206000,
+  "salary_max_usd": null,
+  "salary_min_usd": null,
   "seniority": "unknown",
   "stack": [],
-  "team": "AI Solutions Strategy & Planning",
+  "team": null,
   "visa_sponsorship": "unstated",
   "work_type": "product",
   "yoe_min": 8
@@ -18885,8 +19007,8 @@
   "yoe_min": 3
  },
  "documentation-engineer-modal-4357": {
-  "enriched_at": "2026-10-13T00:07:48.039548+00:00",
-  "hash": "199743f27523bf1d",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "39cdb340f1742875",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
@@ -19614,6 +19736,28 @@
   "seniority": "intern",
   "stack": [],
   "team": "Agent Engineering",
+  "visa_sponsorship": "unstated",
+  "work_type": "applied",
+  "yoe_min": null
+ },
+ "engineering-internal-ai-transformation-elevenlabs-2624": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "a0061bbd7b856818",
+  "model": "anthropic/claude-haiku-5.5",
+  "model_providers": [],
+  "remote_regions": [
+   "global"
+  ],
+  "salary_max_usd": null,
+  "salary_min_usd": null,
+  "seniority": "unknown",
+  "stack": [
+   "GCP",
+   "Kubernetes",
+   "Postgres",
+   "Python"
+  ],
+  "team": "Internal AI Transformation",
   "visa_sponsorship": "unstated",
   "work_type": "applied",
   "yoe_min": null
@@ -21172,8 +21316,8 @@
   "yoe_min": null
  },
  "engineering-manager-runtime-storage-baseten-5709": {
-  "enriched_at": "2026-10-19T14:42:40.361985+00:00",
-  "hash": "bd5ac368991bcf4d",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "4b17016584ce7566",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
@@ -21186,7 +21330,7 @@
    "Python",
    "Rust"
   ],
-  "team": "Runtime Fabric storage",
+  "team": "Runtime Fabric",
   "visa_sponsorship": "unstated",
   "work_type": "infra",
   "yoe_min": null
@@ -22275,6 +22419,33 @@
   "work_type": "applied",
   "yoe_min": null
  },
+ "field-engineer-ai-labs-turing-6080": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "c1ad39834d07c882",
+  "model": "anthropic/claude-haiku-5.5",
+  "model_providers": [
+   "Anthropic",
+   "OpenAI"
+  ],
+  "remote_regions": [
+   "us"
+  ],
+  "salary_max_usd": 232000,
+  "salary_min_usd": 175000,
+  "seniority": "unknown",
+  "stack": [
+   "Kubernetes",
+   "Postgres",
+   "PyTorch",
+   "Python",
+   "SGLang",
+   "vLLM"
+  ],
+  "team": "AI Labs",
+  "visa_sponsorship": "unstated",
+  "work_type": "evals",
+  "yoe_min": 1
+ },
  "field-engineer-anz-cursor-anysphere-3018": {
   "enriched_at": "2026-10-12T23:55:02.671616+00:00",
   "hash": "f0d75457abea7f47",
@@ -22677,8 +22848,8 @@
   "yoe_min": 8
  },
  "finance-strategy-datacenter-strategic-initiatives-anthropic-1045": {
-  "enriched_at": "2026-10-12T23:55:02.671616+00:00",
-  "hash": "07d9c49c52981874",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "db7d5d7515d12e9e",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
@@ -22688,7 +22859,7 @@
   "stack": [],
   "team": "Finance & Strategy",
   "visa_sponsorship": "yes",
-  "work_type": "product",
+  "work_type": "other",
   "yoe_min": 7
  },
  "finance-systems-engineer-finance-and-strategy-anthropic-1046": {
@@ -23794,6 +23965,26 @@
   "work_type": "applied",
   "yoe_min": null
  },
+ "forward-deployed-engineer-india-exa-6045": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "f7c1ad59c33bea5c",
+  "model": "anthropic/claude-haiku-5.5",
+  "model_providers": [],
+  "remote_regions": [
+   "india"
+  ],
+  "salary_max_usd": null,
+  "salary_min_usd": null,
+  "seniority": "unknown",
+  "stack": [
+   "Python",
+   "TypeScript"
+  ],
+  "team": "GTM engineering",
+  "visa_sponsorship": "yes",
+  "work_type": "applied",
+  "yoe_min": 5
+ },
  "forward-deployed-engineer-inference-post-training-mandarin-speaking-together-ai-1419": {
   "enriched_at": "2026-10-12T23:55:02.671616+00:00",
   "hash": "b4b0b72b0520b917",
@@ -23985,8 +24176,8 @@
   "yoe_min": null
  },
  "forward-deployed-engineer-integrations-eu-uk-sardine-3357": {
-  "enriched_at": "2026-10-12T23:55:02.671616+00:00",
-  "hash": "96e1733b68a05dc1",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "bc0d822fcf1cd014",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [
@@ -23997,12 +24188,12 @@
   "salary_min_usd": null,
   "seniority": "unknown",
   "stack": [
-   "Postgres",
-   "Python"
+   "Python",
+   "SGLang"
   ],
   "team": "Integrations",
   "visa_sponsorship": "unstated",
-  "work_type": "applied",
+  "work_type": "infra",
   "yoe_min": 4
  },
  "forward-deployed-engineer-irvine-ca-field-ai-3694": {
@@ -24216,8 +24407,8 @@
   "yoe_min": 6
  },
  "forward-deployed-engineer-ml-modal-4349": {
-  "enriched_at": "2026-10-13T00:07:48.039548+00:00",
-  "hash": "7d4e374c6ea5968d",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "7cbb408f7bb291e3",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
@@ -24225,9 +24416,8 @@
   "salary_min_usd": null,
   "seniority": "unknown",
   "stack": [
-   "CUDA",
    "PyTorch",
-   "Python",
+   "SGLang",
    "vLLM"
   ],
   "team": "FDE team",
@@ -24646,8 +24836,8 @@
   "yoe_min": 5
  },
  "forward-deployed-engineer-systems-modal-4354": {
-  "enriched_at": "2026-10-13T00:07:48.039548+00:00",
-  "hash": "6fcb2e06c5d51438",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "327990d7208da94d",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
@@ -24661,7 +24851,7 @@
    "Kubernetes",
    "Terraform"
   ],
-  "team": "FDE team",
+  "team": "Forward Deployed Engineering",
   "visa_sponsorship": "unstated",
   "work_type": "infra",
   "yoe_min": 3
@@ -25014,8 +25204,8 @@
   "yoe_min": 2
  },
  "forward-deployed-scientist-chai-discovery-3858": {
-  "enriched_at": "2026-10-13T00:07:48.039548+00:00",
-  "hash": "923182cdc2d2699a",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "d035168f3ce9f4b7",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
@@ -25025,7 +25215,7 @@
   "stack": [],
   "team": "science team",
   "visa_sponsorship": "unstated",
-  "work_type": "product",
+  "work_type": "applied",
   "yoe_min": null
  },
  "forward-deployed-security-engineer-openai-2329": {
@@ -28147,8 +28337,8 @@
   "yoe_min": 3
  },
  "gtm-engineer-data-platform-modal-5743": {
-  "enriched_at": "2026-10-19T14:42:40.361985+00:00",
-  "hash": "7b2a109550de146c",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "e632801f7545d74c",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
@@ -29871,8 +30061,8 @@
   "yoe_min": null
  },
  "inference-engineering-and-product-lead-modal-4356": {
-  "enriched_at": "2026-10-13T00:07:48.039548+00:00",
-  "hash": "c534ffc8a583e3e4",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "aa4ed536844a8733",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [
    "open-source"
@@ -29883,20 +30073,36 @@
   "seniority": "manager",
   "stack": [
    "AWS",
+   "Airflow",
    "Azure",
    "C++",
    "CUDA",
+   "Databricks",
    "Elasticsearch",
    "GCP",
    "Go",
    "Hugging Face",
+   "Java",
+   "Kafka",
    "Kubernetes",
+   "MLflow",
    "Postgres",
+   "PyTorch",
    "Python",
    "Ray",
    "Redis",
    "Rust",
-   "TensorRT"
+   "SGLang",
+   "Scala",
+   "Snowflake",
+   "Spark",
+   "TensorRT",
+   "Terraform",
+   "Triton",
+   "TypeScript",
+   "Weights & Biases",
+   "dbt",
+   "vLLM"
   ],
   "team": "LLM inference platform",
   "visa_sponsorship": "unstated",
@@ -30299,8 +30505,8 @@
   "yoe_min": 3
  },
  "infrastructure-security-engineer-modal-4348": {
-  "enriched_at": "2026-10-13T00:07:48.039548+00:00",
-  "hash": "332894bb502228d5",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "2c392984cb8104f2",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
@@ -30312,7 +30518,7 @@
    "GCP",
    "Kubernetes"
   ],
-  "team": null,
+  "team": "Infrastructure Security",
   "visa_sponsorship": "unstated",
   "work_type": "infra",
   "yoe_min": null
@@ -30944,6 +31150,25 @@
   "work_type": "product",
   "yoe_min": 4
  },
+ "ios-engineer-creative-app-elevenlabs-6042": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "7f0e756b531698b9",
+  "model": "anthropic/claude-haiku-5.5",
+  "model_providers": [],
+  "remote_regions": [
+   "global"
+  ],
+  "salary_max_usd": null,
+  "salary_min_usd": null,
+  "seniority": "unknown",
+  "stack": [
+   "Python"
+  ],
+  "team": "mobile team",
+  "visa_sponsorship": "unstated",
+  "work_type": "applied",
+  "yoe_min": null
+ },
  "ios-engineer-rogo-4590": {
   "enriched_at": "2026-10-13T00:07:48.039548+00:00",
   "hash": "a57691e6fad701f1",
@@ -31472,6 +31697,38 @@
  "it-support-engineer-cognition-3884": {
   "enriched_at": "2026-10-21T12:57:13.642571+00:00",
   "hash": "e9ca896fd36df32d",
+  "model": "anthropic/claude-haiku-5.5",
+  "model_providers": [],
+  "remote_regions": [],
+  "salary_max_usd": null,
+  "salary_min_usd": null,
+  "seniority": "unknown",
+  "stack": [
+   "Python"
+  ],
+  "team": "IT Support",
+  "visa_sponsorship": "unstated",
+  "work_type": "infra",
+  "yoe_min": null
+ },
+ "it-support-engineer-elevenlabs-6041": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "9e47b0a620a30154",
+  "model": "anthropic/claude-haiku-5.5",
+  "model_providers": [],
+  "remote_regions": [],
+  "salary_max_usd": null,
+  "salary_min_usd": null,
+  "seniority": "unknown",
+  "stack": [],
+  "team": "IT Support",
+  "visa_sponsorship": "unstated",
+  "work_type": "infra",
+  "yoe_min": null
+ },
+ "it-support-engineer-elevenlabs-6044": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "1271f40918af03f6",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
@@ -35863,13 +36120,13 @@
   "yoe_min": null
  },
  "machine-learning-engineer-public-sector-scale-ai-1308": {
-  "enriched_at": "2026-10-21T12:57:13.642571+00:00",
-  "hash": "0e06004e42222f6c",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "b152bceb32e395ea",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
-  "salary_max_usd": 204000,
-  "salary_min_usd": 163200,
+  "salary_max_usd": 254000,
+  "salary_min_usd": 203200,
   "seniority": "unknown",
   "stack": [
    "PyTorch",
@@ -37764,6 +38021,23 @@
   "work_type": "infra",
   "yoe_min": 8
  },
+ "manager-engineering-dev-ai-airbnb-6061": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "7b07786b4a244907",
+  "model": "anthropic/claude-haiku-5.5",
+  "model_providers": [],
+  "remote_regions": [
+   "us"
+  ],
+  "salary_max_usd": 265000,
+  "salary_min_usd": 212000,
+  "seniority": "manager",
+  "stack": [],
+  "team": "Dev AI",
+  "visa_sponsorship": "unstated",
+  "work_type": "infra",
+  "yoe_min": 2
+ },
  "manager-engineering-power-generation-utilities-memphis-xai-5543": {
   "enriched_at": "2026-10-13T00:07:48.039548+00:00",
   "hash": "cb5060977b64f645",
@@ -38133,8 +38407,8 @@
   "yoe_min": 7
  },
  "manager-of-engineering-autonomy-capabilities-r5412-shield-ai-5606": {
-  "enriched_at": "2026-10-13T00:07:48.039548+00:00",
-  "hash": "89de687ab1e4fa7f",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "92b9adc683008384",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
@@ -38142,7 +38416,8 @@
   "salary_min_usd": null,
   "seniority": "manager",
   "stack": [
-   "C++"
+   "C++",
+   "Python"
   ],
   "team": "Autonomy Capabilities",
   "visa_sponsorship": "unstated",
@@ -39080,6 +39355,25 @@
   "work_type": "data",
   "yoe_min": 6
  },
+ "member-of-data-staff-data-acceleration-perplexity-6054": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "ebb4c23301f114a3",
+  "model": "anthropic/claude-haiku-5.5",
+  "model_providers": [],
+  "remote_regions": [],
+  "salary_max_usd": null,
+  "salary_min_usd": null,
+  "seniority": "mid",
+  "stack": [
+   "Python",
+   "Snowflake",
+   "dbt"
+  ],
+  "team": "Data Acceleration",
+  "visa_sponsorship": "unstated",
+  "work_type": "data",
+  "yoe_min": 6
+ },
  "member-of-data-staff-data-scientist-perplexity-3069": {
   "enriched_at": "2026-10-12T23:55:02.671616+00:00",
   "hash": "dba8cde648358798",
@@ -39619,6 +39913,31 @@
   "work_type": "evals",
   "yoe_min": null
  },
+ "member-of-technical-staff-data-infrastructure-storage-fireworks-ai-6048": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "9657870c5c0092b2",
+  "model": "anthropic/claude-haiku-5.5",
+  "model_providers": [],
+  "remote_regions": [],
+  "salary_max_usd": null,
+  "salary_min_usd": null,
+  "seniority": "unknown",
+  "stack": [
+   "C++",
+   "Go",
+   "Kubernetes",
+   "PyTorch",
+   "Python",
+   "Ray",
+   "Redis",
+   "Rust",
+   "Terraform"
+  ],
+  "team": "Data Infrastructure Storage",
+  "visa_sponsorship": "unstated",
+  "work_type": "infra",
+  "yoe_min": 5
+ },
  "member-of-technical-staff-data-ingestion-engineer-reflection-ai-4510": {
   "enriched_at": "2026-10-13T00:07:48.039548+00:00",
   "hash": "12f96ca84070f4bc",
@@ -40127,8 +40446,8 @@
   "yoe_min": null
  },
  "member-of-technical-staff-ml-performance-modal-4352": {
-  "enriched_at": "2026-10-13T00:07:48.039548+00:00",
-  "hash": "78e68d18b94a2401",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "a082e6e443e2a8f0",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
@@ -40288,8 +40607,8 @@
   "yoe_min": null
  },
  "member-of-technical-staff-platform-engineering-modal-4347": {
-  "enriched_at": "2026-10-13T00:07:48.039548+00:00",
-  "hash": "b9e20ea1e683e7f4",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "a7aa5d07502b175a",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
@@ -40388,6 +40707,25 @@
   "work_type": "data",
   "yoe_min": null
  },
+ "member-of-technical-staff-pre-training-data-reflection-ai-6055": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "0741d52178699a71",
+  "model": "anthropic/claude-haiku-5.5",
+  "model_providers": [],
+  "remote_regions": [],
+  "salary_max_usd": null,
+  "salary_min_usd": null,
+  "seniority": "unknown",
+  "stack": [
+   "JAX",
+   "PyTorch",
+   "Python"
+  ],
+  "team": "pre-training research team",
+  "visa_sponsorship": "yes",
+  "work_type": "data",
+  "yoe_min": null
+ },
  "member-of-technical-staff-quantitative-research-udio-5443": {
   "enriched_at": "2026-10-13T00:07:48.039548+00:00",
   "hash": "55715ffc78424ade",
@@ -40476,8 +40814,8 @@
   "yoe_min": null
  },
  "member-of-technical-staff-research-inference-modal-4345": {
-  "enriched_at": "2026-10-13T00:07:48.039548+00:00",
-  "hash": "f0141e6e4114fd2e",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "a118a54ad049522e",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
@@ -40486,14 +40824,9 @@
   "seniority": "unknown",
   "stack": [
    "CUDA",
-   "Hugging Face",
    "Kubernetes",
    "PyTorch",
-   "Python",
-   "SGLang",
-   "TensorRT",
-   "Triton",
-   "vLLM"
+   "SGLang"
   ],
   "team": "Research, Inference",
   "visa_sponsorship": "unstated",
@@ -40525,8 +40858,8 @@
   "yoe_min": null
  },
  "member-of-technical-staff-research-post-training-modal-4346": {
-  "enriched_at": "2026-10-13T00:07:48.039548+00:00",
-  "hash": "cb4228960c07e483",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "cb1f4f49b95fdc4f",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
@@ -40535,7 +40868,6 @@
   "seniority": "unknown",
   "stack": [
    "CUDA",
-   "Kubernetes",
    "PyTorch",
    "Python"
   ],
@@ -40980,6 +41312,23 @@
   "visa_sponsorship": "unstated",
   "work_type": "product",
   "yoe_min": 4
+ },
+ "member-of-technical-staff-software-engineer-experience-perplexity-6053": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "fc18539cbce2ee3e",
+  "model": "anthropic/claude-haiku-5.5",
+  "model_providers": [],
+  "remote_regions": [],
+  "salary_max_usd": null,
+  "salary_min_usd": null,
+  "seniority": "unknown",
+  "stack": [
+   "TypeScript"
+  ],
+  "team": "Core Experience",
+  "visa_sponsorship": "unstated",
+  "work_type": "product",
+  "yoe_min": null
  },
  "member-of-technical-staff-software-engineer-fireworks-ai-4120": {
   "enriched_at": "2026-10-13T00:07:48.039548+00:00",
@@ -41987,17 +42336,15 @@
   "yoe_min": 4
  },
  "ml-research-intern-modal-4343": {
-  "enriched_at": "2026-10-13T00:07:48.039548+00:00",
-  "hash": "76864c20062c0c43",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "6108084c8b5c9df0",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
   "salary_max_usd": null,
   "salary_min_usd": null,
   "seniority": "intern",
-  "stack": [
-   "Python"
-  ],
+  "stack": [],
   "team": "research team",
   "visa_sponsorship": "unstated",
   "work_type": "research",
@@ -46958,6 +47305,21 @@
   "work_type": "infra",
   "yoe_min": null
  },
+ "principal-software-engineer-chatgpt-education-and-learning-openai-6049": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "636d4a294a370057",
+  "model": "anthropic/claude-haiku-5.5",
+  "model_providers": [],
+  "remote_regions": [],
+  "salary_max_usd": null,
+  "salary_min_usd": null,
+  "seniority": "principal",
+  "stack": [],
+  "team": "ChatGPT Learning",
+  "visa_sponsorship": "unstated",
+  "work_type": "product",
+  "yoe_min": 10
+ },
  "principal-software-engineer-full-stack-codex-openai-5996": {
   "enriched_at": "2026-10-22T12:59:48.806645+00:00",
   "hash": "27e4840df64f8499",
@@ -47139,6 +47501,31 @@
   "visa_sponsorship": "unstated",
   "work_type": "product",
   "yoe_min": 8
+ },
+ "principal-software-engineer-productivity-openai-6052": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "d1145d95a90be3af",
+  "model": "anthropic/claude-haiku-5.5",
+  "model_providers": [
+   "OpenAI"
+  ],
+  "remote_regions": [],
+  "salary_max_usd": null,
+  "salary_min_usd": null,
+  "seniority": "principal",
+  "stack": [
+   "C++",
+   "Go",
+   "Java",
+   "Python",
+   "Rust",
+   "Scala",
+   "TypeScript"
+  ],
+  "team": "Connector Ecosystem",
+  "visa_sponsorship": "unstated",
+  "work_type": "product",
+  "yoe_min": 10
  },
  "principal-solutions-architect-ai-ml-services-delivery-snowflake-4655": {
   "enriched_at": "2026-10-13T00:07:48.039548+00:00",
@@ -47627,6 +48014,23 @@
   "work_type": "evals",
   "yoe_min": null
  },
+ "product-designer-ai-native-products-staff-level-l6-synthesia-6059": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "ef13fd365b00f041",
+  "model": "anthropic/claude-haiku-5.5",
+  "model_providers": [],
+  "remote_regions": [
+   "europe"
+  ],
+  "salary_max_usd": null,
+  "salary_min_usd": null,
+  "seniority": "staff",
+  "stack": [],
+  "team": "Sessions",
+  "visa_sponsorship": "unstated",
+  "work_type": "product",
+  "yoe_min": null
+ },
  "product-designer-design-dev-ai-tools-figma-5096": {
   "enriched_at": "2026-10-13T00:07:48.039548+00:00",
   "hash": "83ff3390ff8286b8",
@@ -47816,8 +48220,8 @@
   "yoe_min": null
  },
  "product-engineer-elevencreative-enterprise-elevenlabs-3189": {
-  "enriched_at": "2026-10-22T12:59:48.806645+00:00",
-  "hash": "f0af966f20515f61",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "54d9e607122fd396",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [
@@ -47828,9 +48232,9 @@
   "salary_min_usd": null,
   "seniority": "unknown",
   "stack": [],
-  "team": "Enterprise engineering",
+  "team": "ElevenCreative Enterprise",
   "visa_sponsorship": "unstated",
-  "work_type": "applied",
+  "work_type": "product",
   "yoe_min": null
  },
  "product-engineer-full-stack-agents-openai-2440": {
@@ -48418,9 +48822,28 @@
   "work_type": "product",
   "yoe_min": 5
  },
+ "product-platform-backend-engineer-baseten-6036": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "d0e4faa937d89a34",
+  "model": "anthropic/claude-haiku-5.5",
+  "model_providers": [],
+  "remote_regions": [],
+  "salary_max_usd": null,
+  "salary_min_usd": null,
+  "seniority": "unknown",
+  "stack": [
+   "Go",
+   "Python",
+   "Rust"
+  ],
+  "team": "Product Platform",
+  "visa_sponsorship": "unstated",
+  "work_type": "infra",
+  "yoe_min": 5
+ },
  "product-platform-product-engineer-baseten-5981": {
-  "enriched_at": "2026-10-22T12:59:48.806645+00:00",
-  "hash": "28f149140c03be2a",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "95a560c9e5383f01",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
@@ -49767,6 +50190,31 @@
   "work_type": "product",
   "yoe_min": 8
  },
+ "regional-director-solutions-engineering-enterprise-factory-6047": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "2984e12bce273031",
+  "model": "anthropic/claude-haiku-5.5",
+  "model_providers": [],
+  "remote_regions": [],
+  "salary_max_usd": null,
+  "salary_min_usd": null,
+  "seniority": "manager",
+  "stack": [
+   "C++",
+   "CUDA",
+   "Go",
+   "Java",
+   "Kubernetes",
+   "Python",
+   "Rust",
+   "Scala",
+   "TypeScript"
+  ],
+  "team": "Enterprise Solutions Engineering",
+  "visa_sponsorship": "unstated",
+  "work_type": "product",
+  "yoe_min": 4
+ },
  "regional-research-economist-economic-research-anthropic-1093": {
   "enriched_at": "2026-10-12T23:55:02.671616+00:00",
   "hash": "2cd9edba9be185e7",
@@ -49798,6 +50246,62 @@
   ],
   "team": "Economic Research",
   "visa_sponsorship": "yes",
+  "work_type": "research",
+  "yoe_min": null
+ },
+ "regional-research-economist-economic-research-anthropic-6065": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "e4b0cbd911c4e010",
+  "model": "anthropic/claude-haiku-5.5",
+  "model_providers": [
+   "Anthropic"
+  ],
+  "remote_regions": [],
+  "salary_max_usd": null,
+  "salary_min_usd": null,
+  "seniority": "unknown",
+  "stack": [
+   "Python",
+   "SGLang"
+  ],
+  "team": "Economic Research",
+  "visa_sponsorship": "yes",
+  "work_type": "research",
+  "yoe_min": null
+ },
+ "regional-research-economist-economic-research-anthropic-6066": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "4749c11396c86e77",
+  "model": "anthropic/claude-haiku-5.5",
+  "model_providers": [],
+  "remote_regions": [],
+  "salary_max_usd": null,
+  "salary_min_usd": null,
+  "seniority": "unknown",
+  "stack": [
+   "Python",
+   "SGLang"
+  ],
+  "team": "Economic Research",
+  "visa_sponsorship": "yes",
+  "work_type": "research",
+  "yoe_min": null
+ },
+ "regional-research-economist-economic-research-anthropic-6067": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "d067c1615749f134",
+  "model": "anthropic/claude-haiku-5.5",
+  "model_providers": [],
+  "remote_regions": [],
+  "salary_max_usd": null,
+  "salary_min_usd": null,
+  "seniority": "unknown",
+  "stack": [
+   "Python",
+   "SGLang"
+  ],
+  "team": "Economic Research",
+  "visa_sponsorship": "unstated",
   "work_type": "research",
   "yoe_min": null
  },
@@ -51495,19 +51999,21 @@
   "yoe_min": null
  },
  "research-communications-manager-openai-2203": {
-  "enriched_at": "2026-10-12T23:55:02.671616+00:00",
-  "hash": "2ae4131087c8a232",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "54d94a9fe3e41644",
   "model": "anthropic/claude-haiku-5.5",
-  "model_providers": [],
+  "model_providers": [
+   "OpenAI"
+  ],
   "remote_regions": [],
   "salary_max_usd": null,
   "salary_min_usd": null,
-  "seniority": "manager",
+  "seniority": "unknown",
   "stack": [],
-  "team": "Platform & Research Communications",
+  "team": "Product & Research Communications",
   "visa_sponsorship": "unstated",
-  "work_type": "research",
-  "yoe_min": 7
+  "work_type": "product",
+  "yoe_min": null
  },
  "research-counsel-anthropic-3573": {
   "enriched_at": "2026-10-12T23:55:02.671616+00:00",
@@ -51670,8 +52176,8 @@
   "yoe_min": 2
  },
  "research-engineer-auto-research-chai-discovery-3856": {
-  "enriched_at": "2026-10-13T00:07:48.039548+00:00",
-  "hash": "9daacb7829d18bcd",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "0d94456efd241c69",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
@@ -51714,8 +52220,8 @@
   "yoe_min": null
  },
  "research-engineer-chai-discovery-3851": {
-  "enriched_at": "2026-10-13T00:07:48.039548+00:00",
-  "hash": "87e007d92da1c8fd",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "08b0e242f71b0471",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
@@ -52617,8 +53123,8 @@
   "yoe_min": null
  },
  "research-engineer-ml-infrastructure-chai-discovery-3857": {
-  "enriched_at": "2026-10-13T00:07:48.039548+00:00",
-  "hash": "1776d6d355c677dd",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "8c5ffa30c0cc57c3",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
@@ -52626,6 +53132,7 @@
   "salary_min_usd": null,
   "seniority": "unknown",
   "stack": [
+   "CUDA",
    "JAX",
    "PyTorch",
    "Python"
@@ -52973,8 +53480,8 @@
   "yoe_min": null
  },
  "research-engineer-privacy-openai-2162": {
-  "enriched_at": "2026-10-12T23:55:02.671616+00:00",
-  "hash": "413168598ba0d0e4",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "dd737be1121403ef",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
@@ -54536,8 +55043,8 @@
   "yoe_min": null
  },
  "research-scientist-chai-discovery-3848": {
-  "enriched_at": "2026-10-13T00:07:48.039548+00:00",
-  "hash": "24efb1e0b1ad18bf",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "3d225d3ab918cb67",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
@@ -55806,6 +56313,21 @@
   "visa_sponsorship": "unstated",
   "work_type": "research",
   "yoe_min": 2
+ },
+ "researcher-misalignment-monitoring-lead-openai-6051": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "41c44a3d5bb3de21",
+  "model": "anthropic/claude-haiku-5.5",
+  "model_providers": [],
+  "remote_regions": [],
+  "salary_max_usd": null,
+  "salary_min_usd": null,
+  "seniority": "senior",
+  "stack": [],
+  "team": "Safety Research",
+  "visa_sponsorship": "unstated",
+  "work_type": "evals",
+  "yoe_min": null
  },
  "researcher-models-cartesia-3843": {
   "enriched_at": "2026-10-13T00:07:48.039548+00:00",
@@ -57570,8 +58092,8 @@
   "yoe_min": 2
  },
  "scientist-protein-design-chai-discovery-3853": {
-  "enriched_at": "2026-10-13T00:07:48.039548+00:00",
-  "hash": "9ffa92dc2243181f",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "910d74dc49d4297d",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
@@ -57581,7 +58103,7 @@
   "stack": [],
   "team": "science team",
   "visa_sponsorship": "unstated",
-  "work_type": "applied",
+  "work_type": "research",
   "yoe_min": null
  },
  "search-page-roku-888": {
@@ -58070,8 +58592,8 @@
   "yoe_min": null
  },
  "security-engineer-grc-federal-frameworks-xai-6031": {
-  "enriched_at": "2026-10-22T12:59:48.806645+00:00",
-  "hash": "434daa0789ee5dcf",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "3937f9413d132a30",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
@@ -58080,9 +58602,8 @@
   "seniority": "unknown",
   "stack": [
    "AWS",
-   "Azure",
-   "GCP",
    "Kubernetes",
+   "Python",
    "Terraform"
   ],
   "team": "GRC Federal Frameworks",
@@ -58203,8 +58724,8 @@
   "yoe_min": 3
  },
  "security-engineer-ml-infrastructure-higgsfield-5946": {
-  "enriched_at": "2026-10-21T12:57:13.642571+00:00",
-  "hash": "96fee34d1cb8f663",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "1141e1d7c8c4eade",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
@@ -58212,6 +58733,9 @@
   "salary_min_usd": 200000,
   "seniority": "unknown",
   "stack": [
+   "AWS",
+   "Azure",
+   "GCP",
    "Go",
    "Kubernetes",
    "Python"
@@ -58448,21 +58972,21 @@
   "yoe_min": 7
  },
  "security-infrastructure-engineer-higgsfield-4206": {
-  "enriched_at": "2026-10-21T12:57:13.642571+00:00",
-  "hash": "09133b4d4efd227c",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "ff9008624c8088e6",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
   "salary_max_usd": 300000,
   "salary_min_usd": 200000,
-  "seniority": "unknown",
+  "seniority": "senior",
   "stack": [
    "AWS",
    "CUDA",
    "Kubernetes",
    "Terraform"
   ],
-  "team": "Security Infrastructure",
+  "team": "Infrastructure Security",
   "visa_sponsorship": "unstated",
   "work_type": "infra",
   "yoe_min": 7
@@ -61272,39 +61796,55 @@
   "yoe_min": null
  },
  "senior-computer-vision-engineer-space-anduril-3420": {
-  "enriched_at": "2026-10-12T23:55:02.671616+00:00",
-  "hash": "41e219b97f27e6b8",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "746ce0dfbd5cd23c",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
-  "salary_max_usd": 253000,
+  "salary_max_usd": 254000,
   "salary_min_usd": 191000,
   "seniority": "senior",
   "stack": [
+   "AWS",
+   "Azure",
    "C++",
+   "CUDA",
+   "GCP",
    "Go",
+   "JAX",
+   "Java",
+   "Kubernetes",
+   "Postgres",
+   "PyTorch",
    "Python",
-   "Rust"
+   "Ray",
+   "Redis",
+   "Rust",
+   "Scala",
+   "TensorFlow",
+   "Triton",
+   "TypeScript"
   ],
-  "team": "Space team",
+  "team": "Space",
   "visa_sponsorship": "unstated",
   "work_type": "applied",
   "yoe_min": null
  },
  "senior-computer-vision-engineer-space-anduril-3421": {
-  "enriched_at": "2026-10-12T23:55:02.671616+00:00",
-  "hash": "34fb1cb0e9fca560",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "b7da8fbb10103555",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
-  "salary_max_usd": 253000,
+  "salary_max_usd": 254000,
   "salary_min_usd": 191000,
   "seniority": "senior",
   "stack": [
    "C++",
    "Go",
+   "Kubernetes",
    "Python",
-   "Rust"
+   "TypeScript"
   ],
   "team": "Space team",
   "visa_sponsorship": "unstated",
@@ -62795,6 +63335,31 @@
   "work_type": "product",
   "yoe_min": null
  },
+ "senior-devops-engineer-sandboxaq-6056": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "3c0539725c0b652c",
+  "model": "anthropic/claude-haiku-5.5",
+  "model_providers": [],
+  "remote_regions": [
+   "us"
+  ],
+  "salary_max_usd": null,
+  "salary_min_usd": null,
+  "seniority": "senior",
+  "stack": [
+   "AWS",
+   "Azure",
+   "GCP",
+   "Kubernetes",
+   "Postgres",
+   "Python",
+   "Terraform"
+  ],
+  "team": "AI Simulation team",
+  "visa_sponsorship": "unstated",
+  "work_type": "infra",
+  "yoe_min": 3
+ },
  "senior-director-analytics-data-science-crusoe-3933": {
   "enriched_at": "2026-10-13T00:07:48.039548+00:00",
   "hash": "ee4cd281adf47cfd",
@@ -63274,18 +63839,19 @@
   "yoe_min": 10
  },
  "senior-engineering-manager-agents-platform-synthesia-4682": {
-  "enriched_at": "2026-10-13T00:07:48.039548+00:00",
-  "hash": "f42bee4c25c9a56f",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "75c1d74e2968165b",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [
-   "europe"
+   "europe",
+   "uk"
   ],
   "salary_max_usd": null,
   "salary_min_usd": null,
-  "seniority": "senior",
+  "seniority": "manager",
   "stack": [],
-  "team": "Agents Platform",
+  "team": null,
   "visa_sponsorship": "unstated",
   "work_type": "other",
   "yoe_min": 4
@@ -63430,18 +63996,15 @@
   "yoe_min": 10
  },
  "senior-engineering-manager-machine-learning-hadrian-3203": {
-  "enriched_at": "2026-10-12T23:55:02.671616+00:00",
-  "hash": "eb6fe0810f191922",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "9a3bd3b97c6328c5",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
-  "salary_max_usd": 299000,
-  "salary_min_usd": 249000,
+  "salary_max_usd": 359000,
+  "salary_min_usd": 299000,
   "seniority": "manager",
-  "stack": [
-   "PyTorch",
-   "Python"
-  ],
+  "stack": [],
   "team": "Technical Data Intelligence",
   "visa_sponsorship": "unstated",
   "work_type": "applied",
@@ -64269,22 +64832,26 @@
   "yoe_min": 5
  },
  "senior-fullstack-engineer-inference-console-cerebras-3150": {
-  "enriched_at": "2026-10-12T23:55:02.671616+00:00",
-  "hash": "c2f3dfa1d748e4f5",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "f3aacedded1b9b9c",
   "model": "anthropic/claude-haiku-5.5",
-  "model_providers": [],
+  "model_providers": [
+   "OpenAI"
+  ],
   "remote_regions": [],
   "salary_max_usd": null,
   "salary_min_usd": null,
   "seniority": "senior",
   "stack": [
+   "AWS",
+   "Azure",
+   "GCP",
    "Postgres",
-   "Redis",
-   "TypeScript"
+   "Redis"
   ],
-  "team": "Developer Console",
+  "team": "Inference Cloud",
   "visa_sponsorship": "unstated",
-  "work_type": "applied",
+  "work_type": "infra",
   "yoe_min": 8
  },
  "senior-fullstack-software-engineer-ai-observability-evals-platform-ny-langchain-4244": {
@@ -65611,20 +66178,17 @@
   "yoe_min": 6
  },
  "senior-machine-learning-engineer-public-sector-scale-ai-1342": {
-  "enriched_at": "2026-10-21T12:57:13.642571+00:00",
-  "hash": "4510654ff1d62ee2",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "ee608369938ac662",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
-  "salary_max_usd": 204000,
-  "salary_min_usd": 163200,
+  "salary_max_usd": 254000,
+  "salary_min_usd": 203200,
   "seniority": "senior",
   "stack": [
-   "AWS",
-   "GCP",
    "PyTorch",
-   "Python",
-   "TensorFlow"
+   "Python"
   ],
   "team": "Public Sector Machine Learning",
   "visa_sponsorship": "unstated",
@@ -66203,8 +66767,8 @@
   "yoe_min": 2
  },
  "senior-manager-engineering-harvey-2754": {
-  "enriched_at": "2026-10-12T23:55:02.671616+00:00",
-  "hash": "8d8d010b9c092ac7",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "5b8491d49334f3cc",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
@@ -66216,13 +66780,12 @@
    "Azure",
    "GCP",
    "Kubernetes",
-   "Python",
    "Terraform"
   ],
   "team": "Core Infrastructure",
   "visa_sponsorship": "no",
   "work_type": "infra",
-  "yoe_min": 4
+  "yoe_min": 5
  },
  "senior-manager-imaging-machine-learning-insitro-4217": {
   "enriched_at": "2026-10-13T00:07:48.039548+00:00",
@@ -68343,6 +68906,23 @@
   "work_type": "research",
   "yoe_min": null
  },
+ "senior-research-investigator-biologics-computational-science-london-isomorphic-labs-6071": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "c274a7b31223ea37",
+  "model": "anthropic/claude-haiku-5.5",
+  "model_providers": [],
+  "remote_regions": [],
+  "salary_max_usd": null,
+  "salary_min_usd": null,
+  "seniority": "senior",
+  "stack": [
+   "Python"
+  ],
+  "team": "Computational Sciences",
+  "visa_sponsorship": "unstated",
+  "work_type": "research",
+  "yoe_min": null
+ },
  "senior-research-scientist-anduril-3526": {
   "enriched_at": "2026-10-12T23:55:02.671616+00:00",
   "hash": "347eef90c79d78e9",
@@ -69163,14 +69743,14 @@
   "yoe_min": 4
  },
  "senior-software-engineer-agent-infrastructure-cohere-5986": {
-  "enriched_at": "2026-10-22T12:59:48.806645+00:00",
-  "hash": "58daa13315f1f064",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "1d9d29477eac0b84",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
   "salary_max_usd": null,
   "salary_min_usd": null,
-  "seniority": "senior",
+  "seniority": "staff",
   "stack": [
    "Kubernetes"
   ],
@@ -69282,6 +69862,25 @@
   "visa_sponsorship": "unstated",
   "work_type": "applied",
   "yoe_min": 5
+ },
+ "senior-software-engineer-agentic-commerce-cloudflare-6069": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "091fd0bc33840716",
+  "model": "anthropic/claude-haiku-5.5",
+  "model_providers": [],
+  "remote_regions": [],
+  "salary_max_usd": null,
+  "salary_min_usd": null,
+  "seniority": "senior",
+  "stack": [
+   "Python",
+   "Rust",
+   "TypeScript"
+  ],
+  "team": "Agentic Commerce",
+  "visa_sponsorship": "unstated",
+  "work_type": "applied",
+  "yoe_min": null
  },
  "senior-software-engineer-agentic-customer-platform-poland-remote-b2b-samsara-5332": {
   "enriched_at": "2026-10-13T00:07:48.039548+00:00",
@@ -69783,18 +70382,60 @@
   "yoe_min": 6
  },
  "senior-software-engineer-ai-tooling-plaid-4449": {
-  "enriched_at": "2026-10-21T12:57:13.642571+00:00",
-  "hash": "2dd80a0c01ff66b0",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "4a7b67d4ad62b296",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
   "salary_max_usd": null,
   "salary_min_usd": null,
   "seniority": "senior",
-  "stack": [],
+  "stack": [
+   "AWS",
+   "Airflow",
+   "Azure",
+   "C++",
+   "CUDA",
+   "DSPy",
+   "Databricks",
+   "Elasticsearch",
+   "GCP",
+   "Go",
+   "Hugging Face",
+   "JAX",
+   "Java",
+   "Kafka",
+   "Kubernetes",
+   "LangChain",
+   "LangGraph",
+   "LlamaIndex",
+   "MCP",
+   "MLflow",
+   "Pinecone",
+   "Postgres",
+   "PyTorch",
+   "Python",
+   "Ray",
+   "Redis",
+   "Rust",
+   "SGLang",
+   "Scala",
+   "Snowflake",
+   "Spark",
+   "TensorFlow",
+   "TensorRT",
+   "Terraform",
+   "Triton",
+   "TypeScript",
+   "Weaviate",
+   "Weights & Biases",
+   "dbt",
+   "pgvector",
+   "vLLM"
+  ],
   "team": "AI Tooling",
   "visa_sponsorship": "unstated",
-  "work_type": "infra",
+  "work_type": "product",
   "yoe_min": 5
  },
  "senior-software-engineer-application-security-decagon-3992": {
@@ -70318,6 +70959,28 @@
   "work_type": "infra",
   "yoe_min": 5
  },
+ "senior-software-engineer-backend-capacity-modeling-affirm-6060": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "4e75b8cdedba0265",
+  "model": "anthropic/claude-haiku-5.5",
+  "model_providers": [],
+  "remote_regions": [
+   "canada"
+  ],
+  "salary_max_usd": null,
+  "salary_min_usd": null,
+  "seniority": "senior",
+  "stack": [
+   "AWS",
+   "Kubernetes",
+   "MLflow",
+   "Python"
+  ],
+  "team": "Capacity Modeling",
+  "visa_sponsorship": "unstated",
+  "work_type": "infra",
+  "yoe_min": 4
+ },
  "senior-software-engineer-backend-cluj-cresta-4971": {
   "enriched_at": "2026-10-13T00:07:48.039548+00:00",
   "hash": "9dcc36739b366052",
@@ -70673,6 +71336,26 @@
  },
  "senior-software-engineer-computer-vision-verkada-5448": {
   "enriched_at": "2026-10-13T00:07:48.039548+00:00",
+  "hash": "84cc4d70a4cbf568",
+  "model": "anthropic/claude-haiku-5.5",
+  "model_providers": [],
+  "remote_regions": [],
+  "salary_max_usd": 300000,
+  "salary_min_usd": 200000,
+  "seniority": "senior",
+  "stack": [
+   "C++",
+   "PyTorch",
+   "Python",
+   "TensorFlow"
+  ],
+  "team": "Computer Vision",
+  "visa_sponsorship": "yes",
+  "work_type": "applied",
+  "yoe_min": 4
+ },
+ "senior-software-engineer-computer-vision-verkada-6081": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
   "hash": "84cc4d70a4cbf568",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
@@ -71687,13 +72370,13 @@
   "yoe_min": 5
  },
  "senior-software-engineer-machine-learning-safety-discord-5059": {
-  "enriched_at": "2026-10-22T12:59:48.806645+00:00",
-  "hash": "dc96e0db3b913412",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "b8735829ff094b06",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
-  "salary_max_usd": 275000,
-  "salary_min_usd": 220000,
+  "salary_max_usd": 340000,
+  "salary_min_usd": 272000,
   "seniority": "senior",
   "stack": [
    "JAX",
@@ -73709,8 +74392,8 @@
   "yoe_min": 4
  },
  "senior-staff-inference-performance-engineer-d-matrix-5721": {
-  "enriched_at": "2026-10-19T14:42:40.361985+00:00",
-  "hash": "28d67b1f0030c1be",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "51a4627cc7206886",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [
@@ -73722,12 +74405,10 @@
   "stack": [
    "C++",
    "CUDA",
+   "Go",
    "Kubernetes",
    "Python",
-   "Rust",
-   "SGLang",
-   "TensorRT",
-   "vLLM"
+   "Rust"
   ],
   "team": "Inference Cloud Engineering",
   "visa_sponsorship": "unstated",
@@ -75099,6 +75780,23 @@
   "visa_sponsorship": "unstated",
   "work_type": "research",
   "yoe_min": 8
+ },
+ "senior-staff-workplace-ai-r5448-shield-ai-6083": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "60ef2bb4550663d9",
+  "model": "anthropic/claude-haiku-5.5",
+  "model_providers": [],
+  "remote_regions": [
+   "global"
+  ],
+  "salary_max_usd": null,
+  "salary_min_usd": null,
+  "seniority": "staff",
+  "stack": [],
+  "team": "Workplace AI",
+  "visa_sponsorship": "unstated",
+  "work_type": "product",
+  "yoe_min": 12
  },
  "senior-supplier-quality-engineer-cerebras-2842": {
   "enriched_at": "2026-10-12T23:55:02.671616+00:00",
@@ -77161,6 +77859,24 @@
   "work_type": "applied",
   "yoe_min": null
  },
+ "software-engineer-agentic-commerce-cloudflare-6070": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "727ab3a65edd0c59",
+  "model": "anthropic/claude-haiku-5.5",
+  "model_providers": [],
+  "remote_regions": [],
+  "salary_max_usd": null,
+  "salary_min_usd": null,
+  "seniority": "unknown",
+  "stack": [
+   "Rust",
+   "TypeScript"
+  ],
+  "team": "Agentic Commerce",
+  "visa_sponsorship": "unstated",
+  "work_type": "infra",
+  "yoe_min": null
+ },
  "software-engineer-agentic-discovery-cloudflare-4948": {
   "enriched_at": "2026-10-13T00:07:48.039548+00:00",
   "hash": "b3a379ac46d1b11c",
@@ -77665,8 +78381,8 @@
   "yoe_min": null
  },
  "software-engineer-ai-platform-chai-discovery-3854": {
-  "enriched_at": "2026-10-13T00:07:48.039548+00:00",
-  "hash": "b2a91998b1f136c1",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "c693498322234ee2",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
@@ -77676,7 +78392,7 @@
   "stack": [],
   "team": "AI Platform",
   "visa_sponsorship": "unstated",
-  "work_type": "product",
+  "work_type": "applied",
   "yoe_min": null
  },
  "software-engineer-ai-platform-snorkel-ai-5360": {
@@ -77914,6 +78630,21 @@
   "visa_sponsorship": "unstated",
   "work_type": "product",
   "yoe_min": 3
+ },
+ "software-engineer-ai-teammates-platform-asana-6068": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "aa2834112c8230e4",
+  "model": "anthropic/claude-haiku-5.5",
+  "model_providers": [],
+  "remote_regions": [],
+  "salary_max_usd": 190000,
+  "salary_min_usd": 171000,
+  "seniority": "unknown",
+  "stack": [],
+  "team": "AI Teammates Platform",
+  "visa_sponsorship": "unstated",
+  "work_type": "infra",
+  "yoe_min": 2
  },
  "software-engineer-android-suno-2859": {
   "enriched_at": "2026-10-12T23:55:02.671616+00:00",
@@ -78617,6 +79348,24 @@
   "work_type": "infra",
   "yoe_min": null
  },
+ "software-engineer-billing-internal-tooling-baseten-6037": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "d7aa45e3dd8cd089",
+  "model": "anthropic/claude-haiku-5.5",
+  "model_providers": [],
+  "remote_regions": [],
+  "salary_max_usd": null,
+  "salary_min_usd": null,
+  "seniority": "unknown",
+  "stack": [
+   "Postgres",
+   "Python"
+  ],
+  "team": "Billing & Internal Tooling",
+  "visa_sponsorship": "unstated",
+  "work_type": "product",
+  "yoe_min": null
+ },
  "software-engineer-bugbot-cursor-anysphere-3002": {
   "enriched_at": "2026-10-12T23:55:02.671616+00:00",
   "hash": "828e978dc0d4de62",
@@ -79240,9 +79989,29 @@
   "work_type": "infra",
   "yoe_min": null
  },
+ "software-engineer-compute-infra-cursor-anysphere-6040": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "a4f912ff4d157ceb",
+  "model": "anthropic/claude-haiku-5.5",
+  "model_providers": [
+   "open-source"
+  ],
+  "remote_regions": [],
+  "salary_max_usd": null,
+  "salary_min_usd": null,
+  "seniority": "unknown",
+  "stack": [
+   "Kubernetes",
+   "Python"
+  ],
+  "team": "Compute Infra",
+  "visa_sponsorship": "unstated",
+  "work_type": "infra",
+  "yoe_min": null
+ },
  "software-engineer-compute-infrastructure-chai-discovery-3850": {
-  "enriched_at": "2026-10-13T00:07:48.039548+00:00",
-  "hash": "eb6b0700e9aeb4cb",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "e16b1a11db0ab6a9",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
@@ -80156,8 +80925,8 @@
   "yoe_min": null
  },
  "software-engineer-developer-research-platform-chai-discovery-3852": {
-  "enriched_at": "2026-10-13T00:07:48.039548+00:00",
-  "hash": "54f135b0478303f7",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "c4f619ddf2abbf3a",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
@@ -81989,6 +82758,42 @@
   "work_type": "infra",
   "yoe_min": 4
  },
+ "software-engineer-identity-authorization-baseten-6038": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "7f2225fa8825d455",
+  "model": "anthropic/claude-haiku-5.5",
+  "model_providers": [],
+  "remote_regions": [],
+  "salary_max_usd": null,
+  "salary_min_usd": null,
+  "seniority": "unknown",
+  "stack": [
+   "Go",
+   "Kubernetes",
+   "Python"
+  ],
+  "team": "identity and authorization",
+  "visa_sponsorship": "unstated",
+  "work_type": "infra",
+  "yoe_min": 4
+ },
+ "software-engineer-identity-infrastructure-openai-6050": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "6f1fea5f8a58d08a",
+  "model": "anthropic/claude-haiku-5.5",
+  "model_providers": [],
+  "remote_regions": [],
+  "salary_max_usd": null,
+  "salary_min_usd": null,
+  "seniority": "unknown",
+  "stack": [
+   "Terraform"
+  ],
+  "team": "Identity Infrastructure Engineering",
+  "visa_sponsorship": "unstated",
+  "work_type": "infra",
+  "yoe_min": null
+ },
  "software-engineer-identity-mercor-2965": {
   "enriched_at": "2026-10-12T23:55:02.671616+00:00",
   "hash": "49a2300212922014",
@@ -83015,19 +83820,42 @@
   "work_type": "infra",
   "yoe_min": null
  },
- "software-engineer-knowledge-systems-exa-4074": {
-  "enriched_at": "2026-10-21T12:57:13.642571+00:00",
-  "hash": "e635e08d851cd3d2",
+ "software-engineer-knowledge-engine-query-engine-exa-6046": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "47d5c4d5616bc684",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
   "salary_max_usd": null,
   "salary_min_usd": null,
   "seniority": "unknown",
-  "stack": [],
-  "team": "Structured Superknowledge",
+  "stack": [
+   "C++",
+   "Go",
+   "Rust"
+  ],
+  "team": "Knowledge Platform",
   "visa_sponsorship": "yes",
   "work_type": "infra",
+  "yoe_min": null
+ },
+ "software-engineer-knowledge-systems-exa-4074": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "660a9d2d63d0ae66",
+  "model": "anthropic/claude-haiku-5.5",
+  "model_providers": [],
+  "remote_regions": [],
+  "salary_max_usd": null,
+  "salary_min_usd": null,
+  "seniority": "unknown",
+  "stack": [
+   "Postgres",
+   "Python",
+   "Spark"
+  ],
+  "team": "Knowledge Platform",
+  "visa_sponsorship": "unstated",
+  "work_type": "data",
   "yoe_min": null
  },
  "software-engineer-labs-anthropic-3557": {
@@ -84343,6 +85171,29 @@
   "work_type": "infra",
   "yoe_min": null
  },
+ "software-engineer-observability-supercompute-xai-6082": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "3f9c74e53d03212e",
+  "model": "anthropic/claude-haiku-5.5",
+  "model_providers": [],
+  "remote_regions": [],
+  "salary_max_usd": null,
+  "salary_min_usd": null,
+  "seniority": "unknown",
+  "stack": [
+   "C++",
+   "Java",
+   "Kubernetes",
+   "Postgres",
+   "Python",
+   "Rust",
+   "Terraform"
+  ],
+  "team": "Supercompute Observability Software",
+  "visa_sponsorship": "unstated",
+  "work_type": "infra",
+  "yoe_min": null
+ },
  "software-engineer-observability-xai-5458": {
   "enriched_at": "2026-10-13T00:07:48.039548+00:00",
   "hash": "0500edf1daad0298",
@@ -84439,6 +85290,21 @@
   "work_type": "infra",
   "yoe_min": null
  },
+ "software-engineer-partner-platform-baseten-6035": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "28a23c6c7f54fbff",
+  "model": "anthropic/claude-haiku-5.5",
+  "model_providers": [],
+  "remote_regions": [],
+  "salary_max_usd": null,
+  "salary_min_usd": null,
+  "seniority": "unknown",
+  "stack": [],
+  "team": "Partner Engineering",
+  "visa_sponsorship": "unstated",
+  "work_type": "infra",
+  "yoe_min": null
+ },
  "software-engineer-payments-infrastructure-sierra-2915": {
   "enriched_at": "2026-10-12T23:55:02.671616+00:00",
   "hash": "3a5a1f5da94b9455",
@@ -84528,8 +85394,8 @@
   "yoe_min": null
  },
  "software-engineer-platform-developer-experience-lovable-4305": {
-  "enriched_at": "2026-10-13T00:07:48.039548+00:00",
-  "hash": "406c02bf9f340416",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "eb0ef60d0b999be4",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
@@ -84538,11 +85404,13 @@
   "seniority": "unknown",
   "stack": [
    "AWS",
+   "Elasticsearch",
    "GCP",
    "Go",
-   "Hugging Face",
    "Kubernetes",
+   "Postgres",
    "Python",
+   "Redis",
    "Rust",
    "Terraform",
    "TypeScript"
@@ -84775,6 +85643,28 @@
   "visa_sponsorship": "unstated",
   "work_type": "infra",
   "yoe_min": 6
+ },
+ "software-engineer-platform-scale-ai-1369": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "87f096f7ca93f34a",
+  "model": "anthropic/claude-haiku-5.5",
+  "model_providers": [],
+  "remote_regions": [],
+  "salary_max_usd": 225000,
+  "salary_min_usd": 180000,
+  "seniority": "unknown",
+  "stack": [
+   "AWS",
+   "Kubernetes",
+   "Postgres",
+   "Snowflake",
+   "Terraform",
+   "dbt"
+  ],
+  "team": "Platform Engineering",
+  "visa_sponsorship": "unstated",
+  "work_type": "infra",
+  "yoe_min": 3
  },
  "software-engineer-platform-security-decagon-3962": {
   "enriched_at": "2026-10-13T00:07:48.039548+00:00",
@@ -85019,29 +85909,31 @@
   "yoe_min": null
  },
  "software-engineer-privacy-engineering-lawful-access-openai-2423": {
-  "enriched_at": "2026-10-22T12:59:48.806645+00:00",
-  "hash": "52762a0479cec949",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "ee0d37702aec05af",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
   "salary_max_usd": null,
   "salary_min_usd": null,
   "seniority": "unknown",
-  "stack": [],
+  "stack": [
+   "Python"
+  ],
   "team": "Privacy Engineering",
   "visa_sponsorship": "unstated",
   "work_type": "infra",
   "yoe_min": null
  },
  "software-engineer-privacy-engineering-openai-2127": {
-  "enriched_at": "2026-10-12T23:55:02.671616+00:00",
-  "hash": "12375f1030430407",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "6de9f8b20a97378f",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
   "salary_max_usd": null,
   "salary_min_usd": null,
-  "seniority": "senior",
+  "seniority": "unknown",
   "stack": [],
   "team": "Privacy Engineering",
   "visa_sponsorship": "unstated",
@@ -85049,15 +85941,17 @@
   "yoe_min": null
  },
  "software-engineer-privacy-openai-2129": {
-  "enriched_at": "2026-10-12T23:55:02.671616+00:00",
-  "hash": "9f2b16919d23e173",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "c2f914588d26ada3",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
   "salary_max_usd": null,
   "salary_min_usd": null,
   "seniority": "unknown",
-  "stack": [],
+  "stack": [
+   "Python"
+  ],
   "team": "Privacy Team",
   "visa_sponsorship": "unstated",
   "work_type": "infra",
@@ -86102,8 +86996,8 @@
   "yoe_min": 5
  },
  "software-engineer-scientific-products-chai-discovery-3847": {
-  "enriched_at": "2026-10-13T00:07:48.039548+00:00",
-  "hash": "30a0a87e22479242",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "0d6ccc2cb584e684",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
@@ -86340,8 +87234,8 @@
   "yoe_min": 2
  },
  "software-engineer-security-observability-openai-2086": {
-  "enriched_at": "2026-10-12T23:55:02.671616+00:00",
-  "hash": "3980c0b345a7c70d",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "4a00b0739eba841b",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [
@@ -87633,8 +88527,8 @@
   "yoe_min": null
  },
  "solutions-architect-cresta-4987": {
-  "enriched_at": "2026-10-13T00:07:48.039548+00:00",
-  "hash": "83ae3757651dc537",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "dd98d25490bd788c",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [
@@ -87645,7 +88539,8 @@
   "seniority": "unknown",
   "stack": [
    "AWS",
-   "GCP"
+   "GCP",
+   "Kubernetes"
   ],
   "team": "Solutions Architecture",
   "visa_sponsorship": "unstated",
@@ -88564,6 +89459,125 @@
   "work_type": "product",
   "yoe_min": 2
  },
+ "specialist-seller-enterprise-core-ai-products-samsara-6073": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "2c1536c36d38ff54",
+  "model": "anthropic/claude-haiku-5.5",
+  "model_providers": [],
+  "remote_regions": [
+   "us"
+  ],
+  "salary_max_usd": 278000,
+  "salary_min_usd": 222400,
+  "seniority": "unknown",
+  "stack": [],
+  "team": "Enterprise Core Specialist Sellers",
+  "visa_sponsorship": "unstated",
+  "work_type": "product",
+  "yoe_min": 5
+ },
+ "specialist-seller-enterprise-core-ai-products-samsara-6074": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "c20591d0c09795e5",
+  "model": "anthropic/claude-haiku-5.5",
+  "model_providers": [],
+  "remote_regions": [
+   "us"
+  ],
+  "salary_max_usd": 278000,
+  "salary_min_usd": 222400,
+  "seniority": "unknown",
+  "stack": [],
+  "team": "Enterprise Core Specialist",
+  "visa_sponsorship": "unstated",
+  "work_type": "product",
+  "yoe_min": 5
+ },
+ "specialist-seller-enterprise-core-ai-products-samsara-6075": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "767d50d8c631ff07",
+  "model": "anthropic/claude-haiku-5.5",
+  "model_providers": [],
+  "remote_regions": [
+   "us"
+  ],
+  "salary_max_usd": null,
+  "salary_min_usd": null,
+  "seniority": "unknown",
+  "stack": [],
+  "team": "Enterprise Core (AI Products)",
+  "visa_sponsorship": "unstated",
+  "work_type": "product",
+  "yoe_min": 5
+ },
+ "specialist-seller-enterprise-core-ai-products-samsara-6076": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "5d458c6165806a5f",
+  "model": "anthropic/claude-haiku-5.5",
+  "model_providers": [],
+  "remote_regions": [
+   "us"
+  ],
+  "salary_max_usd": 278000,
+  "salary_min_usd": 222400,
+  "seniority": "unknown",
+  "stack": [],
+  "team": "Enterprise Core Specialist Sellers",
+  "visa_sponsorship": "unstated",
+  "work_type": "product",
+  "yoe_min": 5
+ },
+ "specialist-seller-enterprise-core-ai-products-samsara-6077": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "7cccef0ab9053947",
+  "model": "anthropic/claude-haiku-5.5",
+  "model_providers": [],
+  "remote_regions": [
+   "us"
+  ],
+  "salary_max_usd": null,
+  "salary_min_usd": null,
+  "seniority": "unknown",
+  "stack": [],
+  "team": "Enterprise Core (AI Products)",
+  "visa_sponsorship": "unstated",
+  "work_type": "product",
+  "yoe_min": 5
+ },
+ "specialist-seller-enterprise-core-ai-products-samsara-6078": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "e32985b2a00dd7ba",
+  "model": "anthropic/claude-haiku-5.5",
+  "model_providers": [],
+  "remote_regions": [
+   "us"
+  ],
+  "salary_max_usd": 278000,
+  "salary_min_usd": 222400,
+  "seniority": "senior",
+  "stack": [],
+  "team": "Enterprise Core AI Products",
+  "visa_sponsorship": "unstated",
+  "work_type": "product",
+  "yoe_min": 5
+ },
+ "specialist-seller-enterprise-core-ai-products-samsara-6079": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "068a5926c980c0cc",
+  "model": "anthropic/claude-haiku-5.5",
+  "model_providers": [],
+  "remote_regions": [
+   "us"
+  ],
+  "salary_max_usd": 278000,
+  "salary_min_usd": 222400,
+  "seniority": "unknown",
+  "stack": [],
+  "team": "Enterprise Core AI Products",
+  "visa_sponsorship": "unstated",
+  "work_type": "product",
+  "yoe_min": 5
+ },
  "specialist-seller-enterprise-select-ai-products-samsara-6028": {
   "enriched_at": "2026-10-22T12:59:48.806645+00:00",
   "hash": "a802855de6ac30e0",
@@ -89343,6 +90357,24 @@
   "visa_sponsorship": "unstated",
   "work_type": "infra",
   "yoe_min": 8
+ },
+ "sr-staff-threat-intelligence-engineer-suno-6058": {
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "f8809bc3bfe088fe",
+  "model": "anthropic/claude-haiku-5.5",
+  "model_providers": [],
+  "remote_regions": [],
+  "salary_max_usd": 414855,
+  "salary_min_usd": 316080,
+  "seniority": "staff",
+  "stack": [
+   "Python",
+   "SGLang"
+  ],
+  "team": "Threat Intelligence",
+  "visa_sponsorship": "unstated",
+  "work_type": "evals",
+  "yoe_min": 10
  },
  "sr-systems-engineer-client-engineering-harvey-2764": {
   "enriched_at": "2026-10-12T23:55:02.671616+00:00",
@@ -90410,8 +91442,8 @@
   "yoe_min": 5
  },
  "staff-data-scientist-guest-host-airbnb-4833": {
-  "enriched_at": "2026-10-13T00:07:48.039548+00:00",
-  "hash": "1f6d196a1c7b835d",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "828e48252ebcd205",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [
@@ -90419,10 +91451,10 @@
   ],
   "salary_max_usd": 242000,
   "salary_min_usd": 200000,
-  "seniority": "staff",
+  "seniority": "senior",
   "stack": [
-   "SGLang",
-   "Spark"
+   "Postgres",
+   "Python"
   ],
   "team": "Guest and Host Data Science",
   "visa_sponsorship": "unstated",
@@ -90497,22 +91529,23 @@
   "yoe_min": 7
  },
  "staff-data-scientist-people-analytics-insights-robinhood-5312": {
-  "enriched_at": "2026-10-13T00:07:48.039548+00:00",
-  "hash": "7ebf3187455537cf",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "fa0d40a249876a7f",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
-  "salary_max_usd": null,
-  "salary_min_usd": null,
+  "salary_max_usd": 255000,
+  "salary_min_usd": 170000,
   "seniority": "staff",
   "stack": [
    "Python",
+   "SGLang",
    "Snowflake",
    "dbt"
   ],
   "team": "Talent Management & Analytics",
   "visa_sponsorship": "unstated",
-  "work_type": "data",
+  "work_type": "applied",
   "yoe_min": 7
  },
  "staff-data-scientist-risk-ml-mercury-5232": {
@@ -100459,8 +101492,8 @@
   "yoe_min": 10
  },
  "systems-engineering-manager-modal-4351": {
-  "enriched_at": "2026-10-13T00:07:48.039548+00:00",
-  "hash": "c37fb13cf3f20ddb",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "c12974981b2dc909",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
@@ -100468,22 +101501,20 @@
   "salary_min_usd": null,
   "seniority": "manager",
   "stack": [
-   "AWS",
-   "Azure",
    "C++",
-   "GCP",
    "Java",
    "Kubernetes",
+   "Python",
    "Rust"
   ],
-  "team": "serverless GPU platform",
+  "team": "cloud platform engineering",
   "visa_sponsorship": "unstated",
   "work_type": "infra",
   "yoe_min": 10
  },
  "systems-engineering-manager-modal-4353": {
-  "enriched_at": "2026-10-13T00:07:48.039548+00:00",
-  "hash": "ccc36f1f41e16082",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "625c0d72e0ffe653",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
@@ -100496,7 +101527,7 @@
    "Kubernetes",
    "Rust"
   ],
-  "team": "Systems Engineering",
+  "team": null,
   "visa_sponsorship": "unstated",
   "work_type": "infra",
   "yoe_min": 10
@@ -102435,13 +103466,13 @@
   "yoe_min": null
  },
  "warfighter-research-systems-analyst-anduril-3426": {
-  "enriched_at": "2026-10-12T23:55:02.671616+00:00",
-  "hash": "8c5e920c20f32b7d",
+  "enriched_at": "2026-10-23T12:39:18.228868+00:00",
+  "hash": "ac6919e7529fd061",
   "model": "anthropic/claude-haiku-5.5",
   "model_providers": [],
   "remote_regions": [],
-  "salary_max_usd": 194000,
-  "salary_min_usd": 146000,
+  "salary_max_usd": 196000,
+  "salary_min_usd": 147000,
   "seniority": "unknown",
   "stack": [
    "AWS",
