@@ -64,11 +64,11 @@ export function PageHeading({
   );
 }
 
-/** Small caps label that introduces a list or section. */
+/** Small caps label that introduces a list or section; an h2 so AI crawlers get a real outline. */
 export function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
-    <p className="mb-4 font-heading text-xs font-medium uppercase tracking-[0.12em] text-muted-foreground">
+    <h2 className="mb-4 font-heading text-xs font-medium uppercase tracking-[0.12em] text-muted-foreground">
       {children}
-    </p>
+    </h2>
   );
 }

@@ -72,6 +72,8 @@ export default function RootLayout({
     >
       <body className="flex min-h-full flex-col bg-background text-foreground">
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd) }} />
+        {/* React hoists this into <head>; set here because page-level `alternates` would replace a metadata version. */}
+        <link rel="alternate" type="application/rss+xml" title="Artificial Jobs blog" href="/blog/feed.xml" />
         {children}
         <Analytics />
       </body>

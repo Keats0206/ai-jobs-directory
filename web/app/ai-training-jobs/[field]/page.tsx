@@ -99,6 +99,7 @@ export default async function TrainingFieldPage({ params }: { params: Promise<{ 
         </Container>
 
         <Container className="pb-24">
+          <SectionLabel>{`All ${field.jobs.length} ${field.jobs.length === 1 ? 'role' : 'roles'}, ranked by pay`}</SectionLabel>
           <RoleList jobs={field.jobs} ranked showField={false} />
         </Container>
 

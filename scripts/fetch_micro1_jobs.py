@@ -225,6 +225,18 @@ def enrich(merged, now):
     return dict(details_fetched=fetched, details_failed=failed)
 
 
+SALARY_RE = re.compile(r'base salary of \$\s?([\d,]{5,9})\s*(?:[-\u2013\u2014]|to)\s*\$\s?([\d,]{5,9})', re.I)
+
+
+def apply_stated_salary(job):
+    """micro1's own full-time roles put placeholder numbers in the hourly field; the description states the real salary."""
+    match = SALARY_RE.search(job.get('description') or '')
+    if not match: return False
+    low, high = (int(value.replace(',', '')) for value in match.groups())
+    job.update(salary_min=low, salary_max=high, hourly_min=None, hourly_max=None, job_type='Full-time')
+    return True
+
+
 def merge(existing, records, now):
     merged = [dict(job) for job in existing]
     by_id = {job['source_job_id']: i for i, job in enumerate(merged)
@@ -275,6 +287,7 @@ def main():
         print(json.dumps(fetch_details(records[0]['source_job_id']), indent=2)[:1500])
         return
     counts.update(enrich(merged, now))
+    counts['salaried'] = sum(apply_stated_salary(job) for job in merged if job.get('source_board') == SOURCE_BOARD)
     print(f'micro1: {len(raw_jobs)} fetched, {len(records)} usable', json.dumps(counts))
     temporary = JOBS_JSON.with_suffix('.tmp')
     temporary.write_text(json.dumps(merged, indent=2, ensure_ascii=False) + '\n')

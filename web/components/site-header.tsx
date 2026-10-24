@@ -4,6 +4,7 @@ const NAV = [
   { href: '/#fields', label: 'Fields' },
   { href: '/#top-roles', label: 'Top paying' },
   { href: '/sell-company-data', label: 'Sell company data' },
+  { href: '/blog', label: 'Guides' },
 ];
 
 export function SiteHeader({ action }: { action?: React.ReactNode }) {

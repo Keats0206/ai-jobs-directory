@@ -80,9 +80,9 @@ export function RoleRow({ job, rank, showField = true }: { job: Job; rank?: numb
           {job.high_demand && <span className="rounded-sm bg-accent px-1.5 py-0.5 font-medium text-accent-foreground">High demand</span>}
           {job.openings && job.openings > 1 ? <span>{job.openings} openings</span> : null}
         </div>
-        <Link href={`/jobs/${job.slug}`} className="font-heading mt-1 block text-lg font-medium leading-snug tracking-tight hover:underline">
-          {job.title}
-        </Link>
+        <h3 className="font-heading mt-1 text-lg font-medium leading-snug tracking-tight">
+          <Link href={`/jobs/${job.slug}`} className="hover:underline">{job.title}</Link>
+        </h3>
         {skills.length > 0 && <p className="mt-0.5 truncate text-sm text-muted-foreground">{skills.join(' · ')}</p>}
       </div>
       <div>

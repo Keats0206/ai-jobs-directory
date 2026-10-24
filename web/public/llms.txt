@@ -30,3 +30,10 @@
 - [AI training jobs: Retail & Hospitality](https://www.artificialjobs.dev/ai-training-jobs/retail-hospitality): 2 open roles
 - [AI training jobs: Education](https://www.artificialjobs.dev/ai-training-jobs/education): 2 open roles
 - [AI training jobs: Cybersecurity](https://www.artificialjobs.dev/ai-training-jobs/cybersecurity): 1 open roles
+
+## Guides
+
+- [How Much Do AI Training Jobs Pay? Real Rates From Every Open Listing](https://www.artificialjobs.dev/blog/how-much-do-ai-training-jobs-pay): Median and top hourly rates for AI training jobs by field, from every open micro1 listing, refreshed daily.
+- [AI Training Jobs for Lawyers: What the Work Is and What It Pays](https://www.artificialjobs.dev/blog/ai-training-jobs-for-lawyers): What AI training work for attorneys involves, which practice areas are hiring, and what it pays, from live micro1 listings.
+- [AI Training Jobs With No Experience: What’s Actually Open](https://www.artificialjobs.dev/blog/ai-training-jobs-no-experience): The generalist and language AI training roles you can get without professional credentials, what they pay, and how to avoid scams.
+- [How to Sell Your Company’s Data to AI Labs](https://www.artificialjobs.dev/blog/how-to-sell-company-data-to-ai-labs): What AI labs buy, what micro1 ($100K–$2M+) and Mercor (up to $1.5M) pay companies, how the process works and what to check before you sell.

@@ -28,7 +28,7 @@ export function FaqSection({ faqs }: { faqs: FaqItem[] }) {
       <dl className="mt-4 space-y-6">
         {faqs.map((faq) => (
           <div key={faq.question}>
-            <dt className="font-medium text-foreground">{faq.question}</dt>
+            <dt><h3 className="font-medium text-foreground">{faq.question}</h3></dt>
             <dd className="mt-2 text-sm leading-relaxed text-muted-foreground">{faq.answer}</dd>
           </div>
         ))}

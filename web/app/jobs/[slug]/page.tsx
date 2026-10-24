@@ -73,6 +73,12 @@ export default async function JobPage({ params }: { params: Promise<{ slug: stri
       currency: 'USD',
       value: { '@type': 'QuantitativeValue', minValue: job.hourly_min || job.hourly_max, maxValue: job.hourly_max, unitText: 'HOUR' },
     };
+  } else if (job.salary_max) {
+    jsonLd.baseSalary = {
+      '@type': 'MonetaryAmount',
+      currency: 'USD',
+      value: { '@type': 'QuantitativeValue', minValue: job.salary_min || job.salary_max, maxValue: job.salary_max, unitText: 'YEAR' },
+    };
   }
   // Google rejects a JobPosting with neither a location nor a remote flag, and micro1 rarely gives one.
   const emitJsonLd = Boolean(job.is_remote);

@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next';
 import { trainingJobs, type Job } from '@/lib/jobs';
 import { getTrainingFields, getTrainingCollections } from '@/lib/training-jobs';
+import { posts, dataUpdated } from '@/lib/blog';
 
 // Real data dates, not build time: freshness is a ranking and citation signal.
 function latest(list: Job[]): Date | undefined {
@@ -15,6 +16,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/sell-company-data`, changeFrequency: 'weekly', priority: 0.9 },
     { url: `${base}/about`, changeFrequency: 'monthly', priority: 0.5 },
     { url: `${base}/micro1`, lastModified: latest(trainingJobs), changeFrequency: 'daily', priority: 0.9 },
+    { url: `${base}/blog`, lastModified: new Date(dataUpdated()), changeFrequency: 'weekly', priority: 0.8 },
+    ...posts.map(post => ({ url: `${base}/blog/${post.slug}`, lastModified: new Date(dataUpdated()), changeFrequency: 'weekly' as const, priority: 0.8 })),
     ...[...getTrainingFields(), ...getTrainingCollections()].map(field => ({
       url: `${base}/ai-training-jobs/${field.slug}`,
       lastModified: latest(field.jobs),
