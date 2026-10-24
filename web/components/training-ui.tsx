@@ -50,6 +50,21 @@ export function FieldTile({ field }: { field: TrainingField }) {
   );
 }
 
+/** Pill links to the cross-field credential pages ("AI training jobs for PhDs"). */
+export function CollectionLinks({ collections }: { collections: TrainingField[] }) {
+  if (!collections.length) return null;
+  return (
+    <div className="mt-6 flex flex-wrap items-center justify-center gap-2 text-sm">
+      <span className="mr-1 text-muted-foreground">By credential:</span>
+      {collections.map((c) => (
+        <Link key={c.slug} href={`/ai-training-jobs/${c.slug}`} className="rounded-full border border-border px-3 py-1 transition-colors hover:bg-card">
+          {`For ${c.audience}`} <span className="tabular-nums text-muted-foreground">{c.jobs.length}</span>
+        </Link>
+      ))}
+    </div>
+  );
+}
+
 /** One comparison row: what it is, what it pays, and a direct apply button. */
 export function RoleRow({ job, rank, showField = true }: { job: Job; rank?: number; showField?: boolean }) {
   const pay = formatPay(job);
@@ -75,9 +90,9 @@ export function RoleRow({ job, rank, showField = true }: { job: Job; rank?: numb
         <p className="text-xs text-muted-foreground">{pay ? (job.hourly_max ? 'hourly pay' : 'annual pay') : 'pay on application'}</p>
       </div>
       <ApplyButton
-        jobId={job.slug || ''}
-        company={job.company}
         applyUrl={job.apply_url}
+        field={job.field}
+        placement="row"
         sponsored
         className="btn-money h-10 rounded-full px-5 text-sm font-medium"
       >

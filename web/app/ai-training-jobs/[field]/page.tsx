@@ -1,15 +1,15 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { getTrainingFields, getTrainingField, hourlyMax, REFERRAL_DISCLOSURE } from '@/lib/training-jobs';
+import { getTrainingFields, getTrainingCollections, getTrainingField, hourlyMax, REFERRAL_DISCLOSURE } from '@/lib/training-jobs';
 import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
 import { Container, SectionLabel } from '@/components/page-shell';
-import { DisclosureBar, Headline, StatRow, FieldTile, RoleList } from '@/components/training-ui';
+import { DisclosureBar, Headline, StatRow, FieldTile, RoleList, CollectionLinks } from '@/components/training-ui';
 import { FaqSection } from '@/components/faq-section';
 
 export function generateStaticParams() {
-  return getTrainingFields().map((field) => ({ field: field.slug }));
+  return [...getTrainingFields(), ...getTrainingCollections()].map((field) => ({ field: field.slug }));
 }
 
 const capitalize = (text: string) => text[0].toUpperCase() + text.slice(1);
@@ -34,6 +34,28 @@ export default async function TrainingFieldPage({ params }: { params: Promise<{ 
   const median = rates.length ? rates[Math.floor(rates.length / 2)] : 0;
   const highDemand = field.jobs.filter((job) => job.high_demand).length;
   const others = getTrainingFields().filter((other) => other.slug !== field.slug);
+  const collections = getTrainingCollections().filter((other) => other.slug !== field.slug);
+
+  const remote = field.jobs.filter((job) => job.is_remote).length;
+  const topJob = field.jobs[0];
+  // A self-contained, stat-backed answer AI engines can quote without the surrounding cards.
+  const summary = [
+    `As of ${monthYear()}, there are ${field.jobs.length} open AI training ${field.jobs.length === 1 ? 'job' : 'jobs'} for ${field.audience} listed on micro1.`,
+    rates.length > 1 && `Top-of-range pay runs from $${rates[0]} to $${field.topRate}/hr, with a median of $${median}/hr.`,
+    topJob && topJob.hourly_max && `The best-paying role right now is ${topJob.title} at up to $${Math.round(topJob.hourly_max)}/hr.`,
+    remote && `${remote === field.jobs.length ? 'All' : remote} of these roles are remote, and ${highDemand} ${highDemand === 1 ? 'is' : 'are'} marked high demand.`,
+    `The work is flexible hourly contracting: you use your professional expertise to write, review and grade the examples AI models learn from.`,
+    `Listings are refreshed daily from micro1, so closed roles drop off within a day.`,
+  ].filter(Boolean).join(' ');
+
+  const breadcrumbLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'AI training jobs', item: 'https://www.artificialjobs.dev/' },
+      { '@type': 'ListItem', position: 2, name: field.label },
+    ],
+  };
 
   const faqs = [
     {
@@ -43,13 +65,14 @@ export default async function TrainingFieldPage({ params }: { params: Promise<{ 
         : `Pay is shared during the application for these ${field.label} roles.`,
     },
     {
-      question: `What does an AI training job in ${field.label} involve?`,
-      answer: `You use your ${field.label.toLowerCase()} expertise to write, review and grade the examples AI models learn from: checking reasoning, correcting answers and flagging errors a non-expert would miss.`,
+      question: `What does an AI training job for ${field.audience} involve?`,
+      answer: `You use your professional expertise to write, review and grade the examples AI models learn from: checking reasoning, correcting answers and flagging errors a non-expert would miss.`,
     },
   ];
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       <SiteHeader />
       <DisclosureBar>{REFERRAL_DISCLOSURE}</DisclosureBar>
       <main className="flex-1">
@@ -72,6 +95,7 @@ export default async function TrainingFieldPage({ params }: { params: Promise<{ 
               [String(highDemand), 'High demand'],
             ]} />
           </div>
+          <p className="mt-10 max-w-3xl text-[17px] leading-relaxed text-muted-foreground">{summary}</p>
         </Container>
 
         <Container className="pb-24">
@@ -83,6 +107,7 @@ export default async function TrainingFieldPage({ params }: { params: Promise<{ 
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
             {others.map((other) => <FieldTile key={other.slug} field={other} />)}
           </div>
+          {collections.length > 0 && <CollectionLinks collections={collections} />}
         </Container>
 
         <Container className="pb-24">

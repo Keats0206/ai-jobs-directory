@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { trainingJobs } from '@/lib/jobs';
-import { getTrainingFields, trainingStats, byPay, REFERRAL_DISCLOSURE } from '@/lib/training-jobs';
+import { getTrainingFields, getTrainingCollections, trainingStats, byPay, REFERRAL_DISCLOSURE } from '@/lib/training-jobs';
 import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
 import { Container } from '@/components/page-shell';
-import { DisclosureBar, Headline, StatRow, FieldTile, RoleList } from '@/components/training-ui';
+import { DisclosureBar, Headline, StatRow, FieldTile, RoleList, CollectionLinks } from '@/components/training-ui';
 import { FaqSection } from '@/components/faq-section';
 
 export function generateMetadata(): Metadata {
@@ -87,6 +87,7 @@ export default function Home() {
             <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
               {fields.map((field) => <FieldTile key={field.slug} field={field} />)}
             </div>
+            <CollectionLinks collections={getTrainingCollections()} />
           </section>
         </Container>
 

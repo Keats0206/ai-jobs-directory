@@ -10,6 +10,7 @@ jobs), so filled listings drop off the site on the next deploy.
 Usage: MICRO1_REFERRAL_CODE=<uuid> python3 scripts/fetch_micro1_jobs.py [--dry-run]
 """
 import argparse
+import html
 import json
 import os
 import re
@@ -149,6 +150,81 @@ def normalize_partnership(raw, code, now):
                 date_posted=raw.get('date_posted'), last_verified=now)
 
 
+POST_URL = 'https://jobs.micro1.ai/post/{}'
+DETAILS_FIELDS = ('description', 'location', 'is_remote', 'applicant_countries', 'details_fetched_at')
+DETAILS_MAX_AGE_DAYS = 7
+DETAILS_PER_RUN = 400
+
+
+def fetch_text(url):
+    request = urllib.request.Request(url, headers={'User-Agent': 'ArtificialJobs/1.0 (+https://www.artificialjobs.dev)'})
+    with urllib.request.urlopen(request, timeout=30, context=SSL) as response:
+        return response.read().decode('utf-8', 'ignore')
+
+
+def flight_chunk(page, ref):
+    """Resolve a "$<ref>" text chunk from a Next.js RSC flight payload."""
+    flight = ''.join(json.loads('"' + m + '"') for m in re.findall(r'self\.__next_f\.push\(\[1,"((?:[^"\\]|\\.)*)"\]\)', page))
+    data = flight.encode('utf-8')
+    match = re.search((re.escape(ref) + r':T([0-9a-f]+),').encode(), data)
+    if not match: return None
+    return data[match.end():match.end() + int(match.group(1), 16)].decode('utf-8', 'ignore')
+
+
+def html_to_markdown(fragment):
+    """micro1 descriptions are Quill HTML: paragraphs, bold labels and bullet lists."""
+    text = re.sub(r'<span class="ql-ui"[^>]*></span>', '', fragment)
+    text = re.sub(r'<p><br\s*/?></p>', '\n', text)
+    text = re.sub(r'<li[^>]*>', '\n- ', text)
+    text = re.sub(r'</?(?:ol|ul)[^>]*>', '\n', text)
+    text = re.sub(r'<p[^>]*><strong>([^<]{2,80}?)</strong></p>', r'\n## \1\n', text)
+    text = re.sub(r'</?strong>', '**', text)
+    text = re.sub(r'<br\s*/?>|</p>', '\n', text)
+    text = re.sub(r'<[^>]+>', '', html.unescape(text))
+    text = re.sub(r'\*\*\s*\*\*', '', text)
+    text = re.sub(r'\*\*([^*\n]+?)[ \t]+\*\*', r'**\1** ', text)  # bold must not end in a space
+    text = re.sub(r'^\*\*Role Title:\*\*.*$', '', text, flags=re.M)  # repeats the page title
+    return re.sub(r'\n{3,}', '\n\n', text).strip()
+
+
+def fetch_details(job_id):
+    """Full description, location and remote status from the public job page, which the referral feed omits."""
+    page = fetch_text(POST_URL.format(job_id))
+    ld_text = flight_chunk(page, '14')
+    ld = json.loads(ld_text) if ld_text else {}
+    body = ld.get('description') or ''
+    if not body:
+        ref = re.search(r'"job_description":"\$(\w+)"', page.replace('\\"', '"'))
+        body = (ref and flight_chunk(page, ref.group(1))) or ''
+    if not body: return None
+    location = re.search(r'<strong>Location:\s*</strong>\s*([^<]+)', body)
+    countries = [c.get('name') for c in ld.get('applicantLocationRequirements') or [] if isinstance(c, dict) and c.get('name')]
+    return dict(description=html_to_markdown(body), location=html.unescape(location.group(1)).strip() if location else None,
+                is_remote=ld.get('jobLocationType') == 'TELECOMMUTE' or bool(location and 'remote' in location.group(1).lower()),
+                applicant_countries=countries)
+
+
+def enrich(merged, now):
+    """Fetch details for open roles that have none or stale ones; keep the summary description on failure."""
+    cutoff = datetime.now(timezone.utc).timestamp() - DETAILS_MAX_AGE_DAYS * 86400
+    stale = [job for job in merged if job.get('source_board') == SOURCE_BOARD and job.get('status') == 'active'
+             and datetime.fromisoformat(job.get('details_fetched_at') or '1970-01-01T00:00:00+00:00').timestamp() < cutoff]
+    fetched = failed = 0
+    for job in stale[:DETAILS_PER_RUN]:
+        try:
+            details = fetch_details(job['source_job_id'])
+        except Exception:
+            details = None
+        if details:
+            job.update({k: v for k, v in details.items() if v is not None}, details_fetched_at=now)
+            if job.get('is_remote') and job.get('location') in (None, 'Not specified'): job['location'] = 'Remote'
+            fetched += 1
+        else:
+            failed += 1
+        time.sleep(0.5)
+    return dict(details_fetched=fetched, details_failed=failed)
+
+
 def merge(existing, records, now):
     merged = [dict(job) for job in existing]
     by_id = {job['source_job_id']: i for i, job in enumerate(merged)
@@ -161,6 +237,9 @@ def merge(existing, records, now):
         if key in by_id:
             old = merged[by_id[key]]
             record['slug'], record['first_seen'] = old['slug'], old.get('first_seen') or now
+            # Details come from the job page, not the feed; keep them until they are refreshed.
+            if old.get('details_fetched_at'):
+                record.update({k: old[k] for k in DETAILS_FIELDS if k in old})
             merged[by_id[key]] = record
             updated += 1
         else:
@@ -191,10 +270,12 @@ def main():
     records = [record for raw in raw_jobs if (record := normalize(raw, code, now))]
     records.sort(key=lambda job: job['source_job_id'])
     merged, counts = merge(json.loads(JOBS_JSON.read_text()), records, now)
-    print(f'micro1: {len(raw_jobs)} fetched, {len(records)} usable', json.dumps(counts))
     if args.dry_run:
-        print(json.dumps(records[:2], indent=2))
+        print(f'micro1: {len(raw_jobs)} fetched, {len(records)} usable', json.dumps(counts))
+        print(json.dumps(fetch_details(records[0]['source_job_id']), indent=2)[:1500])
         return
+    counts.update(enrich(merged, now))
+    print(f'micro1: {len(raw_jobs)} fetched, {len(records)} usable', json.dumps(counts))
     temporary = JOBS_JSON.with_suffix('.tmp')
     temporary.write_text(json.dumps(merged, indent=2, ensure_ascii=False) + '\n')
     temporary.replace(JOBS_JSON)

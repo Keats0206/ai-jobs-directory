@@ -60,8 +60,36 @@ export function getTrainingFields(): TrainingField[] {
   })).sort((a, b) => b.jobs.length - a.jobs.length);
 }
 
+/**
+ * Credential and profession pages that cut across micro1 fields, matched on title and skills.
+ * Each targets an "AI training jobs for {audience}" search and is published only when it has
+ * enough roles to be worth landing on.
+ */
+const COLLECTIONS: { slug: string; label: string; audience: string; match: RegExp }[] = [
+  { slug: 'phds', label: 'PhD', audience: 'PhDs', match: /\bph\.?d\b|doctoral|postdoc/i },
+  { slug: 'physicians', label: 'Physician', audience: 'physicians', match: /physician|hospitalist|surgeon|psychiatrist|radiologist|cardiologist|dermatologist|oncologist|\bM\.?D\.?\b/i },
+  { slug: 'nurses', label: 'Nursing', audience: 'nurses', match: /\bnurs|\bRN\b|\bBSN\b/i },
+  { slug: 'pharmacists', label: 'Pharmacy', audience: 'pharmacists', match: /pharmac/i },
+  { slug: 'dentists', label: 'Dental', audience: 'dentists', match: /dentist|dental/i },
+  { slug: 'teachers', label: 'Teaching', audience: 'teachers', match: /teacher|educator|tutor|curriculum/i },
+  { slug: 'accountants', label: 'Accounting', audience: 'accountants', match: /accountant|\bCPA\b|auditor|\btax\b/i },
+  { slug: 'chemists', label: 'Chemistry', audience: 'chemists', match: /chemist|chemistry/i },
+  { slug: 'physicists', label: 'Physics', audience: 'physicists', match: /physics|physicist/i },
+  { slug: 'biologists', label: 'Biology', audience: 'biologists', match: /biolog|bioinformatic/i },
+  { slug: 'mathematicians', label: 'Math', audience: 'mathematicians', match: /\bmath/i },
+  { slug: 'bilingual', label: 'Bilingual', audience: 'bilingual speakers', match: /bilingual|native|fluent|speaking|transcription|translat/i },
+];
+export const MIN_COLLECTION_ROLES = 5;
+
+export function getTrainingCollections(): TrainingField[] {
+  return COLLECTIONS.map(({ match, ...collection }) => {
+    const jobs = trainingJobs.filter(job => match.test(`${job.title} ${(job.skills || []).join(' ')}`)).sort(byPay);
+    return { ...collection, jobs, topRate: Math.max(0, ...jobs.map(hourlyMax)) };
+  }).filter(collection => collection.jobs.length >= MIN_COLLECTION_ROLES);
+}
+
 export function getTrainingField(slug: string): TrainingField | undefined {
-  return getTrainingFields().find(field => field.slug === slug);
+  return [...getTrainingFields(), ...getTrainingCollections()].find(field => field.slug === slug);
 }
 
 export function trainingStats() {

@@ -11,7 +11,9 @@ export function SiteFooter() {
         </p>
         <nav className="flex flex-wrap items-center gap-x-4 gap-y-2 sm:justify-end">
           <Link href="/" className="transition-colors hover:text-foreground">AI Training Jobs</Link>
+          <Link href="/micro1" className="transition-colors hover:text-foreground">micro1 Review</Link>
           <Link href="/sell-company-data" className="transition-colors hover:text-foreground">Sell Company Data</Link>
+          <Link href="/about" className="transition-colors hover:text-foreground">About</Link>
           <a href="/llms.txt" className="transition-colors hover:text-foreground">llms.txt</a>
         </nav>
       </div>

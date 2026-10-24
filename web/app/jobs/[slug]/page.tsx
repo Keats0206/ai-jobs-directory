@@ -48,20 +48,25 @@ export default async function JobPage({ params }: { params: Promise<{ slug: stri
   const related = trainingJobs.filter((j) => j !== job && j.field === job.field).sort(byPay).slice(0, 5);
   const posted = timeAgo(job.date_posted || job.first_seen);
   const verified = timeAgo(job.last_verified);
-  const applyProps = { jobId: job.slug || '', company: job.company, applyUrl: job.apply_url, sponsored: true };
+  const applyProps = { applyUrl: job.apply_url, field: job.field, sponsored: true };
 
   const jsonLd: Record<string, unknown> = {
     '@context': 'https://schema.org',
     '@type': 'JobPosting',
     title: job.title,
-    hiringOrganization: { '@type': 'Organization', name: job.company },
-    url: job.apply_url,
+    hiringOrganization: { '@type': 'Organization', name: job.company, sameAs: 'https://micro1.ai' },
+    identifier: { '@type': 'PropertyValue', name: job.company, value: job.source_job_id },
+    url: `https://www.artificialjobs.dev/jobs/${job.slug}`,
+    directApply: false,
     description: job.description,
     datePosted: datePosted(job),
     validThrough: validThrough(job),
     employmentType: employmentType(job),
   };
   if (job.is_remote) jsonLd.jobLocationType = 'TELECOMMUTE';
+  if (job.is_remote && job.applicant_countries?.length) {
+    jsonLd.applicantLocationRequirements = job.applicant_countries.map((name) => ({ '@type': 'Country', name }));
+  }
   if (job.hourly_max) {
     jsonLd.baseSalary = {
       '@type': 'MonetaryAmount',
@@ -71,6 +76,15 @@ export default async function JobPage({ params }: { params: Promise<{ slug: stri
   }
   // Google rejects a JobPosting with neither a location nor a remote flag, and micro1 rarely gives one.
   const emitJsonLd = Boolean(job.is_remote);
+  const breadcrumbLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'AI training jobs', item: 'https://www.artificialjobs.dev/' },
+      { '@type': 'ListItem', position: 2, name: job.field_label || 'Specialist', item: `https://www.artificialjobs.dev${fieldHref}` },
+      { '@type': 'ListItem', position: 3, name: job.title },
+    ],
+  };
 
   const facts: [string, string | null][] = [
     ['Pay', pay],
@@ -83,7 +97,8 @@ export default async function JobPage({ params }: { params: Promise<{ slug: stri
   return (
     <>
       {emitJsonLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />}
-      <SiteHeader action={<ApplyButton {...applyProps} className="btn-money h-8 rounded-full px-4 text-xs font-medium">Apply</ApplyButton>} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
+      <SiteHeader action={<ApplyButton {...applyProps} placement="header" className="btn-money h-8 rounded-full px-4 text-xs font-medium">Apply</ApplyButton>} />
       <DisclosureBar>{REFERRAL_DISCLOSURE}</DisclosureBar>
 
       <main className="flex-1">
@@ -127,7 +142,7 @@ export default async function JobPage({ params }: { params: Promise<{ slug: stri
                     </div>
                   ))}
                 </dl>
-                <ApplyButton {...applyProps} className="btn-money mt-6 h-11 w-full rounded-full text-sm font-medium">Apply on micro1</ApplyButton>
+                <ApplyButton {...applyProps} placement="sidebar" className="btn-money mt-6 h-11 w-full rounded-full text-sm font-medium">Apply on micro1</ApplyButton>
                 <p className="mt-3 text-center text-xs text-muted-foreground">Free to apply · short AI interview{verified ? ` · checked ${verified}` : ''}</p>
               </div>
             </aside>

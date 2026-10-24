@@ -1,11 +1,14 @@
 'use client';
 
+import { track } from '@vercel/analytics';
 import { cn } from '@/lib/utils';
 
 interface ApplyButtonProps {
-  jobId: string;
-  company: string;
   applyUrl: string;
+  /** Reported with the click so conversions can be split by profession. */
+  field?: string;
+  /** Where on the page the button sits, e.g. "row", "sidebar", "header". */
+  placement: string;
   className?: string;
   children?: React.ReactNode;
   /** Referral links must be marked sponsored for search engines. */
@@ -13,38 +16,19 @@ interface ApplyButtonProps {
 }
 
 export default function ApplyButton({
-  jobId,
-  company,
   applyUrl,
+  field = 'unknown',
+  placement,
   className,
   children = 'Apply now',
   sponsored = false,
 }: ApplyButtonProps) {
-  const handleClick = () => {
-    try {
-      const payload = JSON.stringify({ jobId, company, url: applyUrl });
-      if (typeof navigator !== 'undefined' && navigator.sendBeacon) {
-        const blob = new Blob([payload], { type: 'application/json' });
-        navigator.sendBeacon('/api/track-click', blob);
-      } else {
-        fetch('/api/track-click', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: payload,
-          keepalive: true,
-        }).catch(() => {});
-      }
-    } catch (err) {
-      console.error('Click tracking error:', err);
-    }
-  };
-
   return (
     <a
       href={applyUrl}
       target="_blank"
       rel={sponsored ? 'sponsored noopener noreferrer' : 'noopener noreferrer'}
-      onClick={handleClick}
+      onClick={() => track('apply_click', { field, placement })}
       className={cn(
         'inline-flex shrink-0 items-center justify-center rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/85',
         className

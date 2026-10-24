@@ -17,6 +17,7 @@ export interface Job {
   status?: string;
   source?: string;
   source_board?: string;
+  source_job_id?: string;
   source_verified?: boolean;
   last_verified?: string;
   first_seen?: string;
@@ -30,6 +31,8 @@ export interface Job {
   field?: string;
   field_label?: string;
   skills?: string[];
+  /** Countries micro1 accepts applicants from, read from its job page. */
+  applicant_countries?: string[];
   high_demand?: boolean;
   openings?: number | null;
   facts?: JobFacts;

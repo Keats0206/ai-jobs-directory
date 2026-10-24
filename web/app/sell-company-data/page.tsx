@@ -1,15 +1,18 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { partnerships, COMPANY_PAYOUT, isDefunct, DATA_DISCLOSURE } from '@/lib/data-partnerships';
+import { partnerships, COMPANY_PAYOUT, isDefunct, DATA_DISCLOSURE, MERCOR_REFERRAL_CODE, MERCOR_APPLY_URL, MERCOR_TOP_PAYOUT, MERCOR_WANTED } from '@/lib/data-partnerships';
 import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
 import { Container, SectionLabel } from '@/components/page-shell';
 import { DisclosureBar, Headline, StatRow } from '@/components/training-ui';
 import { FaqSection } from '@/components/faq-section';
+import { PartnerLink } from '@/components/partner-link';
+import { CopyCode } from '@/components/copy-code';
+import { AnonymizationGraphic } from '@/components/anonymization-graphic';
 
 export const metadata: Metadata = {
   title: `Sell Your Company Data to AI Labs — ${COMPANY_PAYOUT} per Data Package`,
-  description: `AI labs pay for real operational data. Operating and defunct companies with 30+ employees can earn ${COMPANY_PAYOUT} for approved data packages through micro1's data partnerships.`,
+  description: `AI labs pay for real operational data. Operating and defunct companies with 30+ employees can earn ${COMPANY_PAYOUT} for approved data packages through micro1 and Mercor data partnerships.`,
   alternates: { canonical: '/sell-company-data' },
 };
 
@@ -48,6 +51,10 @@ export default function SellCompanyDataPage() {
       answer: `micro1 says approved data packages earn companies ${COMPANY_PAYOUT}. The price depends on what data you have and how much of it is approved.`,
     },
     {
+      question: 'Which companies is Mercor looking for?',
+      answer: `Mercor is currently buying data from construction, semiconductor and materials, digital health, manufacturing, law and cybersecurity companies, paying companies up to ${MERCOR_TOP_PAYOUT}. Apply at data.mercor.com and enter referral code ${MERCOR_REFERRAL_CODE}.`,
+    },
+    {
       question: 'Can a company that has shut down still sell its data?',
       answer: 'Yes. micro1 runs a separate partnership for defunct companies. Whoever controls the company’s assets now has to authorise the sale.',
     },
@@ -70,9 +77,9 @@ export default function SellCompanyDataPage() {
           />
           {primary && (
             <div className="mt-10 flex flex-wrap items-center gap-3">
-              <a href={primary.apply_url} target="_blank" rel="sponsored noopener noreferrer" className="btn-money inline-flex h-11 items-center rounded-full px-6 text-sm font-medium">
+              <PartnerLink href={primary.apply_url} program={isDefunct(primary) ? 'defunct' : 'enterprise'} placement="hero" className="btn-money inline-flex h-11 items-center rounded-full px-6 text-sm font-medium">
                 Check if your company qualifies
-              </a>
+              </PartnerLink>
               <a href="#programs" className="inline-flex h-11 items-center rounded-full border border-border px-6 text-sm font-medium transition-colors hover:bg-card">
                 Compare programs
               </a>
@@ -82,7 +89,7 @@ export default function SellCompanyDataPage() {
             <StatRow stats={[
               [COMPANY_PAYOUT, 'Per approved data package'],
               ['30+', 'Employees to qualify'],
-              [String(partnerships.length), 'Open programs'],
+              [String(partnerships.length + 1), 'Open programs'],
               ['Any', 'Industry'],
             ]} />
           </div>
@@ -113,16 +120,47 @@ export default function SellCompanyDataPage() {
                       <dd className="text-right">{deal.requirements.join(', ') || 'See program'}</dd>
                     </div>
                   </dl>
-                  <a
+                  <PartnerLink
                     href={deal.apply_url}
-                    target="_blank"
-                    rel="sponsored noopener noreferrer"
+                    program={isDefunct(deal) ? 'defunct' : 'enterprise'}
+                    placement="program_card"
                     className="btn-money mt-auto inline-flex h-11 items-center justify-center rounded-full px-6 text-sm font-medium"
                   >
                     {`Start a ${isDefunct(deal) ? 'defunct company' : 'company'} profile`}
-                  </a>
+                  </PartnerLink>
                 </article>
               ))}
+            </div>
+          </section>
+        </Container>
+
+        <Container className="pb-24">
+          <section id="mercor" className="scroll-mt-20">
+            <div className="mb-8 grid gap-6 lg:grid-cols-[2fr_1fr] lg:items-end">
+              <Headline as="h2" lead="Mercor is buying industry data." rest={`Up to ${MERCOR_TOP_PAYOUT} for the right company. These are the types it wants now.`} />
+              <div className="flex flex-col gap-3 lg:items-end">
+                <p className="text-sm text-muted-foreground">Enter this referral code when you apply</p>
+                <CopyCode code={MERCOR_REFERRAL_CODE} />
+              </div>
+            </div>
+            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {MERCOR_WANTED.map((item) => (
+                <article key={item.title} className="tile flex flex-col rounded-md p-6">
+                  <p className="text-sm text-muted-foreground">{item.sector} · {item.size}</p>
+                  <h3 className="font-heading mt-2 text-xl font-medium tracking-tight">{item.title}</h3>
+                  <p className="mb-6 mt-2 text-muted-foreground">{item.data}</p>
+                  <div className="mt-auto flex items-baseline justify-between gap-4 border-t border-border pt-4">
+                    <span className="text-sm text-muted-foreground">Company earns</span>
+                    <span className="font-heading text-lg font-medium tabular-nums">{item.earns}</span>
+                  </div>
+                </article>
+              ))}
+            </div>
+            <div className="mt-8 flex flex-wrap items-center gap-3">
+              <PartnerLink href={MERCOR_APPLY_URL} program="mercor" placement="mercor_section" className="btn-money inline-flex h-11 items-center rounded-full px-6 text-sm font-medium">
+                Apply with Mercor
+              </PartnerLink>
+              <p className="text-sm text-muted-foreground">Use code <span className="font-mono font-medium text-foreground">{MERCOR_REFERRAL_CODE}</span> on the application.</p>
             </div>
           </section>
         </Container>
@@ -150,6 +188,14 @@ export default function SellCompanyDataPage() {
               </li>
             ))}
           </ol>
+        </Container>
+
+        <Container className="pb-24">
+          <div className="mb-8">
+            <Headline as="h2" lead="Labs buy the work, not the people." rest="Names, contact details and other personal data are stripped out before anything is transferred." />
+          </div>
+          <AnonymizationGraphic />
+          <p className="mt-4 text-sm text-muted-foreground">Illustration with made-up details. Each program agrees the exact anonymisation steps with you before transfer.</p>
         </Container>
 
         <Container className="pb-24">

@@ -29,19 +29,35 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: "Artificial Jobs",
-    images: [
-      {
-        url: "/og.svg",
-        width: 1200,
-        height: 630,
-        alt: "Artificial Jobs — Get paid to train AI",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/og.svg"],
   },
+};
+
+const SITE_URL = "https://www.artificialjobs.dev";
+
+const siteJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": `${SITE_URL}/#organization`,
+      name: "Artificial Jobs",
+      url: SITE_URL,
+      logo: `${SITE_URL}/icon.png`,
+      description:
+        "Directory of paid AI training jobs for domain experts and data partnerships for companies, sourced from micro1.",
+      parentOrganization: { "@type": "Organization", name: "Keating Holdings", url: "https://keatingholdings.com" },
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${SITE_URL}/#website`,
+      name: "Artificial Jobs",
+      url: SITE_URL,
+      publisher: { "@id": `${SITE_URL}/#organization` },
+    },
+  ],
 };
 
 export default function RootLayout({
@@ -55,6 +71,7 @@ export default function RootLayout({
       className={`${display.variable} ${body.variable} ${mono.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-background text-foreground">
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd) }} />
         {children}
         <Analytics />
       </body>
