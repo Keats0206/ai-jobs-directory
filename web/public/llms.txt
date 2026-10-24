@@ -7,6 +7,7 @@
 - [AI training jobs](https://www.artificialjobs.dev/): all open roles, ranked by pay
 - [micro1 review](https://www.artificialjobs.dev/micro1): what micro1 pays by field (live data), how its AI interview works, and whether it is legit
 - [Sell company data](https://www.artificialjobs.dev/sell-company-data): micro1 data partnerships for operating and defunct companies ($100K–$2M+ per approved data package, per micro1)
+- [What is your company's data worth?](https://www.artificialjobs.dev/sell-company-data/what-is-it-worth): every publicly reported sale of company data to AI buyers ($10K startup archives to Google's $10M Spirit Airlines deal), what drives price, who buys, and a rough value estimator
 - [About](https://www.artificialjobs.dev/about): who runs Artificial Jobs, how listings are sourced from micro1 and ranked by pay, and how referral fees work
 
 ## Fields

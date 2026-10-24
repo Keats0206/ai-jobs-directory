@@ -48,7 +48,7 @@ export default function SellCompanyDataPage() {
     },
     {
       question: 'How much can a company earn?',
-      answer: `micro1 says approved data packages earn companies ${COMPANY_PAYOUT}. The price depends on what data you have and how much of it is approved.`,
+      answer: `micro1 says approved data packages earn companies ${COMPANY_PAYOUT}. Reported deals range from about $10,000 for a small startup archive to $10 million for Spirit Airlines’ data (Reuters, August 2026). The price depends on what data you have and how much of it is approved.`,
     },
     {
       question: 'Which companies is Mercor looking for?',
@@ -199,7 +199,19 @@ export default function SellCompanyDataPage() {
         </Container>
 
         <Container className="pb-24">
-          <div className="grid gap-10 border-t border-border pt-12 lg:grid-cols-[1fr_2fr]">
+          <Link href="/sell-company-data/what-is-it-worth" className="tile flex flex-col justify-between gap-6 rounded-md p-8 sm:flex-row sm:items-center">
+            <div>
+              <p className="text-sm text-muted-foreground">Every reported deal, from $10K startup archives to Google’s $10M Spirit Airlines purchase</p>
+              <p className="font-heading mt-1 text-2xl font-medium tracking-tight">
+                What is your company’s data worth? <span className="text-muted-foreground">Get a rough range in 30 seconds.</span>
+              </p>
+            </div>
+            <span className="shrink-0 text-sm font-medium">Estimate &rarr;</span>
+          </Link>
+        </Container>
+
+        <Container className="pb-24">
+          <div id="before-you-sell" className="grid scroll-mt-20 gap-10 border-t border-border pt-12 lg:grid-cols-[1fr_2fr]">
             <Headline as="h2" lead="Before you sell." rest="Do these first." />
             <ul className="divide-y divide-border border-y border-border">
               {CHECKLIST.map((item, i) => (

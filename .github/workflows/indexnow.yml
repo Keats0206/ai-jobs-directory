@@ -1,0 +1,16 @@
+name: Ping IndexNow
+# Vercel reports each deployment back to GitHub; ping after production goes live so crawlers fetch the new build.
+on:
+  deployment_status:
+  workflow_dispatch:
+jobs:
+  ping:
+    if: github.event_name == 'workflow_dispatch' || (github.event.deployment_status.state == 'success' && github.event.deployment.environment == 'Production')
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node scripts/indexnow.mjs

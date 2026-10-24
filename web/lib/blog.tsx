@@ -307,7 +307,8 @@ function DataBody() {
         <li><strong>Get legal review.</strong> Have counsel read the data agreement before you sign. This post is not legal advice.</li>
       </ul>
       <p>
-        Compare both programs side by side on <Link href="/sell-company-data" className="underline underline-offset-4">our sell company data page</Link>.
+        Compare both programs side by side on <Link href="/sell-company-data" className="underline underline-offset-4">our sell company data page</Link>, or see{' '}
+        <Link href="/sell-company-data/what-is-it-worth" className="underline underline-offset-4">every reported deal and a rough estimate of what your data is worth</Link>.
       </p>
       <SourceNote>
         Sources: micro1’s company data partnership listings (req.micro1.ai) and Mercor’s data referral page (data.mercor.com), October 2026. Links
