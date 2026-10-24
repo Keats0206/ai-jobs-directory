@@ -140,6 +140,10 @@ export default function Micro1Page() {
               </tbody>
             </table>
           </div>
+          <p className="mt-4 text-sm text-muted-foreground">
+            Live figures, updated daily. For a frozen, citable monthly snapshot with CSV, see the{' '}
+            <Link href="/pay-index" className="underline underline-offset-4">micro1 Pay Index</Link>.
+          </p>
         </Container>
 
         <Container className="pb-24">

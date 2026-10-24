@@ -140,7 +140,8 @@ function PayBody() {
       </ul>
       <p>
         Browse the <Link href="/" className="underline underline-offset-4">full list of open roles</Link>, ranked by pay, or see{' '}
-        <Link href="/micro1" className="underline underline-offset-4">our micro1 review</Link> for how the hiring process works.
+        <Link href="/micro1" className="underline underline-offset-4">our micro1 review</Link> for how the hiring process works. For a citable monthly
+        snapshot with a CSV download, see the <Link href="/pay-index" className="underline underline-offset-4">micro1 Pay Index</Link>.
       </p>
       <SourceNote>
         Source: every open listing in micro1’s referral job feed and its public job pages (jobs.micro1.ai), refreshed daily. Rates are the top of
