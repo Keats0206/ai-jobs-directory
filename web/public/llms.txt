@@ -1,248 +1,30 @@
-# AI Jobs Directory — 1133 AI & ML Engineering Jobs
-> Updated 2026-08-27. For humans: https://www.artificialjobs.dev
-> 590 remote roles | 738 companies
+# Artificial Jobs
 
-## Quick Links
-- [Home](https://www.artificialjobs.dev)
+> Paid AI training jobs for domain experts (lawyers, doctors, engineers, scientists, linguists) and data partnerships for companies, sourced from micro1 and refreshed daily. Apply links include our micro1 referral code.
 
-## Top-Paying AI Jobs
-- [Job Application for Performance Engineer at Anthropic](https://www.anthropic.com/careers/jobs/4020350008): San Francisco, CA | $280k – $850k | [Transformers]
-- [Perception / Computer Vision Software Engineer at Perception at Figure](https://boards.greenhouse.io/figureai/jobs/4007375006): San Francisco, CA | $200k – $400k | [CUDA, Computer Vision, Data Engineering]
-- [Principal ML Engineer @ Rebar at Rebar](https://jobs.ashbyhq.com/rebar/9939e1be-9d42-4cea-b17d-5dbebfade1f8): New York, NY | $220k – $350k | [Infrastructure, Computer Vision]
-- [Job Application for Principal AI Engineer at ALO](https://boards.greenhouse.io/aloyoga/jobs/5726560004?gh_jid=5726560004): On-site | $220k – $350k | [RAG, LangChain, Python]
-- [Job Application for Principal Data Scientist, ML Bots - Game Tech Group at Riot Games](https://boards.greenhouse.io/embed/job_app?token=7177099): On-site | $220k – $350k | [Agent, Rust]
-- [Principal Scientist, Machine Learning, Genomics at Flagship Pioneering](https://boards.greenhouse.io/flagshippioneeringinc/jobs/8229819002?gh_jid=8229819002): On-site | $220k – $350k | [LLM, AI]
-- [Machine Learning Principal Solutions Architect at Data Engineering and Data Analytics](https://boards.greenhouse.io/phdata/jobs/7390457): On-site | $220k – $350k | [Data Engineering]
-- [Job Application for Principal Engineer, Data & ML Infrastructure at Motional](https://boards.greenhouse.io/embed/job_app?token=6676461003): San Francisco, CA | $220k – $350k | [Infrastructure, Python, Data Engineering]
-- [Principal Software Engineer, B2B Engineering | OpenAI at OpenAI](https://openai.com/careers/principal-software-engineer-b2b-engineering-remote-us/): Remote | $220k – $350k | [RAG, Infrastructure]
-- [GenAI Principal Engineer at Remote | Wfh](https://wfh.hstn.me/job/genai-principal-engineer-remote): London, UK | $220k – $350k | [LLM, RAG, Agent]
-- [Remote Principal GenAI Data Engineer in Memphis at Zscaler, Inc.](https://talents.vaia.com/companies/zscaler-inc/memphis/remote-principal-genai-data-engineer-144116029/): San Francisco, CA | $220k – $350k | [LLM, RAG, Python]
-- [Principal Consultant, GenAI  | Lovelytics | 140k at 180k/year | Remote Arlington | June 2026](https://jobera.com/job/lovelytics-principal-consultant-genai-897101ab/): Remote | $220k – $350k | [LLM, RAG, LangChain]
-- [Lead Principal Agentic RAG Engineer – Python, Delhi | BestKaam at BestKaam](https://www.bestkaam.com/job/lead-principal-agentic-rag-engineer-python-ai-platforms-bridge-ai-delhi-4-8-years-710962): On-site | $220k – $350k | [LLM, RAG, Agent]
-- [Sr. Principal Data Scientist - Remote at UnitedHealth Group](https://careers.unitedhealthgroup.com/job/minnetonka/sr-principal-data-scientist-remote/34088/95426609072): Remote | $220k – $350k | [Data Engineering]
-- [Job Application for Principal Engineer - Prediction at Motional](https://boards.greenhouse.io/embed/job_app?for=motional&token=6521874003): San Francisco, CA | $220k – $350k | [CUDA, Agent, Python]
-- [Principal GenAI Engineer at Convo AI | Voice AI @ Weave](https://jobs.ashbyhq.com/Weave/e65e2365-1f1b-4c0b-8d27-cb7e0650a2ba): Remote | $220k – $350k | [Infrastructure, GenAI]
-- [Principal Data Scientist (AI) at REMOTE (US) Job Details | Hexagon](https://careers.hexagon.com/job/Houston-Principal-Data-Scientist-%28AI%29-REMOTE-%28US%29-TX-77086/1249157601/): San Francisco, CA | $220k – $350k | [LLM, AI]
-- [Principal Data Scientist | TradeStation Careers at TradeStation](https://careers.tradestation.com/positions/principal-data-scientist-3286): New York, NY | $220k – $350k | [RAG]
-- [Job Application for Principal Data Scientist at Gradient AI](https://job-boards.greenhouse.io/gradientai/jobs/7826362003): San Francisco, CA | $220k – $350k | [RAG, Python, Rust]
-- [Principal Research Data Scientist - Remote at UnitedHealth Group](https://careers.unitedhealthgroup.com/job/eden-prairie/principal-research-data-scientist-remote/34088/95338507728): San Francisco, CA | $220k – $350k | [Infrastructure]
+## Pages
 
-## LLM Jobs (606 roles)
-- [AI Engineer at Hatch](https://jobs.ashbyhq.com/hatch/302d3f5d-2d99-4962-8ce3-4480cd4330d5): Remote / USA | $160k – $240k
-- [AI Engineer at Reedsy](https://jobs.ashbyhq.com/reedsy/b043b550-02b7-416f-8969-5db8fd9dc8ee): Remote / USA | $160k – $240k
-- [Sr. Staff AI Engineer (Remote) @ Rula at Rula](https://jobs.ashbyhq.com/rula/f2424794-c819-4f53-a8af-83322e617acb): Remote / USA | $160k – $240k
-- [Senior AI Engineer @ DualEntry at Dualentry](https://jobs.ashbyhq.com/dualentry/7acbe603-8fbc-4249-942a-ee45eb273ea6): Remote / USA | $160k – $240k
-- [Staff AI Engineer at AI Platform @ ClickUp](https://jobs.ashbyhq.com/clickup/143d20ff-cc53-4dc0-bc8b-09a7c1bddf87?embed=js): Remote / USA | $160k – $240k
-- [Full Stack AI Engineer @ Infinity at Infinity Constellation](https://jobs.ashbyhq.com/infinity-constellation/30fac65e-bcd7-4ecc-9477-fc7c8c8a9f52): Remote / USA | $160k – $240k
-- [Lead AI Engineer @ Sierra Studio at Sierra Studio](https://jobs.ashbyhq.com/sierra-studio/81770149-3a94-4e22-8678-dac4a7a6d9ba): Remote / USA | $160k – $240k
-- [LLM Engineer III at LLC](https://boards.greenhouse.io/crunchyroll/jobs/7014513?gh_jid=7014513): Remote / USA | $160k – $240k
-- [Job Application for Mission Integration Engineer, Applied Computing (Starshield) at SpaceX](https://boards.greenhouse.io/spacex/jobs/8320099002?gh_jid=8320099002): Remote / USA | $160k – $240k
-- [Senior Machine Learning Engineer, Customer Support ... at Airbnb](https://boards.greenhouse.io/airbnb/jobs/7975743): Remote / USA | $160k – $240k
-- ... and 596 more → https://www.artificialjobs.dev/remote/llm
+- [AI training jobs](https://www.artificialjobs.dev/): all open roles, ranked by pay
+- [Sell company data](https://www.artificialjobs.dev/sell-company-data): micro1 data partnerships for operating and defunct companies ($100K–$2M+ per approved data package, per micro1)
 
-## RAG Jobs (512 roles)
-- [AI Engineer Backend (Remote at Quadrivia](https://jobs.ashbyhq.com/quadrivia/3b40be91-27fc-4148-a1a3-565d8211dd5c): Remote / USA | $160k – $240k
-- [Full Stack AI Engineer @ Infinity at Infinity Constellation](https://jobs.ashbyhq.com/infinity-constellation/30fac65e-bcd7-4ecc-9477-fc7c8c8a9f52): Remote / USA | $160k – $240k
-- [Lead AI Engineer @ Sierra Studio at Sierra Studio](https://jobs.ashbyhq.com/sierra-studio/81770149-3a94-4e22-8678-dac4a7a6d9ba): Remote / USA | $160k – $240k
-- [LLM Engineer III at LLC](https://boards.greenhouse.io/crunchyroll/jobs/7014513?gh_jid=7014513): Remote / USA | $160k – $240k
-- [Job Application for Mission Integration Engineer, Applied Computing (Starshield) at SpaceX](https://boards.greenhouse.io/spacex/jobs/8320099002?gh_jid=8320099002): Remote / USA | $160k – $240k
-- [Senior Machine Learning Engineer, Customer Support ... at Airbnb](https://boards.greenhouse.io/airbnb/jobs/7975743): Remote / USA | $160k – $240k
-- [Job Application for Principal Applied AI / ML Engineer at Faire](https://boards.greenhouse.io/faire/jobs/8456064002?gh_jid=8456064002): Remote / USA | $160k – $240k
-- [Back at End Engineer (Generative AI)](https://boards.greenhouse.io/neo4j/jobs/4626134006?gh_jid=4626134006): Remote / USA | $160k – $240k
-- [Job Application for ML Engineering Intern - Nebula at Symbl.ai](https://boards.greenhouse.io/embed/job_app?for=symblai47&token=5026823004): Remote / USA | $160k – $240k
-- [Job Application for Senior ML Engineer (AI Research) at Nebius](https://boards.greenhouse.io/embed/job_app?for=nebius&token=4704805101): Remote / USA | $160k – $240k
-- ... and 502 more → https://www.artificialjobs.dev/remote/rag
+## Fields
 
-## Agent Jobs (463 roles)
-- [AI Engineer Backend (Remote at Quadrivia](https://jobs.ashbyhq.com/quadrivia/3b40be91-27fc-4148-a1a3-565d8211dd5c): Remote / USA | $160k – $240k
-- [Full Stack AI Engineer @ Infinity at Infinity Constellation](https://jobs.ashbyhq.com/infinity-constellation/30fac65e-bcd7-4ecc-9477-fc7c8c8a9f52): Remote / USA | $160k – $240k
-- [Lead AI Engineer @ Sierra Studio at Sierra Studio](https://jobs.ashbyhq.com/sierra-studio/81770149-3a94-4e22-8678-dac4a7a6d9ba): Remote / USA | $160k – $240k
-- [Forward Deployed AI Engineer @ Sardine at Sardine](https://jobs.ashbyhq.com/sardine/4ff32b5d-13c6-4024-826c-04ed2881d688): Remote / USA | $160k – $240k
-- [LLM Engineer III at LLC](https://boards.greenhouse.io/crunchyroll/jobs/7014513?gh_jid=7014513): Remote / USA | $160k – $240k
-- [Job Application for Principal Applied AI / ML Engineer at Faire](https://boards.greenhouse.io/faire/jobs/8456064002?gh_jid=8456064002): Remote / USA | $160k – $240k
-- [Back at End Engineer (Generative AI)](https://boards.greenhouse.io/neo4j/jobs/4626134006?gh_jid=4626134006): Remote / USA | $160k – $240k
-- [Job Application for Senior ML Engineer (AI Research) at Nebius](https://boards.greenhouse.io/embed/job_app?for=nebius&token=4704805101): Remote / USA | $160k – $240k
-- [zaimler at Machine Learning Engineer, ML Platform](https://jobs.lever.co/zaimler/c4932cc1-5fba-4a80-92e4-15c4d0f30f96): Remote / USA | $160k – $240k
-- [FieldAI at Agentic AI/ML Engineer, Multimodal](https://jobs.lever.co/field-ai/28935a89-7c6b-4caf-abe7-b83b8a9958e1): Remote / USA | $160k – $240k
-- ... and 453 more → https://www.artificialjobs.dev/remote/agent
-
-## Python Jobs (385 roles)
-- [Full Stack AI Engineer @ Infinity at Infinity Constellation](https://jobs.ashbyhq.com/infinity-constellation/30fac65e-bcd7-4ecc-9477-fc7c8c8a9f52): Remote / USA | $160k – $240k
-- [FieldAI at Senior Machine Learning Engineer](https://jobs.lever.co/field-ai/470926cb-38a1-4db8-b939-8ae8bde3b139): Remote / USA | $160k – $240k
-- [Machine Learning Engineer (Platform) at Artera](https://jobs.lever.co/artera/d3c0ca46-28cd-4193-a678-ef95002dce01): Remote / USA | $160k – $240k
-- [Full Stack AI Engineer (Data) at Techtorch](https://jobs.ashbyhq.com/techtorch/916acee0-eb0e-4d4a-8e5f-9bc1b039f1e4): Remote | $140k – $220k
-- [AI Engineer @ Blacksmith Agency at Argentina](https://jobs.ashbyhq.com/Blacksmith%20Agency/5dfccfc8-a527-44b9-b3ec-eaee25fc3f0f?embed=js): Remote | $140k – $220k
-- [Research Engineer at AI Systems @ Yotta Labs](https://jobs.ashbyhq.com/yotta/5ad886ff-a109-424e-910d-bb764a5201e9): Remote | $140k – $220k
-- [Applied AI Engineer at AI Neobank App (Germany) @ Bjak](https://jobs.ashbyhq.com/bjakcareer/4226ad7e-a43a-4a8c-b30f-80aadf39b69e): Remote | $140k – $220k
-- [Machine Learning Engineer @ Sift at Sift](https://jobs.ashbyhq.com/sift/45b22605-1abb-483e-8ef7-5ceaf04f5868): San Francisco, CA | $140k – $220k
-- [Machine Learning Engineer @ Gray Swan AI at Gray Swan AI](https://jobs.ashbyhq.com/Gray%20Swan%20AI/3d7e2604-92c1-4c93-b168-0683ed2990d1): On-site | $140k – $220k
-- [Machine Learning Engineer @ Sardine at Sardine](https://jobs.ashbyhq.com/sardine/2c8f0342-b8af-4cc2-85cd-67bc48275568): New York, NY | $140k – $220k
-- ... and 375 more → https://www.artificialjobs.dev/remote/python
-
-## Infrastructure Jobs (330 roles)
-- [Job Application for Sr. Software Engineer (Platform Team) at SpaceX](https://boards.greenhouse.io/spacex/jobs/8495853002?gh_jid=8495853002): Remote / USA | $160k – $240k
-- [Job Application for Senior ML Engineer (AI Research) at Nebius](https://boards.greenhouse.io/embed/job_app?for=nebius&token=4704805101): Remote / USA | $160k – $240k
-- [Job Application for Deployed AI Engineer at Helsing](https://boards.greenhouse.io/embed/job_app?token=4516967101): Remote / USA | $160k – $240k
-- [Machina Labs at Machine Learning Engineer](https://jobs.lever.co/MachinaLabs/418bef09-a753-422b-b2fc-9142d01f1139): Remote / USA | $160k – $240k
-- [zaimler at Machine Learning Engineer, ML Platform](https://jobs.lever.co/zaimler/c4932cc1-5fba-4a80-92e4-15c4d0f30f96): Remote / USA | $160k – $240k
-- [Whoop at Staff Machine Learning Engineer (Health)](https://jobs.lever.co/whoop/44a1154e-9580-4ba6-8dc0-6f87684697ba): Remote / USA | $160k – $240k
-- [Machine Learning Engineer (Platform) at Artera](https://jobs.lever.co/artera/d3c0ca46-28cd-4193-a678-ef95002dce01): Remote / USA | $160k – $240k
-- [Applied AI Engineer ( Remote at North American Timezones)](https://jobs.ashbyhq.com/mostest/68e436d6-b632-434e-93ab-9314a642dce5): New York, NY | $140k – $220k
-- [Full Stack AI Engineer (Data) at Techtorch](https://jobs.ashbyhq.com/techtorch/916acee0-eb0e-4d4a-8e5f-9bc1b039f1e4): Remote | $140k – $220k
-- [Senior Agentic AI Engineer @ Eigen Labs at Eigen Labs](https://jobs.ashbyhq.com/eigen-labs/c02fa001-23c9-4d68-8c0a-e27a742d76a4): San Francisco, CA | $180k – $280k
-- ... and 320 more → https://www.artificialjobs.dev/remote/infrastructure
-
-## Rust Jobs (163 roles)
-- [Senior AI Engineer @ DualEntry at Dualentry](https://jobs.ashbyhq.com/dualentry/7acbe603-8fbc-4249-942a-ee45eb273ea6): Remote / USA | $160k – $240k
-- [Forward Deployed AI Engineer @ Sardine at Sardine](https://jobs.ashbyhq.com/sardine/4ff32b5d-13c6-4024-826c-04ed2881d688): Remote / USA | $160k – $240k
-- [Applied AI Engineer – Systems & Reliability (remote/Berlin at ...](https://jobs.ashbyhq.com/hipeople-official/6c330d7b-7c6d-4993-8893-b58b5289d442): Remote / USA | $160k – $240k
-- [Senior Machine Learning Engineer, Customer Support ... at Airbnb](https://boards.greenhouse.io/airbnb/jobs/7975743): Remote / USA | $160k – $240k
-- [Job Application for Sr. Software Engineer (Platform Team) at SpaceX](https://boards.greenhouse.io/spacex/jobs/8495853002?gh_jid=8495853002): Remote / USA | $160k – $240k
-- [AI Principal Machine Learning Engineer (10189) at United States](https://jobs.lever.co/extremenetworks/f99032c4-6048-484d-b93e-f8dfbb62aa19): Remote / USA | $160k – $240k
-- [Senior AI Software Engineer, Agent Systems @ Scale Army Careers at Remote](https://jobs.ashbyhq.com/scale%20Army%20Careers/c1aa7444-f7dc-4394-95f3-2fb75d931bdb): Remote | $180k – $280k
-- [AI & Data Engineer @ Tern Travel at Tern](https://jobs.ashbyhq.com/tern/587a90f9-8c2f-4a9d-b837-092bc887e016): Remote | $140k – $220k
-- [Machine Learning Engineer @ Sardine at Sardine](https://jobs.ashbyhq.com/sardine/2c8f0342-b8af-4cc2-85cd-67bc48275568): New York, NY | $140k – $220k
-- [Machine Learning Engineer, New Grad at Quora (Remote)](https://jobs.ashbyhq.com/quora/3eb7e80e-6a0d-41b6-8ee4-f62421c486e4): Remote | $140k – $220k
-- ... and 153 more → https://www.artificialjobs.dev/remote/rust
-
-## Generative AI Jobs (126 roles)
-- [Machine Learning Engineer, New Grad at Quora (Remote)](https://jobs.ashbyhq.com/quora/3eb7e80e-6a0d-41b6-8ee4-f62421c486e4): Remote | $140k – $220k
-- [Senior ML Engineer @ Datatonic at Datatonic](https://jobs.ashbyhq.com/datatonic/ecd70031-bb15-453b-8528-452f5f575b9c): San Francisco, CA | $180k – $280k
-- [Hippocratic AI at LLM Inference Engineer](https://jobs.ashbyhq.com/Hippocratic%20AI/eef8a721-23de-4c20-bff0-56088b39afa0): San Francisco, CA | $140k – $220k
-- [AI Engineer @ Certa at Certa](https://jobs.ashbyhq.com/certa/da4d5879-d94d-4f8c-ada4-24bd955520e3): On-site | $140k – $220k
-- [Job Application for Staff ML Engineer, Applied AI at TIFIN](https://boards.greenhouse.io/embed/job_app?for=tifin&token=5381137004): Remote | $180k – $280k
-- [Job Application for Sensor Sim - ML Engineer at Applied Intuition](https://boards.greenhouse.io/appliedintuition/jobs/4678157005?gh_jid=4678157005): London, UK | $140k – $220k
-- [Job Description at C3 AI](https://boards.greenhouse.io/c3iot/jobs/6889513002?t=5c6794212): On-site | $140k – $220k
-- [KUBRA at AI Engineer](https://jobs.lever.co/kubra/39e4e9bf-1354-4c3e-b957-913f9b285aed): San Francisco, CA | $140k – $220k
-- [KUBRA at AI Engineer](https://jobs.lever.co/kubra/3e83c7e9-1c2d-42dc-8860-8c7874fac1c3): San Francisco, CA | $140k – $220k
-- [PointClickCare at Principal AI Engineer (Autonomous Agent) (CA)](https://jobs.lever.co/pointclickcare/282bd910-2829-4d2a-a024-99384a3f5c75): Remote | $140k – $220k
-- ... and 116 more → https://www.artificialjobs.dev/remote/generative-ai
-
-## LangChain Jobs (119 roles)
-- [AI Engineer @ Blacksmith Agency at Argentina](https://jobs.ashbyhq.com/Blacksmith%20Agency/5dfccfc8-a527-44b9-b3ec-eaee25fc3f0f?embed=js): Remote | $140k – $220k
-- [LLM Engineer (GenAI, NYC) @ GPTZero at NYC Hybrid](https://jobs.ashbyhq.com/GPTZero/9e23e2df-d15d-4bf5-a841-ced573fb8511): New York, NY | $140k – $220k
-- [AI Engineer at India @ Pulsora, Inc.](https://jobs.ashbyhq.com/Pulsora%20Inc/94d2db5c-8e55-48ec-ad52-738691a34924): On-site | $140k – $220k
-- [Fullstack Software Engineer, Applied AI @ LangChain at LangChain](https://jobs.ashbyhq.com/LangChain/c75915ba-a32b-4e17-873d-19b47564170d): San Francisco, CA | $140k – $220k
-- [Agentic Engineer (all genders) at Thorit](https://jobs.ashbyhq.com/thorit/13fc5ea3-8d7e-4be1-b41b-437aec00d4a1): On-site | $140k – $220k
-- [Job Application for Principal AI Engineer at ALO](https://boards.greenhouse.io/aloyoga/jobs/5726560004?gh_jid=5726560004): On-site | $220k – $350k
-- [Kobie Marketing at AI Engineer](https://jobs.lever.co/kobie/d14582bd-64a2-439e-a7e3-a50ce7270a3d): Remote | $140k – $220k
-- [Gurobi Optimization at Remote)](https://jobs.lever.co/GurobiOptimization/2f65b55d-db9c-4ff5-b668-e7db40417e0f): Remote | $140k – $220k
-- [AI Engineer at Influur](https://jobs.lever.co/influur/e799f7bf-9280-4d22-8f1c-387d322f1011): San Francisco, CA | $140k – $220k
-- [Senior AI Engineer at Egen](https://jobs.lever.co/egen/1b870652-5768-45e9-b55b-4420e6402314): San Francisco, CA | $180k – $280k
-- ... and 109 more → https://www.artificialjobs.dev/remote/langchain
-
-## AI Jobs (118 roles)
-- [AI Engineer at Hatch](https://jobs.ashbyhq.com/hatch/302d3f5d-2d99-4962-8ce3-4480cd4330d5): Remote / USA | $160k – $240k
-- [AI Engineer at Reedsy](https://jobs.ashbyhq.com/reedsy/b043b550-02b7-416f-8969-5db8fd9dc8ee): Remote / USA | $160k – $240k
-- [Sr. Staff AI Engineer (Remote) @ Rula at Rula](https://jobs.ashbyhq.com/rula/f2424794-c819-4f53-a8af-83322e617acb): Remote / USA | $160k – $240k
-- [Staff AI Engineer at AI Platform @ ClickUp](https://jobs.ashbyhq.com/clickup/143d20ff-cc53-4dc0-bc8b-09a7c1bddf87?embed=js): Remote / USA | $160k – $240k
-- [Job Application for Staff Software Engineer - AI Assistant at Harness](https://boards.greenhouse.io/embed/job_app?for=harnessinc&token=4497718007): Remote / USA | $160k – $240k
-- [Sanctuary AI at Machine Learning Engineer](https://jobs.lever.co/sanctuary/45642cfb-e812-4617-8de7-3cec19453a34): Remote / USA | $160k – $240k
-- [Machine Learning Engineer at Institute of Foundation Models](https://jobs.lever.co/ifm-us/ca550f5b-8c13-4a8e-8b03-0300b113acce): Remote / USA | $160k – $240k
-- [Hadrian Automation at Machine Learning Engineer](https://jobs.ashbyhq.com/hadrian-automation/a4dd4748-9825-4090-885c-a79e475f8952): On-site | $140k – $220k
-- [Machine Learning Engineer @ Krea at Krea](https://jobs.ashbyhq.com/krea/06a135f6-fb4c-446c-ac99-be1af655b964): San Francisco, CA | $140k – $220k
-- [Machine Learning Engineer at Vision @ Hadrian Automation](https://jobs.ashbyhq.com/hadrian-automation/94970f47-f88e-4e71-90ae-0e52b1d75c6b): San Francisco, CA | $140k – $220k
-- ... and 108 more → https://www.artificialjobs.dev/remote/ai
-
-## Fine-tuning Jobs (105 roles)
-- [Job Application for Mission Integration Engineer, Applied Computing (Starshield) at SpaceX](https://boards.greenhouse.io/spacex/jobs/8320099002?gh_jid=8320099002): Remote / USA | $160k – $240k
-- [Senior Machine Learning Engineer, Customer Support ... at Airbnb](https://boards.greenhouse.io/airbnb/jobs/7975743): Remote / USA | $160k – $240k
-- [Job Application for Principal Applied AI / ML Engineer at Faire](https://boards.greenhouse.io/faire/jobs/8456064002?gh_jid=8456064002): Remote / USA | $160k – $240k
-- [Spotify at Machine Learning Engineer, Personalization, Minesweeper](https://jobs.lever.co/spotify/de3f6a47-4d75-4512-8351-b362f1d1c32e): Remote / USA | $160k – $240k
-- [AI Principal Machine Learning Engineer (10189) at United States](https://jobs.lever.co/extremenetworks/f99032c4-6048-484d-b93e-f8dfbb62aa19): Remote / USA | $160k – $240k
-- [Senior Machine Learning Engineer at 1 @ Parspec](https://jobs.ashbyhq.com/parspec/e6ef5033-1497-4272-abee-5358ee6340c3): San Francisco, CA | $180k – $280k
-- [AI Engineer, Multimodal LLMs @ Eloquent AI at Eloquentai](https://jobs.ashbyhq.com/eloquentai/41c12538-9543-4a0b-a84f-034f4cb2db9a): San Francisco, CA | $140k – $220k
-- [AI Engineer at India @ Pulsora, Inc.](https://jobs.ashbyhq.com/Pulsora%20Inc/94d2db5c-8e55-48ec-ad52-738691a34924): On-site | $140k – $220k
-- [Job Application for Staff ML Engineer, Applied AI at TIFIN](https://boards.greenhouse.io/embed/job_app?for=tifin&token=5381137004): Remote | $180k – $280k
-- [Senior AI Engineer at Egen](https://jobs.lever.co/egen/1b870652-5768-45e9-b55b-4420e6402314): San Francisco, CA | $180k – $280k
-- ... and 95 more → https://www.artificialjobs.dev/remote/fine-tuning
-
-## NLP Jobs (96 roles)
-- [AI/ML Engineer @ Profound at Profound](https://jobs.ashbyhq.com/profound/08484c30-121a-4d1f-961b-09518f14337a): San Francisco, CA | $140k – $220k
-- [Job Application for Principal AI Engineer at ALO](https://boards.greenhouse.io/aloyoga/jobs/5726560004?gh_jid=5726560004): On-site | $220k – $350k
-- [AI Engineer at Collate](https://jobs.lever.co/collate/377f2cf3-6285-42c1-8130-dd3dd2c866cb): San Francisco, CA | $140k – $220k
-- [AMA with Stephen Gou at AMA with Stephen Gou](https://info.cohere.ai/amawithstephen): San Francisco, CA | $140k – $220k
-- [Sundaydream/tech-jobs-dataset-2026 · Datasets at Hugging Face](https://huggingface.co/datasets/Sundaydream/tech-jobs-dataset-2026): Remote | $140k – $220k
-- [Hugging Face & RAG Expert | Hire Kautuk A. | RemoteAI at RemoteAI](https://remoteai.io/v2/hire/@kautuk): Remote | $140k – $220k
-- [84000+ Remote Ai Jobs jobs in United States at Remote Ai Jobs jobs in United States](https://www.linkedin.com/jobs/remote-ai-jobs-jobs): San Francisco, CA | $140k – $220k
-- [LLM Engineer (m/f/d) | Flexgen at Flexgen](https://flexgen.zya.me/job/llm-engineer-mfd): On-site | $140k – $220k
-- [Senior NLP/LLM Engineer | Flexgen at Flexgen](https://flexgen.zya.me/job/senior-nlpllm-engineer): San Francisco, CA | $180k – $280k
-- [Machine Learning Engineer at Sapling.ai](https://www.ycombinator.com/companies/sapling-ai/jobs/MQG5G5Y-machine-learning-engineer): San Francisco, CA | $140k – $220k
-- ... and 86 more → https://www.artificialjobs.dev/remote/nlp
-
-## Computer Vision Jobs (91 roles)
-- [Machine Learning Engineer @ Reducto at Reducto](https://jobs.ashbyhq.com/reducto/aac35219-c38c-4490-8050-cee52e7dcf6b): San Francisco, CA | $140k – $220k
-- [AI & Machine Learning Engineer @ Lightspeed at Lightspeed](https://jobs.ashbyhq.com/lightspeed/0b8bb2c8-8049-4b53-b1d1-74397807ccf2): On-site | $140k – $220k
-- [Machine Learning Engineer (Video Understanding & Segmentation) @ Maxinsights Corporation at Maxinsights](https://jobs.ashbyhq.com/maxinsights/631ee3d8-07ca-455d-b6a2-dee4d3d33a72): On-site | $140k – $220k
-- [Machine Learning Research Engineer @ Roboflow at Roboflow](https://jobs.ashbyhq.com/roboflow/40c3389e-c7ea-4054-8c90-05b1beb38bff): Remote | $140k – $220k
-- [Principal ML Engineer @ Rebar at Rebar](https://jobs.ashbyhq.com/rebar/9939e1be-9d42-4cea-b17d-5dbebfade1f8): New York, NY | $220k – $350k
-- [Job Application for Principal AI Engineer at ALO](https://boards.greenhouse.io/aloyoga/jobs/5726560004?gh_jid=5726560004): On-site | $220k – $350k
-- [Machine Learning Engineer/AI Engineer (Infra) at Sertis](https://boards.greenhouse.io/sertis/jobs/8623775002): San Francisco, CA | $140k – $220k
-- [Perception / Computer Vision Software Engineer at Perception at Figure](https://boards.greenhouse.io/figureai/jobs/4007375006): San Francisco, CA | $200k – $400k
-- [Mitek Systems at AI Engineer (Applied AI & Data Systems)](https://jobs.lever.co/miteksystems-2/9bb92f27-43db-40dc-8487-0ca06f2763c9): Remote | $140k – $220k
-- [FieldAI at Robotics AI Engineer](https://jobs.lever.co/field-ai/f326c7a0-84ee-4f91-aa16-80281203e8d3): San Francisco, CA | $140k – $220k
-- ... and 81 more → https://www.artificialjobs.dev/remote/computer-vision
-
-## Other AI/ML Roles (10 more)
-- [Machine Learning Principal Solutions Architect at Data Engineering and Data Analytics](https://boards.greenhouse.io/phdata/jobs/7390457): On-site | [Data Engineering]
-- [Job Application for Performance Engineer at Anthropic](https://www.anthropic.com/careers/jobs/4020350008): San Francisco, CA | [Transformers]
-- [winstar group careers at Winstargroup](https://winstargroup.org/careers.php): San Francisco, CA | [Transformers]
-- [Hugging Face at Current Openings](https://huggingface.co/careers): San Francisco, CA | [HuggingFace]
-- [jobs at a Hugging Face Space by ...](https://huggingface.co/spaces/huggingface/jobs-actions-dispatcher): On-site | [HuggingFace]
-- [edwarddgao/open-apply-jobs · Datasets at Hugging Face](https://huggingface.co/datasets/edwarddgao/open-apply-jobs): Remote | [HuggingFace]
-- [Machine Learning Engineer Jobs at Wellfound](https://wellfound.com/role/machine-learning-engineer): San Francisco, CA | [GenAI]
-- [Sr. Principal Data Scientist - Remote at UnitedHealth Group](https://careers.unitedhealthgroup.com/job/minnetonka/sr-principal-data-scientist-remote/34088/95426609072): Remote | [Data Engineering]
-- [Aramente/eu-tech-jobs · Datasets at Hugging Face](https://huggingface.co/datasets/Aramente/eu-tech-jobs): Remote | [HuggingFace]
-- [Machine Learning Engineer @ Sprinter Health at Sprinter Health](https://jobs.ashbyhq.com/sprinter-health/848fd6c2-c367-47df-8583-9621b945376b): San Francisco, CA | [Data Engineering]
-
-## Browse by Skill (pSEO pages)
-- [LLM jobs](https://www.artificialjobs.dev/remote/llm)
-- [RAG jobs](https://www.artificialjobs.dev/remote/rag)
-- [Agent jobs](https://www.artificialjobs.dev/remote/agent)
-- [Python jobs](https://www.artificialjobs.dev/remote/python)
-- [Infrastructure jobs](https://www.artificialjobs.dev/remote/infrastructure)
-- [Rust jobs](https://www.artificialjobs.dev/remote/rust)
-- [Generative AI jobs](https://www.artificialjobs.dev/remote/generative-ai)
-- [LangChain jobs](https://www.artificialjobs.dev/remote/langchain)
-- [AI jobs](https://www.artificialjobs.dev/remote/ai)
-- [Fine-tuning jobs](https://www.artificialjobs.dev/remote/fine-tuning)
-- [NLP jobs](https://www.artificialjobs.dev/remote/nlp)
-- [Computer Vision jobs](https://www.artificialjobs.dev/remote/computer-vision)
-
-## Browse by Location
-- [AI Jobs in San Francisco, CA (526)](https://www.artificialjobs.dev/location/san-francisco-ca)
-- [AI Jobs in Remote (268)](https://www.artificialjobs.dev/location/remote)
-- [AI Jobs in On-site (255)](https://www.artificialjobs.dev/location/on-site)
-- [AI Jobs in New York, NY (34)](https://www.artificialjobs.dev/location/new-york-ny)
-- [AI Jobs in Remote / USA (30)](https://www.artificialjobs.dev/location/remote-usa)
-- [AI Jobs in London, UK (15)](https://www.artificialjobs.dev/location/london-uk)
-- [AI Jobs in Toronto, CA (5)](https://www.artificialjobs.dev/location/toronto-ca)
-
-## Salary Guides
-- [LLM engineer salary guide](https://www.artificialjobs.dev/salary/llm)
-- [RAG engineer salary guide](https://www.artificialjobs.dev/salary/rag)
-- [Agent engineer salary guide](https://www.artificialjobs.dev/salary/agent)
-- [Python engineer salary guide](https://www.artificialjobs.dev/salary/python)
-- [Infrastructure engineer salary guide](https://www.artificialjobs.dev/salary/infrastructure)
-- [Rust engineer salary guide](https://www.artificialjobs.dev/salary/rust)
-- [Generative AI engineer salary guide](https://www.artificialjobs.dev/salary/generative-ai)
-- [LangChain engineer salary guide](https://www.artificialjobs.dev/salary/langchain)
-
-## Top Companies Hiring
-- [Linkedin (30 roles)](https://www.artificialjobs.dev/company/linkedin)
-- [OpenAI (28 roles)](https://www.artificialjobs.dev/company/openai)
-- [Anthropic (27 roles)](https://www.artificialjobs.dev/company/anthropic)
-- [Hugging Face (26 roles)](https://www.artificialjobs.dev/company/hugging-face)
-- [Replit (24 roles)](https://www.artificialjobs.dev/company/replit)
-- [Cohere (18 roles)](https://www.artificialjobs.dev/company/cohere)
-- [Flexgen (17 roles)](https://www.artificialjobs.dev/company/flexgen)
-- [Indeed (16 roles)](https://www.artificialjobs.dev/company/indeed)
-- [AI Engineer (15 roles)](https://www.artificialjobs.dev/company/ai-engineer)
-- [Stability AI (13 roles)](https://www.artificialjobs.dev/company/stability-ai)
-- [RemoteAI (13 roles)](https://www.artificialjobs.dev/company/remoteai)
-- [Machine Learning Engineer (12 roles)](https://www.artificialjobs.dev/company/machine-learning-engineer)
-- [Openai (11 roles)](https://www.artificialjobs.dev/company/openai)
-- [Senior AI Engineer (9 roles)](https://www.artificialjobs.dev/company/senior-ai-engineer)
-
----
-Generated 2026-08-27 22:51 UTC | 1133 jobs | artificialjobs.dev
+- [AI training jobs: Law](https://www.artificialjobs.dev/ai-training-jobs/law): 49 open roles
+- [AI training jobs: Specialist](https://www.artificialjobs.dev/ai-training-jobs/other): 48 open roles
+- [AI training jobs: Software Engineering](https://www.artificialjobs.dev/ai-training-jobs/software-engineering): 30 open roles
+- [AI training jobs: Medicine](https://www.artificialjobs.dev/ai-training-jobs/medicine): 24 open roles
+- [AI training jobs: Science & Research](https://www.artificialjobs.dev/ai-training-jobs/sciences-research): 20 open roles
+- [AI training jobs: Generalist](https://www.artificialjobs.dev/ai-training-jobs/generalist): 20 open roles
+- [AI training jobs: Languages & Audio](https://www.artificialjobs.dev/ai-training-jobs/language-audio): 19 open roles
+- [AI training jobs: Applied Engineering](https://www.artificialjobs.dev/ai-training-jobs/applied-engineering): 16 open roles
+- [AI training jobs: Finance](https://www.artificialjobs.dev/ai-training-jobs/finance): 15 open roles
+- [AI training jobs: AI & Machine Learning](https://www.artificialjobs.dev/ai-training-jobs/ai-machine-learning): 14 open roles
+- [AI training jobs: Robotics](https://www.artificialjobs.dev/ai-training-jobs/robotics): 14 open roles
+- [AI training jobs: Sales & Marketing](https://www.artificialjobs.dev/ai-training-jobs/sales-marketing): 8 open roles
+- [AI training jobs: Business Operations](https://www.artificialjobs.dev/ai-training-jobs/business-operations): 8 open roles
+- [AI training jobs: Data Analysis](https://www.artificialjobs.dev/ai-training-jobs/data-analysis): 5 open roles
+- [AI training jobs: Arts & Design](https://www.artificialjobs.dev/ai-training-jobs/arts-design): 5 open roles
+- [AI training jobs: Humanities](https://www.artificialjobs.dev/ai-training-jobs/humanities): 2 open roles
+- [AI training jobs: Retail & Hospitality](https://www.artificialjobs.dev/ai-training-jobs/retail-hospitality): 2 open roles
+- [AI training jobs: Education](https://www.artificialjobs.dev/ai-training-jobs/education): 2 open roles
+- [AI training jobs: Cybersecurity](https://www.artificialjobs.dev/ai-training-jobs/cybersecurity): 1 open roles

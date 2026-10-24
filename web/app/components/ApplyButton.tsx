@@ -8,6 +8,8 @@ interface ApplyButtonProps {
   applyUrl: string;
   className?: string;
   children?: React.ReactNode;
+  /** Referral links must be marked sponsored for search engines. */
+  sponsored?: boolean;
 }
 
 export default function ApplyButton({
@@ -16,6 +18,7 @@ export default function ApplyButton({
   applyUrl,
   className,
   children = 'Apply now',
+  sponsored = false,
 }: ApplyButtonProps) {
   const handleClick = () => {
     try {
@@ -40,7 +43,7 @@ export default function ApplyButton({
     <a
       href={applyUrl}
       target="_blank"
-      rel="noopener noreferrer"
+      rel={sponsored ? 'sponsored noopener noreferrer' : 'noopener noreferrer'}
       onClick={handleClick}
       className={cn(
         'inline-flex shrink-0 items-center justify-center rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/85',

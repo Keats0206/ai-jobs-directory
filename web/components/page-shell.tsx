@@ -72,13 +72,3 @@ export function SectionLabel({ children }: { children: React.ReactNode }) {
     </p>
   );
 }
-
-/** Compact branded band for listing / hub page intros (not a card). */
-export function PageIntroBand({ children, className }: { children: React.ReactNode; className?: string }) {
-  return (
-    <div className={cn('relative mb-2 overflow-hidden', className)}>
-      <div className="hero-atmosphere absolute inset-0 opacity-70" aria-hidden />
-      <div className="relative">{children}</div>
-    </div>
-  );
-}

@@ -1,35 +1,31 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, Source_Sans_3, IBM_Plex_Mono } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
-const display = Space_Grotesk({
+const display = Geist({
   variable: "--font-display",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
 });
 
-const body = Source_Sans_3({
+const body = Geist({
   variable: "--font-body",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
 });
 
-const mono = IBM_Plex_Mono({
+const mono = Geist_Mono({
   variable: "--font-mono",
   subsets: ["latin"],
-  weight: ["400", "500"],
 });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.artificialjobs.dev"),
-  alternates: { types: { 'application/rss+xml': '/feed.xml' } },
   title: {
-    default: "Artificial Jobs — Live data on AI hiring, salaries & open roles",
+    default: "Artificial Jobs — Get paid to train AI with your expertise",
     template: "%s | Artificial Jobs",
   },
   description:
-    "Who is hiring AI engineers, what they pay, and which skills are in demand, from thousands of postings verified daily on company job boards.",
+    "Paid AI training jobs for lawyers, doctors, engineers, scientists and linguists, plus data partnerships for companies. Refreshed daily.",
   openGraph: {
     type: "website",
     siteName: "Artificial Jobs",
@@ -38,7 +34,7 @@ export const metadata: Metadata = {
         url: "/og.svg",
         width: 1200,
         height: 630,
-        alt: "Artificial Jobs — Live data on AI hiring",
+        alt: "Artificial Jobs — Get paid to train AI",
       },
     ],
   },
@@ -58,7 +54,7 @@ export default function RootLayout({
       lang="en"
       className={`${display.variable} ${body.variable} ${mono.variable} h-full antialiased`}
     >
-      <body className="flex min-h-full flex-col bg-background text-foreground page-wash">
+      <body className="flex min-h-full flex-col bg-background text-foreground">
         {children}
         <Analytics />
       </body>

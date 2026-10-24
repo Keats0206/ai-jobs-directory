@@ -1,4 +1,4 @@
-name: Refresh employer job feeds
+name: Refresh micro1 roles
 on:
   schedule:
     - cron: '20 7 * * *'
@@ -11,27 +11,23 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: python -m unittest discover -s scripts -p 'test_*.py'
-      - run: python scripts/refresh_jobs.py
-      # Enrichment failure must not block publishing the refreshed feeds.
-      - name: Enrich new or changed jobs
-        continue-on-error: true
+      # The referral code is public (it is in every apply link). Roles missing from the feed are marked closed.
+      - name: Refresh micro1 AI training roles and data partnerships
         env:
-          AI_GATEWAY_API_KEY: ${{ secrets.AI_GATEWAY_API_KEY }}
-        run: python scripts/enrich_jobs.py
-      - run: python scripts/snapshot_history.py
+          MICRO1_REFERRAL_CODE: f6cf7f5c-2a5b-4156-ac3e-e6dc8329426d
+        run: python scripts/fetch_micro1_jobs.py
       - name: Commit refreshed data
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add web/data/jobs.json web/data/source-health.json web/data/job-enrichment.json web/data/history
+          git add web/data/jobs.json web/data/data-partnerships.json
           if ! git diff --cached --quiet; then
-            git commit -m 'Refresh verified employer job feeds'
+            git commit -m 'Refresh micro1 roles'
             git push
           fi

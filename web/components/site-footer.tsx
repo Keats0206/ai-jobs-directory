@@ -7,18 +7,12 @@ export function SiteFooter() {
         <p>
           <span className="font-heading font-medium text-foreground">artificialjobs.dev</span>
           <span className="mx-1.5 text-border">·</span>
-          Live data on AI hiring
+          Get paid to train AI
         </p>
         <nav className="flex flex-wrap items-center gap-x-4 gap-y-2 sm:justify-end">
-          <Link href="/stats" className="transition-colors hover:text-foreground">Stats</Link>
-          <Link href="/sources" className="transition-colors hover:text-foreground">Sources</Link>
-          <Link href="/browse" className="transition-colors hover:text-foreground">Browse</Link>
-          <Link href="/" className="transition-colors hover:text-foreground">
-            Jobs
-          </Link>
-          <a href="/llms.txt" className="transition-colors hover:text-foreground">
-            llms.txt
-          </a>
+          <Link href="/" className="transition-colors hover:text-foreground">AI Training Jobs</Link>
+          <Link href="/sell-company-data" className="transition-colors hover:text-foreground">Sell Company Data</Link>
+          <a href="/llms.txt" className="transition-colors hover:text-foreground">llms.txt</a>
         </nav>
       </div>
       <div className="flex w-full flex-col gap-2 border-t border-border/40 px-5 py-4 sm:px-8 lg:px-12 text-[11px] text-muted-foreground sm:flex-row sm:items-center sm:justify-between">

@@ -86,7 +86,7 @@ High-value plugin categories in the directory:
 - **Data** — warehouse queries, spreadsheet exports
 - **Search** — web, docs, internal knowledge bases
 
-The [/agents](/agents) hub supports search and category filters across all 150 entries. List your MCP server on artificialjobs.dev for **$199/mo** via [/post-mcp](/post-mcp) to reach developers evaluating agent tooling.
+The [/agents](/agents) hub supports search and category filters across all 150 entries.
 
 ## Comparison: Directory vs Other Registries
 
