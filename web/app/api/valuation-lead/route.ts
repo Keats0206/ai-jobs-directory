@@ -18,7 +18,7 @@ export async function POST(request: Request) {
     if (!to) throw new Error('LEADS_TO is not configured');
     const email = leadEmail(parsed.lead);
     const result = await newsletterClient().emails.send({ from: newsletterFrom(), to, replyTo: parsed.lead.email, ...email });
-    if (result.error) throw new Error(result.error.name);
+    if (result.error) throw new Error(`${result.error.name}: ${result.error.message}`);
     return Response.json({ success: true });
   } catch (error) {
     console.error('Valuation lead unavailable:', error instanceof Error ? error.message : 'provider error');
