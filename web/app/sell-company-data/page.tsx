@@ -9,6 +9,7 @@ import { FaqSection } from '@/components/faq-section';
 import { PartnerLink } from '@/components/partner-link';
 import { CopyCode } from '@/components/copy-code';
 import { AnonymizationGraphic } from '@/components/anonymization-graphic';
+import { ValuationLeadForm } from '@/components/valuation-lead-form';
 
 export const metadata: Metadata = {
   title: `Sell Your Company Data to AI Labs — ${COMPANY_PAYOUT} per Data Package`,
@@ -208,6 +209,15 @@ export default function SellCompanyDataPage() {
             </div>
             <span className="shrink-0 text-sm font-medium">Estimate &rarr;</span>
           </Link>
+        </Container>
+
+        <Container className="pb-24">
+          <div id="valuation" className="grid scroll-mt-20 gap-10 lg:grid-cols-[1fr_2fr]">
+            <div>
+              <Headline as="h2" lead="Get a valuation." rest="Tell us what you have and we’ll reply by email with the buyers that fit." />
+            </div>
+            <ValuationLeadForm source="/sell-company-data" applyHref={primary?.apply_url ?? MERCOR_APPLY_URL} />
+          </div>
         </Container>
 
         <Container className="pb-24">

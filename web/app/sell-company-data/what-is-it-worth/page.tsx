@@ -9,6 +9,7 @@ import { DisclosureBar, Headline } from '@/components/training-ui';
 import { FaqSection } from '@/components/faq-section';
 import { PartnerLink } from '@/components/partner-link';
 import { DataValueEstimator } from '@/components/data-value-estimator';
+import { ValuationLeadForm } from '@/components/valuation-lead-form';
 
 const BASE = 'https://www.artificialjobs.dev';
 const PATH = '/sell-company-data/what-is-it-worth';
@@ -172,11 +173,19 @@ export default function DataWorthPage() {
         <Container className="pb-20">
           <section id="estimate" className="scroll-mt-20">
             <h2 className={`${H2} mb-6`}>Estimate your company’s range</h2>
-            <DataValueEstimator onResultHref="#buyers" />
+            <DataValueEstimator onResultHref="#valuation" />
             <p className="mt-4 max-w-prose text-sm text-muted-foreground">
               How it works: peak headcount × years gives person-years of records, weighted by data type (chat counts most, then tickets and code,
               then email and docs). The bands are anchored to the reported deals below. It is a rough guide, not an offer.
             </p>
+          </section>
+        </Container>
+
+        <Container className="pb-20">
+          <section id="valuation" className="scroll-mt-20">
+            <h2 className={`${H2} mb-3`}>Get a valuation</h2>
+            <p className="mb-6 max-w-prose text-muted-foreground">Tell us what you have and we’ll reply by email with the buyers that fit and what they have paid for similar data.</p>
+            <ValuationLeadForm source="/sell-company-data/what-is-it-worth" applyHref={enterprise?.apply_url ?? MERCOR_APPLY_URL} />
           </section>
         </Container>
 
