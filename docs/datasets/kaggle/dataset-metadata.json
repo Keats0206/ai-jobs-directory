@@ -1,0 +1,11 @@
+{
+  "title": "micro1 Pay Index: AI Trainer Pay by Field",
+  "subtitle": "Monthly advertised hourly pay for micro1 AI training roles, by field",
+  "id": "REPLACE_WITH_KAGGLE_USERNAME/micro1-pay-index",
+  "licenses": [{ "name": "CC-BY-4.0" }],
+  "keywords": ["employment", "artificial intelligence", "income"],
+  "description": "Monthly snapshot of advertised hourly pay for AI training roles on micro1, by field. October 2026 (snapshot 2026-10-24): 270 open hourly roles, median posted range $50–$90/hr; Science & Research has the highest median top rate ($200/hr), then Law ($170/hr) and Finance ($150/hr). Advertised ranges only, not earnings. Methodology: https://www.artificialjobs.dev/pay-index/2026-10#methodology",
+  "resources": [
+    { "path": "2026-10.csv", "description": "October 2026 edition, one row per field" }
+  ]
+}

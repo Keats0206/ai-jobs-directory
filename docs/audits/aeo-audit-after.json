@@ -1,0 +1,4093 @@
+{
+  "url": "https://www.artificialjobs.dev/",
+  "generatedAt": "2026-10-24T20:55:13.803Z",
+  "crawledPages": 20,
+  "maxPages": 20,
+  "scoring": {
+    "foundationalScore": 100,
+    "heuristicIntelligenceScore": 81,
+    "provisionalScore": 91,
+    "provisionalGrade": "A",
+    "note": "provisionalScore uses a deterministic heuristic for the intelligence half. The agent should replace heuristicIntelligenceScore with its own 6-dimension LLM evaluation, then compute finalScore = round(0.5*foundationalScore + 0.5*llmIntelligenceScore)."
+  },
+  "checks": [
+    {
+      "id": "title",
+      "label": "Clear page title",
+      "points": 10,
+      "passed": true,
+      "details": "20/20 pages passed this check."
+    },
+    {
+      "id": "meta-description",
+      "label": "Meta description",
+      "points": 10,
+      "passed": true,
+      "details": "20/20 pages passed this check."
+    },
+    {
+      "id": "canonical",
+      "label": "Canonical URL",
+      "points": 8,
+      "passed": true,
+      "details": "20/20 pages passed this check."
+    },
+    {
+      "id": "h1",
+      "label": "Single H1 heading",
+      "points": 8,
+      "passed": true,
+      "details": "20/20 pages passed this check."
+    },
+    {
+      "id": "schema",
+      "label": "Structured data present",
+      "points": 8,
+      "passed": true,
+      "details": "20/20 pages passed this check."
+    },
+    {
+      "id": "schema-types",
+      "label": "Schema types identified",
+      "points": 8,
+      "passed": true,
+      "details": "20/20 pages passed this check."
+    },
+    {
+      "id": "og",
+      "label": "Open Graph basics",
+      "points": 8,
+      "passed": true,
+      "details": "20/20 pages passed this check."
+    },
+    {
+      "id": "internal-links",
+      "label": "Internal linking",
+      "points": 10,
+      "passed": true,
+      "details": "20/20 pages passed this check."
+    },
+    {
+      "id": "image-alt",
+      "label": "Image alt coverage",
+      "points": 8,
+      "passed": true,
+      "details": "20/20 pages passed this check."
+    },
+    {
+      "id": "text-depth",
+      "label": "Readable content depth",
+      "points": 12,
+      "passed": true,
+      "details": "19/20 pages passed this check."
+    },
+    {
+      "id": "indexability",
+      "label": "Indexable for discovery",
+      "points": 10,
+      "passed": true,
+      "details": "20/20 pages passed this check."
+    },
+    {
+      "id": "ai-meta-tags",
+      "label": "AI-accessible meta tags",
+      "points": 6,
+      "passed": true,
+      "details": "20/20 pages passed this check."
+    },
+    {
+      "id": "heading-hierarchy",
+      "label": "Content structure",
+      "points": 6,
+      "passed": true,
+      "details": "20/20 pages passed this check."
+    },
+    {
+      "id": "llms-txt",
+      "label": "llms.txt valid",
+      "passed": true,
+      "points": 10,
+      "details": "Valid llms.txt (4041 chars)."
+    },
+    {
+      "id": "ai-bot-access",
+      "label": "AI bot access",
+      "passed": true,
+      "points": 12,
+      "details": "No AI bots blocked in robots.txt."
+    },
+    {
+      "id": "rss-feed",
+      "label": "RSS/Atom feed",
+      "passed": true,
+      "points": 8,
+      "details": "RSS or Atom feed detected."
+    }
+  ],
+  "coverage": [
+    {
+      "pageType": "other",
+      "pages": 13,
+      "avgScore": 100
+    },
+    {
+      "pageType": "blog",
+      "pages": 5,
+      "avgScore": 98
+    },
+    {
+      "pageType": "home",
+      "pages": 1,
+      "avgScore": 100
+    },
+    {
+      "pageType": "about",
+      "pages": 1,
+      "avgScore": 100
+    }
+  ],
+  "prioritizedFixes": [
+    {
+      "title": "Create a docs/knowledge section for product facts",
+      "impact": "Medium",
+      "effort": "Medium",
+      "why": "A stable docs corpus helps agents extract precise answers."
+    }
+  ],
+  "worstPages": [
+    {
+      "url": "https://www.artificialjobs.dev/blog",
+      "score": 100,
+      "maxScore": 112,
+      "pageType": "blog"
+    },
+    {
+      "url": "https://www.artificialjobs.dev/",
+      "score": 112,
+      "maxScore": 112,
+      "pageType": "home"
+    },
+    {
+      "url": "https://www.artificialjobs.dev/blog/how-much-do-ai-training-jobs-pay",
+      "score": 112,
+      "maxScore": 112,
+      "pageType": "blog"
+    },
+    {
+      "url": "https://www.artificialjobs.dev/sell-company-data",
+      "score": 112,
+      "maxScore": 112,
+      "pageType": "other"
+    },
+    {
+      "url": "https://www.artificialjobs.dev/micro1",
+      "score": 112,
+      "maxScore": 112,
+      "pageType": "other"
+    }
+  ],
+  "diagnostics": {
+    "crawlMs": 1706,
+    "robotsFound": true,
+    "robotsBlockedCount": 0,
+    "discoveredFromSitemap": 20,
+    "failedPages": 0
+  },
+  "robots": {
+    "found": true,
+    "aiBotBlocked": [],
+    "sitemapCount": 20
+  },
+  "llmsTxt": {
+    "found": true,
+    "hasH1": true,
+    "hasLink": true,
+    "contentLength": 4041,
+    "fullTxtFound": false
+  },
+  "rssFeed": true,
+  "heuristicIntelligenceSignals": [
+    {
+      "id": "answer-readiness",
+      "signal": "Answer Readiness",
+      "score": 53,
+      "rationale": "Does the content lead with direct answers to questions agents get asked?",
+      "keyFinding": "30% pages have Q&A-style headings; 15% lead with definitions.",
+      "status": "Weak",
+      "fixPriority": "High ROI"
+    },
+    {
+      "id": "evidence-density",
+      "signal": "Evidence Density",
+      "score": 74,
+      "rationale": "Density of statistics, data points, named sources, and in-text citations.",
+      "keyFinding": "100% pages include numeric evidence; 0% have author attribution.",
+      "status": "Moderate",
+      "fixPriority": "Quick Win"
+    },
+    {
+      "id": "freshness",
+      "signal": "Freshness",
+      "score": 76,
+      "rationale": "Date signals, update timestamps, and active maintenance indicators.",
+      "keyFinding": "20% pages have date signals; RSS feed found.",
+      "status": "Moderate",
+      "fixPriority": "Quick Win"
+    },
+    {
+      "id": "quotability",
+      "signal": "Quotability",
+      "score": 88,
+      "rationale": "Can an agent extract clean, self-contained passages to quote as citations?",
+      "keyFinding": "95% pages have rich headings; 95% meet depth threshold.",
+      "status": "Strong",
+      "fixPriority": "Monitor"
+    },
+    {
+      "id": "content-depth",
+      "signal": "Content Depth",
+      "score": 93,
+      "rationale": "Substantive long-form content that covers topics with depth and breadth.",
+      "keyFinding": "95% pages meet depth threshold across 4 template types.",
+      "status": "Strong",
+      "fixPriority": "Monitor"
+    },
+    {
+      "id": "structural-clarity",
+      "signal": "Structural Clarity",
+      "score": 99,
+      "rationale": "Clean semantic HTML structure that survives extraction to markdown.",
+      "keyFinding": "100% clean heading hierarchy; 100% have single H1.",
+      "status": "Strong",
+      "fixPriority": "Monitor"
+    }
+  ],
+  "pagesForReview": [
+    {
+      "url": "https://www.artificialjobs.dev/",
+      "pageType": "home",
+      "score": 112,
+      "maxScore": 112,
+      "aiView": {
+        "title": "307 AI Training Jobs for Experts — Up to $400/hr",
+        "metaDescription": "Get paid to train AI with your expertise. 307 open roles for lawyers, doctors, engineers, scientists and linguists, refreshed daily.",
+        "h1": [
+          "Get paid to train AI. Hourly expert work for lawyers, doctors, engineers, scientists and linguists."
+        ],
+        "h1Count": 1,
+        "headings": [
+          "Best-paying roles right now. The top high-demand role in each field.",
+          "Investment Funds &amp; Asset Management Attorney",
+          "Research Scientist - Computer Science &amp; Computational Physics",
+          "Finance Specialist",
+          "Software Engineering Specialist",
+          "Consulting Specialist",
+          "Data Science Specialist",
+          "Brand &amp; Creative Strategy Expert",
+          "Dentist",
+          "Pick a role",
+          "Take the AI interview",
+          "Get matched and paid",
+          "Law up to $400/hr",
+          "Investment Funds &amp; Asset Management Attorney",
+          "Venture Capital &amp; Corporate Attorney",
+          "FDA &amp; Regulatory Compliance Attorney"
+        ],
+        "jsonLdCount": 2,
+        "schemaTypes": [
+          "Organization",
+          "WebSite",
+          "FAQPage"
+        ],
+        "jsonLdSummary": "@type=Organization | name=Artificial Jobs | description=Directory of paid AI training jobs for domain experts and data partnerships for companies, sourced f\n@type=WebSite | name=Artificial Jobs\n@type=FAQPage",
+        "internalLinkCount": 121,
+        "textExcerpt": "307 roles open · updated daily Get paid to train AI. Hourly expert work for lawyers, doctors, engineers, scientists and linguists. See top-paying roles Browse by field Top hourly rate $400/hr Median top rate $90/hr High-demand roles 223 Fields hiring 19 Open roles across 19 fields Law 50 roles to $ 400 /hr Specialist 48 roles to $ 140 /hr Software Engineering 30 roles to $ 350 /hr Medicine 24 roles to $ 285 /hr Science & Research 20 roles to $ 400 /hr Generalist 20 roles to $ 140 /hr Languages & Audio 19 roles to $ 98 /hr Applied Engineering 16 roles to $ 150 /hr Finance 16 roles to $ 350 /hr AI & Machine Learning 14 roles to $ 140 /hr Robotics 14 roles to $ 30 /hr Business Operations 11 roles to $ 350 /hr Sales & Marketing 8 roles to $ 350 /hr Data Analysis 5 roles to $ 350 /hr Arts & Design 5 roles to $ 105 /hr Humanities 2 roles to $ 70 /hr Retail & Hospitality 2 roles to $ 70 /hr Education 2 roles to $ 140 /hr Cybersecurity 1 role to $ 80 /hr By credential: For PhDs 22 For physicians 17 For chemists 6 For physicists 6 For biologists 8 For bilingual speakers 35 Best-paying roles right now. The top high-demand role in each field. 01 Law High demand 5 openings Investment Funds & Asset Management Attorney investment funds law · asset management law · securities regulation $140–$400/hr hourly pay Apply 02 Science & Research High demand 4 openings Research Scientist - Computer Science & Computational Physics Computational rigor · Complex problem solving - Research · Problem framing $100–$400/hr hourly pay Apply 03 Finance High demand 5 openings Finance Specialist Microsoft PowerPoint · Slide Reconstruction · Presentation Design $150–$350/hr hourly pay Apply 04 Software Engineering High demand 7 openings Software Engineering Specialist Microsoft PowerPoint · Slide Reconstruction · Presentation Design $150–$350/hr hourly pay Apply 05 Business Operations High demand 15 openings Consulting Specialist Microsoft PowerPoint · Slide Reconstruction · Presentation Design $150–$",
+        "bodyWordCount": 2011,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://www.artificialjobs.dev",
+        "hasOg": true,
+        "imgCount": 0,
+        "imgsWithAlt": 0,
+        "headingLevels": [
+          1,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "url": "https://www.artificialjobs.dev/blog/how-much-do-ai-training-jobs-pay",
+      "pageType": "blog",
+      "score": 112,
+      "maxScore": 112,
+      "aiView": {
+        "title": "How Much Do AI Training Jobs Pay? Real Rates From Every Open Listing | Artificial Jobs",
+        "metaDescription": "Median and top hourly rates for AI training jobs by field, from every open micro1 listing, refreshed daily.",
+        "h1": [
+          "How Much Do AI Training Jobs Pay? Real Rates From Every Open Listing"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "How AI training pay is distributed",
+          "Pay by field",
+          "What pushes the rate up",
+          "Professional credentials",
+          "Scarce languages and specialisms",
+          "Demand",
+          "Salaried roles",
+          "What the posted rate doesn’t tell you",
+          "FAQ",
+          "How much do AI training jobs pay per hour?",
+          "Which AI training jobs pay the most?",
+          "Are AI training jobs full-time?",
+          "More guides"
+        ],
+        "jsonLdCount": 4,
+        "schemaTypes": [
+          "Organization",
+          "WebSite",
+          "Article",
+          "BreadcrumbList",
+          "FAQPage"
+        ],
+        "jsonLdSummary": "@type=Organization | name=Artificial Jobs | description=Directory of paid AI training jobs for domain experts and data partnerships for companies, sourced f\n@type=WebSite | name=Artificial Jobs\n@type=Article | author=Artificial Jobs | datePublished=2026-10-24 | dateModified=2026-10-24T17:34:13. | publisher=Artificial Jobs | description=Median and top hourly rates for AI training jobs by field, from every open micro1 listing, refreshed\n@type=BreadcrumbList\n@type=FAQPage",
+        "internalLinkCount": 35,
+        "textExcerpt": "How Much Do AI Training Jobs Pay? Real Rates From Every Open Listing By Artificial Jobs · Published October 24, 2026 · Data updated October 24, 2026 AI training jobs pay a median of $ 90 /hr at the top of their posted range , based on 270 live listings on micro1 with posted pay as of October 2026 . Rates run from $ 6 /hr for simple recording and transcription gigs to $ 400 /hr for specialist attorneys and PhD researchers. Credentials are the single biggest driver: roles for lawyers, doctors, scientists and finance professionals have a median top rate of $ 130 /hr, against $ 30 /hr for generalist and language roles. How AI training pay is distributed Most listings cluster between $60 and $200 an hour. Here is how the 270 hourly listings break down by the top of their range: Top of posted range Listings Share Under $30/hr 15 6% $30–$59/hr 37 14% $60–$99/hr 92 34% $100–$199/hr 80 30% $200/hr and up 46 17% Pay by field Science & Research pays the most, with a median top rate of $ 200 /hr. Robotics pays the least at $ 15 /hr. Fields with at least three hourly listings: Field Listings Median top rate Highest Science & Research 20 $200/hr $400/hr Law 50 $170/hr $400/hr Finance 16 $150/hr $350/hr AI & Machine Learning 14 $120/hr $140/hr Medicine 24 $115/hr $285/hr Arts & Design 5 $105/hr $105/hr Software Engineering 30 $100/hr $350/hr Data Analysis 5 $100/hr $350/hr Applied Engineering 16 $90/hr $150/hr Business Operations 11 $90/hr $350/hr Specialist 48 $80/hr $140/hr Sales & Marketing 8 $40/hr $350/hr Generalist 20 $36/hr $140/hr Languages & Audio 19 $30/hr $98/hr Robotics 14 $15/hr $30/hr What pushes the rate up Professional credentials AI labs pay for judgment a non-expert can’t supply: whether a contract clause is enforceable, whether a dosing note is safe, whether a proof holds. That is why licensed and doctoral roles sit at the top of the table. Listings in these fields usually ask for a license, board certification or a PhD in the title itself. Scarce languages and ",
+        "bodyWordCount": 750,
+        "publishedDate": "2026-10-24",
+        "modifiedDate": "2026-10-24T17:34:13.595Z",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://www.artificialjobs.dev/blog/how-much-do-ai-training-jobs-pay",
+        "hasOg": true,
+        "imgCount": 0,
+        "imgsWithAlt": 0,
+        "headingLevels": [
+          1,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "url": "https://www.artificialjobs.dev/blog/ai-training-jobs-for-lawyers",
+      "pageType": "blog",
+      "score": 112,
+      "maxScore": 112,
+      "aiView": {
+        "title": "AI Training Jobs for Lawyers: What the Work Is and What It Pays | Artificial Jobs",
+        "metaDescription": "What AI training work for attorneys involves, which practice areas are hiring, and what it pays, from live micro1 listings.",
+        "h1": [
+          "AI Training Jobs for Lawyers: What the Work Is and What It Pays"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "What the work involves",
+          "Practice areas hiring",
+          "What it pays",
+          "Who qualifies",
+          "How to apply",
+          "FAQ",
+          "How much do AI training jobs for lawyers pay?",
+          "Do I need to be a licensed attorney?",
+          "Is AI training work for lawyers remote?",
+          "More guides"
+        ],
+        "jsonLdCount": 4,
+        "schemaTypes": [
+          "Organization",
+          "WebSite",
+          "Article",
+          "BreadcrumbList",
+          "FAQPage"
+        ],
+        "jsonLdSummary": "@type=Organization | name=Artificial Jobs | description=Directory of paid AI training jobs for domain experts and data partnerships for companies, sourced f\n@type=WebSite | name=Artificial Jobs\n@type=Article | author=Artificial Jobs | datePublished=2026-10-24 | dateModified=2026-10-24T17:34:13. | publisher=Artificial Jobs | description=What AI training work for attorneys involves, which practice areas are hiring, and what it pays, fro\n@type=BreadcrumbList\n@type=FAQPage",
+        "internalLinkCount": 28,
+        "textExcerpt": "AI Training Jobs for Lawyers: What the Work Is and What It Pays By Artificial Jobs · Published October 24, 2026 · Data updated October 24, 2026 There are 50 open AI training jobs for lawyers on micro1 as of October 2026 , paying a median of $ 170 /hr at the top of their range and up to $ 400 /hr. 38 of them pay $100/hr or more. The work is remote, hourly contracting: attorneys review, write and grade the legal answers AI models learn from, so the models reason about contracts, regulations and case law the way a practising lawyer would. What the work involves AI labs need lawyers to tell them when a model’s legal answer is wrong, incomplete or dangerously confident. In practice that means writing model answers to realistic legal questions, grading AI responses against them, and explaining the error when the model misses an exception or misstates a rule. The skills micro1’s law listings ask for most often: Skill Listings asking for it Contract drafting 11 of 50 Contract negotiation 11 of 50 Contract redlining 11 of 50 Legal writing 10 of 50 Legal research 9 of 50 Legal research and analysis 7 of 50 Regulatory compliance 5 of 50 Document review 5 of 50 Practice areas hiring Listings are split by practice area, so a specialist is matched to questions in their own field. Open roles right now include: Investment Funds & Asset Management Attorney Venture Capital & Corporate Attorney FDA & Regulatory Compliance Attorney Structured Finance Attorney Media, Publishing & Communications Law Attorney Military Law Attorney Product Safety & Regulatory Compliance Attorney Gaming & Gambling Attorney Immigration Attorney Family Law Attorney Healthcare Attorney Civil Rights Attorney Energy & Utilities Regulatory Attorney Litigation Associate Attorney Corporate Attorney AI Legal Fellow — Litigation & Motion Practice Derivatives Counsel Investment Funds Attorney Lawyer Tax Attorney Employment Lawyer Personal Injury Lawyer Litigation Attorney Bankruptcy Attorney What it pays 46 of the 50 ",
+        "bodyWordCount": 719,
+        "publishedDate": "2026-10-24",
+        "modifiedDate": "2026-10-24T17:34:13.595Z",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://www.artificialjobs.dev/blog/ai-training-jobs-for-lawyers",
+        "hasOg": true,
+        "imgCount": 0,
+        "imgsWithAlt": 0,
+        "headingLevels": [
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "url": "https://www.artificialjobs.dev/blog/how-to-sell-company-data-to-ai-labs",
+      "pageType": "blog",
+      "score": 112,
+      "maxScore": 112,
+      "aiView": {
+        "title": "How to Sell Your Company’s Data to AI Labs | Artificial Jobs",
+        "metaDescription": "What AI labs buy, what micro1 and Mercor pay companies ($100K–$2M+), how the process works and what to check before you sell.",
+        "h1": [
+          "How to Sell Your Company’s Data to AI Labs"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "Why AI labs buy company data",
+          "micro1’s programs",
+          "What Mercor is buying",
+          "How the process works",
+          "Before you sell",
+          "FAQ",
+          "How much can a company earn selling data to AI labs?",
+          "Can a company that has shut down sell its data?",
+          "More guides"
+        ],
+        "jsonLdCount": 4,
+        "schemaTypes": [
+          "Organization",
+          "WebSite",
+          "Article",
+          "BreadcrumbList",
+          "FAQPage"
+        ],
+        "jsonLdSummary": "@type=Organization | name=Artificial Jobs | description=Directory of paid AI training jobs for domain experts and data partnerships for companies, sourced f\n@type=WebSite | name=Artificial Jobs\n@type=Article | author=Artificial Jobs | datePublished=2026-10-24 | dateModified=2026-10-24T17:34:13. | publisher=Artificial Jobs | description=What AI labs buy, what micro1 and Mercor pay companies ($100K–$2M+), how the process works and what \n@type=BreadcrumbList\n@type=FAQPage",
+        "internalLinkCount": 17,
+        "textExcerpt": "How to Sell Your Company’s Data to AI Labs By Artificial Jobs · Published October 24, 2026 · Data updated October 24, 2026 Companies can sell their internal data to AI labs through data partnership programs run by micro1 and Mercor , which pay $100K–$2M+ (micro1) and up to $1.5M (Mercor) for approved data. Labs want records of real work: internal chat, process documentation, project files and operational records that show how professionals actually do their jobs. Even companies that have shut down can qualify, because their archives still hold that history. Why AI labs buy company data Models have already been trained on much of the public web. What they still lack is the messy, multi-step reality of work inside a company: how a team scopes a project, resolves an incident or closes a deal. Anonymised internal records are one of the few sources of that. micro1’s programs Program Best for Requirements Defunct Company Data Partnership Closed or defunct companies 50+ peak employees, Substantial MS Teams or Slack data, United States Enterprise Data Partnership Operating companies 30-200 employees, Mature workflows, Documented processes micro1 says approved data packages earn the company $100K–$2M+ , depending on size and quality. What Mercor is buying Mercor publishes the company types it is looking for and what each can earn: Company type Size Earns Construction 50–2,000 employees $115K–$1M Semiconductor & materials 10–2,000 employees $100K–$750K Digital health 10–500 employees $100K–$900K Manufacturing & industrial 20–2,000 employees $100K–$1.5M Law firm 5–300 attorneys and staff $50K–$1.2M Cybersecurity 20–2,000 employees $20K–$750K Mercor applications go through data.mercor.com , with referral code HMFNVJTM . How the process works Create a company profile describing your size, industry and the data you hold. The buyer reviews whether your data matches what labs are asking for. If approved, the data is anonymised and packaged, and the company is paid for the approved ",
+        "bodyWordCount": 584,
+        "publishedDate": "2026-10-24",
+        "modifiedDate": "2026-10-24T17:34:13.595Z",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://www.artificialjobs.dev/blog/how-to-sell-company-data-to-ai-labs",
+        "hasOg": true,
+        "imgCount": 0,
+        "imgsWithAlt": 0,
+        "headingLevels": [
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "url": "https://www.artificialjobs.dev/blog/ai-training-jobs-no-experience",
+      "pageType": "blog",
+      "score": 112,
+      "maxScore": 112,
+      "aiView": {
+        "title": "AI Training Jobs With No Experience: What’s Actually Open | Artificial Jobs",
+        "metaDescription": "The generalist and language AI training roles you can get without professional credentials, what they pay, and how to avoid scams.",
+        "h1": [
+          "AI Training Jobs With No Experience: What’s Actually Open"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "Generalist roles",
+          "Language and audio roles",
+          "How to get hired without experience",
+          "How to spot a fake AI training job",
+          "FAQ",
+          "Can I get an AI training job with no experience?",
+          "Do AI training jobs charge a fee to apply?",
+          "More guides"
+        ],
+        "jsonLdCount": 4,
+        "schemaTypes": [
+          "Organization",
+          "WebSite",
+          "Article",
+          "BreadcrumbList",
+          "FAQPage"
+        ],
+        "jsonLdSummary": "@type=Organization | name=Artificial Jobs | description=Directory of paid AI training jobs for domain experts and data partnerships for companies, sourced f\n@type=WebSite | name=Artificial Jobs\n@type=Article | author=Artificial Jobs | datePublished=2026-10-24 | dateModified=2026-10-24T17:34:13. | publisher=Artificial Jobs | description=The generalist and language AI training roles you can get without professional credentials, what the\n@type=BreadcrumbList\n@type=FAQPage",
+        "internalLinkCount": 39,
+        "textExcerpt": "AI Training Jobs With No Experience: What’s Actually Open By Artificial Jobs · Published October 24, 2026 · Data updated October 24, 2026 Yes, there are AI training jobs you can get without professional credentials , but they pay less. As of October 2026 , micro1 lists 39 generalist and language roles with a median top rate of $ 30 /hr, compared with $ 130 /hr for law, medicine and research roles. The realistic entry points are AI product testing, evaluation and, if you speak a second language natively, transcription and language review. Generalist roles 20 generalist roles are open. These ask you to test AI products, evaluate assistant responses or record everyday tasks, and they reward careful, consistent work more than a specific degree. Role Pay Paid Photo Contributor Opportunity (Aged 50+) $139–$140/hr Evaluation Specialist/Recent Grad $20–$60/hr Human Data Manager $40–$60/hr Imagery Analyst - AI/ML Training Data $20–$60/hr Generalist $30–$49/hr AI Agent Tester - Real-World Tasks $25–$45/hr AI Agent Evaluator $25–$45/hr English Teacher $15–$40/hr AI Product Evaluator $14–$36/hr Usability Tester $20–$30/hr Language and audio roles 19 language and audio roles are open. Native fluency is the credential here, and rarer languages tend to pay more. Role Pay Japanese Language Expert $65–$98/hr Korean Language Expert $65–$98/hr English Voice Recording $20–$70/hr Voice Actor/Coaches $30–$70/hr English Voice Coach $40–$65/hr Cantonese Language Evaluator $30–$40/hr Korean Language Expert $20–$36/hr Japanese Language Expert $20–$36/hr Cantonese Transcription Expert $20–$35/hr Swiss German Transcription Expert $25–$30/hr How to get hired without experience Apply where your strengths are real. A native language or deep hobby knowledge is a genuine qualification for many roles. Prepare for the AI interview. micro1 screens every applicant with an AI interviewer. Answer concretely and give examples. Read the country limits. Many entry-level roles are open only in specific count",
+        "bodyWordCount": 572,
+        "publishedDate": "2026-10-24",
+        "modifiedDate": "2026-10-24T17:34:13.595Z",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://www.artificialjobs.dev/blog/ai-training-jobs-no-experience",
+        "hasOg": true,
+        "imgCount": 0,
+        "imgsWithAlt": 0,
+        "headingLevels": [
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          2
+        ]
+      }
+    }
+  ],
+  "pageAudits": [
+    {
+      "url": "https://www.artificialjobs.dev/",
+      "score": 112,
+      "maxScore": 112,
+      "summary": "Strong for AI agents. Improve a few weak signals to harden performance.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": true,
+          "points": 10,
+          "details": "Found title (48 chars)."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": true,
+          "points": 10,
+          "details": "Found description (132 chars)."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": true,
+          "points": 8,
+          "details": "Canonical: https://www.artificialjobs.dev"
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": true,
+          "points": 8,
+          "details": "Found 1 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": true,
+          "points": 8,
+          "details": "Found 2 JSON-LD block(s)."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": true,
+          "points": 8,
+          "details": "Types: Organization, WebSite, FAQPage"
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": true,
+          "points": 8,
+          "details": "og:title and og:description found."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": true,
+          "points": 10,
+          "details": "Found 121 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": true,
+          "points": 8,
+          "details": "No images on page."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": true,
+          "points": 12,
+          "details": "Estimated 2011 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": true,
+          "points": 10,
+          "details": "No noindex directive found."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": true,
+          "points": 6,
+          "details": "Clean heading structure (3 levels) — easy for AI agents to chunk and cite."
+        }
+      ],
+      "aiView": {
+        "title": "307 AI Training Jobs for Experts — Up to $400/hr",
+        "metaDescription": "Get paid to train AI with your expertise. 307 open roles for lawyers, doctors, engineers, scientists and linguists, refreshed daily.",
+        "h1": [
+          "Get paid to train AI. Hourly expert work for lawyers, doctors, engineers, scientists and linguists."
+        ],
+        "h1Count": 1,
+        "headings": [
+          "Best-paying roles right now. The top high-demand role in each field.",
+          "Investment Funds &amp; Asset Management Attorney",
+          "Research Scientist - Computer Science &amp; Computational Physics",
+          "Finance Specialist",
+          "Software Engineering Specialist",
+          "Consulting Specialist",
+          "Data Science Specialist",
+          "Brand &amp; Creative Strategy Expert",
+          "Dentist",
+          "Pick a role",
+          "Take the AI interview",
+          "Get matched and paid",
+          "Law up to $400/hr",
+          "Investment Funds &amp; Asset Management Attorney",
+          "Venture Capital &amp; Corporate Attorney",
+          "FDA &amp; Regulatory Compliance Attorney"
+        ],
+        "jsonLdCount": 2,
+        "schemaTypes": [
+          "Organization",
+          "WebSite",
+          "FAQPage"
+        ],
+        "jsonLdSummary": "@type=Organization | name=Artificial Jobs | description=Directory of paid AI training jobs for domain experts and data partnerships for companies, sourced f\n@type=WebSite | name=Artificial Jobs\n@type=FAQPage",
+        "internalLinkCount": 121,
+        "textExcerpt": "307 roles open · updated daily Get paid to train AI. Hourly expert work for lawyers, doctors, engineers, scientists and linguists. See top-paying roles Browse by field Top hourly rate $400/hr Median top rate $90/hr High-demand roles 223 Fields hiring 19 Open roles across 19 fields Law 50 roles to $ 400 /hr Specialist 48 roles to $ 140 /hr Software Engineering 30 roles to $ 350 /hr Medicine 24 roles to $ 285 /hr Science & Research 20 roles to $ 400 /hr Generalist 20 roles to $ 140 /hr Languages & Audio 19 roles to $ 98 /hr Applied Engineering 16 roles to $ 150 /hr Finance 16 roles to $ 350 /hr AI & Machine Learning 14 roles to $ 140 /hr Robotics 14 roles to $ 30 /hr Business Operations 11 roles to $ 350 /hr Sales & Marketing 8 roles to $ 350 /hr Data Analysis 5 roles to $ 350 /hr Arts & Design 5 roles to $ 105 /hr Humanities 2 roles to $ 70 /hr Retail & Hospitality 2 roles to $ 70 /hr Education 2 roles to $ 140 /hr Cybersecurity 1 role to $ 80 /hr By credential: For PhDs 22 For physicians 17 For chemists 6 For physicists 6 For biologists 8 For bilingual speakers 35 Best-paying roles right now. The top high-demand role in each field. 01 Law High demand 5 openings Investment Funds & Asset Management Attorney investment funds law · asset management law · securities regulation $140–$400/hr hourly pay Apply 02 Science & Research High demand 4 openings Research Scientist - Computer Science & Computational Physics Computational rigor · Complex problem solving - Research · Problem framing $100–$400/hr hourly pay Apply 03 Finance High demand 5 openings Finance Specialist Microsoft PowerPoint · Slide Reconstruction · Presentation Design $150–$350/hr hourly pay Apply 04 Software Engineering High demand 7 openings Software Engineering Specialist Microsoft PowerPoint · Slide Reconstruction · Presentation Design $150–$350/hr hourly pay Apply 05 Business Operations High demand 15 openings Consulting Specialist Microsoft PowerPoint · Slide Reconstruction · Presentation Design $150–$",
+        "bodyWordCount": 2011,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://www.artificialjobs.dev",
+        "hasOg": true,
+        "imgCount": 0,
+        "imgsWithAlt": 0,
+        "headingLevels": [
+          1,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      "pageType": "home"
+    },
+    {
+      "url": "https://www.artificialjobs.dev/blog",
+      "score": 100,
+      "maxScore": 112,
+      "summary": "Strong for AI agents. Improve a few weak signals to harden performance.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": true,
+          "points": 10,
+          "details": "Found title (62 chars)."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": true,
+          "points": 10,
+          "details": "Found description (127 chars)."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": true,
+          "points": 8,
+          "details": "Canonical: https://www.artificialjobs.dev/blog"
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": true,
+          "points": 8,
+          "details": "Found 1 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": true,
+          "points": 8,
+          "details": "Found 1 JSON-LD block(s)."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": true,
+          "points": 8,
+          "details": "Types: Organization, WebSite"
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": true,
+          "points": 8,
+          "details": "og:title and og:description found."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": true,
+          "points": 10,
+          "details": "Found 16 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": true,
+          "points": 8,
+          "details": "No images on page."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": false,
+          "points": 12,
+          "details": "Estimated 186 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": true,
+          "points": 10,
+          "details": "No noindex directive found."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": true,
+          "points": 6,
+          "details": "Clean heading structure (2 levels) — easy for AI agents to chunk and cite."
+        }
+      ],
+      "aiView": {
+        "title": "Blog — AI Training Jobs Pay, Guides and Data | Artificial Jobs",
+        "metaDescription": "Data-backed guides to AI training jobs: what they pay, who qualifies, how to get hired, and how companies sell data to AI labs.",
+        "h1": [
+          "Guides to getting paid to train AI. Built on live listing data, refreshed daily."
+        ],
+        "h1Count": 1,
+        "headings": [
+          "How Much Do AI Training Jobs Pay? Real Rates From Every Open Listing",
+          "AI Training Jobs for Lawyers: What the Work Is and What It Pays",
+          "AI Training Jobs With No Experience: What’s Actually Open",
+          "How to Sell Your Company’s Data to AI Labs"
+        ],
+        "jsonLdCount": 1,
+        "schemaTypes": [
+          "Organization",
+          "WebSite"
+        ],
+        "jsonLdSummary": "@type=Organization | name=Artificial Jobs | description=Directory of paid AI training jobs for domain experts and data partnerships for companies, sourced f\n@type=WebSite | name=Artificial Jobs",
+        "internalLinkCount": 16,
+        "textExcerpt": "Guides to getting paid to train AI. Built on live listing data, refreshed daily. Pay data How Much Do AI Training Jobs Pay? Real Rates From Every Open Listing Median and top hourly rates for AI training jobs by field, from every open micro1 listing, refreshed daily. For lawyers AI Training Jobs for Lawyers: What the Work Is and What It Pays What AI training work for attorneys involves, which practice areas are hiring, and what it pays, from live micro1 listings. Getting started AI Training Jobs With No Experience: What’s Actually Open The generalist and language AI training roles you can get without professional credentials, what they pay, and how to avoid scams. For companies How to Sell Your Company’s Data to AI Labs What AI labs buy, what micro1 and Mercor pay companies ($100K–$2M+), how the process works and what to check before you sell.",
+        "bodyWordCount": 186,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://www.artificialjobs.dev/blog",
+        "hasOg": true,
+        "imgCount": 0,
+        "imgsWithAlt": 0,
+        "headingLevels": [
+          1,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "pageType": "blog"
+    },
+    {
+      "url": "https://www.artificialjobs.dev/blog/how-much-do-ai-training-jobs-pay",
+      "score": 112,
+      "maxScore": 112,
+      "summary": "Strong for AI agents. Improve a few weak signals to harden performance.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": true,
+          "points": 10,
+          "details": "Found title (86 chars)."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": true,
+          "points": 10,
+          "details": "Found description (107 chars)."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": true,
+          "points": 8,
+          "details": "Canonical: https://www.artificialjobs.dev/blog/how-much-do-ai-training-jobs-pay"
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": true,
+          "points": 8,
+          "details": "Found 1 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": true,
+          "points": 8,
+          "details": "Found 4 JSON-LD block(s)."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": true,
+          "points": 8,
+          "details": "Types: Organization, WebSite, Article, BreadcrumbList, FAQPage"
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": true,
+          "points": 8,
+          "details": "og:title and og:description found."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": true,
+          "points": 10,
+          "details": "Found 35 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": true,
+          "points": 8,
+          "details": "No images on page."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": true,
+          "points": 12,
+          "details": "Estimated 750 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": true,
+          "points": 10,
+          "details": "No noindex directive found."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": true,
+          "points": 6,
+          "details": "Clean heading structure (3 levels) — easy for AI agents to chunk and cite."
+        }
+      ],
+      "aiView": {
+        "title": "How Much Do AI Training Jobs Pay? Real Rates From Every Open Listing | Artificial Jobs",
+        "metaDescription": "Median and top hourly rates for AI training jobs by field, from every open micro1 listing, refreshed daily.",
+        "h1": [
+          "How Much Do AI Training Jobs Pay? Real Rates From Every Open Listing"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "How AI training pay is distributed",
+          "Pay by field",
+          "What pushes the rate up",
+          "Professional credentials",
+          "Scarce languages and specialisms",
+          "Demand",
+          "Salaried roles",
+          "What the posted rate doesn’t tell you",
+          "FAQ",
+          "How much do AI training jobs pay per hour?",
+          "Which AI training jobs pay the most?",
+          "Are AI training jobs full-time?",
+          "More guides"
+        ],
+        "jsonLdCount": 4,
+        "schemaTypes": [
+          "Organization",
+          "WebSite",
+          "Article",
+          "BreadcrumbList",
+          "FAQPage"
+        ],
+        "jsonLdSummary": "@type=Organization | name=Artificial Jobs | description=Directory of paid AI training jobs for domain experts and data partnerships for companies, sourced f\n@type=WebSite | name=Artificial Jobs\n@type=Article | author=Artificial Jobs | datePublished=2026-10-24 | dateModified=2026-10-24T17:34:13. | publisher=Artificial Jobs | description=Median and top hourly rates for AI training jobs by field, from every open micro1 listing, refreshed\n@type=BreadcrumbList\n@type=FAQPage",
+        "internalLinkCount": 35,
+        "textExcerpt": "How Much Do AI Training Jobs Pay? Real Rates From Every Open Listing By Artificial Jobs · Published October 24, 2026 · Data updated October 24, 2026 AI training jobs pay a median of $ 90 /hr at the top of their posted range , based on 270 live listings on micro1 with posted pay as of October 2026 . Rates run from $ 6 /hr for simple recording and transcription gigs to $ 400 /hr for specialist attorneys and PhD researchers. Credentials are the single biggest driver: roles for lawyers, doctors, scientists and finance professionals have a median top rate of $ 130 /hr, against $ 30 /hr for generalist and language roles. How AI training pay is distributed Most listings cluster between $60 and $200 an hour. Here is how the 270 hourly listings break down by the top of their range: Top of posted range Listings Share Under $30/hr 15 6% $30–$59/hr 37 14% $60–$99/hr 92 34% $100–$199/hr 80 30% $200/hr and up 46 17% Pay by field Science & Research pays the most, with a median top rate of $ 200 /hr. Robotics pays the least at $ 15 /hr. Fields with at least three hourly listings: Field Listings Median top rate Highest Science & Research 20 $200/hr $400/hr Law 50 $170/hr $400/hr Finance 16 $150/hr $350/hr AI & Machine Learning 14 $120/hr $140/hr Medicine 24 $115/hr $285/hr Arts & Design 5 $105/hr $105/hr Software Engineering 30 $100/hr $350/hr Data Analysis 5 $100/hr $350/hr Applied Engineering 16 $90/hr $150/hr Business Operations 11 $90/hr $350/hr Specialist 48 $80/hr $140/hr Sales & Marketing 8 $40/hr $350/hr Generalist 20 $36/hr $140/hr Languages & Audio 19 $30/hr $98/hr Robotics 14 $15/hr $30/hr What pushes the rate up Professional credentials AI labs pay for judgment a non-expert can’t supply: whether a contract clause is enforceable, whether a dosing note is safe, whether a proof holds. That is why licensed and doctoral roles sit at the top of the table. Listings in these fields usually ask for a license, board certification or a PhD in the title itself. Scarce languages and ",
+        "bodyWordCount": 750,
+        "publishedDate": "2026-10-24",
+        "modifiedDate": "2026-10-24T17:34:13.595Z",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://www.artificialjobs.dev/blog/how-much-do-ai-training-jobs-pay",
+        "hasOg": true,
+        "imgCount": 0,
+        "imgsWithAlt": 0,
+        "headingLevels": [
+          1,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          2
+        ]
+      },
+      "pageType": "blog"
+    },
+    {
+      "url": "https://www.artificialjobs.dev/sell-company-data",
+      "score": 112,
+      "maxScore": 112,
+      "summary": "Strong for AI agents. Improve a few weak signals to harden performance.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": true,
+          "points": 10,
+          "details": "Found title (81 chars)."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": true,
+          "points": 10,
+          "details": "Found description (181 chars)."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": true,
+          "points": 8,
+          "details": "Canonical: https://www.artificialjobs.dev/sell-company-data"
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": true,
+          "points": 8,
+          "details": "Found 1 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": true,
+          "points": 8,
+          "details": "Found 2 JSON-LD block(s)."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": true,
+          "points": 8,
+          "details": "Types: Organization, WebSite, FAQPage"
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": true,
+          "points": 8,
+          "details": "og:title and og:description found."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": true,
+          "points": 10,
+          "details": "Found 13 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": true,
+          "points": 8,
+          "details": "No images on page."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": true,
+          "points": 12,
+          "details": "Estimated 918 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": true,
+          "points": 10,
+          "details": "No noindex directive found."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": true,
+          "points": 6,
+          "details": "Clean heading structure (3 levels) — easy for AI agents to chunk and cite."
+        }
+      ],
+      "aiView": {
+        "title": "Sell Your Company Data to AI Labs — $100K–$2M+ per Data Package | Artificial Jobs",
+        "metaDescription": "AI labs pay for real operational data. Operating and defunct companies with 30+ employees can earn $100K–$2M+ for approved data packages through micro1 and Mercor data partnerships.",
+        "h1": [
+          "Your company’s data is worth $100K–$2M+. AI labs pay for real operational data, even from companies that have shut down."
+        ],
+        "h1Count": 1,
+        "headings": [
+          "Compare programs. Both are run by micro1 and pay companies for approved data.",
+          "Defunct Company Data Partnership",
+          "Enterprise Data Partnership",
+          "Mercor is buying industry data. Up to $1.5M for the right company. These are the types it wants now.",
+          "Construction",
+          "Semiconductor &amp; materials",
+          "Digital health",
+          "Manufacturing &amp; industrial",
+          "Law firm",
+          "Cybersecurity",
+          "What labs are buying",
+          "Internal chat",
+          "Process docs",
+          "Operational records",
+          "How it works",
+          "Create a company profile"
+        ],
+        "jsonLdCount": 2,
+        "schemaTypes": [
+          "Organization",
+          "WebSite",
+          "FAQPage"
+        ],
+        "jsonLdSummary": "@type=Organization | name=Artificial Jobs | description=Directory of paid AI training jobs for domain experts and data partnerships for companies, sourced f\n@type=WebSite | name=Artificial Jobs\n@type=FAQPage",
+        "internalLinkCount": 13,
+        "textExcerpt": "For founders, operators and former owners Your company’s data is worth $100K–$2M+. AI labs pay for real operational data, even from companies that have shut down. Check if your company qualifies Compare programs Per approved data package $100K–$2M+ Employees to qualify 30+ Open programs 3 Industry Any Compare programs. Both are run by micro1 and pay companies for approved data. Best for closed or defunct companies Defunct Company Data Partnership Your company shut down, but its records didn’t. Turn its archived chat and documents into a payout. Company payout $100K–$2M+ Requirements 50+ peak employees, Substantial MS Teams or Slack data, United States, UK, Canada, India, Australia, Singapore, Ireland, Netherlands, Germany and France, English Start a defunct company profile Best for operating companies Enterprise Data Partnership Earn from the business documentation and operational datasets you already have. Company payout $100K–$2M+ Requirements 30-200 employees, Mature workflows, Documented processes Start a company profile Mercor is buying industry data. Up to $1.5M for the right company. These are the types it wants now. Enter this referral code when you apply HMFNVJTM Copy Industrial · 50–2,000 employees Construction Project records, drawings and site imagery from completed projects. Company earns $115K–$1M Science & R&D · 10–2,000 employees Semiconductor & materials Run records that tie each recipe to a measured result. Company earns $100K–$750K Healthcare · 10–500 employees Digital health Consented recordings of patient visits, with transcripts and notes. Company earns $100K–$900K Industrial · 20–2,000 employees Manufacturing & industrial Production, maintenance and inspection records from the shop floor. Company earns $100K–$1.5M Professional services · 5–300 attorneys and staff Law firm Complete files from closed matters and completed deals. Company earns $50K–$1.2M Software · 20–2,000 employees Cybersecurity Security alerts, investigations and case write-up",
+        "bodyWordCount": 918,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://www.artificialjobs.dev/sell-company-data",
+        "hasOg": true,
+        "imgCount": 0,
+        "imgsWithAlt": 0,
+        "headingLevels": [
+          1,
+          2,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      "pageType": "other"
+    },
+    {
+      "url": "https://www.artificialjobs.dev/micro1",
+      "score": 112,
+      "maxScore": 112,
+      "summary": "Strong for AI agents. Improve a few weak signals to harden performance.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": true,
+          "points": 10,
+          "details": "Found title (84 chars)."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": true,
+          "points": 10,
+          "details": "Found description (151 chars)."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": true,
+          "points": 8,
+          "details": "Canonical: https://www.artificialjobs.dev/micro1"
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": true,
+          "points": 8,
+          "details": "Found 1 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": true,
+          "points": 8,
+          "details": "Found 2 JSON-LD block(s)."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": true,
+          "points": 8,
+          "details": "Types: Organization, WebSite, FAQPage"
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": true,
+          "points": 8,
+          "details": "og:title and og:description found."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": true,
+          "points": 10,
+          "details": "Found 42 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": true,
+          "points": 8,
+          "details": "No images on page."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": true,
+          "points": 12,
+          "details": "Estimated 1000 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": true,
+          "points": 10,
+          "details": "No noindex directive found."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": true,
+          "points": 6,
+          "details": "Clean heading structure (3 levels) — easy for AI agents to chunk and cite."
+        }
+      ],
+      "aiView": {
+        "title": "micro1 Review (October 2026): Pay, AI Interview &amp; Is It Legit? | Artificial Jobs",
+        "metaDescription": "How much micro1 pays, from 307 live roles (median top rate $90/hr, up to $400/hr), how the Zara AI interview works, and what to check before you apply.",
+        "h1": [
+          "micro1 review: what it pays and how to get in. Real pay data from every open micro1 role, refreshed daily."
+        ],
+        "h1Count": 1,
+        "headings": [
+          "The short answer",
+          "How much micro1 pays, by field. Median and highest top-of-range hourly rate in each field.",
+          "How to get hired. micro1’s process has four steps.",
+          "Highest-paying micro1 roles right now.",
+          "Investment Funds &amp; Asset Management Attorney",
+          "Venture Capital &amp; Corporate Attorney",
+          "FDA &amp; Regulatory Compliance Attorney",
+          "Structured Finance Attorney",
+          "Media, Publishing &amp; Communications Law Attorney",
+          "Military Law Attorney",
+          "Product Safety &amp; Regulatory Compliance Attorney",
+          "Gaming &amp; Gambling Attorney",
+          "Immigration Attorney",
+          "Family Law Attorney (AAML Registered)",
+          "FAQ",
+          "Is micro1 legit?"
+        ],
+        "jsonLdCount": 2,
+        "schemaTypes": [
+          "Organization",
+          "WebSite",
+          "FAQPage"
+        ],
+        "jsonLdSummary": "@type=Organization | name=Artificial Jobs | description=Directory of paid AI training jobs for domain experts and data partnerships for companies, sourced f\n@type=WebSite | name=Artificial Jobs\n@type=FAQPage",
+        "internalLinkCount": 42,
+        "textExcerpt": "Updated October 2026 · pay from 307 live listings micro1 review: what it pays and how to get in. Real pay data from every open micro1 role, refreshed daily. Open roles 307 Median top rate $90/hr Highest rate $400/hr Roles at $100+/hr 126 The short answer micro1 is a legitimate, venture-backed company that pays credentialed experts to train AI models. The pay is real and posted up front, but it is contract work: you are paid hourly for projects, and passing the interview does not guarantee a steady stream of hours. The best-paid roles go to lawyers, doctors and PhD researchers. Generalist and language roles are easier to get and pay less. Before you apply Apply only through micro1.ai links. Don’t pay anyone to apply or to be interviewed. Check the listing’s country limits before you start. Treat it as contract income, not a salary. How much micro1 pays, by field. Median and highest top-of-range hourly rate in each field. Field Open roles Median top rate Highest rate Law 50 $ 170 /hr $ 400 /hr Specialist 48 $ 80 /hr $ 140 /hr Software Engineering 30 $ 100 /hr $ 350 /hr Medicine 24 $ 115 /hr $ 285 /hr Science & Research 20 $ 200 /hr $ 400 /hr Generalist 20 $ 36 /hr $ 140 /hr Languages & Audio 19 $ 30 /hr $ 98 /hr Applied Engineering 16 $ 90 /hr $ 150 /hr Finance 16 $ 150 /hr $ 350 /hr AI & Machine Learning 14 $ 120 /hr $ 140 /hr Robotics 14 $ 15 /hr $ 30 /hr Business Operations 11 $ 90 /hr $ 350 /hr Sales & Marketing 8 $ 40 /hr $ 350 /hr Data Analysis 5 $ 100 /hr $ 350 /hr Arts & Design 5 $ 105 /hr $ 105 /hr Humanities 2 $ 70 /hr $ 70 /hr Retail & Hospitality 2 $ 70 /hr $ 70 /hr Education 2 $ 140 /hr $ 140 /hr Cybersecurity 1 $ 80 /hr $ 80 /hr How to get hired. micro1’s process has four steps. 01 Apply for a role Pick a listing that matches your credentials. Each one names the field, the skills it wants and an hourly range. 02 Take the AI interview micro1 screens applicants with Zara, its AI interviewer, which asks about your experience in the role’s field. 03 Get onbo",
+        "bodyWordCount": 1000,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://www.artificialjobs.dev/micro1",
+        "hasOg": true,
+        "imgCount": 0,
+        "imgsWithAlt": 0,
+        "headingLevels": [
+          1,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      "pageType": "other"
+    },
+    {
+      "url": "https://www.artificialjobs.dev/about",
+      "score": 112,
+      "maxScore": 112,
+      "summary": "Strong for AI agents. Improve a few weak signals to harden performance.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": true,
+          "points": 10,
+          "details": "Found title (86 chars)."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": true,
+          "points": 10,
+          "details": "Found description (177 chars)."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": true,
+          "points": 8,
+          "details": "Canonical: https://www.artificialjobs.dev/about"
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": true,
+          "points": 8,
+          "details": "Found 1 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": true,
+          "points": 8,
+          "details": "Found 1 JSON-LD block(s)."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": true,
+          "points": 8,
+          "details": "Types: Organization, WebSite"
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": true,
+          "points": 8,
+          "details": "og:title and og:description found."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": true,
+          "points": 10,
+          "details": "Found 13 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": true,
+          "points": 8,
+          "details": "No images on page."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": true,
+          "points": 12,
+          "details": "Estimated 365 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": true,
+          "points": 10,
+          "details": "No noindex directive found."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": true,
+          "points": 6,
+          "details": "Clean heading structure (2 levels) — easy for AI agents to chunk and cite."
+        }
+      ],
+      "aiView": {
+        "title": "About Artificial Jobs — How Listings Are Sourced and How We Get Paid | Artificial Jobs",
+        "metaDescription": "Artificial Jobs lists paid AI training work for domain experts, sourced daily from micro1. How listings are collected, ranked and verified, and how the site earns referral fees.",
+        "h1": [
+          "One place to find paid AI training work. Artificial Jobs lists hourly roles where domain experts help AI labs improve their models."
+        ],
+        "h1Count": 1,
+        "headings": [
+          "How listings work",
+          "How we get paid"
+        ],
+        "jsonLdCount": 1,
+        "schemaTypes": [
+          "Organization",
+          "WebSite"
+        ],
+        "jsonLdSummary": "@type=Organization | name=Artificial Jobs | description=Directory of paid AI training jobs for domain experts and data partnerships for companies, sourced f\n@type=WebSite | name=Artificial Jobs",
+        "internalLinkCount": 13,
+        "textExcerpt": "About One place to find paid AI training work. Artificial Jobs lists hourly roles where domain experts help AI labs improve their models. Open roles 307 Fields 19 Median top rate $90/hr Top hourly rate $400/hr AI labs pay lawyers, doctors, engineers, scientists and linguists to write, review and grade the examples their models learn from. The work is real and often well paid, but it’s scattered across job posts that are hard to compare. Artificial Jobs collects those roles into one list, ranked by pay and grouped by profession, so you can see what your expertise is worth before you apply. The site is run by Keating Holdings . We don’t employ anyone listed here and we don’t run the hiring process: applications, interviews and payment all happen on micro1. How listings work Sourced from micro1 Every role comes from micro1’s public job feed. We pull the full description, pay range, location and remote status from each role’s own micro1 job page. Refreshed daily An automated job re-checks every listing once a day. Roles micro1 closes are removed, and their pages redirect to the field they belonged to. Ranked by pay Roles are ordered by the top of their hourly pay range, newest first on ties. Pay figures are the ranges micro1 publishes; we don’t estimate or adjust them. Grouped by field Each role is filed under the field micro1 assigns it (Law, Medicine, Software Engineering and so on), plus credential pages such as PhDs and physicians matched on the role’s title and skills. How we get paid Apply links on these roles include our micro1 referral code. Artificial Jobs may earn a referral fee if you’re hired, at no cost to you. Referral fees don’t affect ranking: every role is ordered by pay, and every listing carries the same referral code. We also refer companies to AI data partnerships. See Sell company data for how those programs work and what we earn from them.",
+        "bodyWordCount": 365,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://www.artificialjobs.dev/about",
+        "hasOg": true,
+        "imgCount": 0,
+        "imgsWithAlt": 0,
+        "headingLevels": [
+          1,
+          2,
+          2
+        ]
+      },
+      "pageType": "about"
+    },
+    {
+      "url": "https://www.artificialjobs.dev/blog/ai-training-jobs-for-lawyers",
+      "score": 112,
+      "maxScore": 112,
+      "summary": "Strong for AI agents. Improve a few weak signals to harden performance.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": true,
+          "points": 10,
+          "details": "Found title (81 chars)."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": true,
+          "points": 10,
+          "details": "Found description (123 chars)."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": true,
+          "points": 8,
+          "details": "Canonical: https://www.artificialjobs.dev/blog/ai-training-jobs-for-lawyers"
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": true,
+          "points": 8,
+          "details": "Found 1 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": true,
+          "points": 8,
+          "details": "Found 4 JSON-LD block(s)."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": true,
+          "points": 8,
+          "details": "Types: Organization, WebSite, Article, BreadcrumbList, FAQPage"
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": true,
+          "points": 8,
+          "details": "og:title and og:description found."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": true,
+          "points": 10,
+          "details": "Found 28 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": true,
+          "points": 8,
+          "details": "No images on page."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": true,
+          "points": 12,
+          "details": "Estimated 719 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": true,
+          "points": 10,
+          "details": "No noindex directive found."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": true,
+          "points": 6,
+          "details": "Clean heading structure (3 levels) — easy for AI agents to chunk and cite."
+        }
+      ],
+      "aiView": {
+        "title": "AI Training Jobs for Lawyers: What the Work Is and What It Pays | Artificial Jobs",
+        "metaDescription": "What AI training work for attorneys involves, which practice areas are hiring, and what it pays, from live micro1 listings.",
+        "h1": [
+          "AI Training Jobs for Lawyers: What the Work Is and What It Pays"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "What the work involves",
+          "Practice areas hiring",
+          "What it pays",
+          "Who qualifies",
+          "How to apply",
+          "FAQ",
+          "How much do AI training jobs for lawyers pay?",
+          "Do I need to be a licensed attorney?",
+          "Is AI training work for lawyers remote?",
+          "More guides"
+        ],
+        "jsonLdCount": 4,
+        "schemaTypes": [
+          "Organization",
+          "WebSite",
+          "Article",
+          "BreadcrumbList",
+          "FAQPage"
+        ],
+        "jsonLdSummary": "@type=Organization | name=Artificial Jobs | description=Directory of paid AI training jobs for domain experts and data partnerships for companies, sourced f\n@type=WebSite | name=Artificial Jobs\n@type=Article | author=Artificial Jobs | datePublished=2026-10-24 | dateModified=2026-10-24T17:34:13. | publisher=Artificial Jobs | description=What AI training work for attorneys involves, which practice areas are hiring, and what it pays, fro\n@type=BreadcrumbList\n@type=FAQPage",
+        "internalLinkCount": 28,
+        "textExcerpt": "AI Training Jobs for Lawyers: What the Work Is and What It Pays By Artificial Jobs · Published October 24, 2026 · Data updated October 24, 2026 There are 50 open AI training jobs for lawyers on micro1 as of October 2026 , paying a median of $ 170 /hr at the top of their range and up to $ 400 /hr. 38 of them pay $100/hr or more. The work is remote, hourly contracting: attorneys review, write and grade the legal answers AI models learn from, so the models reason about contracts, regulations and case law the way a practising lawyer would. What the work involves AI labs need lawyers to tell them when a model’s legal answer is wrong, incomplete or dangerously confident. In practice that means writing model answers to realistic legal questions, grading AI responses against them, and explaining the error when the model misses an exception or misstates a rule. The skills micro1’s law listings ask for most often: Skill Listings asking for it Contract drafting 11 of 50 Contract negotiation 11 of 50 Contract redlining 11 of 50 Legal writing 10 of 50 Legal research 9 of 50 Legal research and analysis 7 of 50 Regulatory compliance 5 of 50 Document review 5 of 50 Practice areas hiring Listings are split by practice area, so a specialist is matched to questions in their own field. Open roles right now include: Investment Funds & Asset Management Attorney Venture Capital & Corporate Attorney FDA & Regulatory Compliance Attorney Structured Finance Attorney Media, Publishing & Communications Law Attorney Military Law Attorney Product Safety & Regulatory Compliance Attorney Gaming & Gambling Attorney Immigration Attorney Family Law Attorney Healthcare Attorney Civil Rights Attorney Energy & Utilities Regulatory Attorney Litigation Associate Attorney Corporate Attorney AI Legal Fellow — Litigation & Motion Practice Derivatives Counsel Investment Funds Attorney Lawyer Tax Attorney Employment Lawyer Personal Injury Lawyer Litigation Attorney Bankruptcy Attorney What it pays 46 of the 50 ",
+        "bodyWordCount": 719,
+        "publishedDate": "2026-10-24",
+        "modifiedDate": "2026-10-24T17:34:13.595Z",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://www.artificialjobs.dev/blog/ai-training-jobs-for-lawyers",
+        "hasOg": true,
+        "imgCount": 0,
+        "imgsWithAlt": 0,
+        "headingLevels": [
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          2
+        ]
+      },
+      "pageType": "blog"
+    },
+    {
+      "url": "https://www.artificialjobs.dev/blog/how-to-sell-company-data-to-ai-labs",
+      "score": 112,
+      "maxScore": 112,
+      "summary": "Strong for AI agents. Improve a few weak signals to harden performance.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": true,
+          "points": 10,
+          "details": "Found title (60 chars)."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": true,
+          "points": 10,
+          "details": "Found description (125 chars)."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": true,
+          "points": 8,
+          "details": "Canonical: https://www.artificialjobs.dev/blog/how-to-sell-company-data-to-ai-labs"
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": true,
+          "points": 8,
+          "details": "Found 1 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": true,
+          "points": 8,
+          "details": "Found 4 JSON-LD block(s)."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": true,
+          "points": 8,
+          "details": "Types: Organization, WebSite, Article, BreadcrumbList, FAQPage"
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": true,
+          "points": 8,
+          "details": "og:title and og:description found."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": true,
+          "points": 10,
+          "details": "Found 17 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": true,
+          "points": 8,
+          "details": "No images on page."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": true,
+          "points": 12,
+          "details": "Estimated 584 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": true,
+          "points": 10,
+          "details": "No noindex directive found."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": true,
+          "points": 6,
+          "details": "Clean heading structure (3 levels) — easy for AI agents to chunk and cite."
+        }
+      ],
+      "aiView": {
+        "title": "How to Sell Your Company’s Data to AI Labs | Artificial Jobs",
+        "metaDescription": "What AI labs buy, what micro1 and Mercor pay companies ($100K–$2M+), how the process works and what to check before you sell.",
+        "h1": [
+          "How to Sell Your Company’s Data to AI Labs"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "Why AI labs buy company data",
+          "micro1’s programs",
+          "What Mercor is buying",
+          "How the process works",
+          "Before you sell",
+          "FAQ",
+          "How much can a company earn selling data to AI labs?",
+          "Can a company that has shut down sell its data?",
+          "More guides"
+        ],
+        "jsonLdCount": 4,
+        "schemaTypes": [
+          "Organization",
+          "WebSite",
+          "Article",
+          "BreadcrumbList",
+          "FAQPage"
+        ],
+        "jsonLdSummary": "@type=Organization | name=Artificial Jobs | description=Directory of paid AI training jobs for domain experts and data partnerships for companies, sourced f\n@type=WebSite | name=Artificial Jobs\n@type=Article | author=Artificial Jobs | datePublished=2026-10-24 | dateModified=2026-10-24T17:34:13. | publisher=Artificial Jobs | description=What AI labs buy, what micro1 and Mercor pay companies ($100K–$2M+), how the process works and what \n@type=BreadcrumbList\n@type=FAQPage",
+        "internalLinkCount": 17,
+        "textExcerpt": "How to Sell Your Company’s Data to AI Labs By Artificial Jobs · Published October 24, 2026 · Data updated October 24, 2026 Companies can sell their internal data to AI labs through data partnership programs run by micro1 and Mercor , which pay $100K–$2M+ (micro1) and up to $1.5M (Mercor) for approved data. Labs want records of real work: internal chat, process documentation, project files and operational records that show how professionals actually do their jobs. Even companies that have shut down can qualify, because their archives still hold that history. Why AI labs buy company data Models have already been trained on much of the public web. What they still lack is the messy, multi-step reality of work inside a company: how a team scopes a project, resolves an incident or closes a deal. Anonymised internal records are one of the few sources of that. micro1’s programs Program Best for Requirements Defunct Company Data Partnership Closed or defunct companies 50+ peak employees, Substantial MS Teams or Slack data, United States Enterprise Data Partnership Operating companies 30-200 employees, Mature workflows, Documented processes micro1 says approved data packages earn the company $100K–$2M+ , depending on size and quality. What Mercor is buying Mercor publishes the company types it is looking for and what each can earn: Company type Size Earns Construction 50–2,000 employees $115K–$1M Semiconductor & materials 10–2,000 employees $100K–$750K Digital health 10–500 employees $100K–$900K Manufacturing & industrial 20–2,000 employees $100K–$1.5M Law firm 5–300 attorneys and staff $50K–$1.2M Cybersecurity 20–2,000 employees $20K–$750K Mercor applications go through data.mercor.com , with referral code HMFNVJTM . How the process works Create a company profile describing your size, industry and the data you hold. The buyer reviews whether your data matches what labs are asking for. If approved, the data is anonymised and packaged, and the company is paid for the approved ",
+        "bodyWordCount": 584,
+        "publishedDate": "2026-10-24",
+        "modifiedDate": "2026-10-24T17:34:13.595Z",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://www.artificialjobs.dev/blog/how-to-sell-company-data-to-ai-labs",
+        "hasOg": true,
+        "imgCount": 0,
+        "imgsWithAlt": 0,
+        "headingLevels": [
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          2
+        ]
+      },
+      "pageType": "blog"
+    },
+    {
+      "url": "https://www.artificialjobs.dev/blog/ai-training-jobs-no-experience",
+      "score": 112,
+      "maxScore": 112,
+      "summary": "Strong for AI agents. Improve a few weak signals to harden performance.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": true,
+          "points": 10,
+          "details": "Found title (75 chars)."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": true,
+          "points": 10,
+          "details": "Found description (130 chars)."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": true,
+          "points": 8,
+          "details": "Canonical: https://www.artificialjobs.dev/blog/ai-training-jobs-no-experience"
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": true,
+          "points": 8,
+          "details": "Found 1 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": true,
+          "points": 8,
+          "details": "Found 4 JSON-LD block(s)."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": true,
+          "points": 8,
+          "details": "Types: Organization, WebSite, Article, BreadcrumbList, FAQPage"
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": true,
+          "points": 8,
+          "details": "og:title and og:description found."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": true,
+          "points": 10,
+          "details": "Found 39 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": true,
+          "points": 8,
+          "details": "No images on page."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": true,
+          "points": 12,
+          "details": "Estimated 572 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": true,
+          "points": 10,
+          "details": "No noindex directive found."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": true,
+          "points": 6,
+          "details": "Clean heading structure (3 levels) — easy for AI agents to chunk and cite."
+        }
+      ],
+      "aiView": {
+        "title": "AI Training Jobs With No Experience: What’s Actually Open | Artificial Jobs",
+        "metaDescription": "The generalist and language AI training roles you can get without professional credentials, what they pay, and how to avoid scams.",
+        "h1": [
+          "AI Training Jobs With No Experience: What’s Actually Open"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "Generalist roles",
+          "Language and audio roles",
+          "How to get hired without experience",
+          "How to spot a fake AI training job",
+          "FAQ",
+          "Can I get an AI training job with no experience?",
+          "Do AI training jobs charge a fee to apply?",
+          "More guides"
+        ],
+        "jsonLdCount": 4,
+        "schemaTypes": [
+          "Organization",
+          "WebSite",
+          "Article",
+          "BreadcrumbList",
+          "FAQPage"
+        ],
+        "jsonLdSummary": "@type=Organization | name=Artificial Jobs | description=Directory of paid AI training jobs for domain experts and data partnerships for companies, sourced f\n@type=WebSite | name=Artificial Jobs\n@type=Article | author=Artificial Jobs | datePublished=2026-10-24 | dateModified=2026-10-24T17:34:13. | publisher=Artificial Jobs | description=The generalist and language AI training roles you can get without professional credentials, what the\n@type=BreadcrumbList\n@type=FAQPage",
+        "internalLinkCount": 39,
+        "textExcerpt": "AI Training Jobs With No Experience: What’s Actually Open By Artificial Jobs · Published October 24, 2026 · Data updated October 24, 2026 Yes, there are AI training jobs you can get without professional credentials , but they pay less. As of October 2026 , micro1 lists 39 generalist and language roles with a median top rate of $ 30 /hr, compared with $ 130 /hr for law, medicine and research roles. The realistic entry points are AI product testing, evaluation and, if you speak a second language natively, transcription and language review. Generalist roles 20 generalist roles are open. These ask you to test AI products, evaluate assistant responses or record everyday tasks, and they reward careful, consistent work more than a specific degree. Role Pay Paid Photo Contributor Opportunity (Aged 50+) $139–$140/hr Evaluation Specialist/Recent Grad $20–$60/hr Human Data Manager $40–$60/hr Imagery Analyst - AI/ML Training Data $20–$60/hr Generalist $30–$49/hr AI Agent Tester - Real-World Tasks $25–$45/hr AI Agent Evaluator $25–$45/hr English Teacher $15–$40/hr AI Product Evaluator $14–$36/hr Usability Tester $20–$30/hr Language and audio roles 19 language and audio roles are open. Native fluency is the credential here, and rarer languages tend to pay more. Role Pay Japanese Language Expert $65–$98/hr Korean Language Expert $65–$98/hr English Voice Recording $20–$70/hr Voice Actor/Coaches $30–$70/hr English Voice Coach $40–$65/hr Cantonese Language Evaluator $30–$40/hr Korean Language Expert $20–$36/hr Japanese Language Expert $20–$36/hr Cantonese Transcription Expert $20–$35/hr Swiss German Transcription Expert $25–$30/hr How to get hired without experience Apply where your strengths are real. A native language or deep hobby knowledge is a genuine qualification for many roles. Prepare for the AI interview. micro1 screens every applicant with an AI interviewer. Answer concretely and give examples. Read the country limits. Many entry-level roles are open only in specific count",
+        "bodyWordCount": 572,
+        "publishedDate": "2026-10-24",
+        "modifiedDate": "2026-10-24T17:34:13.595Z",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://www.artificialjobs.dev/blog/ai-training-jobs-no-experience",
+        "hasOg": true,
+        "imgCount": 0,
+        "imgsWithAlt": 0,
+        "headingLevels": [
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          2
+        ]
+      },
+      "pageType": "blog"
+    },
+    {
+      "url": "https://www.artificialjobs.dev/ai-training-jobs/other",
+      "score": 112,
+      "maxScore": 112,
+      "summary": "Strong for AI agents. Improve a few weak signals to harden performance.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": true,
+          "points": 10,
+          "details": "Found title (89 chars)."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": true,
+          "points": 10,
+          "details": "Found description (126 chars)."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": true,
+          "points": 8,
+          "details": "Canonical: https://www.artificialjobs.dev/ai-training-jobs/other"
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": true,
+          "points": 8,
+          "details": "Found 1 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": true,
+          "points": 8,
+          "details": "Found 3 JSON-LD block(s)."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": true,
+          "points": 8,
+          "details": "Types: Organization, WebSite, BreadcrumbList, FAQPage"
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": true,
+          "points": 8,
+          "details": "og:title and og:description found."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": true,
+          "points": 10,
+          "details": "Found 85 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": true,
+          "points": 8,
+          "details": "No images on page."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": true,
+          "points": 12,
+          "details": "Estimated 1367 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": true,
+          "points": 10,
+          "details": "No noindex directive found."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": true,
+          "points": 6,
+          "details": "Clean heading structure (3 levels) — easy for AI agents to chunk and cite."
+        }
+      ],
+      "aiView": {
+        "title": "48 Best AI Training Jobs for Specialists (October 2026) — Up to $140/hr | Artificial Jobs",
+        "metaDescription": "AI training jobs for specialists: 48 open Specialist roles evaluating and improving AI models, ranked by pay. Refreshed daily.",
+        "h1": [
+          "Best AI training jobs for specialists. 48 open Specialist roles helping AI labs improve their models."
+        ],
+        "h1Count": 1,
+        "headings": [
+          "All 48 roles, ranked by pay",
+          "Journalist/Writer",
+          "Mechanical Engineering Expert (MSc. or PhD)",
+          "Aerodynamics Expert (MSc. or PhD)",
+          "Hardware Expert (MSc. or PhD)",
+          "STEM Expert (MSc./PhD)",
+          "Senior Book Editor",
+          "Cyber Threat Intelligence SME",
+          "Combat Arms &amp; Targeting SME",
+          "Senior Mechanical Design Engineer",
+          "Defense Analyst",
+          "Army Combat Operations Expert",
+          "Military Operations Expert",
+          "Weapons Systems Operator",
+          "Special Forces Operator",
+          "Fighter Pilot"
+        ],
+        "jsonLdCount": 3,
+        "schemaTypes": [
+          "Organization",
+          "WebSite",
+          "BreadcrumbList",
+          "FAQPage"
+        ],
+        "jsonLdSummary": "@type=Organization | name=Artificial Jobs | description=Directory of paid AI training jobs for domain experts and data partnerships for companies, sourced f\n@type=WebSite | name=Artificial Jobs\n@type=BreadcrumbList\n@type=FAQPage",
+        "internalLinkCount": 85,
+        "textExcerpt": "Updated October 2026 · ranked by pay Best AI training jobs for specialists. 48 open Specialist roles helping AI labs improve their models. Open roles 48 Top hourly rate $140/hr Median top rate $80/hr High demand 33 As of October 2026, there are 48 open AI training jobs for specialists listed on micro1. Top-of-range pay runs from $40 to $140/hr, with a median of $80/hr. The best-paying role right now is Journalist/Writer at up to $140/hr. All of these roles are remote, and 33 are marked high demand. The work is flexible hourly contracting: you use your professional expertise to write, review and grade the examples AI models learn from. Listings are refreshed daily from micro1, so closed roles drop off within a day. All 48 roles, ranked by pay 01 High demand 10 openings Journalist/Writer Technical Writing · Content Evaluation · Written Communication $90–$140/hr hourly pay Apply 02 High demand 100 openings Mechanical Engineering Expert (MSc. or PhD) Python · Mechanical Engineering $60–$120/hr hourly pay Apply 03 High demand 100 openings Aerodynamics Expert (MSc. or PhD) Python · Aerodynamics $80–$120/hr hourly pay Apply 04 High demand 10 openings Hardware Expert (MSc. or PhD) RTL · Hardware $60–$120/hr hourly pay Apply 05 High demand 10 openings STEM Expert (MSc./PhD) Biology $60–$120/hr hourly pay Apply 06 High demand 20 openings Senior Book Editor manuscript editing · line editing · copyediting $80–$120/hr hourly pay Apply 07 High demand 3 openings Cyber Threat Intelligence SME Nation-state threat judgment · Offensive/defensive line · Over-refusal detection $70–$110/hr hourly pay Apply 08 High demand 2 openings Combat Arms & Targeting SME Targeting & fires judgment · Boundary discrimination · Utility assessment $60–$110/hr hourly pay Apply 09 High demand 20 openings Senior Mechanical Design Engineer Design intent & assembly reasoning · Parametric modeling depth · Mechanism & kinematic sense $40–$90/hr hourly pay Apply 10 High demand 10 openings Defense Analyst milita",
+        "bodyWordCount": 1367,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://www.artificialjobs.dev/ai-training-jobs/other",
+        "hasOg": true,
+        "imgCount": 0,
+        "imgsWithAlt": 0,
+        "headingLevels": [
+          1,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          3,
+          3
+        ]
+      },
+      "pageType": "other"
+    },
+    {
+      "url": "https://www.artificialjobs.dev/ai-training-jobs/law",
+      "score": 112,
+      "maxScore": 112,
+      "summary": "Strong for AI agents. Improve a few weak signals to harden performance.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": true,
+          "points": 10,
+          "details": "Found title (85 chars)."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": true,
+          "points": 10,
+          "details": "Found description (115 chars)."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": true,
+          "points": 8,
+          "details": "Canonical: https://www.artificialjobs.dev/ai-training-jobs/law"
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": true,
+          "points": 8,
+          "details": "Found 1 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": true,
+          "points": 8,
+          "details": "Found 3 JSON-LD block(s)."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": true,
+          "points": 8,
+          "details": "Types: Organization, WebSite, BreadcrumbList, FAQPage"
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": true,
+          "points": 8,
+          "details": "og:title and og:description found."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": true,
+          "points": 10,
+          "details": "Found 87 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": true,
+          "points": 8,
+          "details": "No images on page."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": true,
+          "points": 12,
+          "details": "Estimated 1518 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": true,
+          "points": 10,
+          "details": "No noindex directive found."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": true,
+          "points": 6,
+          "details": "Clean heading structure (3 levels) — easy for AI agents to chunk and cite."
+        }
+      ],
+      "aiView": {
+        "title": "50 Best AI Training Jobs for Lawyers (October 2026) — Up to $400/hr | Artificial Jobs",
+        "metaDescription": "AI training jobs for lawyers: 50 open Law roles evaluating and improving AI models, ranked by pay. Refreshed daily.",
+        "h1": [
+          "Best AI training jobs for lawyers. 50 open Law roles helping AI labs improve their models."
+        ],
+        "h1Count": 1,
+        "headings": [
+          "All 50 roles, ranked by pay",
+          "Investment Funds &amp; Asset Management Attorney",
+          "Venture Capital &amp; Corporate Attorney",
+          "FDA &amp; Regulatory Compliance Attorney",
+          "Structured Finance Attorney",
+          "Media, Publishing &amp; Communications Law Attorney",
+          "Military Law Attorney",
+          "Product Safety &amp; Regulatory Compliance Attorney",
+          "Gaming &amp; Gambling Attorney",
+          "Immigration Attorney",
+          "Family Law Attorney (AAML Registered)",
+          "Healthcare Attorney (BigLaw Firms)",
+          "Civil Rights Attorney (BigLaw Firms)",
+          "Energy &amp; Utilities Regulatory Attorney",
+          "Litigation Associate Attorney (BigLaw Firms)",
+          "Corporate Attorney (BigLaw Firms)"
+        ],
+        "jsonLdCount": 3,
+        "schemaTypes": [
+          "Organization",
+          "WebSite",
+          "BreadcrumbList",
+          "FAQPage"
+        ],
+        "jsonLdSummary": "@type=Organization | name=Artificial Jobs | description=Directory of paid AI training jobs for domain experts and data partnerships for companies, sourced f\n@type=WebSite | name=Artificial Jobs\n@type=BreadcrumbList\n@type=FAQPage",
+        "internalLinkCount": 87,
+        "textExcerpt": "Updated October 2026 · ranked by pay Best AI training jobs for lawyers. 50 open Law roles helping AI labs improve their models. Open roles 50 Top hourly rate $400/hr Median top rate $170/hr High demand 46 As of October 2026, there are 50 open AI training jobs for lawyers listed on micro1. Top-of-range pay runs from $70 to $400/hr, with a median of $170/hr. The best-paying role right now is Investment Funds & Asset Management Attorney at up to $400/hr. All of these roles are remote, and 46 are marked high demand. The work is flexible hourly contracting: you use your professional expertise to write, review and grade the examples AI models learn from. Listings are refreshed daily from micro1, so closed roles drop off within a day. All 50 roles, ranked by pay 01 High demand 5 openings Investment Funds & Asset Management Attorney investment funds law · asset management law · securities regulation $140–$400/hr hourly pay Apply 02 High demand 5 openings Venture Capital & Corporate Attorney venture capital financing · corporate transactions · legal drafting and negotiation $140–$400/hr hourly pay Apply 03 High demand 5 openings FDA & Regulatory Compliance Attorney fda regulatory analysis · legal research · regulatory compliance $140–$400/hr hourly pay Apply 04 High demand 5 openings Structured Finance Attorney structured finance law · contract review and drafting · regulatory compliance $140–$400/hr hourly pay Apply 05 High demand 5 openings Media, Publishing & Communications Law Attorney Attention to detail · Rights and Content Licensing · FCC and Broadcast Regulation $140–$400/hr hourly pay Apply 06 High demand 5 openings Military Law Attorney military law expertise · ucmj (uniform code of military justice) · legal research and analysis $140–$400/hr hourly pay Apply 07 High demand 5 openings Product Safety & Regulatory Compliance Attorney product safety law · regulatory compliance · legal research and analysis $140–$400/hr hourly pay Apply 08 High demand 5 openings Gaming",
+        "bodyWordCount": 1518,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://www.artificialjobs.dev/ai-training-jobs/law",
+        "hasOg": true,
+        "imgCount": 0,
+        "imgsWithAlt": 0,
+        "headingLevels": [
+          1,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          3,
+          3
+        ]
+      },
+      "pageType": "other"
+    },
+    {
+      "url": "https://www.artificialjobs.dev/ai-training-jobs/software-engineering",
+      "score": 112,
+      "maxScore": 112,
+      "summary": "Strong for AI agents. Improve a few weak signals to harden performance.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": true,
+          "points": 10,
+          "details": "Found title (96 chars)."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": true,
+          "points": 10,
+          "details": "Found description (143 chars)."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": true,
+          "points": 8,
+          "details": "Canonical: https://www.artificialjobs.dev/ai-training-jobs/software-engineering"
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": true,
+          "points": 8,
+          "details": "Found 1 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": true,
+          "points": 8,
+          "details": "Found 3 JSON-LD block(s)."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": true,
+          "points": 8,
+          "details": "Types: Organization, WebSite, BreadcrumbList, FAQPage"
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": true,
+          "points": 8,
+          "details": "og:title and og:description found."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": true,
+          "points": 10,
+          "details": "Found 67 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": true,
+          "points": 8,
+          "details": "No images on page."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": true,
+          "points": 12,
+          "details": "Estimated 963 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": true,
+          "points": 10,
+          "details": "No noindex directive found."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": true,
+          "points": 6,
+          "details": "Clean heading structure (3 levels) — easy for AI agents to chunk and cite."
+        }
+      ],
+      "aiView": {
+        "title": "30 Best AI Training Jobs for Software engineers (October 2026) — Up to $350/hr | Artificial Jobs",
+        "metaDescription": "AI training jobs for software engineers: 30 open Software Engineering roles evaluating and improving AI models, ranked by pay. Refreshed daily.",
+        "h1": [
+          "Best AI training jobs for software engineers. 30 open Software Engineering roles helping AI labs improve their models."
+        ],
+        "h1Count": 1,
+        "headings": [
+          "All 30 roles, ranked by pay",
+          "Software Engineering Specialist",
+          "Open Source GitHub Maintainer",
+          "Applied Scientist",
+          "Data Scientist",
+          "Junior Data Scientist",
+          "Open Source Contributor (GitHub)",
+          "Puzzle Solver (Coding)",
+          "Backend C#/.NET Developer",
+          "Software Engineer (Open Source Contributor)",
+          "Software Engineer (GitHub Contributor)",
+          "Senior Mobile Developer",
+          "Software Engineer – Backend",
+          "Software Engineer",
+          "Backend Security Engineer",
+          "Senior Software Engineer"
+        ],
+        "jsonLdCount": 3,
+        "schemaTypes": [
+          "Organization",
+          "WebSite",
+          "BreadcrumbList",
+          "FAQPage"
+        ],
+        "jsonLdSummary": "@type=Organization | name=Artificial Jobs | description=Directory of paid AI training jobs for domain experts and data partnerships for companies, sourced f\n@type=WebSite | name=Artificial Jobs\n@type=BreadcrumbList\n@type=FAQPage",
+        "internalLinkCount": 67,
+        "textExcerpt": "Updated October 2026 · ranked by pay Best AI training jobs for software engineers. 30 open Software Engineering roles helping AI labs improve their models. Open roles 30 Top hourly rate $350/hr Median top rate $100/hr High demand 23 As of October 2026, there are 30 open AI training jobs for software engineers listed on micro1. Top-of-range pay runs from $60 to $350/hr, with a median of $100/hr. The best-paying role right now is Software Engineering Specialist at up to $350/hr. All of these roles are remote, and 23 are marked high demand. The work is flexible hourly contracting: you use your professional expertise to write, review and grade the examples AI models learn from. Listings are refreshed daily from micro1, so closed roles drop off within a day. All 30 roles, ranked by pay 01 High demand 7 openings Software Engineering Specialist Microsoft PowerPoint · Slide Reconstruction · Presentation Design $150–$350/hr hourly pay Apply 02 High demand 10 openings Open Source GitHub Maintainer GitHub · C++ · JAVA $150–$300/hr hourly pay Apply 03 High demand 100 openings Applied Scientist Python · Machine Learning · Statistics $245–$280/hr hourly pay Apply 04 High demand 100 openings Data Scientist Python · Machine Learning · Statistics $245–$280/hr hourly pay Apply 05 High demand 100 openings Junior Data Scientist Python · Machine Learning · Statistics $150–$200/hr hourly pay Apply 06 High demand 100 openings Open Source Contributor (GitHub) Python3 · JAVA · Rust $100–$150/hr hourly pay Apply 07 High demand 100 openings Puzzle Solver (Coding) Python · C++ $60–$120/hr hourly pay Apply 08 2 openings Backend C#/.NET Developer C# · .NET · MySQL $60–$110/hr hourly pay Apply 09 High demand 100 openings Software Engineer (Open Source Contributor) Python3 · JAVA · Rust $50–$100/hr hourly pay Apply 10 High demand 100 openings Software Engineer (GitHub Contributor) Python3 · JAVA · Rust $50–$100/hr hourly pay Apply 11 High demand 100 openings Senior Mobile Developer Kotlin · Swift ",
+        "bodyWordCount": 963,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://www.artificialjobs.dev/ai-training-jobs/software-engineering",
+        "hasOg": true,
+        "imgCount": 0,
+        "imgsWithAlt": 0,
+        "headingLevels": [
+          1,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          3,
+          3
+        ]
+      },
+      "pageType": "other"
+    },
+    {
+      "url": "https://www.artificialjobs.dev/ai-training-jobs/language-audio",
+      "score": 112,
+      "maxScore": 112,
+      "summary": "Strong for AI agents. Improve a few weak signals to harden performance.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": true,
+          "points": 10,
+          "details": "Found title (104 chars)."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": true,
+          "points": 10,
+          "details": "Found description (145 chars)."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": true,
+          "points": 8,
+          "details": "Canonical: https://www.artificialjobs.dev/ai-training-jobs/language-audio"
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": true,
+          "points": 8,
+          "details": "Found 1 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": true,
+          "points": 8,
+          "details": "Found 3 JSON-LD block(s)."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": true,
+          "points": 8,
+          "details": "Types: Organization, WebSite, BreadcrumbList, FAQPage"
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": true,
+          "points": 8,
+          "details": "og:title and og:description found."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": true,
+          "points": 10,
+          "details": "Found 56 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": true,
+          "points": 8,
+          "details": "No images on page."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": true,
+          "points": 12,
+          "details": "Estimated 797 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": true,
+          "points": 10,
+          "details": "No noindex directive found."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": true,
+          "points": 6,
+          "details": "Clean heading structure (3 levels) — easy for AI agents to chunk and cite."
+        }
+      ],
+      "aiView": {
+        "title": "19 Best AI Training Jobs for Linguists &amp; translators (October 2026) — Up to $98/hr | Artificial Jobs",
+        "metaDescription": "AI training jobs for linguists & translators: 19 open Languages & Audio roles evaluating and improving AI models, ranked by pay. Refreshed daily.",
+        "h1": [
+          "Best AI training jobs for linguists &amp; translators. 19 open Languages &amp; Audio roles helping AI labs improve their models."
+        ],
+        "h1Count": 1,
+        "headings": [
+          "All 19 roles, ranked by pay",
+          "Japanese Language Expert",
+          "Korean Language Expert",
+          "English Voice Recording",
+          "Voice Actor/Coaches",
+          "English Voice Coach",
+          "Cantonese Language Evaluator",
+          "Korean Language Expert",
+          "Japanese Language Expert",
+          "Cantonese Transcription Expert",
+          "Swiss German Transcription Expert",
+          "Finnish Transcription Expert",
+          "Norwegian Transcription Expert",
+          "Danish Transcription Expert",
+          "Mandarin Transcription Expert",
+          "Dutch Transcription Expert"
+        ],
+        "jsonLdCount": 3,
+        "schemaTypes": [
+          "Organization",
+          "WebSite",
+          "BreadcrumbList",
+          "FAQPage"
+        ],
+        "jsonLdSummary": "@type=Organization | name=Artificial Jobs | description=Directory of paid AI training jobs for domain experts and data partnerships for companies, sourced f\n@type=WebSite | name=Artificial Jobs\n@type=BreadcrumbList\n@type=FAQPage",
+        "internalLinkCount": 56,
+        "textExcerpt": "Updated October 2026 · ranked by pay Best AI training jobs for linguists & translators. 19 open Languages & Audio roles helping AI labs improve their models. Open roles 19 Top hourly rate $98/hr Median top rate $30/hr High demand 5 As of October 2026, there are 19 open AI training jobs for linguists & translators listed on micro1. Top-of-range pay runs from $12 to $98/hr, with a median of $30/hr. The best-paying role right now is Japanese Language Expert at up to $98/hr. All of these roles are remote, and 5 are marked high demand. The work is flexible hourly contracting: you use your professional expertise to write, review and grade the examples AI models learn from. Listings are refreshed daily from micro1, so closed roles drop off within a day. All 19 roles, ranked by pay 01 High demand 10 openings Japanese Language Expert $65–$98/hr hourly pay Apply 02 High demand 10 openings Korean Language Expert Communication · Bilingual · Linguists $65–$98/hr hourly pay Apply 03 100 openings English Voice Recording Native English · Sound recording · Clear and Natural spoken english $20–$70/hr hourly pay Apply 04 High demand 60 openings Voice Actor/Coaches Voice Acting · Voice Coaching · Vocal Pedagogy $30–$70/hr hourly pay Apply 05 High demand 50 openings English Voice Coach $40–$65/hr hourly pay Apply 06 8 openings Cantonese Language Evaluator Cantonese $30–$40/hr hourly pay Apply 07 15 openings Korean Language Expert Audio Transcription · Attention to detail · AI Training $20–$36/hr hourly pay Apply 08 15 openings Japanese Language Expert apanese Language Fluency · Audio Transcription · Attention to detail $20–$36/hr hourly pay Apply 09 Cantonese Transcription Expert Audio Transcription · Attention to details · AI Training $20–$35/hr hourly pay Apply 10 High demand 10 openings Swiss German Transcription Expert AI Training · Attention to detail · Audio Transcritption $25–$30/hr hourly pay Apply 11 10 openings Finnish Transcription Expert finnish language proficiency · transc",
+        "bodyWordCount": 797,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://www.artificialjobs.dev/ai-training-jobs/language-audio",
+        "hasOg": true,
+        "imgCount": 0,
+        "imgsWithAlt": 0,
+        "headingLevels": [
+          1,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          3,
+          3
+        ]
+      },
+      "pageType": "other"
+    },
+    {
+      "url": "https://www.artificialjobs.dev/ai-training-jobs/sciences-research",
+      "score": 112,
+      "maxScore": 112,
+      "summary": "Strong for AI agents. Improve a few weak signals to harden performance.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": true,
+          "points": 10,
+          "details": "Found title (99 chars)."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": true,
+          "points": 10,
+          "details": "Found description (140 chars)."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": true,
+          "points": 8,
+          "details": "Canonical: https://www.artificialjobs.dev/ai-training-jobs/sciences-research"
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": true,
+          "points": 8,
+          "details": "Found 1 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": true,
+          "points": 8,
+          "details": "Found 3 JSON-LD block(s)."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": true,
+          "points": 8,
+          "details": "Types: Organization, WebSite, BreadcrumbList, FAQPage"
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": true,
+          "points": 8,
+          "details": "og:title and og:description found."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": true,
+          "points": 10,
+          "details": "Found 57 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": true,
+          "points": 8,
+          "details": "No images on page."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": true,
+          "points": 12,
+          "details": "Estimated 889 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": true,
+          "points": 10,
+          "details": "No noindex directive found."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": true,
+          "points": 6,
+          "details": "Clean heading structure (3 levels) — easy for AI agents to chunk and cite."
+        }
+      ],
+      "aiView": {
+        "title": "20 Best AI Training Jobs for Scientists &amp; PhDs (October 2026) — Up to $400/hr | Artificial Jobs",
+        "metaDescription": "AI training jobs for scientists & PhDs: 20 open Science & Research roles evaluating and improving AI models, ranked by pay. Refreshed daily.",
+        "h1": [
+          "Best AI training jobs for scientists &amp; PhDs. 20 open Science &amp; Research roles helping AI labs improve their models."
+        ],
+        "h1Count": 1,
+        "headings": [
+          "All 20 roles, ranked by pay",
+          "Research Scientist - Computer Science &amp; Computational Physics",
+          "Principal Research Scientist (Computer Science / Computational Physics)",
+          "Bilingual Cantonese Psychologist (PhD)",
+          "Bilingual Cantonese Psychiatrist",
+          "Bilingual Vietnamese Psychiatrist",
+          "Bilingual Vietnamese Psychologist (PhD)",
+          "Georgian Speaking Psychiatrist",
+          "Georgian Speaking Psychologist (PhD)",
+          "Bilingual Japanese Psychiatrist",
+          "Bilingual Japanese Psychologist (PhD)",
+          "Physics Expert PhD (Statistical Physics / Quantum Information / Condensed Matter)",
+          "Physics Expert (PhD / Postdoc)",
+          "Physics Expert PhD (AMO / Optical Properties of Materials)",
+          "Mathematics Expert (MSc./PhD)",
+          "Life Sciences Research Expert (Python)"
+        ],
+        "jsonLdCount": 3,
+        "schemaTypes": [
+          "Organization",
+          "WebSite",
+          "BreadcrumbList",
+          "FAQPage"
+        ],
+        "jsonLdSummary": "@type=Organization | name=Artificial Jobs | description=Directory of paid AI training jobs for domain experts and data partnerships for companies, sourced f\n@type=WebSite | name=Artificial Jobs\n@type=BreadcrumbList\n@type=FAQPage",
+        "internalLinkCount": 57,
+        "textExcerpt": "Updated October 2026 · ranked by pay Best AI training jobs for scientists & PhDs. 20 open Science & Research roles helping AI labs improve their models. Open roles 20 Top hourly rate $400/hr Median top rate $200/hr High demand 15 As of October 2026, there are 20 open AI training jobs for scientists & PhDs listed on micro1. Top-of-range pay runs from $60 to $400/hr, with a median of $200/hr. The best-paying role right now is Research Scientist - Computer Science & Computational Physics at up to $400/hr. All of these roles are remote, and 15 are marked high demand. The work is flexible hourly contracting: you use your professional expertise to write, review and grade the examples AI models learn from. Listings are refreshed daily from micro1, so closed roles drop off within a day. All 20 roles, ranked by pay 01 High demand 4 openings Research Scientist - Computer Science & Computational Physics Computational rigor · Complex problem solving - Research · Problem framing $100–$400/hr hourly pay Apply 02 High demand 4 openings Principal Research Scientist (Computer Science / Computational Physics) Novelty judgment · Research direction · Computational rigor $100–$400/hr hourly pay Apply 03 High demand 70 openings Bilingual Cantonese Psychologist (PhD) bilingual communication · ethical decision-making · cultural sensitivity $100–$200/hr hourly pay Apply 04 High demand 70 openings Bilingual Cantonese Psychiatrist bilingual communication · ethical decision-making · cultural sensitivity $100–$200/hr hourly pay Apply 05 High demand 70 openings Bilingual Vietnamese Psychiatrist bilingual communication · ethical decision-making · cultural sensitivity $100–$200/hr hourly pay Apply 06 High demand 70 openings Bilingual Vietnamese Psychologist (PhD) bilingual communication · ethical decision-making · cultural sensitivity $100–$200/hr hourly pay Apply 07 70 openings Georgian Speaking Psychiatrist bilingual communication · ethical decision-making · cultural sensitivity $100–$200/hr hou",
+        "bodyWordCount": 889,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://www.artificialjobs.dev/ai-training-jobs/sciences-research",
+        "hasOg": true,
+        "imgCount": 0,
+        "imgsWithAlt": 0,
+        "headingLevels": [
+          1,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          3,
+          3
+        ]
+      },
+      "pageType": "other"
+    },
+    {
+      "url": "https://www.artificialjobs.dev/ai-training-jobs/medicine",
+      "score": 112,
+      "maxScore": 112,
+      "summary": "Strong for AI agents. Improve a few weak signals to harden performance.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": true,
+          "points": 10,
+          "details": "Found title (85 chars)."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": true,
+          "points": 10,
+          "details": "Found description (120 chars)."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": true,
+          "points": 8,
+          "details": "Canonical: https://www.artificialjobs.dev/ai-training-jobs/medicine"
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": true,
+          "points": 8,
+          "details": "Found 1 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": true,
+          "points": 8,
+          "details": "Found 3 JSON-LD block(s)."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": true,
+          "points": 8,
+          "details": "Types: Organization, WebSite, BreadcrumbList, FAQPage"
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": true,
+          "points": 8,
+          "details": "og:title and og:description found."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": true,
+          "points": 10,
+          "details": "Found 61 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": true,
+          "points": 8,
+          "details": "No images on page."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": true,
+          "points": 12,
+          "details": "Estimated 887 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": true,
+          "points": 10,
+          "details": "No noindex directive found."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": true,
+          "points": 6,
+          "details": "Clean heading structure (3 levels) — easy for AI agents to chunk and cite."
+        }
+      ],
+      "aiView": {
+        "title": "24 Best AI Training Jobs for Doctors (October 2026) — Up to $285/hr | Artificial Jobs",
+        "metaDescription": "AI training jobs for doctors: 24 open Medicine roles evaluating and improving AI models, ranked by pay. Refreshed daily.",
+        "h1": [
+          "Best AI training jobs for doctors. 24 open Medicine roles helping AI labs improve their models."
+        ],
+        "h1Count": 1,
+        "headings": [
+          "All 24 roles, ranked by pay",
+          "Dentist",
+          "Dentist (DDS/DMD) - Dental Technology",
+          "US-Licensed Physician",
+          "Bilingual Medical Doctor (Japanese)",
+          "Bilingual Medical Doctor (Korean)",
+          "Physician AI Trainer – Hospital Medicine",
+          "Locum Tenens Hospitalist",
+          "Hospitalist Physician",
+          "Family Medicine Physician (MD)",
+          "Inpatient Care Physician (MD/DO)",
+          "Medical Specialist",
+          "Internal Medicine Hospitalist",
+          "Pediatric Hospitalist",
+          "Family Medicine Hospitalist",
+          "Hospitalist Physician"
+        ],
+        "jsonLdCount": 3,
+        "schemaTypes": [
+          "Organization",
+          "WebSite",
+          "BreadcrumbList",
+          "FAQPage"
+        ],
+        "jsonLdSummary": "@type=Organization | name=Artificial Jobs | description=Directory of paid AI training jobs for domain experts and data partnerships for companies, sourced f\n@type=WebSite | name=Artificial Jobs\n@type=BreadcrumbList\n@type=FAQPage",
+        "internalLinkCount": 61,
+        "textExcerpt": "Updated October 2026 · ranked by pay Best AI training jobs for doctors. 24 open Medicine roles helping AI labs improve their models. Open roles 24 Top hourly rate $285/hr Median top rate $115/hr High demand 20 As of October 2026, there are 24 open AI training jobs for doctors listed on micro1. Top-of-range pay runs from $32 to $285/hr, with a median of $115/hr. The best-paying role right now is Dentist at up to $285/hr. All of these roles are remote, and 20 are marked high demand. The work is flexible hourly contracting: you use your professional expertise to write, review and grade the examples AI models learn from. Listings are refreshed daily from micro1, so closed roles drop off within a day. All 24 roles, ranked by pay 01 High demand 40 openings Dentist Dentistry · Dental Software · Digital Dentistry $80–$285/hr hourly pay Apply 02 High demand 40 openings Dentist (DDS/DMD) - Dental Technology Dentistry · Dental Software · Digital Dentistry $80–$285/hr hourly pay Apply 03 High demand 50 openings US-Licensed Physician Hospitalist Experience · Internal Medicine · Pediatrics $80–$125/hr hourly pay Apply 04 30 openings Bilingual Medical Doctor (Japanese) Diagnostic Analysis · Medicine · Physiology $125/hr hourly pay Apply 05 30 openings Bilingual Medical Doctor (Korean) Diagnostic Analysis · Medicine · Physiology $125/hr hourly pay Apply 06 High demand 50 openings Physician AI Trainer – Hospital Medicine Hospitalist Experience · Internal Medicine · Pediatrics $80–$125/hr hourly pay Apply 07 High demand 50 openings Locum Tenens Hospitalist Hospitalist Experience · Internal Medicine · Pediatrics $80–$125/hr hourly pay Apply 08 High demand 50 openings Hospitalist Physician FHIR Records · History of Present Illness · Past Medical History $100–$120/hr hourly pay Apply 09 High demand 10 openings Family Medicine Physician (MD) clinical annotation · medical record review · evidence-based medicine $100–$120/hr hourly pay Apply 10 High demand 50 openings Inpatient Care Physic",
+        "bodyWordCount": 887,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://www.artificialjobs.dev/ai-training-jobs/medicine",
+        "hasOg": true,
+        "imgCount": 0,
+        "imgsWithAlt": 0,
+        "headingLevels": [
+          1,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          3,
+          3
+        ]
+      },
+      "pageType": "other"
+    },
+    {
+      "url": "https://www.artificialjobs.dev/ai-training-jobs/generalist",
+      "score": 112,
+      "maxScore": 112,
+      "summary": "Strong for AI agents. Improve a few weak signals to harden performance.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": true,
+          "points": 10,
+          "details": "Found title (89 chars)."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": true,
+          "points": 10,
+          "details": "Found description (126 chars)."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": true,
+          "points": 8,
+          "details": "Canonical: https://www.artificialjobs.dev/ai-training-jobs/generalist"
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": true,
+          "points": 8,
+          "details": "Found 1 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": true,
+          "points": 8,
+          "details": "Found 3 JSON-LD block(s)."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": true,
+          "points": 8,
+          "details": "Types: Organization, WebSite, BreadcrumbList, FAQPage"
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": true,
+          "points": 8,
+          "details": "og:title and og:description found."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": true,
+          "points": 10,
+          "details": "Found 57 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": true,
+          "points": 8,
+          "details": "No images on page."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": true,
+          "points": 12,
+          "details": "Estimated 803 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": true,
+          "points": 10,
+          "details": "No noindex directive found."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": true,
+          "points": 6,
+          "details": "Clean heading structure (3 levels) — easy for AI agents to chunk and cite."
+        }
+      ],
+      "aiView": {
+        "title": "20 Best AI Training Jobs for Generalists (October 2026) — Up to $140/hr | Artificial Jobs",
+        "metaDescription": "AI training jobs for generalists: 20 open Generalist roles evaluating and improving AI models, ranked by pay. Refreshed daily.",
+        "h1": [
+          "Best AI training jobs for generalists. 20 open Generalist roles helping AI labs improve their models."
+        ],
+        "h1Count": 1,
+        "headings": [
+          "All 20 roles, ranked by pay",
+          "Paid Photo Contributor Opportunity (Aged 50+)",
+          "Evaluation Specialist/Recent Grad",
+          "Human Data Manager",
+          "Imagery Analyst - AI/ML Training Data",
+          "Generalist",
+          "AI Agent Tester - Real-World Tasks",
+          "AI Agent Evaluator",
+          "English Teacher",
+          "AI Product Evaluator",
+          "Usability Tester",
+          "Spanish-Language Consumer Reviewer",
+          "Consumer Reviewer",
+          "Gmail &amp; Google Calendar AI Assistant Evaluator",
+          "German Transcription Expert",
+          "Tamil Transcription Expert"
+        ],
+        "jsonLdCount": 3,
+        "schemaTypes": [
+          "Organization",
+          "WebSite",
+          "BreadcrumbList",
+          "FAQPage"
+        ],
+        "jsonLdSummary": "@type=Organization | name=Artificial Jobs | description=Directory of paid AI training jobs for domain experts and data partnerships for companies, sourced f\n@type=WebSite | name=Artificial Jobs\n@type=BreadcrumbList\n@type=FAQPage",
+        "internalLinkCount": 57,
+        "textExcerpt": "Updated October 2026 · ranked by pay Best AI training jobs for generalists. 20 open Generalist roles helping AI labs improve their models. Open roles 20 Top hourly rate $140/hr Median top rate $36/hr High demand 12 As of October 2026, there are 20 open AI training jobs for generalists listed on micro1. Top-of-range pay runs from $6 to $140/hr, with a median of $36/hr. The best-paying role right now is Paid Photo Contributor Opportunity (Aged 50+) at up to $140/hr. All of these roles are remote, and 12 are marked high demand. The work is flexible hourly contracting: you use your professional expertise to write, review and grade the examples AI models learn from. Listings are refreshed daily from micro1, so closed roles drop off within a day. All 20 roles, ranked by pay 01 5000 openings Paid Photo Contributor Opportunity (Aged 50+) Selfies · Video Recordings · Attention to Detail $139–$140/hr hourly pay Apply 02 High demand 5 openings Evaluation Specialist/Recent Grad Research & source triangulation · Attention to detail · Written precision $20–$60/hr hourly pay Apply 03 High demand Human Data Manager Project Management · Data Operations · Quality Analysis $40–$60/hr hourly pay Apply 04 High demand 10 openings Imagery Analyst - AI/ML Training Data Data labeling · Data annotation · Labeling accuracy $20–$60/hr hourly pay Apply 05 High demand 50 openings Generalist Generalist · ChatGPT Proficiency · Problem Solving $30–$49/hr hourly pay Apply 06 High demand 50 openings AI Agent Tester - Real-World Tasks ChatGPT · Muse · AI agents $25–$45/hr hourly pay Apply 07 50 openings AI Agent Evaluator ChatGPT · Muse · AI agents $25–$45/hr hourly pay Apply 08 High demand 50 openings English Teacher English · Attention to Detail · AI Usage $15–$40/hr hourly pay Apply 09 High demand 100 openings AI Product Evaluator AI Models · AI Agents · Following Instructions $14–$36/hr hourly pay Apply 10 10 openings Usability Tester $20–$30/hr hourly pay Apply 11 10 openings Spanish-Language Con",
+        "bodyWordCount": 803,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://www.artificialjobs.dev/ai-training-jobs/generalist",
+        "hasOg": true,
+        "imgCount": 0,
+        "imgsWithAlt": 0,
+        "headingLevels": [
+          1,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          3,
+          3
+        ]
+      },
+      "pageType": "other"
+    },
+    {
+      "url": "https://www.artificialjobs.dev/ai-training-jobs/applied-engineering",
+      "score": 112,
+      "maxScore": 112,
+      "summary": "Strong for AI agents. Improve a few weak signals to harden performance.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": true,
+          "points": 10,
+          "details": "Found title (87 chars)."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": true,
+          "points": 10,
+          "details": "Found description (133 chars)."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": true,
+          "points": 8,
+          "details": "Canonical: https://www.artificialjobs.dev/ai-training-jobs/applied-engineering"
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": true,
+          "points": 8,
+          "details": "Found 1 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": true,
+          "points": 8,
+          "details": "Found 3 JSON-LD block(s)."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": true,
+          "points": 8,
+          "details": "Types: Organization, WebSite, BreadcrumbList, FAQPage"
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": true,
+          "points": 8,
+          "details": "og:title and og:description found."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": true,
+          "points": 10,
+          "details": "Found 53 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": true,
+          "points": 8,
+          "details": "No images on page."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": true,
+          "points": 12,
+          "details": "Estimated 837 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": true,
+          "points": 10,
+          "details": "No noindex directive found."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": true,
+          "points": 6,
+          "details": "Clean heading structure (3 levels) — easy for AI agents to chunk and cite."
+        }
+      ],
+      "aiView": {
+        "title": "16 Best AI Training Jobs for Engineers (October 2026) — Up to $150/hr | Artificial Jobs",
+        "metaDescription": "AI training jobs for engineers: 16 open Applied Engineering roles evaluating and improving AI models, ranked by pay. Refreshed daily.",
+        "h1": [
+          "Best AI training jobs for engineers. 16 open Applied Engineering roles helping AI labs improve their models."
+        ],
+        "h1Count": 1,
+        "headings": [
+          "All 16 roles, ranked by pay",
+          "Simulation Expert — Real-to-Sim 3D Environments &amp; Assets",
+          "CFD Engineer",
+          "PhysioNet Competitor (Biomedical Signal Processing &amp; ML)",
+          "STEM Expert – Chemistry &amp; Computational Chemistry (PhD)",
+          "STEM Expert – Biology &amp; Bioinformatics (PhD)",
+          "Life Sciences Research Scientist (PhD): Wet Lab &amp; Computational Biology",
+          "Clinical, Microbiome &amp; Translational Research Scientist (PhD)",
+          "Computational Chemistry, Structural Biology &amp; Drug Discovery Scientist (PhD)",
+          "Computational Biology &amp; Bioinformatics Expert (PhD)",
+          "QA &amp; Source Inspection",
+          "Senior Machinist / Construction &amp; Field Ops Lead",
+          "Senior Aviation Maintenance Inspector",
+          "Senior Metallurgist / Welding Inspector",
+          "Senior Electronics Quality Engineer",
+          "Senior Field Service Technician"
+        ],
+        "jsonLdCount": 3,
+        "schemaTypes": [
+          "Organization",
+          "WebSite",
+          "BreadcrumbList",
+          "FAQPage"
+        ],
+        "jsonLdSummary": "@type=Organization | name=Artificial Jobs | description=Directory of paid AI training jobs for domain experts and data partnerships for companies, sourced f\n@type=WebSite | name=Artificial Jobs\n@type=BreadcrumbList\n@type=FAQPage",
+        "internalLinkCount": 53,
+        "textExcerpt": "Updated October 2026 · ranked by pay Best AI training jobs for engineers. 16 open Applied Engineering roles helping AI labs improve their models. Open roles 16 Top hourly rate $150/hr Median top rate $90/hr High demand 14 As of October 2026, there are 16 open AI training jobs for engineers listed on micro1. Top-of-range pay runs from $60 to $150/hr, with a median of $90/hr. The best-paying role right now is Simulation Expert — Real-to-Sim 3D Environments & Assets at up to $150/hr. All of these roles are remote, and 14 are marked high demand. The work is flexible hourly contracting: you use your professional expertise to write, review and grade the examples AI models learn from. Listings are refreshed daily from micro1, so closed roles drop off within a day. All 16 roles, ranked by pay 01 High demand 5 openings Simulation Expert — Real-to-Sim 3D Environments & Assets isaac sim · gazebo · mujoco $60–$150/hr hourly pay Apply 02 High demand 100 openings CFD Engineer CFD engineering · Aerodynamics · fluid-dynamics $50–$150/hr hourly pay Apply 03 High demand 50 openings PhysioNet Competitor (Biomedical Signal Processing & ML) Biotechnology · Biology · Machine Learning $60–$120/hr hourly pay Apply 04 50 openings STEM Expert – Chemistry & Computational Chemistry (PhD) Computational Chemistry · Structural Bioinformatics · Cheminformatics $45–$90/hr hourly pay Apply 05 50 openings STEM Expert – Biology & Bioinformatics (PhD) scientific software configuration · ai/ml-assisted chemistry workflows · quantitative analysis $45–$90/hr hourly pay Apply 06 High demand 50 openings Life Sciences Research Scientist (PhD): Wet Lab & Computational Biology computational chemistry · molecular simulations · python $45–$90/hr hourly pay Apply 07 High demand 50 openings Clinical, Microbiome & Translational Research Scientist (PhD) computational chemistry · molecular simulations · python $45–$90/hr hourly pay Apply 08 High demand 50 openings Computational Chemistry, Structural Biology & Drug Di",
+        "bodyWordCount": 837,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://www.artificialjobs.dev/ai-training-jobs/applied-engineering",
+        "hasOg": true,
+        "imgCount": 0,
+        "imgsWithAlt": 0,
+        "headingLevels": [
+          1,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          3,
+          3
+        ]
+      },
+      "pageType": "other"
+    },
+    {
+      "url": "https://www.artificialjobs.dev/ai-training-jobs/robotics",
+      "score": 112,
+      "maxScore": 112,
+      "summary": "Strong for AI agents. Improve a few weak signals to harden performance.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": true,
+          "points": 10,
+          "details": "Found title (93 chars)."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": true,
+          "points": 10,
+          "details": "Found description (129 chars)."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": true,
+          "points": 8,
+          "details": "Canonical: https://www.artificialjobs.dev/ai-training-jobs/robotics"
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": true,
+          "points": 8,
+          "details": "Found 1 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": true,
+          "points": 8,
+          "details": "Found 3 JSON-LD block(s)."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": true,
+          "points": 8,
+          "details": "Types: Organization, WebSite, BreadcrumbList, FAQPage"
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": true,
+          "points": 8,
+          "details": "og:title and og:description found."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": true,
+          "points": 10,
+          "details": "Found 51 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": true,
+          "points": 8,
+          "details": "No images on page."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": true,
+          "points": 12,
+          "details": "Estimated 737 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": true,
+          "points": 10,
+          "details": "No noindex directive found."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": true,
+          "points": 6,
+          "details": "Clean heading structure (3 levels) — easy for AI agents to chunk and cite."
+        }
+      ],
+      "aiView": {
+        "title": "14 Best AI Training Jobs for Robotics experts (October 2026) — Up to $30/hr | Artificial Jobs",
+        "metaDescription": "AI training jobs for robotics experts: 14 open Robotics roles evaluating and improving AI models, ranked by pay. Refreshed daily.",
+        "h1": [
+          "Best AI training jobs for robotics experts. 14 open Robotics roles helping AI labs improve their models."
+        ],
+        "h1Count": 1,
+        "headings": [
+          "All 14 roles, ranked by pay",
+          "Car-Mounted 360° Video Recorder",
+          "Vlogger (Insta360, DJI Osmo, GoPro MAX)",
+          "360° Video Recorder (Insta360 / GoPro MAX)",
+          "Exocentric Video Recorder",
+          "Data-Video Generalist (US-based)",
+          "At-Work Video Recorder [for Business Owners]",
+          "Video Data Annotator",
+          "Video Data Annotation Specialist",
+          "Video Annotation Specialist",
+          "Paid Photo Contributor Opportunity (Alaska-based)",
+          "Paid Photo Contributor Opportunity (Hawaii-based)",
+          "Paid Photo Contributor Opportunity",
+          "VP of Robotics Research",
+          "Paid Photo Contributor Opportunity (Twins)",
+          "Other fields hiring"
+        ],
+        "jsonLdCount": 3,
+        "schemaTypes": [
+          "Organization",
+          "WebSite",
+          "BreadcrumbList",
+          "FAQPage"
+        ],
+        "jsonLdSummary": "@type=Organization | name=Artificial Jobs | description=Directory of paid AI training jobs for domain experts and data partnerships for companies, sourced f\n@type=WebSite | name=Artificial Jobs\n@type=BreadcrumbList\n@type=FAQPage",
+        "internalLinkCount": 51,
+        "textExcerpt": "Updated October 2026 · ranked by pay Best AI training jobs for robotics experts. 14 open Robotics roles helping AI labs improve their models. Open roles 14 Top hourly rate $30/hr Median top rate $15/hr High demand 8 As of October 2026, there are 14 open AI training jobs for robotics experts listed on micro1. Top-of-range pay runs from $10 to $30/hr, with a median of $15/hr. The best-paying role right now is Car-Mounted 360° Video Recorder at up to $30/hr. All of these roles are remote, and 8 are marked high demand. The work is flexible hourly contracting: you use your professional expertise to write, review and grade the examples AI models learn from. Listings are refreshed daily from micro1, so closed roles drop off within a day. All 14 roles, ranked by pay 01 100 openings Car-Mounted 360° Video Recorder 360° Camera Operation · Mounting & Rigging · Video Post-Production $15–$30/hr hourly pay Apply 02 High demand 100 openings Vlogger (Insta360, DJI Osmo, GoPro MAX) video recording · attention to detail $10–$30/hr hourly pay Apply 03 High demand 100 openings 360° Video Recorder (Insta360 / GoPro MAX) 360° Video Recording · Camera Mounts · Video Upload $15–$30/hr hourly pay Apply 04 High demand 100 openings Exocentric Video Recorder video recording · attention to detail · camera setup $10–$30/hr hourly pay Apply 05 High demand 50 openings Data-Video Generalist (US-based) Video Capturing · IMU (Inertial Measurement Unit) · Attention to Detail $13–$15/hr hourly pay Apply 06 1000 openings At-Work Video Recorder [for Business Owners] smartphone operation · video recording · mobile apps usage $8–$12/hr hourly pay Apply 07 High demand 1000 openings Video Data Annotator video annotation · audio annotation · data labeling $8–$10/hr hourly pay Apply 08 High demand 1000 openings Video Data Annotation Specialist video annotation · audio annotation · data labeling $8–$10/hr hourly pay Apply 09 High demand 1000 openings Video Annotation Specialist video annotation · audio annotati",
+        "bodyWordCount": 737,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://www.artificialjobs.dev/ai-training-jobs/robotics",
+        "hasOg": true,
+        "imgCount": 0,
+        "imgsWithAlt": 0,
+        "headingLevels": [
+          1,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          3,
+          3
+        ]
+      },
+      "pageType": "other"
+    },
+    {
+      "url": "https://www.artificialjobs.dev/ai-training-jobs/ai-machine-learning",
+      "score": 112,
+      "maxScore": 112,
+      "summary": "Strong for AI agents. Improve a few weak signals to harden performance.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": true,
+          "points": 10,
+          "details": "Found title (90 chars)."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": true,
+          "points": 10,
+          "details": "Found description (138 chars)."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": true,
+          "points": 8,
+          "details": "Canonical: https://www.artificialjobs.dev/ai-training-jobs/ai-machine-learning"
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": true,
+          "points": 8,
+          "details": "Found 1 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": true,
+          "points": 8,
+          "details": "Found 3 JSON-LD block(s)."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": true,
+          "points": 8,
+          "details": "Types: Organization, WebSite, BreadcrumbList, FAQPage"
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": true,
+          "points": 8,
+          "details": "og:title and og:description found."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": true,
+          "points": 10,
+          "details": "Found 51 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": true,
+          "points": 8,
+          "details": "No images on page."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": true,
+          "points": 12,
+          "details": "Estimated 705 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": true,
+          "points": 10,
+          "details": "No noindex directive found."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": true,
+          "points": 6,
+          "details": "Clean heading structure (3 levels) — easy for AI agents to chunk and cite."
+        }
+      ],
+      "aiView": {
+        "title": "14 Best AI Training Jobs for ML engineers (October 2026) — Up to $140/hr | Artificial Jobs",
+        "metaDescription": "AI training jobs for ML engineers: 14 open AI & Machine Learning roles evaluating and improving AI models, ranked by pay. Refreshed daily.",
+        "h1": [
+          "Best AI training jobs for ML engineers. 14 open AI &amp; Machine Learning roles helping AI labs improve their models."
+        ],
+        "h1Count": 1,
+        "headings": [
+          "All 14 roles, ranked by pay",
+          "Machine Learning Engineer",
+          "Machine Learning Researcher (MSc. or PhD)",
+          "Applied Scientists — Machine Learning (MSc. or PhD)",
+          "ML Engineer (MSc. or PhD)",
+          "Competitive Data Scientist (Kaggle)",
+          "Senior AI Trainer",
+          "Director of Talent Automations",
+          "Forward Deployed Engineer, U.S. Government",
+          "AI/ML Engineer, Internal Platforms",
+          "Forward Deployed Engineer",
+          "Member of Technical Staff, Frontier AI",
+          "Member of Technical Staff, Enterprise AI",
+          "Member of Technical Staff, Research Engineering",
+          "Member of Technical Staff, Coding Research",
+          "Other fields hiring"
+        ],
+        "jsonLdCount": 3,
+        "schemaTypes": [
+          "Organization",
+          "WebSite",
+          "BreadcrumbList",
+          "FAQPage"
+        ],
+        "jsonLdSummary": "@type=Organization | name=Artificial Jobs | description=Directory of paid AI training jobs for domain experts and data partnerships for companies, sourced f\n@type=WebSite | name=Artificial Jobs\n@type=BreadcrumbList\n@type=FAQPage",
+        "internalLinkCount": 51,
+        "textExcerpt": "Updated October 2026 · ranked by pay Best AI training jobs for ML engineers. 14 open AI & Machine Learning roles helping AI labs improve their models. Open roles 14 Top hourly rate $140/hr Median top rate $120/hr High demand 11 As of October 2026, there are 14 open AI training jobs for ML engineers listed on micro1. Top-of-range pay runs from $36 to $140/hr, with a median of $120/hr. The best-paying role right now is Machine Learning Engineer at up to $140/hr. All of these roles are remote, and 11 are marked high demand. The work is flexible hourly contracting: you use your professional expertise to write, review and grade the examples AI models learn from. Listings are refreshed daily from micro1, so closed roles drop off within a day. All 14 roles, ranked by pay 01 35 openings Machine Learning Engineer Python · Machine Learning · MongoDB $80–$140/hr hourly pay Apply 02 High demand 100 openings Machine Learning Researcher (MSc. or PhD) Machine Learning $60–$120/hr hourly pay Apply 03 100 openings Applied Scientists — Machine Learning (MSc. or PhD) Machine Learning $60–$120/hr hourly pay Apply 04 High demand 100 openings ML Engineer (MSc. or PhD) Machine Learning $60–$120/hr hourly pay Apply 05 High demand 50 openings Competitive Data Scientist (Kaggle) ML Engineering · Data Science · Mathematics $60–$120/hr hourly pay Apply 06 High demand 50 openings Senior AI Trainer Video Annotation · Attention to Detail · Data Labeling $14–$36/hr hourly pay Apply 07 Director of Talent Automations Workflow automation · Process improvement · LLMs $120k–$160k/yr annual pay Apply 08 High demand Forward Deployed Engineer, U.S. Government Python · LLM Systems · Data Pipelines $150k–$250k/yr annual pay Apply 09 High demand AI/ML Engineer, Internal Platforms Python · LLMs · AWS $130k–$160k/yr annual pay Apply 10 High demand Forward Deployed Engineer Python · LLM Systems · ML Infrastructure $180k–$250k/yr annual pay Apply 11 High demand Member of Technical Staff, Frontier AI Research Sig",
+        "bodyWordCount": 705,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://www.artificialjobs.dev/ai-training-jobs/ai-machine-learning",
+        "hasOg": true,
+        "imgCount": 0,
+        "imgsWithAlt": 0,
+        "headingLevels": [
+          1,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          3,
+          3
+        ]
+      },
+      "pageType": "other"
+    },
+    {
+      "url": "https://www.artificialjobs.dev/ai-training-jobs/finance",
+      "score": 112,
+      "maxScore": 112,
+      "summary": "Strong for AI agents. Improve a few weak signals to harden performance.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": true,
+          "points": 10,
+          "details": "Found title (99 chars)."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": true,
+          "points": 10,
+          "details": "Found description (133 chars)."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": true,
+          "points": 8,
+          "details": "Canonical: https://www.artificialjobs.dev/ai-training-jobs/finance"
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": true,
+          "points": 8,
+          "details": "Found 1 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": true,
+          "points": 8,
+          "details": "Found 3 JSON-LD block(s)."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": true,
+          "points": 8,
+          "details": "Types: Organization, WebSite, BreadcrumbList, FAQPage"
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": true,
+          "points": 8,
+          "details": "og:title and og:description found."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": true,
+          "points": 10,
+          "details": "Found 53 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": true,
+          "points": 8,
+          "details": "No images on page."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": true,
+          "points": 12,
+          "details": "Estimated 753 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": true,
+          "points": 10,
+          "details": "No noindex directive found."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": true,
+          "points": 6,
+          "details": "Clean heading structure (3 levels) — easy for AI agents to chunk and cite."
+        }
+      ],
+      "aiView": {
+        "title": "16 Best AI Training Jobs for Finance professionals (October 2026) — Up to $350/hr | Artificial Jobs",
+        "metaDescription": "AI training jobs for finance professionals: 16 open Finance roles evaluating and improving AI models, ranked by pay. Refreshed daily.",
+        "h1": [
+          "Best AI training jobs for finance professionals. 16 open Finance roles helping AI labs improve their models."
+        ],
+        "h1Count": 1,
+        "headings": [
+          "All 16 roles, ranked by pay",
+          "Finance Specialist",
+          "Investment Banking – M&amp;A Advisory.",
+          "Equity/Investment Research Analyst",
+          "Equity Research Expert",
+          "Investment Banking Expert",
+          "Investment &amp; Finance Expert",
+          "Investment Banking Associate",
+          "Quantitative Rates Researcher",
+          "Senior Accountant Expert",
+          "Generalist — U.S. Tax Workflow Evaluation",
+          "Rates trader",
+          "Finance &amp; Accounting Expert",
+          "US Macroeconomist",
+          "Accountant / Auditor",
+          "Domain Researcher, Finance (M&amp;A)"
+        ],
+        "jsonLdCount": 3,
+        "schemaTypes": [
+          "Organization",
+          "WebSite",
+          "BreadcrumbList",
+          "FAQPage"
+        ],
+        "jsonLdSummary": "@type=Organization | name=Artificial Jobs | description=Directory of paid AI training jobs for domain experts and data partnerships for companies, sourced f\n@type=WebSite | name=Artificial Jobs\n@type=BreadcrumbList\n@type=FAQPage",
+        "internalLinkCount": 53,
+        "textExcerpt": "Updated October 2026 · ranked by pay Best AI training jobs for finance professionals. 16 open Finance roles helping AI labs improve their models. Open roles 16 Top hourly rate $350/hr Median top rate $150/hr High demand 10 As of October 2026, there are 16 open AI training jobs for finance professionals listed on micro1. Top-of-range pay runs from $70 to $350/hr, with a median of $150/hr. The best-paying role right now is Finance Specialist at up to $350/hr. All of these roles are remote, and 10 are marked high demand. The work is flexible hourly contracting: you use your professional expertise to write, review and grade the examples AI models learn from. Listings are refreshed daily from micro1, so closed roles drop off within a day. All 16 roles, ranked by pay 01 High demand 5 openings Finance Specialist Microsoft PowerPoint · Slide Reconstruction · Presentation Design $150–$350/hr hourly pay Apply 02 High demand 25 openings Investment Banking – M&A Advisory. financial modeling · excel · company and industry research $175–$300/hr hourly pay Apply 03 High demand 25 openings Equity/Investment Research Analyst equity research · financial modeling · earnings analysis $175–$300/hr hourly pay Apply 04 High demand 25 openings Equity Research Expert equity research · financial modeling · earnings analysis $175–$300/hr hourly pay Apply 05 High demand 25 openings Investment Banking Expert financial modeling · excel · company and industry research $175–$300/hr hourly pay Apply 06 100 openings Investment & Finance Expert Financial Modeling · Valuation · Investment Analysis $245–$280/hr hourly pay Apply 07 8 openings Investment Banking Associate financial modeling · valuation analysis · deal execution $120–$150/hr hourly pay Apply 08 100 openings Quantitative Rates Researcher python · r · pandas $80–$150/hr hourly pay Apply 09 30 openings Senior Accountant Expert Financial Reporting · Audit Procedures · Financial Modeling $60–$120/hr hourly pay Apply 10 High demand 30 openings ",
+        "bodyWordCount": 753,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://www.artificialjobs.dev/ai-training-jobs/finance",
+        "hasOg": true,
+        "imgCount": 0,
+        "imgsWithAlt": 0,
+        "headingLevels": [
+          1,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          3,
+          3
+        ]
+      },
+      "pageType": "other"
+    }
+  ]
+}

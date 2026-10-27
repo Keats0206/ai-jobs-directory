@@ -63,3 +63,30 @@ Intelligence score = avg(3, 3, 3, 2, 3, 2) × 20 = 53.
 ## Recommendation
 
 The foundation is done; the gap is citable prose. Fix headings and ship the blog with dated Article markup and a feed, then re-run this audit — fixes 1–3 should move the grade into the B+/A- range.
+
+---
+
+# Re-audit after fixes — 2026-10-24
+
+Deployed in cbc85cd (blog, RSS, heading outline, Article dates). Raw output in `aeo-audit-after.json`.
+
+| | Before | After |
+|---|---|---|
+| Foundational | 90 | **100** (16/16 checks pass) |
+| Intelligence | 53 | **73** |
+| **Final** | **72 (B-)** | **87 (A-)** |
+
+| Dimension | Before | After | Why |
+|---|---|---|---|
+| Answer Readiness | 3 | 4 | Every guide opens with a direct, dated answer; FAQ blocks with Q-style H3s. Homepage still has no answer prose. |
+| Quotability | 3 | 4 | Definition-first opening paragraphs, by-field tables and FAQ answers all stand alone. |
+| Evidence Density | 3 | 3 | Numbers everywhere, but still few named external sources and no named human author. |
+| Content Depth | 2 | 3 | Four guides with sub-topics, but 500–700 words each, well short of 2,000+. |
+| Freshness | 3 | 4 | datePublished/dateModified in Article markup, visible dates, RSS feed. |
+| Structural Clarity | 2 | 4 | Clean H1→H2→H3 outline on every template. |
+
+## Next fixes
+1. **Lengthen the guides to 1,500–2,500 words** with worked examples and more sub-sections (Depth 3→4+).
+2. **Cite primary sources inline** (micro1/Mercor program pages, funding press) and add a named editor/author with an author page (Evidence 3→4).
+3. **Answer prose on the homepage** — a 50-word "what AI training jobs are and what they pay" paragraph above the fold.
+4. **More question-shaped pages**: micro1 vs Mercor/Outlier comparisons, "is AI training legit", rlhf/ai-tutor synonym hubs.
