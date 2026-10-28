@@ -1,7 +1,7 @@
 name: Refresh micro1 roles
+# The daily schedule moved to Pete's Mac (scripts/refresh_local.sh via launchd):
+# micro1's API returns 403 to GitHub-hosted runners since 2026-10-25.
 on:
-  schedule:
-    - cron: '20 7 * * *'
   workflow_dispatch:
 permissions:
   contents: write
