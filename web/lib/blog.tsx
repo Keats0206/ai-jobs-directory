@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { trainingJobs, type Job } from './jobs';
-import { getTrainingFields, byPay, hourlyMax, formatPay, trainingStats } from './training-jobs';
+import { getTrainingFields, getTrainingCollections, byPay, hourlyMax, formatPay, trainingStats } from './training-jobs';
 import { partnerships, COMPANY_PAYOUT, isDefunct, MERCOR_WANTED, MERCOR_TOP_PAYOUT, MERCOR_REFERRAL_CODE, MERCOR_APPLY_URL } from './data-partnerships';
 import type { FaqItem } from '@/components/faq-section';
 
@@ -214,6 +214,72 @@ function LawBody() {
 
 /* ------------------------------------------------------------------ */
 
+function codingData() {
+  const jobs = trainingJobs.filter((job) => job.field === 'software-engineering').sort(byPay);
+  const languages = getTrainingCollections().filter((c) => c.group === 'language');
+  const tasks = new Map<string, number>();
+  for (const job of jobs) for (const skill of new Set((job.skills || []).map((s) => s.toLowerCase()))) tasks.set(skill, (tasks.get(skill) || 0) + 1);
+  const topTasks = [...tasks].filter(([skill]) => /refactor|bug|feature|performance|review|algorithm|debug/.test(skill)).filter(([, n]) => n >= 3).sort((a, b) => b[1] - a[1]).slice(0, 6);
+  return { jobs, languages, topTasks };
+}
+
+function CodingBody() {
+  const { jobs, languages, topTasks } = codingData();
+  const rates = hourly(jobs).map(hourlyMax);
+  const over100 = rates.filter((rate) => rate >= 100).length;
+  const salaried = jobs.filter((job) => !job.hourly_max && job.salary_max).length;
+  return (
+    <>
+      <p>
+        <strong>There are {jobs.length} open AI training jobs for software engineers on micro1</strong> as of {monthYear()}, paying a median of ${median(rates)}/hr at
+        the top of their range and up to ${Math.max(...rates)}/hr. {over100} of them pay $100/hr or more. The work is remote, hourly contracting: engineers
+        write, fix and review the code AI coding models learn from, so the models handle real codebases the way an experienced developer would.
+      </p>
+      <h2>What the work involves</h2>
+      <p>
+        Coding models are trained on examples of real engineering work. Labs pay developers to produce those examples: fixing a real bug in an open
+        source repository, implementing a feature end to end, refactoring messy code, or grading an AI-written patch and explaining what it got wrong.
+        The tasks micro1’s software listings name most often:
+      </p>
+      <Table head={['Task', 'Listings asking for it']} rows={topTasks.map(([skill, n]) => [skill[0].toUpperCase() + skill.slice(1), `${n} of ${jobs.length}`])} />
+      <h2>Which languages are hiring</h2>
+      <p>
+        Most coding listings ask for more than one language. Counting every open micro1 role that names each one, across all fields:
+      </p>
+      <Table
+        head={['Language or focus', 'Open roles', 'Top rate']}
+        rows={languages.map((c) => [fieldLink(c.slug, c.label), String(c.jobs.length), c.topRate ? `$${c.topRate}/hr` : '—'])}
+      />
+      <h2>What it pays</h2>
+      <p>The ten best-paying software roles right now:</p>
+      <Table head={['Role', 'Pay']} rows={jobs.slice(0, 10).map((job) => [jobLink(job), formatPay(job) ?? 'On application'])} />
+      {salaried > 0 && (
+        <p>
+          {plural(salaried, 'listing')} {salaried === 1 ? 'is a salaried role rather than an hourly contract' : 'are salaried roles rather than hourly contracts'} and {salaried === 1 ? 'shows' : 'show'} an annual range instead.
+        </p>
+      )}
+      <h2>Who qualifies</h2>
+      <p>
+        Listings are written for working engineers. The open source roles are titled for GitHub contributors and maintainers, so a public commit
+        history you can point to is the clearest qualification. Check each listing’s country limits before applying.
+      </p>
+      <h2>How to apply</h2>
+      <ol>
+        <li>Pick the listing that matches your strongest language and apply on micro1.</li>
+        <li>Complete micro1’s AI interview, which asks about your engineering background.</li>
+        <li>If you pass, micro1 onboards you and matches you to a project at the listed rate.</li>
+      </ol>
+      <p>
+        See all {fieldLink('software-engineering', `${jobs.length} AI training jobs for software engineers`)}, ranked by pay, or read{' '}
+        <Link href="/blog/how-much-do-ai-training-jobs-pay" className="underline underline-offset-4">how AI training pay compares across fields</Link>.
+      </p>
+      <SourceNote>Source: open software engineering listings in micro1’s referral job feed and public job pages, refreshed daily. Language counts include coding roles in every field.</SourceNote>
+    </>
+  );
+}
+
+/* ------------------------------------------------------------------ */
+
 function entryData() {
   const jobs = trainingJobs.filter((job) => ['generalist', 'language-audio'].includes(job.field || '')).sort(byPay);
   const credentialed = trainingJobs.filter((job) => ['law', 'medicine', 'sciences-research'].includes(job.field || ''));
@@ -353,6 +419,24 @@ export const posts: Post[] = [
         { question: 'How much do AI training jobs for lawyers pay?', answer: `${jobs.length} open micro1 law roles pay a median of $${median(rates)}/hr at the top of their range, and up to $${Math.max(...rates)}/hr (${monthYear()}).` },
         { question: 'Do I need to be a licensed attorney?', answer: 'Most listings are written for licensed attorneys and many name a jurisdiction or practice area. A few research and cite-checking roles suit earlier-career lawyers.' },
         { question: 'Is AI training work for lawyers remote?', answer: 'Yes. The roles are remote, flexible hourly contracts, though some are limited to applicants in specific countries.' },
+      ];
+    },
+  },
+  {
+    slug: 'ai-training-jobs-for-software-engineers',
+    kicker: 'For engineers',
+    title: 'AI Training Jobs for Software Engineers: What the Work Is and What It Pays',
+    description: 'What AI coding-model training work involves, which languages are hiring, and what it pays, from live micro1 listings.',
+    published: '2026-10-28',
+    Body: CodingBody,
+    faqs: () => {
+      const { jobs, languages } = codingData();
+      const rates = hourly(jobs).map(hourlyMax);
+      const top = [...languages].sort((a, b) => b.jobs.length - a.jobs.length)[0];
+      return [
+        { question: 'How much do AI training jobs for software engineers pay?', answer: `${jobs.length} open micro1 software roles pay a median of $${median(rates)}/hr at the top of their range, and up to $${Math.max(...rates)}/hr (${monthYear()}).` },
+        { question: 'Which programming language has the most AI training jobs?', answer: `${top.label}: ${top.jobs.length} open micro1 roles ask for it (${monthYear()}). TypeScript, Rust, Java and C++ follow, often in the same listings.` },
+        { question: 'What do software engineers do in AI training jobs?', answer: 'They fix real bugs, implement features, refactor code and review AI-written patches, producing the examples coding models learn from.' },
       ];
     },
   },

@@ -50,19 +50,22 @@ export function FieldTile({ field }: { field: TrainingField }) {
   );
 }
 
-/** Pill links to the cross-field credential pages ("AI training jobs for PhDs"). */
+/** Pill links to the cross-field pages ("AI training jobs for PhDs"), credentials and coding languages in separate rows. */
 export function CollectionLinks({ collections }: { collections: TrainingField[] }) {
-  if (!collections.length) return null;
-  return (
-    <div className="mt-6 flex flex-wrap items-center justify-center gap-2 text-sm">
-      <span className="mr-1 text-muted-foreground">By credential:</span>
-      {collections.map((c) => (
+  const rows: [string, TrainingField[]][] = [
+    ['By credential:', collections.filter((c) => !c.group)],
+    ['By language:', collections.filter((c) => c.group === 'language')],
+  ];
+  return rows.filter(([, list]) => list.length).map(([label, list]) => (
+    <div key={label} className="mt-6 flex flex-wrap items-center justify-center gap-2 text-sm">
+      <span className="mr-1 text-muted-foreground">{label}</span>
+      {list.map((c) => (
         <Link key={c.slug} href={`/ai-training-jobs/${c.slug}`} className="rounded-full border border-border px-3 py-1 transition-colors hover:bg-card">
           {`For ${c.audience}`} <span className="tabular-nums text-muted-foreground">{c.jobs.length}</span>
         </Link>
       ))}
     </div>
-  );
+  ));
 }
 
 /** One comparison row: what it is, what it pays, and a direct apply button. */

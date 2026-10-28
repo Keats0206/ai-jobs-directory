@@ -29,6 +29,8 @@ export interface TrainingField {
   audience: string;
   jobs: Job[];
   topRate: number;
+  /** Collections only: "language" pages are listed apart from the credential pages. */
+  group?: 'language';
 }
 
 export const hourlyMax = (job: Job) => job.hourly_max || 0;
@@ -65,7 +67,7 @@ export function getTrainingFields(): TrainingField[] {
  * Each targets an "AI training jobs for {audience}" search and is published only when it has
  * enough roles to be worth landing on.
  */
-const COLLECTIONS: { slug: string; label: string; audience: string; match: RegExp }[] = [
+const COLLECTIONS: { slug: string; label: string; audience: string; group?: 'language'; match: RegExp }[] = [
   { slug: 'phds', label: 'PhD', audience: 'PhDs', match: /\bph\.?d\b|doctoral|postdoc/i },
   { slug: 'physicians', label: 'Physician', audience: 'physicians', match: /physician|hospitalist|surgeon|psychiatrist|radiologist|cardiologist|dermatologist|oncologist|\bM\.?D\.?\b/i },
   { slug: 'nurses', label: 'Nursing', audience: 'nurses', match: /\bnurs|\bRN\b|\bBSN\b/i },
@@ -78,6 +80,13 @@ const COLLECTIONS: { slug: string; label: string; audience: string; match: RegEx
   { slug: 'biologists', label: 'Biology', audience: 'biologists', match: /biolog|bioinformatic/i },
   { slug: 'mathematicians', label: 'Math', audience: 'mathematicians', match: /\bmath/i },
   { slug: 'bilingual', label: 'Bilingual', audience: 'bilingual speakers', match: /bilingual|native|fluent|speaking|transcription|translat/i },
+  // Coding roles, by language: software engineers search "AI training jobs for Python developers".
+  { slug: 'python', label: 'Python', audience: 'Python developers', group: 'language', match: /\bpython/i },
+  { slug: 'typescript', label: 'TypeScript', audience: 'TypeScript developers', group: 'language', match: /typescript|\bJS\/TS\b/i },
+  { slug: 'rust', label: 'Rust', audience: 'Rust developers', group: 'language', match: /\brust\b/i },
+  { slug: 'java', label: 'Java', audience: 'Java developers', group: 'language', match: /\bjava\b/i },
+  { slug: 'c-plus-plus', label: 'C++', audience: 'C++ developers', group: 'language', match: /c\+\+/i },
+  { slug: 'open-source', label: 'Open source', audience: 'open source contributors', group: 'language', match: /open[- ]source|github/i },
 ];
 export const MIN_COLLECTION_ROLES = 5;
 

@@ -12,7 +12,7 @@ export function generateStaticParams() {
   return [...getTrainingFields(), ...getTrainingCollections()].map((field) => ({ field: field.slug }));
 }
 
-const capitalize = (text: string) => text[0].toUpperCase() + text.slice(1);
+const capitalize = (text: string) => text.replace(/\b[a-z]/g, (letter) => letter.toUpperCase());
 const monthYear = () => new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
 
 export async function generateMetadata({ params }: { params: Promise<{ field: string }> }): Promise<Metadata> {
