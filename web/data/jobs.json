@@ -34,7 +34,7 @@
       "Board Certification"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "us-licensed-physician-micro1-5860",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -235,7 +235,7 @@
       "verbal communication"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "bankruptcy-attorney-micro1-5862",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -335,7 +335,7 @@
       "Coding"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "competitive-data-scientist-kaggle-micro1-5863",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -436,7 +436,7 @@
       "Fire & Building Plan Review"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "senior-machinist-construction-field-ops-lead-micro1-5864",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -535,7 +535,7 @@
       "camera setup"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "exocentric-video-recorder-micro1-5865",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -640,7 +640,7 @@
       "physical chemistry"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "stem-expert-chemistry-computational-chemistry-phd-micro1-5866",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -740,7 +740,7 @@
       "Contract Redlining"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "commercial-attorney-micro1-5867",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -840,7 +840,7 @@
       "CAD tools expertise"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "senior-mechanical-design-engineer-micro1-5868",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -932,7 +932,7 @@
     "referral_reward": 1000.0,
     "is_referral": true,
     "openings": 5,
-    "high_demand": false,
+    "high_demand": true,
     "skills": [
       "fda regulatory analysis",
       "legal research",
@@ -946,7 +946,7 @@
       "issue spotting and resolution"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "fda-regulatory-compliance-attorney-micro1-5869",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -1048,7 +1048,7 @@
       "NDA's"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "in-house-counsel-micro1-5870",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -1148,7 +1148,7 @@
       "Industry Partnerships"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "research-marketing-lead-micro1-5871",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -1245,7 +1245,7 @@
       "graphic design"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "graphic-designer-micro1-5872",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -1346,7 +1346,7 @@
       "Case Analysis"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "litigation-attorney-micro1-5873",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -1447,7 +1447,7 @@
       "Data science"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "data-science-analytic-methodology-sme-micro1-5874",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -1553,7 +1553,7 @@
       "summarizing complex legal concepts"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "junior-lawyer-micro1-5875",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -1651,7 +1651,7 @@
       "attention to detail"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "vlogger-insta360-dji-osmo-gopro-max-micro1-5876",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -1752,7 +1752,7 @@
       "Business Data Sets"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "senior-data-analyst-micro1-5877",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -1858,7 +1858,7 @@
       "interpretation and synthesis of complex legal issues"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "lawyer-micro1-5878",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -1956,7 +1956,7 @@
       "Medigap"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "ship-medicare-counselor-micro1-5879",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -2048,7 +2048,7 @@
     "referral_reward": 1000.0,
     "is_referral": true,
     "openings": 5,
-    "high_demand": false,
+    "high_demand": true,
     "skills": [
       "structured finance law",
       "contract review and drafting",
@@ -2062,7 +2062,7 @@
       "collaborative teamwork"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "structured-finance-attorney-micro1-5880",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -2172,7 +2172,7 @@
       "adaptability"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "punjabi-transcription-expert-micro1-5881",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -2386,7 +2386,7 @@
     ],
     "source_verified": true,
     "last_verified": "2026-10-28T23:12:00.973029+00:00",
-    "status": "active",
+    "status": "closed",
     "slug": "paid-photo-contributor-opportunity-alaska-based-micro1-5883",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
     "applicant_countries": [
@@ -2449,7 +2449,8 @@
       "Ghana",
       "Ethiopia"
     ],
-    "details_fetched_at": "2026-10-24T17:34:13.595555+00:00"
+    "details_fetched_at": "2026-10-24T17:34:13.595555+00:00",
+    "closed_at": "2026-10-29T20:24:02.161524+00:00"
   },
   {
     "title": "Junior Transactional Attorney",
@@ -2488,7 +2489,7 @@
       "ISDAs"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "junior-transactional-attorney-micro1-5884",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -2590,7 +2591,7 @@
       "ISDAs"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "general-counsel-micro1-5885",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -2698,7 +2699,7 @@
       "Logical Thinking"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "software-engineer-github-contributor-micro1-5886",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -2795,7 +2796,7 @@
       "Machine Learning"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "machine-learning-researcher-msc-or-phd-micro1-5887",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -2897,7 +2898,7 @@
       "GoLang"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "open-source-contributor-github-micro1-5888",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -2998,7 +2999,7 @@
       "Game Development expertise"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "game-developer-micro1-5889",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -3105,7 +3106,7 @@
       "Psychologist"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "georgian-speaking-psychologist-phd-micro1-5890",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -3204,7 +3205,7 @@
       "AI Training"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "dutch-transcription-expert-micro1-5891",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -3305,7 +3306,7 @@
       "Security Compliance"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "it-manager-micro1-5892",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -3413,7 +3414,7 @@
       "remote work"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "norwegian-transcription-expert-micro1-5893",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -3513,7 +3514,7 @@
       "sigma vs pi transition identification"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "physics-expert-phd-amo-optical-properties-of-materials-micro1-5894",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -3625,7 +3626,7 @@
       "collaboration with cross-functional teams"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "product-safety-regulatory-compliance-attorney-micro1-5895",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -3723,7 +3724,7 @@
       "C++"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "puzzle-solver-coding-micro1-5896",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -3822,7 +3823,7 @@
       "Attention to Detail"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "data-video-generalist-us-based-micro1-5897",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -3925,7 +3926,7 @@
       "Law Journal Editing"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "law-review-cite-checker-micro1-5898",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -4017,7 +4018,7 @@
     "referral_reward": 1000.0,
     "is_referral": true,
     "openings": 10,
-    "high_demand": false,
+    "high_demand": true,
     "skills": [
       "civil rights law",
       "legal research and analysis",
@@ -4031,7 +4032,7 @@
       "statutory interpretation"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "civil-rights-attorney-biglaw-firms-micro1-5899",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -4131,7 +4132,7 @@
       "Legal-uncertainty reasoning"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "military-legal-advisor-micro1-5900",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -4249,7 +4250,7 @@
       "problem-solving"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "clinical-microbiome-translational-research-scientist-phd-micro1-5901",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -4344,7 +4345,7 @@
     "high_demand": false,
     "skills": [],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "usability-tester-micro1-5902",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -4443,7 +4444,7 @@
       "Robotics Research"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "vp-of-robotics-research-micro1-5903",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -4549,7 +4550,7 @@
       "industry documentation knowledge"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "investment-banking-associate-micro1-5904",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -4649,7 +4650,7 @@
       "Appeals"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "veterans-service-officer-micro1-5905",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -4741,7 +4742,7 @@
     "referral_reward": 1000.0,
     "is_referral": true,
     "openings": 5,
-    "high_demand": false,
+    "high_demand": true,
     "skills": [
       "Attention to detail",
       "Rights and Content Licensing",
@@ -4751,7 +4752,7 @@
       "Judgment Under Conflicting Pressures"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "media-publishing-communications-law-attorney-micro1-5906",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -4947,7 +4948,7 @@
       "Remote work"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "community-manager-micro1-5908",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -5068,7 +5069,7 @@
       "problem-solving"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "computational-biology-bioinformatics-expert-phd-micro1-5909",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -5169,7 +5170,7 @@
       "Revenue Data Integrity and Reporting"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "revenue-operations-specialist-saas-micro1-5910",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -5271,7 +5272,7 @@
       "capital markets"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "corporate-attorney-biglaw-firms-micro1-5911",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -5373,7 +5374,7 @@
       "Screen Recording"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "ai-agent-evaluator-micro1-5912",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -5476,7 +5477,7 @@
     ],
     "source_verified": true,
     "last_verified": "2026-10-28T23:12:00.973029+00:00",
-    "status": "active",
+    "status": "closed",
     "slug": "customer-service-expert-micro1-5913",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
     "applicant_countries": [
@@ -5539,7 +5540,8 @@
       "Ghana",
       "Ethiopia"
     ],
-    "details_fetched_at": "2026-10-24T17:34:13.595555+00:00"
+    "details_fetched_at": "2026-10-24T17:34:13.595555+00:00",
+    "closed_at": "2026-10-29T20:24:02.161524+00:00"
   },
   {
     "title": "Compliance Attorney",
@@ -5581,7 +5583,7 @@
       "remote collaboration"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "compliance-attorney-micro1-5914",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -5680,7 +5682,7 @@
       "Stakeholder communication"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "associate-recruiter-san-francisco-based-micro1-5915",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -5787,7 +5789,7 @@
       "Cantonese"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "bilingual-cantonese-psychologist-phd-micro1-5916",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -5889,7 +5891,7 @@
       "Google Meetings"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "gmail-google-calendar-ai-assistant-evaluator-micro1-5917",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -6092,7 +6094,7 @@
       "Mobile"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "senior-mobile-developer-micro1-5919",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -6203,7 +6205,7 @@
       "attention to detail"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "simulation-expert-real-to-sim-3d-environments-assets-micro1-5920",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -6311,7 +6313,7 @@
       "Analytics Reporting"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "data-science-specialist-micro1-5921",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -6414,7 +6416,7 @@
       "CPT"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "certified-inpatient-coder-micro1-5922",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -6514,7 +6516,7 @@
       "Enterprise AI"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "member-of-technical-staff-enterprise-ai-micro1-5923",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -6615,7 +6617,7 @@
       "HUMINT"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "human-intelligence-collector-humint-micro1-5924",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -6714,7 +6716,7 @@
       "AI Training"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "cantonese-transcription-expert-micro1-5925",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -6918,7 +6920,7 @@
       "Project/Task Management"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "car-mounted-360-video-recorder-micro1-5927",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -7017,7 +7019,7 @@
       "MongoDB"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "machine-learning-engineer-micro1-5928",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -7118,7 +7120,7 @@
       "Semiconductor Package Inspection (C SAM and X ray)"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "senior-electronics-quality-engineer-micro1-5929",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -7225,7 +7227,7 @@
       "Vietnamese"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "bilingual-vietnamese-psychologist-phd-micro1-5930",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -7326,7 +7328,7 @@
       "Analytical thinking"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "evaluation-specialist-recent-grad-micro1-5931",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -7429,7 +7431,7 @@
       "4-state Potts model numerics"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "physics-expert-phd-statistical-physics-quantum-information-condensed-matter-micro1-5932",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -7534,7 +7536,7 @@
       "analytical thinking"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "special-forces-operator-micro1-5933",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -7848,7 +7850,7 @@
       "guideline interpretation"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "finnish-transcription-expert-micro1-5936",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -7940,7 +7942,7 @@
     "referral_reward": 100.0,
     "is_referral": true,
     "openings": 10,
-    "high_demand": false,
+    "high_demand": true,
     "skills": [
       "Data labeling",
       "Data annotation",
@@ -7948,7 +7950,7 @@
       "Attention to detail"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "imagery-analyst-ai-ml-training-data-micro1-5937",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -8047,7 +8049,7 @@
       "Problem framing"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "research-scientist-computer-science-computational-physics-micro1-5938",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -8147,7 +8149,7 @@
       "data engineering"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "big-data-engineer-micro1-5939",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -8239,7 +8241,7 @@
     "referral_reward": 500.0,
     "is_referral": true,
     "openings": 20,
-    "high_demand": false,
+    "high_demand": true,
     "skills": [
       "interest rate swaps trading",
       "swaptions trading",
@@ -8258,7 +8260,7 @@
       "remote work discipline"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "rates-trader-micro1-5940",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -8362,7 +8364,7 @@
       "Typescript"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "sr-full-stack-software-engineer-micro1-5941",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -8468,7 +8470,7 @@
       "valuation analysis"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "equity-investment-research-analyst-micro1-5942",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -8570,7 +8572,7 @@
       "Quality Assurance"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "hospitalist-physician-micro1-5943",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -8677,7 +8679,7 @@
       "Cantonese"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "bilingual-cantonese-psychiatrist-micro1-5944",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -8886,7 +8888,7 @@
       "remote collaboration"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "video-data-annotation-specialist-micro1-5946",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -8986,7 +8988,7 @@
       "Enterprise AI"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "enterprise-client-partner-enterprise-ai-micro1-5947",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -9083,7 +9085,7 @@
       "Machine Learning"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "applied-scientists-machine-learning-msc-or-phd-micro1-5948",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -9183,7 +9185,7 @@
       "RAG/AI Automation"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "forward-deployed-engineer-micro1-5949",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -9280,7 +9282,7 @@
       "Mechanical Engineering"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "mechanical-engineering-expert-msc-or-phd-micro1-5950",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -9379,7 +9381,7 @@
       "Stakeholder communication"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "recruiter-micro1-5951",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -9480,7 +9482,7 @@
       "Tax Compliance"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "accountant-auditor-micro1-5952",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -9579,7 +9581,7 @@
       "Campaing performance monitoring"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "recruitment-marketing-specialist-micro1-5953",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -9685,7 +9687,7 @@
       "providing structured feedback"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "personal-injury-lawyer-micro1-5954",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -9787,7 +9789,7 @@
       "NDAs"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "contract-attorney-micro1-5955",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -9902,7 +9904,7 @@
       "problem-solving"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "mechanical-design-engineer-cad-manufacturing-micro1-5956",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -10009,7 +10011,7 @@
       "technology-driven project experience"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "immigration-attorney-micro1-5957",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -10118,7 +10120,7 @@
       "objective assessment"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "mechanical-cad-expert-micro1-5958",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -10322,7 +10324,7 @@
       "RL Environments"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "member-of-technical-staff-frontier-ai-micro1-5960",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -10424,7 +10426,7 @@
       "NDA's"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "transactional-attorney-micro1-5961",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -10523,7 +10525,7 @@
       "Operational Organization"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "virtual-assistant-micro1-5962",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -10625,7 +10627,7 @@
       "Communication Precision"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "litigator-practicing-attorney-us-micro1-5963",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -10729,7 +10731,7 @@
       "C"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "open-source-github-maintainer-micro1-5964",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -10840,7 +10842,7 @@
       "client deliverables preparation"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "investment-banking-m-a-advisory-micro1-5965",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -10941,7 +10943,7 @@
       "Approach Plate & Flight Ops Briefing"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "senior-aviation-maintenance-inspector-micro1-5966",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -11046,7 +11048,7 @@
       "time management"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "urdu-transcription-expert-micro1-5967",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -11147,7 +11149,7 @@
       "Pediatrics"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "pediatric-hospitalist-micro1-5968",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -11246,7 +11248,7 @@
       "ICD-10-PCS"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "inpatient-medical-coder-micro1-5969",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -11348,7 +11350,7 @@
       "3D tools"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "video-content-lead-micro1-5970",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -11454,7 +11456,7 @@
       "performance optimization"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "research-engineer-code-generation-model-evaluation-micro1-5971",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -11556,7 +11558,7 @@
       "Feedback Delivery"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "senior-accountant-expert-micro1-5972",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -11648,7 +11650,7 @@
     "referral_reward": 1000.0,
     "is_referral": true,
     "openings": 5,
-    "high_demand": false,
+    "high_demand": true,
     "skills": [
       "investment funds law",
       "asset management law",
@@ -11667,7 +11669,7 @@
       "stakeholder collaboration"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "investment-funds-asset-management-attorney-micro1-5973",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -11768,7 +11770,7 @@
       "Agent security architecture"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "app-security-expert-micro1-5974",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -11862,7 +11864,7 @@
     "high_demand": false,
     "skills": [],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "211-specialist-micro1-5975",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -11962,7 +11964,7 @@
       "Backend Architecture & Scalability"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "software-engineer-product-engineering-micro1-5976",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -12068,7 +12070,7 @@
       "performance optimization"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "software-engineer-open-source-contributions-micro1-5977",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -12276,7 +12278,7 @@
       "therapeutic area expertise (oncology, immunology, rare diseases)"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "clinical-publications-author-micro1-5979",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -12368,7 +12370,7 @@
     "referral_reward": 1000.0,
     "is_referral": true,
     "openings": 5,
-    "high_demand": false,
+    "high_demand": true,
     "skills": [
       "venture capital financing",
       "corporate transactions",
@@ -12382,7 +12384,7 @@
       "remote collaboration"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "venture-capital-corporate-attorney-micro1-5980",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -12583,7 +12585,7 @@
       "Quality Assurance"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "privacy-analyst-micro1-5982",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -12686,7 +12688,7 @@
       "Data Modeling"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "junior-data-scientist-micro1-5983",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -12793,7 +12795,7 @@
       "Psychologist"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "bilingual-japanese-psychologist-phd-micro1-5984",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -12893,7 +12895,7 @@
       "Partnerships"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "data-partnerships-manager-micro1-5985",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -12995,7 +12997,7 @@
       "Quality Assurance"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "hospitalist-physician-micro1-5986",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -13093,7 +13095,7 @@
       "Healthcare"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "va-eligibility-specialist-micro1-5987",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -13199,7 +13201,7 @@
       "performance optimization"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "software-engineer-backend-micro1-5988",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -13296,7 +13298,7 @@
       "Retail"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "retail-trade-operations-expert-micro1-5989",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -13404,7 +13406,7 @@
       "Security audit"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "backend-security-engineer-micro1-5990",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -13509,7 +13511,7 @@
       "feedback provision"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "employment-lawyer-micro1-5991",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -13712,7 +13714,7 @@
       "AI native"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "software-engineer-new-grad-micro1-5993",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -13919,7 +13921,7 @@
       "Documentation"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "generalist-micro1-5995",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -14020,7 +14022,7 @@
       "Government Source Inspection (DCMA & FAR Part 46)"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "qa-source-inspection-micro1-5996",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -14119,7 +14121,7 @@
       "Proportionality reasoning"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "humanitarian-aid-representative-micro1-5997",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -14221,7 +14223,7 @@
       "Hospitalist"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "hospitalist-reviewer-micro1-5998",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -14319,7 +14321,7 @@
       "DevOps"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "rust-architect-backend-developer-micro1-5999",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -14528,7 +14530,7 @@
     ],
     "source_verified": true,
     "last_verified": "2026-10-28T23:12:00.973029+00:00",
-    "status": "active",
+    "status": "closed",
     "slug": "paid-photo-contributor-opportunity-hawaii-based-micro1-6001",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
     "applicant_countries": [
@@ -14591,7 +14593,8 @@
       "Ghana",
       "Ethiopia"
     ],
-    "details_fetched_at": "2026-10-24T17:34:13.595555+00:00"
+    "details_fetched_at": "2026-10-24T17:34:13.595555+00:00",
+    "closed_at": "2026-10-29T20:24:02.161524+00:00"
   },
   {
     "title": "Lawyer",
@@ -14627,7 +14630,7 @@
       "Legal Writing"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "lawyer-micro1-6002",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -14727,7 +14730,7 @@
       "Hospital Medicine"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "inpatient-care-physician-md-do-micro1-6003",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -14832,7 +14835,7 @@
       "Metagenomics"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "computational-chemistry-structural-biology-drug-discovery-scientist-phd-micro1-6004",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -14937,7 +14940,7 @@
       "analytical reasoning"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "fighter-pilot-micro1-6005",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -15137,7 +15140,7 @@
       "Household Tasks"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "at-home-video-recorder-micro1-6007",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -15237,7 +15240,7 @@
       "Attention to Detail"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "ai-product-evaluator-micro1-6008",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -15333,7 +15336,7 @@
       "Biology"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "stem-expert-msc-phd-micro1-6009",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -15434,7 +15437,7 @@
       "FastAPI"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "ai-ml-engineer-internal-platforms-micro1-6010",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -15535,7 +15538,7 @@
       "Literature"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "english-teacher-micro1-6011",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -15643,7 +15646,7 @@
       "Client Readouts"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "consulting-specialist-micro1-6012",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -15748,7 +15751,7 @@
       "attention to detail"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "defense-analyst-micro1-6013",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -15851,7 +15854,7 @@
       "M&A"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "investment-funds-attorney-micro1-6014",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -15951,7 +15954,7 @@
       "Household Tasks"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "at-home-video-recorder-latam-micro1-6015",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -16053,7 +16056,7 @@
       "Screen Recording"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "ai-agent-tester-real-world-tasks-micro1-6016",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -16153,7 +16156,7 @@
       "Complex problem solving - Research"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "principal-research-scientist-computer-science-computational-physics-micro1-6017",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -16360,7 +16363,7 @@
       "AI-Native Software Development"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "software-engineer-platform-engineering-micro1-6019",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -16467,7 +16470,7 @@
       "Fact-Checking"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "journalist-writer-micro1-6020",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -16568,7 +16571,7 @@
       "Read Written text aloud smoothly"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "english-voice-recording-micro1-6021",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -16669,7 +16672,7 @@
       "HCPCS"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "medical-coder-micro1-6022",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -16770,7 +16773,7 @@
       "attention to detail"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "bengali-transcription-expert-micro1-6023",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -16879,7 +16882,7 @@
       "remote collaboration"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "video-annotation-specialist-micro1-6024",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -16979,7 +16982,7 @@
       "Quality Assurance"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "data-analyst-micro1-6025",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -17080,7 +17083,7 @@
       "Data Accuracy and Reporting"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "revenue-operations-crm-systems-specialist-saas-micro1-6026",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -17187,7 +17190,7 @@
       "Vietnamese"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "bilingual-vietnamese-psychiatrist-micro1-6027",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -17286,7 +17289,7 @@
       "AI Training"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "mandarin-transcription-expert-micro1-6028",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -17396,7 +17399,7 @@
       "standards compliance"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "aerospace-cad-expert-micro1-6029",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -17497,7 +17500,7 @@
       "eDiscovery"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "data-privacy-analyst-micro1-6030",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -17598,7 +17601,7 @@
       "Internal Medicine"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "internal-medicine-hospitalist-micro1-6031",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -17699,7 +17702,7 @@
       "Outcome-driven Approach"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "software-engineer-data-platforms-micro1-6032",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -17803,7 +17806,7 @@
       "Software Architecture"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "software-developer-micro1-6033",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -17912,7 +17915,7 @@
       "Written Technical Analysis"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "voice-actor-coaches-micro1-6034",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -18010,7 +18013,7 @@
       "Human Data"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "strategic-project-lead-finance-expertise-micro1-6035",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -18116,7 +18119,7 @@
       "data quality assurance"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "medical-coder-ccs-cic-micro1-6036",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -18222,7 +18225,7 @@
       "valuation analysis"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "equity-research-expert-micro1-6037",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -18325,7 +18328,7 @@
       "data privacy"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "litigation-associate-attorney-biglaw-firms-micro1-6038",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -18426,7 +18429,7 @@
       "Applied Math"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "mathematics-expert-msc-phd-micro1-6039",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -18523,7 +18526,7 @@
       "Aerodynamics"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "aerodynamics-expert-msc-or-phd-micro1-6040",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -18625,7 +18628,7 @@
       "Non-disclosure agreement"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "saas-contracts-counsel-micro1-6041",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -18731,7 +18734,7 @@
       "performance optimization"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "senior-software-engineer-micro1-6042",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -18944,7 +18947,7 @@
       "visual trend awareness"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "art-related-professional-micro1-6044",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -19044,7 +19047,7 @@
       "Equipment Handling"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "360-video-recorder-insta360-gopro-max-micro1-6045",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -19149,7 +19152,7 @@
       "professionalism"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "at-work-video-recorder-for-business-owners-micro1-6046",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -19259,7 +19262,7 @@
       "communicating complex legal concepts clearly"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "military-law-attorney-micro1-6047",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -19368,7 +19371,7 @@
       "Grading and Marking"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "educator-assessor-writer-micro1-6048",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -19469,7 +19472,7 @@
       "Board Certification"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "physician-ai-trainer-hospital-medicine-micro1-6049",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -19569,7 +19572,7 @@
       "CPT"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "inpatient-coder-ccs-micro1-6050",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -19667,7 +19670,7 @@
       "Utility assessment"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "combat-arms-targeting-sme-micro1-6051",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -19765,7 +19768,7 @@
       "Supply chain"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "transportation-and-warehousing-expert-micro1-6052",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -19860,7 +19863,7 @@
     "high_demand": false,
     "skills": [],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "spanish-language-consumer-reviewer-micro1-6053",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -19960,7 +19963,7 @@
       "CAD design experience"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "cad-design-expert-instructor-micro1-6054",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -20063,7 +20066,7 @@
       "Data Modeling"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "applied-scientist-micro1-6055",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -20162,7 +20165,7 @@
       "fluid-dynamics"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "cfd-engineer-micro1-6056",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -20263,7 +20266,7 @@
       "COBRA"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "medicare-enrollment-specialist-micro1-6057",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -20363,7 +20366,7 @@
       "Client Delivery"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "strategic-project-lead-robotics-micro1-6058",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -20460,7 +20463,7 @@
       "Hardware"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "hardware-expert-msc-or-phd-micro1-6059",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -20559,7 +20562,7 @@
       "Machine Learning"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "physionet-competitor-biomedical-signal-processing-ml-micro1-6060",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -20669,7 +20672,7 @@
       "market alignment analysis"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "senior-book-editor-micro1-6061",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -20775,7 +20778,7 @@
       "irs dispute resolution"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "tax-attorney-micro1-6062",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -20878,7 +20881,7 @@
       "Additive Manufacturing (LPBF) Defect Disposition"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "senior-metallurgist-welding-inspector-micro1-6063",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -20970,7 +20973,7 @@
     "referral_reward": 1000.0,
     "is_referral": true,
     "openings": 10,
-    "high_demand": false,
+    "high_demand": true,
     "skills": [
       "family law expertise",
       "legal research",
@@ -20989,7 +20992,7 @@
       "organizational skills"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "family-law-attorney-aaml-registered-micro1-6064",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -21090,7 +21093,7 @@
       "Explaining legal concepts to non-lawyers"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "lawyer-micro1-6065",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -21289,7 +21292,7 @@
       "Data Workflows"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "associate-forward-deployed-engineer-afde-micro1-6067",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -21389,7 +21392,7 @@
       "Agentic Legal Workflows"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "domain-researcher-legal-micro1-6068",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -21489,7 +21492,7 @@
       "Fullstack development"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "director-of-talent-automations-micro1-6069",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -21594,7 +21597,7 @@
       "attention to detail"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "army-combat-operations-expert-micro1-6070",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -21907,7 +21910,7 @@
       "Agentic Finance Workflows"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "domain-researcher-finance-m-a-micro1-6073",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -22005,7 +22008,7 @@
       "Human Data"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "strategic-project-lead-j-d-legal-expertise-micro1-6074",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -22111,7 +22114,7 @@
       "combat operations assessment"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "military-operations-expert-micro1-6075",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -22209,7 +22212,7 @@
       "Default"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "financial-aid-advisor-micro1-6076",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -22304,7 +22307,7 @@
     "high_demand": true,
     "skills": [],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "english-voice-coach-micro1-6077",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -22401,7 +22404,7 @@
       "Machine Learning"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "ml-engineer-msc-or-phd-micro1-6078",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -22510,7 +22513,7 @@
       "remote collaboration"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "video-data-annotator-micro1-6079",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -22718,7 +22721,7 @@
       "collaboration with stakeholders"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "registered-nurse-micro1-6081",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -22818,7 +22821,7 @@
       "Cross-platform Apps"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "software-engineer-electron-js-micro1-6082",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -22917,7 +22920,7 @@
     ],
     "source_verified": true,
     "last_verified": "2026-10-28T23:12:00.973029+00:00",
-    "status": "active",
+    "status": "closed",
     "slug": "education-practitioner-learning-assessment-specialist-micro1-6083",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
     "applicant_countries": [
@@ -22980,7 +22983,8 @@
       "Ghana",
       "Ethiopia"
     ],
-    "details_fetched_at": "2026-10-24T17:34:13.595555+00:00"
+    "details_fetched_at": "2026-10-24T17:34:13.595555+00:00",
+    "closed_at": "2026-10-29T20:24:02.161524+00:00"
   },
   {
     "title": "Passport Acceptance Agent",
@@ -23010,7 +23014,7 @@
     "high_demand": false,
     "skills": [],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "passport-acceptance-agent-micro1-6084",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -23110,7 +23114,7 @@
       "Evaluation expertise"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "domain-contributor-evaluation-specialist-micro1-6085",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -23208,7 +23212,7 @@
       "Safety"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "national-park-ranger-micro1-6086",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -23432,7 +23436,7 @@
       "collaborative communication"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "quantitative-rates-researcher-micro1-6088",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -23540,7 +23544,7 @@
       "Document Review"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "lawyer-legal-writer-micro1-6089",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -23640,7 +23644,7 @@
       "Contract Redlining"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "attorney-micro1-6090",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -23847,7 +23851,7 @@
       "Contract Drafting"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "derivatives-counsel-isda-specialist-micro1-6092",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -24047,7 +24051,7 @@
       "Audio Transcritption"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "swiss-german-transcription-expert-micro1-6094",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -24142,7 +24146,7 @@
     "high_demand": false,
     "skills": [],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "consular-officer-passport-specialist-micro1-6095",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -24242,7 +24246,7 @@
       "ML Systems"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "member-of-technical-staff-coding-research-micro1-6096",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -24342,7 +24346,7 @@
       "Communications Strategy"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "head-of-communications-micro1-6097",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -24442,7 +24446,7 @@
       "Human Data"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "human-data-manager-micro1-6098",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -24542,7 +24546,7 @@
       "Contract Redlining"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "contracts-attorney-micro1-6099",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -24643,7 +24647,7 @@
       "Google Workspace"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "generalist-u-s-tax-workflow-evaluation-micro1-6100",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -24742,7 +24746,7 @@
       "regulatory"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "medical-communications-manager-micro1-6101",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -24842,7 +24846,7 @@
       "Agentic Finance Workflows"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "domain-researcher-finance-micro1-6102",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -24941,7 +24945,7 @@
       "Human Data"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "strategic-project-lead-micro1-6103",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -25039,7 +25043,7 @@
       "Customs"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "postal-clerk-micro1-6104",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -25145,7 +25149,7 @@
       "performance optimization"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "software-engineer-micro1-6105",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -25248,7 +25252,7 @@
       "Law Journal Editing"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "legal-citation-specialist-law-students-micro1-6106",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -25354,7 +25358,7 @@
       "legal technology"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "lawyer-micro1-6107",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -25559,7 +25563,7 @@
       "Human Data"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "strategic-project-lead-md-health-micro1-6109",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -25659,7 +25663,7 @@
       "Mathematical & Computational Fluency"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "physics-expert-phd-postdoc-micro1-6110",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -25764,7 +25768,7 @@
       "problem-solving"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "stem-expert-biology-bioinformatics-phd-micro1-6111",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -25864,7 +25868,7 @@
       "Agentic Medical Workflows"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "domain-researcher-medical-micro1-6112",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -26073,7 +26077,7 @@
       "performance optimization"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "software-engineer-micro1-6114",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -26175,7 +26179,7 @@
       "Trials"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "ai-legal-fellow-litigation-motion-practice-micro1-6115",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -26281,7 +26285,7 @@
       "attention to detail"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "law-student-micro1-6116",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -26379,7 +26383,7 @@
       "Marine Survey Reporting & Standards"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "senior-marine-cargo-and-draft-surveyor-micro1-6117",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -26480,7 +26484,7 @@
       "Board Certification"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "medical-specialist-micro1-6118",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -26683,7 +26687,7 @@
       "Competitive Programming"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "competitive-coder-micro1-6120",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -26789,7 +26793,7 @@
       "primary care expertise"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "family-medicine-physician-md-micro1-6121",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -26888,7 +26892,7 @@
       "Outreach"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "bilingual-spanish-benefits-counselor-micro1-6122",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -26990,7 +26994,7 @@
       "Research mastery"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "research-evaluation-specialist-phd-or-masters-researcher-professor-micro1-6123",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -27108,7 +27112,7 @@
       "problem-solving"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "life-sciences-research-scientist-phd-wet-lab-computational-biology-micro1-6124",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -27209,7 +27213,7 @@
     ],
     "source_verified": true,
     "last_verified": "2026-10-28T23:12:00.973029+00:00",
-    "status": "active",
+    "status": "closed",
     "slug": "paid-photo-contributor-opportunity-aged-50-micro1-6125",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
     "applicant_countries": [
@@ -27272,7 +27276,8 @@
       "Ghana",
       "Ethiopia"
     ],
-    "details_fetched_at": "2026-10-24T17:34:13.595555+00:00"
+    "details_fetched_at": "2026-10-24T17:34:13.595555+00:00",
+    "closed_at": "2026-10-29T20:24:02.161524+00:00"
   },
   {
     "title": "Finance Specialist",
@@ -27316,7 +27321,7 @@
       "Investor Materials"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "finance-specialist-micro1-6126",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -27421,7 +27426,7 @@
       "data organization and submission"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "photographer-micro1-6127",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -27527,7 +27532,7 @@
       "remote work self-management"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "gujarati-transcription-expert-micro1-6128",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -27628,7 +27633,7 @@
       "Attention to detail"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "energy-utilities-regulatory-attorney-micro1-6129",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -27728,7 +27733,7 @@
       "engineering drawing interpretation"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "freecad-expert-micro1-6130",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -27834,7 +27839,7 @@
       "technology sector familiarity"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "gaming-gambling-attorney-micro1-6131",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -27934,7 +27939,7 @@
       "written communication"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "industrial-design-cad-expert-micro1-6132",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -28033,7 +28038,7 @@
       "All-Source Intelligence Analysis"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "intelligence-analyst-micro1-6133",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -28139,7 +28144,7 @@
       "research skills"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "us-macroeconomist-micro1-6134",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -28341,7 +28346,7 @@
       "Distributed Systems"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "forward-deployed-engineer-u-s-government-micro1-6136",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -28441,7 +28446,7 @@
       "Human Data"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "human-data-manager-new-grad-micro1-6137",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -28549,7 +28554,7 @@
       "Consulting"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "brand-creative-strategy-expert-micro1-6138",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -28650,7 +28655,7 @@
       "Time Management"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "senior-ai-trainer-micro1-6139",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -28751,7 +28756,7 @@
       "Data Accuracy and Reporting"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "sales-revenue-cs-operations-expert-micro1-6140",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -28857,7 +28862,7 @@
       "us healthcare regulatory knowledge"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "healthcare-attorney-biglaw-firms-micro1-6141",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -28965,7 +28970,7 @@
       "Logical Thinking"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "software-engineer-open-source-contributor-micro1-6142",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -29065,7 +29070,7 @@
       "Enterprise AI"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "enterprise-client-partner-u-s-government-micro1-6143",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -29168,7 +29173,7 @@
       "issue reporting"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "paid-photo-contributor-opportunity-micro1-6144",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -29275,7 +29280,7 @@
       "Psychiatry"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "bilingual-japanese-psychiatrist-micro1-6145",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -29374,7 +29379,7 @@
       "Cyber Thread Intelligence expertise"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "cyber-threat-intelligence-sme-micro1-6146",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -29473,7 +29478,7 @@
       "MySQL"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "backend-c-net-developer-micro1-6147",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -29568,7 +29573,7 @@
     "high_demand": false,
     "skills": [],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "consumer-reviewer-micro1-6148",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -29666,7 +29671,7 @@
       "Environmental Conservation"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "agriculture-forestry-environmental-experts-micro1-6149",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -29766,7 +29771,7 @@
       "RL Workflows"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "member-of-technical-staff-research-engineering-micro1-6150",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -29870,7 +29875,7 @@
       "Attention to detail"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "bluebook-citation-specialist-law-students-recent-jds-micro1-6151",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -29972,7 +29977,7 @@
       "Astronomy"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "life-sciences-research-expert-python-micro1-6152",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -30070,7 +30075,7 @@
       "Human Data"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "strategic-project-lead-coding-swe-micro1-6153",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -30171,7 +30176,7 @@
       "Liability Assessment"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "senior-cargo-and-parcel-claims-examiner-micro1-6154",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -30272,7 +30277,7 @@
       "Board Certification"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "locum-tenens-hospitalist-micro1-6155",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -30371,7 +30376,7 @@
       "Contents Identification"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "senior-insurance-claims-expert-liability-property-contents-micro1-6156",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -30480,7 +30485,7 @@
       "clear written communication"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "weapons-systems-operator-micro1-6157",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -30587,7 +30592,7 @@
       "Psychiatry"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "georgian-speaking-psychiatrist-micro1-6158",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -30698,7 +30703,7 @@
       "client deliverables preparation"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "investment-banking-expert-micro1-6159",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -30800,7 +30805,7 @@
       "APA's"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "corporate-transactions-attorney-micro1-6160",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -30901,7 +30906,7 @@
       "Clinical Documentation"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "family-medicine-hospitalist-micro1-6161",
     "first_seen": "2026-10-24T15:04:35.793576+00:00",
@@ -31003,7 +31008,7 @@
       "AI training"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "finance-accounting-expert-micro1-302",
     "first_seen": "2026-10-24T17:34:13.595555+00:00",
@@ -31104,7 +31109,7 @@
       "Working Across Documents"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "hr-people-operations-expert-micro1-303",
     "first_seen": "2026-10-24T17:34:13.595555+00:00",
@@ -31205,7 +31210,7 @@
       "Judgment Under Conflicting Requirements"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "legal-compliance-expert-micro1-304",
     "first_seen": "2026-10-24T17:34:13.595555+00:00",
@@ -31305,7 +31310,7 @@
       "Vendor Problems After Signing"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "procurement-vendor-management-expert-micro1-305",
     "first_seen": "2026-10-24T17:34:13.595555+00:00",
@@ -31406,7 +31411,7 @@
       "Operational Reporting and Data Discrepancies"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "business-operations-expert-micro1-306",
     "first_seen": "2026-10-24T17:34:13.595555+00:00",
@@ -31505,7 +31510,7 @@
       "Humanitarian Law"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "military-operations-ihl-expert-micro1-307",
     "first_seen": "2026-10-28T20:45:55.299292+00:00",
@@ -31546,7 +31551,7 @@
       "ML Research & Experimental Design"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "member-of-technical-staff-model-training-post-training-research-micro1-308",
     "first_seen": "2026-10-28T20:45:55.299292+00:00",
@@ -31587,7 +31592,7 @@
       "Technical Leadership & Systems Architecture"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "member-of-technical-staff-data-engineering-micro1-309",
     "first_seen": "2026-10-28T20:45:55.299292+00:00",
@@ -31634,7 +31639,7 @@
       "collaboration"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "ai-photo-rater-micro1-310",
     "first_seen": "2026-10-28T20:45:55.299292+00:00",
@@ -31678,7 +31683,7 @@
       "compliance best practices"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "military-writing-specialist-micro1-311",
     "first_seen": "2026-10-28T20:45:55.299292+00:00",
@@ -31717,7 +31722,7 @@
       "AI Agents"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "investment-banking-m-a-expert-micro1-312",
     "first_seen": "2026-10-28T20:45:55.299292+00:00",
@@ -31758,7 +31763,7 @@
       "Tool-Use Abuse"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "ai-jailbreak-prompt-injection-security-expert-micro1-313",
     "first_seen": "2026-10-28T20:45:55.299292+00:00",
@@ -31800,7 +31805,7 @@
       "use of navigational charts and airport diagrams"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "aircraft-pilot-micro1-314",
     "first_seen": "2026-10-28T20:45:55.299292+00:00",
@@ -31848,7 +31853,7 @@
       "use of aviation charts and diagrams"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "air-traffic-controller-micro1-315",
     "first_seen": "2026-10-28T20:45:55.299292+00:00",
@@ -31890,7 +31895,7 @@
       "Process Improvement"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "ai-agent-power-user-micro1-316",
     "first_seen": "2026-10-28T20:45:55.299292+00:00",
@@ -31932,7 +31937,7 @@
       "written communication"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "music-sound-annotation-expert-micro1-317",
     "first_seen": "2026-10-28T20:45:55.299292+00:00",
@@ -31974,7 +31979,7 @@
       "Tamil native proficiency"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "tamil-bilingual-expert-micro1-318",
     "first_seen": "2026-10-28T20:45:55.299292+00:00",
@@ -32016,11 +32021,12 @@
     ],
     "source_verified": true,
     "last_verified": "2026-10-28T23:12:00.973029+00:00",
-    "status": "active",
+    "status": "closed",
     "slug": "wearable-electronic-user-micro1-319",
     "first_seen": "2026-10-28T20:45:55.299292+00:00",
     "applicant_countries": [],
-    "details_fetched_at": "2026-10-28T20:45:55.299292+00:00"
+    "details_fetched_at": "2026-10-28T20:45:55.299292+00:00",
+    "closed_at": "2026-10-29T20:24:02.161524+00:00"
   },
   {
     "title": "Corporate Finance & Financial Modeling Expert",
@@ -32054,7 +32060,7 @@
       "AI Agents"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "corporate-finance-financial-modeling-expert-micro1-320",
     "first_seen": "2026-10-28T20:45:55.299292+00:00",
@@ -32098,7 +32104,7 @@
       "compliance best practices"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "senior-dod-staff-writing-sme-micro1-321",
     "first_seen": "2026-10-28T20:45:55.299292+00:00",
@@ -32138,7 +32144,7 @@
       "AI Fluency & Automation Mindset"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "chief-of-staff-micro1-322",
     "first_seen": "2026-10-28T20:45:55.299292+00:00",
@@ -32182,11 +32188,12 @@
     ],
     "source_verified": true,
     "last_verified": "2026-10-28T23:12:00.973029+00:00",
-    "status": "active",
+    "status": "closed",
     "slug": "smartwatch-user-micro1-323",
     "first_seen": "2026-10-28T20:45:55.299292+00:00",
     "applicant_countries": [],
-    "details_fetched_at": "2026-10-28T20:45:55.299292+00:00"
+    "details_fetched_at": "2026-10-28T20:45:55.299292+00:00",
+    "closed_at": "2026-10-29T20:24:02.161524+00:00"
   },
   {
     "title": "Consulting Specialist",
@@ -32231,11 +32238,12 @@
     ],
     "source_verified": true,
     "last_verified": "2026-10-28T23:12:00.973029+00:00",
-    "status": "active",
+    "status": "closed",
     "slug": "consulting-specialist-micro1-324",
     "first_seen": "2026-10-28T20:45:55.299292+00:00",
     "applicant_countries": [],
-    "details_fetched_at": "2026-10-28T20:45:55.299292+00:00"
+    "details_fetched_at": "2026-10-28T20:45:55.299292+00:00",
+    "closed_at": "2026-10-29T20:24:02.161524+00:00"
   },
   {
     "title": "Spanish Voice Actor (Mexico)",
@@ -32266,7 +32274,7 @@
     "high_demand": true,
     "skills": [],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "spanish-voice-actor-mexico-micro1-325",
     "first_seen": "2026-10-28T20:45:55.299292+00:00",
@@ -32310,7 +32318,7 @@
       "CPT"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "certified-inpatient-medical-coder-micro1-326",
     "first_seen": "2026-10-28T20:45:55.299292+00:00",
@@ -32352,7 +32360,7 @@
       "Contract Drafting"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "legal-specialist-microsoft-office-user-micro1-327",
     "first_seen": "2026-10-28T20:45:55.299292+00:00",
@@ -32391,7 +32399,7 @@
       "AI Agents"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "financial-due-diligence-transaction-accounting-micro1-328",
     "first_seen": "2026-10-28T20:45:55.299292+00:00",
@@ -32429,7 +32437,7 @@
       "AI Agents"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "management-consulting-expert-micro1-329",
     "first_seen": "2026-10-28T20:45:55.299292+00:00",
@@ -32470,7 +32478,7 @@
       "Technical Leadership & Quality Strategy"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "member-of-technical-staff-quality-engineering-micro1-330",
     "first_seen": "2026-10-28T20:45:55.299292+00:00",
@@ -32518,7 +32526,7 @@
       "collaboration"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "food-delivery-ai-response-evaluator-micro1-331",
     "first_seen": "2026-10-28T20:45:55.299292+00:00",
@@ -32559,7 +32567,7 @@
       "Technical Leadership & System Ownership"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "member-of-technical-staff-model-training-infra-platform-micro1-332",
     "first_seen": "2026-10-28T20:45:55.299292+00:00",
@@ -32600,7 +32608,7 @@
       "Safeguards"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "nuclear-radiological-security-expert-micro1-333",
     "first_seen": "2026-10-28T20:45:55.299292+00:00",
@@ -32646,7 +32654,7 @@
       "scenario development"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "military-operations-reporting-sme-micro1-334",
     "first_seen": "2026-10-28T20:45:55.299292+00:00",
@@ -32687,7 +32695,7 @@
       "Technical Leadership & Systems Architecture"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "member-of-technical-staff-infrastructure-micro1-335",
     "first_seen": "2026-10-28T20:45:55.299292+00:00",
@@ -32747,7 +32755,7 @@
       "asynchronous communication"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "financial-expert-micro1-336",
     "first_seen": "2026-10-28T20:45:55.299292+00:00",
@@ -32791,7 +32799,7 @@
       "compliance best practices"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "federal-staff-reporting-analyst-micro1-337",
     "first_seen": "2026-10-28T20:45:55.299292+00:00",
@@ -32833,7 +32841,7 @@
       "AI Training"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "marketing-specialist-microsoft-office-user-micro1-338",
     "first_seen": "2026-10-28T20:45:55.299292+00:00",
@@ -32875,7 +32883,7 @@
       "Inference Optimization & Model Deployment"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "member-of-technical-staff-model-training-applied-research-micro1-339",
     "first_seen": "2026-10-28T20:45:55.299292+00:00",
@@ -32916,7 +32924,7 @@
       "Structured Reasoning"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "food-delivery-app-user-tester-micro1-340",
     "first_seen": "2026-10-28T20:45:55.299292+00:00",
@@ -32966,11 +32974,12 @@
     ],
     "source_verified": true,
     "last_verified": "2026-10-28T23:12:00.973029+00:00",
-    "status": "active",
+    "status": "closed",
     "slug": "finance-specialist-micro1-341",
     "first_seen": "2026-10-28T20:45:55.299292+00:00",
     "applicant_countries": [],
-    "details_fetched_at": "2026-10-28T20:45:55.299292+00:00"
+    "details_fetched_at": "2026-10-28T20:45:55.299292+00:00",
+    "closed_at": "2026-10-29T20:24:02.161524+00:00"
   },
   {
     "title": "Naval Subject Matter Expert (Cleared)",
@@ -33006,7 +33015,7 @@
       "Briefing to leadership"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "naval-subject-matter-expert-cleared-micro1-342",
     "first_seen": "2026-10-28T20:45:55.299292+00:00",
@@ -33053,7 +33062,7 @@
       "collaboration with stakeholders"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "registered-nurse-micro1-343",
     "first_seen": "2026-10-28T20:45:55.299292+00:00",
@@ -33092,7 +33101,7 @@
       "Regulatory operations compliance (Part 121 - 135 - ICAO)"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "senior-flight-operations-expert-micro1-344",
     "first_seen": "2026-10-28T23:12:00.973029+00:00",
@@ -33143,11 +33152,12 @@
     ],
     "source_verified": true,
     "last_verified": "2026-10-28T23:12:00.973029+00:00",
-    "status": "active",
+    "status": "closed",
     "slug": "intelligence-operations-collection-expert-micro1-345",
     "first_seen": "2026-10-28T23:12:00.973029+00:00",
     "applicant_countries": [],
-    "details_fetched_at": "2026-10-28T23:12:00.973029+00:00"
+    "details_fetched_at": "2026-10-28T23:12:00.973029+00:00",
+    "closed_at": "2026-10-29T20:24:02.161524+00:00"
   },
   {
     "title": "Consumer Product Safety Attorney",
@@ -33195,7 +33205,7 @@
       "collaboration with cross-functional teams"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "consumer-product-safety-attorney-micro1-346",
     "first_seen": "2026-10-28T23:12:00.973029+00:00",
@@ -33235,7 +33245,7 @@
       "Cargo securing surveying"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "senior-cargo-condition-and-securing-surveyor-micro1-347",
     "first_seen": "2026-10-28T23:12:00.973029+00:00",
@@ -33277,7 +33287,7 @@
       "Fiber optic inspection"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "senior-advanced-ndt-and-imaging-specialist-micro1-348",
     "first_seen": "2026-10-28T23:12:00.973029+00:00",
@@ -33318,7 +33328,7 @@
       "critical thinking"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "senior-intelligence-analyst-national-security-micro1-349",
     "first_seen": "2026-10-28T23:12:00.973029+00:00",
@@ -33356,7 +33366,7 @@
       "fraud detection from claim evidence"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "senior-claims-investigation-and-evidence-review-expert-micro1-350",
     "first_seen": "2026-10-28T23:12:00.973029+00:00",
@@ -33402,7 +33412,7 @@
       "data organization and submission"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "senior-photographer-micro1-351",
     "first_seen": "2026-10-28T23:12:00.973029+00:00",
@@ -33442,7 +33452,7 @@
       "Property damage scoping"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "senior-property-damage-and-restoration-expert-micro1-352",
     "first_seen": "2026-10-28T23:12:00.973029+00:00",
@@ -33482,7 +33492,7 @@
       "Return damage inspection"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "senior-specialty-inspection-expert-crop-auction-and-rental-micro1-353",
     "first_seen": "2026-10-28T23:12:00.973029+00:00",
@@ -33529,7 +33539,7 @@
       "technology sector familiarity"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "gaming-gambling-regulatory-attorney-micro1-354",
     "first_seen": "2026-10-28T23:12:00.973029+00:00",
@@ -33568,7 +33578,7 @@
       "Accident quality auditing"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "senior-vehicle-damage-and-condition-expert-micro1-355",
     "first_seen": "2026-10-28T23:12:00.973029+00:00",
@@ -33608,7 +33618,7 @@
       "Image annotation QA"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "senior-technical-documentation-parts-and-annotation-specialist-micro1-356",
     "first_seen": "2026-10-28T23:12:00.973029+00:00",
@@ -33664,11 +33674,12 @@
     ],
     "source_verified": true,
     "last_verified": "2026-10-28T23:12:00.973029+00:00",
-    "status": "active",
+    "status": "closed",
     "slug": "intelligence-agency-officer-micro1-357",
     "first_seen": "2026-10-28T23:12:00.973029+00:00",
     "applicant_countries": [],
-    "details_fetched_at": "2026-10-28T23:12:00.973029+00:00"
+    "details_fetched_at": "2026-10-28T23:12:00.973029+00:00",
+    "closed_at": "2026-10-29T20:24:02.161524+00:00"
   },
   {
     "title": "Senior Industrial Trades and Maintenance Expert",
@@ -33705,11 +33716,404 @@
       "Textile production"
     ],
     "source_verified": true,
-    "last_verified": "2026-10-28T23:12:00.973029+00:00",
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
     "status": "active",
     "slug": "senior-industrial-trades-and-maintenance-expert-micro1-358",
     "first_seen": "2026-10-28T23:12:00.973029+00:00",
     "applicant_countries": [],
     "details_fetched_at": "2026-10-28T23:12:00.973029+00:00"
+  },
+  {
+    "title": "Intelligence Operations & Collection Expert",
+    "company": "micro1",
+    "apply_url": "https://jobs.micro1.ai/post/206a240f-67cf-47d4-8273-6e62ad89fd5c?referralCode=f6cf7f5c-2a5b-4156-ac3e-e6dc8329426d&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "location": "Not specified",
+    "is_remote": false,
+    "salary_min": 0,
+    "salary_max": 0,
+    "tags": [
+      "AI Training"
+    ],
+    "description": "Role Title: Intelligence Operations & Collection Expert\n\nRole Type: Contractor\n\nLocation: Remote\n\nmicro1 is seeking experienced Intelligence Operations & Collection Experts to contribute their specialized knowledge to an AI training and evaluation project focused on intelligence operations and national security.\n\nWe are particularly interested in professionals with current or previous experience within civilian intelligence agencies, such as the CIA, NSA, MI6/SIS, GCHQ, or equivalent organizations.\n\n## Scope of Work\n\n- Evaluate AI-generated scenarios involving intelligence collection, operational planning, and national security decision-making.\n- Assess the accuracy, realism, and relevance of intelligence collection methodologies and operational processes.\n- Review and refine intelligence-related case studies, analytical summaries, and scenario-based materials.\n- Identify gaps, inconsistencies, and unrealistic assumptions in AI-generated content.\n- Provide structured feedback to improve AI reasoning and understanding of intelligence operations.\n\n## Preferred Qualifications\n\n- Current or previous professional experience within a civilian intelligence agency, particularly in intelligence operations, collection, or collection management.\n- Demonstrated expertise in HUMINT, SIGINT, OSINT, or other intelligence collection disciplines.\n- Understanding of civilian intelligence agency procedures, operational frameworks, legal authorities, and interagency coordination.\n- Experience in operational planning, intelligence collection requirements, or evaluating intelligence information.\n- Strong analytical judgment, attention to detail, and written communication skills.",
+    "job_type": "Contract",
+    "date_posted": "2026-10-29T13:00:20+00:00",
+    "source": "micro1",
+    "source_board": "micro1:referral",
+    "source_job_id": "206a240f-67cf-47d4-8273-6e62ad89fd5c",
+    "field": "other",
+    "field_label": "Specialist",
+    "source_url": "https://prod-api.micro1.ai/api/v1/job/portal/referral/<referral>/jobs",
+    "hourly_min": 50.0,
+    "hourly_max": 100.0,
+    "referral_reward": 500.0,
+    "is_referral": true,
+    "openings": 20,
+    "high_demand": false,
+    "skills": [
+      "intelligence operations",
+      "intelligence collection",
+      "humint",
+      "sigint",
+      "osint",
+      "operational planning",
+      "analytical judgment",
+      "attention to detail",
+      "written communication",
+      "scenario evaluation"
+    ],
+    "source_verified": true,
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
+    "status": "active",
+    "slug": "intelligence-operations-collection-expert-micro1-359",
+    "first_seen": "2026-10-29T20:24:02.161524+00:00",
+    "applicant_countries": [],
+    "details_fetched_at": "2026-10-29T20:24:02.161524+00:00"
+  },
+  {
+    "title": "Energy Regulatory Counsel",
+    "company": "micro1",
+    "apply_url": "https://jobs.micro1.ai/post/23c516d6-21e5-4e65-8e69-7d1dc127211b?referralCode=f6cf7f5c-2a5b-4156-ac3e-e6dc8329426d&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "location": "Fully remote — anywhere, as long as you hold an active U.S. bar license",
+    "is_remote": true,
+    "salary_min": 0,
+    "salary_max": 0,
+    "tags": [
+      "AI Training",
+      "Law"
+    ],
+    "description": "**Role Type:** Contractor\n\n**Location:** Fully remote — anywhere, as long as you hold an active U.S. bar license\n\nmicro1 is engaging experienced Energy Regulatory Counsels to contribute to a customer’s AI training initiative.\n\nIn this role, you’ll apply your expertise to help train next-generation AI systems. Your work will shape how models learn, reason, and perform through high-quality, real-world input. No prior experience in AI is required — your domain knowledge is what matters.\nWe’re looking for attorneys with substantive experience advising utilities, independent power producers, or energy regulators on rate design, market structure, and regulatory compliance.\n\n## Scope of Work\n\n- Contribute expert-level legal reasoning on energy and utilities regulatory questions, including rate design, tariff structure, and compliance obligations.\n- Work through realistic regulatory scenarios drawn from FERC, state PUC, and ISO/RTO practice, explaining the analysis behind your conclusions.\n- Identify where a question is unsettled, jurisdictionally contested, or turns on facts that change the answer.\n- Review and validate work from other contributors for legal accuracy and clarity of reasoning.\n- Document your reasoning clearly, so the analysis is as useful as the conclusion.\n- Flag ambiguous or poorly framed scenarios to project coordinators instead of resolving them silently.\n- Deliver assigned work on schedule and at the required quality level.\n\n## Required Qualifications\n\n- J.D. from an ABA-accredited law school and active U.S. bar admission.\n- 4+ years of substantive energy and utilities regulatory practice — hands-on, not supervisory-only or adjacent exposure.\n- A corporate law foundation, ideally built at a Vault 100 firm.\n\n## How the selection process works\n\n- Apply and complete the screening questions\n- Complete the AI interview — this is how we showcase your expertise to the client\n- Profile review\n- Onboarding — our Talent Ops team will get you set up",
+    "job_type": "Contract",
+    "date_posted": "2026-10-28T21:01:42+00:00",
+    "source": "micro1",
+    "source_board": "micro1:referral",
+    "source_job_id": "23c516d6-21e5-4e65-8e69-7d1dc127211b",
+    "field": "law",
+    "field_label": "Law",
+    "source_url": "https://prod-api.micro1.ai/api/v1/job/portal/referral/<referral>/jobs",
+    "hourly_min": 140.0,
+    "hourly_max": 400.0,
+    "referral_reward": 1000.0,
+    "is_referral": true,
+    "openings": 5,
+    "high_demand": true,
+    "skills": [
+      "FERC and State PUC Practice",
+      "Transactional Energy Work",
+      "energy-and-utilities-regulation",
+      "Regulatory Judgment Under Conflicting Rules",
+      "Attention to detail"
+    ],
+    "source_verified": true,
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
+    "status": "active",
+    "slug": "energy-regulatory-counsel-micro1-360",
+    "first_seen": "2026-10-29T20:24:02.161524+00:00",
+    "applicant_countries": [],
+    "details_fetched_at": "2026-10-29T20:24:02.161524+00:00"
+  },
+  {
+    "title": "Marine Geology SME - Core Logging & Sedimentology",
+    "company": "micro1",
+    "apply_url": "https://jobs.micro1.ai/post/48438c1e-4297-480d-8fc6-f2fa155dabcf?referralCode=f6cf7f5c-2a5b-4156-ac3e-e6dc8329426d&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "location": "Not specified",
+    "is_remote": false,
+    "salary_min": 0,
+    "salary_max": 0,
+    "tags": [
+      "AI Training"
+    ],
+    "description": "Role Title: Marine Geology SME - Core Logging & Sedimentology\n\nRole Type: Contractor\n\nLocation: Remote\n\nmicro1 is engaging Marine Geology SME - Core Logging & Sedimentology experts to contribute to a client's project focused on the marine sciences. In this role, you'll apply your expertise to help train next-generation AI systems. Your work will shape how models learn, reason, and perform through high-quality, real-world input. No prior experience in AI is required — your domain knowledge is what matters.\n\nScope of Work\n\n- Perform rigorous, statement-by-statement validation of marine geology and sedimentology reference answers, ensuring technical accuracy and clarity.\n- Assess AI-generated outputs related to marine lithology, sedimentary structures, grain-size classifications, and offshore core sampling protocols.\n- Provide clear, detailed feedback and suggested improvements on core logging and sediment identification content.\n- Apply advanced knowledge of marine sedimentology to evaluate sediment and ocean floor descriptions, including soil and rock layer identification.\n- Utilize experience with offshore core logging and visual core description to review and annotate case studies and test sets.\n- Document insights, ambiguities, and edge cases encountered during content review, supporting continuous improvement.\n\nPreferred Qualifications\n\n- Advanced qualification in Marine Geology, Marine Sedimentology, or a closely related discipline.\n- Extensive hands-on experience with core logging, sediment sampling, and core description (visual and analytical) in offshore or marine settings.\n- Proven expertise in identifying marine sediments, sedimentary structures, and characterizing soil and rock layers in oceanic environments.\n- Strong written and verbal communication skills, with an emphasis on precise technical articulation and critical review.\n- Background in conducting or supervising offshore sedimentological surveys or participating in marine core sampling projects.\n- Familiarity with standard offshore sampling practices and the nuances of visual core description protocols.\n- Experience reviewing or developing educational, reference, or training materials in the earth sciences is a plus.",
+    "job_type": "Contract",
+    "date_posted": "2026-10-29T10:06:38+00:00",
+    "source": "micro1",
+    "source_board": "micro1:referral",
+    "source_job_id": "48438c1e-4297-480d-8fc6-f2fa155dabcf",
+    "field": "other",
+    "field_label": "Specialist",
+    "source_url": "https://prod-api.micro1.ai/api/v1/job/portal/referral/<referral>/jobs",
+    "hourly_min": 60.0,
+    "hourly_max": 100.0,
+    "referral_reward": 1000.0,
+    "is_referral": true,
+    "openings": 5,
+    "high_demand": false,
+    "skills": [
+      "Marine Geology",
+      "Sediment & Ocean Floor Basics",
+      "Core Logging & Sampling",
+      "Soil & Rock Layer Identification",
+      "Sediment Identification"
+    ],
+    "source_verified": true,
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
+    "status": "active",
+    "slug": "marine-geology-sme-core-logging-sedimentology-micro1-361",
+    "first_seen": "2026-10-29T20:24:02.161524+00:00",
+    "applicant_countries": [],
+    "details_fetched_at": "2026-10-29T20:24:02.161524+00:00"
+  },
+  {
+    "title": "Litigation Attorney",
+    "company": "micro1",
+    "apply_url": "https://jobs.micro1.ai/post/4e349131-665b-4300-9b7c-1cc6e051eb57?referralCode=f6cf7f5c-2a5b-4156-ac3e-e6dc8329426d&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "location": "Remote — open to U.S.-licensed attorneys",
+    "is_remote": true,
+    "salary_min": 0,
+    "salary_max": 0,
+    "tags": [
+      "AI Training",
+      "Law"
+    ],
+    "description": "Role Title: Litigation Attorney\n\nRole Type: Contractor\n\nLocation: Remote\n\n##  Opportunity Snapshot\n**Pay:** $80–150/hour equivalent\n**Time per task:** ~8 hours for task creation\n**Engagement:** Project-based — paid per approved task\n**Location:** Remote — open to U.S.-licensed attorneys\n**Commitment:** Flexible — work around your practice\n**Your tasks:** Build complex legal reasoning tasks from your own practice\n\nmicro1 is engaging practicing U.S. attorneys to design the legal reasoning problems that measure what AI systems can actually do. Your legal expertise is what matters here — no prior AI experience required.\n\nThe work draws on what you do every day: taking a complex fact pattern, identifying the issues that matter, and reasoning to a defensible conclusion. We’re expanding this pipeline and looking for attorneys who can produce genuinely difficult problems — the kind where the answer depends on reading the authority correctly.\n\n## What you’ll do\n\n- Build complex legal reasoning tasks from scenarios like those you handle in practice, with realistic supporting materials.\n- Provide the correct analysis and walk through the reasoning that gets there.\n- Define what makes an answer right, so another attorney reviewing it would reach the same verdict.\n- Review tasks built by other attorneys for legal accuracy and soundness of reasoning.\n- Flag tasks that turn out to be ambiguous or ungradable rather than submitting them.\n\n## What we’re looking for\n\n- J.D. and active U.S. bar license in good standing.\n- 3–15 years of practice experience, actively practicing in litigation, corporate, real estate, bankruptcy, or compliance.\n- Strong preference for seasoned litigators.\n- Judicial clerkship experience is a strong plus.\n- Law school teaching or legal instruction experience is a strong plus.\n- Law review or journal editorial experience is a plus.\n- Prior experience on legal AI or legal data projects is a strong plus.\n- English at C1 level or above.\n\n## Selection process\n\n- Apply and complete the screening questions\n- Complete the AI interview for this role — it’s how your expertise gets in front of the client\n- Profile review\n- Onboarding — our Talent Ops team will get you set up",
+    "job_type": "Contract",
+    "date_posted": "2026-10-29T19:50:45+00:00",
+    "source": "micro1",
+    "source_board": "micro1:referral",
+    "source_job_id": "4e349131-665b-4300-9b7c-1cc6e051eb57",
+    "field": "law",
+    "field_label": "Law",
+    "source_url": "https://prod-api.micro1.ai/api/v1/job/portal/referral/<referral>/jobs",
+    "hourly_min": 80.0,
+    "hourly_max": 150.0,
+    "referral_reward": 1000.0,
+    "is_referral": true,
+    "openings": 40,
+    "high_demand": true,
+    "skills": [
+      "Explaining Legal Reasoning to Others",
+      "Evidence Synthesis and Case Narrative",
+      "Legal Research and Brief Writing",
+      "Judgment Under Conflicting Authority",
+      "Attention to Detail",
+      "Objective Standards for Legal Work"
+    ],
+    "source_verified": true,
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
+    "status": "active",
+    "slug": "litigation-attorney-micro1-362",
+    "first_seen": "2026-10-29T20:24:02.161524+00:00",
+    "applicant_countries": [],
+    "details_fetched_at": "2026-10-29T20:24:02.161524+00:00"
+  },
+  {
+    "title": "Intelligence Technology & Systems Expert",
+    "company": "micro1",
+    "apply_url": "https://jobs.micro1.ai/post/51766349-d592-401e-a786-67d0e86c94af?referralCode=f6cf7f5c-2a5b-4156-ac3e-e6dc8329426d&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "location": "Not specified",
+    "is_remote": false,
+    "salary_min": 0,
+    "salary_max": 0,
+    "tags": [
+      "AI Training"
+    ],
+    "description": "Role Title: Intelligence Technology & Systems Expert\n\nRole Type: Contractor\n\nLocation: Remote\n\nmicro1 is seeking experienced Intelligence Technology & Systems Experts to contribute their specialized knowledge to an AI training and evaluation project focused on intelligence technologies, technical systems, and national security applications. We are particularly interested in professionals with current or previous experience within civilian intelligence agencies, such as the CIA, NSA, MI6/SIS, GCHQ, or equivalent organizations, especially those involved in intelligence technology, technical operations, systems development, or technology leadership.\n\n## Scope of Work\n\n- Evaluate AI-generated content related to intelligence technologies, technical systems, and national security applications.\n- Review technical scenarios involving intelligence systems, data processing, information collection, and analytical technologies.\n- Assess the accuracy, realism, and feasibility of technical workflows and system architectures used in civilian intelligence environments.\n- Identify gaps, inconsistencies, and unrealistic assumptions in AI-generated technical assessments.\n- Provide structured feedback to improve AI reasoning and understanding of intelligence technology and operational requirements.\n- Review and refine technical documentation, case studies, and scenario-based materials reflecting real-world intelligence technology challenges.\n\n## Preferred Qualifications\n\n- Current or previous professional experience within a civilian intelligence agency, particularly in technology, technical intelligence, systems engineering, or technical operations.\n- Expertise in intelligence technology platforms, data systems, technical collection capabilities, or intelligence information systems.\n- Experience designing, developing, managing, or evaluating technology solutions supporting intelligence operations and analysis.\n- Understanding of civilian intelligence agency workflows, technical requirements, security considerations, and operational constraints.\n- Experience in technical program leadership, systems architecture, data engineering, or intelligence technology development.\n- Strong analytical reasoning, technical judgment, and written communication skills.",
+    "job_type": "Contract",
+    "date_posted": "2026-10-29T12:54:12+00:00",
+    "source": "micro1",
+    "source_board": "micro1:referral",
+    "source_job_id": "51766349-d592-401e-a786-67d0e86c94af",
+    "field": "other",
+    "field_label": "Specialist",
+    "source_url": "https://prod-api.micro1.ai/api/v1/job/portal/referral/<referral>/jobs",
+    "hourly_min": 50.0,
+    "hourly_max": 100.0,
+    "referral_reward": 500.0,
+    "is_referral": true,
+    "openings": 20,
+    "high_demand": true,
+    "skills": [
+      "intelligence technology platforms",
+      "systems architecture",
+      "technical systems evaluation",
+      "data engineering",
+      "technical documentation review",
+      "analytical reasoning",
+      "technical judgment",
+      "written communication",
+      "intelligence information systems",
+      "intelligence operations workflows"
+    ],
+    "source_verified": true,
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
+    "status": "active",
+    "slug": "intelligence-technology-systems-expert-micro1-363",
+    "first_seen": "2026-10-29T20:24:02.161524+00:00",
+    "applicant_countries": [],
+    "details_fetched_at": "2026-10-29T20:24:02.161524+00:00"
+  },
+  {
+    "title": "Software Engineer (Electron.js)",
+    "company": "micro1",
+    "apply_url": "https://jobs.micro1.ai/post/8c0ddeba-5240-4059-9e61-544dd2c8292f?referralCode=f6cf7f5c-2a5b-4156-ac3e-e6dc8329426d&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "location": "Remote",
+    "is_remote": true,
+    "salary_min": 0,
+    "salary_max": 0,
+    "tags": [
+      "AI Training",
+      "Software Engineering"
+    ],
+    "description": "**Job Title:** Software Engineer (Electron.js)\n\n**Job Type:** Full-time\n\n**Location:** Remote\n\n## The Role\nWe’re building high-fidelity productivity infrastructure for a globally distributed workforce—software that operates quietly, reliably, and intelligently in the background. As a Software Engineer focused on desktop systems, you’ll help design and scale a cross-platform time intelligence application (MacOS + Windows) used daily by thousands of professionals.\n\n## What You’ll Work On\n\n- Architect and evolve a cross-platform desktop agent using Electron.js, optimized for performance and minimal resource footprint.\n- Build real-time timekeeping systems with precise event tracking and background execution.\n- Design and implement system-level signal collection (keyboard, mouse, app usage) with strong privacy and efficiency guarantees.\n- Develop offline-first data pipelines with reliable background sync and conflict resolution.\n- Integrate with distributed backend services and internal APIs to enable analytics and reporting.\n- Continuously improve runtime performance, memory efficiency, and fault tolerance.\n- Collaborate with product, design, and backend teams to ship features that directly impact user productivity.\n\n## What We're Looking For\n\n- 3+ years building production-grade desktop applications with Electron.js.\n- Strong proficiency in JavaScript/TypeScript and Node.js.\n- Experience designing cross-platform systems (MacOS + Windows) with consistent behavior.\n- Hands-on work with real-time tracking, event streams, or activity monitoring systems.\n- Familiarity with OS-level APIs for capturing user/system interactions.\n- Deep understanding of performance optimization in desktop environments.\n- Strong debugging skills and ability to reason about edge cases in distributed/offline systems.\n\n## Preferred\n\n- Experience building productivity, monitoring, or telemetry-driven applications.\n- Knowledge of native OS integrations (permissions, background processes, system hooks).\n- Understanding of security and privacy considerations in user activity tracking.\n- Familiarity with auto-update systems and release management in Electron.",
+    "job_type": "Contract",
+    "date_posted": "2026-10-29T04:01:53+00:00",
+    "source": "micro1",
+    "source_board": "micro1:referral",
+    "source_job_id": "8c0ddeba-5240-4059-9e61-544dd2c8292f",
+    "field": "software-engineering",
+    "field_label": "Software Engineering",
+    "source_url": "https://prod-api.micro1.ai/api/v1/job/portal/referral/<referral>/jobs",
+    "hourly_min": null,
+    "hourly_max": null,
+    "referral_reward": 1500.0,
+    "is_referral": true,
+    "openings": 1,
+    "high_demand": false,
+    "skills": [
+      "Electron.js",
+      "Typescript",
+      "Node.js",
+      "Cross-platform Apps"
+    ],
+    "source_verified": true,
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
+    "status": "active",
+    "slug": "software-engineer-electron-js-micro1-364",
+    "first_seen": "2026-10-29T20:24:02.161524+00:00",
+    "applicant_countries": [],
+    "details_fetched_at": "2026-10-29T20:24:02.161524+00:00"
+  },
+  {
+    "title": "Aviation Subject Matter Expert - Commercial Pilot / Flight Ops",
+    "company": "micro1",
+    "apply_url": "https://jobs.micro1.ai/post/e6d18bd1-ba27-448f-aed0-d308cc88291a?referralCode=f6cf7f5c-2a5b-4156-ac3e-e6dc8329426d&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "location": "Not specified",
+    "is_remote": false,
+    "salary_min": 0,
+    "salary_max": 0,
+    "tags": [
+      "AI Training"
+    ],
+    "description": "Role Title: Aviation Subject Matter Expert - Commercial Pilot / Flight Ops\n\nRole Type: Contractor\n\nLocation: Remote\n\nmicro1 is engaging Aviation Subject Matter Experts with commercial pilot and flight operations backgrounds to contribute to a customer's specialized project. In this role, you'll apply your expertise to help train next-generation AI systems. Your work will shape how models learn, reason, and perform through high-quality, real-world input. No prior experience in AI is required — your domain knowledge is what matters.\n\nScope of Work\n\n- Conduct detailed technical reviews of AI-generated content related to instrument approach procedures and cockpit briefings.\n- Validate the accuracy and completeness of FAA approach charts and terminal procedures referenced within model outputs.\n- Evaluate and verify cockpit phraseology and briefings against Part 135 operational and safety standards.\n- Assess statement-by-statement outputs for alignment with IFR procedures and best practices in flight operations.\n- Document findings, provide constructive feedback, and suggest corrections to optimize model accuracy and reliability.\n- Collaborate with project coordinators to clarify requirements and ensure deliverables meet aviation safety standards.\n\nPreferred Qualifications\n\n- FAA-certificated commercial pilot with multi-engine and instrument ratings.\n- Current or prior experience as a Certified Flight Instructor Instrument (CFII) or Part 135 check-airman.\n- Deep familiarity with FAA approach charts, terminal procedures, and instrument approach briefing protocols.\n- Thorough understanding of Part 135 operations, IFR procedures, and aviation safety standards.\n- Exceptional written and verbal communication skills, with experience producing or reviewing technical documentation.\n- Proven ability to evaluate complex technical content and provide clear, actionable feedback.\n- Enthusiasm for advancing aviation safety, operational excellence, and the application of expert knowledge to innovative projects.",
+    "job_type": "Contract",
+    "date_posted": "2026-10-29T09:20:23+00:00",
+    "source": "micro1",
+    "source_board": "micro1:referral",
+    "source_job_id": "e6d18bd1-ba27-448f-aed0-d308cc88291a",
+    "field": "other",
+    "field_label": "Specialist",
+    "source_url": "https://prod-api.micro1.ai/api/v1/job/portal/referral/<referral>/jobs",
+    "hourly_min": 60.0,
+    "hourly_max": 100.0,
+    "referral_reward": 1000.0,
+    "is_referral": true,
+    "openings": 5,
+    "high_demand": true,
+    "skills": [
+      "Instrument Approach Briefing",
+      "FAA Approach Charts",
+      "Part 135 Operations",
+      "IFR Procedures",
+      "Aviation Safety",
+      "Flight Operations"
+    ],
+    "source_verified": true,
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
+    "status": "active",
+    "slug": "aviation-subject-matter-expert-commercial-pilot-flight-ops-micro1-365",
+    "first_seen": "2026-10-29T20:24:02.161524+00:00",
+    "applicant_countries": [],
+    "details_fetched_at": "2026-10-29T20:24:02.161524+00:00"
+  },
+  {
+    "title": "Forensic SME - Firearm & Toolmark Examination",
+    "company": "micro1",
+    "apply_url": "https://jobs.micro1.ai/post/f000899c-4d4b-4e53-b7be-66ee789ec5ce?referralCode=f6cf7f5c-2a5b-4156-ac3e-e6dc8329426d&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "location": "Not specified",
+    "is_remote": false,
+    "salary_min": 0,
+    "salary_max": 0,
+    "tags": [
+      "AI Training"
+    ],
+    "description": "Role Title: Forensic SME - Firearm & Toolmark Examination\n\nRole Type: Contractor\n\nLocation: Remote\n\nmicro1 is engaging Forensic SME - Firearm & Toolmark Examinations to contribute to a specialized project focused on evaluating and enhancing AI capabilities in forensic science. In this role, you'll apply your expertise to help train next-generation AI systems. Your work will shape how models learn, reason, and perform through high-quality, real-world input. No prior experience in AI is required — your domain knowledge is what matters. This opportunity involves reviewing and validating AI-generated responses to complex firearm and toolmark examination scenarios, directly influencing the accuracy of AI in forensic contexts.\n\nScope of Work\n\n- Review AI model benchmark answers for 10 forensic firearm and toolmark examination test cases.\n- Assess the accuracy and completeness of AI-generated responses related to microscopic comparative ballistics and toolmark identification.\n- Evaluate firing pin and breech face impression analyses for adherence to forensic laboratory methodologies.\n- Examine responses for correct interpretation of rifling characteristics and other ballistic evidence.\n- Provide written and verbal feedback on strengths and areas for improvement in AI model outputs.\n- Document recommendations to enhance AI systems based on forensic laboratory standards and best practices.\n\nPreferred Qualifications\n\n- Extensive experience in forensic firearms analysis, toolmark identification, and ballistics casework.\n- Hands-on background in microscopic comparison and interpretation of firing pin and breech face impressions.\n- Demonstrated expertise applying forensic laboratory standards and protocols to real-world examinations.\n- Strong written and verbal communication skills with the ability to articulate complex forensic concepts clearly.\n- Prior participation in laboratory or research projects involving comparative ballistics or toolmark analysis.\n- Familiarity with current forensic technologies, instrumentation, and industry trends.\n- Attention to detail and a commitment to scientific accuracy in forensic assessment and reporting.",
+    "job_type": "Contract",
+    "date_posted": "2026-10-29T09:48:47+00:00",
+    "source": "micro1",
+    "source_board": "micro1:referral",
+    "source_job_id": "f000899c-4d4b-4e53-b7be-66ee789ec5ce",
+    "field": "other",
+    "field_label": "Specialist",
+    "source_url": "https://prod-api.micro1.ai/api/v1/job/portal/referral/<referral>/jobs",
+    "hourly_min": 60.0,
+    "hourly_max": 100.0,
+    "referral_reward": 1000.0,
+    "is_referral": true,
+    "openings": 5,
+    "high_demand": false,
+    "skills": [
+      "Forensic Firearms Analysis",
+      "Toolmark Identification",
+      "Ballistics Casework",
+      "Microscopic Comparison",
+      "Forensic Laboratory Standards"
+    ],
+    "source_verified": true,
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
+    "status": "active",
+    "slug": "forensic-sme-firearm-toolmark-examination-micro1-366",
+    "first_seen": "2026-10-29T20:24:02.161524+00:00",
+    "applicant_countries": [],
+    "details_fetched_at": "2026-10-29T20:24:02.161524+00:00"
+  },
+  {
+    "title": "Intelligence Agency Officer",
+    "company": "micro1",
+    "apply_url": "https://jobs.micro1.ai/post/f6fd0de9-f6ed-4d98-86b0-eeb19256fc2b?referralCode=f6cf7f5c-2a5b-4156-ac3e-e6dc8329426d&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "location": "Not specified",
+    "is_remote": false,
+    "salary_min": 0,
+    "salary_max": 0,
+    "tags": [
+      "AI Training"
+    ],
+    "description": "Role Title: Intelligence Agency Officer\n\nRole Type: Contractor\n\nLocation: Remote\n\nmicro1 is engaging Intelligence Agency Officers to contribute their specialized skills and insights to a customer's project. In this role, you'll apply your expertise to help train next-generation AI systems. Your work will shape how models learn, reason, and perform through high-quality, real-world input. We are particularly interested in professionals with firsthand experience in civilian intelligence operations, collection, analysis, or national security decision-making.\n\n## Scope of Work\n\n- Analyze and interpret complex intelligence data, providing nuanced feedback for AI training scenarios.\n- Review, evaluate, and enhance written content and communications reflecting intelligence operations and methodologies.\n- Create realistic, scenario-based materials and operational narratives representative of intelligence missions.\n- Offer expert-level insights on structured and unstructured data, identifying trends and detecting anomalies relevant to intelligence contexts.\n- Draft, edit, and vet communications modeled after real-world intelligence exchanges, ensuring clarity and security awareness.\n- Collaborate asynchronously with project stakeholders, providing timely responses and thoughtful written and verbal communication.\n- Support the ongoing refinement of AI tools to meet the analytical needs of intelligence professionals.\n\n## Preferred Qualifications\n\n- Current or previous professional experience within a civilian intelligence agency, such as the CIA, NSA, MI6/SIS, GCHQ, or an equivalent national intelligence organization.\n- Demonstrated expertise in intelligence-gathering methodologies, threat analysis, and operational planning.\n- Exceptional written and verbal communication skills, with a keen attention to detail and accuracy.\n- Ability to synthesize large volumes of information and present actionable, concise insights.\n- Familiarity with various intelligence disciplines (HUMINT, SIGINT, OSINT, etc.) and their application to real-world scenarios.\n- Experience producing, reviewing, or training materials for intelligence or analytical audiences.\n- Comfort operating in a distributed, remote engagement with a commitment to high-quality deliverables.",
+    "job_type": "Contract",
+    "date_posted": "2026-10-29T12:57:49+00:00",
+    "source": "micro1",
+    "source_board": "micro1:referral",
+    "source_job_id": "f6fd0de9-f6ed-4d98-86b0-eeb19256fc2b",
+    "field": "other",
+    "field_label": "Specialist",
+    "source_url": "https://prod-api.micro1.ai/api/v1/job/portal/referral/<referral>/jobs",
+    "hourly_min": 50.0,
+    "hourly_max": 100.0,
+    "referral_reward": 500.0,
+    "is_referral": true,
+    "openings": 20,
+    "high_demand": true,
+    "skills": [
+      "intelligence analysis",
+      "threat analysis",
+      "operational planning",
+      "data interpretation",
+      "scenario creation",
+      "written communication",
+      "verbal communication",
+      "attention to detail",
+      "information synthesis",
+      "humint",
+      "sigint",
+      "osint",
+      "content review",
+      "training material development",
+      "remote collaboration"
+    ],
+    "source_verified": true,
+    "last_verified": "2026-10-29T20:24:02.161524+00:00",
+    "status": "active",
+    "slug": "intelligence-agency-officer-micro1-367",
+    "first_seen": "2026-10-29T20:24:02.161524+00:00",
+    "applicant_countries": [],
+    "details_fetched_at": "2026-10-29T20:24:02.161524+00:00"
   }
 ]
