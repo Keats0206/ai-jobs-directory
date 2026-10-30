@@ -423,7 +423,7 @@ function BuyingBody() {
 
       {capture.length > 0 && (
         <>
-          <h2>1. Most of the demand is for recording everyday life</h2>
+          <h2>1. {pct(openings(capture), total) >= 50 ? 'Most' : 'The biggest share'} of the demand is for recording everyday life</h2>
           <p>
             The biggest single category isn’t experts. It’s people with a phone or a camera. {capture.length} roles ask for video recorders, vloggers
             and photo contributors, with {fmt(openings(capture))} openings between them: {pct(openings(capture), total)}% of every open seat.
