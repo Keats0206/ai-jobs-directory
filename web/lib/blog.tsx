@@ -387,7 +387,160 @@ function DataBody() {
 
 /* ------------------------------------------------------------------ */
 
+const openings = (jobs: Job[]) => jobs.reduce((sum, job) => sum + (job.openings || 0), 0);
+const titled = (re: RegExp) => trainingJobs.filter((job) => re.test(job.title));
+const pct = (part: number, whole: number) => (whole ? Math.round((part / whole) * 100) : 0);
+const fmt = (n: number) => n.toLocaleString('en-US');
+
+function buyingData() {
+  const fields = getTrainingFields();
+  const total = openings(trainingJobs);
+  const capture = titled(/video|photo|vlogger|recorder|360°|insta360|gopro/i);
+  const law = trainingJobs.filter((job) => job.field === 'law');
+  const defense = titled(/military|special forces|humint|combat|targeting|defense|fighter pilot|veteran|\bVA\b/i);
+  const clinical = trainingJobs.filter((job) => job.field === 'medicine' && /physician|hospitalist|nurse|md\b/i.test(job.title));
+  const admin = titled(/medical cod|coder\b|medicare|enrollment|SHIP\b|eligibility|benefit/i).filter((job) => !defense.includes(job));
+  const aviation = titled(/pilot|air traffic/i).filter((job) => !defense.includes(job));
+  return { fields, total, capture, law, defense, clinical, admin, aviation, stats: trainingStats() };
+}
+
+const byOpeningsDesc = (a: Job, b: Job) => (b.openings || 0) - (a.openings || 0);
+const someRoles = (jobs: Job[], n = 3, order: (a: Job, b: Job) => number = byPay) =>
+  [...jobs].sort(order).slice(0, n).map((job, i) => <span key={job.slug}>{i ? ', ' : ''}{jobLink(job)}{formatPay(job) ? ` (${formatPay(job)})` : ''}</span>);
+
+function BuyingBody() {
+  const { fields, total, capture, law, defense, clinical, admin, aviation, stats } = buyingData();
+  const byOpenings = [...fields].sort((a, b) => openings(b.jobs) - openings(a.jobs));
+  const captureRates = hourly(capture).map(hourlyMax);
+  return (
+    <>
+      <p>
+        <strong>AI companies have {fmt(total)} open seats for people to train their models</strong>, spread across {stats.total} roles on micro1 as of{' '}
+        {monthYear()}. Job listings are a purchase order: each one says what kind of human knowledge a lab is willing to pay for right now. Read that
+        way, the listings say a lot about where AI is headed and which kinds of work it is learning next.
+      </p>
+      <p>Five things stand out.</p>
+
+      {capture.length > 0 && (
+        <>
+          <h2>1. Most of the demand is for recording everyday life</h2>
+          <p>
+            The biggest single category isn’t experts. It’s people with a phone or a camera. {capture.length} roles ask for video recorders, vloggers
+            and photo contributors, with {fmt(openings(capture))} openings between them: {pct(openings(capture), total)}% of every open seat.
+            {captureRates.length > 0 && <> Pay is low, a median of ${median(captureRates)}/hr.</>} Listings include at-home and at-work video recording,
+            car-mounted 360° cameras, and first-person footage shot on GoPro or Insta360 cameras.
+          </p>
+          <p>
+            <strong>What it signals:</strong> labs appear to be collecting first-person footage of ordinary human activity at scale. That is the raw
+            material for robots and “world models” that need to understand how people move through homes, workplaces and streets. Text data is
+            largely spoken for. Footage of real life is the new frontier.
+          </p>
+          <p><strong>If you have a camera and some time:</strong> {someRoles(capture.filter((job) => /video|recorder|vlogger/i.test(job.title)), 3, byOpeningsDesc)}.</p>
+        </>
+      )}
+
+      <h2>2. Where the seats are vs. where the money is</h2>
+      <p>
+        The market splits in two. A few fields offer thousands of low-paid seats, and others offer a handful of seats at professional rates.
+      </p>
+      <Table
+        head={['Field', 'Roles', 'Openings', 'Median top rate']}
+        rows={byOpenings.slice(0, 10).map((field) => [
+          fieldLink(field.slug, field.label), field.jobs.length, fmt(openings(field.jobs)),
+          hourly(field.jobs).length ? `$${medianRate(field.jobs)}/hr` : '—',
+        ])}
+      />
+      <p>
+        <strong>What it signals:</strong> labs need volume and judgment, and pay very differently for each. Volume work (recording, labeling,
+        generalist tasks) is priced like gig work. Judgment, meaning whether an answer is legally sound, medically safe or scientifically right, is
+        priced like consulting.
+      </p>
+
+      {law.length > 0 && (
+        <>
+          <h2>3. Legal AI is being trained one practice area at a time</h2>
+          <p>
+            Law has {law.length} open roles with a median top rate of ${medianRate(law)}/hr{hourly(law).length > 0 && <>, up to ${Math.max(...hourly(law).map(hourlyMax))}/hr</>}.
+            They aren’t generic “lawyer” roles. Each listing names a specialty: {law.filter((job) => /attorney/i.test(job.title)).slice(0, 8).map((job) => job.title.replace(/\s*attorney.*$/i, '')).join(', ')} and more.
+          </p>
+          <p>
+            <strong>What it signals:</strong> legal AI is moving past general contract review into specialist practice areas. The tasks that need a
+            specialist attorney today are the ones labs are paying to teach their models.
+          </p>
+          <p><strong>If you’re an attorney:</strong> {someRoles(law)}. See all {fieldLink('law', 'law roles')}.</p>
+        </>
+      )}
+
+      {defense.length > 0 && (
+        <>
+          <h2>4. Military and defense experience is in demand</h2>
+          <p>
+            {defense.length} roles ask for military or defense backgrounds, including {defense.slice(0, 5).map((job) => job.title).join(', ')}.
+          </p>
+          <p>
+            <strong>What it signals:</strong> defense and national-security AI is a growing buyer of expert training data. Veterans have skills
+            that are hard to find anywhere else.
+          </p>
+          <p><strong>If you’ve served:</strong> {someRoles(defense)}.</p>
+        </>
+      )}
+
+      {(admin.length > 0 || clinical.length > 0) && (
+        <>
+          <h2>5. Healthcare AI is going after the paperwork</h2>
+          <p>
+            Physician and nursing roles ({clinical.length} open) get the attention, but {admin.length} roles are for medical coders, Medicare
+            enrollment specialists and benefits counselors.
+          </p>
+          <p>
+            <strong>What it signals:</strong> the near-term target for AI in healthcare isn’t only diagnosis. It’s billing, coding and benefits
+            navigation: high-volume, rules-heavy work where mistakes cost money.
+          </p>
+          {admin.length > 0 && <p><strong>If you work in medical coding or benefits:</strong> {someRoles(admin)}.</p>}
+          {clinical.length > 0 && <p><strong>If you’re a clinician:</strong> {someRoles(clinical)}.</p>}
+        </>
+      )}
+
+      {aviation.length > 0 && (
+        <>
+          <h2>Also worth noting: aviation</h2>
+          <p>Pilots and air traffic controllers are being recruited too: {someRoles(aviation)}.</p>
+        </>
+      )}
+
+      <h2>What this means if you’re outside the market</h2>
+      <ul>
+        <li><strong>The jobs AI is learning are the ones labs are paying experts to explain.</strong> Specialist law, clinical judgment, defense analysis and medical coding are on the list now.</li>
+        <li><strong>Physical-world data is the next bottleneck.</strong> Footage of everyday life is being bought in bulk, which points at robotics.</li>
+        <li><strong>Expertise is currently a sellable asset.</strong> If you hold a license, a PhD or rare field experience, labs will pay professional rates to learn from you while they still need to.</li>
+      </ul>
+
+      <SourceNote>
+        Source: every open role in micro1’s public job feed, refreshed daily ({stats.total} roles as of {monthYear()}). “Openings” is the number of
+        seats micro1 lists for each role, not confirmed hires. Some roles don’t list pay. This covers one platform, so other platforms such as Mercor
+        may show a different mix. The “what it signals” sections are our reading of the data, not statements from the labs.
+      </SourceNote>
+    </>
+  );
+}
+
 export const posts: Post[] = [
+  {
+    slug: 'what-ai-companies-are-paying-to-learn',
+    kicker: 'Analysis',
+    title: 'What AI Companies Are Paying People to Teach Their Models, and What It Signals',
+    description: 'A breakdown of every open AI training role: where the seats are, where the money is, and which kinds of work AI is learning next.',
+    published: '2026-10-30',
+    Body: BuyingBody,
+    faqs: () => {
+      const { total, capture, law, stats } = buyingData();
+      return [
+        { question: 'What kind of people are AI companies hiring to train their models?', answer: `Two groups: large numbers of people to record video and do generalist tasks, and smaller numbers of experts such as attorneys, physicians and PhDs. micro1 lists ${fmt(total)} openings across ${stats.total} roles (${monthYear()}).` },
+        { question: 'Why are AI companies paying people to record videos?', answer: `First-person footage of everyday life is training data for robots and world models. ${capture.length} open roles ask for video or photo contributors (${monthYear()}).` },
+        { question: 'How much do AI companies pay lawyers to train AI?', answer: `${law.length} open micro1 law roles have a median top rate of $${medianRate(law)}/hr (${monthYear()}).` },
+      ];
+    },
+  },
   {
     slug: 'how-much-do-ai-training-jobs-pay',
     kicker: 'Pay data',
