@@ -1,0 +1,21 @@
+edition,snapshot_date,field_slug,field,roles,hourly_roles,median_low_usd_hr,median_high_usd_hr,p90_high_usd_hr,max_high_usd_hr,high_demand_roles
+2026-11,2026-11-01,all,All fields,329,287,50,90,300,400,233
+2026-11,2026-11-01,sciences-research,Science & Research,24,21,100,200,360,400,19
+2026-11,2026-11-01,law,Law,54,53,100,170,400,400,52
+2026-11,2026-11-01,education,Education,1,1,90,140,,140,1
+2026-11,2026-11-01,finance,Finance,19,17,60,120,310,350,14
+2026-11,2026-11-01,ai-machine-learning,AI & Machine Learning,14,6,60,120,,140,11
+2026-11,2026-11-01,medicine,Medicine,22,21,80,115,125,125,18
+2026-11,2026-11-01,arts-design,Arts & Design,5,4,38,105,,105,3
+2026-11,2026-11-01,software-engineering,Software Engineering,32,22,50,100,256,300,23
+2026-11,2026-11-01,data-analysis,Data Analysis,5,5,35,100,,350,3
+2026-11,2026-11-01,applied-engineering,Applied Engineering,14,14,45,90,135,150,12
+2026-11,2026-11-01,business-operations,Business Operations,12,12,45,90,275,350,7
+2026-11,2026-11-01,cybersecurity,Cybersecurity,2,2,45,85,,90,0
+2026-11,2026-11-01,other,Specialist,66,60,40,80,119,140,39
+2026-11,2026-11-01,retail-hospitality,Retail & Hospitality,1,1,40,70,,70,0
+2026-11,2026-11-01,humanities,Humanities,1,1,30,70,,70,1
+2026-11,2026-11-01,sales-marketing,Sales & Marketing,9,4,22,40,,350,6
+2026-11,2026-11-01,generalist,Generalist,19,16,20,33,60,60,11
+2026-11,2026-11-01,language-audio,Languages & Audio,16,16,20,30,70,70,5
+2026-11,2026-11-01,robotics,Robotics,13,11,10,30,50,50,8

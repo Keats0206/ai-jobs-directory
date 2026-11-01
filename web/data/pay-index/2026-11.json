@@ -1,0 +1,230 @@
+{
+  "edition": "2026-11",
+  "snapshot_date": "2026-11-01",
+  "published": "2026-11-01",
+  "methodology_version": "2026-10",
+  "source": "micro1 public referral job feed (prod-api.micro1.ai) and public job pages",
+  "license": "CC BY 4.0",
+  "doi": null,
+  "overall": {
+    "roles": 329,
+    "hourly_roles": 287,
+    "median_low": 50,
+    "median_high": 90,
+    "p90_high": 300,
+    "max_high": 400,
+    "high_demand": 233,
+    "fields": 19
+  },
+  "fields": [
+    {
+      "slug": "sciences-research",
+      "label": "Science & Research",
+      "roles": 24,
+      "hourly_roles": 21,
+      "median_low": 100,
+      "median_high": 200,
+      "p90_high": 360,
+      "max_high": 400,
+      "high_demand": 19
+    },
+    {
+      "slug": "law",
+      "label": "Law",
+      "roles": 54,
+      "hourly_roles": 53,
+      "median_low": 100,
+      "median_high": 170,
+      "p90_high": 400,
+      "max_high": 400,
+      "high_demand": 52
+    },
+    {
+      "slug": "education",
+      "label": "Education",
+      "roles": 1,
+      "hourly_roles": 1,
+      "median_low": 90,
+      "median_high": 140,
+      "p90_high": null,
+      "max_high": 140,
+      "high_demand": 1
+    },
+    {
+      "slug": "finance",
+      "label": "Finance",
+      "roles": 19,
+      "hourly_roles": 17,
+      "median_low": 60,
+      "median_high": 120,
+      "p90_high": 310,
+      "max_high": 350,
+      "high_demand": 14
+    },
+    {
+      "slug": "ai-machine-learning",
+      "label": "AI & Machine Learning",
+      "roles": 14,
+      "hourly_roles": 6,
+      "median_low": 60,
+      "median_high": 120,
+      "p90_high": null,
+      "max_high": 140,
+      "high_demand": 11
+    },
+    {
+      "slug": "medicine",
+      "label": "Medicine",
+      "roles": 22,
+      "hourly_roles": 21,
+      "median_low": 80,
+      "median_high": 115,
+      "p90_high": 125,
+      "max_high": 125,
+      "high_demand": 18
+    },
+    {
+      "slug": "arts-design",
+      "label": "Arts & Design",
+      "roles": 5,
+      "hourly_roles": 4,
+      "median_low": 38,
+      "median_high": 105,
+      "p90_high": null,
+      "max_high": 105,
+      "high_demand": 3
+    },
+    {
+      "slug": "software-engineering",
+      "label": "Software Engineering",
+      "roles": 32,
+      "hourly_roles": 22,
+      "median_low": 50,
+      "median_high": 100,
+      "p90_high": 256,
+      "max_high": 300,
+      "high_demand": 23
+    },
+    {
+      "slug": "data-analysis",
+      "label": "Data Analysis",
+      "roles": 5,
+      "hourly_roles": 5,
+      "median_low": 35,
+      "median_high": 100,
+      "p90_high": null,
+      "max_high": 350,
+      "high_demand": 3
+    },
+    {
+      "slug": "applied-engineering",
+      "label": "Applied Engineering",
+      "roles": 14,
+      "hourly_roles": 14,
+      "median_low": 45,
+      "median_high": 90,
+      "p90_high": 135,
+      "max_high": 150,
+      "high_demand": 12
+    },
+    {
+      "slug": "business-operations",
+      "label": "Business Operations",
+      "roles": 12,
+      "hourly_roles": 12,
+      "median_low": 45,
+      "median_high": 90,
+      "p90_high": 275,
+      "max_high": 350,
+      "high_demand": 7
+    },
+    {
+      "slug": "cybersecurity",
+      "label": "Cybersecurity",
+      "roles": 2,
+      "hourly_roles": 2,
+      "median_low": 45,
+      "median_high": 85,
+      "p90_high": null,
+      "max_high": 90,
+      "high_demand": 0
+    },
+    {
+      "slug": "other",
+      "label": "Specialist",
+      "roles": 66,
+      "hourly_roles": 60,
+      "median_low": 40,
+      "median_high": 80,
+      "p90_high": 119,
+      "max_high": 140,
+      "high_demand": 39
+    },
+    {
+      "slug": "retail-hospitality",
+      "label": "Retail & Hospitality",
+      "roles": 1,
+      "hourly_roles": 1,
+      "median_low": 40,
+      "median_high": 70,
+      "p90_high": null,
+      "max_high": 70,
+      "high_demand": 0
+    },
+    {
+      "slug": "humanities",
+      "label": "Humanities",
+      "roles": 1,
+      "hourly_roles": 1,
+      "median_low": 30,
+      "median_high": 70,
+      "p90_high": null,
+      "max_high": 70,
+      "high_demand": 1
+    },
+    {
+      "slug": "sales-marketing",
+      "label": "Sales & Marketing",
+      "roles": 9,
+      "hourly_roles": 4,
+      "median_low": 22,
+      "median_high": 40,
+      "p90_high": null,
+      "max_high": 350,
+      "high_demand": 6
+    },
+    {
+      "slug": "generalist",
+      "label": "Generalist",
+      "roles": 19,
+      "hourly_roles": 16,
+      "median_low": 20,
+      "median_high": 33,
+      "p90_high": 60,
+      "max_high": 60,
+      "high_demand": 11
+    },
+    {
+      "slug": "language-audio",
+      "label": "Languages & Audio",
+      "roles": 16,
+      "hourly_roles": 16,
+      "median_low": 20,
+      "median_high": 30,
+      "p90_high": 70,
+      "max_high": 70,
+      "high_demand": 5
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics",
+      "roles": 13,
+      "hourly_roles": 11,
+      "median_low": 10,
+      "median_high": 30,
+      "p90_high": 50,
+      "max_high": 50,
+      "high_demand": 8
+    }
+  ]
+}
