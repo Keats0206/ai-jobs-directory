@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { trainingJobs } from '@/lib/jobs';
+import { micro1Jobs as trainingJobs } from '@/lib/jobs';
 import { getTrainingFields, trainingStats, byPay, hourlyMax, REFERRAL_DISCLOSURE } from '@/lib/training-jobs';
 import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
@@ -11,7 +11,7 @@ import { FaqSection } from '@/components/faq-section';
 const monthYear = () => new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
 
 export function generateMetadata(): Metadata {
-  const stats = trainingStats();
+  const stats = trainingStats(trainingJobs);
   return {
     title: `micro1 Review (${monthYear()}): Pay, AI Interview & Is It Legit?`,
     description: `How much micro1 pays, from ${stats.total} live roles (median top rate $${stats.medianRate}/hr, up to $${stats.topRate}/hr), how the Zara AI interview works, and what to check before you apply.`,
@@ -33,8 +33,8 @@ const STEPS: [string, string][] = [
 ];
 
 export default function Micro1Page() {
-  const stats = trainingStats();
-  const fields = getTrainingFields().filter((field) => field.jobs.some(hourlyMax));
+  const stats = trainingStats(trainingJobs);
+  const fields = getTrainingFields(trainingJobs).filter((field) => field.jobs.some(hourlyMax));
   const top = [...trainingJobs].sort(byPay).slice(0, 10);
   const remote = trainingJobs.filter((job) => job.is_remote).length;
   const rates = trainingJobs.map(hourlyMax).filter(Boolean);

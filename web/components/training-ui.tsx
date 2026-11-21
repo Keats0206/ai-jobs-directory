@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import type { Job } from '@/lib/jobs';
+import { platformOf, type Job } from '@/lib/jobs';
 import { formatPay, type TrainingField } from '@/lib/training-jobs';
 import ApplyButton from '@/app/components/ApplyButton';
 
@@ -68,6 +68,12 @@ export function CollectionLinks({ collections }: { collections: TrainingField[] 
   ));
 }
 
+function payUnit(job: Job) {
+  if (job.hourly_max) return 'hourly pay';
+  if (job.salary_max) return 'annual pay';
+  return job.pay_frequency === 'one-time' ? 'one-time payment' : 'per task';
+}
+
 /** One comparison row: what it is, what it pays, and a direct apply button. */
 export function RoleRow({ job, rank, showField = true }: { job: Job; rank?: number; showField?: boolean }) {
   const pay = formatPay(job);
@@ -90,11 +96,12 @@ export function RoleRow({ job, rank, showField = true }: { job: Job; rank?: numb
       </div>
       <div>
         <p className="font-heading text-xl font-medium tabular-nums tracking-tight">{pay ?? '—'}</p>
-        <p className="text-xs text-muted-foreground">{pay ? (job.hourly_max ? 'hourly pay' : 'annual pay') : 'pay on application'}</p>
+        <p className="text-xs text-muted-foreground">{pay ? payUnit(job) : 'pay on application'} · {platformOf(job).name}</p>
       </div>
       <ApplyButton
         applyUrl={job.apply_url}
         field={job.field}
+        platform={job.source}
         placement="row"
         sponsored
         className="btn-money h-10 rounded-full px-5 text-sm font-medium"

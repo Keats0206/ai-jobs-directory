@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { trainingJobs, type Job } from './jobs';
+// Posts analyse micro1's feed specifically, so they read micro1 roles only, not the combined directory.
+import { micro1Jobs as trainingJobs, type Job } from './jobs';
 import { getTrainingFields, getTrainingCollections, byPay, hourlyMax, formatPay, trainingStats } from './training-jobs';
 import { partnerships, COMPANY_PAYOUT, isDefunct, MERCOR_WANTED, MERCOR_TOP_PAYOUT, MERCOR_REFERRAL_CODE, MERCOR_APPLY_URL } from './data-partnerships';
 import type { FaqItem } from '@/components/faq-section';
@@ -67,9 +68,9 @@ function payData() {
   const withPay = hourly(trainingJobs);
   const rates = withPay.map(hourlyMax);
   const bands: [string, number, number][] = [['Under $30/hr', 0, 30], ['$30–$59/hr', 30, 60], ['$60–$99/hr', 60, 100], ['$100–$199/hr', 100, 200], ['$200/hr and up', 200, Infinity]];
-  const fields = getTrainingFields().filter((field) => hourly(field.jobs).length >= 3);
+  const fields = getTrainingFields(trainingJobs).filter((field) => hourly(field.jobs).length >= 3);
   const salaried = trainingJobs.filter((job) => !job.hourly_max && job.salary_max);
-  return { withPay, rates, bands, fields, salaried, stats: trainingStats() };
+  return { withPay, rates, bands, fields, salaried, stats: trainingStats(trainingJobs) };
 }
 
 function PayBody() {
@@ -216,7 +217,7 @@ function LawBody() {
 
 function codingData() {
   const jobs = trainingJobs.filter((job) => job.field === 'software-engineering').sort(byPay);
-  const languages = getTrainingCollections().filter((c) => c.group === 'language');
+  const languages = getTrainingCollections(trainingJobs).filter((c) => c.group === 'language');
   const tasks = new Map<string, number>();
   for (const job of jobs) for (const skill of new Set((job.skills || []).map((s) => s.toLowerCase()))) tasks.set(skill, (tasks.get(skill) || 0) + 1);
   const topTasks = [...tasks].filter(([skill]) => /refactor|bug|feature|performance|review|algorithm|debug/.test(skill)).filter(([, n]) => n >= 3).sort((a, b) => b[1] - a[1]).slice(0, 6);
@@ -393,7 +394,7 @@ const pct = (part: number, whole: number) => (whole ? Math.round((part / whole) 
 const fmt = (n: number) => n.toLocaleString('en-US');
 
 function buyingData() {
-  const fields = getTrainingFields();
+  const fields = getTrainingFields(trainingJobs);
   const total = openings(trainingJobs);
   const capture = titled(/video|photo|vlogger|recorder|360°|insta360|gopro/i);
   const law = trainingJobs.filter((job) => job.field === 'law');
@@ -401,7 +402,7 @@ function buyingData() {
   const clinical = trainingJobs.filter((job) => job.field === 'medicine' && /physician|hospitalist|nurse|md\b/i.test(job.title));
   const admin = titled(/medical cod|coder\b|medicare|enrollment|SHIP\b|eligibility|benefit/i).filter((job) => !defense.includes(job));
   const aviation = titled(/pilot|air traffic/i).filter((job) => !defense.includes(job));
-  return { fields, total, capture, law, defense, clinical, admin, aviation, stats: trainingStats() };
+  return { fields, total, capture, law, defense, clinical, admin, aviation, stats: trainingStats(trainingJobs) };
 }
 
 const byOpeningsDesc = (a: Job, b: Job) => (b.openings || 0) - (a.openings || 0);

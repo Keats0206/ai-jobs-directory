@@ -19,7 +19,7 @@ export function generateMetadata(): Metadata {
 
 const STEPS = [
   ['Pick a role', 'Find work that matches your credentials, from bar-admitted attorneys to board-certified physicians.'],
-  ['Take the AI interview', 'micro1 verifies your expertise with a short AI-led interview. There is no fee to apply.'],
+  ['Take the AI interview', 'micro1 and Mercor verify your expertise with a short AI-led interview. There is no fee to apply.'],
   ['Get matched and paid', 'Matched experts join AI lab projects and are paid hourly for flexible contract work.'],
 ];
 
@@ -44,11 +44,11 @@ export default function Home() {
     },
     {
       question: 'How do I apply?',
-      answer: 'Each role links to micro1, which runs a short AI interview to verify your expertise, then matches you to client projects. There is no fee to apply.',
+      answer: 'Each role links to micro1 or Mercor, the expert networks that run the hiring. Both use a short AI interview to verify your expertise, then match you to client projects. There is no fee to apply.',
     },
     {
       question: 'How does Artificial Jobs make money?',
-      answer: 'Apply links include our micro1 referral code. If you are hired, micro1 may pay us a referral fee. It costs you nothing and does not change your pay.',
+      answer: 'Apply links include our micro1 or Mercor referral code. If you are hired, the platform may pay us a referral fee. It costs you nothing and does not change your pay.',
     },
   ];
 

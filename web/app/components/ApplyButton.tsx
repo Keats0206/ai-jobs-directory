@@ -7,6 +7,8 @@ interface ApplyButtonProps {
   applyUrl: string;
   /** Reported with the click so conversions can be split by profession. */
   field?: string;
+  /** Expert network the link goes to (micro1, mercor), so clicks can be split by platform. */
+  platform?: string;
   /** Where on the page the button sits, e.g. "row", "sidebar", "header". */
   placement: string;
   className?: string;
@@ -18,6 +20,7 @@ interface ApplyButtonProps {
 export default function ApplyButton({
   applyUrl,
   field = 'unknown',
+  platform = 'micro1',
   placement,
   className,
   children = 'Apply now',
@@ -28,7 +31,7 @@ export default function ApplyButton({
       href={applyUrl}
       target="_blank"
       rel={sponsored ? 'sponsored noopener noreferrer' : 'noopener noreferrer'}
-      onClick={() => track('apply_click', { field, placement })}
+      onClick={() => track('apply_click', { field, platform, placement })}
       className={cn(
         'inline-flex shrink-0 items-center justify-center rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/85',
         className

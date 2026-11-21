@@ -237,10 +237,11 @@ def apply_stated_salary(job):
     return True
 
 
-def merge(existing, records, now):
+def merge(existing, records, now, source_board=SOURCE_BOARD):
+    """Upsert one feed's records; roles of that feed missing from it are marked closed. Shared with fetch_mercor_jobs.py."""
     merged = [dict(job) for job in existing]
     by_id = {job['source_job_id']: i for i, job in enumerate(merged)
-             if job.get('source_board') == SOURCE_BOARD and job.get('source_job_id')}
+             if job.get('source_board') == source_board and job.get('source_job_id')}
     seen, added, updated = set(), 0, 0
     for record in records:
         key = record['source_job_id']

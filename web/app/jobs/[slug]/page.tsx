@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import { notFound, permanentRedirect } from 'next/navigation';
 import Link from 'next/link';
-import { trainingJobs, getJobBySlug } from '@/lib/jobs';
+import { trainingJobs, getJobBySlug, platformOf } from '@/lib/jobs';
 import { byPay, formatPay, REFERRAL_DISCLOSURE } from '@/lib/training-jobs';
 import { timeAgo } from '@/lib/job-utils';
 import { datePosted, validThrough, employmentType } from '@/lib/job-quality';
@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const pay = formatPay(job);
   return {
     title: `${job.title} — AI Training Job${pay ? `, ${pay}` : ''}`,
-    description: `${job.title}: paid AI training work for ${job.field_label || 'expert'} professionals${pay ? ` at ${pay}` : ''}. Help AI labs evaluate and improve their models. Apply via micro1.`,
+    description: `${job.title}: paid AI training work for ${job.field_label || 'expert'} professionals${pay ? ` at ${pay}` : ''}. Help AI labs evaluate and improve their models. Apply via ${platformOf(job).name}.`,
     alternates: { canonical: `/jobs/${job.slug}` },
     openGraph: { title: `${job.title} — AI Training Job`, description: `${pay ? `${pay} · ` : ''}${job.field_label || 'Expert'} · Artificial Jobs` },
   };
@@ -48,13 +48,14 @@ export default async function JobPage({ params }: { params: Promise<{ slug: stri
   const related = trainingJobs.filter((j) => j !== job && j.field === job.field).sort(byPay).slice(0, 5);
   const posted = timeAgo(job.date_posted || job.first_seen);
   const verified = timeAgo(job.last_verified);
-  const applyProps = { applyUrl: job.apply_url, field: job.field, sponsored: true };
+  const platform = platformOf(job);
+  const applyProps = { applyUrl: job.apply_url, field: job.field, platform: job.source, sponsored: true };
 
   const jsonLd: Record<string, unknown> = {
     '@context': 'https://schema.org',
     '@type': 'JobPosting',
     title: job.title,
-    hiringOrganization: { '@type': 'Organization', name: job.company, sameAs: 'https://micro1.ai' },
+    hiringOrganization: { '@type': 'Organization', name: job.company, sameAs: platform.site },
     identifier: { '@type': 'PropertyValue', name: job.company, value: job.source_job_id },
     url: `https://www.artificialjobs.dev/jobs/${job.slug}`,
     directApply: false,
@@ -96,7 +97,9 @@ export default async function JobPage({ params }: { params: Promise<{ slug: stri
     ['Pay', pay],
     ['Field', job.field_label || null],
     ['Type', job.job_type || 'Contract'],
+    ['Hours', job.hours_per_week ? `${job.hours_per_week}/week` : null],
     ['Openings', job.openings ? String(job.openings) : null],
+    ['Via', platform.name],
     ['Posted', posted],
   ];
 
@@ -118,7 +121,7 @@ export default async function JobPage({ params }: { params: Promise<{ slug: stri
           <div className="grid gap-12 lg:grid-cols-[minmax(0,46rem)_20rem] lg:justify-between">
             <article>
               <p className="text-sm text-muted-foreground">
-                {job.field_label || 'Specialist'} · {job.is_remote ? 'Remote' : 'Contract'} · via micro1
+                {job.field_label || 'Specialist'} · {job.is_remote ? 'Remote' : 'Contract'} · via <Link href={platform.review} className="underline-offset-4 hover:underline">{platform.name}</Link>
                 {job.high_demand && <span className="ml-2 rounded-sm bg-accent px-1.5 py-0.5 text-xs font-medium text-accent-foreground">High demand</span>}
               </p>
               <h1 className="font-heading mt-3 text-4xl font-medium tracking-[-0.03em] text-balance sm:text-5xl">{job.title}</h1>
@@ -148,7 +151,7 @@ export default async function JobPage({ params }: { params: Promise<{ slug: stri
                     </div>
                   ))}
                 </dl>
-                <ApplyButton {...applyProps} placement="sidebar" className="btn-money mt-6 h-11 w-full rounded-full text-sm font-medium">Apply on micro1</ApplyButton>
+                <ApplyButton {...applyProps} placement="sidebar" className="btn-money mt-6 h-11 w-full rounded-full text-sm font-medium">Apply on {platform.name}</ApplyButton>
                 <p className="mt-3 text-center text-xs text-muted-foreground">Free to apply · short AI interview{verified ? ` · checked ${verified}` : ''}</p>
               </div>
             </aside>

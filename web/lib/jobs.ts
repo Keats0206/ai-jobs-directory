@@ -22,16 +22,23 @@ export interface Job {
   last_verified?: string;
   first_seen?: string;
   date_posted?: string | null;
-  /** Contract pay for expert-network roles (micro1); salary_min/max stay annual-only. */
+  /** Contract pay for expert-network roles (micro1, Mercor); salary_min/max stay annual-only. */
   hourly_min?: number | null;
   hourly_max?: number | null;
+  /** Mercor paid interviews, surveys and tasks pay a flat amount instead of an hourly rate. */
+  flat_pay_min?: number | null;
+  flat_pay_max?: number | null;
+  pay_frequency?: 'per-task' | 'one-time' | null;
+  hours_per_week?: number | null;
+  work_arrangement?: string;
+  referral_reward?: number | null;
   /** Apply link carries our referral code, so it needs a disclosure and rel="sponsored". */
   is_referral?: boolean;
-  /** AI training (expert network) fields from micro1. */
+  /** AI training (expert network) fields; Mercor domains are mapped onto micro1's field slugs. */
   field?: string;
   field_label?: string;
   skills?: string[];
-  /** Countries micro1 accepts applicants from, read from its job page. */
+  /** Countries the platform accepts applicants from. */
   applicant_countries?: string[];
   high_demand?: boolean;
   openings?: number | null;
@@ -57,8 +64,24 @@ export const allJobs: Job[] = (jobsData as Job[]).map((job, index) => ({
   ...job,
   slug: job.slug || `${slugify(`${job.title}-${job.company}`)}-${index}`,
 }));
-/** Open micro1 AI training roles: everything the site lists. */
-export const trainingJobs: Job[] = allJobs.filter(job => job.source === 'micro1' && (!job.status || job.status === 'active'));
+export const PLATFORMS = {
+  micro1: { name: 'micro1', site: 'https://micro1.ai', review: '/micro1' },
+  mercor: { name: 'Mercor', site: 'https://mercor.com', review: '/mercor' },
+} as const;
+export type PlatformId = keyof typeof PLATFORMS;
+
+const isOpen = (job: Job) => !job.status || job.status === 'active';
+const isPlatform = (job: Job): job is Job & { source: PlatformId } => Boolean(job.source && job.source in PLATFORMS);
+
+/** Open AI training roles from every expert network: everything the site lists. */
+export const trainingJobs: Job[] = allJobs.filter(job => isPlatform(job) && isOpen(job));
+export const micro1Jobs: Job[] = trainingJobs.filter(job => job.source === 'micro1');
+export const mercorJobs: Job[] = trainingJobs.filter(job => job.source === 'mercor');
+
+/** The expert network a listing comes from (micro1 or Mercor). */
+export function platformOf(job: Job) {
+  return PLATFORMS[isPlatform(job) ? job.source : 'micro1'];
+}
 
 export function getJobBySlug(slug: string): { job: Job; index: number } | null {
   const index = allJobs.findIndex(job => job.slug === slug);

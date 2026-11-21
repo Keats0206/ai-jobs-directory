@@ -8,15 +8,15 @@ import { Headline, StatRow } from '@/components/training-ui';
 
 export const metadata: Metadata = {
   title: 'About Artificial Jobs — How Listings Are Sourced and How We Get Paid',
-  description: 'Artificial Jobs lists paid AI training work for domain experts, sourced daily from micro1. How listings are collected, ranked and verified, and how the site earns referral fees.',
+  description: 'Artificial Jobs lists paid AI training work for domain experts, sourced daily from micro1 and Mercor. How listings are collected, ranked and verified, and how the site earns referral fees.',
   alternates: { canonical: '/about' },
 };
 
 const METHOD = [
-  ['Sourced from micro1', 'Every role comes from micro1’s public job feed. We pull the full description, pay range, location and remote status from each role’s own micro1 job page.'],
-  ['Refreshed daily', 'An automated job re-checks every listing once a day. Roles micro1 closes are removed, and their pages redirect to the field they belonged to.'],
-  ['Ranked by pay', 'Roles are ordered by the top of their hourly pay range, newest first on ties. Pay figures are the ranges micro1 publishes; we don’t estimate or adjust them.'],
-  ['Grouped by field', 'Each role is filed under the field micro1 assigns it (Law, Medicine, Software Engineering and so on), plus credential pages such as PhDs and physicians matched on the role’s title and skills.'],
+  ['Sourced from micro1 and Mercor', 'Every role comes from micro1’s or Mercor’s public job feed. We pull the full description, pay range, location and remote status from each platform’s own listing.'],
+  ['Refreshed daily', 'An automated job re-checks every listing once a day. Roles the platforms close are removed, and their pages redirect to the field they belonged to.'],
+  ['Ranked by pay', 'Roles are ordered by the top of their hourly pay range, newest first on ties. Pay figures are the ranges micro1 and Mercor publish; we don’t estimate or adjust them.'],
+  ['Grouped by field', 'Each role is filed under the field its platform assigns it (Law, Medicine, Software Engineering and so on), plus credential pages such as PhDs and physicians matched on the role’s title and skills.'],
 ];
 
 export default function AboutPage() {
@@ -51,7 +51,7 @@ export default function AboutPage() {
             </p>
             <p>
               The site is run by <a href="https://keatingholdings.com" target="_blank" rel="noreferrer" className="underline underline-offset-4 hover:text-foreground">Keating Holdings</a>.
-              We don’t employ anyone listed here and we don’t run the hiring process: applications, interviews and payment all happen on micro1.
+              We don’t employ anyone listed here and we don’t run the hiring process: applications, interviews and payment all happen on micro1 or Mercor.
             </p>
           </div>
         </Container>

@@ -40,12 +40,12 @@ export default async function TrainingFieldPage({ params }: { params: Promise<{ 
   const topJob = field.jobs[0];
   // A self-contained, stat-backed answer AI engines can quote without the surrounding cards.
   const summary = [
-    `As of ${monthYear()}, there are ${field.jobs.length} open AI training ${field.jobs.length === 1 ? 'job' : 'jobs'} for ${field.audience} listed on micro1.`,
+    `As of ${monthYear()}, there are ${field.jobs.length} open AI training ${field.jobs.length === 1 ? 'job' : 'jobs'} for ${field.audience} listed on micro1 and Mercor.`,
     rates.length > 1 && `Top-of-range pay runs from $${rates[0]} to $${field.topRate}/hr, with a median of $${median}/hr.`,
     topJob && topJob.hourly_max && `The best-paying role right now is ${topJob.title} at up to $${Math.round(topJob.hourly_max)}/hr.`,
     remote && `${remote === field.jobs.length ? 'All' : remote} of these roles are remote, and ${highDemand} ${highDemand === 1 ? 'is' : 'are'} marked high demand.`,
     `The work is flexible hourly contracting: you use your professional expertise to write, review and grade the examples AI models learn from.`,
-    `Listings are refreshed daily from micro1, so closed roles drop off within a day.`,
+    `Listings are refreshed daily from micro1 and Mercor, so closed roles drop off within a day.`,
   ].filter(Boolean).join(' ');
 
   const breadcrumbLd = {

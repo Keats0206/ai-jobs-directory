@@ -47,7 +47,7 @@ const siteJsonLd = {
       url: SITE_URL,
       logo: `${SITE_URL}/icon.png`,
       description:
-        "Directory of paid AI training jobs for domain experts and data partnerships for companies, sourced from micro1.",
+        "Directory of paid AI training jobs for domain experts and data partnerships for companies, sourced from micro1 and Mercor.",
       parentOrganization: { "@type": "Organization", name: "Keating Holdings", url: "https://keatingholdings.com" },
     },
     {
