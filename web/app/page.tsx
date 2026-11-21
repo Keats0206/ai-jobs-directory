@@ -27,9 +27,9 @@ const STEPS = [
 export default function Home() {
   const stats = trainingStats();
   const fields = getTrainingFields();
-  // Best-paid high-demand role from each field, so the shortlist spans professions.
+  // Best-paid role from each field (micro1 or Mercor), so the shortlist spans professions.
   const shortlist = fields
-    .map((field) => field.jobs.find((job) => job.high_demand && job.hourly_max))
+    .map((field) => field.jobs.find((job) => job.hourly_max))
     .filter((job): job is (typeof trainingJobs)[number] => Boolean(job))
     .sort(byPay)
     .slice(0, 8);
@@ -100,7 +100,7 @@ export default function Home() {
         <Container className="pb-24">
           <section id="top-roles" className="scroll-mt-20">
             <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
-              <Headline as="h2" lead="Best-paying roles right now." rest="The top high-demand role in each field." />
+              <Headline as="h2" lead="Best-paying roles right now." rest="The top-paying role in each field." />
             </div>
             <RoleList jobs={shortlist} ranked />
           </section>
