@@ -4,6 +4,7 @@ import { Container } from '@/components/page-shell';
 import { Headline, StatRow } from '@/components/training-ui';
 import { FaqSection } from '@/components/faq-section';
 import { CopyText } from '@/components/copy-text';
+import { EDITOR, editorJsonLd } from '@/lib/site';
 
 const BASE = 'https://www.artificialjobs.dev';
 const usd = (n: number | null) => (n == null ? '—' : `$${n}`);
@@ -11,9 +12,10 @@ const PROSE = 'max-w-prose text-[17px] leading-8 text-foreground/85 [&_strong]:f
 const H2 = 'font-heading text-2xl font-medium tracking-tight sm:text-3xl';
 
 /** The Pay Index page body: one frozen edition, with per-figure anchors, CSV, citation and Dataset schema. */
-export function PayIndexEditionView({ edition: e, editions }: { edition: PayIndexEdition; editions: PayIndexEdition[] }) {
+export function PayIndexEditionView({ edition: e, editions, hub = false }: { edition: PayIndexEdition; editions: PayIndexEdition[]; hub?: boolean }) {
   const label = editionLabel(e.edition);
-  const url = `${BASE}${editionPath(e.edition)}`;
+  // The hub (/pay-index) is the stable "latest" URL; each dated edition is its own frozen record.
+  const url = `${BASE}${hub ? '/pay-index' : editionPath(e.edition)}`;
   const csv = `/pay-index/${e.edition}.csv`;
   const o = e.overall;
   const ranked = e.fields.filter((f) => f.hourly_roles >= SMALL_SAMPLE);
@@ -31,13 +33,14 @@ export function PayIndexEditionView({ edition: e, editions }: { edition: PayInde
     identifier: e.doi ? `https://doi.org/${e.doi}` : url,
     license: 'https://creativecommons.org/licenses/by/4.0/',
     isAccessibleForFree: true,
-    creator: { '@type': 'Organization', name: 'Artificial Jobs', url: BASE },
+    creator: [editorJsonLd, { '@type': 'Organization', name: 'Artificial Jobs', url: BASE }],
     publisher: { '@id': `${BASE}/#organization` },
     datePublished: e.published,
     temporalCoverage: e.snapshot_date,
     keywords: ['AI training jobs', 'AI trainer pay', 'micro1', 'hourly rates', 'RLHF', 'expert data annotation'],
     variableMeasured: ['Open roles', 'Median bottom of posted hourly range (USD)', 'Median top of posted hourly range (USD)', '90th percentile top rate (USD)', 'Highest posted rate (USD)'],
     distribution: [{ '@type': 'DataDownload', encodingFormat: 'text/csv', contentUrl: `${BASE}${csv}` }],
+    ...(hub && { hasPart: editions.map((ed) => ({ '@type': 'Dataset', name: `micro1 Pay Index, ${editionLabel(ed.edition)}`, url: `${BASE}${editionPath(ed.edition)}` })) }),
   };
 
   const faqs = [
@@ -54,7 +57,7 @@ export function PayIndexEditionView({ edition: e, editions }: { edition: PayInde
         <p className="mb-6 text-sm text-muted-foreground">Monthly · {e.license} · Methodology {e.methodology_version}</p>
         <Headline lead={`micro1 Pay Index, ${label}.`} rest="What micro1 pays AI trainers, by field, from every open listing." />
         <p className="mt-5 text-sm text-muted-foreground">
-          By Artificial Jobs · Published <time dateTime={e.published}>{formatDay(e.published)}</time> · Listings as of{' '}
+          By <Link href="/about#editor" className="underline underline-offset-4 hover:text-foreground">{EDITOR.name}</Link>, Artificial Jobs · Published <time dateTime={e.published}>{formatDay(e.published)}</time> · Listings as of{' '}
           <time dateTime={e.snapshot_date}>{formatDay(e.snapshot_date)}</time>
           {e.doi && <> · DOI <a href={`https://doi.org/${e.doi}`} className="underline underline-offset-4">{e.doi}</a></>}
         </p>
@@ -91,8 +94,8 @@ export function PayIndexEditionView({ edition: e, editions }: { edition: PayInde
                   <tr key={f.slug} id={`field-${f.slug}`} className="scroll-mt-20 border-b border-border target:bg-accent">
                     <td className="py-2.5 pr-4">
                       <Link href={`/ai-training-jobs/${f.slug}`} className="underline decoration-border underline-offset-4 hover:decoration-foreground">{f.label}</Link>
-                      {f.hourly_roles < SMALL_SAMPLE && <span className="ml-2 text-xs text-muted-foreground">small sample</span>}
-                      <a href={`#field-${f.slug}`} aria-label={`Link to ${f.label} row`} className="ml-2 text-muted-foreground/60 hover:text-foreground">#</a>
+                      {f.hourly_roles < SMALL_SAMPLE && <span className="text-muted-foreground">*</span>}
+                      <a href={`#field-${f.slug}`} aria-hidden tabIndex={-1} className="ml-2 text-muted-foreground/60 after:content-['#'] hover:text-foreground" />
                     </td>
                     <td className="py-2.5 pr-4 text-right tabular-nums">{f.roles}</td>
                     <td className="py-2.5 pr-4 text-right tabular-nums">{usd(f.median_low)}</td>
@@ -105,7 +108,7 @@ export function PayIndexEditionView({ edition: e, editions }: { edition: PayInde
             </table>
           </div>
           <p className="mt-3 text-xs text-muted-foreground">
-            Hourly USD. 90th percentile shown for fields with 10+ hourly roles. “Small sample” means fewer than {SMALL_SAMPLE} hourly roles.
+            Hourly USD. 90th percentile shown for fields with 10+ hourly roles. * Small sample: fewer than {SMALL_SAMPLE} hourly roles.
           </p>
         </section>
       </Container>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
+import { SITE_URL, EDITOR, editorJsonLd } from "@/lib/site";
 
 const display = Geist({
   variable: "--font-display",
@@ -35,7 +36,6 @@ export const metadata: Metadata = {
   },
 };
 
-const SITE_URL = "https://www.artificialjobs.dev";
 
 const siteJsonLd = {
   "@context": "https://schema.org",
@@ -49,7 +49,9 @@ const siteJsonLd = {
       description:
         "Directory of paid AI training jobs for domain experts and data partnerships for companies, sourced from micro1 and Mercor.",
       parentOrganization: { "@type": "Organization", name: "Keating Holdings", url: "https://keatingholdings.com" },
+      founder: { "@id": EDITOR.url },
     },
+    editorJsonLd,
     {
       "@type": "WebSite",
       "@id": `${SITE_URL}/#website`,

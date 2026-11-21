@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { partnerships, COMPANY_PAYOUT, isDefunct, DATA_DISCLOSURE, MERCOR_APPLY_URL, MERCOR_REFERRAL_CODE, MERCOR_TOP_PAYOUT, MERCOR_WANTED } from '@/lib/data-partnerships';
 import { REPORTED_DEALS, DEAL_SOURCES } from '@/lib/data-deals';
+import { EDITOR, editorJsonLd } from '@/lib/site';
 import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
 import { Container } from '@/components/page-shell';
@@ -92,7 +93,7 @@ export default function DataWorthPage() {
     datePublished: PUBLISHED,
     dateModified: MODIFIED,
     mainEntityOfPage: `${BASE}${PATH}`,
-    author: { '@type': 'Organization', name: 'Artificial Jobs', url: BASE },
+    author: editorJsonLd,
     publisher: { '@id': `${BASE}/#organization` },
     citation: Object.values(DEAL_SOURCES),
   };
@@ -159,7 +160,7 @@ export default function DataWorthPage() {
           </nav>
           <Headline lead="What is your company’s data worth to AI labs?" rest="Every publicly reported deal, and a rough estimate for yours." />
           <p className="mt-5 text-sm text-muted-foreground">
-            By Artificial Jobs · Published <time dateTime={PUBLISHED}>October 24, 2026</time> · Updated <time dateTime={MODIFIED}>October 24, 2026</time>
+            By <Link href="/about#editor" className="underline underline-offset-4 hover:text-foreground">{EDITOR.name}</Link> · Published <time dateTime={PUBLISHED}>October 24, 2026</time> · Updated <time dateTime={MODIFIED}>October 24, 2026</time>
           </p>
           <div className={`mt-8 ${PROSE}`}>
             <p>

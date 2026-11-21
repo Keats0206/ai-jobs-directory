@@ -7,11 +7,12 @@ import { SiteFooter } from '@/components/site-footer';
 import { Container } from '@/components/page-shell';
 import { DisclosureBar, Headline, StatRow, FieldTile, RoleList, CollectionLinks } from '@/components/training-ui';
 import { FaqSection } from '@/components/faq-section';
+import { dataUpdated } from '@/lib/blog';
 
 export function generateMetadata(): Metadata {
   const { total, topRate } = trainingStats();
   return {
-    title: `${total} AI Training Jobs for Experts — Up to $${topRate}/hr`,
+    title: { absolute: `${total} AI Training Jobs for Experts — Up to $${topRate}/hr | Artificial Jobs` },
     description: `Get paid to train AI with your expertise. ${total} open roles for lawyers, doctors, engineers, scientists and linguists, refreshed daily.`,
     alternates: { canonical: '/' },
   };
@@ -63,6 +64,11 @@ export default function Home() {
             {stats.total} roles open · updated daily
           </p>
           <Headline lead="Get paid to train AI." rest="Hourly expert work for lawyers, doctors, engineers, scientists and linguists." />
+          <p className="mt-6 max-w-prose text-[17px] leading-8 text-foreground/85">
+            Artificial Jobs is an independent list of paid AI training jobs: remote, hourly contract work where experts write and grade the
+            examples AI models learn from. As of {new Date(dataUpdated()).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' })},
+            micro1 and Mercor list {stats.total} open roles paying a median of ${stats.medianRate}/hr at the top of their range, up to ${stats.topRate}/hr.
+          </p>
           <div className="mt-10 flex flex-wrap items-center gap-3">
             <a href="#top-roles" className="inline-flex h-11 items-center rounded-full bg-primary px-6 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-85">
               See top-paying roles

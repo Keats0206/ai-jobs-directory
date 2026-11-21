@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { posts, getPost, dataUpdated } from '@/lib/blog';
 import { REFERRAL_DISCLOSURE } from '@/lib/training-jobs';
+import { EDITOR, editorJsonLd } from '@/lib/site';
 import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
 import { Container } from '@/components/page-shell';
@@ -49,7 +50,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
     datePublished: post.published,
     dateModified: modified,
     mainEntityOfPage: `${BASE}/blog/${post.slug}`,
-    author: { '@type': 'Organization', name: 'Artificial Jobs', url: BASE },
+    author: editorJsonLd,
     publisher: { '@type': 'Organization', name: 'Artificial Jobs', url: BASE },
   };
   const breadcrumbs = {
@@ -79,7 +80,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
           <article>
             <h1 className="font-heading max-w-3xl text-4xl font-medium leading-[1.1] tracking-[-0.03em] text-balance sm:text-5xl">{post.title}</h1>
             <p className="mt-5 text-sm text-muted-foreground">
-              By Artificial Jobs · Published <time dateTime={post.published}>{formatDate(post.published)}</time> · Data updated{' '}
+              By <Link href="/about#editor" className="underline underline-offset-4 hover:text-foreground">{EDITOR.name}</Link> · Published <time dateTime={post.published}>{formatDate(post.published)}</time> · Data updated{' '}
               <time dateTime={modified}>{formatDate(modified)}</time>
             </p>
             <div className={`mt-10 ${PROSE}`}>

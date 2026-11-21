@@ -1,8 +1,10 @@
 name: Publish micro1 Pay Index
-# One frozen edition per month, after the 1st's daily refresh (07:20 UTC) has landed.
+# One frozen edition per month, after the 1st's daily refresh has landed. The refresh runs on
+# Pete's Mac at 07:20 local (11:20 UTC in EDT, 12:20 in EST); pay_index.py refuses data
+# older than 36h, so a missed refresh fails the run instead of publishing stale figures.
 on:
   schedule:
-    - cron: '0 9 1 * *'
+    - cron: '0 14 1 * *'
   workflow_dispatch:
 permissions:
   contents: write

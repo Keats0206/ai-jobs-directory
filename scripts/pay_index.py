@@ -5,14 +5,18 @@ Each edition is frozen once written: the JSON (web/data/pay-index/YYYY-MM.json) 
 Rates are the top and bottom of each role's posted hourly range; salaried roles are counted
 but excluded from pay figures.
 
-Usage: python3 scripts/pay_index.py [--edition YYYY-MM] [--force] [--dry-run]
+The snapshot date is the newest listing verification, not the run time. The script refuses to
+publish data older than MAX_AGE (the refresh runs on a laptop and can miss days).
+
+Usage: python3 scripts/pay_index.py [--edition YYYY-MM] [--force] [--dry-run] [--allow-stale]
 """
 import argparse
 import csv
 import io
 import json
 import statistics
-from datetime import datetime, timezone
+import sys
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -20,6 +24,7 @@ JOBS_JSON = ROOT / 'web/data/jobs.json'
 EDITIONS_DIR = ROOT / 'web/data/pay-index'
 CSV_DIR = ROOT / 'web/public/pay-index'
 METHODOLOGY_VERSION = '2026-10'
+MAX_AGE = timedelta(hours=36)
 
 
 def median(values):
@@ -47,8 +52,17 @@ def summarize(jobs):
     )
 
 
-def build(jobs, edition, snapshot):
-    active = [j for j in jobs if j.get('source') == 'micro1' and j.get('status', 'active') == 'active']
+def active_jobs(jobs):
+    return [j for j in jobs if j.get('source') == 'micro1' and j.get('status', 'active') == 'active']
+
+
+def last_verified(jobs):
+    times = [datetime.fromisoformat(j['last_verified']) for j in active_jobs(jobs) if j.get('last_verified')]
+    return max(times) if times else None
+
+
+def build(jobs, edition, snapshot, published):
+    active = active_jobs(jobs)
     groups = {}
     for job in active:
         groups.setdefault(job.get('field') or 'other', []).append(job)
@@ -61,7 +75,7 @@ def build(jobs, edition, snapshot):
     return dict(
         edition=edition,
         snapshot_date=snapshot,
-        published=snapshot,
+        published=published,
         methodology_version=METHODOLOGY_VERSION,
         source='micro1 public referral job feed (prod-api.micro1.ai) and public job pages',
         license='CC BY 4.0',
@@ -90,13 +104,19 @@ def main():
     parser.add_argument('--edition', default=now.strftime('%Y-%m'))
     parser.add_argument('--force', action='store_true', help='overwrite a published edition')
     parser.add_argument('--dry-run', action='store_true')
+    parser.add_argument('--allow-stale', action='store_true', help=f'publish even if listings are older than {MAX_AGE}')
     args = parser.parse_args()
 
     target = EDITIONS_DIR / f'{args.edition}.json'
     if target.exists() and not args.force:
         print(f'Edition {args.edition} already published; editions are frozen (use --force to rebuild).')
         return
-    index = build(json.loads(JOBS_JSON.read_text()), args.edition, now.strftime('%Y-%m-%d'))
+    jobs = json.loads(JOBS_JSON.read_text())
+    verified = last_verified(jobs)
+    if verified is None or (now - verified > MAX_AGE and not args.allow_stale):
+        sys.exit(f'Listings last verified {verified or "never"}; refusing to publish data older than {MAX_AGE} '
+                 '(run the refresh first, or pass --allow-stale).')
+    index = build(jobs, args.edition, verified.strftime('%Y-%m-%d'), now.strftime('%Y-%m-%d'))
     o = index['overall']
     print(f"{args.edition}: {o['roles']} roles, {o['hourly_roles']} hourly, median ${o['median_low']}–${o['median_high']}/hr, {o['fields']} fields")
     if args.dry_run:

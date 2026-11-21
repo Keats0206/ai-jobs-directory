@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { micro1Jobs as trainingJobs, type Job } from './jobs';
 import { getTrainingFields, getTrainingCollections, byPay, hourlyMax, formatPay, trainingStats } from './training-jobs';
 import { partnerships, COMPANY_PAYOUT, isDefunct, MERCOR_WANTED, MERCOR_TOP_PAYOUT, MERCOR_REFERRAL_CODE, MERCOR_APPLY_URL } from './data-partnerships';
+import { REPORTED_DEALS } from './data-deals';
 import type { FaqItem } from '@/components/faq-section';
 
 /**
@@ -57,6 +58,10 @@ function Table({ head, rows }: { head: string[]; rows: React.ReactNode[][] }) {
     </div>
   );
 }
+
+const MICRO1_EXPERTS = 'https://micro1.ai/experts';
+const extLink = (href: string, label: React.ReactNode, sponsored = false) =>
+  <a href={href} target="_blank" rel={sponsored ? 'sponsored noopener noreferrer' : 'noreferrer'} className="underline underline-offset-4">{label}</a>;
 
 const jobLink = (job: Job) => <Link href={`/jobs/${job.slug}`} className="underline decoration-border underline-offset-4 hover:decoration-foreground">{job.title}</Link>;
 const fieldLink = (slug: string, label: string) => <Link href={`/ai-training-jobs/${slug}`} className="underline decoration-border underline-offset-4 hover:decoration-foreground">{label}</Link>;
@@ -267,14 +272,14 @@ function CodingBody() {
       <h2>How to apply</h2>
       <ol>
         <li>Pick the listing that matches your strongest language and apply on micro1.</li>
-        <li>Complete micro1’s AI interview, which asks about your engineering background.</li>
+        <li>Complete micro1’s AI interview, which asks about your engineering background ({extLink(MICRO1_EXPERTS, 'micro1’s expert page')} describes the process).</li>
         <li>If you pass, micro1 onboards you and matches you to a project at the listed rate.</li>
       </ol>
       <p>
         See all {fieldLink('software-engineering', `${jobs.length} AI training jobs for software engineers`)}, ranked by pay, or read{' '}
         <Link href="/blog/how-much-do-ai-training-jobs-pay" className="underline underline-offset-4">how AI training pay compares across fields</Link>.
       </p>
-      <SourceNote>Source: open software engineering listings in micro1’s referral job feed and public job pages, refreshed daily. Language counts include coding roles in every field.</SourceNote>
+      <SourceNote>Source: open software engineering listings in micro1’s referral job feed and its public job pages ({extLink('https://jobs.micro1.ai', 'jobs.micro1.ai')}), refreshed daily. Language counts include coding roles in every field.</SourceNote>
     </>
   );
 }
@@ -348,6 +353,10 @@ function DataBody() {
         Models have already been trained on much of the public web. What they still lack is the messy, multi-step reality of work inside a company:
         how a team scopes a project, resolves an incident or closes a deal. Anonymised internal records are one of the few sources of that.
       </p>
+      <p>
+        The largest reported sale so far: Google paid $10 million for {REPORTED_DEALS[0].seller.replace(/ \(.*\)$/, '')}’s data while the airline was in
+        bankruptcy ({extLink(REPORTED_DEALS[0].url, `${REPORTED_DEALS[0].source}, ${REPORTED_DEALS[0].date}`)}).
+      </p>
       <h2>micro1’s programs</h2>
       <Table
         head={['Program', 'Best for', 'Requirements']}
@@ -379,7 +388,7 @@ function DataBody() {
         <Link href="/sell-company-data/what-is-it-worth" className="underline underline-offset-4">every reported deal and a rough estimate of what your data is worth</Link>.
       </p>
       <SourceNote>
-        Sources: micro1’s company data partnership listings (req.micro1.ai) and Mercor’s data referral page (data.mercor.com), October 2026. Links
+        Sources: micro1’s company data partnership listings ({extLink(partnerships[0].apply_url, 'req.micro1.ai', true)}) and Mercor’s data referral page ({extLink(MERCOR_APPLY_URL, 'data.mercor.com', true)}), October 2026; Spirit Airlines sale via {extLink(REPORTED_DEALS[0].url, REPORTED_DEALS[0].source)}. Links
         include our referral codes; Artificial Jobs may earn a fee if your company becomes a data partner.
       </SourceNote>
     </>

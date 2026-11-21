@@ -17,10 +17,11 @@ export function DisclosureBar({ children }: { children: React.ReactNode }) {
 /** Headline in the Cursor pattern: a dark statement, then a muted continuation. */
 export function Headline({ lead, rest, as: Tag = 'h1' }: { lead: React.ReactNode; rest?: React.ReactNode; as?: 'h1' | 'h2' }) {
   return (
-    <Tag className={`font-heading max-w-4xl font-medium tracking-[-0.03em] text-balance ${Tag === 'h1' ? 'text-4xl leading-[1.05] sm:text-6xl' : 'text-3xl leading-tight sm:text-4xl'}`}>
-      {lead}
+    // Only the lead is the heading; `rest` reads as a continuation but stays out of the h1/h2 text.
+    <div className={`font-heading max-w-4xl font-medium tracking-[-0.03em] text-balance ${Tag === 'h1' ? 'text-4xl leading-[1.05] sm:text-6xl' : 'text-3xl leading-tight sm:text-4xl'}`}>
+      <Tag className="inline">{lead}</Tag>
       {rest && <span className="text-muted-foreground"> {rest}</span>}
-    </Tag>
+    </div>
   );
 }
 

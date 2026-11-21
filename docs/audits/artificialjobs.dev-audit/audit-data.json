@@ -1,0 +1,258 @@
+{
+  "summary": {
+    "health_score": 72,
+    "business_type": "Niche job board / affiliate publisher (AI-training roles)",
+    "top_findings": [
+      "Daily micro1 refresh failing since 2026-10-25 (403 from GitHub runners)",
+      "JobPosting applicantLocationRequirements lists same 58 countries for every job",
+      "Job pages mostly micro1 boilerplate; 20% near-duplicate; validThrough = posted+60d",
+      "No named author, privacy policy, terms or contact",
+      "No comparison/alternatives pages; micro1-only inventory"
+    ],
+    "quick_wins": [
+      "Organization founder/sameAs/contactPoint + brand in homepage title",
+      "Zenodo DOI, Hugging Face, Kaggle, Candyfloss listings",
+      "Self-canonical /pay-index",
+      "Fix even-length median and baseSalary minValue fallback",
+      "Keep project suffix in job titles"
+    ]
+  },
+  "categories": [
+    {
+      "name": "Technical SEO",
+      "score": 84,
+      "what_works": [
+        "All sampled URLs 200, prerendered, self-canonical",
+        "Clean redirects, real 404s",
+        "IndexNow live",
+        "343/343 sitemap URLs return 200"
+      ],
+      "findings": [
+        {
+          "title": "Unknown job slugs 308 to homepage",
+          "severity": "Medium",
+          "description": "/jobs/does-not-exist -> 308 /",
+          "recommendation": "Use notFound() for unknown slugs"
+        },
+        {
+          "title": "validThrough = datePosted+60d",
+          "severity": "Medium",
+          "description": "5 live jobs show past validThrough",
+          "recommendation": "Derive from last_verified"
+        },
+        {
+          "title": "Missing security headers",
+          "severity": "Medium",
+          "description": "Only HSTS sent",
+          "recommendation": "Add headers() in next.config.ts + security.txt"
+        },
+        {
+          "title": "Sitemap lastmod identical",
+          "severity": "Medium",
+          "description": "339/343 identical",
+          "recommendation": "Per-job last_changed hash"
+        }
+      ]
+    },
+    {
+      "name": "Content Quality",
+      "score": 60,
+      "what_works": [
+        "Clear referral disclosure",
+        "Original Pay Index data",
+        "Answer-first openings"
+      ],
+      "findings": [
+        {
+          "title": "Job pages are micro1 text verbatim",
+          "severity": "High",
+          "description": "89% of indexable pages",
+          "recommendation": "Add 100+ words original context per job"
+        },
+        {
+          "title": "Near-duplicate jobs",
+          "severity": "High",
+          "description": "61 jobs, 8 identical pairs",
+          "recommendation": "Group and canonicalize; unique titles"
+        },
+        {
+          "title": "No named author",
+          "severity": "High",
+          "description": "All bylines 'Artificial Jobs'",
+          "recommendation": "Named editor with Person schema"
+        },
+        {
+          "title": "No privacy/terms/contact",
+          "severity": "High",
+          "description": "Forms collect email",
+          "recommendation": "Add /privacy, /terms, contact"
+        }
+      ]
+    },
+    {
+      "name": "On-Page SEO",
+      "score": 68,
+      "what_works": [
+        "SERP-matching title formula",
+        "Unique metadata"
+      ],
+      "findings": [
+        {
+          "title": "Long titles and H1s",
+          "severity": "Low",
+          "description": "22/29 titles >60 chars; H1 90-125 chars",
+          "recommendation": "Move subtitle out of H1"
+        },
+        {
+          "title": "Weak internal linking to blog/Pay Index",
+          "severity": "Medium",
+          "description": "Field pages link only to fields/jobs",
+          "recommendation": "Follow cluster.md link matrix"
+        }
+      ]
+    },
+    {
+      "name": "Schema / Structured Data",
+      "score": 72,
+      "what_works": [
+        "Valid JobPosting, Dataset, BreadcrumbList, Organization graph"
+      ],
+      "findings": [
+        {
+          "title": "applicantLocationRequirements contradicts page",
+          "severity": "High",
+          "description": "58 countries on US-only roles",
+          "recommendation": "Parse from job location"
+        },
+        {
+          "title": "Markdown in JobPosting description",
+          "severity": "Medium",
+          "description": "** and ## in JSON-LD",
+          "recommendation": "Render to HTML"
+        },
+        {
+          "title": "Article author is Organization only",
+          "severity": "Medium",
+          "description": "No Person, no image",
+          "recommendation": "Add Person author"
+        }
+      ]
+    },
+    {
+      "name": "Performance (CWV)",
+      "score": 88,
+      "what_works": [
+        "Edge-cached, TTFB <0.2s",
+        "No images, minimal third-party JS"
+      ],
+      "findings": [
+        {
+          "title": "Heavy homepage DOM/RSC",
+          "severity": "Medium",
+          "description": "1240 elements, 172KB RSC",
+          "recommendation": "Cap fields or content-visibility:auto"
+        },
+        {
+          "title": "CWV not measured",
+          "severity": "Info",
+          "description": "PSI quota exhausted",
+          "recommendation": "Add Google API key and re-run"
+        }
+      ]
+    },
+    {
+      "name": "AI Search Readiness",
+      "score": 62,
+      "what_works": [
+        "All AI crawler UAs get 200",
+        "Citable Pay Index with licence and CSV",
+        "Agent-friendly apply links"
+      ],
+      "findings": [
+        {
+          "title": "Stale data vs 'refreshed daily' claim",
+          "severity": "Critical",
+          "description": "Refresh failing since 10-25",
+          "recommendation": "Move fetch off GitHub runners; staleness guard"
+        },
+        {
+          "title": "Weak entity / no off-site mentions",
+          "severity": "High",
+          "description": "No sameAs, no Reddit/YouTube/press",
+          "recommendation": "sameAs, DOI, monthly distribution"
+        },
+        {
+          "title": "Static stale llms.txt + legacy overwrite scripts",
+          "severity": "Medium",
+          "description": "Law 49 vs 50",
+          "recommendation": "Generate route; delete legacy scripts"
+        }
+      ]
+    },
+    {
+      "name": "Images",
+      "score": 88,
+      "what_works": [
+        "OG image 1200x630 with alt"
+      ],
+      "findings": [
+        {
+          "title": "No imagery",
+          "severity": "Low",
+          "description": "No content images",
+          "recommendation": "Chart per Pay Index edition"
+        }
+      ]
+    }
+  ],
+  "action_plan": {
+    "phases": [
+      {
+        "name": "Phase 1: Critical Fixes",
+        "timeframe": "Week 1",
+        "items": [
+          "Fix job refresh pipeline + staleness guard before Nov 1",
+          "Fix applicantLocationRequirements",
+          "Fix validThrough",
+          "Privacy/terms/contact"
+        ]
+      },
+      {
+        "name": "Phase 2: High-Impact Improvements",
+        "timeframe": "Weeks 2-3",
+        "items": [
+          "Original job-page context + dedupe",
+          "Named author + entity markup",
+          "/micro1 trust content",
+          "Comparison/alternatives pages",
+          "Backlink quick wins + DOI"
+        ]
+      },
+      {
+        "name": "Phase 3: Content & Authority",
+        "timeframe": "Month 2",
+        "items": [
+          "Cannibalization fixes",
+          "Field page minimums and unique copy",
+          "Internal link matrix",
+          "Blog depth and sources",
+          "Mobile nav and tap targets"
+        ]
+      },
+      {
+        "name": "Phase 4: Monitoring & Iteration",
+        "timeframe": "Ongoing",
+        "items": [
+          "Google API key + CWV",
+          "Moz/Bing backlink tracking",
+          "Drift baseline and compares",
+          "Monthly Pay Index distribution"
+        ]
+      }
+    ]
+  },
+  "artifacts": {
+    "findings_dir": "findings/",
+    "screenshots_dir": "screenshots/"
+  }
+}

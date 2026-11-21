@@ -142,7 +142,9 @@ export default function Micro1Page() {
           </div>
           <p className="mt-4 text-sm text-muted-foreground">
             Live figures, updated daily. For a frozen, citable monthly snapshot with CSV, see the{' '}
-            <Link href="/pay-index" className="underline underline-offset-4">micro1 Pay Index</Link>.
+            <Link href="/pay-index" className="underline underline-offset-4">micro1 Pay Index</Link>. Weighing other platforms? See{' '}
+            <Link href="/platforms/micro1-vs-mercor" className="underline underline-offset-4">micro1 vs Mercor</Link> and{' '}
+            <Link href="/platforms/micro1-vs-outlier" className="underline underline-offset-4">micro1 vs Outlier</Link>.
           </p>
         </Container>
 

@@ -5,6 +5,7 @@ import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
 import { Container, SectionLabel } from '@/components/page-shell';
 import { Headline, StatRow } from '@/components/training-ui';
+import { EDITOR } from '@/lib/site';
 
 export const metadata: Metadata = {
   title: 'About Artificial Jobs — How Listings Are Sourced and How We Get Paid',
@@ -66,6 +67,18 @@ export default function AboutPage() {
               </div>
             ))}
           </dl>
+        </Container>
+
+        <Container className="pb-20">
+          <section id="editor" className="scroll-mt-20">
+            <SectionLabel>Who runs it</SectionLabel>
+            <div className="max-w-3xl space-y-5 text-[17px] leading-relaxed">
+              <p>
+                <strong className="font-medium">{EDITOR.name}</strong>, {EDITOR.jobTitle.toLowerCase()}. Pete runs Keating Holdings, which owns Artificial Jobs,
+                and maintains the listings data, the guides and the <Link href="/pay-index" className="underline underline-offset-4 hover:text-foreground">micro1 Pay Index</Link>.
+              </p>
+            </div>
+          </section>
         </Container>
 
         <Container className="pb-24">

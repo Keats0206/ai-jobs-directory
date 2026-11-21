@@ -9,6 +9,7 @@ import { FaqSection } from '@/components/faq-section';
 import { PartnerLink } from '@/components/partner-link';
 import { CopyCode } from '@/components/copy-code';
 import { AnonymizationGraphic } from '@/components/anonymization-graphic';
+import { REPORTED_DEALS } from '@/lib/data-deals';
 import { ValuationLeadForm } from '@/components/valuation-lead-form';
 
 export const metadata: Metadata = {
@@ -76,6 +77,12 @@ export default function SellCompanyDataPage() {
             lead={`Your company’s data is worth ${COMPANY_PAYOUT}.`}
             rest="AI labs pay for real operational data, even from companies that have shut down."
           />
+          <p className="mt-6 max-w-prose text-[17px] leading-8 text-foreground/85">
+            Companies can sell internal records to AI labs through data partnerships. micro1 pays {COMPANY_PAYOUT} per approved data package
+            and Mercor lists payouts up to {MERCOR_TOP_PAYOUT}. Companies with 30+ employees qualify, including ones that have shut down, and personal
+            information is removed before transfer. The largest reported sale so far is Google’s $10 million purchase of Spirit Airlines’
+            data (<a href={REPORTED_DEALS[0].url} target="_blank" rel="noreferrer" className="underline underline-offset-4 hover:text-foreground">{REPORTED_DEALS[0].source}, {REPORTED_DEALS[0].date}</a>).
+          </p>
           {primary && (
             <div className="mt-10 flex flex-wrap items-center gap-3">
               <PartnerLink href={primary.apply_url} program={isDefunct(primary) ? 'defunct' : 'enterprise'} placement="hero" className="btn-money inline-flex h-11 items-center rounded-full px-6 text-sm font-medium">
