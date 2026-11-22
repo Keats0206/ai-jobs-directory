@@ -72,3 +72,12 @@ export function SectionLabel({ children }: { children: React.ReactNode }) {
     </h2>
   );
 }
+
+/** Long-form typography for article and guide bodies. */
+export const PROSE = [
+  'max-w-prose text-[17px] leading-8 text-foreground/85',
+  '[&_p]:mt-5 [&_strong]:font-medium [&_strong]:text-foreground',
+  '[&_h2]:font-heading [&_h2]:mt-14 [&_h2]:text-2xl [&_h2]:font-medium [&_h2]:tracking-tight [&_h2]:text-foreground',
+  '[&_h3]:font-heading [&_h3]:mt-8 [&_h3]:text-lg [&_h3]:font-medium [&_h3]:text-foreground',
+  '[&_ul]:mt-5 [&_ul]:list-disc [&_ul]:space-y-2 [&_ul]:pl-5 [&_ol]:mt-5 [&_ol]:list-decimal [&_ol]:space-y-2 [&_ol]:pl-5',
+].join(' ');

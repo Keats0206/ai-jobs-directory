@@ -4,7 +4,8 @@ import { notFound } from 'next/navigation';
 import { getTrainingFields, getTrainingCollections, getTrainingField, hourlyMax, REFERRAL_DISCLOSURE } from '@/lib/training-jobs';
 import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
-import { Container, SectionLabel } from '@/components/page-shell';
+import { Container, SectionLabel, PROSE } from '@/components/page-shell';
+import { getFieldGuide } from '@/lib/field-guides';
 import { DisclosureBar, Headline, StatRow, FieldTile, RoleList, CollectionLinks } from '@/components/training-ui';
 import { FaqSection } from '@/components/faq-section';
 
@@ -57,6 +58,7 @@ export default async function TrainingFieldPage({ params }: { params: Promise<{ 
     ],
   };
 
+  const guide = getFieldGuide(field.slug);
   const faqs = [
     {
       question: `How much do AI training jobs for ${field.audience} pay?`,
@@ -68,6 +70,7 @@ export default async function TrainingFieldPage({ params }: { params: Promise<{ 
       question: `What does an AI training job for ${field.audience} involve?`,
       answer: `You use your professional expertise to write, review and grade the examples AI models learn from: checking reasoning, correcting answers and flagging errors a non-expert would miss.`,
     },
+    ...(guide ? guide.faqs(field) : []),
   ];
 
   return (
@@ -102,6 +105,17 @@ export default async function TrainingFieldPage({ params }: { params: Promise<{ 
           <SectionLabel>{`All ${field.jobs.length} ${field.jobs.length === 1 ? 'role' : 'roles'}, ranked by pay`}</SectionLabel>
           <RoleList jobs={field.jobs} ranked showField={false} />
         </Container>
+
+        {guide && (
+          <Container className="pb-24">
+            <section className="border-t border-border pt-12">
+              <h2 className="font-heading max-w-3xl text-3xl font-medium tracking-tight text-balance">{guide.heading}</h2>
+              <div className={`mt-6 ${PROSE}`}>
+                <guide.Body field={field} />
+              </div>
+            </section>
+          </Container>
+        )}
 
         <Container className="pb-24">
           <SectionLabel>Other fields hiring</SectionLabel>
